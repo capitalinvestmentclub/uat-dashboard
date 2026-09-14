@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T22:23:31.382Z",
+  "generatedAt": "2026-09-14T22:36:32.113Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "cdba3dd46cc3eed671d8260ef041b9f1da8f539c",
+      "commit": "694d6fb44a3f354046abc0d81b7c3529f9025f8d",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -3884,9 +3884,9 @@
         "updatedAt": "2026-09-14T21:24:37.042Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "repairBatch": {
-          "runId": "2026-09-14-close37-pr-open",
-          "updatedAt": "2026-09-14T22:22:48.483Z",
-          "state": "PRs OPEN — checks pending; new fixes not merged or live",
+          "runId": "2026-09-14-close37-merged",
+          "updatedAt": "2026-09-14T22:35:57.564Z",
+          "state": "BOTH PRs MERGED — staging pending; NOT promoted live",
           "executionMode": "delivery-metadata-only",
           "browser": "Google Chrome",
           "sizes": [
@@ -3897,52 +3897,56 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "OPEN — CHECKS PENDING",
-          "deploymentStatus": "STAGE ONLY — promotion held",
+          "mergeStatus": "MERGED",
+          "deploymentStatus": "STAGING PENDING — NOT PROMOTED",
           "cloudRetestStatus": "FAIL — latest acceptance unchanged; new-release retest pending",
           "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "Frontend PR2346 and API PR738 are open. Development environments stage-only; no verified new live promotion. User deferred visual retest for merging only. Local functional checks and partial automated-suite progress are not deployed closure.",
+          "releaseGate": "Frontend2346 and API738 merged with required checks passing and substantive review resolved. Stage-only development deployment is pending; no verified live promotion. Full local API suite remains unfinished. User deferred visual retest for merging only; latest cloud FAIL and per-size outcomes remain unchanged.",
           "candidates": {
             "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
-            "webapi": "ca0a009a9273bacdb5d740ddfc449eb70faf5c63"
+            "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
           },
           "pullRequests": [
             {
               "url": "https://github.com/capitalinvestmentclub/webapp/pull/2346",
-              "label": "Frontend PR #2346 — OPEN; checks pending"
+              "label": "Frontend PR #2346 — MERGED; f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4"
             },
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/738",
-              "label": "API PR #738 — OPEN; checks pending"
+              "label": "API PR #738 — MERGED; de320d4539f95415a84a3928fce77ee16633ca8f"
             }
           ],
           "deployments": {},
-          "frontendTests": "Local functional checks recorded separately; visual screenshot acceptance unavailable. Await final candidate CI evidence.",
-          "apiTests": "Coordinator checkpoint only:179 of471 suites,2424 assertions passed,zero failures at snapshot. Full run ongoing, not a completed suite.",
+          "frontendTests": "Required, focused and CodeQL checks passed; no open review threads. Local visual screenshot acceptance remains deferred, not passed.",
+          "apiTests": "Required CI passed; substantive review resolved; nine review-delta tests passed. Full local suite last checkpoint250 of471 suites/3281 assertions passed,zero failures,still unfinished.",
           "findings": [
             {
               "id": "ADM053-REC-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_PR_OPEN",
-              "summary": "Repair submitted in the recorded pull requests. Latest cloud acceptance remains FAIL; exact-release visual retest pending.",
+              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
+              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
               "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-CFG-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_PR_OPEN",
-              "summary": "Repair submitted in the recorded pull requests. Latest cloud acceptance remains FAIL; exact-release visual retest pending.",
+              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
+              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
               "cloudRetestStatus": "FAIL"
             }
           ],
-          "previousBatchRunId": "2026-09-14-merged-deployed-repair"
+          "previousBatchRunId": "2026-09-14-close37-pr-open",
+          "mergeCommits": {
+            "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
+            "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
+          }
         }
       }
     },
     {
       "name": "Organization",
       "repo": "organization-uat-report",
-      "commit": "7dfd8ef7e20c8605ece957066b1cc062872fad4d",
+      "commit": "f8eedceacb15ca8d73bfe86e41e8a4814db96dbd",
       "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -4869,9 +4873,9 @@
         "updatedAt": "2026-09-14T21:24:37.042Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "repairBatch": {
-          "runId": "2026-09-14-close37-pr-open",
-          "updatedAt": "2026-09-14T22:22:50.688Z",
-          "state": "PRs OPEN — checks pending; new fixes not merged or live",
+          "runId": "2026-09-14-close37-merged",
+          "updatedAt": "2026-09-14T22:35:59.691Z",
+          "state": "BOTH PRs MERGED — staging pending; NOT promoted live",
           "executionMode": "delivery-metadata-only",
           "browser": "Google Chrome",
           "sizes": [
@@ -4882,45 +4886,49 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "OPEN — CHECKS PENDING",
-          "deploymentStatus": "STAGE ONLY — promotion held",
+          "mergeStatus": "MERGED",
+          "deploymentStatus": "STAGING PENDING — NOT PROMOTED",
           "cloudRetestStatus": "FAIL — latest acceptance unchanged; new-release retest pending",
           "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "Frontend PR2346 and API PR738 are open. Development environments stage-only; no verified new live promotion. User deferred visual retest for merging only. Local functional checks and partial automated-suite progress are not deployed closure.",
+          "releaseGate": "Frontend2346 and API738 merged with required checks passing and substantive review resolved. Stage-only development deployment is pending; no verified live promotion. Full local API suite remains unfinished. User deferred visual retest for merging only; latest cloud FAIL and per-size outcomes remain unchanged.",
           "candidates": {
             "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
-            "webapi": "ca0a009a9273bacdb5d740ddfc449eb70faf5c63"
+            "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
           },
           "pullRequests": [
             {
               "url": "https://github.com/capitalinvestmentclub/webapp/pull/2346",
-              "label": "Frontend PR #2346 — OPEN; checks pending"
+              "label": "Frontend PR #2346 — MERGED; f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4"
             },
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/738",
-              "label": "API PR #738 — OPEN; checks pending"
+              "label": "API PR #738 — MERGED; de320d4539f95415a84a3928fce77ee16633ca8f"
             }
           ],
           "deployments": {},
-          "frontendTests": "Local functional checks recorded separately; visual screenshot acceptance unavailable. Await final candidate CI evidence.",
-          "apiTests": "Coordinator checkpoint only:179 of471 suites,2424 assertions passed,zero failures at snapshot. Full run ongoing, not a completed suite.",
+          "frontendTests": "Required, focused and CodeQL checks passed; no open review threads. Local visual screenshot acceptance remains deferred, not passed.",
+          "apiTests": "Required CI passed; substantive review resolved; nine review-delta tests passed. Full local suite last checkpoint250 of471 suites/3281 assertions passed,zero failures,still unfinished.",
           "findings": [
             {
               "id": "ORG020-CAL-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_PR_OPEN",
-              "summary": "Repair submitted in the recorded pull requests. Latest cloud acceptance remains FAIL; exact-release visual retest pending.",
+              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
+              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
               "cloudRetestStatus": "FAIL"
             }
           ],
-          "previousBatchRunId": "2026-09-14-merged-deployed-repair"
+          "previousBatchRunId": "2026-09-14-close37-pr-open",
+          "mergeCommits": {
+            "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
+            "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
+          }
         }
       }
     },
     {
       "name": "Grantor",
       "repo": "grantor-uat-report",
-      "commit": "ddb6d672bf7fe573466d12a39f89be3ad67bd732",
+      "commit": "1a4ae96df77c07b5afebc28177bc983d599b4947",
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -6055,9 +6063,9 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-close37-pr-open",
-          "updatedAt": "2026-09-14T22:22:51.387Z",
-          "state": "PRs OPEN — checks pending; new fixes not merged or live",
+          "runId": "2026-09-14-close37-merged",
+          "updatedAt": "2026-09-14T22:36:00.550Z",
+          "state": "BOTH PRs MERGED — staging pending; NOT promoted live",
           "executionMode": "delivery-metadata-only",
           "browser": "Google Chrome",
           "sizes": [
@@ -6068,45 +6076,49 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "OPEN — CHECKS PENDING",
-          "deploymentStatus": "STAGE ONLY — promotion held",
+          "mergeStatus": "MERGED",
+          "deploymentStatus": "STAGING PENDING — NOT PROMOTED",
           "cloudRetestStatus": "FAIL — latest acceptance unchanged; new-release retest pending",
           "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "Frontend PR2346 and API PR738 are open. Development environments stage-only; no verified new live promotion. User deferred visual retest for merging only. Local functional checks and partial automated-suite progress are not deployed closure.",
+          "releaseGate": "Frontend2346 and API738 merged with required checks passing and substantive review resolved. Stage-only development deployment is pending; no verified live promotion. Full local API suite remains unfinished. User deferred visual retest for merging only; latest cloud FAIL and per-size outcomes remain unchanged.",
           "candidates": {
             "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
-            "webapi": "ca0a009a9273bacdb5d740ddfc449eb70faf5c63"
+            "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
           },
           "pullRequests": [
             {
               "url": "https://github.com/capitalinvestmentclub/webapp/pull/2346",
-              "label": "Frontend PR #2346 — OPEN; checks pending"
+              "label": "Frontend PR #2346 — MERGED; f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4"
             },
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/738",
-              "label": "API PR #738 — OPEN; checks pending"
+              "label": "API PR #738 — MERGED; de320d4539f95415a84a3928fce77ee16633ca8f"
             }
           ],
           "deployments": {},
-          "frontendTests": "Local functional checks recorded separately; visual screenshot acceptance unavailable. Await final candidate CI evidence.",
-          "apiTests": "Coordinator checkpoint only:179 of471 suites,2424 assertions passed,zero failures at snapshot. Full run ongoing, not a completed suite.",
+          "frontendTests": "Required, focused and CodeQL checks passed; no open review threads. Local visual screenshot acceptance remains deferred, not passed.",
+          "apiTests": "Required CI passed; substantive review resolved; nine review-delta tests passed. Full local suite last checkpoint250 of471 suites/3281 assertions passed,zero failures,still unfinished.",
           "findings": [
             {
               "id": "GRT005-CFG-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_PR_OPEN",
-              "summary": "Repair submitted in the recorded pull requests. Latest cloud acceptance remains FAIL; exact-release visual retest pending.",
+              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
+              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
               "cloudRetestStatus": "FAIL"
             },
             {
               "id": "GRT017-REC-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_PR_OPEN",
-              "summary": "Repair submitted in the recorded pull requests. Latest cloud acceptance remains FAIL; exact-release visual retest pending.",
+              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
+              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
               "cloudRetestStatus": "FAIL"
             }
           ],
-          "previousBatchRunId": "2026-09-14-merged-deployed-repair"
+          "previousBatchRunId": "2026-09-14-close37-pr-open",
+          "mergeCommits": {
+            "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
+            "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
+          }
         }
       }
     },
@@ -10701,7 +10713,7 @@
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "8040481520a16a9a3c724984901384cafd26a28e",
+      "commit": "2cad84b5993c20bc33f7ff8d1c93bbd1442b2395",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -11964,9 +11976,9 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-close37-pr-open",
-          "updatedAt": "2026-09-14T22:22:49.215Z",
-          "state": "PRs OPEN — checks pending; new fixes not merged or live",
+          "runId": "2026-09-14-close37-merged",
+          "updatedAt": "2026-09-14T22:35:58.267Z",
+          "state": "BOTH PRs MERGED — staging pending; NOT promoted live",
           "executionMode": "delivery-metadata-only",
           "browser": "Google Chrome",
           "sizes": [
@@ -11977,45 +11989,49 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "OPEN — CHECKS PENDING",
-          "deploymentStatus": "STAGE ONLY — promotion held",
+          "mergeStatus": "MERGED",
+          "deploymentStatus": "STAGING PENDING — NOT PROMOTED",
           "cloudRetestStatus": "FAIL — latest acceptance unchanged; new-release retest pending",
           "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "Frontend PR2346 and API PR738 are open. Development environments stage-only; no verified new live promotion. User deferred visual retest for merging only. Local functional checks and partial automated-suite progress are not deployed closure.",
+          "releaseGate": "Frontend2346 and API738 merged with required checks passing and substantive review resolved. Stage-only development deployment is pending; no verified live promotion. Full local API suite remains unfinished. User deferred visual retest for merging only; latest cloud FAIL and per-size outcomes remain unchanged.",
           "candidates": {
             "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
-            "webapi": "ca0a009a9273bacdb5d740ddfc449eb70faf5c63"
+            "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
           },
           "pullRequests": [
             {
               "url": "https://github.com/capitalinvestmentclub/webapp/pull/2346",
-              "label": "Frontend PR #2346 — OPEN; checks pending"
+              "label": "Frontend PR #2346 — MERGED; f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4"
             },
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/738",
-              "label": "API PR #738 — OPEN; checks pending"
+              "label": "API PR #738 — MERGED; de320d4539f95415a84a3928fce77ee16633ca8f"
             }
           ],
           "deployments": {},
-          "frontendTests": "Local functional checks recorded separately; visual screenshot acceptance unavailable. Await final candidate CI evidence.",
-          "apiTests": "Coordinator checkpoint only:179 of471 suites,2424 assertions passed,zero failures at snapshot. Full run ongoing, not a completed suite.",
+          "frontendTests": "Required, focused and CodeQL checks passed; no open review threads. Local visual screenshot acceptance remains deferred, not passed.",
+          "apiTests": "Required CI passed; substantive review resolved; nine review-delta tests passed. Full local suite last checkpoint250 of471 suites/3281 assertions passed,zero failures,still unfinished.",
           "findings": [
             {
               "id": "ADM053-REC-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_PR_OPEN",
-              "summary": "Repair submitted in the recorded pull requests. Latest cloud acceptance remains FAIL; exact-release visual retest pending.",
+              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
+              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
               "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-CFG-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_PR_OPEN",
-              "summary": "Repair submitted in the recorded pull requests. Latest cloud acceptance remains FAIL; exact-release visual retest pending.",
+              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
+              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
               "cloudRetestStatus": "FAIL"
             }
           ],
-          "previousBatchRunId": "2026-09-14-merged-deployed-repair"
+          "previousBatchRunId": "2026-09-14-close37-pr-open",
+          "mergeCommits": {
+            "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
+            "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
+          }
         }
       }
     },
@@ -12462,7 +12478,7 @@
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "68f79ac23129db8334f63f93f9eb2f0993d633a5",
+      "commit": "4d5aa70ea63ba0a3f282eff4ca594338fd0ea5c6",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -13539,9 +13555,9 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-close37-pr-open",
-          "updatedAt": "2026-09-14T22:22:49.901Z",
-          "state": "PRs OPEN — checks pending; new fixes not merged or live",
+          "runId": "2026-09-14-close37-merged",
+          "updatedAt": "2026-09-14T22:35:58.910Z",
+          "state": "BOTH PRs MERGED — staging pending; NOT promoted live",
           "executionMode": "delivery-metadata-only",
           "browser": "Google Chrome",
           "sizes": [
@@ -13552,45 +13568,49 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "OPEN — CHECKS PENDING",
-          "deploymentStatus": "STAGE ONLY — promotion held",
+          "mergeStatus": "MERGED",
+          "deploymentStatus": "STAGING PENDING — NOT PROMOTED",
           "cloudRetestStatus": "FAIL — latest acceptance unchanged; new-release retest pending",
           "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "Frontend PR2346 and API PR738 are open. Development environments stage-only; no verified new live promotion. User deferred visual retest for merging only. Local functional checks and partial automated-suite progress are not deployed closure.",
+          "releaseGate": "Frontend2346 and API738 merged with required checks passing and substantive review resolved. Stage-only development deployment is pending; no verified live promotion. Full local API suite remains unfinished. User deferred visual retest for merging only; latest cloud FAIL and per-size outcomes remain unchanged.",
           "candidates": {
             "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
-            "webapi": "ca0a009a9273bacdb5d740ddfc449eb70faf5c63"
+            "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
           },
           "pullRequests": [
             {
               "url": "https://github.com/capitalinvestmentclub/webapp/pull/2346",
-              "label": "Frontend PR #2346 — OPEN; checks pending"
+              "label": "Frontend PR #2346 — MERGED; f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4"
             },
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/738",
-              "label": "API PR #738 — OPEN; checks pending"
+              "label": "API PR #738 — MERGED; de320d4539f95415a84a3928fce77ee16633ca8f"
             }
           ],
           "deployments": {},
-          "frontendTests": "Local functional checks recorded separately; visual screenshot acceptance unavailable. Await final candidate CI evidence.",
-          "apiTests": "Coordinator checkpoint only:179 of471 suites,2424 assertions passed,zero failures at snapshot. Full run ongoing, not a completed suite.",
+          "frontendTests": "Required, focused and CodeQL checks passed; no open review threads. Local visual screenshot acceptance remains deferred, not passed.",
+          "apiTests": "Required CI passed; substantive review resolved; nine review-delta tests passed. Full local suite last checkpoint250 of471 suites/3281 assertions passed,zero failures,still unfinished.",
           "findings": [
             {
               "id": "ADM053-REC-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_PR_OPEN",
-              "summary": "Repair submitted in the recorded pull requests. Latest cloud acceptance remains FAIL; exact-release visual retest pending.",
+              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
+              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
               "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-CFG-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_PR_OPEN",
-              "summary": "Repair submitted in the recorded pull requests. Latest cloud acceptance remains FAIL; exact-release visual retest pending.",
+              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
+              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
               "cloudRetestStatus": "FAIL"
             }
           ],
-          "previousBatchRunId": "2026-09-14-merged-deployed-repair"
+          "previousBatchRunId": "2026-09-14-close37-pr-open",
+          "mergeCommits": {
+            "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
+            "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
+          }
         }
       }
     }
