@@ -4,13 +4,13 @@ import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
 import {JSDOM} from 'jsdom';
-import {normalizeGroup,deduplicate,matches,status,statuses,severities,severityBreakdown,executionBreakdown} from '../model.js';
+import {normalizeGroup,deduplicate,matches,status,statuses,severities,severityBreakdown,executionBreakdown,defectStatusBreakdown} from '../model.js';
 const data=JSON.parse(readFileSync(new URL('../dashboard-data.json',import.meta.url)));
 const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const script=readFileSync(new URL('../app.js',import.meta.url),'utf8').replace(/^import .*\n/,'').replace(/\bstatus\(/g,'normalizeStatus(');
 async function page(payload=data,ok=true){
   const dom=new JSDOM(html,{url:'https://example.com/',runScripts:'outside-only'});
-  Object.assign(dom.window,{matches,normalizeStatus:status,statuses,severities,severityBreakdown,executionBreakdown,fetch:async()=>({ok,json:async()=>payload}),console:{error(){}}});
+  Object.assign(dom.window,{matches,normalizeStatus:status,statuses,severities,severityBreakdown,executionBreakdown,defectStatusBreakdown,fetch:async()=>({ok,json:async()=>payload}),console:{error(){}}});
   dom.window.HTMLElement.prototype.scrollIntoView=function(){};
   vm.runInContext(script,dom.getInternalVMContext(),{filename:fileURLToPath(new URL('../app.js',import.meta.url))});
   await new Promise(resolve=>setImmediate(resolve));
@@ -96,6 +96,7 @@ test('severity drilldowns, every severity/group pair, scope synchronization and 
     }
   }
   d.getElementById('severity-chart').click();
+  d.getElementById('severity-results').click();
   d.getElementById('filters').reset();assert.equal(d.getElementById('severity').value,'');assert(d.getElementById('severity').disabled);assert.equal(d.getElementById('chart-group').value,'');
   d.getElementById('view').value='findings';change('view');d.getElementById('severity').value='critical';change('severity');
   for(const outcome of statuses){d.getElementById('status').value=outcome;change('status');assert.equal(d.querySelectorAll('#results details').length,data.uniqueFindings.filter(f=>f.severity==='critical'&&f.status===outcome).length);}
@@ -104,4 +105,24 @@ test('severity drilldowns, every severity/group pair, scope synchronization and 
 test('empty chart scope never shows NaN or fabricated progress',async()=>{
   const empty={...data,groups:[{...data.groups[0],scenarios:[],findings:[]}],uniqueFindings:[]};const dom=await page(empty);
   assert.equal(dom.window.document.querySelector('[role=progressbar]').getAttribute('aria-valuenow'),'0.0');assert(!dom.window.document.body.textContent.includes('NaN'));dom.window.close();
+});
+test('latest status pie excludes questions and reconciles all defect outcomes',()=>{
+  const pie=defectStatusBreakdown(data.uniqueFindings);
+  assert.equal(pie.reduce((n,d)=>n+d.count,0),96);
+  assert.equal(pie.find(d=>d.status==='PASS').count,20);
+  assert.equal(pie.find(d=>d.status==='NOT REPORTED').count,53);
+  assert(Math.abs(pie.reduce((n,d)=>n+d.percent,0)-100)<1e-10);
+  assert(defectStatusBreakdown([]).every(d=>d.percent===0));
+});
+test('each status pie drilldown matches defects-only list and preserves group scope',async()=>{
+  const dom=await page();const d=dom.window.document;
+  for(const group of ['',...data.groups.map(g=>g.name)]){
+    d.getElementById('chart-group').value=group;d.getElementById('chart-group').dispatchEvent(new dom.window.Event('change',{bubbles:true}));
+    for(const outcome of [...statuses,'CONFLICT']){
+      d.querySelector(`[data-outcome="${outcome}"]`).click();
+      assert.equal(d.getElementById('view').value,'defects');assert.equal(d.getElementById('status').value,outcome);
+      assert.equal(d.querySelectorAll('#results details').length,data.uniqueFindings.filter(f=>f.type==='Defect'&&f.status===outcome&&(!group||f.groups.includes(group))).length);
+    }
+  }
+  d.getElementById('filters').reset();assert.equal(d.getElementById('view').value,'scenarios');dom.window.close();
 });

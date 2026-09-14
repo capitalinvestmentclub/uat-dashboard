@@ -4,7 +4,8 @@ One summary for ten published E2E reports. Static HTML/CSS/JavaScript; no produc
 
 ## Severity and execution analytics
 
-- Severity doughnut shows each severity's share of unique findings (including gaps/questions). Its labeled legend opens matching finding results.
+- The doughnut shows latest available verification status of unique defects only. Fixed means the recorded targeted retest passed; it does not imply full-scenario closure. Click a status to open matching defects. Gaps and questions are excluded from this chart.
+- Historical severity remains available through the severity/result table and severity filter. Chart percentages are rounded to one decimal place.
 - Severity filter combines with group, result and search in Findings view; it is disabled and cleared in Scenarios view.
 - The severity/result table separates latest targeted PASS, FAIL, PARTIAL, BLOCKED, NOT RUN, NOT REPORTED and CONFLICT outcomes.
 - Chart test group and evidence test group stay synchronized. Charts deliberately ignore result/search/severity filters so their denominators remain clear.

@@ -1,5 +1,11 @@
 # Dashboard validation — 14 September 2026 UTC
 
+## Latest defect status correction
+
+The pie now uses latest normalized retest outcomes, not historical severity. Public sources were refreshed before validation. Its 96 unique defects reconcile to 20 PASS (Fixed · retest passed), 1 FAIL, 12 PARTIAL, 1 BLOCKED, 9 NOT RUN and 53 NOT REPORTED (Awaiting verification). Gaps/questions are excluded. Missing verification never becomes a claim that merged code remains broken or is fixed.
+
+New regression tests cover defect-only denominators, empty datasets, each status across every group, drilldown counts and reset. All seven chart-status buttons exercised in real Chrome; fixed drilldown returns exactly 20 defects. Six requested Chrome sizes visually inspected without document overflow. Severity drilldowns remain in the table; original scenario results remain unchanged.
+
 Scope: this summary website, not a new product UAT run.
 
 - Fresh remote source snapshots: 10 reports, 198 scenario rows, 118 unique findings.

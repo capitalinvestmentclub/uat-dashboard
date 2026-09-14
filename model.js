@@ -46,6 +46,12 @@ export function matches(row,query,group,outcome) {
   return (!group || row.group===group || row.groups?.includes(group)) && (!outcome || row.status===outcome) && `${row.id} ${row.title} ${row.summary || ''} ${row.observation || ''}`.toLowerCase().includes(query.trim().toLowerCase());
 }
 export const severities=['critical','high','medium','low','not reported'];
+export const defectStatuses=[['PASS','Fixed · retest passed'],['FAIL','Still failing'],['PARTIAL','Partially verified'],['BLOCKED','Verification blocked'],['NOT RUN','Retest not run'],['NOT REPORTED','Awaiting verification'],['CONFLICT','Conflicting evidence']];
+export function defectStatusBreakdown(findings) {
+  const defects=findings.filter(f=>f.type==='Defect');
+  return defectStatuses.map(([status,label])=>({status,label,count:defects.filter(f=>f.status===status).length,
+    percent:defects.length?defects.filter(f=>f.status===status).length/defects.length*100:0}));
+}
 export function severityBreakdown(findings) {
   return severities.map(severity=>{
     const rows=findings.filter(f=>(severities.includes(f.severity)?f.severity:'not reported')===severity);
