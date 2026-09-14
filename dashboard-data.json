@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T20:08:51.613Z",
+  "generatedAt": "2026-09-14T20:25:09.532Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -4652,7 +4652,7 @@
     {
       "name": "Grantor",
       "repo": "grantor-uat-report",
-      "commit": "a65a1f4c0deb88cde9af89548d7b5e8712decbef",
+      "commit": "ed610075a0da94e0a937e06aef73a1a992198c8a",
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5147,48 +5147,199 @@
           "scenario": "GRT-011, GRT-019",
           "summary": "The public panel clearly labels the grant closed while still exposing Apply and an inconsistent application deadline.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Signed-out public page displays status closed and past deadline for controlled grant, yet Apply for this grant remains enabled at every size. Activation sends guest to login with apply=1 for that closed grant. No application submitted.",
+          "status": "PASS",
+          "retestSummary": "Original closed grant fresh reload at all six exact CSS sizes shows disabled Applications Closed and no application dialog for guest and normally signed-in nonowner Investor, using Pitcher Chrome. Main reviewed six guest images; register agent reviewed six nonowner images. Targeted original closed-Apply defect only, not contribution or full grant lifecycle certification.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "FAIL",
-              "summary": "Signed-out public page displays status closed and past deadline for controlled grant, yet Apply for this grant remains enabled at every size. Activation sends guest to login with apply=1 for that closed grant. No application submitted.",
-              "evidence": []
+              "measuredCss": "360x800",
+              "status": "PASS",
+              "summary": "Reload closed grant signed out; Verify disabled Applications Closed; Verify no application dialog; Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog. PASS main guest and register nonowner screenshot review; synthetic public content only",
+              "steps": [
+                "Reload closed grant signed out",
+                "Verify disabled Applications Closed",
+                "Verify no application dialog",
+                "Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-360x800.png",
+                  "label": "GRT011-guest-360x800"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-360x800.png",
+                  "label": "GRT011-nonowner-360x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:10:15.922Z"
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "Signed-out public page displays status closed and past deadline for controlled grant, yet Apply for this grant remains enabled at every size. Activation sends guest to login with apply=1 for that closed grant. No application submitted.",
-              "evidence": []
+              "measuredCss": "390x844",
+              "status": "PASS",
+              "summary": "Reload closed grant signed out; Verify disabled Applications Closed; Verify no application dialog; Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog. PASS main guest and register nonowner screenshot review; synthetic public content only",
+              "steps": [
+                "Reload closed grant signed out",
+                "Verify disabled Applications Closed",
+                "Verify no application dialog",
+                "Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-390x844.png",
+                  "label": "GRT011-guest-390x844"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-390x844.png",
+                  "label": "GRT011-nonowner-390x844"
+                }
+              ],
+              "observedAt": "2026-09-14T20:10:15.922Z"
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Signed-out public page displays status closed and past deadline for controlled grant, yet Apply for this grant remains enabled at every size. Activation sends guest to login with apply=1 for that closed grant. No application submitted.",
-              "evidence": []
+              "measuredCss": "768x1024",
+              "status": "PASS",
+              "summary": "Reload closed grant signed out; Verify disabled Applications Closed; Verify no application dialog; Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog. PASS main guest and register nonowner screenshot review; synthetic public content only",
+              "steps": [
+                "Reload closed grant signed out",
+                "Verify disabled Applications Closed",
+                "Verify no application dialog",
+                "Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-768x1024.png",
+                  "label": "GRT011-guest-768x1024"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-768x1024.png",
+                  "label": "GRT011-nonowner-768x1024"
+                }
+              ],
+              "observedAt": "2026-09-14T20:10:15.922Z"
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "Signed-out public page displays status closed and past deadline for controlled grant, yet Apply for this grant remains enabled at every size. Activation sends guest to login with apply=1 for that closed grant. No application submitted.",
-              "evidence": []
+              "measuredCss": "1024x768",
+              "status": "PASS",
+              "summary": "Reload closed grant signed out; Verify disabled Applications Closed; Verify no application dialog; Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog. PASS main guest and register nonowner screenshot review; synthetic public content only",
+              "steps": [
+                "Reload closed grant signed out",
+                "Verify disabled Applications Closed",
+                "Verify no application dialog",
+                "Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-1024x768.png",
+                  "label": "GRT011-guest-1024x768"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-1024x768.png",
+                  "label": "GRT011-nonowner-1024x768"
+                }
+              ],
+              "observedAt": "2026-09-14T20:10:15.922Z"
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "Signed-out public page displays status closed and past deadline for controlled grant, yet Apply for this grant remains enabled at every size. Activation sends guest to login with apply=1 for that closed grant. No application submitted.",
-              "evidence": []
+              "measuredCss": "1280x800",
+              "status": "PASS",
+              "summary": "Reload closed grant signed out; Verify disabled Applications Closed; Verify no application dialog; Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog. PASS main guest and register nonowner screenshot review; synthetic public content only",
+              "steps": [
+                "Reload closed grant signed out",
+                "Verify disabled Applications Closed",
+                "Verify no application dialog",
+                "Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-1280x800.png",
+                  "label": "GRT011-guest-1280x800"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-1280x800.png",
+                  "label": "GRT011-nonowner-1280x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:10:15.922Z"
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "Signed-out public page displays status closed and past deadline for controlled grant, yet Apply for this grant remains enabled at every size. Activation sends guest to login with apply=1 for that closed grant. No application submitted.",
-              "evidence": []
+              "measuredCss": "1440x900",
+              "status": "PASS",
+              "summary": "Reload closed grant signed out; Verify disabled Applications Closed; Verify no application dialog; Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog. PASS main guest and register nonowner screenshot review; synthetic public content only",
+              "steps": [
+                "Reload closed grant signed out",
+                "Verify disabled Applications Closed",
+                "Verify no application dialog",
+                "Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-1440x900.png",
+                  "label": "GRT011-guest-1440x900"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-1440x900.png",
+                  "label": "GRT011-nonowner-1440x900"
+                }
+              ],
+              "observedAt": "2026-09-14T20:10:15.922Z"
             }
           ],
-          "limitations": "Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Two targeted original grant defects only; no full grant suite or financial movement certification. Other outcomes preserved.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-360x800.png",
+              "label": "GRT011-guest-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-360x800.png",
+              "label": "GRT011-nonowner-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-390x844.png",
+              "label": "GRT011-guest-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-390x844.png",
+              "label": "GRT011-nonowner-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-768x1024.png",
+              "label": "GRT011-guest-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-768x1024.png",
+              "label": "GRT011-nonowner-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-1024x768.png",
+              "label": "GRT011-guest-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-1024x768.png",
+              "label": "GRT011-nonowner-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-1280x800.png",
+              "label": "GRT011-guest-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-1280x800.png",
+              "label": "GRT011-nonowner-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-1440x900.png",
+              "label": "GRT011-guest-1440x900"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-1440x900.png",
+              "label": "GRT011-nonowner-1440x900"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
           "group": "Grantor"
         },
@@ -5377,48 +5528,161 @@
           "scenario": "GRT-021, GRT-022",
           "summary": "Details says Tracking Enabled: No and Reporting Required: No, while Overview says monthly schedule is active; the closed grant shows $5,000 disbursed, $5,000 unused and no reports.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Closed controlled grant UAT Guest Privacy 202608190454 shows Tracking Enabled No, Reporting Required No, Settings Inactive in Details, while Overview states monthly schedule is active and Reporting cadence is current. Contradiction verified at all six sizes.",
+          "status": "PASS",
+          "retestSummary": "Original owned closed grant Details and Overview exercised at all six measured CSS sizes. Fresh scrolled screenshots show Tracking Enabled No / Reporting Required No / Settings Inactive agreeing with Reporting disabled / No recurring reporting obligations. Old cadence-current absent. All twelve visible reporting screenshots independently visually reviewed. Targeted original reporting contradiction PASS, not financial reconciliation or full grant suite.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "FAIL",
-              "summary": "Closed controlled grant UAT Guest Privacy 202608190454 shows Tracking Enabled No, Reporting Required No, Settings Inactive in Details, while Overview states monthly schedule is active and Reporting cadence is current. Contradiction verified at all six sizes.",
-              "evidence": []
+              "measuredCss": "360x800",
+              "status": "PASS",
+              "summary": "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive; Open Overview and check Reporting disabled / no recurring obligations / no cadence-current; Scroll reporting paragraph into actual viewport and visually inspect text. PASS: visible disabled reporting and no recurring obligations",
+              "steps": [
+                "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive",
+                "Open Overview and check Reporting disabled / no recurring obligations / no cadence-current",
+                "Scroll reporting paragraph into actual viewport and visually inspect text"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-details-360x800.png",
+                  "label": "GRT021-visible-details-360x800"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-360x800.png",
+                  "label": "GRT021-visible-overview-360x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:20:11.098Z"
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "Closed controlled grant UAT Guest Privacy 202608190454 shows Tracking Enabled No, Reporting Required No, Settings Inactive in Details, while Overview states monthly schedule is active and Reporting cadence is current. Contradiction verified at all six sizes.",
-              "evidence": []
+              "measuredCss": "390x844",
+              "status": "PASS",
+              "summary": "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive; Open Overview and check Reporting disabled / no recurring obligations / no cadence-current; Scroll reporting paragraph into actual viewport and visually inspect text. PASS: visible disabled reporting and no recurring obligations",
+              "steps": [
+                "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive",
+                "Open Overview and check Reporting disabled / no recurring obligations / no cadence-current",
+                "Scroll reporting paragraph into actual viewport and visually inspect text"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-details-390x844.png",
+                  "label": "GRT021-visible-details-390x844"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-390x844.png",
+                  "label": "GRT021-visible-overview-390x844"
+                }
+              ],
+              "observedAt": "2026-09-14T20:20:11.098Z"
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Closed controlled grant UAT Guest Privacy 202608190454 shows Tracking Enabled No, Reporting Required No, Settings Inactive in Details, while Overview states monthly schedule is active and Reporting cadence is current. Contradiction verified at all six sizes.",
-              "evidence": []
+              "measuredCss": "768x1024",
+              "status": "PASS",
+              "summary": "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive; Open Overview and check Reporting disabled / no recurring obligations / no cadence-current; Scroll reporting paragraph into actual viewport and visually inspect text. PASS: visible disabled reporting and no recurring obligations",
+              "steps": [
+                "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive",
+                "Open Overview and check Reporting disabled / no recurring obligations / no cadence-current",
+                "Scroll reporting paragraph into actual viewport and visually inspect text"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-768x1024.png",
+                  "label": "GRT021-visible-overview-768x1024"
+                }
+              ],
+              "observedAt": "2026-09-14T20:20:11.098Z"
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "Closed controlled grant UAT Guest Privacy 202608190454 shows Tracking Enabled No, Reporting Required No, Settings Inactive in Details, while Overview states monthly schedule is active and Reporting cadence is current. Contradiction verified at all six sizes.",
-              "evidence": []
+              "measuredCss": "1024x768",
+              "status": "PASS",
+              "summary": "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive; Open Overview and check Reporting disabled / no recurring obligations / no cadence-current; Scroll reporting paragraph into actual viewport and visually inspect text. PASS: visible disabled reporting and no recurring obligations",
+              "steps": [
+                "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive",
+                "Open Overview and check Reporting disabled / no recurring obligations / no cadence-current",
+                "Scroll reporting paragraph into actual viewport and visually inspect text"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-1024x768.png",
+                  "label": "GRT021-visible-overview-1024x768"
+                }
+              ],
+              "observedAt": "2026-09-14T20:20:11.098Z"
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "Closed controlled grant UAT Guest Privacy 202608190454 shows Tracking Enabled No, Reporting Required No, Settings Inactive in Details, while Overview states monthly schedule is active and Reporting cadence is current. Contradiction verified at all six sizes.",
-              "evidence": []
+              "measuredCss": "1280x800",
+              "status": "PASS",
+              "summary": "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive; Open Overview and check Reporting disabled / no recurring obligations / no cadence-current; Scroll reporting paragraph into actual viewport and visually inspect text. PASS: visible disabled reporting and no recurring obligations",
+              "steps": [
+                "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive",
+                "Open Overview and check Reporting disabled / no recurring obligations / no cadence-current",
+                "Scroll reporting paragraph into actual viewport and visually inspect text"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-1280x800.png",
+                  "label": "GRT021-visible-overview-1280x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:20:11.098Z"
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "Closed controlled grant UAT Guest Privacy 202608190454 shows Tracking Enabled No, Reporting Required No, Settings Inactive in Details, while Overview states monthly schedule is active and Reporting cadence is current. Contradiction verified at all six sizes.",
-              "evidence": []
+              "measuredCss": "1440x900",
+              "status": "PASS",
+              "summary": "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive; Open Overview and check Reporting disabled / no recurring obligations / no cadence-current; Scroll reporting paragraph into actual viewport and visually inspect text. PASS: visible disabled reporting and no recurring obligations",
+              "steps": [
+                "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive",
+                "Open Overview and check Reporting disabled / no recurring obligations / no cadence-current",
+                "Scroll reporting paragraph into actual viewport and visually inspect text"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-1440x900.png",
+                  "label": "GRT021-visible-overview-1440x900"
+                }
+              ],
+              "observedAt": "2026-09-14T20:20:11.098Z"
             }
           ],
-          "limitations": "Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Two targeted original grant defects only; no full grant suite or financial movement certification. Other outcomes preserved.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-details-360x800.png",
+              "label": "GRT021-visible-details-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-360x800.png",
+              "label": "GRT021-visible-overview-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-details-390x844.png",
+              "label": "GRT021-visible-details-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-390x844.png",
+              "label": "GRT021-visible-overview-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-768x1024.png",
+              "label": "GRT021-visible-overview-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-1024x768.png",
+              "label": "GRT021-visible-overview-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-1280x800.png",
+              "label": "GRT021-visible-overview-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-1440x900.png",
+              "label": "GRT021-visible-overview-1440x900"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
           "group": "Grantor"
         },
@@ -5440,9 +5704,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-merged-refund-targeted",
-        "updatedAt": "2026-09-14T18:37:09.758Z",
-        "state": "RETEST PARTIAL — one new merged-release cloud PASS; other prior outcomes retained",
+        "runId": "2026-09-14-close37-grant-verified",
+        "updatedAt": "2026-09-14T20:24:10.030Z",
+        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
             "version": "auth-34878846169-1",
@@ -5459,8 +5723,8 @@
         },
         "repairBatch": {
           "runId": "2026-09-14-merged-deployed-repair",
-          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
-          "executionMode": "real-api-local",
+          "state": "MERGED AND LIVE — targeted cloud verification progressing",
+          "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
             "360×800",
@@ -5491,9 +5755,9 @@
             },
             {
               "id": "GRT011-CLOSED-001",
-              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
-              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
-              "cloudRetestStatus": "PENDING"
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "summary": "Original closed grant fresh reload at all six exact CSS sizes shows disabled Applications Closed and no application dialog for guest and normally signed-in nonowner Investor, using Pitcher Chrome. Main reviewed six guest images; register agent reviewed six nonowner images. Targeted original closed-Apply defect only, not contribution or full grant lifecycle certification.",
+              "cloudRetestStatus": "PASS"
             },
             {
               "id": "GRT020-BAL-001",
@@ -5503,12 +5767,12 @@
             },
             {
               "id": "GRT021-REPORT-001",
-              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
-              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
-              "cloudRetestStatus": "PENDING"
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "summary": "Original owned closed grant Details and Overview exercised at all six measured CSS sizes. Fresh scrolled screenshots show Tracking Enabled No / Reporting Required No / Settings Inactive agreeing with Reporting disabled / No recurring reporting obligations. Old cadence-current absent. All twelve visible reporting screenshots independently visually reviewed. Targeted original reporting contradiction PASS, not financial reconciliation or full grant suite.",
+              "cloudRetestStatus": "PASS"
             }
           ],
-          "updatedAt": "2026-09-14T18:36:19.144Z",
+          "updatedAt": "2026-09-14T20:24:10.030Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
             "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
@@ -5531,7 +5795,7 @@
               "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "releaseGate": "Recorded merge commits are live. Cloud closure below is limited to explicit targeted results with six measured CSS viewport outcomes; merged code alone never closes other findings.",
           "mergeCommits": {
             "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
             "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
@@ -5564,9 +5828,11 @@
               "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
               "promotionRun": "34880842679",
               "status": "LIVE"
-            }
+            },
+            "buildId": "yU2MSQuhYYpfh4uHJUpxd",
+            "verifiedBy": "/root"
           },
-          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-grant-verified: GRT011-CLOSED-001 PASS, GRT021-REPORT-001 PASS. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
@@ -16246,48 +16512,199 @@
       "scenario": "GRT-011, GRT-019",
       "summary": "The public panel clearly labels the grant closed while still exposing Apply and an inconsistent application deadline.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Signed-out public page displays status closed and past deadline for controlled grant, yet Apply for this grant remains enabled at every size. Activation sends guest to login with apply=1 for that closed grant. No application submitted.",
+      "status": "PASS",
+      "retestSummary": "Original closed grant fresh reload at all six exact CSS sizes shows disabled Applications Closed and no application dialog for guest and normally signed-in nonowner Investor, using Pitcher Chrome. Main reviewed six guest images; register agent reviewed six nonowner images. Targeted original closed-Apply defect only, not contribution or full grant lifecycle certification.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "FAIL",
-          "summary": "Signed-out public page displays status closed and past deadline for controlled grant, yet Apply for this grant remains enabled at every size. Activation sends guest to login with apply=1 for that closed grant. No application submitted.",
-          "evidence": []
+          "measuredCss": "360x800",
+          "status": "PASS",
+          "summary": "Reload closed grant signed out; Verify disabled Applications Closed; Verify no application dialog; Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog. PASS main guest and register nonowner screenshot review; synthetic public content only",
+          "steps": [
+            "Reload closed grant signed out",
+            "Verify disabled Applications Closed",
+            "Verify no application dialog",
+            "Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-360x800.png",
+              "label": "GRT011-guest-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-360x800.png",
+              "label": "GRT011-nonowner-360x800"
+            }
+          ],
+          "observedAt": "2026-09-14T20:10:15.922Z"
         },
         {
           "size": "390×844",
-          "status": "FAIL",
-          "summary": "Signed-out public page displays status closed and past deadline for controlled grant, yet Apply for this grant remains enabled at every size. Activation sends guest to login with apply=1 for that closed grant. No application submitted.",
-          "evidence": []
+          "measuredCss": "390x844",
+          "status": "PASS",
+          "summary": "Reload closed grant signed out; Verify disabled Applications Closed; Verify no application dialog; Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog. PASS main guest and register nonowner screenshot review; synthetic public content only",
+          "steps": [
+            "Reload closed grant signed out",
+            "Verify disabled Applications Closed",
+            "Verify no application dialog",
+            "Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-390x844.png",
+              "label": "GRT011-guest-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-390x844.png",
+              "label": "GRT011-nonowner-390x844"
+            }
+          ],
+          "observedAt": "2026-09-14T20:10:15.922Z"
         },
         {
           "size": "768×1024",
-          "status": "FAIL",
-          "summary": "Signed-out public page displays status closed and past deadline for controlled grant, yet Apply for this grant remains enabled at every size. Activation sends guest to login with apply=1 for that closed grant. No application submitted.",
-          "evidence": []
+          "measuredCss": "768x1024",
+          "status": "PASS",
+          "summary": "Reload closed grant signed out; Verify disabled Applications Closed; Verify no application dialog; Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog. PASS main guest and register nonowner screenshot review; synthetic public content only",
+          "steps": [
+            "Reload closed grant signed out",
+            "Verify disabled Applications Closed",
+            "Verify no application dialog",
+            "Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-768x1024.png",
+              "label": "GRT011-guest-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-768x1024.png",
+              "label": "GRT011-nonowner-768x1024"
+            }
+          ],
+          "observedAt": "2026-09-14T20:10:15.922Z"
         },
         {
           "size": "1024×768",
-          "status": "FAIL",
-          "summary": "Signed-out public page displays status closed and past deadline for controlled grant, yet Apply for this grant remains enabled at every size. Activation sends guest to login with apply=1 for that closed grant. No application submitted.",
-          "evidence": []
+          "measuredCss": "1024x768",
+          "status": "PASS",
+          "summary": "Reload closed grant signed out; Verify disabled Applications Closed; Verify no application dialog; Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog. PASS main guest and register nonowner screenshot review; synthetic public content only",
+          "steps": [
+            "Reload closed grant signed out",
+            "Verify disabled Applications Closed",
+            "Verify no application dialog",
+            "Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-1024x768.png",
+              "label": "GRT011-guest-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-1024x768.png",
+              "label": "GRT011-nonowner-1024x768"
+            }
+          ],
+          "observedAt": "2026-09-14T20:10:15.922Z"
         },
         {
           "size": "1280×800",
-          "status": "FAIL",
-          "summary": "Signed-out public page displays status closed and past deadline for controlled grant, yet Apply for this grant remains enabled at every size. Activation sends guest to login with apply=1 for that closed grant. No application submitted.",
-          "evidence": []
+          "measuredCss": "1280x800",
+          "status": "PASS",
+          "summary": "Reload closed grant signed out; Verify disabled Applications Closed; Verify no application dialog; Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog. PASS main guest and register nonowner screenshot review; synthetic public content only",
+          "steps": [
+            "Reload closed grant signed out",
+            "Verify disabled Applications Closed",
+            "Verify no application dialog",
+            "Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-1280x800.png",
+              "label": "GRT011-guest-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-1280x800.png",
+              "label": "GRT011-nonowner-1280x800"
+            }
+          ],
+          "observedAt": "2026-09-14T20:10:15.922Z"
         },
         {
           "size": "1440×900",
-          "status": "FAIL",
-          "summary": "Signed-out public page displays status closed and past deadline for controlled grant, yet Apply for this grant remains enabled at every size. Activation sends guest to login with apply=1 for that closed grant. No application submitted.",
-          "evidence": []
+          "measuredCss": "1440x900",
+          "status": "PASS",
+          "summary": "Reload closed grant signed out; Verify disabled Applications Closed; Verify no application dialog; Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog. PASS main guest and register nonowner screenshot review; synthetic public content only",
+          "steps": [
+            "Reload closed grant signed out",
+            "Verify disabled Applications Closed",
+            "Verify no application dialog",
+            "Normal Investor login, fresh closed grant reload and confirm Applications Closed disabled without application dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-1440x900.png",
+              "label": "GRT011-guest-1440x900"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-1440x900.png",
+              "label": "GRT011-nonowner-1440x900"
+            }
+          ],
+          "observedAt": "2026-09-14T20:10:15.922Z"
         }
       ],
-      "limitations": "Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Two targeted original grant defects only; no full grant suite or financial movement certification. Other outcomes preserved.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-360x800.png",
+          "label": "GRT011-guest-360x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-360x800.png",
+          "label": "GRT011-nonowner-360x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-390x844.png",
+          "label": "GRT011-guest-390x844"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-390x844.png",
+          "label": "GRT011-nonowner-390x844"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-768x1024.png",
+          "label": "GRT011-guest-768x1024"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-768x1024.png",
+          "label": "GRT011-nonowner-768x1024"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-1024x768.png",
+          "label": "GRT011-guest-1024x768"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-1024x768.png",
+          "label": "GRT011-nonowner-1024x768"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-1280x800.png",
+          "label": "GRT011-guest-1280x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-1280x800.png",
+          "label": "GRT011-nonowner-1280x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-guest-1440x900.png",
+          "label": "GRT011-guest-1440x900"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT011-nonowner-1440x900.png",
+          "label": "GRT011-nonowner-1440x900"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "group": "Grantor",
       "groups": [
@@ -16488,48 +16905,161 @@
       "scenario": "GRT-021, GRT-022",
       "summary": "Details says Tracking Enabled: No and Reporting Required: No, while Overview says monthly schedule is active; the closed grant shows $5,000 disbursed, $5,000 unused and no reports.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Closed controlled grant UAT Guest Privacy 202608190454 shows Tracking Enabled No, Reporting Required No, Settings Inactive in Details, while Overview states monthly schedule is active and Reporting cadence is current. Contradiction verified at all six sizes.",
+      "status": "PASS",
+      "retestSummary": "Original owned closed grant Details and Overview exercised at all six measured CSS sizes. Fresh scrolled screenshots show Tracking Enabled No / Reporting Required No / Settings Inactive agreeing with Reporting disabled / No recurring reporting obligations. Old cadence-current absent. All twelve visible reporting screenshots independently visually reviewed. Targeted original reporting contradiction PASS, not financial reconciliation or full grant suite.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "FAIL",
-          "summary": "Closed controlled grant UAT Guest Privacy 202608190454 shows Tracking Enabled No, Reporting Required No, Settings Inactive in Details, while Overview states monthly schedule is active and Reporting cadence is current. Contradiction verified at all six sizes.",
-          "evidence": []
+          "measuredCss": "360x800",
+          "status": "PASS",
+          "summary": "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive; Open Overview and check Reporting disabled / no recurring obligations / no cadence-current; Scroll reporting paragraph into actual viewport and visually inspect text. PASS: visible disabled reporting and no recurring obligations",
+          "steps": [
+            "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive",
+            "Open Overview and check Reporting disabled / no recurring obligations / no cadence-current",
+            "Scroll reporting paragraph into actual viewport and visually inspect text"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-details-360x800.png",
+              "label": "GRT021-visible-details-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-360x800.png",
+              "label": "GRT021-visible-overview-360x800"
+            }
+          ],
+          "observedAt": "2026-09-14T20:20:11.098Z"
         },
         {
           "size": "390×844",
-          "status": "FAIL",
-          "summary": "Closed controlled grant UAT Guest Privacy 202608190454 shows Tracking Enabled No, Reporting Required No, Settings Inactive in Details, while Overview states monthly schedule is active and Reporting cadence is current. Contradiction verified at all six sizes.",
-          "evidence": []
+          "measuredCss": "390x844",
+          "status": "PASS",
+          "summary": "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive; Open Overview and check Reporting disabled / no recurring obligations / no cadence-current; Scroll reporting paragraph into actual viewport and visually inspect text. PASS: visible disabled reporting and no recurring obligations",
+          "steps": [
+            "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive",
+            "Open Overview and check Reporting disabled / no recurring obligations / no cadence-current",
+            "Scroll reporting paragraph into actual viewport and visually inspect text"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-details-390x844.png",
+              "label": "GRT021-visible-details-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-390x844.png",
+              "label": "GRT021-visible-overview-390x844"
+            }
+          ],
+          "observedAt": "2026-09-14T20:20:11.098Z"
         },
         {
           "size": "768×1024",
-          "status": "FAIL",
-          "summary": "Closed controlled grant UAT Guest Privacy 202608190454 shows Tracking Enabled No, Reporting Required No, Settings Inactive in Details, while Overview states monthly schedule is active and Reporting cadence is current. Contradiction verified at all six sizes.",
-          "evidence": []
+          "measuredCss": "768x1024",
+          "status": "PASS",
+          "summary": "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive; Open Overview and check Reporting disabled / no recurring obligations / no cadence-current; Scroll reporting paragraph into actual viewport and visually inspect text. PASS: visible disabled reporting and no recurring obligations",
+          "steps": [
+            "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive",
+            "Open Overview and check Reporting disabled / no recurring obligations / no cadence-current",
+            "Scroll reporting paragraph into actual viewport and visually inspect text"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-768x1024.png",
+              "label": "GRT021-visible-overview-768x1024"
+            }
+          ],
+          "observedAt": "2026-09-14T20:20:11.098Z"
         },
         {
           "size": "1024×768",
-          "status": "FAIL",
-          "summary": "Closed controlled grant UAT Guest Privacy 202608190454 shows Tracking Enabled No, Reporting Required No, Settings Inactive in Details, while Overview states monthly schedule is active and Reporting cadence is current. Contradiction verified at all six sizes.",
-          "evidence": []
+          "measuredCss": "1024x768",
+          "status": "PASS",
+          "summary": "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive; Open Overview and check Reporting disabled / no recurring obligations / no cadence-current; Scroll reporting paragraph into actual viewport and visually inspect text. PASS: visible disabled reporting and no recurring obligations",
+          "steps": [
+            "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive",
+            "Open Overview and check Reporting disabled / no recurring obligations / no cadence-current",
+            "Scroll reporting paragraph into actual viewport and visually inspect text"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-1024x768.png",
+              "label": "GRT021-visible-overview-1024x768"
+            }
+          ],
+          "observedAt": "2026-09-14T20:20:11.098Z"
         },
         {
           "size": "1280×800",
-          "status": "FAIL",
-          "summary": "Closed controlled grant UAT Guest Privacy 202608190454 shows Tracking Enabled No, Reporting Required No, Settings Inactive in Details, while Overview states monthly schedule is active and Reporting cadence is current. Contradiction verified at all six sizes.",
-          "evidence": []
+          "measuredCss": "1280x800",
+          "status": "PASS",
+          "summary": "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive; Open Overview and check Reporting disabled / no recurring obligations / no cadence-current; Scroll reporting paragraph into actual viewport and visually inspect text. PASS: visible disabled reporting and no recurring obligations",
+          "steps": [
+            "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive",
+            "Open Overview and check Reporting disabled / no recurring obligations / no cadence-current",
+            "Scroll reporting paragraph into actual viewport and visually inspect text"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-1280x800.png",
+              "label": "GRT021-visible-overview-1280x800"
+            }
+          ],
+          "observedAt": "2026-09-14T20:20:11.098Z"
         },
         {
           "size": "1440×900",
-          "status": "FAIL",
-          "summary": "Closed controlled grant UAT Guest Privacy 202608190454 shows Tracking Enabled No, Reporting Required No, Settings Inactive in Details, while Overview states monthly schedule is active and Reporting cadence is current. Contradiction verified at all six sizes.",
-          "evidence": []
+          "measuredCss": "1440x900",
+          "status": "PASS",
+          "summary": "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive; Open Overview and check Reporting disabled / no recurring obligations / no cadence-current; Scroll reporting paragraph into actual viewport and visually inspect text. PASS: visible disabled reporting and no recurring obligations",
+          "steps": [
+            "Open Details and check Tracking Enabled No / Reporting Required No / Settings Inactive",
+            "Open Overview and check Reporting disabled / no recurring obligations / no cadence-current",
+            "Scroll reporting paragraph into actual viewport and visually inspect text"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-1440x900.png",
+              "label": "GRT021-visible-overview-1440x900"
+            }
+          ],
+          "observedAt": "2026-09-14T20:20:11.098Z"
         }
       ],
-      "limitations": "Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Two targeted original grant defects only; no full grant suite or financial movement certification. Other outcomes preserved.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-details-360x800.png",
+          "label": "GRT021-visible-details-360x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-360x800.png",
+          "label": "GRT021-visible-overview-360x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-details-390x844.png",
+          "label": "GRT021-visible-details-390x844"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-390x844.png",
+          "label": "GRT021-visible-overview-390x844"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-768x1024.png",
+          "label": "GRT021-visible-overview-768x1024"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-1024x768.png",
+          "label": "GRT021-visible-overview-1024x768"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-1280x800.png",
+          "label": "GRT021-visible-overview-1280x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-grant-verified/GRT021-visible-overview-1440x900.png",
+          "label": "GRT021-visible-overview-1440x900"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "group": "Grantor",
       "groups": [
