@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T22:36:32.113Z",
+  "generatedAt": "2026-09-14T23:58:47.868Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "694d6fb44a3f354046abc0d81b7c3529f9025f8d",
+      "commit": "0581d6e707f6189d92e6581d0b8b70bb4160dec4",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -3249,78 +3249,86 @@
           "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
+          "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Save original draft at 360 CSS pixels; Reload and observe October13 retained; Attempt Actions to reopen editor; Observe Actions clipped left349/right413 and no menu after click. FAIL; main visually reviewed clipped Actions",
+              "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
               "steps": [
-                "Save original draft at 360 CSS pixels",
-                "Reload and observe October13 retained",
-                "Attempt Actions to reopen editor",
-                "Observe Actions clipped left349/right413 and no menu after click"
+                "Open original private synthetic matrix draft with reporting enabled.",
+                "Save authored monthly reporting instructions.",
+                "Reload and reopen editor; authored text retained.",
+                "Compare Details, which substitutes generic monthly reporting sentence."
               ],
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
-                  "label": "GRT005-actions-clipped-360x800"
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+                  "label": "cloud-reporting-editor-reloaded-360.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+                  "label": "cloud-reporting-details-mismatch-360.png"
                 }
               ],
-              "observedAt": "2026-09-14T20:12:47.123Z"
+              "observedAt": "2026-09-14T23:56:33.561Z"
             },
             {
               "size": "390×844",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.561Z"
             },
             {
               "size": "768×1024",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.561Z"
             },
             {
               "size": "1024×768",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.561Z"
             },
             {
               "size": "1280×800",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.561Z"
             },
             {
               "size": "1440×900",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.561Z"
             }
           ],
-          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Screenshot corroborates clipped layout; measured bounds349..413 and failed normal click establish inaccessible Actions. Other five sizes unexecuted.",
+          "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
-              "label": "GRT005-actions-clipped-360x800"
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+              "label": "cloud-reporting-editor-reloaded-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+              "label": "cloud-reporting-details-mismatch-360.png"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
@@ -3335,47 +3343,88 @@
           "summary": "Disbursement detail shows a comment never entered and monthly ongoing reporting while tracking is disabled.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
+          "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
           "responsive": [
             {
               "size": "360×800",
+              "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+              "steps": [
+                "Open original private synthetic matrix draft with reporting enabled.",
+                "Save authored monthly reporting instructions.",
+                "Reload and reopen editor; authored text retained.",
+                "Compare Details, which substitutes generic monthly reporting sentence."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+                  "label": "cloud-reporting-editor-reloaded-360.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+                  "label": "cloud-reporting-details-mismatch-360.png"
+                }
+              ],
+              "observedAt": "2026-09-14T23:56:33.561Z"
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:33.561Z"
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:33.561Z"
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:33.561Z"
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:33.561Z"
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:33.561Z"
             }
           ],
-          "limitations": "Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+              "label": "cloud-reporting-editor-reloaded-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+              "label": "cloud-reporting-details-mismatch-360.png"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
           "group": "Admin"
         },
@@ -3880,14 +3929,14 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-reproduced-failures",
-        "updatedAt": "2026-09-14T21:24:37.042Z",
+        "runId": "2026-09-14-close37-live-authored-reporting",
+        "updatedAt": "2026-09-14T23:56:33.561Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "repairBatch": {
-          "runId": "2026-09-14-close37-merged",
-          "updatedAt": "2026-09-14T22:35:57.564Z",
-          "state": "BOTH PRs MERGED — staging pending; NOT promoted live",
-          "executionMode": "delivery-metadata-only",
+          "runId": "2026-09-14-close37-live-verification",
+          "updatedAt": "2026-09-14T23:57:05.464Z",
+          "state": "MERGED AND LIVE — exact-release verification in progress",
+          "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
             "360×800",
@@ -3898,10 +3947,10 @@
             "1440×900"
           ],
           "mergeStatus": "MERGED",
-          "deploymentStatus": "STAGING PENDING — NOT PROMOTED",
-          "cloudRetestStatus": "FAIL — latest acceptance unchanged; new-release retest pending",
+          "deploymentStatus": "LIVE — both services promoted",
+          "cloudRetestStatus": "IN PROGRESS — latest acceptance retained",
           "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "Frontend2346 and API738 merged with required checks passing and substantive review resolved. Stage-only development deployment is pending; no verified live promotion. Full local API suite remains unfinished. User deferred visual retest for merging only; latest cloud FAIL and per-size outcomes remain unchanged.",
+          "releaseGate": "API promoted successfully before frontend; both recorded exact merge versions now LIVE. Fresh browser checks are in progress. No automatic PASS from promotion; latest failures and incomplete branches stay open.",
           "candidates": {
             "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
             "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
@@ -3914,24 +3963,49 @@
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/738",
               "label": "API PR #738 — MERGED; de320d4539f95415a84a3928fce77ee16633ca8f"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34910303346",
+              "label": "API exact-version live promotion — SUCCESS"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34910414295",
+              "label": "Frontend exact-version live promotion — SUCCESS"
             }
           ],
-          "deployments": {},
+          "deployments": {
+            "webapp": {
+              "version": "auth-34904805743-1",
+              "commit": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
+              "promotionRun": "34910414295",
+              "promotedAt": "2026-09-14T23:48:05Z",
+              "status": "LIVE"
+            },
+            "webapi": {
+              "version": "policy-34904590658-1",
+              "commit": "de320d4539f95415a84a3928fce77ee16633ca8f",
+              "promotionRun": "34910303346",
+              "promotedAt": "2026-09-14T23:46:36Z",
+              "status": "LIVE"
+            },
+            "buildId": "rwHF6H9jwBWTjB7AhtWo1",
+            "verifiedBy": "/root"
+          },
           "frontendTests": "Required, focused and CodeQL checks passed; no open review threads. Local visual screenshot acceptance remains deferred, not passed.",
           "apiTests": "Required CI passed; substantive review resolved; nine review-delta tests passed. Full local suite last checkpoint250 of471 suites/3281 assertions passed,zero failures,still unfinished.",
           "findings": [
             {
               "id": "ADM053-REC-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
-              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
+              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
+              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
               "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-CFG-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
-              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
+              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
+              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
               "cloudRetestStatus": "FAIL"
             }
           ],
@@ -3939,14 +4013,15 @@
           "mergeCommits": {
             "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
             "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
-          }
+          },
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-live-authored-reporting: ADM053-CFG-001 FAIL, ADM053-REPORT-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
     {
       "name": "Organization",
       "repo": "organization-uat-report",
-      "commit": "f8eedceacb15ca8d73bfe86e41e8a4814db96dbd",
+      "commit": "00e6b9924b6bf5fac18cf6a813649a65c2b3bb63",
       "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -4873,9 +4948,9 @@
         "updatedAt": "2026-09-14T21:24:37.042Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "repairBatch": {
-          "runId": "2026-09-14-close37-merged",
-          "updatedAt": "2026-09-14T22:35:59.691Z",
-          "state": "BOTH PRs MERGED — staging pending; NOT promoted live",
+          "runId": "2026-09-14-close37-live-verification",
+          "updatedAt": "2026-09-14T23:57:06.351Z",
+          "state": "MERGED AND LIVE — exact-release verification in progress",
           "executionMode": "delivery-metadata-only",
           "browser": "Google Chrome",
           "sizes": [
@@ -4887,10 +4962,10 @@
             "1440×900"
           ],
           "mergeStatus": "MERGED",
-          "deploymentStatus": "STAGING PENDING — NOT PROMOTED",
-          "cloudRetestStatus": "FAIL — latest acceptance unchanged; new-release retest pending",
+          "deploymentStatus": "LIVE — both services promoted",
+          "cloudRetestStatus": "IN PROGRESS — latest acceptance retained",
           "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "Frontend2346 and API738 merged with required checks passing and substantive review resolved. Stage-only development deployment is pending; no verified live promotion. Full local API suite remains unfinished. User deferred visual retest for merging only; latest cloud FAIL and per-size outcomes remain unchanged.",
+          "releaseGate": "API promoted successfully before frontend; both recorded exact merge versions now LIVE. Fresh browser checks are in progress. No automatic PASS from promotion; latest failures and incomplete branches stay open.",
           "candidates": {
             "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
             "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
@@ -4903,17 +4978,42 @@
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/738",
               "label": "API PR #738 — MERGED; de320d4539f95415a84a3928fce77ee16633ca8f"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34910303346",
+              "label": "API exact-version live promotion — SUCCESS"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34910414295",
+              "label": "Frontend exact-version live promotion — SUCCESS"
             }
           ],
-          "deployments": {},
+          "deployments": {
+            "webapp": {
+              "version": "auth-34904805743-1",
+              "commit": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
+              "promotionRun": "34910414295",
+              "promotedAt": "2026-09-14T23:48:05Z",
+              "status": "LIVE"
+            },
+            "webapi": {
+              "version": "policy-34904590658-1",
+              "commit": "de320d4539f95415a84a3928fce77ee16633ca8f",
+              "promotionRun": "34910303346",
+              "promotedAt": "2026-09-14T23:46:36Z",
+              "status": "LIVE"
+            },
+            "buildId": "rwHF6H9jwBWTjB7AhtWo1",
+            "verifiedBy": "/root"
+          },
           "frontendTests": "Required, focused and CodeQL checks passed; no open review threads. Local visual screenshot acceptance remains deferred, not passed.",
           "apiTests": "Required CI passed; substantive review resolved; nine review-delta tests passed. Full local suite last checkpoint250 of471 suites/3281 assertions passed,zero failures,still unfinished.",
           "findings": [
             {
               "id": "ORG020-CAL-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
-              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
+              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
+              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
               "cloudRetestStatus": "FAIL"
             }
           ],
@@ -4928,7 +5028,7 @@
     {
       "name": "Grantor",
       "repo": "grantor-uat-report",
-      "commit": "1a4ae96df77c07b5afebc28177bc983d599b4947",
+      "commit": "cba8bc5ecdd42056f2089567041e5b678ce0b094",
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5318,78 +5418,86 @@
           "summary": "Funding-stage eligibility disappeared; invitation/public settings reverted; Even Split changed to Fixed Solo; reporting cadence disagreed with setup.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
+          "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Save original draft at 360 CSS pixels; Reload and observe October13 retained; Attempt Actions to reopen editor; Observe Actions clipped left349/right413 and no menu after click. FAIL; main visually reviewed clipped Actions",
+              "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
               "steps": [
-                "Save original draft at 360 CSS pixels",
-                "Reload and observe October13 retained",
-                "Attempt Actions to reopen editor",
-                "Observe Actions clipped left349/right413 and no menu after click"
+                "Open original private synthetic matrix draft with reporting enabled.",
+                "Save authored monthly reporting instructions.",
+                "Reload and reopen editor; authored text retained.",
+                "Compare Details, which substitutes generic monthly reporting sentence."
               ],
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
-                  "label": "GRT005-actions-clipped-360x800"
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+                  "label": "cloud-reporting-editor-reloaded-360.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+                  "label": "cloud-reporting-details-mismatch-360.png"
                 }
               ],
-              "observedAt": "2026-09-14T20:12:46.815Z"
+              "observedAt": "2026-09-14T23:56:33.229Z"
             },
             {
               "size": "390×844",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.229Z"
             },
             {
               "size": "768×1024",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.229Z"
             },
             {
               "size": "1024×768",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.229Z"
             },
             {
               "size": "1280×800",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.229Z"
             },
             {
               "size": "1440×900",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.229Z"
             }
           ],
-          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Screenshot corroborates clipped layout; measured bounds349..413 and failed normal click establish inaccessible Actions. Other five sizes unexecuted.",
+          "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
-              "label": "GRT005-actions-clipped-360x800"
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+              "label": "cloud-reporting-editor-reloaded-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+              "label": "cloud-reporting-details-mismatch-360.png"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
@@ -6045,8 +6153,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-reproduced-failures",
-        "updatedAt": "2026-09-14T21:24:37.042Z",
+        "runId": "2026-09-14-close37-live-authored-reporting",
+        "updatedAt": "2026-09-14T23:56:33.229Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -6063,10 +6171,10 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-close37-merged",
-          "updatedAt": "2026-09-14T22:36:00.550Z",
-          "state": "BOTH PRs MERGED — staging pending; NOT promoted live",
-          "executionMode": "delivery-metadata-only",
+          "runId": "2026-09-14-close37-live-verification",
+          "updatedAt": "2026-09-14T23:57:06.648Z",
+          "state": "MERGED AND LIVE — exact-release verification in progress",
+          "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
             "360×800",
@@ -6077,10 +6185,10 @@
             "1440×900"
           ],
           "mergeStatus": "MERGED",
-          "deploymentStatus": "STAGING PENDING — NOT PROMOTED",
-          "cloudRetestStatus": "FAIL — latest acceptance unchanged; new-release retest pending",
+          "deploymentStatus": "LIVE — both services promoted",
+          "cloudRetestStatus": "IN PROGRESS — latest acceptance retained",
           "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "Frontend2346 and API738 merged with required checks passing and substantive review resolved. Stage-only development deployment is pending; no verified live promotion. Full local API suite remains unfinished. User deferred visual retest for merging only; latest cloud FAIL and per-size outcomes remain unchanged.",
+          "releaseGate": "API promoted successfully before frontend; both recorded exact merge versions now LIVE. Fresh browser checks are in progress. No automatic PASS from promotion; latest failures and incomplete branches stay open.",
           "candidates": {
             "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
             "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
@@ -6093,24 +6201,49 @@
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/738",
               "label": "API PR #738 — MERGED; de320d4539f95415a84a3928fce77ee16633ca8f"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34910303346",
+              "label": "API exact-version live promotion — SUCCESS"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34910414295",
+              "label": "Frontend exact-version live promotion — SUCCESS"
             }
           ],
-          "deployments": {},
+          "deployments": {
+            "webapp": {
+              "version": "auth-34904805743-1",
+              "commit": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
+              "promotionRun": "34910414295",
+              "promotedAt": "2026-09-14T23:48:05Z",
+              "status": "LIVE"
+            },
+            "webapi": {
+              "version": "policy-34904590658-1",
+              "commit": "de320d4539f95415a84a3928fce77ee16633ca8f",
+              "promotionRun": "34910303346",
+              "promotedAt": "2026-09-14T23:46:36Z",
+              "status": "LIVE"
+            },
+            "buildId": "rwHF6H9jwBWTjB7AhtWo1",
+            "verifiedBy": "/root"
+          },
           "frontendTests": "Required, focused and CodeQL checks passed; no open review threads. Local visual screenshot acceptance remains deferred, not passed.",
           "apiTests": "Required CI passed; substantive review resolved; nine review-delta tests passed. Full local suite last checkpoint250 of471 suites/3281 assertions passed,zero failures,still unfinished.",
           "findings": [
             {
               "id": "GRT005-CFG-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
-              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
+              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
+              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
               "cloudRetestStatus": "FAIL"
             },
             {
               "id": "GRT017-REC-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
-              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
+              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
+              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
               "cloudRetestStatus": "FAIL"
             }
           ],
@@ -6118,7 +6251,8 @@
           "mergeCommits": {
             "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
             "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
-          }
+          },
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-live-authored-reporting: GRT005-CFG-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
@@ -10713,7 +10847,7 @@
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "2cad84b5993c20bc33f7ff8d1c93bbd1442b2395",
+      "commit": "217a5a3c19536226e84a47a50974822106934e40",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -11327,78 +11461,86 @@
           "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
+          "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Save original draft at 360 CSS pixels; Reload and observe October13 retained; Attempt Actions to reopen editor; Observe Actions clipped left349/right413 and no menu after click. FAIL; main visually reviewed clipped Actions",
+              "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
               "steps": [
-                "Save original draft at 360 CSS pixels",
-                "Reload and observe October13 retained",
-                "Attempt Actions to reopen editor",
-                "Observe Actions clipped left349/right413 and no menu after click"
+                "Open original private synthetic matrix draft with reporting enabled.",
+                "Save authored monthly reporting instructions.",
+                "Reload and reopen editor; authored text retained.",
+                "Compare Details, which substitutes generic monthly reporting sentence."
               ],
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
-                  "label": "GRT005-actions-clipped-360x800"
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+                  "label": "cloud-reporting-editor-reloaded-360.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+                  "label": "cloud-reporting-details-mismatch-360.png"
                 }
               ],
-              "observedAt": "2026-09-14T20:12:47.123Z"
+              "observedAt": "2026-09-14T23:56:33.929Z"
             },
             {
               "size": "390×844",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.929Z"
             },
             {
               "size": "768×1024",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.929Z"
             },
             {
               "size": "1024×768",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.929Z"
             },
             {
               "size": "1280×800",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.929Z"
             },
             {
               "size": "1440×900",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:33.929Z"
             }
           ],
-          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Screenshot corroborates clipped layout; measured bounds349..413 and failed normal click establish inaccessible Actions. Other five sizes unexecuted.",
+          "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
-              "label": "GRT005-actions-clipped-360x800"
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+              "label": "cloud-reporting-editor-reloaded-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+              "label": "cloud-reporting-details-mismatch-360.png"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
@@ -11413,47 +11555,88 @@
           "summary": "Disbursement detail shows a comment never entered and monthly ongoing reporting while tracking is disabled.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
+          "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
           "responsive": [
             {
               "size": "360×800",
+              "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+              "steps": [
+                "Open original private synthetic matrix draft with reporting enabled.",
+                "Save authored monthly reporting instructions.",
+                "Reload and reopen editor; authored text retained.",
+                "Compare Details, which substitutes generic monthly reporting sentence."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+                  "label": "cloud-reporting-editor-reloaded-360.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+                  "label": "cloud-reporting-details-mismatch-360.png"
+                }
+              ],
+              "observedAt": "2026-09-14T23:56:33.929Z"
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:33.929Z"
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:33.929Z"
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:33.929Z"
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:33.929Z"
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:33.929Z"
             }
           ],
-          "limitations": "Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+              "label": "cloud-reporting-editor-reloaded-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+              "label": "cloud-reporting-details-mismatch-360.png"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
           "group": "Super Admin"
         },
@@ -11958,8 +12141,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-reproduced-failures",
-        "updatedAt": "2026-09-14T21:24:37.042Z",
+        "runId": "2026-09-14-close37-live-authored-reporting",
+        "updatedAt": "2026-09-14T23:56:33.929Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -11976,10 +12159,10 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-close37-merged",
-          "updatedAt": "2026-09-14T22:35:58.267Z",
-          "state": "BOTH PRs MERGED — staging pending; NOT promoted live",
-          "executionMode": "delivery-metadata-only",
+          "runId": "2026-09-14-close37-live-verification",
+          "updatedAt": "2026-09-14T23:57:05.757Z",
+          "state": "MERGED AND LIVE — exact-release verification in progress",
+          "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
             "360×800",
@@ -11990,10 +12173,10 @@
             "1440×900"
           ],
           "mergeStatus": "MERGED",
-          "deploymentStatus": "STAGING PENDING — NOT PROMOTED",
-          "cloudRetestStatus": "FAIL — latest acceptance unchanged; new-release retest pending",
+          "deploymentStatus": "LIVE — both services promoted",
+          "cloudRetestStatus": "IN PROGRESS — latest acceptance retained",
           "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "Frontend2346 and API738 merged with required checks passing and substantive review resolved. Stage-only development deployment is pending; no verified live promotion. Full local API suite remains unfinished. User deferred visual retest for merging only; latest cloud FAIL and per-size outcomes remain unchanged.",
+          "releaseGate": "API promoted successfully before frontend; both recorded exact merge versions now LIVE. Fresh browser checks are in progress. No automatic PASS from promotion; latest failures and incomplete branches stay open.",
           "candidates": {
             "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
             "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
@@ -12006,24 +12189,49 @@
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/738",
               "label": "API PR #738 — MERGED; de320d4539f95415a84a3928fce77ee16633ca8f"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34910303346",
+              "label": "API exact-version live promotion — SUCCESS"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34910414295",
+              "label": "Frontend exact-version live promotion — SUCCESS"
             }
           ],
-          "deployments": {},
+          "deployments": {
+            "webapp": {
+              "version": "auth-34904805743-1",
+              "commit": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
+              "promotionRun": "34910414295",
+              "promotedAt": "2026-09-14T23:48:05Z",
+              "status": "LIVE"
+            },
+            "webapi": {
+              "version": "policy-34904590658-1",
+              "commit": "de320d4539f95415a84a3928fce77ee16633ca8f",
+              "promotionRun": "34910303346",
+              "promotedAt": "2026-09-14T23:46:36Z",
+              "status": "LIVE"
+            },
+            "buildId": "rwHF6H9jwBWTjB7AhtWo1",
+            "verifiedBy": "/root"
+          },
           "frontendTests": "Required, focused and CodeQL checks passed; no open review threads. Local visual screenshot acceptance remains deferred, not passed.",
           "apiTests": "Required CI passed; substantive review resolved; nine review-delta tests passed. Full local suite last checkpoint250 of471 suites/3281 assertions passed,zero failures,still unfinished.",
           "findings": [
             {
               "id": "ADM053-REC-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
-              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
+              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
+              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
               "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-CFG-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
-              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
+              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
+              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
               "cloudRetestStatus": "FAIL"
             }
           ],
@@ -12031,7 +12239,8 @@
           "mergeCommits": {
             "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
             "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
-          }
+          },
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-live-authored-reporting: ADM053-CFG-001 FAIL, ADM053-REPORT-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
@@ -12478,7 +12687,7 @@
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "4d5aa70ea63ba0a3f282eff4ca594338fd0ea5c6",
+      "commit": "b7a69622f6d1b6047185cd35ef6cbcf3c62f0f27",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -13065,78 +13274,86 @@
           "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
+          "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Save original draft at 360 CSS pixels; Reload and observe October13 retained; Attempt Actions to reopen editor; Observe Actions clipped left349/right413 and no menu after click. FAIL; main visually reviewed clipped Actions",
+              "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
               "steps": [
-                "Save original draft at 360 CSS pixels",
-                "Reload and observe October13 retained",
-                "Attempt Actions to reopen editor",
-                "Observe Actions clipped left349/right413 and no menu after click"
+                "Open original private synthetic matrix draft with reporting enabled.",
+                "Save authored monthly reporting instructions.",
+                "Reload and reopen editor; authored text retained.",
+                "Compare Details, which substitutes generic monthly reporting sentence."
               ],
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
-                  "label": "GRT005-actions-clipped-360x800"
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+                  "label": "cloud-reporting-editor-reloaded-360.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+                  "label": "cloud-reporting-details-mismatch-360.png"
                 }
               ],
-              "observedAt": "2026-09-14T20:12:47.123Z"
+              "observedAt": "2026-09-14T23:56:34.308Z"
             },
             {
               "size": "390×844",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:34.308Z"
             },
             {
               "size": "768×1024",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:34.308Z"
             },
             {
               "size": "1024×768",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:34.308Z"
             },
             {
               "size": "1280×800",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:34.308Z"
             },
             {
               "size": "1440×900",
               "measuredCss": null,
               "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
               "steps": [],
               "evidence": [],
-              "observedAt": null
+              "observedAt": "2026-09-14T23:56:34.308Z"
             }
           ],
-          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Screenshot corroborates clipped layout; measured bounds349..413 and failed normal click establish inaccessible Actions. Other five sizes unexecuted.",
+          "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
-              "label": "GRT005-actions-clipped-360x800"
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+              "label": "cloud-reporting-editor-reloaded-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+              "label": "cloud-reporting-details-mismatch-360.png"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
@@ -13151,47 +13368,88 @@
           "summary": "Disbursement detail shows a comment never entered and monthly ongoing reporting while tracking is disabled.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
+          "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
           "responsive": [
             {
               "size": "360×800",
+              "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+              "steps": [
+                "Open original private synthetic matrix draft with reporting enabled.",
+                "Save authored monthly reporting instructions.",
+                "Reload and reopen editor; authored text retained.",
+                "Compare Details, which substitutes generic monthly reporting sentence."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+                  "label": "cloud-reporting-editor-reloaded-360.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+                  "label": "cloud-reporting-details-mismatch-360.png"
+                }
+              ],
+              "observedAt": "2026-09-14T23:56:34.308Z"
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:34.308Z"
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:34.308Z"
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:34.308Z"
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:34.308Z"
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": "2026-09-14T23:56:34.308Z"
             }
           ],
-          "limitations": "Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+              "label": "cloud-reporting-editor-reloaded-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+              "label": "cloud-reporting-details-mismatch-360.png"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
           "group": "Cross-role Platform Journeys"
         },
@@ -13537,8 +13795,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-reproduced-failures",
-        "updatedAt": "2026-09-14T21:24:37.042Z",
+        "runId": "2026-09-14-close37-live-authored-reporting",
+        "updatedAt": "2026-09-14T23:56:34.308Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -13555,10 +13813,10 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-close37-merged",
-          "updatedAt": "2026-09-14T22:35:58.910Z",
-          "state": "BOTH PRs MERGED — staging pending; NOT promoted live",
-          "executionMode": "delivery-metadata-only",
+          "runId": "2026-09-14-close37-live-verification",
+          "updatedAt": "2026-09-14T23:57:06.053Z",
+          "state": "MERGED AND LIVE — exact-release verification in progress",
+          "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
             "360×800",
@@ -13569,10 +13827,10 @@
             "1440×900"
           ],
           "mergeStatus": "MERGED",
-          "deploymentStatus": "STAGING PENDING — NOT PROMOTED",
-          "cloudRetestStatus": "FAIL — latest acceptance unchanged; new-release retest pending",
+          "deploymentStatus": "LIVE — both services promoted",
+          "cloudRetestStatus": "IN PROGRESS — latest acceptance retained",
           "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "Frontend2346 and API738 merged with required checks passing and substantive review resolved. Stage-only development deployment is pending; no verified live promotion. Full local API suite remains unfinished. User deferred visual retest for merging only; latest cloud FAIL and per-size outcomes remain unchanged.",
+          "releaseGate": "API promoted successfully before frontend; both recorded exact merge versions now LIVE. Fresh browser checks are in progress. No automatic PASS from promotion; latest failures and incomplete branches stay open.",
           "candidates": {
             "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
             "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
@@ -13585,24 +13843,49 @@
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/738",
               "label": "API PR #738 — MERGED; de320d4539f95415a84a3928fce77ee16633ca8f"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34910303346",
+              "label": "API exact-version live promotion — SUCCESS"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34910414295",
+              "label": "Frontend exact-version live promotion — SUCCESS"
             }
           ],
-          "deployments": {},
+          "deployments": {
+            "webapp": {
+              "version": "auth-34904805743-1",
+              "commit": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
+              "promotionRun": "34910414295",
+              "promotedAt": "2026-09-14T23:48:05Z",
+              "status": "LIVE"
+            },
+            "webapi": {
+              "version": "policy-34904590658-1",
+              "commit": "de320d4539f95415a84a3928fce77ee16633ca8f",
+              "promotionRun": "34910303346",
+              "promotedAt": "2026-09-14T23:46:36Z",
+              "status": "LIVE"
+            },
+            "buildId": "rwHF6H9jwBWTjB7AhtWo1",
+            "verifiedBy": "/root"
+          },
           "frontendTests": "Required, focused and CodeQL checks passed; no open review threads. Local visual screenshot acceptance remains deferred, not passed.",
           "apiTests": "Required CI passed; substantive review resolved; nine review-delta tests passed. Full local suite last checkpoint250 of471 suites/3281 assertions passed,zero failures,still unfinished.",
           "findings": [
             {
               "id": "ADM053-REC-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
-              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
+              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
+              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
               "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-CFG-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_MERGED_AWAITING_DEPLOYMENT",
-              "summary": "Repair merged in recorded PR/SHA. Not promoted live; latest cloud acceptance remains FAIL. Exact-release visual retest remains pending.",
+              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
+              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
               "cloudRetestStatus": "FAIL"
             }
           ],
@@ -13610,7 +13893,8 @@
           "mergeCommits": {
             "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
             "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
-          }
+          },
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-live-authored-reporting: ADM053-CFG-001 FAIL, ADM053-REPORT-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     }
@@ -15513,78 +15797,86 @@
       "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
       "historicalStatus": "Open",
       "status": "FAIL",
-      "retestSummary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
+      "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
       "responsive": [
         {
           "size": "360×800",
           "measuredCss": "360x800",
           "status": "FAIL",
-          "summary": "Save original draft at 360 CSS pixels; Reload and observe October13 retained; Attempt Actions to reopen editor; Observe Actions clipped left349/right413 and no menu after click. FAIL; main visually reviewed clipped Actions",
+          "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
           "steps": [
-            "Save original draft at 360 CSS pixels",
-            "Reload and observe October13 retained",
-            "Attempt Actions to reopen editor",
-            "Observe Actions clipped left349/right413 and no menu after click"
+            "Open original private synthetic matrix draft with reporting enabled.",
+            "Save authored monthly reporting instructions.",
+            "Reload and reopen editor; authored text retained.",
+            "Compare Details, which substitutes generic monthly reporting sentence."
           ],
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
-              "label": "GRT005-actions-clipped-360x800"
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+              "label": "cloud-reporting-editor-reloaded-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+              "label": "cloud-reporting-details-mismatch-360.png"
             }
           ],
-          "observedAt": "2026-09-14T20:12:47.123Z"
+          "observedAt": "2026-09-14T23:56:33.561Z"
         },
         {
           "size": "390×844",
           "measuredCss": null,
           "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
           "steps": [],
           "evidence": [],
-          "observedAt": null
+          "observedAt": "2026-09-14T23:56:33.561Z"
         },
         {
           "size": "768×1024",
           "measuredCss": null,
           "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
           "steps": [],
           "evidence": [],
-          "observedAt": null
+          "observedAt": "2026-09-14T23:56:33.561Z"
         },
         {
           "size": "1024×768",
           "measuredCss": null,
           "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
           "steps": [],
           "evidence": [],
-          "observedAt": null
+          "observedAt": "2026-09-14T23:56:33.561Z"
         },
         {
           "size": "1280×800",
           "measuredCss": null,
           "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
           "steps": [],
           "evidence": [],
-          "observedAt": null
+          "observedAt": "2026-09-14T23:56:33.561Z"
         },
         {
           "size": "1440×900",
           "measuredCss": null,
           "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
           "steps": [],
           "evidence": [],
-          "observedAt": null
+          "observedAt": "2026-09-14T23:56:33.561Z"
         }
       ],
-      "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Screenshot corroborates clipped layout; measured bounds349..413 and failed normal click establish inaccessible Actions. Other five sizes unexecuted.",
+      "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
       "evidence": [
         {
-          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
-          "label": "GRT005-actions-clipped-360x800"
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+          "label": "cloud-reporting-editor-reloaded-360.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+          "label": "cloud-reporting-details-mismatch-360.png"
         }
       ],
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
@@ -15604,47 +15896,88 @@
       "summary": "Disbursement detail shows a comment never entered and monthly ongoing reporting while tracking is disabled.",
       "historicalStatus": "Open",
       "status": "FAIL",
-      "retestSummary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
+      "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
       "responsive": [
         {
           "size": "360×800",
+          "measuredCss": "360x800",
           "status": "FAIL",
-          "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-          "evidence": []
+          "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+          "steps": [
+            "Open original private synthetic matrix draft with reporting enabled.",
+            "Save authored monthly reporting instructions.",
+            "Reload and reopen editor; authored text retained.",
+            "Compare Details, which substitutes generic monthly reporting sentence."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+              "label": "cloud-reporting-editor-reloaded-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+              "label": "cloud-reporting-details-mismatch-360.png"
+            }
+          ],
+          "observedAt": "2026-09-14T23:56:33.561Z"
         },
         {
           "size": "390×844",
-          "status": "FAIL",
-          "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": "2026-09-14T23:56:33.561Z"
         },
         {
           "size": "768×1024",
-          "status": "FAIL",
-          "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": "2026-09-14T23:56:33.561Z"
         },
         {
           "size": "1024×768",
-          "status": "FAIL",
-          "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": "2026-09-14T23:56:33.561Z"
         },
         {
           "size": "1280×800",
-          "status": "FAIL",
-          "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": "2026-09-14T23:56:33.561Z"
         },
         {
           "size": "1440×900",
-          "status": "FAIL",
-          "summary": "Shared fresh grant evidence reproduces invented monthly reporting obligation despite authoritative Details showing tracking/reporting disabled. Same controlled grant and six viewport observations as GRT021-REPORT-001.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": "2026-09-14T23:56:33.561Z"
         }
       ],
-      "limitations": "Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+          "label": "cloud-reporting-editor-reloaded-360.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+          "label": "cloud-reporting-details-mismatch-360.png"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "group": "Admin",
       "groups": [
@@ -17100,78 +17433,86 @@
       "summary": "Funding-stage eligibility disappeared; invitation/public settings reverted; Even Split changed to Fixed Solo; reporting cadence disagreed with setup.",
       "historicalStatus": "Open",
       "status": "FAIL",
-      "retestSummary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
+      "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
       "responsive": [
         {
           "size": "360×800",
           "measuredCss": "360x800",
           "status": "FAIL",
-          "summary": "Save original draft at 360 CSS pixels; Reload and observe October13 retained; Attempt Actions to reopen editor; Observe Actions clipped left349/right413 and no menu after click. FAIL; main visually reviewed clipped Actions",
+          "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
           "steps": [
-            "Save original draft at 360 CSS pixels",
-            "Reload and observe October13 retained",
-            "Attempt Actions to reopen editor",
-            "Observe Actions clipped left349/right413 and no menu after click"
+            "Open original private synthetic matrix draft with reporting enabled.",
+            "Save authored monthly reporting instructions.",
+            "Reload and reopen editor; authored text retained.",
+            "Compare Details, which substitutes generic monthly reporting sentence."
           ],
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
-              "label": "GRT005-actions-clipped-360x800"
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+              "label": "cloud-reporting-editor-reloaded-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+              "label": "cloud-reporting-details-mismatch-360.png"
             }
           ],
-          "observedAt": "2026-09-14T20:12:46.815Z"
+          "observedAt": "2026-09-14T23:56:33.229Z"
         },
         {
           "size": "390×844",
           "measuredCss": null,
           "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
           "steps": [],
           "evidence": [],
-          "observedAt": null
+          "observedAt": "2026-09-14T23:56:33.229Z"
         },
         {
           "size": "768×1024",
           "measuredCss": null,
           "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
           "steps": [],
           "evidence": [],
-          "observedAt": null
+          "observedAt": "2026-09-14T23:56:33.229Z"
         },
         {
           "size": "1024×768",
           "measuredCss": null,
           "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
           "steps": [],
           "evidence": [],
-          "observedAt": null
+          "observedAt": "2026-09-14T23:56:33.229Z"
         },
         {
           "size": "1280×800",
           "measuredCss": null,
           "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
           "steps": [],
           "evidence": [],
-          "observedAt": null
+          "observedAt": "2026-09-14T23:56:33.229Z"
         },
         {
           "size": "1440×900",
           "measuredCss": null,
           "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
           "steps": [],
           "evidence": [],
-          "observedAt": null
+          "observedAt": "2026-09-14T23:56:33.229Z"
         }
       ],
-      "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Screenshot corroborates clipped layout; measured bounds349..413 and failed normal click establish inaccessible Actions. Other five sizes unexecuted.",
+      "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
       "evidence": [
         {
-          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
-          "label": "GRT005-actions-clipped-360x800"
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
+          "label": "cloud-reporting-editor-reloaded-360.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
+          "label": "cloud-reporting-details-mismatch-360.png"
         }
       ],
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
