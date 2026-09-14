@@ -2,6 +2,14 @@
 
 One summary for ten published E2E reports. Static HTML/CSS/JavaScript; no product API, private test data, runtime framework, or login required.
 
+## Severity and execution analytics
+
+- Severity doughnut shows each severity's share of unique findings (including gaps/questions). Its labeled legend opens matching finding results.
+- Severity filter combines with group, result and search in Findings view; it is disabled and cleared in Scenarios view.
+- The severity/result table separates latest targeted PASS, FAIL, PARTIAL, BLOCKED, NOT RUN, NOT REPORTED and CONFLICT outcomes.
+- Chart test group and evidence test group stay synchronized. Charts deliberately ignore result/search/severity filters so their denominators remain clear.
+- The read-only progress bar counts PASS/FAIL as executed to a reported outcome. PARTIAL, BLOCKED and NOT RUN remain separate; neither complete branch coverage nor six-size execution is inferred. An interactive slider would imply users can change test completion, so a progress bar is used instead.
+
 ## Refresh and validate
 
 Run `npm ci`, `npm run build`, `npm test`, then `npm start` for a local preview. Build requires Node 22+ and authenticated GitHub CLI (GitHub Actions supplies `GH_TOKEN`). Each source is pinned to a remote commit before retrieval. Any failed source request fails the build rather than publishing incomplete totals.

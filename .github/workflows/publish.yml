@@ -31,7 +31,7 @@ jobs:
       - name: Prepare static artifact
         run: |
           mkdir public
-          cp index.html style.css app.js model.js dashboard-data.json .nojekyll public/
+          cp index.html style.css charts.css app.js model.js dashboard-data.json .nojekyll public/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public

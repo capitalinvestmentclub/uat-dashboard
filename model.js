@@ -45,3 +45,18 @@ export function deduplicate(groups) {
 export function matches(row,query,group,outcome) {
   return (!group || row.group===group || row.groups?.includes(group)) && (!outcome || row.status===outcome) && `${row.id} ${row.title} ${row.summary || ''} ${row.observation || ''}`.toLowerCase().includes(query.trim().toLowerCase());
 }
+export const severities=['critical','high','medium','low','not reported'];
+export function severityBreakdown(findings) {
+  return severities.map(severity=>{
+    const rows=findings.filter(f=>(severities.includes(f.severity)?f.severity:'not reported')===severity);
+    return {severity,count:rows.length,percent:findings.length?rows.length/findings.length*100:0,
+      outcomes:Object.fromEntries([...statuses,'CONFLICT'].map(s=>[s,rows.filter(f=>f.status===s).length]))};
+  });
+}
+export function executionBreakdown(scenarios) {
+  const count=s=>scenarios.filter(r=>r.status===s).length;
+  const executed=count('PASS')+count('FAIL');
+  const partial=count('PARTIAL'),blocked=count('BLOCKED'),notRun=count('NOT RUN');
+  return {total:scenarios.length,executed,partial,blocked,notRun,unknown:scenarios.length-executed-partial-blocked-notRun,
+    percent:scenarios.length?executed/scenarios.length*100:0};
+}

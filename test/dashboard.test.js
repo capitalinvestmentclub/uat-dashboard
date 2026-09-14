@@ -4,13 +4,13 @@ import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
 import {JSDOM} from 'jsdom';
-import {normalizeGroup,deduplicate,matches,status,statuses} from '../model.js';
+import {normalizeGroup,deduplicate,matches,status,statuses,severities,severityBreakdown,executionBreakdown} from '../model.js';
 const data=JSON.parse(readFileSync(new URL('../dashboard-data.json',import.meta.url)));
 const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const script=readFileSync(new URL('../app.js',import.meta.url),'utf8').replace(/^import .*\n/,'').replace(/\bstatus\(/g,'normalizeStatus(');
 async function page(payload=data,ok=true){
   const dom=new JSDOM(html,{url:'https://example.com/',runScripts:'outside-only'});
-  Object.assign(dom.window,{matches,normalizeStatus:status,statuses,fetch:async()=>({ok,json:async()=>payload}),console:{error(){}}});
+  Object.assign(dom.window,{matches,normalizeStatus:status,statuses,severities,severityBreakdown,executionBreakdown,fetch:async()=>({ok,json:async()=>payload}),console:{error(){}}});
   dom.window.HTMLElement.prototype.scrollIntoView=function(){};
   vm.runInContext(script,dom.getInternalVMContext(),{filename:fileURLToPath(new URL('../app.js',import.meta.url))});
   await new Promise(resolve=>setImmediate(resolve));
@@ -73,4 +73,35 @@ test('rendering and every view/group/result combination, reset and empty state',
 });
 test('failure states do not display fabricated results',async()=>{
   for(const [payload,ok] of [[data,false],[{},true]]){const dom=await page(payload,ok);assert(dom.window.document.querySelector('[role=alert]'));assert.equal(dom.window.document.querySelectorAll('#results details').length,0);dom.window.close();}
+});
+test('severity percentages and execution totals are exact, conservative and zero-safe',()=>{
+  const dist=severityBreakdown(data.uniqueFindings);assert.equal(dist.reduce((n,d)=>n+d.count,0),118);
+  assert(Math.abs(dist.reduce((n,d)=>n+d.percent,0)-100)<1e-10);
+  assert.equal(severityBreakdown([{severity:'unexpected',status:'FAIL'}])[4].count,1);
+  assert(severityBreakdown([]).every(d=>d.percent===0));
+  const c=executionBreakdown(data.groups.flatMap(g=>g.scenarios));
+  assert.deepEqual(c,{total:198,executed:116,partial:40,blocked:21,notRun:21,unknown:0,percent:116/198*100});
+  assert.equal(executionBreakdown([]).percent,0);
+  assert.equal(executionBreakdown([{status:'unknown'}]).unknown,1);
+});
+test('severity drilldowns, every severity/group pair, scope synchronization and reset',async()=>{
+  const dom=await page();const d=dom.window.document;const change=id=>d.getElementById(id).dispatchEvent(new dom.window.Event('change',{bubbles:true}));
+  assert(d.getElementById('severity').disabled);assert.equal(d.querySelector('[role=progressbar]').getAttribute('aria-valuenow'),'58.6');
+  for(const group of ['',...data.groups.map(g=>g.name)]){
+    d.getElementById('chart-group').value=group;change('chart-group');assert.equal(d.getElementById('group').value,group);
+    for(const severity of severities){
+      d.querySelector(`[data-severity="${severity}"]`).click();
+      assert.equal(d.getElementById('view').value,'findings');assert.equal(d.getElementById('severity').value,severity);
+      assert.equal(d.querySelectorAll('#results details').length,data.uniqueFindings.filter(f=>(!group||f.groups.includes(group))&&f.severity===severity).length);
+    }
+  }
+  d.getElementById('severity-chart').click();
+  d.getElementById('filters').reset();assert.equal(d.getElementById('severity').value,'');assert(d.getElementById('severity').disabled);assert.equal(d.getElementById('chart-group').value,'');
+  d.getElementById('view').value='findings';change('view');d.getElementById('severity').value='critical';change('severity');
+  for(const outcome of statuses){d.getElementById('status').value=outcome;change('status');assert.equal(d.querySelectorAll('#results details').length,data.uniqueFindings.filter(f=>f.severity==='critical'&&f.status===outcome).length);}
+  d.getElementById('view').value='scenarios';change('view');assert.equal(d.getElementById('severity').value,'');dom.window.close();
+});
+test('empty chart scope never shows NaN or fabricated progress',async()=>{
+  const empty={...data,groups:[{...data.groups[0],scenarios:[],findings:[]}],uniqueFindings:[]};const dom=await page(empty);
+  assert.equal(dom.window.document.querySelector('[role=progressbar]').getAttribute('aria-valuenow'),'0.0');assert(!dom.window.document.body.textContent.includes('NaN'));dom.window.close();
 });

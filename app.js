@@ -1,4 +1,4 @@
-import {matches,status,statuses} from './model.js';
+import {matches,status,statuses,severities,severityBreakdown,executionBreakdown} from './model.js';
 const $=id=>document.getElementById(id);
 const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const badge=s=>`<span class="badge ${s.toLowerCase().replaceAll(' ','-')}">${escape(s)}</span>`;
@@ -18,11 +18,30 @@ async function init(){
     $('freshness').textContent=`Snapshot refreshed ${new Date(data.generatedAt).toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'})}. Source revisions are linked below. This is a report aggregation, not a new test run.`;
     $('metrics').innerHTML=[[data.groups.length,'Published test groups','Linked to their detailed reports'],[scenarios.length,'Reported scenarios','Campaign outcomes preserved'],[highDefects.length,'Unique critical / high defects',`${high.filter(f=>f.type!=='Defect').length} additional critical/high gaps or questions`],[high.filter(f=>f.status==='PASS').length,'Critical / high findings: retest PASS','Narrow retest scope · not full-suite closure']].map(([n,title,note])=>`<div class="metric"><strong>${n}</strong><span>${title}</span><small>${note}</small></div>`).join('');
     $('group').insertAdjacentHTML('beforeend',data.groups.map(g=>`<option>${escape(g.name)}</option>`).join(''));
+    $('chart-group').insertAdjacentHTML('beforeend',data.groups.map(g=>`<option>${escape(g.name)}</option>`).join(''));
+    $('severity').insertAdjacentHTML('beforeend',severities.map(s=>`<option value="${s}">${s==='not reported'?'Not reported':s[0].toUpperCase()+s.slice(1)}</option>`).join(''));
     $('status').insertAdjacentHTML('beforeend',[...statuses,'CONFLICT'].map(s=>`<option>${s}</option>`).join(''));
     $('groups').innerHTML=data.groups.map(g=>{const counts=statuses.map(s=>[s,g.scenarios.filter(r=>r.status===s).length]).filter(([,n])=>n).map(([s,n])=>`${n} ${s.toLowerCase()}`).join(' · ');const gh=g.findings.filter(f=>['critical','high'].includes(f.severity)&&f.type==='Defect');return `<article class="group-card"><h3>${escape(g.name)}</h3><p class="counts">${g.scenarios.length} scenarios · ${gh.length} critical/high defects*</p><p>${escape(counts)}</p><button data-group="${escape(g.name)}">Explore scenarios</button><a href="${g.url}">Detailed report ↗</a><small>Campaign: ${escape(g.checkpoint)}<br>${g.targeted?`Targeted retest: ${escape(g.targeted.updatedAt)}<br>`:''}Source <a href="https://github.com/capitalinvestmentclub/${g.repo}/commit/${g.commit}">${g.commit.slice(0,8)}</a></small></article>`;}).join('')+'<p><small>*Historical finding inventory. Shared findings count in each group, but only once in overall totals.</small></p>';
+    function renderAnalytics(){
+      const group=$('group').value;
+      $('chart-group').value=group;
+      const scopedFindings=data.uniqueFindings.filter(f=>!group||f.groups.includes(group));
+      const distribution=severityBreakdown(scopedFindings);
+      const colors=['#a92d39','#d77419','#b39624','#467ab2','#87918d'];
+      let offset=0;
+      const gradient=distribution.map((d,i)=>{const from=offset;offset+=d.percent;return `${colors[i]} ${from}% ${offset}%`;}).join(',');
+      $('severity-chart').innerHTML=`<div class="donut-layout"><div class="donut" role="img" aria-label="${escape(distribution.map(d=>`${d.severity}: ${d.count}, ${d.percent.toFixed(1)}%`).join('; '))}" style="background:${scopedFindings.length?`conic-gradient(${gradient})`:'#e5e8e3'}"><span><strong>${scopedFindings.length}</strong>unique findings</span></div><div class="chart-legend">${distribution.map((d,i)=>`<button type="button" data-severity="${d.severity}" aria-label="Show ${d.severity} findings"><span class="swatch" style="background:${colors[i]}"></span><span class="severity-label">${d.severity}</span><strong>${d.count}</strong><span>${d.percent.toFixed(1)}%</span></button>`).join('')}</div></div>`;
+      const coverage=executionBreakdown(scenarios.filter(s=>!group||s.group===group));
+      const segments=[['Executed: PASS / FAIL',coverage.executed,'#2c7255'],['Partial',coverage.partial,'#ba8b1f'],['Blocked',coverage.blocked,'#8a609a'],['Not run',coverage.notRun,'#b7bfbb'],['Not reported',coverage.unknown,'#77858c']];
+      $('execution-chart').innerHTML=`<p class="execution-number"><strong>${coverage.percent.toFixed(1)}%</strong> executed to a reported outcome</p><p>${coverage.executed} of ${coverage.total} scenarios have a PASS or FAIL outcome.</p><div class="execution-bar" role="progressbar" aria-label="Scenarios with PASS or FAIL outcome" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${coverage.percent.toFixed(1)}" aria-valuetext="${coverage.executed} of ${coverage.total} scenarios; ${coverage.partial} partial, ${coverage.blocked} blocked, ${coverage.notRun} not run, ${coverage.unknown} not reported">${segments.map(([label,n,color])=>`<span style="width:${coverage.total?n/coverage.total*100:0}%;background:${color}" title="${label}: ${n}"></span>`).join('')}</div><ul class="coverage-legend">${segments.map(([label,n,color])=>`<li><span class="swatch" style="background:${color}"></span><span>${label}</span><strong>${n}</strong><span>${(coverage.total?n/coverage.total*100:0).toFixed(1)}%</span></li>`).join('')}</ul><p class="analytics-note">Not run = explicitly unexecuted. Partial and blocked are separate—not counted as completed execution. A FAIL outcome does not mean every scenario branch ran. This measures reported scenarios, not six-size cell completion.</p>`;
+      $('severity-results').innerHTML=`<div class="severity-table" tabindex="0" role="region" aria-label="Retest results by severity"><table><caption>Latest targeted finding results by severity · ${escape(group||'All test groups')}</caption><thead><tr><th scope="col">Severity</th><th scope="col">Total</th>${[...statuses,'CONFLICT'].map(s=>`<th scope="col">${s}</th>`).join('')}</tr></thead><tbody>${distribution.map(d=>`<tr><th scope="row">${d.severity}</th><td>${d.count}</td>${[...statuses,'CONFLICT'].map(s=>`<td>${d.outcomes[s]}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="analytics-note">NOT REPORTED means no targeted retest result. These findings are not assumed fixed or passed. On smaller screens, scroll the table horizontally.</p>`;
+    }
     function render(){
       const findings=$('view').value==='findings';
-      const rows=(findings?data.uniqueFindings:scenarios).filter(r=>matches(r,$('search').value,$('group').value,$('status').value));
+      $('severity').disabled=!findings;
+      if(!findings)$('severity').value='';
+      renderAnalytics();
+      const rows=(findings?data.uniqueFindings:scenarios).filter(r=>matches(r,$('search').value,$('group').value,$('status').value)&&(!findings||!$('severity').value||r.severity===$('severity').value));
       $('count').textContent=`${rows.length} ${findings?'unique findings · result means latest available targeted retest':'scenarios · result means original campaign outcome'}`;
       $('results').innerHTML=rows.length?rows.map(r=>`<details><summary>${badge(r.status)}<span class="row-title"><small>${escape(r.id)} · ${escape(findings?r.groups.join(' / '):r.group)}${findings?` · ${escape(r.severity)} · ${escape(r.type)}`:''}</small>${escape(r.title)}</span></summary><div class="detail"><p><strong>${findings?'Original finding':'Observed coverage'}:</strong> ${escape(findings?r.summary:r.observation)||'See detailed source report.'}</p>${findings?`<p><strong>Targeted retest:</strong> ${escape(r.retestSummary)||'No targeted retest result is recorded in this snapshot.'}</p>`:`<p><strong>Remaining scope:</strong> ${escape(r.gap)||'See source report for scenario boundaries and follow-up.'}</p>`}<p><strong>Chrome viewport evidence</strong> — ${findings?'targeted finding check':'original scenario record'}; not reported is not a pass.</p>${viewport(r.responsive,data.sizes)}${r.limitations?.length?`<p><strong>Limitations:</strong> ${escape(Array.isArray(r.limitations)?r.limitations.join(' '):r.limitations)}</p>`:''}${r.evidence?.length?`<ul>${r.evidence.map(e=>`<li><a href="${safeLink(e.url)}">${escape(e.label)}</a></li>`).join('')}</ul>`:''}<a href="${safeLink(r.url)}">Open detailed report and run history ↗</a></div></details>`).join(''):'<p class="empty">No matching results. Change your filters or select Reset filters.</p>';
     }
@@ -31,8 +50,15 @@ async function init(){
     $('filters').addEventListener('change',render);
     $('filters').addEventListener('reset',event=>{
       event.preventDefault();
-      $('view').value='scenarios';$('group').value='';$('status').value='';$('search').value='';
+      $('view').value='scenarios';$('group').value='';$('status').value='';$('search').value='';$('severity').value='';
       render();
+    });
+    $('chart-group').addEventListener('change',()=>{$('group').value=$('chart-group').value;render();});
+    $('severity-chart').addEventListener('click',event=>{
+      const button=event.target.closest('[data-severity]');
+      if(!button)return;
+      $('view').value='findings';$('severity').value=button.dataset.severity;$('status').value='';$('search').value='';
+      render();$('explore-heading').scrollIntoView();$('severity').focus({preventScroll:true});
     });
     $('groups').addEventListener('click',e=>{const button=e.target.closest('[data-group]');if(button){$('group').value=button.dataset.group;$('view').value='scenarios';$('search').value='';$('status').value='';render();$('explore-heading').scrollIntoView();$('group').focus({preventScroll:true});}});
     render();
