@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T20:52:09.416Z",
+  "generatedAt": "2026-09-14T21:26:02.691Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "b64e11750122338b8d2c2131124bb77e1f2cc201",
+      "commit": "df786e4edcdd203caeb78c9dd0c92816f8bcce4f",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -3163,48 +3163,80 @@
           "scenario": "ADM-053",
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "Exact existing grant award recipient HTML receipt passes all six sizes: grant sender and controlled Investor recipient populated, settled USD 100 gross/net and zero fees. Full defect closure requires reconciliation with owner's view of this SAME award, not the contribution receipt.",
+          "status": "FAIL",
+          "retestSummary": "Fresh original grant Wallet disbursement receipt at exact1440x900: reference6a9628cdcae07bfa04bc4127 / CIC-7BFA04BC4127 shows grant sender but Recipient N/A, despite table counterparty CIC Investor. Gross/net USD100 and zero fees. Main visually reviewed screenshot. Owner/recipient same-award reconciliation fails; other five cells not executed before repair.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "390×844",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "768×1024",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1024×768",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1280×800",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1440×900",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": "1440x900",
+              "status": "FAIL",
+              "summary": "Open original grant Wallet disbursement; Open Receipt CIC-7BFA04BC4127; Compare counterparty CIC Investor with receipt Recipient N/A. FAIL main visually reviewed missing recipient",
+              "steps": [
+                "Open original grant Wallet disbursement",
+                "Open Receipt CIC-7BFA04BC4127",
+                "Compare counterparty CIC Investor with receipt Recipient N/A"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
+                  "label": "GRT017-owner-recipient-missing-1440x900"
+                }
+              ],
+              "observedAt": "2026-09-14T20:21:32.808Z"
             }
           ],
-          "limitations": "This independent task inspected recipient side only. Parent owns the grantor-side same-award comparison. No PDF download or fresh disbursement was executed. Screenshots remain private because wallet background can contain unrelated ledger entries. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Original owner-side receipt failure at1440 only; other five sizes unexecuted.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
+              "label": "GRT017-owner-recipient-missing-1440x900"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
           "group": "Admin"
         },
@@ -3217,47 +3249,80 @@
           "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
+          "retestSummary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
           "responsive": [
             {
               "size": "360×800",
+              "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "summary": "Save original draft at 360 CSS pixels; Reload and observe October13 retained; Attempt Actions to reopen editor; Observe Actions clipped left349/right413 and no menu after click. FAIL; main visually reviewed clipped Actions",
+              "steps": [
+                "Save original draft at 360 CSS pixels",
+                "Reload and observe October13 retained",
+                "Attempt Actions to reopen editor",
+                "Observe Actions clipped left349/right413 and no menu after click"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
+                  "label": "GRT005-actions-clipped-360x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:12:47.123Z"
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             }
           ],
-          "limitations": "Original missing funding-stage/group flags no longer reproduced, but date round-trip and Details/editor inconsistency prevent configuration closure. Neither draft was published or funded. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Screenshot corroborates clipped layout; measured bounds349..413 and failed normal click establish inaccessible Actions. Other five sizes unexecuted.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
+              "label": "GRT005-actions-clipped-360x800"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
           "group": "Admin"
         },
@@ -3815,13 +3880,13 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-retest45",
-        "updatedAt": "2026-09-14T07:08:29.535Z",
-        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
+        "runId": "2026-09-14-close37-reproduced-failures",
+        "updatedAt": "2026-09-14T21:24:37.042Z",
+        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "repairBatch": {
           "runId": "2026-09-14-merged-deployed-repair",
-          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
-          "executionMode": "real-api-local",
+          "state": "MERGED AND LIVE — targeted cloud verification progressing",
+          "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
             "360×800",
@@ -3847,8 +3912,8 @@
             {
               "id": "ADM053-CFG-001",
               "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
-              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
-              "cloudRetestStatus": "PENDING"
+              "summary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
+              "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-REPORT-001",
@@ -3863,7 +3928,7 @@
               "cloudRetestStatus": "PENDING"
             }
           ],
-          "updatedAt": "2026-09-14T18:36:18.550Z",
+          "updatedAt": "2026-09-14T21:24:37.042Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
             "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
@@ -3886,7 +3951,7 @@
               "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "releaseGate": "Recorded merge commits are live. Cloud closure below is limited to explicit targeted results with six measured CSS viewport outcomes; merged code alone never closes other findings.",
           "mergeCommits": {
             "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
             "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
@@ -3919,16 +3984,18 @@
               "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
               "promotionRun": "34880842679",
               "status": "LIVE"
-            }
+            },
+            "buildId": "yU2MSQuhYYpfh4uHJUpxd",
+            "verifiedBy": "/root"
           },
-          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-reproduced-failures: ADM053-REC-001 FAIL, ADM053-CFG-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
     {
       "name": "Organization",
       "repo": "organization-uat-report",
-      "commit": "b9b5fb8b353c4a81de3afdfbc31af4e314a9705c",
+      "commit": "8e829dc67eab229e83f71bd8c505ec872af12cb4",
       "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -4446,48 +4513,199 @@
           "scenario": "ORG-018",
           "summary": "Pending payout and KYC-update records expose Approve/Waiting only. There is no rejection, requester cancellation, expiry, full detail or complete-history navigation.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "A fresh synthetic payout-account-change governance request persisted as pending and awaits a second approver. Requester cannot inspect details or cancel it through the Governance panel; the only request control is disabled Waiting for approver. No real payout account data was changed.",
+          "status": "PARTIAL",
+          "retestSummary": "Requester cancellation and inspectable detail branch PASS across six independent measured Chrome executions: original360 request plus five notes-only requests, reason/confirm, full reload and terminal cancelled cards with actor and matching decision reason, no Cancel control. Full original lifecycle finding remains PARTIAL: distinct authorized approve/reject, expiry outcomes, immutable history and notification verification unexecuted.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "FAIL",
-              "summary": "A fresh synthetic payout-account-change governance request persisted as pending and awaits a second approver. Requester cannot inspect details or cancel it through the Governance panel; the only request control is disabled Waiting for approver. No real payout account data was changed.",
-              "evidence": []
+              "measuredCss": "360x800",
+              "status": "PARTIAL",
+              "summary": "Open pending request details.; Cancel request; enter decision reason; confirm.; Full reload and reopen Governance.; Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button.. Cancelled by testaholica; Close37 360 synthetic request cancellation; no payout change. Original note and requested timestamp visible.",
+              "steps": [
+                "Open pending request details.",
+                "Cancel request; enter decision reason; confirm.",
+                "Full reload and reopen Governance.",
+                "Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-360x800.png",
+                  "label": "ORG018-terminal-360x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:46:16.416Z",
+              "subchecks": {
+                "requesterCancellation": "PASS",
+                "detailReadback": "PASS",
+                "distinctApproval": "NOT RUN",
+                "distinctRejection": "NOT RUN",
+                "expiry": "NOT RUN",
+                "immutableHistoryAndNotifications": "NOT RUN"
+              }
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "A fresh synthetic payout-account-change governance request persisted as pending and awaits a second approver. Requester cannot inspect details or cancel it through the Governance panel; the only request control is disabled Waiting for approver. No real payout account data was changed.",
-              "evidence": []
+              "measuredCss": "390x844",
+              "status": "PARTIAL",
+              "summary": "Open pending request details.; Cancel request; enter decision reason; confirm.; Full reload and reopen Governance.; Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button.. Cancelled by testaholica; Close37 390 synthetic request cancellation; no payout change. Original note and requested timestamp visible.",
+              "steps": [
+                "Open pending request details.",
+                "Cancel request; enter decision reason; confirm.",
+                "Full reload and reopen Governance.",
+                "Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-390x844.png",
+                  "label": "ORG018-terminal-390x844"
+                }
+              ],
+              "observedAt": "2026-09-14T20:46:16.416Z",
+              "subchecks": {
+                "requesterCancellation": "PASS",
+                "detailReadback": "PASS",
+                "distinctApproval": "NOT RUN",
+                "distinctRejection": "NOT RUN",
+                "expiry": "NOT RUN",
+                "immutableHistoryAndNotifications": "NOT RUN"
+              }
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "A fresh synthetic payout-account-change governance request persisted as pending and awaits a second approver. Requester cannot inspect details or cancel it through the Governance panel; the only request control is disabled Waiting for approver. No real payout account data was changed.",
-              "evidence": []
+              "measuredCss": "768x1024",
+              "status": "PARTIAL",
+              "summary": "Open pending request details.; Cancel request; enter decision reason; confirm.; Full reload and reopen Governance.; Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button.. Cancelled by testaholica; Close37 768 synthetic request cancellation; no payout change. Original note and requested timestamp visible.",
+              "steps": [
+                "Open pending request details.",
+                "Cancel request; enter decision reason; confirm.",
+                "Full reload and reopen Governance.",
+                "Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-768x1024.png",
+                  "label": "ORG018-terminal-768x1024"
+                }
+              ],
+              "observedAt": "2026-09-14T20:46:16.416Z",
+              "subchecks": {
+                "requesterCancellation": "PASS",
+                "detailReadback": "PASS",
+                "distinctApproval": "NOT RUN",
+                "distinctRejection": "NOT RUN",
+                "expiry": "NOT RUN",
+                "immutableHistoryAndNotifications": "NOT RUN"
+              }
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "A fresh synthetic payout-account-change governance request persisted as pending and awaits a second approver. Requester cannot inspect details or cancel it through the Governance panel; the only request control is disabled Waiting for approver. No real payout account data was changed.",
-              "evidence": []
+              "measuredCss": "1024x768",
+              "status": "PARTIAL",
+              "summary": "Open pending request details.; Cancel request; enter decision reason; confirm.; Full reload and reopen Governance.; Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button.. Cancelled by testaholica; Close37 1024 synthetic request cancellation; no payout change. Original note and requested timestamp visible.",
+              "steps": [
+                "Open pending request details.",
+                "Cancel request; enter decision reason; confirm.",
+                "Full reload and reopen Governance.",
+                "Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-1024x768.png",
+                  "label": "ORG018-terminal-1024x768"
+                }
+              ],
+              "observedAt": "2026-09-14T20:46:16.416Z",
+              "subchecks": {
+                "requesterCancellation": "PASS",
+                "detailReadback": "PASS",
+                "distinctApproval": "NOT RUN",
+                "distinctRejection": "NOT RUN",
+                "expiry": "NOT RUN",
+                "immutableHistoryAndNotifications": "NOT RUN"
+              }
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "A fresh synthetic payout-account-change governance request persisted as pending and awaits a second approver. Requester cannot inspect details or cancel it through the Governance panel; the only request control is disabled Waiting for approver. No real payout account data was changed.",
-              "evidence": []
+              "measuredCss": "1280x800",
+              "status": "PARTIAL",
+              "summary": "Open pending request details.; Cancel request; enter decision reason; confirm.; Full reload and reopen Governance.; Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button.. Cancelled by testaholica; Close37 1280 synthetic request cancellation; no payout change. Original note and requested timestamp visible.",
+              "steps": [
+                "Open pending request details.",
+                "Cancel request; enter decision reason; confirm.",
+                "Full reload and reopen Governance.",
+                "Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-1280x800.png",
+                  "label": "ORG018-terminal-1280x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:46:16.416Z",
+              "subchecks": {
+                "requesterCancellation": "PASS",
+                "detailReadback": "PASS",
+                "distinctApproval": "NOT RUN",
+                "distinctRejection": "NOT RUN",
+                "expiry": "NOT RUN",
+                "immutableHistoryAndNotifications": "NOT RUN"
+              }
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "A fresh synthetic payout-account-change governance request persisted as pending and awaits a second approver. Requester cannot inspect details or cancel it through the Governance panel; the only request control is disabled Waiting for approver. No real payout account data was changed.",
-              "evidence": []
+              "measuredCss": "1440x900",
+              "status": "PARTIAL",
+              "summary": "Open pending request details.; Cancel request; enter decision reason; confirm.; Full reload and reopen Governance.; Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button.. Cancelled by testaholica; Close37 1440 synthetic request cancellation; no payout change. Original note and requested timestamp visible.",
+              "steps": [
+                "Open pending request details.",
+                "Cancel request; enter decision reason; confirm.",
+                "Full reload and reopen Governance.",
+                "Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-1440x900.png",
+                  "label": "ORG018-terminal-1440x900"
+                }
+              ],
+              "observedAt": "2026-09-14T20:46:16.416Z",
+              "subchecks": {
+                "requesterCancellation": "PASS",
+                "detailReadback": "PASS",
+                "distinctApproval": "NOT RUN",
+                "distinctRejection": "NOT RUN",
+                "expiry": "NOT RUN",
+                "immutableHistoryAndNotifications": "NOT RUN"
+              }
             }
           ],
-          "limitations": "Second-actor approval/rejection and expiry not yet exercised. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Cancellation/details only; approve/reject/expiry/immutable history and notifications remain open.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-360x800.png",
+              "label": "ORG018-terminal-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-390x844.png",
+              "label": "ORG018-terminal-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-768x1024.png",
+              "label": "ORG018-terminal-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-1024x768.png",
+              "label": "ORG018-terminal-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-1280x800.png",
+              "label": "ORG018-terminal-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-1440x900.png",
+              "label": "ORG018-terminal-1440x900"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
           "group": "Organization"
         },
@@ -4516,47 +4734,100 @@
           "summary": "A populated future title and datetime left Add Event disabled after reload and at all six Chrome sizes; past-date validation did disable as expected.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Entered Retest45 future calendar event and valid future datetime 2026-10-15T10:30. Add Event remains disabled after blur and at every requested size. No event could be created.",
+          "retestSummary": "Fresh native-input future events were created at360 and390 but entered local10:30 on2026-10-15 renders03:30AM, a seven-hour Phoenix offset. Original disabled-add symptom not reproduced after native commit; exact persisted/displayed time acceptance fails. Other four sizes NOT RUN pending repair.",
           "responsive": [
             {
               "size": "360×800",
+              "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Entered Retest45 future calendar event and valid future datetime 2026-10-15T10:30. Add Event remains disabled after blur and at every requested size. No event could be created.",
-              "evidence": []
+              "summary": "Enter2026-10-15T10:30 with native keyboard commit.; Add Event enables; create independent event.; Observe event renders10/15/2026 03:30AM instead of10:30.. Coordinator executed360; its created03:30AM event is also visible in390 before/after evidence.",
+              "steps": [
+                "Enter2026-10-15T10:30 with native keyboard commit.",
+                "Add Event enables; create independent event.",
+                "Observe event renders10/15/2026 03:30AM instead of10:30."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG020-before-panel-390x844.png",
+                  "label": "ORG020-before-panel-390x844"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG020-after-panel-390x844.png",
+                  "label": "ORG020-after-panel-390x844"
+                }
+              ],
+              "observedAt": "2026-09-14T20:35:56.786Z"
             },
             {
               "size": "390×844",
+              "measuredCss": "390x844",
               "status": "FAIL",
-              "summary": "Entered Retest45 future calendar event and valid future datetime 2026-10-15T10:30. Add Event remains disabled after blur and at every requested size. No event could be created.",
-              "evidence": []
+              "summary": "Enter2026-10-15T10:30 with native keyboard commit.; Add Event enables; create independent event.; Observe event renders10/15/2026 03:30AM instead of10:30.. Before and after panel reviewed:10:30 input then03:30AM event.",
+              "steps": [
+                "Enter2026-10-15T10:30 with native keyboard commit.",
+                "Add Event enables; create independent event.",
+                "Observe event renders10/15/2026 03:30AM instead of10:30."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG020-before-panel-390x844.png",
+                  "label": "ORG020-before-panel-390x844"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG020-after-panel-390x844.png",
+                  "label": "ORG020-after-panel-390x844"
+                }
+              ],
+              "observedAt": "2026-09-14T20:35:56.786Z"
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Entered Retest45 future calendar event and valid future datetime 2026-10-15T10:30. Add Event remains disabled after blur and at every requested size. No event could be created.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "Entered Retest45 future calendar event and valid future datetime 2026-10-15T10:30. Add Event remains disabled after blur and at every requested size. No event could be created.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "Entered Retest45 future calendar event and valid future datetime 2026-10-15T10:30. Add Event remains disabled after blur and at every requested size. No event could be created.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "Entered Retest45 future calendar event and valid future datetime 2026-10-15T10:30. Add Event remains disabled after blur and at every requested size. No event could be created.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             }
           ],
-          "limitations": "Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. 360 execution was separate; its result is correlated in390 screenshot showing both created events. Other four sizes unexecuted.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG020-before-panel-390x844.png",
+              "label": "ORG020-before-panel-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG020-after-panel-390x844.png",
+              "label": "ORG020-after-panel-390x844"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
           "group": "Organization"
         },
@@ -4647,8 +4918,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-org-contact-verified",
-        "updatedAt": "2026-09-14T20:51:26.656Z",
+        "runId": "2026-09-14-close37-reproduced-failures",
+        "updatedAt": "2026-09-14T21:24:37.042Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "repairBatch": {
           "runId": "2026-09-14-merged-deployed-repair",
@@ -4679,17 +4950,17 @@
             {
               "id": "ORG018-GOV-001",
               "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
-              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
-              "cloudRetestStatus": "PENDING"
+              "summary": "Requester cancellation and inspectable detail branch PASS across six independent measured Chrome executions: original360 request plus five notes-only requests, reason/confirm, full reload and terminal cancelled cards with actor and matching decision reason, no Cancel control. Full original lifecycle finding remains PARTIAL: distinct authorized approve/reject, expiry outcomes, immutable history and notification verification unexecuted.",
+              "cloudRetestStatus": "PARTIAL"
             },
             {
               "id": "ORG020-CAL-001",
               "classification": "TEST_INPUT_CORRECTED",
-              "summary": "Existing future-event workflow persists using the native date/time input correctly. No product calendar repair was required.",
-              "cloudRetestStatus": "PENDING"
+              "summary": "Fresh native-input future events were created at360 and390 but entered local10:30 on2026-10-15 renders03:30AM, a seven-hour Phoenix offset. Original disabled-add symptom not reproduced after native commit; exact persisted/displayed time acceptance fails. Other four sizes NOT RUN pending repair.",
+              "cloudRetestStatus": "FAIL"
             }
           ],
-          "updatedAt": "2026-09-14T20:51:26.656Z",
+          "updatedAt": "2026-09-14T21:24:37.042Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
             "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
@@ -4749,14 +5020,14 @@
             "buildId": "yU2MSQuhYYpfh4uHJUpxd",
             "verifiedBy": "/root"
           },
-          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-org-contact-verified: ORG003-DATA-001 PASS. Other findings retain prior evidence; this is not full-scenario closure."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-reproduced-failures: ORG018-GOV-001 PARTIAL, ORG020-CAL-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
     {
       "name": "Grantor",
       "repo": "grantor-uat-report",
-      "commit": "ed610075a0da94e0a937e06aef73a1a992198c8a",
+      "commit": "42781fa7913132c770b5fa0444b97a2823192391",
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5146,47 +5417,80 @@
           "summary": "Funding-stage eligibility disappeared; invitation/public settings reverted; Even Split changed to Fixed Solo; reporting cadence disagreed with setup.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Two private unfunded draft round-trips retain funding-stage Seed, group/public contributions, 2 grantors, calculated amount 5 and tracking configuration. Application deadlines shift back one day on reopen: pitch draft selected 2026-10-14 becomes 2026-10-13; individual draft 2026-10-13 becomes 2026-10-12. Six-size reopened editor readback confirms the drift; no edit resaved.",
+          "retestSummary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
           "responsive": [
             {
               "size": "360×800",
+              "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Two private unfunded draft round-trips retain funding-stage Seed, group/public contributions, 2 grantors, calculated amount 5 and tracking configuration. Application deadlines shift back one day on reopen: pitch draft selected 2026-10-14 becomes 2026-10-13; individual draft 2026-10-13 becomes 2026-10-12. Six-size reopened editor readback confirms the drift; no edit resaved.",
-              "evidence": []
+              "summary": "Save original draft at 360 CSS pixels; Reload and observe October13 retained; Attempt Actions to reopen editor; Observe Actions clipped left349/right413 and no menu after click. FAIL; main visually reviewed clipped Actions",
+              "steps": [
+                "Save original draft at 360 CSS pixels",
+                "Reload and observe October13 retained",
+                "Attempt Actions to reopen editor",
+                "Observe Actions clipped left349/right413 and no menu after click"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
+                  "label": "GRT005-actions-clipped-360x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:12:46.815Z"
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "Two private unfunded draft round-trips retain funding-stage Seed, group/public contributions, 2 grantors, calculated amount 5 and tracking configuration. Application deadlines shift back one day on reopen: pitch draft selected 2026-10-14 becomes 2026-10-13; individual draft 2026-10-13 becomes 2026-10-12. Six-size reopened editor readback confirms the drift; no edit resaved.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Two private unfunded draft round-trips retain funding-stage Seed, group/public contributions, 2 grantors, calculated amount 5 and tracking configuration. Application deadlines shift back one day on reopen: pitch draft selected 2026-10-14 becomes 2026-10-13; individual draft 2026-10-13 becomes 2026-10-12. Six-size reopened editor readback confirms the drift; no edit resaved.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "Two private unfunded draft round-trips retain funding-stage Seed, group/public contributions, 2 grantors, calculated amount 5 and tracking configuration. Application deadlines shift back one day on reopen: pitch draft selected 2026-10-14 becomes 2026-10-13; individual draft 2026-10-13 becomes 2026-10-12. Six-size reopened editor readback confirms the drift; no edit resaved.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "Two private unfunded draft round-trips retain funding-stage Seed, group/public contributions, 2 grantors, calculated amount 5 and tracking configuration. Application deadlines shift back one day on reopen: pitch draft selected 2026-10-14 becomes 2026-10-13; individual draft 2026-10-13 becomes 2026-10-12. Six-size reopened editor readback confirms the drift; no edit resaved.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "Two private unfunded draft round-trips retain funding-stage Seed, group/public contributions, 2 grantors, calculated amount 5 and tracking configuration. Application deadlines shift back one day on reopen: pitch draft selected 2026-10-14 becomes 2026-10-13; individual draft 2026-10-13 becomes 2026-10-12. Six-size reopened editor readback confirms the drift; no edit resaved.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             }
           ],
-          "limitations": "Original missing funding-stage/group flags no longer reproduced. Remaining configuration date drift and generic Details reporting copy are explicitly distinguished; no funding or publishing. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Screenshot corroborates clipped layout; measured bounds349..413 and failed normal click establish inaccessible Actions. Other five sizes unexecuted.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
+              "label": "GRT005-actions-clipped-360x800"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
           "group": "Grantor"
         },
@@ -5471,48 +5775,80 @@
           "scenario": "GRT-017, GRT-018",
           "summary": "Wallet movement was correct, but the award receipt labelled the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "Exact existing grant award recipient HTML receipt passes all six sizes: grant sender and controlled Investor recipient populated, settled USD 100 gross/net and zero fees. Full grantor-side closure requires reconciliation with owner's view of this SAME award, not the contribution receipt.",
+          "status": "FAIL",
+          "retestSummary": "Fresh original grant Wallet disbursement receipt at exact1440x900: reference6a9628cdcae07bfa04bc4127 / CIC-7BFA04BC4127 shows grant sender but Recipient N/A, despite table counterparty CIC Investor. Gross/net USD100 and zero fees. Main visually reviewed screenshot. Owner/recipient same-award reconciliation fails; other five cells not executed before repair.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "390×844",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "768×1024",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1024×768",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1280×800",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1440×900",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": "1440x900",
+              "status": "FAIL",
+              "summary": "Open original grant Wallet disbursement; Open Receipt CIC-7BFA04BC4127; Compare counterparty CIC Investor with receipt Recipient N/A. FAIL main visually reviewed missing recipient",
+              "steps": [
+                "Open original grant Wallet disbursement",
+                "Open Receipt CIC-7BFA04BC4127",
+                "Compare counterparty CIC Investor with receipt Recipient N/A"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
+                  "label": "GRT017-owner-recipient-missing-1440x900"
+                }
+              ],
+              "observedAt": "2026-09-14T20:21:32.508Z"
             }
           ],
-          "limitations": "This independent task inspected recipient side only. Parent owns the grantor-side same-award comparison. No PDF download or fresh disbursement was executed. Screenshots remain private because wallet background can contain unrelated ledger entries. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Original owner-side receipt failure at1440 only; other five sizes unexecuted.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
+              "label": "GRT017-owner-recipient-missing-1440x900"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
           "group": "Grantor"
         },
@@ -5808,8 +6144,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-grant-verified",
-        "updatedAt": "2026-09-14T20:24:10.030Z",
+        "runId": "2026-09-14-close37-reproduced-failures",
+        "updatedAt": "2026-09-14T21:24:37.042Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -5854,8 +6190,8 @@
             {
               "id": "GRT005-CFG-001",
               "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
-              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
-              "cloudRetestStatus": "PENDING"
+              "summary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
+              "cloudRetestStatus": "FAIL"
             },
             {
               "id": "GRT011-CLOSED-001",
@@ -5876,7 +6212,7 @@
               "cloudRetestStatus": "PASS"
             }
           ],
-          "updatedAt": "2026-09-14T20:24:10.030Z",
+          "updatedAt": "2026-09-14T21:24:37.042Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
             "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
@@ -5936,7 +6272,7 @@
             "buildId": "yU2MSQuhYYpfh4uHJUpxd",
             "verifiedBy": "/root"
           },
-          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-grant-verified: GRT011-CLOSED-001 PASS, GRT021-REPORT-001 PASS. Other findings retain prior evidence; this is not full-scenario closure."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-reproduced-failures: GRT005-CFG-001 FAIL, GRT017-REC-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
@@ -10531,7 +10867,7 @@
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "9e09a4fe2fd20c5d3fc165a20e4359e0fe634a67",
+      "commit": "df1263843c4a4cfcff0ebbdb32fb0acba6ff9b87",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -11059,48 +11395,80 @@
           "scenario": "ADM-053",
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "Exact existing grant award recipient HTML receipt passes all six sizes: grant sender and controlled Investor recipient populated, settled USD 100 gross/net and zero fees. Full defect closure requires reconciliation with owner's view of this SAME award, not the contribution receipt.",
+          "status": "FAIL",
+          "retestSummary": "Fresh original grant Wallet disbursement receipt at exact1440x900: reference6a9628cdcae07bfa04bc4127 / CIC-7BFA04BC4127 shows grant sender but Recipient N/A, despite table counterparty CIC Investor. Gross/net USD100 and zero fees. Main visually reviewed screenshot. Owner/recipient same-award reconciliation fails; other five cells not executed before repair.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "390×844",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "768×1024",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1024×768",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1280×800",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1440×900",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": "1440x900",
+              "status": "FAIL",
+              "summary": "Open original grant Wallet disbursement; Open Receipt CIC-7BFA04BC4127; Compare counterparty CIC Investor with receipt Recipient N/A. FAIL main visually reviewed missing recipient",
+              "steps": [
+                "Open original grant Wallet disbursement",
+                "Open Receipt CIC-7BFA04BC4127",
+                "Compare counterparty CIC Investor with receipt Recipient N/A"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
+                  "label": "GRT017-owner-recipient-missing-1440x900"
+                }
+              ],
+              "observedAt": "2026-09-14T20:21:32.808Z"
             }
           ],
-          "limitations": "This independent task inspected recipient side only. Parent owns the grantor-side same-award comparison. No PDF download or fresh disbursement was executed. Screenshots remain private because wallet background can contain unrelated ledger entries. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Original owner-side receipt failure at1440 only; other five sizes unexecuted.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
+              "label": "GRT017-owner-recipient-missing-1440x900"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
           "group": "Super Admin"
         },
@@ -11113,47 +11481,80 @@
           "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
+          "retestSummary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
           "responsive": [
             {
               "size": "360×800",
+              "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "summary": "Save original draft at 360 CSS pixels; Reload and observe October13 retained; Attempt Actions to reopen editor; Observe Actions clipped left349/right413 and no menu after click. FAIL; main visually reviewed clipped Actions",
+              "steps": [
+                "Save original draft at 360 CSS pixels",
+                "Reload and observe October13 retained",
+                "Attempt Actions to reopen editor",
+                "Observe Actions clipped left349/right413 and no menu after click"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
+                  "label": "GRT005-actions-clipped-360x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:12:47.123Z"
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             }
           ],
-          "limitations": "Original missing funding-stage/group flags no longer reproduced, but date round-trip and Details/editor inconsistency prevent configuration closure. Neither draft was published or funded. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Screenshot corroborates clipped layout; measured bounds349..413 and failed normal click establish inaccessible Actions. Other five sizes unexecuted.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
+              "label": "GRT005-actions-clipped-360x800"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
           "group": "Super Admin"
         },
@@ -11711,9 +12112,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-retest45",
-        "updatedAt": "2026-09-14T07:08:29.535Z",
-        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
+        "runId": "2026-09-14-close37-reproduced-failures",
+        "updatedAt": "2026-09-14T21:24:37.042Z",
+        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -11730,8 +12131,8 @@
         },
         "repairBatch": {
           "runId": "2026-09-14-merged-deployed-repair",
-          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
-          "executionMode": "real-api-local",
+          "state": "MERGED AND LIVE — targeted cloud verification progressing",
+          "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
             "360×800",
@@ -11757,8 +12158,8 @@
             {
               "id": "ADM053-CFG-001",
               "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
-              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
-              "cloudRetestStatus": "PENDING"
+              "summary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
+              "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-REPORT-001",
@@ -11773,7 +12174,7 @@
               "cloudRetestStatus": "PENDING"
             }
           ],
-          "updatedAt": "2026-09-14T18:36:20.603Z",
+          "updatedAt": "2026-09-14T21:24:37.042Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
             "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
@@ -11796,7 +12197,7 @@
               "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "releaseGate": "Recorded merge commits are live. Cloud closure below is limited to explicit targeted results with six measured CSS viewport outcomes; merged code alone never closes other findings.",
           "mergeCommits": {
             "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
             "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
@@ -11829,9 +12230,11 @@
               "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
               "promotionRun": "34880842679",
               "status": "LIVE"
-            }
+            },
+            "buildId": "yU2MSQuhYYpfh4uHJUpxd",
+            "verifiedBy": "/root"
           },
-          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-reproduced-failures: ADM053-REC-001 FAIL, ADM053-CFG-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
@@ -12278,7 +12681,7 @@
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "f23d7636264938fded430c77dd1d5f1d1455b180",
+      "commit": "97fcb36c17ea874733e94705e8eaa1d1f908f523",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -12779,48 +13182,80 @@
           "scenario": "ADM-053",
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "Exact existing grant award recipient HTML receipt passes all six sizes: grant sender and controlled Investor recipient populated, settled USD 100 gross/net and zero fees. Full defect closure requires reconciliation with owner's view of this SAME award, not the contribution receipt.",
+          "status": "FAIL",
+          "retestSummary": "Fresh original grant Wallet disbursement receipt at exact1440x900: reference6a9628cdcae07bfa04bc4127 / CIC-7BFA04BC4127 shows grant sender but Recipient N/A, despite table counterparty CIC Investor. Gross/net USD100 and zero fees. Main visually reviewed screenshot. Owner/recipient same-award reconciliation fails; other five cells not executed before repair.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "390×844",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "768×1024",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1024×768",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1280×800",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1440×900",
-              "status": "PASS",
-              "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-              "evidence": []
+              "measuredCss": "1440x900",
+              "status": "FAIL",
+              "summary": "Open original grant Wallet disbursement; Open Receipt CIC-7BFA04BC4127; Compare counterparty CIC Investor with receipt Recipient N/A. FAIL main visually reviewed missing recipient",
+              "steps": [
+                "Open original grant Wallet disbursement",
+                "Open Receipt CIC-7BFA04BC4127",
+                "Compare counterparty CIC Investor with receipt Recipient N/A"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
+                  "label": "GRT017-owner-recipient-missing-1440x900"
+                }
+              ],
+              "observedAt": "2026-09-14T20:21:32.808Z"
             }
           ],
-          "limitations": "This independent task inspected recipient side only. Parent owns the grantor-side same-award comparison. No PDF download or fresh disbursement was executed. Screenshots remain private because wallet background can contain unrelated ledger entries. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Original owner-side receipt failure at1440 only; other five sizes unexecuted.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
+              "label": "GRT017-owner-recipient-missing-1440x900"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
           "group": "Cross-role Platform Journeys"
         },
@@ -12833,47 +13268,80 @@
           "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
+          "retestSummary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
           "responsive": [
             {
               "size": "360×800",
+              "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "summary": "Save original draft at 360 CSS pixels; Reload and observe October13 retained; Attempt Actions to reopen editor; Observe Actions clipped left349/right413 and no menu after click. FAIL; main visually reviewed clipped Actions",
+              "steps": [
+                "Save original draft at 360 CSS pixels",
+                "Reload and observe October13 retained",
+                "Attempt Actions to reopen editor",
+                "Observe Actions clipped left349/right413 and no menu after click"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
+                  "label": "GRT005-actions-clipped-360x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:12:47.123Z"
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-              "evidence": []
+              "measuredCss": null,
+              "status": "NOT RUN",
+              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+              "steps": [],
+              "evidence": [],
+              "observedAt": null
             }
           ],
-          "limitations": "Original missing funding-stage/group flags no longer reproduced, but date round-trip and Details/editor inconsistency prevent configuration closure. Neither draft was published or funded. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Screenshot corroborates clipped layout; measured bounds349..413 and failed normal click establish inaccessible Actions. Other five sizes unexecuted.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
+              "label": "GRT005-actions-clipped-360x800"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
           "group": "Cross-role Platform Journeys"
         },
@@ -13272,9 +13740,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-retest45",
-        "updatedAt": "2026-09-14T07:08:29.535Z",
-        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
+        "runId": "2026-09-14-close37-reproduced-failures",
+        "updatedAt": "2026-09-14T21:24:37.042Z",
+        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -13291,8 +13759,8 @@
         },
         "repairBatch": {
           "runId": "2026-09-14-merged-deployed-repair",
-          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
-          "executionMode": "real-api-local",
+          "state": "MERGED AND LIVE — targeted cloud verification progressing",
+          "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
             "360×800",
@@ -13318,8 +13786,8 @@
             {
               "id": "ADM053-CFG-001",
               "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
-              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
-              "cloudRetestStatus": "PENDING"
+              "summary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
+              "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-REPORT-001",
@@ -13328,7 +13796,7 @@
               "cloudRetestStatus": "PENDING"
             }
           ],
-          "updatedAt": "2026-09-14T18:36:18.853Z",
+          "updatedAt": "2026-09-14T21:24:37.042Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
             "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
@@ -13351,7 +13819,7 @@
               "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "releaseGate": "Recorded merge commits are live. Cloud closure below is limited to explicit targeted results with six measured CSS viewport outcomes; merged code alone never closes other findings.",
           "mergeCommits": {
             "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
             "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
@@ -13384,9 +13852,11 @@
               "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
               "promotionRun": "34880842679",
               "status": "LIVE"
-            }
+            },
+            "buildId": "yU2MSQuhYYpfh4uHJUpxd",
+            "verifiedBy": "/root"
           },
-          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-reproduced-failures: ADM053-REC-001 FAIL, ADM053-CFG-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     }
@@ -15198,48 +15668,80 @@
       "scenario": "ADM-053",
       "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
       "historicalStatus": "Open",
-      "status": "PARTIAL",
-      "retestSummary": "Exact existing grant award recipient HTML receipt passes all six sizes: grant sender and controlled Investor recipient populated, settled USD 100 gross/net and zero fees. Full defect closure requires reconciliation with owner's view of this SAME award, not the contribution receipt.",
+      "status": "FAIL",
+      "retestSummary": "Fresh original grant Wallet disbursement receipt at exact1440x900: reference6a9628cdcae07bfa04bc4127 / CIC-7BFA04BC4127 shows grant sender but Recipient N/A, despite table counterparty CIC Investor. Gross/net USD100 and zero fees. Main visually reviewed screenshot. Owner/recipient same-award reconciliation fails; other five cells not executed before repair.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "PASS",
-          "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "390×844",
-          "status": "PASS",
-          "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "768×1024",
-          "status": "PASS",
-          "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1024×768",
-          "status": "PASS",
-          "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1280×800",
-          "status": "PASS",
-          "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1440×900",
-          "status": "PASS",
-          "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-          "evidence": []
+          "measuredCss": "1440x900",
+          "status": "FAIL",
+          "summary": "Open original grant Wallet disbursement; Open Receipt CIC-7BFA04BC4127; Compare counterparty CIC Investor with receipt Recipient N/A. FAIL main visually reviewed missing recipient",
+          "steps": [
+            "Open original grant Wallet disbursement",
+            "Open Receipt CIC-7BFA04BC4127",
+            "Compare counterparty CIC Investor with receipt Recipient N/A"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
+              "label": "GRT017-owner-recipient-missing-1440x900"
+            }
+          ],
+          "observedAt": "2026-09-14T20:21:32.808Z"
         }
       ],
-      "limitations": "This independent task inspected recipient side only. Parent owns the grantor-side same-award comparison. No PDF download or fresh disbursement was executed. Screenshots remain private because wallet background can contain unrelated ledger entries. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Original owner-side receipt failure at1440 only; other five sizes unexecuted.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
+          "label": "GRT017-owner-recipient-missing-1440x900"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "group": "Admin",
       "groups": [
@@ -15257,47 +15759,80 @@
       "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
       "historicalStatus": "Open",
       "status": "FAIL",
-      "retestSummary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
+      "retestSummary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
       "responsive": [
         {
           "size": "360×800",
+          "measuredCss": "360x800",
           "status": "FAIL",
-          "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-          "evidence": []
+          "summary": "Save original draft at 360 CSS pixels; Reload and observe October13 retained; Attempt Actions to reopen editor; Observe Actions clipped left349/right413 and no menu after click. FAIL; main visually reviewed clipped Actions",
+          "steps": [
+            "Save original draft at 360 CSS pixels",
+            "Reload and observe October13 retained",
+            "Attempt Actions to reopen editor",
+            "Observe Actions clipped left349/right413 and no menu after click"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
+              "label": "GRT005-actions-clipped-360x800"
+            }
+          ],
+          "observedAt": "2026-09-14T20:12:47.123Z"
         },
         {
           "size": "390×844",
-          "status": "FAIL",
-          "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "768×1024",
-          "status": "FAIL",
-          "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1024×768",
-          "status": "FAIL",
-          "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1280×800",
-          "status": "FAIL",
-          "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1440×900",
-          "status": "FAIL",
-          "summary": "Fresh private pitch-grant draft now retains Seed funding-stage eligibility, group/public contributions, max grantors 2, calculated USD5, voting and monthly reporting instructions after reload at six sizes. Configuration is not fully faithful: selected application deadline 2026-10-14 reopens as 2026-10-13. The individual draft similarly shifts its deadline by one day. Details also replaces saved reporting instructions with generic text although the editor retains them.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         }
       ],
-      "limitations": "Original missing funding-stage/group flags no longer reproduced, but date round-trip and Details/editor inconsistency prevent configuration closure. Neither draft was published or funded. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Screenshot corroborates clipped layout; measured bounds349..413 and failed normal click establish inaccessible Actions. Other five sizes unexecuted.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
+          "label": "GRT005-actions-clipped-360x800"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "group": "Admin",
       "groups": [
@@ -16213,48 +16748,199 @@
       "scenario": "ORG-018",
       "summary": "Pending payout and KYC-update records expose Approve/Waiting only. There is no rejection, requester cancellation, expiry, full detail or complete-history navigation.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "A fresh synthetic payout-account-change governance request persisted as pending and awaits a second approver. Requester cannot inspect details or cancel it through the Governance panel; the only request control is disabled Waiting for approver. No real payout account data was changed.",
+      "status": "PARTIAL",
+      "retestSummary": "Requester cancellation and inspectable detail branch PASS across six independent measured Chrome executions: original360 request plus five notes-only requests, reason/confirm, full reload and terminal cancelled cards with actor and matching decision reason, no Cancel control. Full original lifecycle finding remains PARTIAL: distinct authorized approve/reject, expiry outcomes, immutable history and notification verification unexecuted.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "FAIL",
-          "summary": "A fresh synthetic payout-account-change governance request persisted as pending and awaits a second approver. Requester cannot inspect details or cancel it through the Governance panel; the only request control is disabled Waiting for approver. No real payout account data was changed.",
-          "evidence": []
+          "measuredCss": "360x800",
+          "status": "PARTIAL",
+          "summary": "Open pending request details.; Cancel request; enter decision reason; confirm.; Full reload and reopen Governance.; Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button.. Cancelled by testaholica; Close37 360 synthetic request cancellation; no payout change. Original note and requested timestamp visible.",
+          "steps": [
+            "Open pending request details.",
+            "Cancel request; enter decision reason; confirm.",
+            "Full reload and reopen Governance.",
+            "Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-360x800.png",
+              "label": "ORG018-terminal-360x800"
+            }
+          ],
+          "observedAt": "2026-09-14T20:46:16.416Z",
+          "subchecks": {
+            "requesterCancellation": "PASS",
+            "detailReadback": "PASS",
+            "distinctApproval": "NOT RUN",
+            "distinctRejection": "NOT RUN",
+            "expiry": "NOT RUN",
+            "immutableHistoryAndNotifications": "NOT RUN"
+          }
         },
         {
           "size": "390×844",
-          "status": "FAIL",
-          "summary": "A fresh synthetic payout-account-change governance request persisted as pending and awaits a second approver. Requester cannot inspect details or cancel it through the Governance panel; the only request control is disabled Waiting for approver. No real payout account data was changed.",
-          "evidence": []
+          "measuredCss": "390x844",
+          "status": "PARTIAL",
+          "summary": "Open pending request details.; Cancel request; enter decision reason; confirm.; Full reload and reopen Governance.; Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button.. Cancelled by testaholica; Close37 390 synthetic request cancellation; no payout change. Original note and requested timestamp visible.",
+          "steps": [
+            "Open pending request details.",
+            "Cancel request; enter decision reason; confirm.",
+            "Full reload and reopen Governance.",
+            "Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-390x844.png",
+              "label": "ORG018-terminal-390x844"
+            }
+          ],
+          "observedAt": "2026-09-14T20:46:16.416Z",
+          "subchecks": {
+            "requesterCancellation": "PASS",
+            "detailReadback": "PASS",
+            "distinctApproval": "NOT RUN",
+            "distinctRejection": "NOT RUN",
+            "expiry": "NOT RUN",
+            "immutableHistoryAndNotifications": "NOT RUN"
+          }
         },
         {
           "size": "768×1024",
-          "status": "FAIL",
-          "summary": "A fresh synthetic payout-account-change governance request persisted as pending and awaits a second approver. Requester cannot inspect details or cancel it through the Governance panel; the only request control is disabled Waiting for approver. No real payout account data was changed.",
-          "evidence": []
+          "measuredCss": "768x1024",
+          "status": "PARTIAL",
+          "summary": "Open pending request details.; Cancel request; enter decision reason; confirm.; Full reload and reopen Governance.; Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button.. Cancelled by testaholica; Close37 768 synthetic request cancellation; no payout change. Original note and requested timestamp visible.",
+          "steps": [
+            "Open pending request details.",
+            "Cancel request; enter decision reason; confirm.",
+            "Full reload and reopen Governance.",
+            "Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-768x1024.png",
+              "label": "ORG018-terminal-768x1024"
+            }
+          ],
+          "observedAt": "2026-09-14T20:46:16.416Z",
+          "subchecks": {
+            "requesterCancellation": "PASS",
+            "detailReadback": "PASS",
+            "distinctApproval": "NOT RUN",
+            "distinctRejection": "NOT RUN",
+            "expiry": "NOT RUN",
+            "immutableHistoryAndNotifications": "NOT RUN"
+          }
         },
         {
           "size": "1024×768",
-          "status": "FAIL",
-          "summary": "A fresh synthetic payout-account-change governance request persisted as pending and awaits a second approver. Requester cannot inspect details or cancel it through the Governance panel; the only request control is disabled Waiting for approver. No real payout account data was changed.",
-          "evidence": []
+          "measuredCss": "1024x768",
+          "status": "PARTIAL",
+          "summary": "Open pending request details.; Cancel request; enter decision reason; confirm.; Full reload and reopen Governance.; Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button.. Cancelled by testaholica; Close37 1024 synthetic request cancellation; no payout change. Original note and requested timestamp visible.",
+          "steps": [
+            "Open pending request details.",
+            "Cancel request; enter decision reason; confirm.",
+            "Full reload and reopen Governance.",
+            "Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-1024x768.png",
+              "label": "ORG018-terminal-1024x768"
+            }
+          ],
+          "observedAt": "2026-09-14T20:46:16.416Z",
+          "subchecks": {
+            "requesterCancellation": "PASS",
+            "detailReadback": "PASS",
+            "distinctApproval": "NOT RUN",
+            "distinctRejection": "NOT RUN",
+            "expiry": "NOT RUN",
+            "immutableHistoryAndNotifications": "NOT RUN"
+          }
         },
         {
           "size": "1280×800",
-          "status": "FAIL",
-          "summary": "A fresh synthetic payout-account-change governance request persisted as pending and awaits a second approver. Requester cannot inspect details or cancel it through the Governance panel; the only request control is disabled Waiting for approver. No real payout account data was changed.",
-          "evidence": []
+          "measuredCss": "1280x800",
+          "status": "PARTIAL",
+          "summary": "Open pending request details.; Cancel request; enter decision reason; confirm.; Full reload and reopen Governance.; Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button.. Cancelled by testaholica; Close37 1280 synthetic request cancellation; no payout change. Original note and requested timestamp visible.",
+          "steps": [
+            "Open pending request details.",
+            "Cancel request; enter decision reason; confirm.",
+            "Full reload and reopen Governance.",
+            "Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-1280x800.png",
+              "label": "ORG018-terminal-1280x800"
+            }
+          ],
+          "observedAt": "2026-09-14T20:46:16.416Z",
+          "subchecks": {
+            "requesterCancellation": "PASS",
+            "detailReadback": "PASS",
+            "distinctApproval": "NOT RUN",
+            "distinctRejection": "NOT RUN",
+            "expiry": "NOT RUN",
+            "immutableHistoryAndNotifications": "NOT RUN"
+          }
         },
         {
           "size": "1440×900",
-          "status": "FAIL",
-          "summary": "A fresh synthetic payout-account-change governance request persisted as pending and awaits a second approver. Requester cannot inspect details or cancel it through the Governance panel; the only request control is disabled Waiting for approver. No real payout account data was changed.",
-          "evidence": []
+          "measuredCss": "1440x900",
+          "status": "PARTIAL",
+          "summary": "Open pending request details.; Cancel request; enter decision reason; confirm.; Full reload and reopen Governance.; Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button.. Cancelled by testaholica; Close37 1440 synthetic request cancellation; no payout change. Original note and requested timestamp visible.",
+          "steps": [
+            "Open pending request details.",
+            "Cancel request; enter decision reason; confirm.",
+            "Full reload and reopen Governance.",
+            "Inspect terminal cancelled card, author, original approval note and matching decision reason; no Cancel button."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-1440x900.png",
+              "label": "ORG018-terminal-1440x900"
+            }
+          ],
+          "observedAt": "2026-09-14T20:46:16.416Z",
+          "subchecks": {
+            "requesterCancellation": "PASS",
+            "detailReadback": "PASS",
+            "distinctApproval": "NOT RUN",
+            "distinctRejection": "NOT RUN",
+            "expiry": "NOT RUN",
+            "immutableHistoryAndNotifications": "NOT RUN"
+          }
         }
       ],
-      "limitations": "Second-actor approval/rejection and expiry not yet exercised. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Cancellation/details only; approve/reject/expiry/immutable history and notifications remain open.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-360x800.png",
+          "label": "ORG018-terminal-360x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-390x844.png",
+          "label": "ORG018-terminal-390x844"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-768x1024.png",
+          "label": "ORG018-terminal-768x1024"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-1024x768.png",
+          "label": "ORG018-terminal-1024x768"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-1280x800.png",
+          "label": "ORG018-terminal-1280x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG018-terminal-1440x900.png",
+          "label": "ORG018-terminal-1440x900"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
       "group": "Organization",
       "groups": [
@@ -16289,47 +16975,100 @@
       "summary": "A populated future title and datetime left Add Event disabled after reload and at all six Chrome sizes; past-date validation did disable as expected.",
       "historicalStatus": "Open",
       "status": "FAIL",
-      "retestSummary": "Entered Retest45 future calendar event and valid future datetime 2026-10-15T10:30. Add Event remains disabled after blur and at every requested size. No event could be created.",
+      "retestSummary": "Fresh native-input future events were created at360 and390 but entered local10:30 on2026-10-15 renders03:30AM, a seven-hour Phoenix offset. Original disabled-add symptom not reproduced after native commit; exact persisted/displayed time acceptance fails. Other four sizes NOT RUN pending repair.",
       "responsive": [
         {
           "size": "360×800",
+          "measuredCss": "360x800",
           "status": "FAIL",
-          "summary": "Entered Retest45 future calendar event and valid future datetime 2026-10-15T10:30. Add Event remains disabled after blur and at every requested size. No event could be created.",
-          "evidence": []
+          "summary": "Enter2026-10-15T10:30 with native keyboard commit.; Add Event enables; create independent event.; Observe event renders10/15/2026 03:30AM instead of10:30.. Coordinator executed360; its created03:30AM event is also visible in390 before/after evidence.",
+          "steps": [
+            "Enter2026-10-15T10:30 with native keyboard commit.",
+            "Add Event enables; create independent event.",
+            "Observe event renders10/15/2026 03:30AM instead of10:30."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG020-before-panel-390x844.png",
+              "label": "ORG020-before-panel-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG020-after-panel-390x844.png",
+              "label": "ORG020-after-panel-390x844"
+            }
+          ],
+          "observedAt": "2026-09-14T20:35:56.786Z"
         },
         {
           "size": "390×844",
+          "measuredCss": "390x844",
           "status": "FAIL",
-          "summary": "Entered Retest45 future calendar event and valid future datetime 2026-10-15T10:30. Add Event remains disabled after blur and at every requested size. No event could be created.",
-          "evidence": []
+          "summary": "Enter2026-10-15T10:30 with native keyboard commit.; Add Event enables; create independent event.; Observe event renders10/15/2026 03:30AM instead of10:30.. Before and after panel reviewed:10:30 input then03:30AM event.",
+          "steps": [
+            "Enter2026-10-15T10:30 with native keyboard commit.",
+            "Add Event enables; create independent event.",
+            "Observe event renders10/15/2026 03:30AM instead of10:30."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG020-before-panel-390x844.png",
+              "label": "ORG020-before-panel-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG020-after-panel-390x844.png",
+              "label": "ORG020-after-panel-390x844"
+            }
+          ],
+          "observedAt": "2026-09-14T20:35:56.786Z"
         },
         {
           "size": "768×1024",
-          "status": "FAIL",
-          "summary": "Entered Retest45 future calendar event and valid future datetime 2026-10-15T10:30. Add Event remains disabled after blur and at every requested size. No event could be created.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1024×768",
-          "status": "FAIL",
-          "summary": "Entered Retest45 future calendar event and valid future datetime 2026-10-15T10:30. Add Event remains disabled after blur and at every requested size. No event could be created.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1280×800",
-          "status": "FAIL",
-          "summary": "Entered Retest45 future calendar event and valid future datetime 2026-10-15T10:30. Add Event remains disabled after blur and at every requested size. No event could be created.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1440×900",
-          "status": "FAIL",
-          "summary": "Entered Retest45 future calendar event and valid future datetime 2026-10-15T10:30. Add Event remains disabled after blur and at every requested size. No event could be created.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         }
       ],
-      "limitations": "Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. 360 execution was separate; its result is correlated in390 screenshot showing both created events. Other four sizes unexecuted.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG020-before-panel-390x844.png",
+          "label": "ORG020-before-panel-390x844"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-reproduced-failures/ORG020-after-panel-390x844.png",
+          "label": "ORG020-after-panel-390x844"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
       "group": "Organization",
       "groups": [
@@ -16607,47 +17346,80 @@
       "summary": "Funding-stage eligibility disappeared; invitation/public settings reverted; Even Split changed to Fixed Solo; reporting cadence disagreed with setup.",
       "historicalStatus": "Open",
       "status": "FAIL",
-      "retestSummary": "Two private unfunded draft round-trips retain funding-stage Seed, group/public contributions, 2 grantors, calculated amount 5 and tracking configuration. Application deadlines shift back one day on reopen: pitch draft selected 2026-10-14 becomes 2026-10-13; individual draft 2026-10-13 becomes 2026-10-12. Six-size reopened editor readback confirms the drift; no edit resaved.",
+      "retestSummary": "Original draft workflow blocked at measured 360x800: Actions bounds left349/right413 extend past viewport width360 and clipped parent prevents opening menu; no menu appears after click. October13 date retained after one save/reload, but mobile editor cannot be reopened, so configuration acceptance remains failed. One shared header defect affects GRT005 and ADM053-CFG; other five cells not executed.",
       "responsive": [
         {
           "size": "360×800",
+          "measuredCss": "360x800",
           "status": "FAIL",
-          "summary": "Two private unfunded draft round-trips retain funding-stage Seed, group/public contributions, 2 grantors, calculated amount 5 and tracking configuration. Application deadlines shift back one day on reopen: pitch draft selected 2026-10-14 becomes 2026-10-13; individual draft 2026-10-13 becomes 2026-10-12. Six-size reopened editor readback confirms the drift; no edit resaved.",
-          "evidence": []
+          "summary": "Save original draft at 360 CSS pixels; Reload and observe October13 retained; Attempt Actions to reopen editor; Observe Actions clipped left349/right413 and no menu after click. FAIL; main visually reviewed clipped Actions",
+          "steps": [
+            "Save original draft at 360 CSS pixels",
+            "Reload and observe October13 retained",
+            "Attempt Actions to reopen editor",
+            "Observe Actions clipped left349/right413 and no menu after click"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
+              "label": "GRT005-actions-clipped-360x800"
+            }
+          ],
+          "observedAt": "2026-09-14T20:12:46.815Z"
         },
         {
           "size": "390×844",
-          "status": "FAIL",
-          "summary": "Two private unfunded draft round-trips retain funding-stage Seed, group/public contributions, 2 grantors, calculated amount 5 and tracking configuration. Application deadlines shift back one day on reopen: pitch draft selected 2026-10-14 becomes 2026-10-13; individual draft 2026-10-13 becomes 2026-10-12. Six-size reopened editor readback confirms the drift; no edit resaved.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "768×1024",
-          "status": "FAIL",
-          "summary": "Two private unfunded draft round-trips retain funding-stage Seed, group/public contributions, 2 grantors, calculated amount 5 and tracking configuration. Application deadlines shift back one day on reopen: pitch draft selected 2026-10-14 becomes 2026-10-13; individual draft 2026-10-13 becomes 2026-10-12. Six-size reopened editor readback confirms the drift; no edit resaved.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1024×768",
-          "status": "FAIL",
-          "summary": "Two private unfunded draft round-trips retain funding-stage Seed, group/public contributions, 2 grantors, calculated amount 5 and tracking configuration. Application deadlines shift back one day on reopen: pitch draft selected 2026-10-14 becomes 2026-10-13; individual draft 2026-10-13 becomes 2026-10-12. Six-size reopened editor readback confirms the drift; no edit resaved.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1280×800",
-          "status": "FAIL",
-          "summary": "Two private unfunded draft round-trips retain funding-stage Seed, group/public contributions, 2 grantors, calculated amount 5 and tracking configuration. Application deadlines shift back one day on reopen: pitch draft selected 2026-10-14 becomes 2026-10-13; individual draft 2026-10-13 becomes 2026-10-12. Six-size reopened editor readback confirms the drift; no edit resaved.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1440×900",
-          "status": "FAIL",
-          "summary": "Two private unfunded draft round-trips retain funding-stage Seed, group/public contributions, 2 grantors, calculated amount 5 and tracking configuration. Application deadlines shift back one day on reopen: pitch draft selected 2026-10-14 becomes 2026-10-13; individual draft 2026-10-13 becomes 2026-10-12. Six-size reopened editor readback confirms the drift; no edit resaved.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         }
       ],
-      "limitations": "Original missing funding-stage/group flags no longer reproduced. Remaining configuration date drift and generic Details reporting copy are explicitly distinguished; no funding or publishing. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Screenshot corroborates clipped layout; measured bounds349..413 and failed normal click establish inaccessible Actions. Other five sizes unexecuted.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT005-actions-clipped-360x800.png",
+          "label": "GRT005-actions-clipped-360x800"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "group": "Grantor",
       "groups": [
@@ -16944,48 +17716,80 @@
       "scenario": "GRT-017, GRT-018",
       "summary": "Wallet movement was correct, but the award receipt labelled the applicant as sender and the grant as recipient.",
       "historicalStatus": "Open",
-      "status": "PARTIAL",
-      "retestSummary": "Exact existing grant award recipient HTML receipt passes all six sizes: grant sender and controlled Investor recipient populated, settled USD 100 gross/net and zero fees. Full grantor-side closure requires reconciliation with owner's view of this SAME award, not the contribution receipt.",
+      "status": "FAIL",
+      "retestSummary": "Fresh original grant Wallet disbursement receipt at exact1440x900: reference6a9628cdcae07bfa04bc4127 / CIC-7BFA04BC4127 shows grant sender but Recipient N/A, despite table counterparty CIC Investor. Gross/net USD100 and zero fees. Main visually reviewed screenshot. Owner/recipient same-award reconciliation fails; other five cells not executed before repair.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "PASS",
-          "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "390×844",
-          "status": "PASS",
-          "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "768×1024",
-          "status": "PASS",
-          "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1024×768",
-          "status": "PASS",
-          "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1280×800",
-          "status": "PASS",
-          "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-          "evidence": []
+          "measuredCss": null,
+          "status": "NOT RUN",
+          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
+          "steps": [],
+          "evidence": [],
+          "observedAt": null
         },
         {
           "size": "1440×900",
-          "status": "PASS",
-          "summary": "Recipient-side existing award receipt: grant sender, controlled Investor recipient, settled USD 100 gross/net and zero fees. This cell does not verify owner-side reconciliation.",
-          "evidence": []
+          "measuredCss": "1440x900",
+          "status": "FAIL",
+          "summary": "Open original grant Wallet disbursement; Open Receipt CIC-7BFA04BC4127; Compare counterparty CIC Investor with receipt Recipient N/A. FAIL main visually reviewed missing recipient",
+          "steps": [
+            "Open original grant Wallet disbursement",
+            "Open Receipt CIC-7BFA04BC4127",
+            "Compare counterparty CIC Investor with receipt Recipient N/A"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
+              "label": "GRT017-owner-recipient-missing-1440x900"
+            }
+          ],
+          "observedAt": "2026-09-14T20:21:32.508Z"
         }
       ],
-      "limitations": "This independent task inspected recipient side only. Parent owns the grantor-side same-award comparison. No PDF download or fresh disbursement was executed. Screenshots remain private because wallet background can contain unrelated ledger entries. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Original owner-side receipt failure at1440 only; other five sizes unexecuted.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
+          "label": "GRT017-owner-recipient-missing-1440x900"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "group": "Grantor",
       "groups": [
