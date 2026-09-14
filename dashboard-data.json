@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T20:25:09.532Z",
+  "generatedAt": "2026-09-14T20:52:09.416Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -3928,7 +3928,7 @@
     {
       "name": "Organization",
       "repo": "organization-uat-report",
-      "commit": "d0a7eccb5ff3324215139b50d0efdb0e888d4c19",
+      "commit": "b9b5fb8b353c4a81de3afdfbc31af4e314a9705c",
       "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -4185,48 +4185,150 @@
           "scenario": "ORG-003",
           "summary": "Two valid organization email contacts were saved, but both values were empty after reload at every requested Chrome size while the address persisted.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Saved a controlled email contact on PIT007 Chrome C1280 20260911. After Save contacts and full reload, label Retest45 primary persists but email value is blank. Readback reproduced at all six sizes.",
+          "status": "PASS",
+          "retestSummary": "Targeted saved-email defect PASS: six distinct measured Chrome UI Save contacts/full reload round-trips preserved per-size labels and nonblank primary email. Exact email is visually readable at390/768/1024 and1440 prefix+suffix; narrow read-only original-record correlation confirms unchanged exact email and final1440 label. Standard ellipsis at360/1280 is presentation, not lost data. Shared-record correlation supplements actual six UI executions, not a substitute.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "FAIL",
-              "summary": "Saved a controlled email contact on PIT007 Chrome C1280 20260911. After Save contacts and full reload, label Retest45 primary persists but email value is blank. Readback reproduced at all six sizes.",
-              "evidence": []
+              "measuredCss": "360x800",
+              "status": "PASS",
+              "summary": "Save contacts with label Close37 primary 360 and existing primary email retained.; Full browser reload and reopen Contacts.; Correlate shared original persisted contact exact email, primary=true, and final1440 label after six saves.. PASS Nonblank saved email and retained label after local-size save/reload. Standard ellipsis allowed; exact value corroborated by other same-record UI readbacks and fresh narrow read-only persisted-record correlation.",
+              "steps": [
+                "Save contacts with label Close37 primary 360 and existing primary email retained.",
+                "Full browser reload and reopen Contacts.",
+                "Correlate shared original persisted contact exact email, primary=true, and final1440 label after six saves."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-360x800.png",
+                  "label": "ORG003-panel-reloaded-360x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:35:56.760Z"
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "Saved a controlled email contact on PIT007 Chrome C1280 20260911. After Save contacts and full reload, label Retest45 primary persists but email value is blank. Readback reproduced at all six sizes.",
-              "evidence": []
+              "measuredCss": "390x844",
+              "status": "PASS",
+              "summary": "Save contacts with label Close37 primary 390 and existing primary email retained.; Full browser reload and reopen Contacts.. PASS Exact email and new label visible after reload.",
+              "steps": [
+                "Save contacts with label Close37 primary 390 and existing primary email retained.",
+                "Full browser reload and reopen Contacts."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-390x844.png",
+                  "label": "ORG003-panel-reloaded-390x844"
+                }
+              ],
+              "observedAt": "2026-09-14T20:35:56.760Z"
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Saved a controlled email contact on PIT007 Chrome C1280 20260911. After Save contacts and full reload, label Retest45 primary persists but email value is blank. Readback reproduced at all six sizes.",
-              "evidence": []
+              "measuredCss": "768x1024",
+              "status": "PASS",
+              "summary": "Save contacts with label Close37 primary 768 and existing primary email retained.; Full browser reload and reopen Contacts.; One ERR_CONNECTION_CLOSED recovered by normal Reload; then verified loaded result.. PASS Exact email and new label visible after reload.",
+              "steps": [
+                "Save contacts with label Close37 primary 768 and existing primary email retained.",
+                "Full browser reload and reopen Contacts.",
+                "One ERR_CONNECTION_CLOSED recovered by normal Reload; then verified loaded result."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-768x1024.png",
+                  "label": "ORG003-panel-reloaded-768x1024"
+                }
+              ],
+              "observedAt": "2026-09-14T20:35:56.760Z"
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "Saved a controlled email contact on PIT007 Chrome C1280 20260911. After Save contacts and full reload, label Retest45 primary persists but email value is blank. Readback reproduced at all six sizes.",
-              "evidence": []
+              "measuredCss": "1024x768",
+              "status": "PASS",
+              "summary": "Save contacts with label Close37 primary 1024 and existing primary email retained.; Full browser reload and reopen Contacts.. PASS Exact email and new label visible after reload.",
+              "steps": [
+                "Save contacts with label Close37 primary 1024 and existing primary email retained.",
+                "Full browser reload and reopen Contacts."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-1024x768.png",
+                  "label": "ORG003-panel-reloaded-1024x768"
+                }
+              ],
+              "observedAt": "2026-09-14T20:35:56.760Z"
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "Saved a controlled email contact on PIT007 Chrome C1280 20260911. After Save contacts and full reload, label Retest45 primary persists but email value is blank. Readback reproduced at all six sizes.",
-              "evidence": []
+              "measuredCss": "1280x800",
+              "status": "PASS",
+              "summary": "Save contacts with label Close37 primary 1280 and existing primary email retained.; Full browser reload and reopen Contacts.; Correlate shared original persisted contact exact email, primary=true, and final1440 label after six saves.. PASS Nonblank saved email and retained label after local-size save/reload. Standard ellipsis allowed; exact value corroborated by other same-record UI readbacks and fresh narrow read-only persisted-record correlation.",
+              "steps": [
+                "Save contacts with label Close37 primary 1280 and existing primary email retained.",
+                "Full browser reload and reopen Contacts.",
+                "Correlate shared original persisted contact exact email, primary=true, and final1440 label after six saves."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-1280x800.png",
+                  "label": "ORG003-panel-reloaded-1280x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:35:56.760Z"
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "Saved a controlled email contact on PIT007 Chrome C1280 20260911. After Save contacts and full reload, label Retest45 primary persists but email value is blank. Readback reproduced at all six sizes.",
-              "evidence": []
+              "measuredCss": "1440x900",
+              "status": "PASS",
+              "summary": "Save contacts with label Close37 primary 1440 and existing primary email retained.; Full browser reload and reopen Contacts.. PASS Original visible prefix plus native End suffix together establish the complete retained synthetic email.",
+              "steps": [
+                "Save contacts with label Close37 primary 1440 and existing primary email retained.",
+                "Full browser reload and reopen Contacts."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-1440x900.png",
+                  "label": "ORG003-panel-reloaded-1440x900"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-end-panel-1440x900.png",
+                  "label": "ORG003-end-panel-1440x900"
+                }
+              ],
+              "observedAt": "2026-09-14T20:35:56.760Z"
             }
           ],
-          "limitations": "Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Targeted saved-email persistence defect only, not full contact-management suite. Six measured UI save/reload round-trips; shared exact-value visual readback and narrow persisted-record correlation supplement, not replace, each viewport execution. Standard input ellipsis does not mean data loss. Other outcomes and history preserved.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-360x800.png",
+              "label": "ORG003-panel-reloaded-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-390x844.png",
+              "label": "ORG003-panel-reloaded-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-768x1024.png",
+              "label": "ORG003-panel-reloaded-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-1024x768.png",
+              "label": "ORG003-panel-reloaded-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-1280x800.png",
+              "label": "ORG003-panel-reloaded-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-1440x900.png",
+              "label": "ORG003-panel-reloaded-1440x900"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-end-panel-1440x900.png",
+              "label": "ORG003-end-panel-1440x900"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
           "group": "Organization"
         },
@@ -4545,13 +4647,13 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-retest45",
-        "updatedAt": "2026-09-14T07:08:29.535Z",
-        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
+        "runId": "2026-09-14-close37-org-contact-verified",
+        "updatedAt": "2026-09-14T20:51:26.656Z",
+        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "repairBatch": {
           "runId": "2026-09-14-merged-deployed-repair",
-          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
-          "executionMode": "real-api-local",
+          "state": "MERGED AND LIVE — targeted cloud verification progressing",
+          "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
             "360×800",
@@ -4570,9 +4672,9 @@
           "findings": [
             {
               "id": "ORG003-DATA-001",
-              "classification": "TEST_OBSERVATION_CORRECTED",
-              "summary": "Existing contact value persists; corrected rendered inspection confirms it. No product contact-data repair was required.",
-              "cloudRetestStatus": "PENDING"
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "summary": "Targeted saved-email defect PASS: six distinct measured Chrome UI Save contacts/full reload round-trips preserved per-size labels and nonblank primary email. Exact email is visually readable at390/768/1024 and1440 prefix+suffix; narrow read-only original-record correlation confirms unchanged exact email and final1440 label. Standard ellipsis at360/1280 is presentation, not lost data. Shared-record correlation supplements actual six UI executions, not a substitute.",
+              "cloudRetestStatus": "PASS"
             },
             {
               "id": "ORG018-GOV-001",
@@ -4587,7 +4689,7 @@
               "cloudRetestStatus": "PENDING"
             }
           ],
-          "updatedAt": "2026-09-14T18:36:20.305Z",
+          "updatedAt": "2026-09-14T20:51:26.656Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
             "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
@@ -4610,7 +4712,7 @@
               "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "releaseGate": "Recorded merge commits are live. Cloud closure below is limited to explicit targeted results with six measured CSS viewport outcomes; merged code alone never closes other findings.",
           "mergeCommits": {
             "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
             "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
@@ -4643,9 +4745,11 @@
               "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
               "promotionRun": "34880842679",
               "status": "LIVE"
-            }
+            },
+            "buildId": "yU2MSQuhYYpfh4uHJUpxd",
+            "verifiedBy": "/root"
           },
-          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-org-contact-verified: ORG003-DATA-001 PASS. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
@@ -15839,48 +15943,150 @@
       "scenario": "ORG-003",
       "summary": "Two valid organization email contacts were saved, but both values were empty after reload at every requested Chrome size while the address persisted.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Saved a controlled email contact on PIT007 Chrome C1280 20260911. After Save contacts and full reload, label Retest45 primary persists but email value is blank. Readback reproduced at all six sizes.",
+      "status": "PASS",
+      "retestSummary": "Targeted saved-email defect PASS: six distinct measured Chrome UI Save contacts/full reload round-trips preserved per-size labels and nonblank primary email. Exact email is visually readable at390/768/1024 and1440 prefix+suffix; narrow read-only original-record correlation confirms unchanged exact email and final1440 label. Standard ellipsis at360/1280 is presentation, not lost data. Shared-record correlation supplements actual six UI executions, not a substitute.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "FAIL",
-          "summary": "Saved a controlled email contact on PIT007 Chrome C1280 20260911. After Save contacts and full reload, label Retest45 primary persists but email value is blank. Readback reproduced at all six sizes.",
-          "evidence": []
+          "measuredCss": "360x800",
+          "status": "PASS",
+          "summary": "Save contacts with label Close37 primary 360 and existing primary email retained.; Full browser reload and reopen Contacts.; Correlate shared original persisted contact exact email, primary=true, and final1440 label after six saves.. PASS Nonblank saved email and retained label after local-size save/reload. Standard ellipsis allowed; exact value corroborated by other same-record UI readbacks and fresh narrow read-only persisted-record correlation.",
+          "steps": [
+            "Save contacts with label Close37 primary 360 and existing primary email retained.",
+            "Full browser reload and reopen Contacts.",
+            "Correlate shared original persisted contact exact email, primary=true, and final1440 label after six saves."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-360x800.png",
+              "label": "ORG003-panel-reloaded-360x800"
+            }
+          ],
+          "observedAt": "2026-09-14T20:35:56.760Z"
         },
         {
           "size": "390×844",
-          "status": "FAIL",
-          "summary": "Saved a controlled email contact on PIT007 Chrome C1280 20260911. After Save contacts and full reload, label Retest45 primary persists but email value is blank. Readback reproduced at all six sizes.",
-          "evidence": []
+          "measuredCss": "390x844",
+          "status": "PASS",
+          "summary": "Save contacts with label Close37 primary 390 and existing primary email retained.; Full browser reload and reopen Contacts.. PASS Exact email and new label visible after reload.",
+          "steps": [
+            "Save contacts with label Close37 primary 390 and existing primary email retained.",
+            "Full browser reload and reopen Contacts."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-390x844.png",
+              "label": "ORG003-panel-reloaded-390x844"
+            }
+          ],
+          "observedAt": "2026-09-14T20:35:56.760Z"
         },
         {
           "size": "768×1024",
-          "status": "FAIL",
-          "summary": "Saved a controlled email contact on PIT007 Chrome C1280 20260911. After Save contacts and full reload, label Retest45 primary persists but email value is blank. Readback reproduced at all six sizes.",
-          "evidence": []
+          "measuredCss": "768x1024",
+          "status": "PASS",
+          "summary": "Save contacts with label Close37 primary 768 and existing primary email retained.; Full browser reload and reopen Contacts.; One ERR_CONNECTION_CLOSED recovered by normal Reload; then verified loaded result.. PASS Exact email and new label visible after reload.",
+          "steps": [
+            "Save contacts with label Close37 primary 768 and existing primary email retained.",
+            "Full browser reload and reopen Contacts.",
+            "One ERR_CONNECTION_CLOSED recovered by normal Reload; then verified loaded result."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-768x1024.png",
+              "label": "ORG003-panel-reloaded-768x1024"
+            }
+          ],
+          "observedAt": "2026-09-14T20:35:56.760Z"
         },
         {
           "size": "1024×768",
-          "status": "FAIL",
-          "summary": "Saved a controlled email contact on PIT007 Chrome C1280 20260911. After Save contacts and full reload, label Retest45 primary persists but email value is blank. Readback reproduced at all six sizes.",
-          "evidence": []
+          "measuredCss": "1024x768",
+          "status": "PASS",
+          "summary": "Save contacts with label Close37 primary 1024 and existing primary email retained.; Full browser reload and reopen Contacts.. PASS Exact email and new label visible after reload.",
+          "steps": [
+            "Save contacts with label Close37 primary 1024 and existing primary email retained.",
+            "Full browser reload and reopen Contacts."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-1024x768.png",
+              "label": "ORG003-panel-reloaded-1024x768"
+            }
+          ],
+          "observedAt": "2026-09-14T20:35:56.760Z"
         },
         {
           "size": "1280×800",
-          "status": "FAIL",
-          "summary": "Saved a controlled email contact on PIT007 Chrome C1280 20260911. After Save contacts and full reload, label Retest45 primary persists but email value is blank. Readback reproduced at all six sizes.",
-          "evidence": []
+          "measuredCss": "1280x800",
+          "status": "PASS",
+          "summary": "Save contacts with label Close37 primary 1280 and existing primary email retained.; Full browser reload and reopen Contacts.; Correlate shared original persisted contact exact email, primary=true, and final1440 label after six saves.. PASS Nonblank saved email and retained label after local-size save/reload. Standard ellipsis allowed; exact value corroborated by other same-record UI readbacks and fresh narrow read-only persisted-record correlation.",
+          "steps": [
+            "Save contacts with label Close37 primary 1280 and existing primary email retained.",
+            "Full browser reload and reopen Contacts.",
+            "Correlate shared original persisted contact exact email, primary=true, and final1440 label after six saves."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-1280x800.png",
+              "label": "ORG003-panel-reloaded-1280x800"
+            }
+          ],
+          "observedAt": "2026-09-14T20:35:56.760Z"
         },
         {
           "size": "1440×900",
-          "status": "FAIL",
-          "summary": "Saved a controlled email contact on PIT007 Chrome C1280 20260911. After Save contacts and full reload, label Retest45 primary persists but email value is blank. Readback reproduced at all six sizes.",
-          "evidence": []
+          "measuredCss": "1440x900",
+          "status": "PASS",
+          "summary": "Save contacts with label Close37 primary 1440 and existing primary email retained.; Full browser reload and reopen Contacts.. PASS Original visible prefix plus native End suffix together establish the complete retained synthetic email.",
+          "steps": [
+            "Save contacts with label Close37 primary 1440 and existing primary email retained.",
+            "Full browser reload and reopen Contacts."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-1440x900.png",
+              "label": "ORG003-panel-reloaded-1440x900"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-end-panel-1440x900.png",
+              "label": "ORG003-end-panel-1440x900"
+            }
+          ],
+          "observedAt": "2026-09-14T20:35:56.760Z"
         }
       ],
-      "limitations": "Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Targeted saved-email persistence defect only, not full contact-management suite. Six measured UI save/reload round-trips; shared exact-value visual readback and narrow persisted-record correlation supplement, not replace, each viewport execution. Standard input ellipsis does not mean data loss. Other outcomes and history preserved.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-360x800.png",
+          "label": "ORG003-panel-reloaded-360x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-390x844.png",
+          "label": "ORG003-panel-reloaded-390x844"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-768x1024.png",
+          "label": "ORG003-panel-reloaded-768x1024"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-1024x768.png",
+          "label": "ORG003-panel-reloaded-1024x768"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-1280x800.png",
+          "label": "ORG003-panel-reloaded-1280x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-panel-reloaded-1440x900.png",
+          "label": "ORG003-panel-reloaded-1440x900"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/organization-uat-report/assets/2026-09-14-close37-org-contact-verified/ORG003-end-panel-1440x900.png",
+          "label": "ORG003-end-panel-1440x900"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
       "group": "Organization",
       "groups": [
