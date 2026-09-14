@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T16:38:52.294Z",
+  "generatedAt": "2026-09-14T18:38:07.732Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "5c4b24b27325c66e7115fb5326ee7616059c53c2",
+      "commit": "b64e11750122338b8d2c2131124bb77e1f2cc201",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -3819,8 +3819,8 @@
         "updatedAt": "2026-09-14T07:08:29.535Z",
         "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
         "repairBatch": {
-          "runId": "2026-09-14-confirmed-failure-repair",
-          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "runId": "2026-09-14-merged-deployed-repair",
+          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
           "executionMode": "real-api-local",
           "browser": "Google Chrome",
           "sizes": [
@@ -3831,9 +3831,9 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
-          "deploymentStatus": "PENDING",
-          "cloudRetestStatus": "PENDING",
+          "mergeStatus": "MERGED",
+          "deploymentStatus": "LIVE",
+          "cloudRetestStatus": "PARTIAL",
           "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
           "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
           "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
@@ -3863,29 +3863,72 @@
               "cloudRetestStatus": "PENDING"
             }
           ],
-          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "updatedAt": "2026-09-14T18:36:18.550Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
-            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+            "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
           },
           "pullRequests": [
             {
               "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
-              "label": "Frontend PR #2342 — checks running; independent review required"
+              "label": "Frontend PR #2342 — merged"
             },
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
-              "label": "API PR #737 — required checks passed; independent review required"
+              "label": "API PR #737 — merged after review corrections"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34880983295",
+              "label": "Frontend live promotion — success"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34880842679",
+              "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
+          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "mergeCommits": {
+            "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+            "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
+          },
+          "stagedDeployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "workflow": "34878846169",
+              "status": "SUCCESS"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "workflow": "34880209047",
+              "status": "SUCCESS",
+              "policyParityMatched": true
+            }
+          },
+          "apiReviewDelta": "Final review corrections: 44 controller assertions and 66 organization assertions passed; three required API checks passed and zero unresolved review threads.",
+          "deployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "promotionRun": "34880983295",
+              "status": "LIVE"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "promotionRun": "34880842679",
+              "status": "LIVE"
+            }
+          },
+          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
         }
       }
     },
     {
       "name": "Organization",
       "repo": "organization-uat-report",
-      "commit": "13977801066933e7ef7a3a06c75f10e3a34a05c5",
+      "commit": "d0a7eccb5ff3324215139b50d0efdb0e888d4c19",
       "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -4506,8 +4549,8 @@
         "updatedAt": "2026-09-14T07:08:29.535Z",
         "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
         "repairBatch": {
-          "runId": "2026-09-14-confirmed-failure-repair",
-          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "runId": "2026-09-14-merged-deployed-repair",
+          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
           "executionMode": "real-api-local",
           "browser": "Google Chrome",
           "sizes": [
@@ -4518,9 +4561,9 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
-          "deploymentStatus": "PENDING",
-          "cloudRetestStatus": "PENDING",
+          "mergeStatus": "MERGED",
+          "deploymentStatus": "LIVE",
+          "cloudRetestStatus": "PARTIAL",
           "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
           "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
           "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
@@ -4544,29 +4587,72 @@
               "cloudRetestStatus": "PENDING"
             }
           ],
-          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "updatedAt": "2026-09-14T18:36:20.305Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
-            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+            "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
           },
           "pullRequests": [
             {
               "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
-              "label": "Frontend PR #2342 — checks running; independent review required"
+              "label": "Frontend PR #2342 — merged"
             },
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
-              "label": "API PR #737 — required checks passed; independent review required"
+              "label": "API PR #737 — merged after review corrections"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34880983295",
+              "label": "Frontend live promotion — success"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34880842679",
+              "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
+          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "mergeCommits": {
+            "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+            "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
+          },
+          "stagedDeployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "workflow": "34878846169",
+              "status": "SUCCESS"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "workflow": "34880209047",
+              "status": "SUCCESS",
+              "policyParityMatched": true
+            }
+          },
+          "apiReviewDelta": "Final review corrections: 44 controller assertions and 66 organization assertions passed; three required API checks passed and zero unresolved review threads.",
+          "deployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "promotionRun": "34880983295",
+              "status": "LIVE"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "promotionRun": "34880842679",
+              "status": "LIVE"
+            }
+          },
+          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
         }
       }
     },
     {
       "name": "Grantor",
       "repo": "grantor-uat-report",
-      "commit": "a62d326f8cfa9fc3343431b279399c0edfd080a0",
+      "commit": "a65a1f4c0deb88cde9af89548d7b5e8712decbef",
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5183,48 +5269,103 @@
           "scenario": "GRT-018, GRT-020",
           "summary": "The creator refund reconciled, but fresh terminated-grant wallet readback still showed USD 1.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Exact terminated owned grant still shows Available and Current USD1.00 with pending disbursements0 and sole creator contribution USD1.00; no refund/release ledger entry. Same terminal balance inconsistency reproduced on six Chrome sizes and persisted after refresh.",
+          "status": "PASS",
+          "retestSummary": "On the exact merged and live release, the original terminated grant wallet displays its existing successful USD -1 refund alongside USD +1 contribution, with current and available balance zero. The refund remains visible after full reload and reopening Wallet. Missing historical running balances are explicitly unavailable. Actual Chrome readback and visual review passed at all six measured CSS viewports.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "FAIL",
-              "summary": "Exact terminated owned grant still shows Available and Current USD1.00 with pending disbursements0 and sole creator contribution USD1.00; no refund/release ledger entry. Same terminal balance inconsistency reproduced on six Chrome sizes and persisted after refresh.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Actual measured 360×800 Chrome CSS viewport: recorded USD -1 refund, USD +1 contribution and zero current/available balance visible; screenshot visually reviewed.",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/360x800.png",
+                  "label": "Cloud refund readback — 360×800 measured CSS viewport"
+                }
+              ]
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "Exact terminated owned grant still shows Available and Current USD1.00 with pending disbursements0 and sole creator contribution USD1.00; no refund/release ledger entry. Same terminal balance inconsistency reproduced on six Chrome sizes and persisted after refresh.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Actual measured 390×844 Chrome CSS viewport: recorded USD -1 refund, USD +1 contribution and zero current/available balance visible; screenshot visually reviewed.",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/390x844.png",
+                  "label": "Cloud refund readback — 390×844 measured CSS viewport"
+                }
+              ]
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Exact terminated owned grant still shows Available and Current USD1.00 with pending disbursements0 and sole creator contribution USD1.00; no refund/release ledger entry. Same terminal balance inconsistency reproduced on six Chrome sizes and persisted after refresh.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Actual measured 768×1024 Chrome CSS viewport: recorded USD -1 refund, USD +1 contribution and zero current/available balance visible; screenshot visually reviewed.",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/768x1024.png",
+                  "label": "Cloud refund readback — 768×1024 measured CSS viewport"
+                }
+              ]
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "Exact terminated owned grant still shows Available and Current USD1.00 with pending disbursements0 and sole creator contribution USD1.00; no refund/release ledger entry. Same terminal balance inconsistency reproduced on six Chrome sizes and persisted after refresh.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Actual measured 1024×768 Chrome CSS viewport: recorded USD -1 refund, USD +1 contribution and zero current/available balance visible; screenshot visually reviewed.",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/1024x768.png",
+                  "label": "Cloud refund readback — 1024×768 measured CSS viewport"
+                }
+              ]
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "Exact terminated owned grant still shows Available and Current USD1.00 with pending disbursements0 and sole creator contribution USD1.00; no refund/release ledger entry. Same terminal balance inconsistency reproduced on six Chrome sizes and persisted after refresh.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Actual measured 1280×800 Chrome CSS viewport: recorded USD -1 refund, USD +1 contribution and zero current/available balance visible; screenshot visually reviewed.",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/1280x800.png",
+                  "label": "Cloud refund readback — 1280×800 measured CSS viewport"
+                }
+              ]
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "Exact terminated owned grant still shows Available and Current USD1.00 with pending disbursements0 and sole creator contribution USD1.00; no refund/release ledger entry. Same terminal balance inconsistency reproduced on six Chrome sizes and persisted after refresh.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Actual measured 1440×900 Chrome CSS viewport: recorded USD -1 refund, USD +1 contribution and zero current/available balance visible; screenshot visually reviewed.",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/1440x900.png",
+                  "label": "Cloud refund readback — 1440×900 measured CSS viewport"
+                }
+              ]
             }
           ],
-          "limitations": "Read-only existing terminated record; no fresh termination or refund performed. This proves displayed grant-wallet inconsistency, not reconciliation of every underlying contributor wallet. Six screenshots typed-owner-wallet-* visually inspected. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Targeted correction of the original display defect only. No fresh termination, refund payment, all-contributor ledger reconciliation or global UX acceptance was performed. Existing cloud-origin Chrome zoom was calibrated to each exact innerWidth/innerHeight; screenshot physical pixels differ from CSS viewport dimensions. Initial uncalibrated images are excluded. Main browser owner visually reviewed all six published screenshots. Historical missing balances are not invented.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/360x800.png",
+              "label": "Cloud refund readback — 360×800 measured CSS viewport"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/390x844.png",
+              "label": "Cloud refund readback — 390×844 measured CSS viewport"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/768x1024.png",
+              "label": "Cloud refund readback — 768×1024 measured CSS viewport"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/1024x768.png",
+              "label": "Cloud refund readback — 1024×768 measured CSS viewport"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/1280x800.png",
+              "label": "Cloud refund readback — 1280×800 measured CSS viewport"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/1440x900.png",
+              "label": "Cloud refund readback — 1440×900 measured CSS viewport"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
           "group": "Grantor"
         },
@@ -5299,12 +5440,26 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-retest45",
-        "updatedAt": "2026-09-14T07:08:29.535Z",
-        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
+        "runId": "2026-09-14-merged-refund-targeted",
+        "updatedAt": "2026-09-14T18:37:09.758Z",
+        "state": "RETEST PARTIAL — one new merged-release cloud PASS; other prior outcomes retained",
+        "deployments": {
+          "webapp": {
+            "version": "auth-34878846169-1",
+            "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+            "promotionRun": "34880983295",
+            "status": "LIVE"
+          },
+          "webapi": {
+            "version": "policy-34880209047-1",
+            "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+            "promotionRun": "34880842679",
+            "status": "LIVE"
+          }
+        },
         "repairBatch": {
-          "runId": "2026-09-14-confirmed-failure-repair",
-          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "runId": "2026-09-14-merged-deployed-repair",
+          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
           "executionMode": "real-api-local",
           "browser": "Google Chrome",
           "sizes": [
@@ -5315,9 +5470,9 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
-          "deploymentStatus": "PENDING",
-          "cloudRetestStatus": "PENDING",
+          "mergeStatus": "MERGED",
+          "deploymentStatus": "LIVE",
+          "cloudRetestStatus": "PARTIAL",
           "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
           "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
           "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
@@ -5342,9 +5497,9 @@
             },
             {
               "id": "GRT020-BAL-001",
-              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
-              "summary": "Existing successful refund is now displayed through a protected read-only endpoint. Zero wallet balance and the recorded USD 1 refund reconcile; no new payment or invented historical balance.",
-              "cloudRetestStatus": "PENDING"
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "summary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending.",
+              "cloudRetestStatus": "PASS"
             },
             {
               "id": "GRT021-REPORT-001",
@@ -5353,29 +5508,72 @@
               "cloudRetestStatus": "PENDING"
             }
           ],
-          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "updatedAt": "2026-09-14T18:36:19.144Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
-            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+            "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
           },
           "pullRequests": [
             {
               "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
-              "label": "Frontend PR #2342 — checks running; independent review required"
+              "label": "Frontend PR #2342 — merged"
             },
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
-              "label": "API PR #737 — required checks passed; independent review required"
+              "label": "API PR #737 — merged after review corrections"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34880983295",
+              "label": "Frontend live promotion — success"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34880842679",
+              "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
+          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "mergeCommits": {
+            "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+            "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
+          },
+          "stagedDeployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "workflow": "34878846169",
+              "status": "SUCCESS"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "workflow": "34880209047",
+              "status": "SUCCESS",
+              "policyParityMatched": true
+            }
+          },
+          "apiReviewDelta": "Final review corrections: 44 controller assertions and 66 organization assertions passed; three required API checks passed and zero unresolved review threads.",
+          "deployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "promotionRun": "34880983295",
+              "status": "LIVE"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "promotionRun": "34880842679",
+              "status": "LIVE"
+            }
+          },
+          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
         }
       }
     },
     {
       "name": "Guest / Public",
       "repo": "guest-public-uat-report",
-      "commit": "f4c0c5b96ea5713af11531b4fea44506a3ed4a3d",
+      "commit": "032862a681c2f55c3cc64555b0a1dda1d0287720",
       "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -6002,8 +6200,8 @@
         "updatedAt": "2026-09-14T07:08:29.535Z",
         "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
         "repairBatch": {
-          "runId": "2026-09-14-confirmed-failure-repair",
-          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "runId": "2026-09-14-merged-deployed-repair",
+          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
           "executionMode": "real-api-local",
           "browser": "Google Chrome",
           "sizes": [
@@ -6014,9 +6212,9 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
-          "deploymentStatus": "PENDING",
-          "cloudRetestStatus": "PENDING",
+          "mergeStatus": "MERGED",
+          "deploymentStatus": "LIVE",
+          "cloudRetestStatus": "PARTIAL",
           "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
           "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
           "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
@@ -6040,29 +6238,72 @@
               "cloudRetestStatus": "PENDING"
             }
           ],
-          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "updatedAt": "2026-09-14T18:36:19.438Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
-            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+            "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
           },
           "pullRequests": [
             {
               "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
-              "label": "Frontend PR #2342 — checks running; independent review required"
+              "label": "Frontend PR #2342 — merged"
             },
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
-              "label": "API PR #737 — required checks passed; independent review required"
+              "label": "API PR #737 — merged after review corrections"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34880983295",
+              "label": "Frontend live promotion — success"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34880842679",
+              "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
+          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "mergeCommits": {
+            "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+            "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
+          },
+          "stagedDeployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "workflow": "34878846169",
+              "status": "SUCCESS"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "workflow": "34880209047",
+              "status": "SUCCESS",
+              "policyParityMatched": true
+            }
+          },
+          "apiReviewDelta": "Final review corrections: 44 controller assertions and 66 organization assertions passed; three required API checks passed and zero unresolved review threads.",
+          "deployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "promotionRun": "34880983295",
+              "status": "LIVE"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "promotionRun": "34880842679",
+              "status": "LIVE"
+            }
+          },
+          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
         }
       }
     },
     {
       "name": "KYC Reviewer",
       "repo": "kyc-reviewer-uat-report",
-      "commit": "ced3d8c01bc32683ddb8620c0fc9d870b1f93fa6",
+      "commit": "42a6c566725a1b4f5d7fa99b6019b8375a03eb76",
       "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/",
       "checkpoint": "2026-09-12 interim checkpoint",
       "scenarios": [
@@ -7549,8 +7790,8 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-confirmed-failure-repair",
-          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "runId": "2026-09-14-merged-deployed-repair",
+          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
           "executionMode": "real-api-local",
           "browser": "Google Chrome",
           "sizes": [
@@ -7561,36 +7802,79 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
-          "deploymentStatus": "PENDING",
-          "cloudRetestStatus": "PENDING",
+          "mergeStatus": "MERGED",
+          "deploymentStatus": "LIVE",
+          "cloudRetestStatus": "PARTIAL",
           "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
           "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
           "scope": "No confirmed FAIL repair in this group. Existing partial, blocked and passed outcomes are unchanged; this batch does not close remaining coverage.",
           "findings": [],
-          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "updatedAt": "2026-09-14T18:36:20.020Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
-            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+            "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
           },
           "pullRequests": [
             {
               "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
-              "label": "Frontend PR #2342 — checks running; independent review required"
+              "label": "Frontend PR #2342 — merged"
             },
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
-              "label": "API PR #737 — required checks passed; independent review required"
+              "label": "API PR #737 — merged after review corrections"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34880983295",
+              "label": "Frontend live promotion — success"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34880842679",
+              "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
+          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "mergeCommits": {
+            "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+            "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
+          },
+          "stagedDeployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "workflow": "34878846169",
+              "status": "SUCCESS"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "workflow": "34880209047",
+              "status": "SUCCESS",
+              "policyParityMatched": true
+            }
+          },
+          "apiReviewDelta": "Final review corrections: 44 controller assertions and 66 organization assertions passed; three required API checks passed and zero unresolved review threads.",
+          "deployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "promotionRun": "34880983295",
+              "status": "LIVE"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "promotionRun": "34880842679",
+              "status": "LIVE"
+            }
+          },
+          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
         }
       }
     },
     {
       "name": "KYC Approval",
       "repo": "kyc-approval-uat-report",
-      "commit": "8d19c989eca6829e9ad37cf0ed9161c872a73c63",
+      "commit": "eaa55e6826bb1bf3dc921af27d749c872b356781",
       "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome campaign",
       "scenarios": [
@@ -9290,8 +9574,8 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-confirmed-failure-repair",
-          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "runId": "2026-09-14-merged-deployed-repair",
+          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
           "executionMode": "real-api-local",
           "browser": "Google Chrome",
           "sizes": [
@@ -9302,36 +9586,79 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
-          "deploymentStatus": "PENDING",
-          "cloudRetestStatus": "PENDING",
+          "mergeStatus": "MERGED",
+          "deploymentStatus": "LIVE",
+          "cloudRetestStatus": "PARTIAL",
           "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
           "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
           "scope": "No confirmed FAIL repair in this group. Existing partial, blocked and passed outcomes are unchanged; this batch does not close remaining coverage.",
           "findings": [],
-          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "updatedAt": "2026-09-14T18:36:19.730Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
-            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+            "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
           },
           "pullRequests": [
             {
               "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
-              "label": "Frontend PR #2342 — checks running; independent review required"
+              "label": "Frontend PR #2342 — merged"
             },
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
-              "label": "API PR #737 — required checks passed; independent review required"
+              "label": "API PR #737 — merged after review corrections"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34880983295",
+              "label": "Frontend live promotion — success"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34880842679",
+              "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
+          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "mergeCommits": {
+            "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+            "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
+          },
+          "stagedDeployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "workflow": "34878846169",
+              "status": "SUCCESS"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "workflow": "34880209047",
+              "status": "SUCCESS",
+              "policyParityMatched": true
+            }
+          },
+          "apiReviewDelta": "Final review corrections: 44 controller assertions and 66 organization assertions passed; three required API checks passed and zero unresolved review threads.",
+          "deployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "promotionRun": "34880983295",
+              "status": "LIVE"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "promotionRun": "34880842679",
+              "status": "LIVE"
+            }
+          },
+          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
         }
       }
     },
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "3151440d87a8daa16676c9123c509cc4071dc3da",
+      "commit": "9e09a4fe2fd20c5d3fc165a20e4359e0fe634a67",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -10529,8 +10856,8 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-confirmed-failure-repair",
-          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "runId": "2026-09-14-merged-deployed-repair",
+          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
           "executionMode": "real-api-local",
           "browser": "Google Chrome",
           "sizes": [
@@ -10541,9 +10868,9 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
-          "deploymentStatus": "PENDING",
-          "cloudRetestStatus": "PENDING",
+          "mergeStatus": "MERGED",
+          "deploymentStatus": "LIVE",
+          "cloudRetestStatus": "PARTIAL",
           "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
           "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
           "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
@@ -10573,29 +10900,72 @@
               "cloudRetestStatus": "PENDING"
             }
           ],
-          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "updatedAt": "2026-09-14T18:36:20.603Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
-            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+            "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
           },
           "pullRequests": [
             {
               "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
-              "label": "Frontend PR #2342 — checks running; independent review required"
+              "label": "Frontend PR #2342 — merged"
             },
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
-              "label": "API PR #737 — required checks passed; independent review required"
+              "label": "API PR #737 — merged after review corrections"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34880983295",
+              "label": "Frontend live promotion — success"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34880842679",
+              "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
+          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "mergeCommits": {
+            "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+            "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
+          },
+          "stagedDeployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "workflow": "34878846169",
+              "status": "SUCCESS"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "workflow": "34880209047",
+              "status": "SUCCESS",
+              "policyParityMatched": true
+            }
+          },
+          "apiReviewDelta": "Final review corrections: 44 controller assertions and 66 organization assertions passed; three required API checks passed and zero unresolved review threads.",
+          "deployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "promotionRun": "34880983295",
+              "status": "LIVE"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "promotionRun": "34880842679",
+              "status": "LIVE"
+            }
+          },
+          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
         }
       }
     },
     {
       "name": "Support Operations",
       "repo": "support-operations-uat-report",
-      "commit": "e0f0b34c7a301066455d26a9ec6f0fafb2a60abf",
+      "commit": "d4d6e88ec899d890badbb5b6150695cfd6ebf108",
       "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome Support Operations campaign",
       "scenarios": [
@@ -10944,8 +11314,8 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-confirmed-failure-repair",
-          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "runId": "2026-09-14-merged-deployed-repair",
+          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
           "executionMode": "real-api-local",
           "browser": "Google Chrome",
           "sizes": [
@@ -10956,9 +11326,9 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
-          "deploymentStatus": "PENDING",
-          "cloudRetestStatus": "PENDING",
+          "mergeStatus": "MERGED",
+          "deploymentStatus": "LIVE",
+          "cloudRetestStatus": "PARTIAL",
           "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
           "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
           "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
@@ -10970,29 +11340,72 @@
               "cloudRetestStatus": "PENDING"
             }
           ],
-          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "updatedAt": "2026-09-14T18:36:20.897Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
-            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+            "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
           },
           "pullRequests": [
             {
               "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
-              "label": "Frontend PR #2342 — checks running; independent review required"
+              "label": "Frontend PR #2342 — merged"
             },
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
-              "label": "API PR #737 — required checks passed; independent review required"
+              "label": "API PR #737 — merged after review corrections"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34880983295",
+              "label": "Frontend live promotion — success"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34880842679",
+              "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
+          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "mergeCommits": {
+            "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+            "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
+          },
+          "stagedDeployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "workflow": "34878846169",
+              "status": "SUCCESS"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "workflow": "34880209047",
+              "status": "SUCCESS",
+              "policyParityMatched": true
+            }
+          },
+          "apiReviewDelta": "Final review corrections: 44 controller assertions and 66 organization assertions passed; three required API checks passed and zero unresolved review threads.",
+          "deployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "promotionRun": "34880983295",
+              "status": "LIVE"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "promotionRun": "34880842679",
+              "status": "LIVE"
+            }
+          },
+          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
         }
       }
     },
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "6ee6b64944bdfd69aaededf67d6cf2625346232c",
+      "commit": "f23d7636264938fded430c77dd1d5f1d1455b180",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -12004,8 +12417,8 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-confirmed-failure-repair",
-          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "runId": "2026-09-14-merged-deployed-repair",
+          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
           "executionMode": "real-api-local",
           "browser": "Google Chrome",
           "sizes": [
@@ -12016,9 +12429,9 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
-          "deploymentStatus": "PENDING",
-          "cloudRetestStatus": "PENDING",
+          "mergeStatus": "MERGED",
+          "deploymentStatus": "LIVE",
+          "cloudRetestStatus": "PARTIAL",
           "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
           "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
           "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
@@ -12042,22 +12455,65 @@
               "cloudRetestStatus": "PENDING"
             }
           ],
-          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "updatedAt": "2026-09-14T18:36:18.853Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
-            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+            "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
           },
           "pullRequests": [
             {
               "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
-              "label": "Frontend PR #2342 — checks running; independent review required"
+              "label": "Frontend PR #2342 — merged"
             },
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
-              "label": "API PR #737 — required checks passed; independent review required"
+              "label": "API PR #737 — merged after review corrections"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34880983295",
+              "label": "Frontend live promotion — success"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34880842679",
+              "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
+          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "mergeCommits": {
+            "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+            "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
+          },
+          "stagedDeployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "workflow": "34878846169",
+              "status": "SUCCESS"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "workflow": "34880209047",
+              "status": "SUCCESS",
+              "policyParityMatched": true
+            }
+          },
+          "apiReviewDelta": "Final review corrections: 44 controller assertions and 66 organization assertions passed; three required API checks passed and zero unresolved review threads.",
+          "deployments": {
+            "webapp": {
+              "version": "auth-34878846169-1",
+              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
+              "promotionRun": "34880983295",
+              "status": "LIVE"
+            },
+            "webapi": {
+              "version": "policy-34880209047-1",
+              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
+              "promotionRun": "34880842679",
+              "status": "LIVE"
+            }
+          },
+          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
         }
       }
     }
@@ -15418,48 +15874,103 @@
       "scenario": "GRT-018, GRT-020",
       "summary": "The creator refund reconciled, but fresh terminated-grant wallet readback still showed USD 1.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Exact terminated owned grant still shows Available and Current USD1.00 with pending disbursements0 and sole creator contribution USD1.00; no refund/release ledger entry. Same terminal balance inconsistency reproduced on six Chrome sizes and persisted after refresh.",
+      "status": "PASS",
+      "retestSummary": "On the exact merged and live release, the original terminated grant wallet displays its existing successful USD -1 refund alongside USD +1 contribution, with current and available balance zero. The refund remains visible after full reload and reopening Wallet. Missing historical running balances are explicitly unavailable. Actual Chrome readback and visual review passed at all six measured CSS viewports.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "FAIL",
-          "summary": "Exact terminated owned grant still shows Available and Current USD1.00 with pending disbursements0 and sole creator contribution USD1.00; no refund/release ledger entry. Same terminal balance inconsistency reproduced on six Chrome sizes and persisted after refresh.",
-          "evidence": []
+          "status": "PASS",
+          "summary": "Actual measured 360×800 Chrome CSS viewport: recorded USD -1 refund, USD +1 contribution and zero current/available balance visible; screenshot visually reviewed.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/360x800.png",
+              "label": "Cloud refund readback — 360×800 measured CSS viewport"
+            }
+          ]
         },
         {
           "size": "390×844",
-          "status": "FAIL",
-          "summary": "Exact terminated owned grant still shows Available and Current USD1.00 with pending disbursements0 and sole creator contribution USD1.00; no refund/release ledger entry. Same terminal balance inconsistency reproduced on six Chrome sizes and persisted after refresh.",
-          "evidence": []
+          "status": "PASS",
+          "summary": "Actual measured 390×844 Chrome CSS viewport: recorded USD -1 refund, USD +1 contribution and zero current/available balance visible; screenshot visually reviewed.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/390x844.png",
+              "label": "Cloud refund readback — 390×844 measured CSS viewport"
+            }
+          ]
         },
         {
           "size": "768×1024",
-          "status": "FAIL",
-          "summary": "Exact terminated owned grant still shows Available and Current USD1.00 with pending disbursements0 and sole creator contribution USD1.00; no refund/release ledger entry. Same terminal balance inconsistency reproduced on six Chrome sizes and persisted after refresh.",
-          "evidence": []
+          "status": "PASS",
+          "summary": "Actual measured 768×1024 Chrome CSS viewport: recorded USD -1 refund, USD +1 contribution and zero current/available balance visible; screenshot visually reviewed.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/768x1024.png",
+              "label": "Cloud refund readback — 768×1024 measured CSS viewport"
+            }
+          ]
         },
         {
           "size": "1024×768",
-          "status": "FAIL",
-          "summary": "Exact terminated owned grant still shows Available and Current USD1.00 with pending disbursements0 and sole creator contribution USD1.00; no refund/release ledger entry. Same terminal balance inconsistency reproduced on six Chrome sizes and persisted after refresh.",
-          "evidence": []
+          "status": "PASS",
+          "summary": "Actual measured 1024×768 Chrome CSS viewport: recorded USD -1 refund, USD +1 contribution and zero current/available balance visible; screenshot visually reviewed.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/1024x768.png",
+              "label": "Cloud refund readback — 1024×768 measured CSS viewport"
+            }
+          ]
         },
         {
           "size": "1280×800",
-          "status": "FAIL",
-          "summary": "Exact terminated owned grant still shows Available and Current USD1.00 with pending disbursements0 and sole creator contribution USD1.00; no refund/release ledger entry. Same terminal balance inconsistency reproduced on six Chrome sizes and persisted after refresh.",
-          "evidence": []
+          "status": "PASS",
+          "summary": "Actual measured 1280×800 Chrome CSS viewport: recorded USD -1 refund, USD +1 contribution and zero current/available balance visible; screenshot visually reviewed.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/1280x800.png",
+              "label": "Cloud refund readback — 1280×800 measured CSS viewport"
+            }
+          ]
         },
         {
           "size": "1440×900",
-          "status": "FAIL",
-          "summary": "Exact terminated owned grant still shows Available and Current USD1.00 with pending disbursements0 and sole creator contribution USD1.00; no refund/release ledger entry. Same terminal balance inconsistency reproduced on six Chrome sizes and persisted after refresh.",
-          "evidence": []
+          "status": "PASS",
+          "summary": "Actual measured 1440×900 Chrome CSS viewport: recorded USD -1 refund, USD +1 contribution and zero current/available balance visible; screenshot visually reviewed.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/1440x900.png",
+              "label": "Cloud refund readback — 1440×900 measured CSS viewport"
+            }
+          ]
         }
       ],
-      "limitations": "Read-only existing terminated record; no fresh termination or refund performed. This proves displayed grant-wallet inconsistency, not reconciliation of every underlying contributor wallet. Six screenshots typed-owner-wallet-* visually inspected. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Targeted correction of the original display defect only. No fresh termination, refund payment, all-contributor ledger reconciliation or global UX acceptance was performed. Existing cloud-origin Chrome zoom was calibrated to each exact innerWidth/innerHeight; screenshot physical pixels differ from CSS viewport dimensions. Initial uncalibrated images are excluded. Main browser owner visually reviewed all six published screenshots. Historical missing balances are not invented.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/360x800.png",
+          "label": "Cloud refund readback — 360×800 measured CSS viewport"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/390x844.png",
+          "label": "Cloud refund readback — 390×844 measured CSS viewport"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/768x1024.png",
+          "label": "Cloud refund readback — 768×1024 measured CSS viewport"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/1024x768.png",
+          "label": "Cloud refund readback — 1024×768 measured CSS viewport"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/1280x800.png",
+          "label": "Cloud refund readback — 1280×800 measured CSS viewport"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-merged-refund/1440x900.png",
+          "label": "Cloud refund readback — 1440×900 measured CSS viewport"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "group": "Grantor",
       "groups": [
