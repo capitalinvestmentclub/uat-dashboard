@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T18:38:07.732Z",
+  "generatedAt": "2026-09-14T20:08:51.613Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -5573,7 +5573,7 @@
     {
       "name": "Guest / Public",
       "repo": "guest-public-uat-report",
-      "commit": "032862a681c2f55c3cc64555b0a1dda1d0287720",
+      "commit": "45882f3e15591ab2b1fab49dd132f9c3c439e108",
       "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5767,48 +5767,151 @@
           "scenario": "PUB-001",
           "summary": "At 360×800 and 390×844 the landing header exposes only the logo and Sign up. There is no mobile menu, Sign in, Products or Resources control.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Fresh signed-out landing-page inspection reproduces missing mobile header navigation. At 360 and 390 pixels only logo and Sign up render; no menu or Sign in. At 768 pixels Sign in renders but Products and Resources remain hidden without a menu. Desktop header controls render at 1024, 1280 and 1440 pixels.",
+          "status": "PASS",
+          "retestSummary": "Targeted original public navigation defect passed actual Chrome controls at all six measured CSS sizes. Mobile/tablet menu exposes Products/Resources links; Escape closes and returns focus. Desktop Products click and Resources keyboard Enter expose links; Sign in visible; no horizontal overflow. Not broad homepage certification.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "FAIL",
-              "summary": "Fresh signed-out landing-page inspection reproduces missing mobile header navigation. At 360 and 390 pixels only logo and Sign up render; no menu or Sign in. At 768 pixels Sign in renders but Products and Resources remain hidden without a menu. Desktop header controls render at 1024, 1280 and 1440 pixels.",
-              "evidence": []
+              "measuredCss": "360x800",
+              "status": "PASS",
+              "summary": "Open mobile menu; Inspect Products and Resources links; Escape closes menu and restores focus; Inspect screenshot and overflow. PASS; main agent visually inspected",
+              "steps": [
+                "Open mobile menu",
+                "Inspect Products and Resources links",
+                "Escape closes menu and restores focus",
+                "Inspect screenshot and overflow"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-menu-360x800.png",
+                  "label": "PUB001-menu-360x800"
+                }
+              ],
+              "observedAt": "2026-09-14T19:59:02.508Z"
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "Fresh signed-out landing-page inspection reproduces missing mobile header navigation. At 360 and 390 pixels only logo and Sign up render; no menu or Sign in. At 768 pixels Sign in renders but Products and Resources remain hidden without a menu. Desktop header controls render at 1024, 1280 and 1440 pixels.",
-              "evidence": []
+              "measuredCss": "390x844",
+              "status": "PASS",
+              "summary": "Open mobile menu; Inspect Products and Resources links; Escape closes menu and restores focus; Inspect screenshot and overflow. PASS; main agent visually inspected",
+              "steps": [
+                "Open mobile menu",
+                "Inspect Products and Resources links",
+                "Escape closes menu and restores focus",
+                "Inspect screenshot and overflow"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-menu-390x844.png",
+                  "label": "PUB001-menu-390x844"
+                }
+              ],
+              "observedAt": "2026-09-14T19:59:02.508Z"
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Fresh signed-out landing-page inspection reproduces missing mobile header navigation. At 360 and 390 pixels only logo and Sign up render; no menu or Sign in. At 768 pixels Sign in renders but Products and Resources remain hidden without a menu. Desktop header controls render at 1024, 1280 and 1440 pixels.",
-              "evidence": []
+              "measuredCss": "768x1024",
+              "status": "PASS",
+              "summary": "Open mobile menu; Inspect Products and Resources links; Escape closes menu and restores focus; Inspect screenshot and overflow. PASS; main agent visually inspected",
+              "steps": [
+                "Open mobile menu",
+                "Inspect Products and Resources links",
+                "Escape closes menu and restores focus",
+                "Inspect screenshot and overflow"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-menu-768x1024.png",
+                  "label": "PUB001-menu-768x1024"
+                }
+              ],
+              "observedAt": "2026-09-14T19:59:02.508Z"
             },
             {
               "size": "1024×768",
-              "status": "PARTIAL",
-              "summary": "Fresh signed-out landing-page inspection reproduces missing mobile header navigation. At 360 and 390 pixels only logo and Sign up render; no menu or Sign in. At 768 pixels Sign in renders but Products and Resources remain hidden without a menu. Desktop header controls render at 1024, 1280 and 1440 pixels.",
-              "evidence": []
+              "measuredCss": "1024x768",
+              "status": "PASS",
+              "summary": "Click Products dropdown; Activate Resources with keyboard Enter; Verify Sign in and no horizontal overflow; Inspect screenshot. PASS; main agent visually inspected",
+              "steps": [
+                "Click Products dropdown",
+                "Activate Resources with keyboard Enter",
+                "Verify Sign in and no horizontal overflow",
+                "Inspect screenshot"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-products-1024x768.png",
+                  "label": "PUB001-products-1024x768"
+                }
+              ],
+              "observedAt": "2026-09-14T19:59:02.508Z"
             },
             {
               "size": "1280×800",
-              "status": "PARTIAL",
-              "summary": "Fresh signed-out landing-page inspection reproduces missing mobile header navigation. At 360 and 390 pixels only logo and Sign up render; no menu or Sign in. At 768 pixels Sign in renders but Products and Resources remain hidden without a menu. Desktop header controls render at 1024, 1280 and 1440 pixels.",
-              "evidence": []
+              "measuredCss": "1280x800",
+              "status": "PASS",
+              "summary": "Click Products dropdown; Activate Resources with keyboard Enter; Verify Sign in and no horizontal overflow; Inspect screenshot. PASS; main agent visually inspected",
+              "steps": [
+                "Click Products dropdown",
+                "Activate Resources with keyboard Enter",
+                "Verify Sign in and no horizontal overflow",
+                "Inspect screenshot"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-products-1280x800.png",
+                  "label": "PUB001-products-1280x800"
+                }
+              ],
+              "observedAt": "2026-09-14T19:59:02.508Z"
             },
             {
               "size": "1440×900",
-              "status": "PARTIAL",
-              "summary": "Fresh signed-out landing-page inspection reproduces missing mobile header navigation. At 360 and 390 pixels only logo and Sign up render; no menu or Sign in. At 768 pixels Sign in renders but Products and Resources remain hidden without a menu. Desktop header controls render at 1024, 1280 and 1440 pixels.",
-              "evidence": []
+              "measuredCss": "1440x900",
+              "status": "PASS",
+              "summary": "Click Products dropdown; Activate Resources with keyboard Enter; Verify Sign in and no horizontal overflow; Inspect screenshot. PASS; main agent visually inspected",
+              "steps": [
+                "Click Products dropdown",
+                "Activate Resources with keyboard Enter",
+                "Verify Sign in and no horizontal overflow",
+                "Inspect screenshot"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-products-1440x900.png",
+                  "label": "PUB001-products-1440x900"
+                }
+              ],
+              "observedAt": "2026-09-14T19:59:02.508Z"
             }
           ],
-          "limitations": "Desktop dropdown and keyboard subchecks not yet executed; existing mobile failure is established. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Three original Guest/Public critical/high defect acceptance checks only; not full public-suite certification. No new code changes; existing merged deployment retested.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-menu-360x800.png",
+              "label": "PUB001-menu-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-menu-390x844.png",
+              "label": "PUB001-menu-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-menu-768x1024.png",
+              "label": "PUB001-menu-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-products-1024x768.png",
+              "label": "PUB001-products-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-products-1280x800.png",
+              "label": "PUB001-products-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-products-1440x900.png",
+              "label": "PUB001-products-1440x900"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
           "group": "Guest / Public"
         },
@@ -5820,48 +5923,199 @@
           "scenario": "PUB-002",
           "summary": "Entering an exact published pitch title and submitting cleared the query and retained all 31 pitch cards instead of filtering to the match.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Exact published-title search at 360, 768, 1024, 1280 and 1440 widths and a no-match Unicode query at 390 submit to /pitches?, clear the search input, and return Browse 33 pitches with unrelated cards. Fresh failure reproduced at every requested size.",
+          "status": "PASS",
+          "retestSummary": "Main agent submitted exact INV-016 title with Enter and retained query/Browse 1 at all six exact measured CSS sizes; Unicode no-match query retained and rendered No pitches found at each size. Main reviewed all exact-result images; register agent reviewed remaining four no-match images. Targeted search defect closure only; broad filter combinations not certified.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "FAIL",
-              "summary": "Exact published-title search at 360, 768, 1024, 1280 and 1440 widths and a no-match Unicode query at 390 submit to /pitches?, clear the search input, and return Browse 33 pitches with unrelated cards. Fresh failure reproduced at every requested size.",
-              "evidence": []
+              "measuredCss": "360x800",
+              "status": "PASS",
+              "summary": "Enter exact published title and submit using Enter; Verify retained query and Browse 1 matching pitch; Submit No-match Ω冷链 c37; Verify retained query and No pitches found. PASS; main reviewed exact screenshots; main/register reviewed no-match",
+              "steps": [
+                "Enter exact published title and submit using Enter",
+                "Verify retained query and Browse 1 matching pitch",
+                "Submit No-match Ω冷链 c37",
+                "Verify retained query and No pitches found"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-360x800.png",
+                  "label": "PUB002-exact-360x800"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-360x800.png",
+                  "label": "PUB002-no-match-360x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:01:37.684Z"
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "Exact published-title search at 360, 768, 1024, 1280 and 1440 widths and a no-match Unicode query at 390 submit to /pitches?, clear the search input, and return Browse 33 pitches with unrelated cards. Fresh failure reproduced at every requested size.",
-              "evidence": []
+              "measuredCss": "390x844",
+              "status": "PASS",
+              "summary": "Enter exact published title and submit using Enter; Verify retained query and Browse 1 matching pitch; Submit No-match Ω冷链 c37; Verify retained query and No pitches found. PASS; main reviewed exact screenshots; main/register reviewed no-match",
+              "steps": [
+                "Enter exact published title and submit using Enter",
+                "Verify retained query and Browse 1 matching pitch",
+                "Submit No-match Ω冷链 c37",
+                "Verify retained query and No pitches found"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-390x844.png",
+                  "label": "PUB002-exact-390x844"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-390x844.png",
+                  "label": "PUB002-no-match-390x844"
+                }
+              ],
+              "observedAt": "2026-09-14T20:01:37.684Z"
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Exact published-title search at 360, 768, 1024, 1280 and 1440 widths and a no-match Unicode query at 390 submit to /pitches?, clear the search input, and return Browse 33 pitches with unrelated cards. Fresh failure reproduced at every requested size.",
-              "evidence": []
+              "measuredCss": "768x1024",
+              "status": "PASS",
+              "summary": "Enter exact published title and submit using Enter; Verify retained query and Browse 1 matching pitch; Submit No-match Ω冷链 c37; Verify retained query and No pitches found. PASS; main reviewed exact screenshots; main/register reviewed no-match",
+              "steps": [
+                "Enter exact published title and submit using Enter",
+                "Verify retained query and Browse 1 matching pitch",
+                "Submit No-match Ω冷链 c37",
+                "Verify retained query and No pitches found"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-corrected-768x1024.png",
+                  "label": "PUB002-exact-corrected-768x1024"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-corrected-768x1024.png",
+                  "label": "PUB002-no-match-corrected-768x1024"
+                }
+              ],
+              "observedAt": "2026-09-14T20:01:37.684Z"
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "Not inspected in this run.",
-              "evidence": []
+              "measuredCss": "1024x768",
+              "status": "PASS",
+              "summary": "Enter exact published title and submit using Enter; Verify retained query and Browse 1 matching pitch; Submit No-match Ω冷链 c37; Verify retained query and No pitches found. PASS; main reviewed exact screenshots; main/register reviewed no-match",
+              "steps": [
+                "Enter exact published title and submit using Enter",
+                "Verify retained query and Browse 1 matching pitch",
+                "Submit No-match Ω冷链 c37",
+                "Verify retained query and No pitches found"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-corrected-1024x768.png",
+                  "label": "PUB002-exact-corrected-1024x768"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-corrected-1024x768.png",
+                  "label": "PUB002-no-match-corrected-1024x768"
+                }
+              ],
+              "observedAt": "2026-09-14T20:01:37.684Z"
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "Not inspected in this run.",
-              "evidence": []
+              "measuredCss": "1280x800",
+              "status": "PASS",
+              "summary": "Enter exact published title and submit using Enter; Verify retained query and Browse 1 matching pitch; Submit No-match Ω冷链 c37; Verify retained query and No pitches found. PASS; main reviewed exact screenshots; main/register reviewed no-match",
+              "steps": [
+                "Enter exact published title and submit using Enter",
+                "Verify retained query and Browse 1 matching pitch",
+                "Submit No-match Ω冷链 c37",
+                "Verify retained query and No pitches found"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-1280x800.png",
+                  "label": "PUB002-exact-1280x800"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-1280x800.png",
+                  "label": "PUB002-no-match-1280x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:01:37.684Z"
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "Not inspected in this run.",
-              "evidence": []
+              "measuredCss": "1440x900",
+              "status": "PASS",
+              "summary": "Enter exact published title and submit using Enter; Verify retained query and Browse 1 matching pitch; Submit No-match Ω冷链 c37; Verify retained query and No pitches found. PASS; main reviewed exact screenshots; main/register reviewed no-match",
+              "steps": [
+                "Enter exact published title and submit using Enter",
+                "Verify retained query and Browse 1 matching pitch",
+                "Submit No-match Ω冷链 c37",
+                "Verify retained query and No pitches found"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-1440x900.png",
+                  "label": "PUB002-exact-1440x900"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-1440x900.png",
+                  "label": "PUB002-no-match-1440x900"
+                }
+              ],
+              "observedAt": "2026-09-14T20:01:37.684Z"
             }
           ],
-          "limitations": "Defect-focused search reproduction only; other filter combinations are outside this check. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Three original Guest/Public critical/high defect acceptance checks only; not full public-suite certification. No new code changes; existing merged deployment retested.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-360x800.png",
+              "label": "PUB002-exact-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-360x800.png",
+              "label": "PUB002-no-match-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-390x844.png",
+              "label": "PUB002-exact-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-390x844.png",
+              "label": "PUB002-no-match-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-corrected-768x1024.png",
+              "label": "PUB002-exact-corrected-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-corrected-768x1024.png",
+              "label": "PUB002-no-match-corrected-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-corrected-1024x768.png",
+              "label": "PUB002-exact-corrected-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-corrected-1024x768.png",
+              "label": "PUB002-no-match-corrected-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-1280x800.png",
+              "label": "PUB002-exact-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-1280x800.png",
+              "label": "PUB002-no-match-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-1440x900.png",
+              "label": "PUB002-exact-1440x900"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-1440x900.png",
+              "label": "PUB002-no-match-1440x900"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
           "group": "Guest / Public"
         },
@@ -5873,48 +6127,295 @@
           "scenario": "PUB-003",
           "summary": "View Pitch from the signed-out catalog opens “Sign in to view this pitch,” so no public pitch narrative or public material can be inspected.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Opening the published INV-016 Bid Lifecycle pitch from the public catalog displays Sign in to view this pitch; no public narrative is exposed. Reproduced at all six sizes. Login/signup links preserve the pitch destination.",
+          "status": "PASS",
+          "retestSummary": "Published INV-016 narrative visible signed out; Sign in opens Log in preserving exact pitch returnUrl and Back restores narrative at all six measured CSS sizes. Fresh draft, suspended and absent pitch navigations at each size show generic Not Found only with no narrative/private controls. Main visually reviewed six verified public images; register agent visually reviewed all eighteen privacy images. Original targeted defect only, not entire public suite.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "FAIL",
-              "summary": "Opening the published INV-016 Bid Lifecycle pitch from the public catalog displays Sign in to view this pitch; no public narrative is exposed. Reproduced at all six sizes. Login/signup links preserve the pitch destination.",
-              "evidence": []
+              "measuredCss": "360x800",
+              "status": "PASS",
+              "summary": "Open public published narrative; Click Sign in and verify exact returnUrl; Back restores narrative; Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content. PASS; main reviewed public narrative; register agent reviewed all privacy images",
+              "steps": [
+                "Open public published narrative",
+                "Click Sign in and verify exact returnUrl",
+                "Back restores narrative",
+                "Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-360x800.png",
+                  "label": "PUB003-verified-public-360x800"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-360x800.png",
+                  "label": "PUB003-draft-360x800"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-360x800.png",
+                  "label": "PUB003-suspended-360x800"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-360x800.png",
+                  "label": "PUB003-unknown-360x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:06:34.957Z"
             },
             {
               "size": "390×844",
-              "status": "FAIL",
-              "summary": "Opening the published INV-016 Bid Lifecycle pitch from the public catalog displays Sign in to view this pitch; no public narrative is exposed. Reproduced at all six sizes. Login/signup links preserve the pitch destination.",
-              "evidence": []
+              "measuredCss": "390x844",
+              "status": "PASS",
+              "summary": "Open public published narrative; Click Sign in and verify exact returnUrl; Back restores narrative; Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content. PASS; main reviewed public narrative; register agent reviewed all privacy images",
+              "steps": [
+                "Open public published narrative",
+                "Click Sign in and verify exact returnUrl",
+                "Back restores narrative",
+                "Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-390x844.png",
+                  "label": "PUB003-verified-public-390x844"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-390x844.png",
+                  "label": "PUB003-draft-390x844"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-390x844.png",
+                  "label": "PUB003-suspended-390x844"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-390x844.png",
+                  "label": "PUB003-unknown-390x844"
+                }
+              ],
+              "observedAt": "2026-09-14T20:06:34.957Z"
             },
             {
               "size": "768×1024",
-              "status": "FAIL",
-              "summary": "Opening the published INV-016 Bid Lifecycle pitch from the public catalog displays Sign in to view this pitch; no public narrative is exposed. Reproduced at all six sizes. Login/signup links preserve the pitch destination.",
-              "evidence": []
+              "measuredCss": "768x1024",
+              "status": "PASS",
+              "summary": "Open public published narrative; Click Sign in and verify exact returnUrl; Back restores narrative; Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content. PASS; main reviewed public narrative; register agent reviewed all privacy images",
+              "steps": [
+                "Open public published narrative",
+                "Click Sign in and verify exact returnUrl",
+                "Back restores narrative",
+                "Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-768x1024.png",
+                  "label": "PUB003-verified-public-768x1024"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-768x1024.png",
+                  "label": "PUB003-draft-768x1024"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-768x1024.png",
+                  "label": "PUB003-suspended-768x1024"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-768x1024.png",
+                  "label": "PUB003-unknown-768x1024"
+                }
+              ],
+              "observedAt": "2026-09-14T20:06:34.957Z"
             },
             {
               "size": "1024×768",
-              "status": "FAIL",
-              "summary": "Opening the published INV-016 Bid Lifecycle pitch from the public catalog displays Sign in to view this pitch; no public narrative is exposed. Reproduced at all six sizes. Login/signup links preserve the pitch destination.",
-              "evidence": []
+              "measuredCss": "1024x768",
+              "status": "PASS",
+              "summary": "Open public published narrative; Click Sign in and verify exact returnUrl; Back restores narrative; Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content. PASS; main reviewed public narrative; register agent reviewed all privacy images",
+              "steps": [
+                "Open public published narrative",
+                "Click Sign in and verify exact returnUrl",
+                "Back restores narrative",
+                "Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-1024x768.png",
+                  "label": "PUB003-verified-public-1024x768"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-1024x768.png",
+                  "label": "PUB003-draft-1024x768"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-1024x768.png",
+                  "label": "PUB003-suspended-1024x768"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-1024x768.png",
+                  "label": "PUB003-unknown-1024x768"
+                }
+              ],
+              "observedAt": "2026-09-14T20:06:34.957Z"
             },
             {
               "size": "1280×800",
-              "status": "FAIL",
-              "summary": "Opening the published INV-016 Bid Lifecycle pitch from the public catalog displays Sign in to view this pitch; no public narrative is exposed. Reproduced at all six sizes. Login/signup links preserve the pitch destination.",
-              "evidence": []
+              "measuredCss": "1280x800",
+              "status": "PASS",
+              "summary": "Open public published narrative; Click Sign in and verify exact returnUrl; Back restores narrative; Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content. PASS; main reviewed public narrative; register agent reviewed all privacy images",
+              "steps": [
+                "Open public published narrative",
+                "Click Sign in and verify exact returnUrl",
+                "Back restores narrative",
+                "Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-1280x800.png",
+                  "label": "PUB003-verified-public-1280x800"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-1280x800.png",
+                  "label": "PUB003-draft-1280x800"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-1280x800.png",
+                  "label": "PUB003-suspended-1280x800"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-1280x800.png",
+                  "label": "PUB003-unknown-1280x800"
+                }
+              ],
+              "observedAt": "2026-09-14T20:06:34.957Z"
             },
             {
               "size": "1440×900",
-              "status": "FAIL",
-              "summary": "Opening the published INV-016 Bid Lifecycle pitch from the public catalog displays Sign in to view this pitch; no public narrative is exposed. Reproduced at all six sizes. Login/signup links preserve the pitch destination.",
-              "evidence": []
+              "measuredCss": "1440x900",
+              "status": "PASS",
+              "summary": "Open public published narrative; Click Sign in and verify exact returnUrl; Back restores narrative; Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content. PASS; main reviewed public narrative; register agent reviewed all privacy images",
+              "steps": [
+                "Open public published narrative",
+                "Click Sign in and verify exact returnUrl",
+                "Back restores narrative",
+                "Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-1440x900.png",
+                  "label": "PUB003-verified-public-1440x900"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-1440x900.png",
+                  "label": "PUB003-draft-1440x900"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-1440x900.png",
+                  "label": "PUB003-suspended-1440x900"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-1440x900.png",
+                  "label": "PUB003-unknown-1440x900"
+                }
+              ],
+              "observedAt": "2026-09-14T20:06:34.957Z"
             }
           ],
-          "limitations": "Draft, removed and unknown record privacy branches pending. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Three original Guest/Public critical/high defect acceptance checks only; not full public-suite certification. No new code changes; existing merged deployment retested.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-360x800.png",
+              "label": "PUB003-verified-public-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-360x800.png",
+              "label": "PUB003-draft-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-360x800.png",
+              "label": "PUB003-suspended-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-360x800.png",
+              "label": "PUB003-unknown-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-390x844.png",
+              "label": "PUB003-verified-public-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-390x844.png",
+              "label": "PUB003-draft-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-390x844.png",
+              "label": "PUB003-suspended-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-390x844.png",
+              "label": "PUB003-unknown-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-768x1024.png",
+              "label": "PUB003-verified-public-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-768x1024.png",
+              "label": "PUB003-draft-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-768x1024.png",
+              "label": "PUB003-suspended-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-768x1024.png",
+              "label": "PUB003-unknown-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-1024x768.png",
+              "label": "PUB003-verified-public-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-1024x768.png",
+              "label": "PUB003-draft-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-1024x768.png",
+              "label": "PUB003-suspended-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-1024x768.png",
+              "label": "PUB003-unknown-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-1280x800.png",
+              "label": "PUB003-verified-public-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-1280x800.png",
+              "label": "PUB003-draft-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-1280x800.png",
+              "label": "PUB003-suspended-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-1280x800.png",
+              "label": "PUB003-unknown-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-1440x900.png",
+              "label": "PUB003-verified-public-1440x900"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-1440x900.png",
+              "label": "PUB003-draft-1440x900"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-1440x900.png",
+              "label": "PUB003-suspended-1440x900"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-1440x900.png",
+              "label": "PUB003-unknown-1440x900"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
           "group": "Guest / Public"
         },
@@ -6196,13 +6697,13 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-retest45",
-        "updatedAt": "2026-09-14T07:08:29.535Z",
-        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
+        "runId": "2026-09-14-close37",
+        "updatedAt": "2026-09-14T20:08:09.142Z",
+        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "repairBatch": {
           "runId": "2026-09-14-merged-deployed-repair",
-          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
-          "executionMode": "real-api-local",
+          "state": "MERGED AND LIVE — targeted cloud verification progressing",
+          "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
             "360×800",
@@ -6221,24 +6722,24 @@
           "findings": [
             {
               "id": "PUB001-RESP-001",
-              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
-              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
-              "cloudRetestStatus": "PENDING"
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "summary": "Targeted original public navigation defect passed actual Chrome controls at all six measured CSS sizes. Mobile/tablet menu exposes Products/Resources links; Escape closes and returns focus. Desktop Products click and Resources keyboard Enter expose links; Sign in visible; no horizontal overflow. Not broad homepage certification.",
+              "cloudRetestStatus": "PASS"
             },
             {
               "id": "PUB002-SEARCH-001",
-              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
-              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
-              "cloudRetestStatus": "PENDING"
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "summary": "Main agent submitted exact INV-016 title with Enter and retained query/Browse 1 at all six exact measured CSS sizes; Unicode no-match query retained and rendered No pitches found at each size. Main reviewed all exact-result images; register agent reviewed remaining four no-match images. Targeted search defect closure only; broad filter combinations not certified.",
+              "cloudRetestStatus": "PASS"
             },
             {
               "id": "PUB003-AUTH-001",
-              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
-              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
-              "cloudRetestStatus": "PENDING"
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "summary": "Published INV-016 narrative visible signed out; Sign in opens Log in preserving exact pitch returnUrl and Back restores narrative at all six measured CSS sizes. Fresh draft, suspended and absent pitch navigations at each size show generic Not Found only with no narrative/private controls. Main visually reviewed six verified public images; register agent visually reviewed all eighteen privacy images. Original targeted defect only, not entire public suite.",
+              "cloudRetestStatus": "PASS"
             }
           ],
-          "updatedAt": "2026-09-14T18:36:19.438Z",
+          "updatedAt": "2026-09-14T20:08:09.142Z",
           "candidates": {
             "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
             "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
@@ -6261,7 +6762,7 @@
               "label": "API live promotion — success"
             }
           ],
-          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "releaseGate": "Recorded merge commits are live. Cloud closure below is limited to explicit targeted results with six measured CSS viewport outcomes; merged code alone never closes other findings.",
           "mergeCommits": {
             "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
             "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
@@ -6294,9 +6795,11 @@
               "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
               "promotionRun": "34880842679",
               "status": "LIVE"
-            }
+            },
+            "buildId": "yU2MSQuhYYpfh4uHJUpxd",
+            "verifiedBy": "/root"
           },
-          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37: PUB001-RESP-001 PASS, PUB002-SEARCH-001 PASS, PUB003-AUTH-001 PASS. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
@@ -16060,48 +16563,151 @@
       "scenario": "PUB-001",
       "summary": "At 360×800 and 390×844 the landing header exposes only the logo and Sign up. There is no mobile menu, Sign in, Products or Resources control.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Fresh signed-out landing-page inspection reproduces missing mobile header navigation. At 360 and 390 pixels only logo and Sign up render; no menu or Sign in. At 768 pixels Sign in renders but Products and Resources remain hidden without a menu. Desktop header controls render at 1024, 1280 and 1440 pixels.",
+      "status": "PASS",
+      "retestSummary": "Targeted original public navigation defect passed actual Chrome controls at all six measured CSS sizes. Mobile/tablet menu exposes Products/Resources links; Escape closes and returns focus. Desktop Products click and Resources keyboard Enter expose links; Sign in visible; no horizontal overflow. Not broad homepage certification.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "FAIL",
-          "summary": "Fresh signed-out landing-page inspection reproduces missing mobile header navigation. At 360 and 390 pixels only logo and Sign up render; no menu or Sign in. At 768 pixels Sign in renders but Products and Resources remain hidden without a menu. Desktop header controls render at 1024, 1280 and 1440 pixels.",
-          "evidence": []
+          "measuredCss": "360x800",
+          "status": "PASS",
+          "summary": "Open mobile menu; Inspect Products and Resources links; Escape closes menu and restores focus; Inspect screenshot and overflow. PASS; main agent visually inspected",
+          "steps": [
+            "Open mobile menu",
+            "Inspect Products and Resources links",
+            "Escape closes menu and restores focus",
+            "Inspect screenshot and overflow"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-menu-360x800.png",
+              "label": "PUB001-menu-360x800"
+            }
+          ],
+          "observedAt": "2026-09-14T19:59:02.508Z"
         },
         {
           "size": "390×844",
-          "status": "FAIL",
-          "summary": "Fresh signed-out landing-page inspection reproduces missing mobile header navigation. At 360 and 390 pixels only logo and Sign up render; no menu or Sign in. At 768 pixels Sign in renders but Products and Resources remain hidden without a menu. Desktop header controls render at 1024, 1280 and 1440 pixels.",
-          "evidence": []
+          "measuredCss": "390x844",
+          "status": "PASS",
+          "summary": "Open mobile menu; Inspect Products and Resources links; Escape closes menu and restores focus; Inspect screenshot and overflow. PASS; main agent visually inspected",
+          "steps": [
+            "Open mobile menu",
+            "Inspect Products and Resources links",
+            "Escape closes menu and restores focus",
+            "Inspect screenshot and overflow"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-menu-390x844.png",
+              "label": "PUB001-menu-390x844"
+            }
+          ],
+          "observedAt": "2026-09-14T19:59:02.508Z"
         },
         {
           "size": "768×1024",
-          "status": "FAIL",
-          "summary": "Fresh signed-out landing-page inspection reproduces missing mobile header navigation. At 360 and 390 pixels only logo and Sign up render; no menu or Sign in. At 768 pixels Sign in renders but Products and Resources remain hidden without a menu. Desktop header controls render at 1024, 1280 and 1440 pixels.",
-          "evidence": []
+          "measuredCss": "768x1024",
+          "status": "PASS",
+          "summary": "Open mobile menu; Inspect Products and Resources links; Escape closes menu and restores focus; Inspect screenshot and overflow. PASS; main agent visually inspected",
+          "steps": [
+            "Open mobile menu",
+            "Inspect Products and Resources links",
+            "Escape closes menu and restores focus",
+            "Inspect screenshot and overflow"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-menu-768x1024.png",
+              "label": "PUB001-menu-768x1024"
+            }
+          ],
+          "observedAt": "2026-09-14T19:59:02.508Z"
         },
         {
           "size": "1024×768",
-          "status": "PARTIAL",
-          "summary": "Fresh signed-out landing-page inspection reproduces missing mobile header navigation. At 360 and 390 pixels only logo and Sign up render; no menu or Sign in. At 768 pixels Sign in renders but Products and Resources remain hidden without a menu. Desktop header controls render at 1024, 1280 and 1440 pixels.",
-          "evidence": []
+          "measuredCss": "1024x768",
+          "status": "PASS",
+          "summary": "Click Products dropdown; Activate Resources with keyboard Enter; Verify Sign in and no horizontal overflow; Inspect screenshot. PASS; main agent visually inspected",
+          "steps": [
+            "Click Products dropdown",
+            "Activate Resources with keyboard Enter",
+            "Verify Sign in and no horizontal overflow",
+            "Inspect screenshot"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-products-1024x768.png",
+              "label": "PUB001-products-1024x768"
+            }
+          ],
+          "observedAt": "2026-09-14T19:59:02.508Z"
         },
         {
           "size": "1280×800",
-          "status": "PARTIAL",
-          "summary": "Fresh signed-out landing-page inspection reproduces missing mobile header navigation. At 360 and 390 pixels only logo and Sign up render; no menu or Sign in. At 768 pixels Sign in renders but Products and Resources remain hidden without a menu. Desktop header controls render at 1024, 1280 and 1440 pixels.",
-          "evidence": []
+          "measuredCss": "1280x800",
+          "status": "PASS",
+          "summary": "Click Products dropdown; Activate Resources with keyboard Enter; Verify Sign in and no horizontal overflow; Inspect screenshot. PASS; main agent visually inspected",
+          "steps": [
+            "Click Products dropdown",
+            "Activate Resources with keyboard Enter",
+            "Verify Sign in and no horizontal overflow",
+            "Inspect screenshot"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-products-1280x800.png",
+              "label": "PUB001-products-1280x800"
+            }
+          ],
+          "observedAt": "2026-09-14T19:59:02.508Z"
         },
         {
           "size": "1440×900",
-          "status": "PARTIAL",
-          "summary": "Fresh signed-out landing-page inspection reproduces missing mobile header navigation. At 360 and 390 pixels only logo and Sign up render; no menu or Sign in. At 768 pixels Sign in renders but Products and Resources remain hidden without a menu. Desktop header controls render at 1024, 1280 and 1440 pixels.",
-          "evidence": []
+          "measuredCss": "1440x900",
+          "status": "PASS",
+          "summary": "Click Products dropdown; Activate Resources with keyboard Enter; Verify Sign in and no horizontal overflow; Inspect screenshot. PASS; main agent visually inspected",
+          "steps": [
+            "Click Products dropdown",
+            "Activate Resources with keyboard Enter",
+            "Verify Sign in and no horizontal overflow",
+            "Inspect screenshot"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-products-1440x900.png",
+              "label": "PUB001-products-1440x900"
+            }
+          ],
+          "observedAt": "2026-09-14T19:59:02.508Z"
         }
       ],
-      "limitations": "Desktop dropdown and keyboard subchecks not yet executed; existing mobile failure is established. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Three original Guest/Public critical/high defect acceptance checks only; not full public-suite certification. No new code changes; existing merged deployment retested.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-menu-360x800.png",
+          "label": "PUB001-menu-360x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-menu-390x844.png",
+          "label": "PUB001-menu-390x844"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-menu-768x1024.png",
+          "label": "PUB001-menu-768x1024"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-products-1024x768.png",
+          "label": "PUB001-products-1024x768"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-products-1280x800.png",
+          "label": "PUB001-products-1280x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB001-products-1440x900.png",
+          "label": "PUB001-products-1440x900"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
       "group": "Guest / Public",
       "groups": [
@@ -16116,48 +16722,199 @@
       "scenario": "PUB-002",
       "summary": "Entering an exact published pitch title and submitting cleared the query and retained all 31 pitch cards instead of filtering to the match.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Exact published-title search at 360, 768, 1024, 1280 and 1440 widths and a no-match Unicode query at 390 submit to /pitches?, clear the search input, and return Browse 33 pitches with unrelated cards. Fresh failure reproduced at every requested size.",
+      "status": "PASS",
+      "retestSummary": "Main agent submitted exact INV-016 title with Enter and retained query/Browse 1 at all six exact measured CSS sizes; Unicode no-match query retained and rendered No pitches found at each size. Main reviewed all exact-result images; register agent reviewed remaining four no-match images. Targeted search defect closure only; broad filter combinations not certified.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "FAIL",
-          "summary": "Exact published-title search at 360, 768, 1024, 1280 and 1440 widths and a no-match Unicode query at 390 submit to /pitches?, clear the search input, and return Browse 33 pitches with unrelated cards. Fresh failure reproduced at every requested size.",
-          "evidence": []
+          "measuredCss": "360x800",
+          "status": "PASS",
+          "summary": "Enter exact published title and submit using Enter; Verify retained query and Browse 1 matching pitch; Submit No-match Ω冷链 c37; Verify retained query and No pitches found. PASS; main reviewed exact screenshots; main/register reviewed no-match",
+          "steps": [
+            "Enter exact published title and submit using Enter",
+            "Verify retained query and Browse 1 matching pitch",
+            "Submit No-match Ω冷链 c37",
+            "Verify retained query and No pitches found"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-360x800.png",
+              "label": "PUB002-exact-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-360x800.png",
+              "label": "PUB002-no-match-360x800"
+            }
+          ],
+          "observedAt": "2026-09-14T20:01:37.684Z"
         },
         {
           "size": "390×844",
-          "status": "FAIL",
-          "summary": "Exact published-title search at 360, 768, 1024, 1280 and 1440 widths and a no-match Unicode query at 390 submit to /pitches?, clear the search input, and return Browse 33 pitches with unrelated cards. Fresh failure reproduced at every requested size.",
-          "evidence": []
+          "measuredCss": "390x844",
+          "status": "PASS",
+          "summary": "Enter exact published title and submit using Enter; Verify retained query and Browse 1 matching pitch; Submit No-match Ω冷链 c37; Verify retained query and No pitches found. PASS; main reviewed exact screenshots; main/register reviewed no-match",
+          "steps": [
+            "Enter exact published title and submit using Enter",
+            "Verify retained query and Browse 1 matching pitch",
+            "Submit No-match Ω冷链 c37",
+            "Verify retained query and No pitches found"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-390x844.png",
+              "label": "PUB002-exact-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-390x844.png",
+              "label": "PUB002-no-match-390x844"
+            }
+          ],
+          "observedAt": "2026-09-14T20:01:37.684Z"
         },
         {
           "size": "768×1024",
-          "status": "FAIL",
-          "summary": "Exact published-title search at 360, 768, 1024, 1280 and 1440 widths and a no-match Unicode query at 390 submit to /pitches?, clear the search input, and return Browse 33 pitches with unrelated cards. Fresh failure reproduced at every requested size.",
-          "evidence": []
+          "measuredCss": "768x1024",
+          "status": "PASS",
+          "summary": "Enter exact published title and submit using Enter; Verify retained query and Browse 1 matching pitch; Submit No-match Ω冷链 c37; Verify retained query and No pitches found. PASS; main reviewed exact screenshots; main/register reviewed no-match",
+          "steps": [
+            "Enter exact published title and submit using Enter",
+            "Verify retained query and Browse 1 matching pitch",
+            "Submit No-match Ω冷链 c37",
+            "Verify retained query and No pitches found"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-corrected-768x1024.png",
+              "label": "PUB002-exact-corrected-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-corrected-768x1024.png",
+              "label": "PUB002-no-match-corrected-768x1024"
+            }
+          ],
+          "observedAt": "2026-09-14T20:01:37.684Z"
         },
         {
           "size": "1024×768",
-          "status": "FAIL",
-          "summary": "Not inspected in this run.",
-          "evidence": []
+          "measuredCss": "1024x768",
+          "status": "PASS",
+          "summary": "Enter exact published title and submit using Enter; Verify retained query and Browse 1 matching pitch; Submit No-match Ω冷链 c37; Verify retained query and No pitches found. PASS; main reviewed exact screenshots; main/register reviewed no-match",
+          "steps": [
+            "Enter exact published title and submit using Enter",
+            "Verify retained query and Browse 1 matching pitch",
+            "Submit No-match Ω冷链 c37",
+            "Verify retained query and No pitches found"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-corrected-1024x768.png",
+              "label": "PUB002-exact-corrected-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-corrected-1024x768.png",
+              "label": "PUB002-no-match-corrected-1024x768"
+            }
+          ],
+          "observedAt": "2026-09-14T20:01:37.684Z"
         },
         {
           "size": "1280×800",
-          "status": "FAIL",
-          "summary": "Not inspected in this run.",
-          "evidence": []
+          "measuredCss": "1280x800",
+          "status": "PASS",
+          "summary": "Enter exact published title and submit using Enter; Verify retained query and Browse 1 matching pitch; Submit No-match Ω冷链 c37; Verify retained query and No pitches found. PASS; main reviewed exact screenshots; main/register reviewed no-match",
+          "steps": [
+            "Enter exact published title and submit using Enter",
+            "Verify retained query and Browse 1 matching pitch",
+            "Submit No-match Ω冷链 c37",
+            "Verify retained query and No pitches found"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-1280x800.png",
+              "label": "PUB002-exact-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-1280x800.png",
+              "label": "PUB002-no-match-1280x800"
+            }
+          ],
+          "observedAt": "2026-09-14T20:01:37.684Z"
         },
         {
           "size": "1440×900",
-          "status": "FAIL",
-          "summary": "Not inspected in this run.",
-          "evidence": []
+          "measuredCss": "1440x900",
+          "status": "PASS",
+          "summary": "Enter exact published title and submit using Enter; Verify retained query and Browse 1 matching pitch; Submit No-match Ω冷链 c37; Verify retained query and No pitches found. PASS; main reviewed exact screenshots; main/register reviewed no-match",
+          "steps": [
+            "Enter exact published title and submit using Enter",
+            "Verify retained query and Browse 1 matching pitch",
+            "Submit No-match Ω冷链 c37",
+            "Verify retained query and No pitches found"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-1440x900.png",
+              "label": "PUB002-exact-1440x900"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-1440x900.png",
+              "label": "PUB002-no-match-1440x900"
+            }
+          ],
+          "observedAt": "2026-09-14T20:01:37.684Z"
         }
       ],
-      "limitations": "Defect-focused search reproduction only; other filter combinations are outside this check. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Three original Guest/Public critical/high defect acceptance checks only; not full public-suite certification. No new code changes; existing merged deployment retested.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-360x800.png",
+          "label": "PUB002-exact-360x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-360x800.png",
+          "label": "PUB002-no-match-360x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-390x844.png",
+          "label": "PUB002-exact-390x844"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-390x844.png",
+          "label": "PUB002-no-match-390x844"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-corrected-768x1024.png",
+          "label": "PUB002-exact-corrected-768x1024"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-corrected-768x1024.png",
+          "label": "PUB002-no-match-corrected-768x1024"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-corrected-1024x768.png",
+          "label": "PUB002-exact-corrected-1024x768"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-corrected-1024x768.png",
+          "label": "PUB002-no-match-corrected-1024x768"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-1280x800.png",
+          "label": "PUB002-exact-1280x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-1280x800.png",
+          "label": "PUB002-no-match-1280x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-exact-1440x900.png",
+          "label": "PUB002-exact-1440x900"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB002-no-match-1440x900.png",
+          "label": "PUB002-no-match-1440x900"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
       "group": "Guest / Public",
       "groups": [
@@ -16172,48 +16929,295 @@
       "scenario": "PUB-003",
       "summary": "View Pitch from the signed-out catalog opens “Sign in to view this pitch,” so no public pitch narrative or public material can be inspected.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Opening the published INV-016 Bid Lifecycle pitch from the public catalog displays Sign in to view this pitch; no public narrative is exposed. Reproduced at all six sizes. Login/signup links preserve the pitch destination.",
+      "status": "PASS",
+      "retestSummary": "Published INV-016 narrative visible signed out; Sign in opens Log in preserving exact pitch returnUrl and Back restores narrative at all six measured CSS sizes. Fresh draft, suspended and absent pitch navigations at each size show generic Not Found only with no narrative/private controls. Main visually reviewed six verified public images; register agent visually reviewed all eighteen privacy images. Original targeted defect only, not entire public suite.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "FAIL",
-          "summary": "Opening the published INV-016 Bid Lifecycle pitch from the public catalog displays Sign in to view this pitch; no public narrative is exposed. Reproduced at all six sizes. Login/signup links preserve the pitch destination.",
-          "evidence": []
+          "measuredCss": "360x800",
+          "status": "PASS",
+          "summary": "Open public published narrative; Click Sign in and verify exact returnUrl; Back restores narrative; Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content. PASS; main reviewed public narrative; register agent reviewed all privacy images",
+          "steps": [
+            "Open public published narrative",
+            "Click Sign in and verify exact returnUrl",
+            "Back restores narrative",
+            "Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-360x800.png",
+              "label": "PUB003-verified-public-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-360x800.png",
+              "label": "PUB003-draft-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-360x800.png",
+              "label": "PUB003-suspended-360x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-360x800.png",
+              "label": "PUB003-unknown-360x800"
+            }
+          ],
+          "observedAt": "2026-09-14T20:06:34.957Z"
         },
         {
           "size": "390×844",
-          "status": "FAIL",
-          "summary": "Opening the published INV-016 Bid Lifecycle pitch from the public catalog displays Sign in to view this pitch; no public narrative is exposed. Reproduced at all six sizes. Login/signup links preserve the pitch destination.",
-          "evidence": []
+          "measuredCss": "390x844",
+          "status": "PASS",
+          "summary": "Open public published narrative; Click Sign in and verify exact returnUrl; Back restores narrative; Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content. PASS; main reviewed public narrative; register agent reviewed all privacy images",
+          "steps": [
+            "Open public published narrative",
+            "Click Sign in and verify exact returnUrl",
+            "Back restores narrative",
+            "Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-390x844.png",
+              "label": "PUB003-verified-public-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-390x844.png",
+              "label": "PUB003-draft-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-390x844.png",
+              "label": "PUB003-suspended-390x844"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-390x844.png",
+              "label": "PUB003-unknown-390x844"
+            }
+          ],
+          "observedAt": "2026-09-14T20:06:34.957Z"
         },
         {
           "size": "768×1024",
-          "status": "FAIL",
-          "summary": "Opening the published INV-016 Bid Lifecycle pitch from the public catalog displays Sign in to view this pitch; no public narrative is exposed. Reproduced at all six sizes. Login/signup links preserve the pitch destination.",
-          "evidence": []
+          "measuredCss": "768x1024",
+          "status": "PASS",
+          "summary": "Open public published narrative; Click Sign in and verify exact returnUrl; Back restores narrative; Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content. PASS; main reviewed public narrative; register agent reviewed all privacy images",
+          "steps": [
+            "Open public published narrative",
+            "Click Sign in and verify exact returnUrl",
+            "Back restores narrative",
+            "Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-768x1024.png",
+              "label": "PUB003-verified-public-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-768x1024.png",
+              "label": "PUB003-draft-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-768x1024.png",
+              "label": "PUB003-suspended-768x1024"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-768x1024.png",
+              "label": "PUB003-unknown-768x1024"
+            }
+          ],
+          "observedAt": "2026-09-14T20:06:34.957Z"
         },
         {
           "size": "1024×768",
-          "status": "FAIL",
-          "summary": "Opening the published INV-016 Bid Lifecycle pitch from the public catalog displays Sign in to view this pitch; no public narrative is exposed. Reproduced at all six sizes. Login/signup links preserve the pitch destination.",
-          "evidence": []
+          "measuredCss": "1024x768",
+          "status": "PASS",
+          "summary": "Open public published narrative; Click Sign in and verify exact returnUrl; Back restores narrative; Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content. PASS; main reviewed public narrative; register agent reviewed all privacy images",
+          "steps": [
+            "Open public published narrative",
+            "Click Sign in and verify exact returnUrl",
+            "Back restores narrative",
+            "Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-1024x768.png",
+              "label": "PUB003-verified-public-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-1024x768.png",
+              "label": "PUB003-draft-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-1024x768.png",
+              "label": "PUB003-suspended-1024x768"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-1024x768.png",
+              "label": "PUB003-unknown-1024x768"
+            }
+          ],
+          "observedAt": "2026-09-14T20:06:34.957Z"
         },
         {
           "size": "1280×800",
-          "status": "FAIL",
-          "summary": "Opening the published INV-016 Bid Lifecycle pitch from the public catalog displays Sign in to view this pitch; no public narrative is exposed. Reproduced at all six sizes. Login/signup links preserve the pitch destination.",
-          "evidence": []
+          "measuredCss": "1280x800",
+          "status": "PASS",
+          "summary": "Open public published narrative; Click Sign in and verify exact returnUrl; Back restores narrative; Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content. PASS; main reviewed public narrative; register agent reviewed all privacy images",
+          "steps": [
+            "Open public published narrative",
+            "Click Sign in and verify exact returnUrl",
+            "Back restores narrative",
+            "Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-1280x800.png",
+              "label": "PUB003-verified-public-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-1280x800.png",
+              "label": "PUB003-draft-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-1280x800.png",
+              "label": "PUB003-suspended-1280x800"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-1280x800.png",
+              "label": "PUB003-unknown-1280x800"
+            }
+          ],
+          "observedAt": "2026-09-14T20:06:34.957Z"
         },
         {
           "size": "1440×900",
-          "status": "FAIL",
-          "summary": "Opening the published INV-016 Bid Lifecycle pitch from the public catalog displays Sign in to view this pitch; no public narrative is exposed. Reproduced at all six sizes. Login/signup links preserve the pitch destination.",
-          "evidence": []
+          "measuredCss": "1440x900",
+          "status": "PASS",
+          "summary": "Open public published narrative; Click Sign in and verify exact returnUrl; Back restores narrative; Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content. PASS; main reviewed public narrative; register agent reviewed all privacy images",
+          "steps": [
+            "Open public published narrative",
+            "Click Sign in and verify exact returnUrl",
+            "Back restores narrative",
+            "Freshly navigate draft, suspended and absent records; verify generic Not Found with no private content"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-1440x900.png",
+              "label": "PUB003-verified-public-1440x900"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-1440x900.png",
+              "label": "PUB003-draft-1440x900"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-1440x900.png",
+              "label": "PUB003-suspended-1440x900"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-1440x900.png",
+              "label": "PUB003-unknown-1440x900"
+            }
+          ],
+          "observedAt": "2026-09-14T20:06:34.957Z"
         }
       ],
-      "limitations": "Draft, removed and unknown record privacy branches pending. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Three original Guest/Public critical/high defect acceptance checks only; not full public-suite certification. No new code changes; existing merged deployment retested.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-360x800.png",
+          "label": "PUB003-verified-public-360x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-360x800.png",
+          "label": "PUB003-draft-360x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-360x800.png",
+          "label": "PUB003-suspended-360x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-360x800.png",
+          "label": "PUB003-unknown-360x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-390x844.png",
+          "label": "PUB003-verified-public-390x844"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-390x844.png",
+          "label": "PUB003-draft-390x844"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-390x844.png",
+          "label": "PUB003-suspended-390x844"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-390x844.png",
+          "label": "PUB003-unknown-390x844"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-768x1024.png",
+          "label": "PUB003-verified-public-768x1024"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-768x1024.png",
+          "label": "PUB003-draft-768x1024"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-768x1024.png",
+          "label": "PUB003-suspended-768x1024"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-768x1024.png",
+          "label": "PUB003-unknown-768x1024"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-1024x768.png",
+          "label": "PUB003-verified-public-1024x768"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-1024x768.png",
+          "label": "PUB003-draft-1024x768"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-1024x768.png",
+          "label": "PUB003-suspended-1024x768"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-1024x768.png",
+          "label": "PUB003-unknown-1024x768"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-1280x800.png",
+          "label": "PUB003-verified-public-1280x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-1280x800.png",
+          "label": "PUB003-draft-1280x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-1280x800.png",
+          "label": "PUB003-suspended-1280x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-1280x800.png",
+          "label": "PUB003-unknown-1280x800"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-verified-public-1440x900.png",
+          "label": "PUB003-verified-public-1440x900"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-draft-1440x900.png",
+          "label": "PUB003-draft-1440x900"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-suspended-1440x900.png",
+          "label": "PUB003-suspended-1440x900"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/assets/2026-09-14-close37/PUB003-unknown-1440x900.png",
+          "label": "PUB003-unknown-1440x900"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
       "group": "Guest / Public",
       "groups": [
