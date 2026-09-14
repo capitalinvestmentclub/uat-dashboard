@@ -1,0 +1,1 @@
+{"name":"cic-uat-dashboard","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","test":"node --test","start":"node scripts/serve.mjs"},"engines":{"node":">=22"},"devDependencies":{"jsdom":"^30.0.1"}}
