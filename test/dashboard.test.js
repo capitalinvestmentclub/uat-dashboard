@@ -109,8 +109,13 @@ test('empty chart scope never shows NaN or fabricated progress',async()=>{
 test('latest status pie excludes questions and reconciles all defect outcomes',()=>{
   const pie=defectStatusBreakdown(data.uniqueFindings);
   assert.equal(pie.reduce((n,d)=>n+d.count,0),96);
-  assert.equal(pie.find(d=>d.status==='PASS').count,20);
-  assert.equal(pie.find(d=>d.status==='NOT REPORTED').count,53);
+  for(const outcome of [...statuses,'CONFLICT']) {
+    assert.equal(pie.find(d=>d.status===outcome)?.count || 0,
+      data.uniqueFindings.filter(f=>f.type==='Defect'&&f.status===outcome).length);
+  }
+  const fixture=defectStatusBreakdown([{type:'Defect',status:'PASS'},{type:'Defect',status:'FAIL'},{type:'Defect',status:'PARTIAL'},{type:'Defect',status:'BLOCKED'},{type:'Question',status:'PASS'}]);
+  for(const outcome of ['PASS','FAIL','PARTIAL','BLOCKED']) assert.equal(fixture.find(d=>d.status===outcome).count,1);
+  assert.equal(fixture.reduce((n,d)=>n+d.count,0),4);
   assert(Math.abs(pie.reduce((n,d)=>n+d.percent,0)-100)<1e-10);
   assert(defectStatusBreakdown([]).every(d=>d.percent===0));
 });
