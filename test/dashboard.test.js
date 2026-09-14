@@ -57,6 +57,25 @@ test('dedup preserves memberships and distinguishes conflicts from absent retest
   assert.equal(deduplicate([group('A','PASS'),group('B','PASS','Different')]).length,2);
   assert.deepEqual(deduplicate([]),[]);
 });
+test('repair readiness survives normalization without promoting a failed retest',()=>{
+  const repairBatch={runId:'repair',mergeStatus:'MERGED',deploymentStatus:'PENDING',cloudRetestStatus:'PENDING',findings:[{id:'F',classification:'PRODUCT_FIX_LOCAL_VERIFIED'}]};
+  const group=normalizeGroup({name:'Test',repo:'admin-uat-report',parsed:{data:{scenarios:[['A','FAIL','Title']],findings:[{id:'F',title:'Finding',severity:'high'}]}},targeted:{repairBatch,findings:[{id:'F',status:'FAIL',responsive:[]}]}});
+  assert.deepEqual(group.targeted.repairBatch,repairBatch);
+  assert.equal(group.findings[0].status,'FAIL');
+  assert.equal(group.scenarios[0].status,'FAIL');
+});
+test('repair progress is visible, escaped, and separate from pie and execution counts',async()=>{
+  const payload=structuredClone(data);
+  payload.groups[0].targeted={repairBatch:{runId:'repair-<script>',state:'MERGED — deployment pending',mergeStatus:'MERGED',deploymentStatus:'PENDING',cloudRetestStatus:'PENDING',scope:'Not a new test run',pullRequests:[{url:'javascript:alert(1)',label:'Unsafe link'}],deployments:{webapi:{version:'test',commit:'abc'}},findings:[{id:'ADM051',classification:'TEST_FIXTURE_CORRECTED',summary:'Old seed was not backfilled.',cloudRetestStatus:'PENDING'}]}};
+  const baseline=await page();const dom=await page(payload);const d=dom.window.document;
+  assert.match(d.querySelector('#repair-delivery').textContent,/Old seed was not backfilled/);
+  assert.match(d.querySelector('#repair-delivery').textContent,/Cloud retest: PENDING/);
+  assert.equal(d.querySelector('#repair-delivery script'),null);
+  assert.equal(d.querySelector('#repair-delivery a').getAttribute('href'),'#');
+  assert.equal(d.querySelector('#severity-chart').textContent,baseline.window.document.querySelector('#severity-chart').textContent);
+  assert.equal(d.querySelector('#execution-chart').textContent,baseline.window.document.querySelector('#execution-chart').textContent);
+  dom.window.close();baseline.window.close();
+});
 test('rendering and every view/group/result combination, reset and empty state',async()=>{
   const dom=await page();const d=dom.window.document;const event=()=>new dom.window.Event('change',{bubbles:true});
   assert.equal(d.querySelectorAll('.group-card').length,10);assert.equal(d.querySelectorAll('#results details').length,198);

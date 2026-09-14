@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T07:15:40.298Z",
+  "generatedAt": "2026-09-14T16:38:52.294Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "eac453b1fe9740e2c02eca1ce7775a18d116507b",
+      "commit": "5c4b24b27325c66e7115fb5326ee7616059c53c2",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -3817,13 +3817,75 @@
       "targeted": {
         "runId": "2026-09-14-retest45",
         "updatedAt": "2026-09-14T07:08:29.535Z",
-        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial"
+        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
+        "repairBatch": {
+          "runId": "2026-09-14-confirmed-failure-repair",
+          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "executionMode": "real-api-local",
+          "browser": "Google Chrome",
+          "sizes": [
+            "360×800",
+            "390×844",
+            "768×1024",
+            "1024×768",
+            "1280×800",
+            "1440×900"
+          ],
+          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
+          "deploymentStatus": "PENDING",
+          "cloudRetestStatus": "PENDING",
+          "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
+          "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
+          "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
+          "findings": [
+            {
+              "id": "ADM051-WDR-001",
+              "classification": "TEST_FIXTURE_CORRECTED",
+              "summary": "Original failure was an incomplete synthetic seed. Decision-driven completed/failed fixtures persist actor, time and rationale through real service code and Chrome readback. The deficient historical seed is preserved, not backfilled.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "ADM053-CFG-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "ADM053-REPORT-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "ADM046-LINK-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            }
+          ],
+          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "candidates": {
+            "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
+            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+          },
+          "pullRequests": [
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
+              "label": "Frontend PR #2342 — checks running; independent review required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
+              "label": "API PR #737 — required checks passed; independent review required"
+            }
+          ],
+          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
+        }
       }
     },
     {
       "name": "Organization",
       "repo": "organization-uat-report",
-      "commit": "2aa013c63add44e1a1b0ecddeb3be78bf6e23214",
+      "commit": "13977801066933e7ef7a3a06c75f10e3a34a05c5",
       "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -4442,13 +4504,69 @@
       "targeted": {
         "runId": "2026-09-14-retest45",
         "updatedAt": "2026-09-14T07:08:29.535Z",
-        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial"
+        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
+        "repairBatch": {
+          "runId": "2026-09-14-confirmed-failure-repair",
+          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "executionMode": "real-api-local",
+          "browser": "Google Chrome",
+          "sizes": [
+            "360×800",
+            "390×844",
+            "768×1024",
+            "1024×768",
+            "1280×800",
+            "1440×900"
+          ],
+          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
+          "deploymentStatus": "PENDING",
+          "cloudRetestStatus": "PENDING",
+          "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
+          "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
+          "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
+          "findings": [
+            {
+              "id": "ORG003-DATA-001",
+              "classification": "TEST_OBSERVATION_CORRECTED",
+              "summary": "Existing contact value persists; corrected rendered inspection confirms it. No product contact-data repair was required.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "ORG018-GOV-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "ORG020-CAL-001",
+              "classification": "TEST_INPUT_CORRECTED",
+              "summary": "Existing future-event workflow persists using the native date/time input correctly. No product calendar repair was required.",
+              "cloudRetestStatus": "PENDING"
+            }
+          ],
+          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "candidates": {
+            "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
+            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+          },
+          "pullRequests": [
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
+              "label": "Frontend PR #2342 — checks running; independent review required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
+              "label": "API PR #737 — required checks passed; independent review required"
+            }
+          ],
+          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
+        }
       }
     },
     {
       "name": "Grantor",
       "repo": "grantor-uat-report",
-      "commit": "36ac16706da164ddc924ecb2bc1799c3a66c7cdf",
+      "commit": "a62d326f8cfa9fc3343431b279399c0edfd080a0",
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5183,13 +5301,81 @@
       "targeted": {
         "runId": "2026-09-14-retest45",
         "updatedAt": "2026-09-14T07:08:29.535Z",
-        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial"
+        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
+        "repairBatch": {
+          "runId": "2026-09-14-confirmed-failure-repair",
+          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "executionMode": "real-api-local",
+          "browser": "Google Chrome",
+          "sizes": [
+            "360×800",
+            "390×844",
+            "768×1024",
+            "1024×768",
+            "1280×800",
+            "1440×900"
+          ],
+          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
+          "deploymentStatus": "PENDING",
+          "cloudRetestStatus": "PENDING",
+          "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
+          "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
+          "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
+          "findings": [
+            {
+              "id": "GRT003-VALID-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "GRT005-CFG-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "GRT011-CLOSED-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "GRT020-BAL-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Existing successful refund is now displayed through a protected read-only endpoint. Zero wallet balance and the recorded USD 1 refund reconcile; no new payment or invented historical balance.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "GRT021-REPORT-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            }
+          ],
+          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "candidates": {
+            "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
+            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+          },
+          "pullRequests": [
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
+              "label": "Frontend PR #2342 — checks running; independent review required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
+              "label": "API PR #737 — required checks passed; independent review required"
+            }
+          ],
+          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
+        }
       }
     },
     {
       "name": "Guest / Public",
       "repo": "guest-public-uat-report",
-      "commit": "927b3efe3cb6b566264520455b1da65ae8a80d6c",
+      "commit": "f4c0c5b96ea5713af11531b4fea44506a3ed4a3d",
       "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5814,13 +6000,69 @@
       "targeted": {
         "runId": "2026-09-14-retest45",
         "updatedAt": "2026-09-14T07:08:29.535Z",
-        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial"
+        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
+        "repairBatch": {
+          "runId": "2026-09-14-confirmed-failure-repair",
+          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "executionMode": "real-api-local",
+          "browser": "Google Chrome",
+          "sizes": [
+            "360×800",
+            "390×844",
+            "768×1024",
+            "1024×768",
+            "1280×800",
+            "1440×900"
+          ],
+          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
+          "deploymentStatus": "PENDING",
+          "cloudRetestStatus": "PENDING",
+          "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
+          "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
+          "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
+          "findings": [
+            {
+              "id": "PUB001-RESP-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "PUB002-SEARCH-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "PUB003-AUTH-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            }
+          ],
+          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "candidates": {
+            "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
+            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+          },
+          "pullRequests": [
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
+              "label": "Frontend PR #2342 — checks running; independent review required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
+              "label": "API PR #737 — required checks passed; independent review required"
+            }
+          ],
+          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
+        }
       }
     },
     {
       "name": "KYC Reviewer",
       "repo": "kyc-reviewer-uat-report",
-      "commit": "3a0f3f1a229ce37caedfbd81805cd4275a315414",
+      "commit": "ced3d8c01bc32683ddb8620c0fc9d870b1f93fa6",
       "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/",
       "checkpoint": "2026-09-12 interim checkpoint",
       "scenarios": [
@@ -7305,13 +7547,50 @@
             "commit": "515196429af878b68d3d0e2f483f25776a2b073f",
             "version": "20260914t002754"
           }
+        },
+        "repairBatch": {
+          "runId": "2026-09-14-confirmed-failure-repair",
+          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "executionMode": "real-api-local",
+          "browser": "Google Chrome",
+          "sizes": [
+            "360×800",
+            "390×844",
+            "768×1024",
+            "1024×768",
+            "1280×800",
+            "1440×900"
+          ],
+          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
+          "deploymentStatus": "PENDING",
+          "cloudRetestStatus": "PENDING",
+          "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
+          "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
+          "scope": "No confirmed FAIL repair in this group. Existing partial, blocked and passed outcomes are unchanged; this batch does not close remaining coverage.",
+          "findings": [],
+          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "candidates": {
+            "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
+            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+          },
+          "pullRequests": [
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
+              "label": "Frontend PR #2342 — checks running; independent review required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
+              "label": "API PR #737 — required checks passed; independent review required"
+            }
+          ],
+          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
         }
       }
     },
     {
       "name": "KYC Approval",
       "repo": "kyc-approval-uat-report",
-      "commit": "f93c52ef68e843c4d186a93c0ec5816f01f06267",
+      "commit": "8d19c989eca6829e9ad37cf0ed9161c872a73c63",
       "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome campaign",
       "scenarios": [
@@ -9009,13 +9288,50 @@
             "commit": "515196429af878b68d3d0e2f483f25776a2b073f",
             "version": "20260914t002754"
           }
+        },
+        "repairBatch": {
+          "runId": "2026-09-14-confirmed-failure-repair",
+          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "executionMode": "real-api-local",
+          "browser": "Google Chrome",
+          "sizes": [
+            "360×800",
+            "390×844",
+            "768×1024",
+            "1024×768",
+            "1280×800",
+            "1440×900"
+          ],
+          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
+          "deploymentStatus": "PENDING",
+          "cloudRetestStatus": "PENDING",
+          "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
+          "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
+          "scope": "No confirmed FAIL repair in this group. Existing partial, blocked and passed outcomes are unchanged; this batch does not close remaining coverage.",
+          "findings": [],
+          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "candidates": {
+            "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
+            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+          },
+          "pullRequests": [
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
+              "label": "Frontend PR #2342 — checks running; independent review required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
+              "label": "API PR #737 — required checks passed; independent review required"
+            }
+          ],
+          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
         }
       }
     },
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "5c641ea73aafe355a1111440a2d924058e9718f7",
+      "commit": "3151440d87a8daa16676c9123c509cc4071dc3da",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -10211,13 +10527,75 @@
             "commit": "515196429af878b68d3d0e2f483f25776a2b073f",
             "version": "20260914t002754"
           }
+        },
+        "repairBatch": {
+          "runId": "2026-09-14-confirmed-failure-repair",
+          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "executionMode": "real-api-local",
+          "browser": "Google Chrome",
+          "sizes": [
+            "360×800",
+            "390×844",
+            "768×1024",
+            "1024×768",
+            "1280×800",
+            "1440×900"
+          ],
+          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
+          "deploymentStatus": "PENDING",
+          "cloudRetestStatus": "PENDING",
+          "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
+          "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
+          "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
+          "findings": [
+            {
+              "id": "ADM051-WDR-001",
+              "classification": "TEST_FIXTURE_CORRECTED",
+              "summary": "Original failure was an incomplete synthetic seed. Decision-driven completed/failed fixtures persist actor, time and rationale through real service code and Chrome readback. The deficient historical seed is preserved, not backfilled.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "ADM053-CFG-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "ADM053-REPORT-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "ADM046-LINK-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            }
+          ],
+          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "candidates": {
+            "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
+            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+          },
+          "pullRequests": [
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
+              "label": "Frontend PR #2342 — checks running; independent review required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
+              "label": "API PR #737 — required checks passed; independent review required"
+            }
+          ],
+          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
         }
       }
     },
     {
       "name": "Support Operations",
       "repo": "support-operations-uat-report",
-      "commit": "b3921e09d105fea5a90203251ac85a6b2ba389be",
+      "commit": "e0f0b34c7a301066455d26a9ec6f0fafb2a60abf",
       "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome Support Operations campaign",
       "scenarios": [
@@ -10564,13 +10942,57 @@
             "commit": "515196429af878b68d3d0e2f483f25776a2b073f",
             "version": "20260914t002754"
           }
+        },
+        "repairBatch": {
+          "runId": "2026-09-14-confirmed-failure-repair",
+          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "executionMode": "real-api-local",
+          "browser": "Google Chrome",
+          "sizes": [
+            "360×800",
+            "390×844",
+            "768×1024",
+            "1024×768",
+            "1280×800",
+            "1440×900"
+          ],
+          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
+          "deploymentStatus": "PENDING",
+          "cloudRetestStatus": "PENDING",
+          "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
+          "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
+          "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
+          "findings": [
+            {
+              "id": "SUP-F008",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            }
+          ],
+          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "candidates": {
+            "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
+            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+          },
+          "pullRequests": [
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
+              "label": "Frontend PR #2342 — checks running; independent review required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
+              "label": "API PR #737 — required checks passed; independent review required"
+            }
+          ],
+          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
         }
       }
     },
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "02f127283d79d0cec51c5da503a0c0e5bb6fcd19",
+      "commit": "6ee6b64944bdfd69aaededf67d6cf2625346232c",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -11580,6 +12002,62 @@
             "commit": "515196429af878b68d3d0e2f483f25776a2b073f",
             "version": "20260914t002754"
           }
+        },
+        "repairBatch": {
+          "runId": "2026-09-14-confirmed-failure-repair",
+          "state": "LOCAL VERIFIED — independent review approval required; not merged or deployed",
+          "executionMode": "real-api-local",
+          "browser": "Google Chrome",
+          "sizes": [
+            "360×800",
+            "390×844",
+            "768×1024",
+            "1024×768",
+            "1280×800",
+            "1440×900"
+          ],
+          "mergeStatus": "REVIEW_APPROVAL_REQUIRED",
+          "deploymentStatus": "PENDING",
+          "cloudRetestStatus": "PENDING",
+          "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
+          "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
+          "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
+          "findings": [
+            {
+              "id": "ADM051-WDR-001",
+              "classification": "TEST_FIXTURE_CORRECTED",
+              "summary": "Original failure was an incomplete synthetic seed. Decision-driven completed/failed fixtures persist actor, time and rationale through real service code and Chrome readback. The deficient historical seed is preserved, not backfilled.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "ADM053-CFG-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            },
+            {
+              "id": "ADM053-REPORT-001",
+              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
+              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
+              "cloudRetestStatus": "PENDING"
+            }
+          ],
+          "updatedAt": "2026-09-14T16:38:05.179Z",
+          "candidates": {
+            "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
+            "webapi": "5cad07e01717ba8d8e83168caca0aa4fdf064257"
+          },
+          "pullRequests": [
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
+              "label": "Frontend PR #2342 — checks running; independent review required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
+              "label": "API PR #737 — required checks passed; independent review required"
+            }
+          ],
+          "releaseGate": "API normal merge denied by required independent approval. Frontend required checks still running at this update. Neither candidate is a deployed version. Prior cloud outcomes remain unchanged."
         }
       }
     }
