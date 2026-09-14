@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T07:10:08.301Z",
+  "generatedAt": "2026-09-14T07:15:40.298Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "74848390a440d977c04926483f3861ed3f1b1558",
+      "commit": "eac453b1fe9740e2c02eca1ce7775a18d116507b",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -3823,7 +3823,7 @@
     {
       "name": "Organization",
       "repo": "organization-uat-report",
-      "commit": "8a33c62bc0fb2ffd4525d27694b0782610854d0e",
+      "commit": "2aa013c63add44e1a1b0ecddeb3be78bf6e23214",
       "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -4448,7 +4448,7 @@
     {
       "name": "Grantor",
       "repo": "grantor-uat-report",
-      "commit": "504a72333a151bb97169c5a24a91398e6d5fc14c",
+      "commit": "36ac16706da164ddc924ecb2bc1799c3a66c7cdf",
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5189,7 +5189,7 @@
     {
       "name": "Guest / Public",
       "repo": "guest-public-uat-report",
-      "commit": "2242d852f8654844bce4dec9fa584c4ad7b59202",
+      "commit": "927b3efe3cb6b566264520455b1da65ae8a80d6c",
       "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5820,7 +5820,7 @@
     {
       "name": "KYC Reviewer",
       "repo": "kyc-reviewer-uat-report",
-      "commit": "94a8fe0554790be6c7ba64db6127b14e641d0bec",
+      "commit": "3a0f3f1a229ce37caedfbd81805cd4275a315414",
       "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/",
       "checkpoint": "2026-09-12 interim checkpoint",
       "scenarios": [
@@ -7311,7 +7311,7 @@
     {
       "name": "KYC Approval",
       "repo": "kyc-approval-uat-report",
-      "commit": "768c8f3baa2722c5444534c928650aabf16517f5",
+      "commit": "f93c52ef68e843c4d186a93c0ec5816f01f06267",
       "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome campaign",
       "scenarios": [
@@ -9015,7 +9015,7 @@
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "320c99baaea9c95e2b608ca6eda56c674bf7a5de",
+      "commit": "5c641ea73aafe355a1111440a2d924058e9718f7",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -10217,7 +10217,7 @@
     {
       "name": "Support Operations",
       "repo": "support-operations-uat-report",
-      "commit": "158c710a7a8d0ab9d7ca3adb80a1534db8747dd4",
+      "commit": "b3921e09d105fea5a90203251ac85a6b2ba389be",
       "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome Support Operations campaign",
       "scenarios": [
@@ -10570,7 +10570,7 @@
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "05bcd7e7bf6942f41c379d10615f12567cc4c4d0",
+      "commit": "02f127283d79d0cec51c5da503a0c0e5bb6fcd19",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
