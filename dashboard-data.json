@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T01:13:42.377Z",
+  "generatedAt": "2026-09-15T02:05:22.520Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "d82ee8c2df5ccaa24b05a8c980ef57694555f53c",
+      "commit": "fce4423d78b01d12cc8b130d124d908b2f2d64f9",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -3563,118 +3563,148 @@
           "summary": "Disbursement detail shows a comment never entered and monthly ongoing reporting while tracking is disabled.",
           "historicalStatus": "Open",
           "status": "PARTIAL",
-          "retestSummary": "Authored reporting instructions PASS six independent enabled edit/save/full reload/editor rereads, including newline, Unicode and long-reference wrapping. Disabled state persisted once and checked at six sizes. Original text/enabled state restored and confirmed after full reload. Whole finding PARTIAL: recipient award/comment comparison remains unexecuted.",
+          "retestSummary": "Authored reporting instructions PASS six independent enabled edit/save/full reload/editor rereads, including newline, Unicode and long-reference wrapping. Disabled state persisted once and checked at six sizes. Original text/enabled state restored and confirmed after full reload. Whole finding PARTIAL: recipient award/comment comparison remains unexecuted. Additional six-size grantor Details and Disbursed-row checks show existing award reporting inactive/not required, consistent with disabled configuration. This is grantor viewing recipient row, not independent recipient-role or enabled-award verification.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
                   "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "390×844",
               "measuredCss": "390x844",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
                   "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "768×1024",
               "measuredCss": "768x1024",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "1024×768",
               "measuredCss": "1024x768",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "1280×800",
               "measuredCss": "1280x800",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "1440×900",
               "measuredCss": "1440x900",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             }
           ],
-          "limitations": "One disabled save/reload plus six controls/readbacks, not six independent disabled saves. Recipient award/comment branch missing. Desktop screenshots private and excluded.",
+          "limitations": "Existing authored-instruction six-size proof preserved; one disabled save plus six controls is not six saves. New six-size award-off checks are grantor-side only; independent recipient/enabled-award comparison remains outstanding.",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
@@ -3691,6 +3721,10 @@
             {
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-disabled-360.png",
               "label": "cloud-reporting-disabled-360; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+              "label": "Shared1440 grantor award-off row; six-size actions documented as text"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
@@ -4300,8 +4334,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-reporting-seed",
-        "updatedAt": "2026-09-15T01:12:30.494Z",
+        "runId": "2026-09-14-close37-kyc-award-partial",
+        "updatedAt": "2026-09-15T02:04:35.489Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "repairBatch": {
           "runId": "2026-09-14-close37-live-verification",
@@ -8129,7 +8163,7 @@
     {
       "name": "KYC Reviewer",
       "repo": "kyc-reviewer-uat-report",
-      "commit": "42a6c566725a1b4f5d7fa99b6019b8375a03eb76",
+      "commit": "521c1de07c8b32a50ff01837fae32a1b388a76c3",
       "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/",
       "checkpoint": "2026-09-12 interim checkpoint",
       "scenarios": [
@@ -9344,47 +9378,154 @@
           "summary": "The passport PDF preview remained black, the photograph preview was blank, and Open document did not navigate.",
           "historicalStatus": "Open",
           "status": "PARTIAL",
-          "retestSummary": "Fresh authorized synthetic passport PDF rendered inline at desktop; the original all-black observation did not recur there. At 360, 390 and 768 the viewer showed a thumbnail-dominant pane with document body clipped to the right. Full readable evidence across six sizes was not proven.",
+          "retestSummary": "Original black/blank document symptom not reproduced: inline synthetic PDF and photograph rendered at six source-app CSS sizes; actual Open Document clicked at each, then native fallback separately measured to exact six sizes and whole content read. Ordinary non-KYC role denied dashboard entry after six full reloads. Overall PARTIAL; full inline PDF zoom/scroll remains outstanding.",
           "responsive": [
             {
               "size": "360×800",
+              "measuredCss": "360x800",
               "status": "PARTIAL",
-              "summary": "Document text was not fully readable in the current inline viewer state; clipped content or thumbnail-dominant pane.",
-              "evidence": []
+              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+              "steps": [
+                "Open synthetic document using normal authorized employee preview and audited reason",
+                "Read rendered inline content, use actual Open Document fallback",
+                "Independently measure native fallback viewport and read whole document with scrolling",
+                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+                }
+              ],
+              "inlineRenderingStatus": "PASS",
+              "nativeFallbackReadStatus": "PASS",
+              "entryRoleBoundaryStatus": "PASS",
+              "signedResourceBoundaryStatus": "NOT RUN",
+              "inlineFullPdfReadStatus": "PARTIAL"
             },
             {
               "size": "390×844",
+              "measuredCss": "390x844",
               "status": "PARTIAL",
-              "summary": "Document text was not fully readable in the current inline viewer state; clipped content or thumbnail-dominant pane.",
-              "evidence": []
+              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+              "steps": [
+                "Open synthetic document using normal authorized employee preview and audited reason",
+                "Read rendered inline content, use actual Open Document fallback",
+                "Independently measure native fallback viewport and read whole document with scrolling",
+                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+                }
+              ],
+              "inlineRenderingStatus": "PASS",
+              "nativeFallbackReadStatus": "PASS",
+              "entryRoleBoundaryStatus": "PASS",
+              "signedResourceBoundaryStatus": "NOT RUN",
+              "inlineFullPdfReadStatus": "PARTIAL"
             },
             {
               "size": "768×1024",
+              "measuredCss": "768x1024",
               "status": "PARTIAL",
-              "summary": "Document text was not fully readable in the current inline viewer state; clipped content or thumbnail-dominant pane.",
-              "evidence": []
+              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding. Inline photo bottom still outstanding.",
+              "steps": [
+                "Open synthetic document using normal authorized employee preview and audited reason",
+                "Read rendered inline content, use actual Open Document fallback",
+                "Independently measure native fallback viewport and read whole document with scrolling",
+                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+                }
+              ],
+              "inlineRenderingStatus": "PASS",
+              "nativeFallbackReadStatus": "PASS",
+              "entryRoleBoundaryStatus": "PASS",
+              "signedResourceBoundaryStatus": "NOT RUN",
+              "inlineFullPdfReadStatus": "PARTIAL"
             },
             {
               "size": "1024×768",
+              "measuredCss": "1024x768",
               "status": "PARTIAL",
-              "summary": "Document text was not fully readable in the current inline viewer state; clipped content or thumbnail-dominant pane.",
-              "evidence": []
+              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+              "steps": [
+                "Open synthetic document using normal authorized employee preview and audited reason",
+                "Read rendered inline content, use actual Open Document fallback",
+                "Independently measure native fallback viewport and read whole document with scrolling",
+                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+                }
+              ],
+              "inlineRenderingStatus": "PASS",
+              "nativeFallbackReadStatus": "PASS",
+              "entryRoleBoundaryStatus": "PASS",
+              "signedResourceBoundaryStatus": "NOT RUN",
+              "inlineFullPdfReadStatus": "PARTIAL"
             },
             {
               "size": "1280×800",
-              "status": "PASS",
-              "summary": "Synthetic PDF text visibly rendered inline, not black.",
-              "evidence": []
+              "measuredCss": "1280x800",
+              "status": "PARTIAL",
+              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+              "steps": [
+                "Open synthetic document using normal authorized employee preview and audited reason",
+                "Read rendered inline content, use actual Open Document fallback",
+                "Independently measure native fallback viewport and read whole document with scrolling",
+                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+                }
+              ],
+              "inlineRenderingStatus": "PASS",
+              "nativeFallbackReadStatus": "PASS",
+              "entryRoleBoundaryStatus": "PASS",
+              "signedResourceBoundaryStatus": "NOT RUN",
+              "inlineFullPdfReadStatus": "PARTIAL"
             },
             {
               "size": "1440×900",
-              "status": "PASS",
-              "summary": "Synthetic PDF text visibly rendered inline, not black.",
-              "evidence": []
+              "measuredCss": "1440x900",
+              "status": "PARTIAL",
+              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+              "steps": [
+                "Open synthetic document using normal authorized employee preview and audited reason",
+                "Read rendered inline content, use actual Open Document fallback",
+                "Independently measure native fallback viewport and read whole document with scrolling",
+                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+                }
+              ],
+              "inlineRenderingStatus": "PASS",
+              "nativeFallbackReadStatus": "PASS",
+              "entryRoleBoundaryStatus": "PASS",
+              "signedResourceBoundaryStatus": "NOT RUN",
+              "inlineFullPdfReadStatus": "PARTIAL"
             }
           ],
-          "limitations": "Fallback readability blocked by browser policy for installed PDF extension. Cannot classify extension/native-viewer state as a confirmed product failure. No KYC decision changed. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Private identity captures, document contents, account identifiers and signed URLs excluded. Shared generic1440 image proves entry-gate denial only, not document readability or signed-resource server authorization. Native phone PDF needs horizontal scrolling. Full inline PDF reading incomplete. Reviewer768 inline photograph bottom remains outstanding.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/",
           "group": "KYC Reviewer"
         },
@@ -9598,9 +9739,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-retest45",
-        "updatedAt": "2026-09-14T07:08:29.535Z",
-        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
+        "runId": "2026-09-14-close37-kyc-award-partial",
+        "updatedAt": "2026-09-15T02:04:35.489Z",
+        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -9700,7 +9841,7 @@
     {
       "name": "KYC Approval",
       "repo": "kyc-approval-uat-report",
-      "commit": "eaa55e6826bb1bf3dc921af27d749c872b356781",
+      "commit": "d9b5ee4006c42b18b54901f39defb561f013c9f9",
       "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome campaign",
       "scenarios": [
@@ -10915,47 +11056,154 @@
           "summary": "The authorized PDF frame rendered black at 360×800, 390×844, 768×1024, 1024×768, 1280×800 and 1440×900.",
           "historicalStatus": "Open",
           "status": "PARTIAL",
-          "retestSummary": "The controlled test-only passport PDF now renders text inline at all six sizes, rather than black. The 1024 pane clips horizontal text, and full fallback verification is blocked by the installed PDF extension URL policy.",
+          "retestSummary": "Original black/blank document symptom not reproduced: inline synthetic PDF and photograph rendered at six source-app CSS sizes; actual Open Document clicked at each, then native fallback separately measured to exact six sizes and whole content read. Ordinary non-KYC role denied dashboard entry after six full reloads. Overall PARTIAL; full inline PDF zoom/scroll remains outstanding.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "PASS",
-              "summary": "Synthetic PDF content rendered inline and was visually inspected; no black viewer.",
-              "evidence": []
+              "measuredCss": "360x800",
+              "status": "PARTIAL",
+              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+              "steps": [
+                "Open synthetic document using normal authorized employee preview and audited reason",
+                "Read rendered inline content, use actual Open Document fallback",
+                "Independently measure native fallback viewport and read whole document with scrolling",
+                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+                }
+              ],
+              "inlineRenderingStatus": "PASS",
+              "nativeFallbackReadStatus": "PASS",
+              "entryRoleBoundaryStatus": "PASS",
+              "signedResourceBoundaryStatus": "NOT RUN",
+              "inlineFullPdfReadStatus": "PARTIAL"
             },
             {
               "size": "390×844",
-              "status": "PASS",
-              "summary": "Synthetic PDF content rendered inline and was visually inspected; no black viewer.",
-              "evidence": []
+              "measuredCss": "390x844",
+              "status": "PARTIAL",
+              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+              "steps": [
+                "Open synthetic document using normal authorized employee preview and audited reason",
+                "Read rendered inline content, use actual Open Document fallback",
+                "Independently measure native fallback viewport and read whole document with scrolling",
+                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+                }
+              ],
+              "inlineRenderingStatus": "PASS",
+              "nativeFallbackReadStatus": "PASS",
+              "entryRoleBoundaryStatus": "PASS",
+              "signedResourceBoundaryStatus": "NOT RUN",
+              "inlineFullPdfReadStatus": "PARTIAL"
             },
             {
               "size": "768×1024",
-              "status": "PASS",
-              "summary": "Synthetic PDF content rendered inline and was visually inspected; no black viewer.",
-              "evidence": []
+              "measuredCss": "768x1024",
+              "status": "PARTIAL",
+              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+              "steps": [
+                "Open synthetic document using normal authorized employee preview and audited reason",
+                "Read rendered inline content, use actual Open Document fallback",
+                "Independently measure native fallback viewport and read whole document with scrolling",
+                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+                }
+              ],
+              "inlineRenderingStatus": "PASS",
+              "nativeFallbackReadStatus": "PASS",
+              "entryRoleBoundaryStatus": "PASS",
+              "signedResourceBoundaryStatus": "NOT RUN",
+              "inlineFullPdfReadStatus": "PARTIAL"
             },
             {
               "size": "1024×768",
+              "measuredCss": "1024x768",
               "status": "PARTIAL",
-              "summary": "PDF renders, but horizontal text clips in narrow right pane; full-content reading was not established.",
-              "evidence": []
+              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+              "steps": [
+                "Open synthetic document using normal authorized employee preview and audited reason",
+                "Read rendered inline content, use actual Open Document fallback",
+                "Independently measure native fallback viewport and read whole document with scrolling",
+                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+                }
+              ],
+              "inlineRenderingStatus": "PASS",
+              "nativeFallbackReadStatus": "PASS",
+              "entryRoleBoundaryStatus": "PASS",
+              "signedResourceBoundaryStatus": "NOT RUN",
+              "inlineFullPdfReadStatus": "PARTIAL"
             },
             {
               "size": "1280×800",
-              "status": "PASS",
-              "summary": "Synthetic PDF content rendered inline and was visually inspected; no black viewer.",
-              "evidence": []
+              "measuredCss": "1280x800",
+              "status": "PARTIAL",
+              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+              "steps": [
+                "Open synthetic document using normal authorized employee preview and audited reason",
+                "Read rendered inline content, use actual Open Document fallback",
+                "Independently measure native fallback viewport and read whole document with scrolling",
+                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+                }
+              ],
+              "inlineRenderingStatus": "PASS",
+              "nativeFallbackReadStatus": "PASS",
+              "entryRoleBoundaryStatus": "PASS",
+              "signedResourceBoundaryStatus": "NOT RUN",
+              "inlineFullPdfReadStatus": "PARTIAL"
             },
             {
               "size": "1440×900",
-              "status": "PASS",
-              "summary": "Synthetic PDF content rendered inline and was visually inspected; no black viewer.",
-              "evidence": []
+              "measuredCss": "1440x900",
+              "status": "PARTIAL",
+              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+              "steps": [
+                "Open synthetic document using normal authorized employee preview and audited reason",
+                "Read rendered inline content, use actual Open Document fallback",
+                "Independently measure native fallback viewport and read whole document with scrolling",
+                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+                }
+              ],
+              "inlineRenderingStatus": "PASS",
+              "nativeFallbackReadStatus": "PASS",
+              "entryRoleBoundaryStatus": "PASS",
+              "signedResourceBoundaryStatus": "NOT RUN",
+              "inlineFullPdfReadStatus": "PARTIAL"
             }
           ],
-          "limitations": "Scope is inline PDF rendering. Full fallback/zoom/scroll readability not proven because installed PDF extension control is safety-policy blocked. No identity decision changed. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "Private identity captures, document contents, account identifiers and signed URLs excluded. Shared generic1440 image proves entry-gate denial only, not document readability or signed-resource server authorization. Native phone PDF needs horizontal scrolling. Full inline PDF reading incomplete. Approver768 photograph initial fetch error recovered through visible Retry Preview; prior failure retained as history.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/",
           "group": "KYC Approval"
         },
@@ -11382,9 +11630,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-retest45",
-        "updatedAt": "2026-09-14T07:08:29.535Z",
-        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
+        "runId": "2026-09-14-close37-kyc-award-partial",
+        "updatedAt": "2026-09-15T02:04:35.489Z",
+        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -11484,7 +11732,7 @@
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "ecb74866180d14931cca2ed44e6bf7aa5b0b91b2",
+      "commit": "d6a704711b19907f4a39f80ac7be2c4227ea79e1",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -12412,118 +12660,148 @@
           "summary": "Disbursement detail shows a comment never entered and monthly ongoing reporting while tracking is disabled.",
           "historicalStatus": "Open",
           "status": "PARTIAL",
-          "retestSummary": "Authored reporting instructions PASS six independent enabled edit/save/full reload/editor rereads, including newline, Unicode and long-reference wrapping. Disabled state persisted once and checked at six sizes. Original text/enabled state restored and confirmed after full reload. Whole finding PARTIAL: recipient award/comment comparison remains unexecuted.",
+          "retestSummary": "Authored reporting instructions PASS six independent enabled edit/save/full reload/editor rereads, including newline, Unicode and long-reference wrapping. Disabled state persisted once and checked at six sizes. Original text/enabled state restored and confirmed after full reload. Whole finding PARTIAL: recipient award/comment comparison remains unexecuted. Additional six-size grantor Details and Disbursed-row checks show existing award reporting inactive/not required, consistent with disabled configuration. This is grantor viewing recipient row, not independent recipient-role or enabled-award verification.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
                   "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "390×844",
               "measuredCss": "390x844",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
                   "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "768×1024",
               "measuredCss": "768x1024",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "1024×768",
               "measuredCss": "1024x768",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "1280×800",
               "measuredCss": "1280x800",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "1440×900",
               "measuredCss": "1440x900",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             }
           ],
-          "limitations": "One disabled save/reload plus six controls/readbacks, not six independent disabled saves. Recipient award/comment branch missing. Desktop screenshots private and excluded.",
+          "limitations": "Existing authored-instruction six-size proof preserved; one disabled save plus six controls is not six saves. New six-size award-off checks are grantor-side only; independent recipient/enabled-award comparison remains outstanding.",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
@@ -12540,6 +12818,10 @@
             {
               "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-disabled-360.png",
               "label": "cloud-reporting-disabled-360; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+              "label": "Shared1440 grantor award-off row; six-size actions documented as text"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
@@ -13149,8 +13431,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-reporting-seed",
-        "updatedAt": "2026-09-15T01:12:30.494Z",
+        "runId": "2026-09-14-close37-kyc-award-partial",
+        "updatedAt": "2026-09-15T02:04:35.489Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -13798,7 +14080,7 @@
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "e500141fe64ad21d62684a9f715875e8c9051309",
+      "commit": "674fef0e2c4e5a31d51b59132365bab55e552bff",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -14699,118 +14981,148 @@
           "summary": "Disbursement detail shows a comment never entered and monthly ongoing reporting while tracking is disabled.",
           "historicalStatus": "Open",
           "status": "PARTIAL",
-          "retestSummary": "Authored reporting instructions PASS six independent enabled edit/save/full reload/editor rereads, including newline, Unicode and long-reference wrapping. Disabled state persisted once and checked at six sizes. Original text/enabled state restored and confirmed after full reload. Whole finding PARTIAL: recipient award/comment comparison remains unexecuted.",
+          "retestSummary": "Authored reporting instructions PASS six independent enabled edit/save/full reload/editor rereads, including newline, Unicode and long-reference wrapping. Disabled state persisted once and checked at six sizes. Original text/enabled state restored and confirmed after full reload. Whole finding PARTIAL: recipient award/comment comparison remains unexecuted. Additional six-size grantor Details and Disbursed-row checks show existing award reporting inactive/not required, consistent with disabled configuration. This is grantor viewing recipient row, not independent recipient-role or enabled-award verification.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
                   "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "390×844",
               "measuredCss": "390x844",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
                   "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "768×1024",
               "measuredCss": "768x1024",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "1024×768",
               "measuredCss": "1024x768",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "1280×800",
               "measuredCss": "1280x800",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             },
             {
               "size": "1440×900",
               "measuredCss": "1440x900",
               "status": "PARTIAL",
-              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Read Details tracking/reporting disabled",
+                "Open Disbursed tab and expand existing recipient row",
+                "Read Reporting is not required"
               ],
               "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+                  "label": "Shared1440 grantor award-off row; six-size actions documented as text"
                 }
-              ]
+              ],
+              "grantorAwardOffStatus": "PASS"
             }
           ],
-          "limitations": "One disabled save/reload plus six controls/readbacks, not six independent disabled saves. Recipient award/comment branch missing. Desktop screenshots private and excluded.",
+          "limitations": "Existing authored-instruction six-size proof preserved; one disabled save plus six controls is not six saves. New six-size award-off checks are grantor-side only; independent recipient/enabled-award comparison remains outstanding.",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
@@ -14827,6 +15139,10 @@
             {
               "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-disabled-360.png",
               "label": "cloud-reporting-disabled-360; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+              "label": "Shared1440 grantor award-off row; six-size actions documented as text"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
@@ -15174,8 +15490,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-reporting-seed",
-        "updatedAt": "2026-09-15T01:12:30.494Z",
+        "runId": "2026-09-14-close37-kyc-award-partial",
+        "updatedAt": "2026-09-15T02:04:35.489Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -17495,118 +17811,148 @@
       "summary": "Disbursement detail shows a comment never entered and monthly ongoing reporting while tracking is disabled.",
       "historicalStatus": "Open",
       "status": "PARTIAL",
-      "retestSummary": "Authored reporting instructions PASS six independent enabled edit/save/full reload/editor rereads, including newline, Unicode and long-reference wrapping. Disabled state persisted once and checked at six sizes. Original text/enabled state restored and confirmed after full reload. Whole finding PARTIAL: recipient award/comment comparison remains unexecuted.",
+      "retestSummary": "Authored reporting instructions PASS six independent enabled edit/save/full reload/editor rereads, including newline, Unicode and long-reference wrapping. Disabled state persisted once and checked at six sizes. Original text/enabled state restored and confirmed after full reload. Whole finding PARTIAL: recipient award/comment comparison remains unexecuted. Additional six-size grantor Details and Disbursed-row checks show existing award reporting inactive/not required, consistent with disabled configuration. This is grantor viewing recipient row, not independent recipient-role or enabled-award verification.",
       "responsive": [
         {
           "size": "360×800",
           "measuredCss": "360x800",
           "status": "PARTIAL",
-          "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+          "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Read Details tracking/reporting disabled",
+            "Open Disbursed tab and expand existing recipient row",
+            "Read Reporting is not required"
           ],
           "reportingInstructionsStatus": "PASS",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
               "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+              "label": "Shared1440 grantor award-off row; six-size actions documented as text"
             }
-          ]
+          ],
+          "grantorAwardOffStatus": "PASS"
         },
         {
           "size": "390×844",
           "measuredCss": "390x844",
           "status": "PARTIAL",
-          "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+          "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Read Details tracking/reporting disabled",
+            "Open Disbursed tab and expand existing recipient row",
+            "Read Reporting is not required"
           ],
           "reportingInstructionsStatus": "PASS",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
               "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+              "label": "Shared1440 grantor award-off row; six-size actions documented as text"
             }
-          ]
+          ],
+          "grantorAwardOffStatus": "PASS"
         },
         {
           "size": "768×1024",
           "measuredCss": "768x1024",
           "status": "PARTIAL",
-          "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+          "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Read Details tracking/reporting disabled",
+            "Open Disbursed tab and expand existing recipient row",
+            "Read Reporting is not required"
           ],
           "reportingInstructionsStatus": "PASS",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
               "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+              "label": "Shared1440 grantor award-off row; six-size actions documented as text"
             }
-          ]
+          ],
+          "grantorAwardOffStatus": "PASS"
         },
         {
           "size": "1024×768",
           "measuredCss": "1024x768",
           "status": "PARTIAL",
-          "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+          "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Read Details tracking/reporting disabled",
+            "Open Disbursed tab and expand existing recipient row",
+            "Read Reporting is not required"
           ],
           "reportingInstructionsStatus": "PASS",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
               "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+              "label": "Shared1440 grantor award-off row; six-size actions documented as text"
             }
-          ]
+          ],
+          "grantorAwardOffStatus": "PASS"
         },
         {
           "size": "1280×800",
           "measuredCss": "1280x800",
           "status": "PARTIAL",
-          "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+          "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Read Details tracking/reporting disabled",
+            "Open Disbursed tab and expand existing recipient row",
+            "Read Reporting is not required"
           ],
           "reportingInstructionsStatus": "PASS",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
               "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+              "label": "Shared1440 grantor award-off row; six-size actions documented as text"
             }
-          ]
+          ],
+          "grantorAwardOffStatus": "PASS"
         },
         {
           "size": "1440×900",
           "measuredCss": "1440x900",
           "status": "PARTIAL",
-          "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+          "summary": "Grantor award-off Details and actual Disbursed tab/row expansion PASS; independent recipient and enabled-award comparison incomplete.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Read Details tracking/reporting disabled",
+            "Open Disbursed tab and expand existing recipient row",
+            "Read Reporting is not required"
           ],
           "reportingInstructionsStatus": "PASS",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
               "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+              "label": "Shared1440 grantor award-off row; six-size actions documented as text"
             }
-          ]
+          ],
+          "grantorAwardOffStatus": "PASS"
         }
       ],
-      "limitations": "One disabled save/reload plus six controls/readbacks, not six independent disabled saves. Recipient award/comment branch missing. Desktop screenshots private and excluded.",
+      "limitations": "Existing authored-instruction six-size proof preserved; one disabled save plus six controls is not six saves. New six-size award-off checks are grantor-side only; independent recipient/enabled-award comparison remains outstanding.",
       "evidence": [
         {
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
@@ -17623,6 +17969,10 @@
         {
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-disabled-360.png",
           "label": "cloud-reporting-disabled-360; shared approved evidence, size as filename"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-award-reporting-inactive-1440.png",
+          "label": "Shared1440 grantor award-off row; six-size actions documented as text"
         }
       ],
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
@@ -21183,47 +21533,154 @@
       "summary": "The passport PDF preview remained black, the photograph preview was blank, and Open document did not navigate.",
       "historicalStatus": "Open",
       "status": "PARTIAL",
-      "retestSummary": "Fresh authorized synthetic passport PDF rendered inline at desktop; the original all-black observation did not recur there. At 360, 390 and 768 the viewer showed a thumbnail-dominant pane with document body clipped to the right. Full readable evidence across six sizes was not proven.",
+      "retestSummary": "Original black/blank document symptom not reproduced: inline synthetic PDF and photograph rendered at six source-app CSS sizes; actual Open Document clicked at each, then native fallback separately measured to exact six sizes and whole content read. Ordinary non-KYC role denied dashboard entry after six full reloads. Overall PARTIAL; full inline PDF zoom/scroll remains outstanding.",
       "responsive": [
         {
           "size": "360×800",
+          "measuredCss": "360x800",
           "status": "PARTIAL",
-          "summary": "Document text was not fully readable in the current inline viewer state; clipped content or thumbnail-dominant pane.",
-          "evidence": []
+          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+          "steps": [
+            "Open synthetic document using normal authorized employee preview and audited reason",
+            "Read rendered inline content, use actual Open Document fallback",
+            "Independently measure native fallback viewport and read whole document with scrolling",
+            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+            }
+          ],
+          "inlineRenderingStatus": "PASS",
+          "nativeFallbackReadStatus": "PASS",
+          "entryRoleBoundaryStatus": "PASS",
+          "signedResourceBoundaryStatus": "NOT RUN",
+          "inlineFullPdfReadStatus": "PARTIAL"
         },
         {
           "size": "390×844",
+          "measuredCss": "390x844",
           "status": "PARTIAL",
-          "summary": "Document text was not fully readable in the current inline viewer state; clipped content or thumbnail-dominant pane.",
-          "evidence": []
+          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+          "steps": [
+            "Open synthetic document using normal authorized employee preview and audited reason",
+            "Read rendered inline content, use actual Open Document fallback",
+            "Independently measure native fallback viewport and read whole document with scrolling",
+            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+            }
+          ],
+          "inlineRenderingStatus": "PASS",
+          "nativeFallbackReadStatus": "PASS",
+          "entryRoleBoundaryStatus": "PASS",
+          "signedResourceBoundaryStatus": "NOT RUN",
+          "inlineFullPdfReadStatus": "PARTIAL"
         },
         {
           "size": "768×1024",
+          "measuredCss": "768x1024",
           "status": "PARTIAL",
-          "summary": "Document text was not fully readable in the current inline viewer state; clipped content or thumbnail-dominant pane.",
-          "evidence": []
+          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding. Inline photo bottom still outstanding.",
+          "steps": [
+            "Open synthetic document using normal authorized employee preview and audited reason",
+            "Read rendered inline content, use actual Open Document fallback",
+            "Independently measure native fallback viewport and read whole document with scrolling",
+            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+            }
+          ],
+          "inlineRenderingStatus": "PASS",
+          "nativeFallbackReadStatus": "PASS",
+          "entryRoleBoundaryStatus": "PASS",
+          "signedResourceBoundaryStatus": "NOT RUN",
+          "inlineFullPdfReadStatus": "PARTIAL"
         },
         {
           "size": "1024×768",
+          "measuredCss": "1024x768",
           "status": "PARTIAL",
-          "summary": "Document text was not fully readable in the current inline viewer state; clipped content or thumbnail-dominant pane.",
-          "evidence": []
+          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+          "steps": [
+            "Open synthetic document using normal authorized employee preview and audited reason",
+            "Read rendered inline content, use actual Open Document fallback",
+            "Independently measure native fallback viewport and read whole document with scrolling",
+            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+            }
+          ],
+          "inlineRenderingStatus": "PASS",
+          "nativeFallbackReadStatus": "PASS",
+          "entryRoleBoundaryStatus": "PASS",
+          "signedResourceBoundaryStatus": "NOT RUN",
+          "inlineFullPdfReadStatus": "PARTIAL"
         },
         {
           "size": "1280×800",
-          "status": "PASS",
-          "summary": "Synthetic PDF text visibly rendered inline, not black.",
-          "evidence": []
+          "measuredCss": "1280x800",
+          "status": "PARTIAL",
+          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+          "steps": [
+            "Open synthetic document using normal authorized employee preview and audited reason",
+            "Read rendered inline content, use actual Open Document fallback",
+            "Independently measure native fallback viewport and read whole document with scrolling",
+            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+            }
+          ],
+          "inlineRenderingStatus": "PASS",
+          "nativeFallbackReadStatus": "PASS",
+          "entryRoleBoundaryStatus": "PASS",
+          "signedResourceBoundaryStatus": "NOT RUN",
+          "inlineFullPdfReadStatus": "PARTIAL"
         },
         {
           "size": "1440×900",
-          "status": "PASS",
-          "summary": "Synthetic PDF text visibly rendered inline, not black.",
-          "evidence": []
+          "measuredCss": "1440x900",
+          "status": "PARTIAL",
+          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+          "steps": [
+            "Open synthetic document using normal authorized employee preview and audited reason",
+            "Read rendered inline content, use actual Open Document fallback",
+            "Independently measure native fallback viewport and read whole document with scrolling",
+            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+            }
+          ],
+          "inlineRenderingStatus": "PASS",
+          "nativeFallbackReadStatus": "PASS",
+          "entryRoleBoundaryStatus": "PASS",
+          "signedResourceBoundaryStatus": "NOT RUN",
+          "inlineFullPdfReadStatus": "PARTIAL"
         }
       ],
-      "limitations": "Fallback readability blocked by browser policy for installed PDF extension. Cannot classify extension/native-viewer state as a confirmed product failure. No KYC decision changed. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Private identity captures, document contents, account identifiers and signed URLs excluded. Shared generic1440 image proves entry-gate denial only, not document readability or signed-resource server authorization. Native phone PDF needs horizontal scrolling. Full inline PDF reading incomplete. Reviewer768 inline photograph bottom remains outstanding.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+          "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/",
       "group": "KYC Reviewer",
       "groups": [
@@ -21459,47 +21916,154 @@
       "summary": "The authorized PDF frame rendered black at 360×800, 390×844, 768×1024, 1024×768, 1280×800 and 1440×900.",
       "historicalStatus": "Open",
       "status": "PARTIAL",
-      "retestSummary": "The controlled test-only passport PDF now renders text inline at all six sizes, rather than black. The 1024 pane clips horizontal text, and full fallback verification is blocked by the installed PDF extension URL policy.",
+      "retestSummary": "Original black/blank document symptom not reproduced: inline synthetic PDF and photograph rendered at six source-app CSS sizes; actual Open Document clicked at each, then native fallback separately measured to exact six sizes and whole content read. Ordinary non-KYC role denied dashboard entry after six full reloads. Overall PARTIAL; full inline PDF zoom/scroll remains outstanding.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "PASS",
-          "summary": "Synthetic PDF content rendered inline and was visually inspected; no black viewer.",
-          "evidence": []
+          "measuredCss": "360x800",
+          "status": "PARTIAL",
+          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+          "steps": [
+            "Open synthetic document using normal authorized employee preview and audited reason",
+            "Read rendered inline content, use actual Open Document fallback",
+            "Independently measure native fallback viewport and read whole document with scrolling",
+            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+            }
+          ],
+          "inlineRenderingStatus": "PASS",
+          "nativeFallbackReadStatus": "PASS",
+          "entryRoleBoundaryStatus": "PASS",
+          "signedResourceBoundaryStatus": "NOT RUN",
+          "inlineFullPdfReadStatus": "PARTIAL"
         },
         {
           "size": "390×844",
-          "status": "PASS",
-          "summary": "Synthetic PDF content rendered inline and was visually inspected; no black viewer.",
-          "evidence": []
+          "measuredCss": "390x844",
+          "status": "PARTIAL",
+          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+          "steps": [
+            "Open synthetic document using normal authorized employee preview and audited reason",
+            "Read rendered inline content, use actual Open Document fallback",
+            "Independently measure native fallback viewport and read whole document with scrolling",
+            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+            }
+          ],
+          "inlineRenderingStatus": "PASS",
+          "nativeFallbackReadStatus": "PASS",
+          "entryRoleBoundaryStatus": "PASS",
+          "signedResourceBoundaryStatus": "NOT RUN",
+          "inlineFullPdfReadStatus": "PARTIAL"
         },
         {
           "size": "768×1024",
-          "status": "PASS",
-          "summary": "Synthetic PDF content rendered inline and was visually inspected; no black viewer.",
-          "evidence": []
+          "measuredCss": "768x1024",
+          "status": "PARTIAL",
+          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+          "steps": [
+            "Open synthetic document using normal authorized employee preview and audited reason",
+            "Read rendered inline content, use actual Open Document fallback",
+            "Independently measure native fallback viewport and read whole document with scrolling",
+            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+            }
+          ],
+          "inlineRenderingStatus": "PASS",
+          "nativeFallbackReadStatus": "PASS",
+          "entryRoleBoundaryStatus": "PASS",
+          "signedResourceBoundaryStatus": "NOT RUN",
+          "inlineFullPdfReadStatus": "PARTIAL"
         },
         {
           "size": "1024×768",
+          "measuredCss": "1024x768",
           "status": "PARTIAL",
-          "summary": "PDF renders, but horizontal text clips in narrow right pane; full-content reading was not established.",
-          "evidence": []
+          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+          "steps": [
+            "Open synthetic document using normal authorized employee preview and audited reason",
+            "Read rendered inline content, use actual Open Document fallback",
+            "Independently measure native fallback viewport and read whole document with scrolling",
+            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+            }
+          ],
+          "inlineRenderingStatus": "PASS",
+          "nativeFallbackReadStatus": "PASS",
+          "entryRoleBoundaryStatus": "PASS",
+          "signedResourceBoundaryStatus": "NOT RUN",
+          "inlineFullPdfReadStatus": "PARTIAL"
         },
         {
           "size": "1280×800",
-          "status": "PASS",
-          "summary": "Synthetic PDF content rendered inline and was visually inspected; no black viewer.",
-          "evidence": []
+          "measuredCss": "1280x800",
+          "status": "PARTIAL",
+          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+          "steps": [
+            "Open synthetic document using normal authorized employee preview and audited reason",
+            "Read rendered inline content, use actual Open Document fallback",
+            "Independently measure native fallback viewport and read whole document with scrolling",
+            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+            }
+          ],
+          "inlineRenderingStatus": "PASS",
+          "nativeFallbackReadStatus": "PASS",
+          "entryRoleBoundaryStatus": "PASS",
+          "signedResourceBoundaryStatus": "NOT RUN",
+          "inlineFullPdfReadStatus": "PARTIAL"
         },
         {
           "size": "1440×900",
-          "status": "PASS",
-          "summary": "Synthetic PDF content rendered inline and was visually inspected; no black viewer.",
-          "evidence": []
+          "measuredCss": "1440x900",
+          "status": "PARTIAL",
+          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
+          "steps": [
+            "Open synthetic document using normal authorized employee preview and audited reason",
+            "Read rendered inline content, use actual Open Document fallback",
+            "Independently measure native fallback viewport and read whole document with scrolling",
+            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+            }
+          ],
+          "inlineRenderingStatus": "PASS",
+          "nativeFallbackReadStatus": "PASS",
+          "entryRoleBoundaryStatus": "PASS",
+          "signedResourceBoundaryStatus": "NOT RUN",
+          "inlineFullPdfReadStatus": "PARTIAL"
         }
       ],
-      "limitations": "Scope is inline PDF rendering. Full fallback/zoom/scroll readability not proven because installed PDF extension control is safety-policy blocked. No identity decision changed. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "Private identity captures, document contents, account identifiers and signed URLs excluded. Shared generic1440 image proves entry-gate denial only, not document readability or signed-resource server authorization. Native phone PDF needs horizontal scrolling. Full inline PDF reading incomplete. Approver768 photograph initial fetch error recovered through visible Retry Preview; prior failure retained as history.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
+          "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/",
       "group": "KYC Approval",
       "groups": [
