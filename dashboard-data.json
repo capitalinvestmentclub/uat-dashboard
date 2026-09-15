@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T00:34:19.398Z",
+  "generatedAt": "2026-09-15T00:42:27.917Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "e316fb817daf34af5a25a417237a7ef7f668ca9b",
+      "commit": "31bb6a076f7fbceb59cc08c6651fc29108e39a84",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -3163,8 +3163,8 @@
           "scenario": "ADM-053",
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Admin ledger remains unverified; ADM053 not closed.",
+          "status": "FAIL",
+          "retestSummary": "At measured1024x768, Admin Ledger exact recipient-reference search returns zero journals; Reset Filters then grant-description-only search returns only initial Grant Creation Sole journal, no award. Existing wallet debit/credit and six-size receipt proof remain passing, but required Admin ledger reconciliation fails. Source confirms approval award path omits Admin ledger posting while separate explicit-disbursement path posts. No backfill or financial mutation performed.",
           "responsive": [
             {
               "size": "360×800",
@@ -3254,28 +3254,33 @@
             },
             {
               "size": "1024×768",
-              "status": "PARTIAL",
+              "status": "FAIL",
               "measuredCss": "1024x768",
-              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+              "summary": "One1024 Admin-ledger branch failure only. Other Admin ledger cells NOT RUN, with previous receipt/wallet proof preserved. GRT017 targeted receipt PASS unaffected. Screenshot does not show horizontally hidden account columns. No backfill performed; repair/historical correction not yet verified.",
               "steps": [
                 "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
                 "Open creator funding receipt and reconcile creator debit with grant credit.",
                 "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
-                "Full wallet reload and receipt readback confirm persisted fields."
+                "Full wallet reload and receipt readback confirm persisted fields.",
+                "Admin exact reference returns0; reset+description returns creation journal only."
               ],
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
                   "label": "cloud-owner-receipt-1024.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-admin-award-ledger-fail/cloud-admin-ledger-grant-description-1024.png",
+                  "label": "1024 description-filter result: one creation journal, account columns outside capture"
                 }
               ],
-              "observedAt": "2026-09-15T00:33:07.121Z",
+              "observedAt": "2026-09-15T00:41:27.524Z",
               "subchecks": {
                 "ownerGrantWallet": "PASS",
                 "creatorWallet": "PASS",
                 "recipientWallet": "PASS",
                 "reloadReadback": "PASS",
-                "adminLedger": "NOT RUN"
+                "adminLedger": "FAIL"
               }
             },
             {
@@ -3339,7 +3344,7 @@
               }
             }
           ],
-          "limitations": "No PDF download or provider/fee-schedule label parity claimed. Distinct ledger/receipt references correlated, not forced identical. Recipient768/1024 captures private; invalid1024crop excluded. Admin ledger pending; not complete ADM053 acceptance.",
+          "limitations": "One1024 Admin-ledger branch failure only. Other Admin ledger cells NOT RUN, with previous receipt/wallet proof preserved. GRT017 targeted receipt PASS unaffected. Screenshot does not show horizontally hidden account columns. No backfill performed; repair/historical correction not yet verified.",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
@@ -3380,6 +3385,10 @@
             {
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
               "label": "cloud-recipient-receipt-1440.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-admin-award-ledger-fail/cloud-admin-ledger-grant-description-1024.png",
+              "label": "1024 description-filter result: one creation journal, account columns outside capture"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
@@ -4074,12 +4083,12 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-receipt-reconciled",
-        "updatedAt": "2026-09-15T00:33:07.121Z",
+        "runId": "2026-09-14-close37-admin-award-ledger-fail",
+        "updatedAt": "2026-09-15T00:41:27.524Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "repairBatch": {
           "runId": "2026-09-14-close37-live-verification",
-          "updatedAt": "2026-09-15T00:33:07.121Z",
+          "updatedAt": "2026-09-15T00:41:27.524Z",
           "state": "MERGED AND LIVE — targeted cloud verification progressing",
           "executionMode": "cloud",
           "browser": "Google Chrome",
@@ -4143,8 +4152,8 @@
               "id": "ADM053-REC-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Admin ledger remains unverified; ADM053 not closed.",
-              "cloudRetestStatus": "PARTIAL"
+              "summary": "At measured1024x768, Admin Ledger exact recipient-reference search returns zero journals; Reset Filters then grant-description-only search returns only initial Grant Creation Sole journal, no award. Existing wallet debit/credit and six-size receipt proof remain passing, but required Admin ledger reconciliation fails. Source confirms approval award path omits Admin ledger posting while separate explicit-disbursement path posts. No backfill or financial mutation performed.",
+              "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-CFG-001",
@@ -4159,7 +4168,7 @@
             "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
             "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
           },
-          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-receipt-reconciled: ADM053-REC-001 PARTIAL. Other findings retain prior evidence; this is not full-scenario closure."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-admin-award-ledger-fail: ADM053-REC-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
@@ -11192,7 +11201,7 @@
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "0cd2c71d7e05d1e6418bcff89419cc8f4c8763b2",
+      "commit": "1b15d7e606851dd9969bf42aaf57279668efe191",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -11720,8 +11729,8 @@
           "scenario": "ADM-053",
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Admin ledger remains unverified; ADM053 not closed.",
+          "status": "FAIL",
+          "retestSummary": "At measured1024x768, Admin Ledger exact recipient-reference search returns zero journals; Reset Filters then grant-description-only search returns only initial Grant Creation Sole journal, no award. Existing wallet debit/credit and six-size receipt proof remain passing, but required Admin ledger reconciliation fails. Source confirms approval award path omits Admin ledger posting while separate explicit-disbursement path posts. No backfill or financial mutation performed.",
           "responsive": [
             {
               "size": "360×800",
@@ -11811,28 +11820,33 @@
             },
             {
               "size": "1024×768",
-              "status": "PARTIAL",
+              "status": "FAIL",
               "measuredCss": "1024x768",
-              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+              "summary": "One1024 Admin-ledger branch failure only. Other Admin ledger cells NOT RUN, with previous receipt/wallet proof preserved. GRT017 targeted receipt PASS unaffected. Screenshot does not show horizontally hidden account columns. No backfill performed; repair/historical correction not yet verified.",
               "steps": [
                 "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
                 "Open creator funding receipt and reconcile creator debit with grant credit.",
                 "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
-                "Full wallet reload and receipt readback confirm persisted fields."
+                "Full wallet reload and receipt readback confirm persisted fields.",
+                "Admin exact reference returns0; reset+description returns creation journal only."
               ],
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
                   "label": "cloud-owner-receipt-1024.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-admin-award-ledger-fail/cloud-admin-ledger-grant-description-1024.png",
+                  "label": "1024 description-filter result: one creation journal, account columns outside capture"
                 }
               ],
-              "observedAt": "2026-09-15T00:33:07.121Z",
+              "observedAt": "2026-09-15T00:41:27.524Z",
               "subchecks": {
                 "ownerGrantWallet": "PASS",
                 "creatorWallet": "PASS",
                 "recipientWallet": "PASS",
                 "reloadReadback": "PASS",
-                "adminLedger": "NOT RUN"
+                "adminLedger": "FAIL"
               }
             },
             {
@@ -11896,7 +11910,7 @@
               }
             }
           ],
-          "limitations": "No PDF download or provider/fee-schedule label parity claimed. Distinct ledger/receipt references correlated, not forced identical. Recipient768/1024 captures private; invalid1024crop excluded. Admin ledger pending; not complete ADM053 acceptance.",
+          "limitations": "One1024 Admin-ledger branch failure only. Other Admin ledger cells NOT RUN, with previous receipt/wallet proof preserved. GRT017 targeted receipt PASS unaffected. Screenshot does not show horizontally hidden account columns. No backfill performed; repair/historical correction not yet verified.",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
@@ -11937,6 +11951,10 @@
             {
               "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
               "label": "cloud-recipient-receipt-1440.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-admin-award-ledger-fail/cloud-admin-ledger-grant-description-1024.png",
+              "label": "1024 description-filter result: one creation journal, account columns outside capture"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
@@ -12631,8 +12649,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-receipt-reconciled",
-        "updatedAt": "2026-09-15T00:33:07.121Z",
+        "runId": "2026-09-14-close37-admin-award-ledger-fail",
+        "updatedAt": "2026-09-15T00:41:27.524Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -12650,7 +12668,7 @@
         },
         "repairBatch": {
           "runId": "2026-09-14-close37-live-verification",
-          "updatedAt": "2026-09-15T00:33:07.121Z",
+          "updatedAt": "2026-09-15T00:41:27.524Z",
           "state": "MERGED AND LIVE — targeted cloud verification progressing",
           "executionMode": "cloud",
           "browser": "Google Chrome",
@@ -12714,8 +12732,8 @@
               "id": "ADM053-REC-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Admin ledger remains unverified; ADM053 not closed.",
-              "cloudRetestStatus": "PARTIAL"
+              "summary": "At measured1024x768, Admin Ledger exact recipient-reference search returns zero journals; Reset Filters then grant-description-only search returns only initial Grant Creation Sole journal, no award. Existing wallet debit/credit and six-size receipt proof remain passing, but required Admin ledger reconciliation fails. Source confirms approval award path omits Admin ledger posting while separate explicit-disbursement path posts. No backfill or financial mutation performed.",
+              "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-CFG-001",
@@ -12730,7 +12748,7 @@
             "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
             "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
           },
-          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-receipt-reconciled: ADM053-REC-001 PARTIAL. Other findings retain prior evidence; this is not full-scenario closure."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-admin-award-ledger-fail: ADM053-REC-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
@@ -13177,7 +13195,7 @@
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "e0b4ef8292a4dc03f15e68b3168eb511f35e0f2f",
+      "commit": "4fb6aded703e643dae2a7c807736e86676a2c864",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -13678,8 +13696,8 @@
           "scenario": "ADM-053",
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Admin ledger remains unverified; ADM053 not closed.",
+          "status": "FAIL",
+          "retestSummary": "At measured1024x768, Admin Ledger exact recipient-reference search returns zero journals; Reset Filters then grant-description-only search returns only initial Grant Creation Sole journal, no award. Existing wallet debit/credit and six-size receipt proof remain passing, but required Admin ledger reconciliation fails. Source confirms approval award path omits Admin ledger posting while separate explicit-disbursement path posts. No backfill or financial mutation performed.",
           "responsive": [
             {
               "size": "360×800",
@@ -13769,28 +13787,33 @@
             },
             {
               "size": "1024×768",
-              "status": "PARTIAL",
+              "status": "FAIL",
               "measuredCss": "1024x768",
-              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+              "summary": "One1024 Admin-ledger branch failure only. Other Admin ledger cells NOT RUN, with previous receipt/wallet proof preserved. GRT017 targeted receipt PASS unaffected. Screenshot does not show horizontally hidden account columns. No backfill performed; repair/historical correction not yet verified.",
               "steps": [
                 "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
                 "Open creator funding receipt and reconcile creator debit with grant credit.",
                 "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
-                "Full wallet reload and receipt readback confirm persisted fields."
+                "Full wallet reload and receipt readback confirm persisted fields.",
+                "Admin exact reference returns0; reset+description returns creation journal only."
               ],
               "evidence": [
                 {
                   "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
                   "label": "cloud-owner-receipt-1024.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-admin-award-ledger-fail/cloud-admin-ledger-grant-description-1024.png",
+                  "label": "1024 description-filter result: one creation journal, account columns outside capture"
                 }
               ],
-              "observedAt": "2026-09-15T00:33:07.121Z",
+              "observedAt": "2026-09-15T00:41:27.524Z",
               "subchecks": {
                 "ownerGrantWallet": "PASS",
                 "creatorWallet": "PASS",
                 "recipientWallet": "PASS",
                 "reloadReadback": "PASS",
-                "adminLedger": "NOT RUN"
+                "adminLedger": "FAIL"
               }
             },
             {
@@ -13854,7 +13877,7 @@
               }
             }
           ],
-          "limitations": "No PDF download or provider/fee-schedule label parity claimed. Distinct ledger/receipt references correlated, not forced identical. Recipient768/1024 captures private; invalid1024crop excluded. Admin ledger pending; not complete ADM053 acceptance.",
+          "limitations": "One1024 Admin-ledger branch failure only. Other Admin ledger cells NOT RUN, with previous receipt/wallet proof preserved. GRT017 targeted receipt PASS unaffected. Screenshot does not show horizontally hidden account columns. No backfill performed; repair/historical correction not yet verified.",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
@@ -13895,6 +13918,10 @@
             {
               "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
               "label": "cloud-recipient-receipt-1440.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-admin-award-ledger-fail/cloud-admin-ledger-grant-description-1024.png",
+              "label": "1024 description-filter result: one creation journal, account columns outside capture"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
@@ -14430,8 +14457,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-receipt-reconciled",
-        "updatedAt": "2026-09-15T00:33:07.121Z",
+        "runId": "2026-09-14-close37-admin-award-ledger-fail",
+        "updatedAt": "2026-09-15T00:41:27.524Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -14449,7 +14476,7 @@
         },
         "repairBatch": {
           "runId": "2026-09-14-close37-live-verification",
-          "updatedAt": "2026-09-15T00:33:07.121Z",
+          "updatedAt": "2026-09-15T00:41:27.524Z",
           "state": "MERGED AND LIVE — targeted cloud verification progressing",
           "executionMode": "cloud",
           "browser": "Google Chrome",
@@ -14513,8 +14540,8 @@
               "id": "ADM053-REC-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Admin ledger remains unverified; ADM053 not closed.",
-              "cloudRetestStatus": "PARTIAL"
+              "summary": "At measured1024x768, Admin Ledger exact recipient-reference search returns zero journals; Reset Filters then grant-description-only search returns only initial Grant Creation Sole journal, no award. Existing wallet debit/credit and six-size receipt proof remain passing, but required Admin ledger reconciliation fails. Source confirms approval award path omits Admin ledger posting while separate explicit-disbursement path posts. No backfill or financial mutation performed.",
+              "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-CFG-001",
@@ -14529,7 +14556,7 @@
             "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
             "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
           },
-          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-receipt-reconciled: ADM053-REC-001 PARTIAL. Other findings retain prior evidence; this is not full-scenario closure."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-admin-award-ledger-fail: ADM053-REC-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     }
@@ -16341,8 +16368,8 @@
       "scenario": "ADM-053",
       "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
       "historicalStatus": "Open",
-      "status": "PARTIAL",
-      "retestSummary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Admin ledger remains unverified; ADM053 not closed.",
+      "status": "FAIL",
+      "retestSummary": "At measured1024x768, Admin Ledger exact recipient-reference search returns zero journals; Reset Filters then grant-description-only search returns only initial Grant Creation Sole journal, no award. Existing wallet debit/credit and six-size receipt proof remain passing, but required Admin ledger reconciliation fails. Source confirms approval award path omits Admin ledger posting while separate explicit-disbursement path posts. No backfill or financial mutation performed.",
       "responsive": [
         {
           "size": "360×800",
@@ -16432,28 +16459,33 @@
         },
         {
           "size": "1024×768",
-          "status": "PARTIAL",
+          "status": "FAIL",
           "measuredCss": "1024x768",
-          "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+          "summary": "One1024 Admin-ledger branch failure only. Other Admin ledger cells NOT RUN, with previous receipt/wallet proof preserved. GRT017 targeted receipt PASS unaffected. Screenshot does not show horizontally hidden account columns. No backfill performed; repair/historical correction not yet verified.",
           "steps": [
             "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
             "Open creator funding receipt and reconcile creator debit with grant credit.",
             "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
-            "Full wallet reload and receipt readback confirm persisted fields."
+            "Full wallet reload and receipt readback confirm persisted fields.",
+            "Admin exact reference returns0; reset+description returns creation journal only."
           ],
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
               "label": "cloud-owner-receipt-1024.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-admin-award-ledger-fail/cloud-admin-ledger-grant-description-1024.png",
+              "label": "1024 description-filter result: one creation journal, account columns outside capture"
             }
           ],
-          "observedAt": "2026-09-15T00:33:07.121Z",
+          "observedAt": "2026-09-15T00:41:27.524Z",
           "subchecks": {
             "ownerGrantWallet": "PASS",
             "creatorWallet": "PASS",
             "recipientWallet": "PASS",
             "reloadReadback": "PASS",
-            "adminLedger": "NOT RUN"
+            "adminLedger": "FAIL"
           }
         },
         {
@@ -16517,7 +16549,7 @@
           }
         }
       ],
-      "limitations": "No PDF download or provider/fee-schedule label parity claimed. Distinct ledger/receipt references correlated, not forced identical. Recipient768/1024 captures private; invalid1024crop excluded. Admin ledger pending; not complete ADM053 acceptance.",
+      "limitations": "One1024 Admin-ledger branch failure only. Other Admin ledger cells NOT RUN, with previous receipt/wallet proof preserved. GRT017 targeted receipt PASS unaffected. Screenshot does not show horizontally hidden account columns. No backfill performed; repair/historical correction not yet verified.",
       "evidence": [
         {
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
@@ -16558,6 +16590,10 @@
         {
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
           "label": "cloud-recipient-receipt-1440.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-admin-award-ledger-fail/cloud-admin-ledger-grant-description-1024.png",
+          "label": "1024 description-filter result: one creation journal, account columns outside capture"
         }
       ],
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
