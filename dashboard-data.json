@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T00:42:27.917Z",
+  "generatedAt": "2026-09-15T00:55:40.491Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "31bb6a076f7fbceb59cc08c6651fc29108e39a84",
+      "commit": "debac17fba75c4c66173edafada9a79311e31877",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -3908,48 +3908,151 @@
           "scenario": "ADM-046",
           "summary": "The three queues expose separate records without a shared immutable case or cross-reference workflow.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right.",
+          "status": "PARTIAL",
+          "retestSummary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits.",
           "responsive": [
             {
               "size": "360×800",
+              "measuredCss": "360x800",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
+                  "label": "Shared support destination 360×800; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "390×844",
+              "measuredCss": "390x844",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-390.png",
+                  "label": "Shared support destination 390×844; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "768×1024",
+              "measuredCss": "768x1024",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-768.png",
+                  "label": "Shared support destination 768×1024; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "1024×768",
+              "measuredCss": "1024x768",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1024.png",
+                  "label": "Shared support destination 1024×768; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "1280×800",
+              "measuredCss": "1280x800",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1280.png",
+                  "label": "Shared support destination 1280×800; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "1440×900",
+              "measuredCss": "1440x900",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. Shared full reload/history PASS.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1440.png",
+                  "label": "Shared support destination 1440×900; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             }
           ],
-          "limitations": "No duplicate was submitted. Linked references themselves persist and can be opened via the central case. Cross-role authorization and downstream enforcement remain unverified. Six-size coverage proves the displayed support/moderation destination dialogs; source clicks ran once each. Feedback readability was rechecked at 1024x768 only. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "PARTIAL: legitimately unlinked record-to-existing-case linking remains unexecuted. Original18authorized source journeys had one shared1440 full reload, not18 per-cell reloads. Subsequent wrong-role denial passed six full reloads on newer reporting-only FE a2d485d; do not conflate execution versions. One unlinked source opened new-case form and was cancelled; central Link record flow remains to test, not a newly confirmed product defect. Only approved support destination and wrong-role1440 screenshots public; feedback/moderation captures private.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
+              "label": "Shared support destination 360×800; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-390.png",
+              "label": "Shared support destination 390×844; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-768.png",
+              "label": "Shared support destination 768×1024; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1024.png",
+              "label": "Shared support destination 1024×768; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1280.png",
+              "label": "Shared support destination 1280×800; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1440.png",
+              "label": "Shared support destination 1440×900; approved visual"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
           "group": "Admin"
         },
@@ -4083,8 +4186,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-admin-award-ledger-fail",
-        "updatedAt": "2026-09-15T00:41:27.524Z",
+        "runId": "2026-09-14-close37-case-navigation-partial",
+        "updatedAt": "2026-09-15T00:53:41.302Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "repairBatch": {
           "runId": "2026-09-14-close37-live-verification",
@@ -11201,7 +11304,7 @@
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "1b15d7e606851dd9969bf42aaf57279668efe191",
+      "commit": "84ce704beff91b49bcee935533c025a2ddb74c33",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -12474,48 +12577,151 @@
           "scenario": "ADM-046",
           "summary": "The three queues expose separate records without a shared immutable case or cross-reference workflow.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right.",
+          "status": "PARTIAL",
+          "retestSummary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits.",
           "responsive": [
             {
               "size": "360×800",
+              "measuredCss": "360x800",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
+                  "label": "Shared support destination 360×800; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "390×844",
+              "measuredCss": "390x844",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-390.png",
+                  "label": "Shared support destination 390×844; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "768×1024",
+              "measuredCss": "768x1024",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-768.png",
+                  "label": "Shared support destination 768×1024; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "1024×768",
+              "measuredCss": "1024x768",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1024.png",
+                  "label": "Shared support destination 1024×768; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "1280×800",
+              "measuredCss": "1280x800",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1280.png",
+                  "label": "Shared support destination 1280×800; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "1440×900",
+              "measuredCss": "1440x900",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. Shared full reload/history PASS.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1440.png",
+                  "label": "Shared support destination 1440×900; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             }
           ],
-          "limitations": "No duplicate was submitted. Linked references themselves persist and can be opened via the central case. Cross-role authorization and downstream enforcement remain unverified. Six-size coverage proves the displayed support/moderation destination dialogs; source clicks ran once each. Feedback readability was rechecked at 1024x768 only. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "PARTIAL: legitimately unlinked record-to-existing-case linking remains unexecuted. Original18authorized source journeys had one shared1440 full reload, not18 per-cell reloads. Subsequent wrong-role denial passed six full reloads on newer reporting-only FE a2d485d; do not conflate execution versions. One unlinked source opened new-case form and was cancelled; central Link record flow remains to test, not a newly confirmed product defect. Only approved support destination and wrong-role1440 screenshots public; feedback/moderation captures private.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
+              "label": "Shared support destination 360×800; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-390.png",
+              "label": "Shared support destination 390×844; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-768.png",
+              "label": "Shared support destination 768×1024; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1024.png",
+              "label": "Shared support destination 1024×768; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1280.png",
+              "label": "Shared support destination 1280×800; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1440.png",
+              "label": "Shared support destination 1440×900; approved visual"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
           "group": "Super Admin"
         },
@@ -12649,8 +12855,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-admin-award-ledger-fail",
-        "updatedAt": "2026-09-15T00:41:27.524Z",
+        "runId": "2026-09-14-close37-case-navigation-partial",
+        "updatedAt": "2026-09-15T00:53:41.302Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -12755,7 +12961,7 @@
     {
       "name": "Support Operations",
       "repo": "support-operations-uat-report",
-      "commit": "d4d6e88ec899d890badbb5b6150695cfd6ebf108",
+      "commit": "2b35acb8f5a0e4c4118b8267d57d7abb6ac26296",
       "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome Support Operations campaign",
       "scenarios": [
@@ -13039,56 +13245,159 @@
           "scenario": "SUP-005",
           "summary": "The only visible linkage dialog accepts a GitHub issue or pull request. No relationship control or shared case model links feedback to support or moderation records.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right.",
+          "status": "PARTIAL",
+          "retestSummary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits.",
           "responsive": [
             {
               "size": "360×800",
+              "measuredCss": "360x800",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
+                  "label": "Shared support destination 360×800; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "390×844",
+              "measuredCss": "390x844",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-390.png",
+                  "label": "Shared support destination 390×844; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "768×1024",
+              "measuredCss": "768x1024",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-768.png",
+                  "label": "Shared support destination 768×1024; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "1024×768",
+              "measuredCss": "1024x768",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1024.png",
+                  "label": "Shared support destination 1024×768; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "1280×800",
+              "measuredCss": "1280x800",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1280.png",
+                  "label": "Shared support destination 1280×800; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             },
             {
               "size": "1440×900",
+              "measuredCss": "1440x900",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. Shared full reload/history PASS.",
+              "steps": [
+                "Open controlled Support, Feedback and Moderation source details",
+                "Click Link operational case or Open linked case normally",
+                "Confirm same existing case, closed/version17 and no new-case dialog"
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1440.png",
+                  "label": "Shared support destination 1440×900; approved visual"
+                }
+              ],
+              "navigationStatus": "PASS",
+              "sourceControlExecutions": 3
             }
           ],
-          "limitations": "No duplicate was submitted. Linked references themselves persist and can be opened via the central case. Cross-role authorization and downstream enforcement remain unverified. Six-size coverage proves the displayed support/moderation destination dialogs; source clicks ran once each. Feedback readability was rechecked at 1024x768 only. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-          "evidence": [],
+          "limitations": "PARTIAL: legitimately unlinked record-to-existing-case linking remains unexecuted. Original18authorized source journeys had one shared1440 full reload, not18 per-cell reloads. Subsequent wrong-role denial passed six full reloads on newer reporting-only FE a2d485d; do not conflate execution versions. One unlinked source opened new-case form and was cancelled; central Link record flow remains to test, not a newly confirmed product defect. Only approved support destination and wrong-role1440 screenshots public; feedback/moderation captures private.",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
+              "label": "Shared support destination 360×800; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-390.png",
+              "label": "Shared support destination 390×844; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-768.png",
+              "label": "Shared support destination 768×1024; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1024.png",
+              "label": "Shared support destination 1024×768; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1280.png",
+              "label": "Shared support destination 1280×800; approved visual"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1440.png",
+              "label": "Shared support destination 1440×900; approved visual"
+            }
+          ],
           "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/",
           "group": "Support Operations"
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-retest45",
-        "updatedAt": "2026-09-14T07:08:29.535Z",
-        "state": "RETEST PARTIAL — all 45 dispositioned; incomplete workflows explicitly blocked or partial",
+        "runId": "2026-09-14-close37-case-navigation-partial",
+        "updatedAt": "2026-09-15T00:53:41.302Z",
+        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -17156,48 +17465,151 @@
       "scenario": "ADM-046",
       "summary": "The three queues expose separate records without a shared immutable case or cross-reference workflow.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right.",
+      "status": "PARTIAL",
+      "retestSummary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits.",
       "responsive": [
         {
           "size": "360×800",
+          "measuredCss": "360x800",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "steps": [
+            "Open controlled Support, Feedback and Moderation source details",
+            "Click Link operational case or Open linked case normally",
+            "Confirm same existing case, closed/version17 and no new-case dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
+              "label": "Shared support destination 360×800; approved visual"
+            }
+          ],
+          "navigationStatus": "PASS",
+          "sourceControlExecutions": 3
         },
         {
           "size": "390×844",
+          "measuredCss": "390x844",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "steps": [
+            "Open controlled Support, Feedback and Moderation source details",
+            "Click Link operational case or Open linked case normally",
+            "Confirm same existing case, closed/version17 and no new-case dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-390.png",
+              "label": "Shared support destination 390×844; approved visual"
+            }
+          ],
+          "navigationStatus": "PASS",
+          "sourceControlExecutions": 3
         },
         {
           "size": "768×1024",
+          "measuredCss": "768x1024",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "steps": [
+            "Open controlled Support, Feedback and Moderation source details",
+            "Click Link operational case or Open linked case normally",
+            "Confirm same existing case, closed/version17 and no new-case dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-768.png",
+              "label": "Shared support destination 768×1024; approved visual"
+            }
+          ],
+          "navigationStatus": "PASS",
+          "sourceControlExecutions": 3
         },
         {
           "size": "1024×768",
+          "measuredCss": "1024x768",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "steps": [
+            "Open controlled Support, Feedback and Moderation source details",
+            "Click Link operational case or Open linked case normally",
+            "Confirm same existing case, closed/version17 and no new-case dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1024.png",
+              "label": "Shared support destination 1024×768; approved visual"
+            }
+          ],
+          "navigationStatus": "PASS",
+          "sourceControlExecutions": 3
         },
         {
           "size": "1280×800",
+          "measuredCss": "1280x800",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "steps": [
+            "Open controlled Support, Feedback and Moderation source details",
+            "Click Link operational case or Open linked case normally",
+            "Confirm same existing case, closed/version17 and no new-case dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1280.png",
+              "label": "Shared support destination 1280×800; approved visual"
+            }
+          ],
+          "navigationStatus": "PASS",
+          "sourceControlExecutions": 3
         },
         {
           "size": "1440×900",
+          "measuredCss": "1440x900",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. Shared full reload/history PASS.",
+          "steps": [
+            "Open controlled Support, Feedback and Moderation source details",
+            "Click Link operational case or Open linked case normally",
+            "Confirm same existing case, closed/version17 and no new-case dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1440.png",
+              "label": "Shared support destination 1440×900; approved visual"
+            }
+          ],
+          "navigationStatus": "PASS",
+          "sourceControlExecutions": 3
         }
       ],
-      "limitations": "No duplicate was submitted. Linked references themselves persist and can be opened via the central case. Cross-role authorization and downstream enforcement remain unverified. Six-size coverage proves the displayed support/moderation destination dialogs; source clicks ran once each. Feedback readability was rechecked at 1024x768 only. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "PARTIAL: legitimately unlinked record-to-existing-case linking remains unexecuted. Original18authorized source journeys had one shared1440 full reload, not18 per-cell reloads. Subsequent wrong-role denial passed six full reloads on newer reporting-only FE a2d485d; do not conflate execution versions. One unlinked source opened new-case form and was cancelled; central Link record flow remains to test, not a newly confirmed product defect. Only approved support destination and wrong-role1440 screenshots public; feedback/moderation captures private.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
+          "label": "Shared support destination 360×800; approved visual"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-390.png",
+          "label": "Shared support destination 390×844; approved visual"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-768.png",
+          "label": "Shared support destination 768×1024; approved visual"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1024.png",
+          "label": "Shared support destination 1024×768; approved visual"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1280.png",
+          "label": "Shared support destination 1280×800; approved visual"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1440.png",
+          "label": "Shared support destination 1440×900; approved visual"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "group": "Admin",
       "groups": [
@@ -21199,48 +21611,151 @@
       "scenario": "SUP-005",
       "summary": "The only visible linkage dialog accepts a GitHub issue or pull request. No relationship control or shared case model links feedback to support or moderation records.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right.",
+      "status": "PARTIAL",
+      "retestSummary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits.",
       "responsive": [
         {
           "size": "360×800",
+          "measuredCss": "360x800",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "steps": [
+            "Open controlled Support, Feedback and Moderation source details",
+            "Click Link operational case or Open linked case normally",
+            "Confirm same existing case, closed/version17 and no new-case dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
+              "label": "Shared support destination 360×800; approved visual"
+            }
+          ],
+          "navigationStatus": "PASS",
+          "sourceControlExecutions": 3
         },
         {
           "size": "390×844",
+          "measuredCss": "390x844",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "steps": [
+            "Open controlled Support, Feedback and Moderation source details",
+            "Click Link operational case or Open linked case normally",
+            "Confirm same existing case, closed/version17 and no new-case dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-390.png",
+              "label": "Shared support destination 390×844; approved visual"
+            }
+          ],
+          "navigationStatus": "PASS",
+          "sourceControlExecutions": 3
         },
         {
           "size": "768×1024",
+          "measuredCss": "768x1024",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "steps": [
+            "Open controlled Support, Feedback and Moderation source details",
+            "Click Link operational case or Open linked case normally",
+            "Confirm same existing case, closed/version17 and no new-case dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-768.png",
+              "label": "Shared support destination 768×1024; approved visual"
+            }
+          ],
+          "navigationStatus": "PASS",
+          "sourceControlExecutions": 3
         },
         {
           "size": "1024×768",
+          "measuredCss": "1024x768",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "steps": [
+            "Open controlled Support, Feedback and Moderation source details",
+            "Click Link operational case or Open linked case normally",
+            "Confirm same existing case, closed/version17 and no new-case dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1024.png",
+              "label": "Shared support destination 1024×768; approved visual"
+            }
+          ],
+          "navigationStatus": "PASS",
+          "sourceControlExecutions": 3
         },
         {
           "size": "1280×800",
+          "measuredCss": "1280x800",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "steps": [
+            "Open controlled Support, Feedback and Moderation source details",
+            "Click Link operational case or Open linked case normally",
+            "Confirm same existing case, closed/version17 and no new-case dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1280.png",
+              "label": "Shared support destination 1280×800; approved visual"
+            }
+          ],
+          "navigationStatus": "PASS",
+          "sourceControlExecutions": 3
         },
         {
           "size": "1440×900",
+          "measuredCss": "1440x900",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh source handoff regression remains: Support Link operational case, Feedback Link operational case and Moderation Open linked case all open a new-case form despite their canonical source IDs already being linked to CASE-20260914-0BDDAF. The dialog has no existing-case selector. Support and moderation handoff dialogs were reviewed at all six sizes. Feedback selected-detail still collapses to a single-character column at 1024x768, with workflow controls clipped on the right. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. Shared full reload/history PASS.",
+          "steps": [
+            "Open controlled Support, Feedback and Moderation source details",
+            "Click Link operational case or Open linked case normally",
+            "Confirm same existing case, closed/version17 and no new-case dialog"
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1440.png",
+              "label": "Shared support destination 1440×900; approved visual"
+            }
+          ],
+          "navigationStatus": "PASS",
+          "sourceControlExecutions": 3
         }
       ],
-      "limitations": "No duplicate was submitted. Linked references themselves persist and can be opened via the central case. Cross-role authorization and downstream enforcement remain unverified. Six-size coverage proves the displayed support/moderation destination dialogs; source clicks ran once each. Feedback readability was rechecked at 1024x768 only. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
-      "evidence": [],
+      "limitations": "PARTIAL: legitimately unlinked record-to-existing-case linking remains unexecuted. Original18authorized source journeys had one shared1440 full reload, not18 per-cell reloads. Subsequent wrong-role denial passed six full reloads on newer reporting-only FE a2d485d; do not conflate execution versions. One unlinked source opened new-case form and was cancelled; central Link record flow remains to test, not a newly confirmed product defect. Only approved support destination and wrong-role1440 screenshots public; feedback/moderation captures private.",
+      "evidence": [
+        {
+          "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
+          "label": "Shared support destination 360×800; approved visual"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-390.png",
+          "label": "Shared support destination 390×844; approved visual"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-768.png",
+          "label": "Shared support destination 768×1024; approved visual"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1024.png",
+          "label": "Shared support destination 1024×768; approved visual"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1280.png",
+          "label": "Shared support destination 1280×800; approved visual"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-1440.png",
+          "label": "Shared support destination 1440×900; approved visual"
+        }
+      ],
       "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/",
       "group": "Support Operations",
       "groups": [
