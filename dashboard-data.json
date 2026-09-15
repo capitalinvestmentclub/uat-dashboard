@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T00:12:07.942Z",
+  "generatedAt": "2026-09-15T00:34:19.398Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "0581d6e707f6189d92e6581d0b8b70bb4160dec4",
+      "commit": "e316fb817daf34af5a25a417237a7ef7f668ca9b",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -3163,78 +3163,223 @@
           "scenario": "ADM-053",
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Fresh original grant Wallet disbursement receipt at exact1440x900: reference6a9628cdcae07bfa04bc4127 / CIC-7BFA04BC4127 shows grant sender but Recipient N/A, despite table counterparty CIC Investor. Gross/net USD100 and zero fees. Main visually reviewed screenshot. Owner/recipient same-award reconciliation fails; other five cells not executed before repair.",
+          "status": "PARTIAL",
+          "retestSummary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Admin ledger remains unverified; ADM053 not closed.",
           "responsive": [
             {
               "size": "360×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "390×844",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "768×1024",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "1024×768",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "1280×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "1440×900",
-              "measuredCss": "1440x900",
-              "status": "FAIL",
-              "summary": "Open original grant Wallet disbursement; Open Receipt CIC-7BFA04BC4127; Compare counterparty CIC Investor with receipt Recipient N/A. FAIL main visually reviewed missing recipient",
+              "status": "PARTIAL",
+              "measuredCss": "360x800",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
               "steps": [
-                "Open original grant Wallet disbursement",
-                "Open Receipt CIC-7BFA04BC4127",
-                "Compare counterparty CIC Investor with receipt Recipient N/A"
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
               ],
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
-                  "label": "GRT017-owner-recipient-missing-1440x900"
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
+                  "label": "cloud-owner-receipt-360.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-360.png",
+                  "label": "cloud-recipient-receipt-360.png"
                 }
               ],
-              "observedAt": "2026-09-14T20:21:32.808Z"
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "390×844",
+              "status": "PARTIAL",
+              "measuredCss": "390x844",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-390.png",
+                  "label": "cloud-owner-receipt-390.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-390.png",
+                  "label": "cloud-recipient-receipt-390.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "768×1024",
+              "status": "PARTIAL",
+              "measuredCss": "768x1024",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-768.png",
+                  "label": "cloud-owner-receipt-768.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "1024×768",
+              "status": "PARTIAL",
+              "measuredCss": "1024x768",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
+                  "label": "cloud-owner-receipt-1024.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "1280×800",
+              "status": "PARTIAL",
+              "measuredCss": "1280x800",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1280.png",
+                  "label": "cloud-owner-receipt-1280.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1280.png",
+                  "label": "cloud-recipient-receipt-1280.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "1440×900",
+              "status": "PARTIAL",
+              "measuredCss": "1440x900",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1440.png",
+                  "label": "cloud-owner-receipt-1440.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
+                  "label": "cloud-recipient-receipt-1440.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
             }
           ],
-          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Original owner-side receipt failure at1440 only; other five sizes unexecuted.",
+          "limitations": "No PDF download or provider/fee-schedule label parity claimed. Distinct ledger/receipt references correlated, not forced identical. Recipient768/1024 captures private; invalid1024crop excluded. Admin ledger pending; not complete ADM053 acceptance.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
-              "label": "GRT017-owner-recipient-missing-1440x900"
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
+              "label": "cloud-owner-receipt-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-360.png",
+              "label": "cloud-recipient-receipt-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-390.png",
+              "label": "cloud-owner-receipt-390.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-390.png",
+              "label": "cloud-recipient-receipt-390.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-768.png",
+              "label": "cloud-owner-receipt-768.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
+              "label": "cloud-owner-receipt-1024.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1280.png",
+              "label": "cloud-owner-receipt-1280.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1280.png",
+              "label": "cloud-recipient-receipt-1280.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1440.png",
+              "label": "cloud-owner-receipt-1440.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
+              "label": "cloud-recipient-receipt-1440.png"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
@@ -3929,13 +4074,13 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-live-authored-reporting",
-        "updatedAt": "2026-09-14T23:56:33.561Z",
+        "runId": "2026-09-14-close37-receipt-reconciled",
+        "updatedAt": "2026-09-15T00:33:07.121Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "repairBatch": {
           "runId": "2026-09-14-close37-live-verification",
-          "updatedAt": "2026-09-14T23:57:05.464Z",
-          "state": "MERGED AND LIVE — exact-release verification in progress",
+          "updatedAt": "2026-09-15T00:33:07.121Z",
+          "state": "MERGED AND LIVE — targeted cloud verification progressing",
           "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
@@ -3948,9 +4093,9 @@
           ],
           "mergeStatus": "MERGED",
           "deploymentStatus": "LIVE — both services promoted",
-          "cloudRetestStatus": "IN PROGRESS — latest acceptance retained",
+          "cloudRetestStatus": "PARTIAL",
           "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "API promoted successfully before frontend; both recorded exact merge versions now LIVE. Fresh browser checks are in progress. No automatic PASS from promotion; latest failures and incomplete branches stay open.",
+          "releaseGate": "Recorded merge commits are live. Cloud closure below is limited to explicit targeted results with six measured CSS viewport outcomes; merged code alone never closes other findings.",
           "candidates": {
             "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
             "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
@@ -3998,8 +4143,8 @@
               "id": "ADM053-REC-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
-              "cloudRetestStatus": "FAIL"
+              "summary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Admin ledger remains unverified; ADM053 not closed.",
+              "cloudRetestStatus": "PARTIAL"
             },
             {
               "id": "ADM053-CFG-001",
@@ -4014,7 +4159,7 @@
             "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
             "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
           },
-          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-live-authored-reporting: ADM053-CFG-001 FAIL, ADM053-REPORT-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-receipt-reconciled: ADM053-REC-001 PARTIAL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
@@ -5083,7 +5228,7 @@
     {
       "name": "Grantor",
       "repo": "grantor-uat-report",
-      "commit": "cba8bc5ecdd42056f2089567041e5b678ce0b094",
+      "commit": "cd8dbe6aec10676ab29e7b9ccc7564a76318f84c",
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5839,78 +5984,223 @@
           "scenario": "GRT-017, GRT-018",
           "summary": "Wallet movement was correct, but the award receipt labelled the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Fresh original grant Wallet disbursement receipt at exact1440x900: reference6a9628cdcae07bfa04bc4127 / CIC-7BFA04BC4127 shows grant sender but Recipient N/A, despite table counterparty CIC Investor. Gross/net USD100 and zero fees. Main visually reviewed screenshot. Owner/recipient same-award reconciliation fails; other five cells not executed before repair.",
+          "status": "PASS",
+          "retestSummary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Targeted original parties/value-direction defect closed; broader grant lifecycle not certified.",
           "responsive": [
             {
               "size": "360×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "390×844",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "768×1024",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "1024×768",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "1280×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "1440×900",
-              "measuredCss": "1440x900",
-              "status": "FAIL",
-              "summary": "Open original grant Wallet disbursement; Open Receipt CIC-7BFA04BC4127; Compare counterparty CIC Investor with receipt Recipient N/A. FAIL main visually reviewed missing recipient",
+              "status": "PASS",
+              "measuredCss": "360x800",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
               "steps": [
-                "Open original grant Wallet disbursement",
-                "Open Receipt CIC-7BFA04BC4127",
-                "Compare counterparty CIC Investor with receipt Recipient N/A"
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
               ],
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
-                  "label": "GRT017-owner-recipient-missing-1440x900"
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
+                  "label": "cloud-owner-receipt-360.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-360.png",
+                  "label": "cloud-recipient-receipt-360.png"
                 }
               ],
-              "observedAt": "2026-09-14T20:21:32.508Z"
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "OUTSIDE_GRT017_SCOPE"
+              }
+            },
+            {
+              "size": "390×844",
+              "status": "PASS",
+              "measuredCss": "390x844",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-390.png",
+                  "label": "cloud-owner-receipt-390.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-390.png",
+                  "label": "cloud-recipient-receipt-390.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "OUTSIDE_GRT017_SCOPE"
+              }
+            },
+            {
+              "size": "768×1024",
+              "status": "PASS",
+              "measuredCss": "768x1024",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-768.png",
+                  "label": "cloud-owner-receipt-768.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "OUTSIDE_GRT017_SCOPE"
+              }
+            },
+            {
+              "size": "1024×768",
+              "status": "PASS",
+              "measuredCss": "1024x768",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
+                  "label": "cloud-owner-receipt-1024.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "OUTSIDE_GRT017_SCOPE"
+              }
+            },
+            {
+              "size": "1280×800",
+              "status": "PASS",
+              "measuredCss": "1280x800",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1280.png",
+                  "label": "cloud-owner-receipt-1280.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1280.png",
+                  "label": "cloud-recipient-receipt-1280.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "OUTSIDE_GRT017_SCOPE"
+              }
+            },
+            {
+              "size": "1440×900",
+              "status": "PASS",
+              "measuredCss": "1440x900",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1440.png",
+                  "label": "cloud-owner-receipt-1440.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
+                  "label": "cloud-recipient-receipt-1440.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "OUTSIDE_GRT017_SCOPE"
+              }
             }
           ],
-          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Original owner-side receipt failure at1440 only; other five sizes unexecuted.",
+          "limitations": "No PDF download or provider/fee-schedule label parity claimed. Distinct ledger/receipt references correlated, not forced identical. Recipient768/1024 captures private; invalid1024crop excluded. Targeted original receipt parties/direction acceptance only.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
-              "label": "GRT017-owner-recipient-missing-1440x900"
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
+              "label": "cloud-owner-receipt-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-360.png",
+              "label": "cloud-recipient-receipt-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-390.png",
+              "label": "cloud-owner-receipt-390.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-390.png",
+              "label": "cloud-recipient-receipt-390.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-768.png",
+              "label": "cloud-owner-receipt-768.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
+              "label": "cloud-owner-receipt-1024.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1280.png",
+              "label": "cloud-owner-receipt-1280.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1280.png",
+              "label": "cloud-recipient-receipt-1280.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1440.png",
+              "label": "cloud-owner-receipt-1440.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
+              "label": "cloud-recipient-receipt-1440.png"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
@@ -6208,8 +6498,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-live-authored-reporting",
-        "updatedAt": "2026-09-14T23:56:33.229Z",
+        "runId": "2026-09-14-close37-receipt-reconciled",
+        "updatedAt": "2026-09-15T00:33:07.121Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -6227,8 +6517,8 @@
         },
         "repairBatch": {
           "runId": "2026-09-14-close37-live-verification",
-          "updatedAt": "2026-09-14T23:57:06.648Z",
-          "state": "MERGED AND LIVE — exact-release verification in progress",
+          "updatedAt": "2026-09-15T00:33:07.121Z",
+          "state": "MERGED AND LIVE — targeted cloud verification progressing",
           "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
@@ -6241,9 +6531,9 @@
           ],
           "mergeStatus": "MERGED",
           "deploymentStatus": "LIVE — both services promoted",
-          "cloudRetestStatus": "IN PROGRESS — latest acceptance retained",
+          "cloudRetestStatus": "PARTIAL",
           "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "API promoted successfully before frontend; both recorded exact merge versions now LIVE. Fresh browser checks are in progress. No automatic PASS from promotion; latest failures and incomplete branches stay open.",
+          "releaseGate": "Recorded merge commits are live. Cloud closure below is limited to explicit targeted results with six measured CSS viewport outcomes; merged code alone never closes other findings.",
           "candidates": {
             "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
             "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
@@ -6297,9 +6587,9 @@
             {
               "id": "GRT017-REC-001",
               "status": "FAIL",
-              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
-              "cloudRetestStatus": "FAIL"
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "summary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Targeted original parties/value-direction defect closed; broader grant lifecycle not certified.",
+              "cloudRetestStatus": "PASS"
             }
           ],
           "previousBatchRunId": "2026-09-14-close37-pr-open",
@@ -6307,7 +6597,7 @@
             "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
             "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
           },
-          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-live-authored-reporting: GRT005-CFG-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-receipt-reconciled: GRT017-REC-001 PASS. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
@@ -10902,7 +11192,7 @@
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "217a5a3c19536226e84a47a50974822106934e40",
+      "commit": "0cd2c71d7e05d1e6418bcff89419cc8f4c8763b2",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -11430,78 +11720,223 @@
           "scenario": "ADM-053",
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Fresh original grant Wallet disbursement receipt at exact1440x900: reference6a9628cdcae07bfa04bc4127 / CIC-7BFA04BC4127 shows grant sender but Recipient N/A, despite table counterparty CIC Investor. Gross/net USD100 and zero fees. Main visually reviewed screenshot. Owner/recipient same-award reconciliation fails; other five cells not executed before repair.",
+          "status": "PARTIAL",
+          "retestSummary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Admin ledger remains unverified; ADM053 not closed.",
           "responsive": [
             {
               "size": "360×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "390×844",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "768×1024",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "1024×768",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "1280×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "1440×900",
-              "measuredCss": "1440x900",
-              "status": "FAIL",
-              "summary": "Open original grant Wallet disbursement; Open Receipt CIC-7BFA04BC4127; Compare counterparty CIC Investor with receipt Recipient N/A. FAIL main visually reviewed missing recipient",
+              "status": "PARTIAL",
+              "measuredCss": "360x800",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
               "steps": [
-                "Open original grant Wallet disbursement",
-                "Open Receipt CIC-7BFA04BC4127",
-                "Compare counterparty CIC Investor with receipt Recipient N/A"
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
               ],
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
-                  "label": "GRT017-owner-recipient-missing-1440x900"
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
+                  "label": "cloud-owner-receipt-360.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-360.png",
+                  "label": "cloud-recipient-receipt-360.png"
                 }
               ],
-              "observedAt": "2026-09-14T20:21:32.808Z"
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "390×844",
+              "status": "PARTIAL",
+              "measuredCss": "390x844",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-390.png",
+                  "label": "cloud-owner-receipt-390.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-390.png",
+                  "label": "cloud-recipient-receipt-390.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "768×1024",
+              "status": "PARTIAL",
+              "measuredCss": "768x1024",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-768.png",
+                  "label": "cloud-owner-receipt-768.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "1024×768",
+              "status": "PARTIAL",
+              "measuredCss": "1024x768",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
+                  "label": "cloud-owner-receipt-1024.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "1280×800",
+              "status": "PARTIAL",
+              "measuredCss": "1280x800",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1280.png",
+                  "label": "cloud-owner-receipt-1280.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1280.png",
+                  "label": "cloud-recipient-receipt-1280.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "1440×900",
+              "status": "PARTIAL",
+              "measuredCss": "1440x900",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1440.png",
+                  "label": "cloud-owner-receipt-1440.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
+                  "label": "cloud-recipient-receipt-1440.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
             }
           ],
-          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Original owner-side receipt failure at1440 only; other five sizes unexecuted.",
+          "limitations": "No PDF download or provider/fee-schedule label parity claimed. Distinct ledger/receipt references correlated, not forced identical. Recipient768/1024 captures private; invalid1024crop excluded. Admin ledger pending; not complete ADM053 acceptance.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
-              "label": "GRT017-owner-recipient-missing-1440x900"
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
+              "label": "cloud-owner-receipt-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-360.png",
+              "label": "cloud-recipient-receipt-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-390.png",
+              "label": "cloud-owner-receipt-390.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-390.png",
+              "label": "cloud-recipient-receipt-390.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-768.png",
+              "label": "cloud-owner-receipt-768.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
+              "label": "cloud-owner-receipt-1024.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1280.png",
+              "label": "cloud-owner-receipt-1280.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1280.png",
+              "label": "cloud-recipient-receipt-1280.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1440.png",
+              "label": "cloud-owner-receipt-1440.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
+              "label": "cloud-recipient-receipt-1440.png"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
@@ -12196,8 +12631,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-live-authored-reporting",
-        "updatedAt": "2026-09-14T23:56:33.929Z",
+        "runId": "2026-09-14-close37-receipt-reconciled",
+        "updatedAt": "2026-09-15T00:33:07.121Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -12215,8 +12650,8 @@
         },
         "repairBatch": {
           "runId": "2026-09-14-close37-live-verification",
-          "updatedAt": "2026-09-14T23:57:05.757Z",
-          "state": "MERGED AND LIVE — exact-release verification in progress",
+          "updatedAt": "2026-09-15T00:33:07.121Z",
+          "state": "MERGED AND LIVE — targeted cloud verification progressing",
           "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
@@ -12229,9 +12664,9 @@
           ],
           "mergeStatus": "MERGED",
           "deploymentStatus": "LIVE — both services promoted",
-          "cloudRetestStatus": "IN PROGRESS — latest acceptance retained",
+          "cloudRetestStatus": "PARTIAL",
           "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "API promoted successfully before frontend; both recorded exact merge versions now LIVE. Fresh browser checks are in progress. No automatic PASS from promotion; latest failures and incomplete branches stay open.",
+          "releaseGate": "Recorded merge commits are live. Cloud closure below is limited to explicit targeted results with six measured CSS viewport outcomes; merged code alone never closes other findings.",
           "candidates": {
             "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
             "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
@@ -12279,8 +12714,8 @@
               "id": "ADM053-REC-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
-              "cloudRetestStatus": "FAIL"
+              "summary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Admin ledger remains unverified; ADM053 not closed.",
+              "cloudRetestStatus": "PARTIAL"
             },
             {
               "id": "ADM053-CFG-001",
@@ -12295,7 +12730,7 @@
             "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
             "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
           },
-          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-live-authored-reporting: ADM053-CFG-001 FAIL, ADM053-REPORT-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-receipt-reconciled: ADM053-REC-001 PARTIAL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     },
@@ -12742,7 +13177,7 @@
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "b7a69622f6d1b6047185cd35ef6cbcf3c62f0f27",
+      "commit": "e0b4ef8292a4dc03f15e68b3168eb511f35e0f2f",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -13243,78 +13678,223 @@
           "scenario": "ADM-053",
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Fresh original grant Wallet disbursement receipt at exact1440x900: reference6a9628cdcae07bfa04bc4127 / CIC-7BFA04BC4127 shows grant sender but Recipient N/A, despite table counterparty CIC Investor. Gross/net USD100 and zero fees. Main visually reviewed screenshot. Owner/recipient same-award reconciliation fails; other five cells not executed before repair.",
+          "status": "PARTIAL",
+          "retestSummary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Admin ledger remains unverified; ADM053 not closed.",
           "responsive": [
             {
               "size": "360×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "390×844",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "768×1024",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "1024×768",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "1280×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": null
-            },
-            {
-              "size": "1440×900",
-              "measuredCss": "1440x900",
-              "status": "FAIL",
-              "summary": "Open original grant Wallet disbursement; Open Receipt CIC-7BFA04BC4127; Compare counterparty CIC Investor with receipt Recipient N/A. FAIL main visually reviewed missing recipient",
+              "status": "PARTIAL",
+              "measuredCss": "360x800",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
               "steps": [
-                "Open original grant Wallet disbursement",
-                "Open Receipt CIC-7BFA04BC4127",
-                "Compare counterparty CIC Investor with receipt Recipient N/A"
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
               ],
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
-                  "label": "GRT017-owner-recipient-missing-1440x900"
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
+                  "label": "cloud-owner-receipt-360.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-360.png",
+                  "label": "cloud-recipient-receipt-360.png"
                 }
               ],
-              "observedAt": "2026-09-14T20:21:32.808Z"
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "390×844",
+              "status": "PARTIAL",
+              "measuredCss": "390x844",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-390.png",
+                  "label": "cloud-owner-receipt-390.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-390.png",
+                  "label": "cloud-recipient-receipt-390.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "768×1024",
+              "status": "PARTIAL",
+              "measuredCss": "768x1024",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-768.png",
+                  "label": "cloud-owner-receipt-768.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "1024×768",
+              "status": "PARTIAL",
+              "measuredCss": "1024x768",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
+                  "label": "cloud-owner-receipt-1024.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "1280×800",
+              "status": "PARTIAL",
+              "measuredCss": "1280x800",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1280.png",
+                  "label": "cloud-owner-receipt-1280.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1280.png",
+                  "label": "cloud-recipient-receipt-1280.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
+            },
+            {
+              "size": "1440×900",
+              "status": "PARTIAL",
+              "measuredCss": "1440x900",
+              "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+              "steps": [
+                "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+                "Open creator funding receipt and reconcile creator debit with grant credit.",
+                "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+                "Full wallet reload and receipt readback confirm persisted fields."
+              ],
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1440.png",
+                  "label": "cloud-owner-receipt-1440.png"
+                },
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
+                  "label": "cloud-recipient-receipt-1440.png"
+                }
+              ],
+              "observedAt": "2026-09-15T00:33:07.121Z",
+              "subchecks": {
+                "ownerGrantWallet": "PASS",
+                "creatorWallet": "PASS",
+                "recipientWallet": "PASS",
+                "reloadReadback": "PASS",
+                "adminLedger": "NOT RUN"
+              }
             }
           ],
-          "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Original owner-side receipt failure at1440 only; other five sizes unexecuted.",
+          "limitations": "No PDF download or provider/fee-schedule label parity claimed. Distinct ledger/receipt references correlated, not forced identical. Recipient768/1024 captures private; invalid1024crop excluded. Admin ledger pending; not complete ADM053 acceptance.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
-              "label": "GRT017-owner-recipient-missing-1440x900"
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
+              "label": "cloud-owner-receipt-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-360.png",
+              "label": "cloud-recipient-receipt-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-390.png",
+              "label": "cloud-owner-receipt-390.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-390.png",
+              "label": "cloud-recipient-receipt-390.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-768.png",
+              "label": "cloud-owner-receipt-768.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
+              "label": "cloud-owner-receipt-1024.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1280.png",
+              "label": "cloud-owner-receipt-1280.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1280.png",
+              "label": "cloud-recipient-receipt-1280.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1440.png",
+              "label": "cloud-owner-receipt-1440.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
+              "label": "cloud-recipient-receipt-1440.png"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
@@ -13850,8 +14430,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-live-authored-reporting",
-        "updatedAt": "2026-09-14T23:56:34.308Z",
+        "runId": "2026-09-14-close37-receipt-reconciled",
+        "updatedAt": "2026-09-15T00:33:07.121Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -13869,8 +14449,8 @@
         },
         "repairBatch": {
           "runId": "2026-09-14-close37-live-verification",
-          "updatedAt": "2026-09-14T23:57:06.053Z",
-          "state": "MERGED AND LIVE — exact-release verification in progress",
+          "updatedAt": "2026-09-15T00:33:07.121Z",
+          "state": "MERGED AND LIVE — targeted cloud verification progressing",
           "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
@@ -13883,9 +14463,9 @@
           ],
           "mergeStatus": "MERGED",
           "deploymentStatus": "LIVE — both services promoted",
-          "cloudRetestStatus": "IN PROGRESS — latest acceptance retained",
+          "cloudRetestStatus": "PARTIAL",
           "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "API promoted successfully before frontend; both recorded exact merge versions now LIVE. Fresh browser checks are in progress. No automatic PASS from promotion; latest failures and incomplete branches stay open.",
+          "releaseGate": "Recorded merge commits are live. Cloud closure below is limited to explicit targeted results with six measured CSS viewport outcomes; merged code alone never closes other findings.",
           "candidates": {
             "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
             "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
@@ -13933,8 +14513,8 @@
               "id": "ADM053-REC-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
-              "cloudRetestStatus": "FAIL"
+              "summary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Admin ledger remains unverified; ADM053 not closed.",
+              "cloudRetestStatus": "PARTIAL"
             },
             {
               "id": "ADM053-CFG-001",
@@ -13949,7 +14529,7 @@
             "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
             "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
           },
-          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-live-authored-reporting: ADM053-CFG-001 FAIL, ADM053-REPORT-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
+          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-receipt-reconciled: ADM053-REC-001 PARTIAL. Other findings retain prior evidence; this is not full-scenario closure."
         }
       }
     }
@@ -15761,78 +16341,223 @@
       "scenario": "ADM-053",
       "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Fresh original grant Wallet disbursement receipt at exact1440x900: reference6a9628cdcae07bfa04bc4127 / CIC-7BFA04BC4127 shows grant sender but Recipient N/A, despite table counterparty CIC Investor. Gross/net USD100 and zero fees. Main visually reviewed screenshot. Owner/recipient same-award reconciliation fails; other five cells not executed before repair.",
+      "status": "PARTIAL",
+      "retestSummary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Admin ledger remains unverified; ADM053 not closed.",
       "responsive": [
         {
           "size": "360×800",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": null
-        },
-        {
-          "size": "390×844",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": null
-        },
-        {
-          "size": "768×1024",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": null
-        },
-        {
-          "size": "1024×768",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": null
-        },
-        {
-          "size": "1280×800",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": null
-        },
-        {
-          "size": "1440×900",
-          "measuredCss": "1440x900",
-          "status": "FAIL",
-          "summary": "Open original grant Wallet disbursement; Open Receipt CIC-7BFA04BC4127; Compare counterparty CIC Investor with receipt Recipient N/A. FAIL main visually reviewed missing recipient",
+          "status": "PARTIAL",
+          "measuredCss": "360x800",
+          "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
           "steps": [
-            "Open original grant Wallet disbursement",
-            "Open Receipt CIC-7BFA04BC4127",
-            "Compare counterparty CIC Investor with receipt Recipient N/A"
+            "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+            "Open creator funding receipt and reconcile creator debit with grant credit.",
+            "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+            "Full wallet reload and receipt readback confirm persisted fields."
           ],
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
-              "label": "GRT017-owner-recipient-missing-1440x900"
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
+              "label": "cloud-owner-receipt-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-360.png",
+              "label": "cloud-recipient-receipt-360.png"
             }
           ],
-          "observedAt": "2026-09-14T20:21:32.808Z"
+          "observedAt": "2026-09-15T00:33:07.121Z",
+          "subchecks": {
+            "ownerGrantWallet": "PASS",
+            "creatorWallet": "PASS",
+            "recipientWallet": "PASS",
+            "reloadReadback": "PASS",
+            "adminLedger": "NOT RUN"
+          }
+        },
+        {
+          "size": "390×844",
+          "status": "PARTIAL",
+          "measuredCss": "390x844",
+          "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+          "steps": [
+            "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+            "Open creator funding receipt and reconcile creator debit with grant credit.",
+            "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+            "Full wallet reload and receipt readback confirm persisted fields."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-390.png",
+              "label": "cloud-owner-receipt-390.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-390.png",
+              "label": "cloud-recipient-receipt-390.png"
+            }
+          ],
+          "observedAt": "2026-09-15T00:33:07.121Z",
+          "subchecks": {
+            "ownerGrantWallet": "PASS",
+            "creatorWallet": "PASS",
+            "recipientWallet": "PASS",
+            "reloadReadback": "PASS",
+            "adminLedger": "NOT RUN"
+          }
+        },
+        {
+          "size": "768×1024",
+          "status": "PARTIAL",
+          "measuredCss": "768x1024",
+          "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+          "steps": [
+            "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+            "Open creator funding receipt and reconcile creator debit with grant credit.",
+            "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+            "Full wallet reload and receipt readback confirm persisted fields."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-768.png",
+              "label": "cloud-owner-receipt-768.png"
+            }
+          ],
+          "observedAt": "2026-09-15T00:33:07.121Z",
+          "subchecks": {
+            "ownerGrantWallet": "PASS",
+            "creatorWallet": "PASS",
+            "recipientWallet": "PASS",
+            "reloadReadback": "PASS",
+            "adminLedger": "NOT RUN"
+          }
+        },
+        {
+          "size": "1024×768",
+          "status": "PARTIAL",
+          "measuredCss": "1024x768",
+          "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+          "steps": [
+            "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+            "Open creator funding receipt and reconcile creator debit with grant credit.",
+            "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+            "Full wallet reload and receipt readback confirm persisted fields."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
+              "label": "cloud-owner-receipt-1024.png"
+            }
+          ],
+          "observedAt": "2026-09-15T00:33:07.121Z",
+          "subchecks": {
+            "ownerGrantWallet": "PASS",
+            "creatorWallet": "PASS",
+            "recipientWallet": "PASS",
+            "reloadReadback": "PASS",
+            "adminLedger": "NOT RUN"
+          }
+        },
+        {
+          "size": "1280×800",
+          "status": "PARTIAL",
+          "measuredCss": "1280x800",
+          "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+          "steps": [
+            "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+            "Open creator funding receipt and reconcile creator debit with grant credit.",
+            "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+            "Full wallet reload and receipt readback confirm persisted fields."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1280.png",
+              "label": "cloud-owner-receipt-1280.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1280.png",
+              "label": "cloud-recipient-receipt-1280.png"
+            }
+          ],
+          "observedAt": "2026-09-15T00:33:07.121Z",
+          "subchecks": {
+            "ownerGrantWallet": "PASS",
+            "creatorWallet": "PASS",
+            "recipientWallet": "PASS",
+            "reloadReadback": "PASS",
+            "adminLedger": "NOT RUN"
+          }
+        },
+        {
+          "size": "1440×900",
+          "status": "PARTIAL",
+          "measuredCss": "1440x900",
+          "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+          "steps": [
+            "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+            "Open creator funding receipt and reconcile creator debit with grant credit.",
+            "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+            "Full wallet reload and receipt readback confirm persisted fields."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1440.png",
+              "label": "cloud-owner-receipt-1440.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
+              "label": "cloud-recipient-receipt-1440.png"
+            }
+          ],
+          "observedAt": "2026-09-15T00:33:07.121Z",
+          "subchecks": {
+            "ownerGrantWallet": "PASS",
+            "creatorWallet": "PASS",
+            "recipientWallet": "PASS",
+            "reloadReadback": "PASS",
+            "adminLedger": "NOT RUN"
+          }
         }
       ],
-      "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Original owner-side receipt failure at1440 only; other five sizes unexecuted.",
+      "limitations": "No PDF download or provider/fee-schedule label parity claimed. Distinct ledger/receipt references correlated, not forced identical. Recipient768/1024 captures private; invalid1024crop excluded. Admin ledger pending; not complete ADM053 acceptance.",
       "evidence": [
         {
-          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
-          "label": "GRT017-owner-recipient-missing-1440x900"
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
+          "label": "cloud-owner-receipt-360.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-360.png",
+          "label": "cloud-recipient-receipt-360.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-390.png",
+          "label": "cloud-owner-receipt-390.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-390.png",
+          "label": "cloud-recipient-receipt-390.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-768.png",
+          "label": "cloud-owner-receipt-768.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
+          "label": "cloud-owner-receipt-1024.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1280.png",
+          "label": "cloud-owner-receipt-1280.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1280.png",
+          "label": "cloud-recipient-receipt-1280.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1440.png",
+          "label": "cloud-owner-receipt-1440.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
+          "label": "cloud-recipient-receipt-1440.png"
         }
       ],
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
@@ -17920,78 +18645,223 @@
       "scenario": "GRT-017, GRT-018",
       "summary": "Wallet movement was correct, but the award receipt labelled the applicant as sender and the grant as recipient.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Fresh original grant Wallet disbursement receipt at exact1440x900: reference6a9628cdcae07bfa04bc4127 / CIC-7BFA04BC4127 shows grant sender but Recipient N/A, despite table counterparty CIC Investor. Gross/net USD100 and zero fees. Main visually reviewed screenshot. Owner/recipient same-award reconciliation fails; other five cells not executed before repair.",
+      "status": "PASS",
+      "retestSummary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Targeted original parties/value-direction defect closed; broader grant lifecycle not certified.",
       "responsive": [
         {
           "size": "360×800",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": null
-        },
-        {
-          "size": "390×844",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": null
-        },
-        {
-          "size": "768×1024",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": null
-        },
-        {
-          "size": "1024×768",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": null
-        },
-        {
-          "size": "1280×800",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed in this fresh cloud run; earlier evidence retained in immutable prior snapshot.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": null
-        },
-        {
-          "size": "1440×900",
-          "measuredCss": "1440x900",
-          "status": "FAIL",
-          "summary": "Open original grant Wallet disbursement; Open Receipt CIC-7BFA04BC4127; Compare counterparty CIC Investor with receipt Recipient N/A. FAIL main visually reviewed missing recipient",
+          "status": "PASS",
+          "measuredCss": "360x800",
+          "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
           "steps": [
-            "Open original grant Wallet disbursement",
-            "Open Receipt CIC-7BFA04BC4127",
-            "Compare counterparty CIC Investor with receipt Recipient N/A"
+            "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+            "Open creator funding receipt and reconcile creator debit with grant credit.",
+            "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+            "Full wallet reload and receipt readback confirm persisted fields."
           ],
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
-              "label": "GRT017-owner-recipient-missing-1440x900"
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
+              "label": "cloud-owner-receipt-360.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-360.png",
+              "label": "cloud-recipient-receipt-360.png"
             }
           ],
-          "observedAt": "2026-09-14T20:21:32.508Z"
+          "observedAt": "2026-09-15T00:33:07.121Z",
+          "subchecks": {
+            "ownerGrantWallet": "PASS",
+            "creatorWallet": "PASS",
+            "recipientWallet": "PASS",
+            "reloadReadback": "PASS",
+            "adminLedger": "OUTSIDE_GRT017_SCOPE"
+          }
+        },
+        {
+          "size": "390×844",
+          "status": "PASS",
+          "measuredCss": "390x844",
+          "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+          "steps": [
+            "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+            "Open creator funding receipt and reconcile creator debit with grant credit.",
+            "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+            "Full wallet reload and receipt readback confirm persisted fields."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-390.png",
+              "label": "cloud-owner-receipt-390.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-390.png",
+              "label": "cloud-recipient-receipt-390.png"
+            }
+          ],
+          "observedAt": "2026-09-15T00:33:07.121Z",
+          "subchecks": {
+            "ownerGrantWallet": "PASS",
+            "creatorWallet": "PASS",
+            "recipientWallet": "PASS",
+            "reloadReadback": "PASS",
+            "adminLedger": "OUTSIDE_GRT017_SCOPE"
+          }
+        },
+        {
+          "size": "768×1024",
+          "status": "PASS",
+          "measuredCss": "768x1024",
+          "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+          "steps": [
+            "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+            "Open creator funding receipt and reconcile creator debit with grant credit.",
+            "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+            "Full wallet reload and receipt readback confirm persisted fields."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-768.png",
+              "label": "cloud-owner-receipt-768.png"
+            }
+          ],
+          "observedAt": "2026-09-15T00:33:07.121Z",
+          "subchecks": {
+            "ownerGrantWallet": "PASS",
+            "creatorWallet": "PASS",
+            "recipientWallet": "PASS",
+            "reloadReadback": "PASS",
+            "adminLedger": "OUTSIDE_GRT017_SCOPE"
+          }
+        },
+        {
+          "size": "1024×768",
+          "status": "PASS",
+          "measuredCss": "1024x768",
+          "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. Recipient screenshot privately reviewed but withheld for unrelated background balance; approved owner image is public support, not substituted recipient execution.",
+          "steps": [
+            "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+            "Open creator funding receipt and reconcile creator debit with grant credit.",
+            "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+            "Full wallet reload and receipt readback confirm persisted fields."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
+              "label": "cloud-owner-receipt-1024.png"
+            }
+          ],
+          "observedAt": "2026-09-15T00:33:07.121Z",
+          "subchecks": {
+            "ownerGrantWallet": "PASS",
+            "creatorWallet": "PASS",
+            "recipientWallet": "PASS",
+            "reloadReadback": "PASS",
+            "adminLedger": "OUTSIDE_GRT017_SCOPE"
+          }
+        },
+        {
+          "size": "1280×800",
+          "status": "PASS",
+          "measuredCss": "1280x800",
+          "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+          "steps": [
+            "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+            "Open creator funding receipt and reconcile creator debit with grant credit.",
+            "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+            "Full wallet reload and receipt readback confirm persisted fields."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1280.png",
+              "label": "cloud-owner-receipt-1280.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1280.png",
+              "label": "cloud-recipient-receipt-1280.png"
+            }
+          ],
+          "observedAt": "2026-09-15T00:33:07.121Z",
+          "subchecks": {
+            "ownerGrantWallet": "PASS",
+            "creatorWallet": "PASS",
+            "recipientWallet": "PASS",
+            "reloadReadback": "PASS",
+            "adminLedger": "OUTSIDE_GRT017_SCOPE"
+          }
+        },
+        {
+          "size": "1440×900",
+          "status": "PASS",
+          "measuredCss": "1440x900",
+          "summary": "PASS owner and recipient visual review at actual measured size; creator controls/readback and reload confirmed. ",
+          "steps": [
+            "Open owner grant disbursement receipt; read parties/type/date/gross/fee/net and wallet debit.",
+            "Open creator funding receipt and reconcile creator debit with grant credit.",
+            "Normal Investor login; open recipient receipt and reconcile credit/parties/type/date/amounts.",
+            "Full wallet reload and receipt readback confirm persisted fields."
+          ],
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1440.png",
+              "label": "cloud-owner-receipt-1440.png"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
+              "label": "cloud-recipient-receipt-1440.png"
+            }
+          ],
+          "observedAt": "2026-09-15T00:33:07.121Z",
+          "subchecks": {
+            "ownerGrantWallet": "PASS",
+            "creatorWallet": "PASS",
+            "recipientWallet": "PASS",
+            "reloadReadback": "PASS",
+            "adminLedger": "OUTSIDE_GRT017_SCOPE"
+          }
         }
       ],
-      "limitations": "Fresh deployed evidence only. Unexecuted cells remain NOT RUN; local functional repairs are not deployed acceptance. Original owner-side receipt failure at1440 only; other five sizes unexecuted.",
+      "limitations": "No PDF download or provider/fee-schedule label parity claimed. Distinct ledger/receipt references correlated, not forced identical. Recipient768/1024 captures private; invalid1024crop excluded. Targeted original receipt parties/direction acceptance only.",
       "evidence": [
         {
-          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reproduced-failures/GRT017-owner-recipient-missing-1440x900.png",
-          "label": "GRT017-owner-recipient-missing-1440x900"
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-360.png",
+          "label": "cloud-owner-receipt-360.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-360.png",
+          "label": "cloud-recipient-receipt-360.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-390.png",
+          "label": "cloud-owner-receipt-390.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-390.png",
+          "label": "cloud-recipient-receipt-390.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-768.png",
+          "label": "cloud-owner-receipt-768.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1024.png",
+          "label": "cloud-owner-receipt-1024.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1280.png",
+          "label": "cloud-owner-receipt-1280.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1280.png",
+          "label": "cloud-recipient-receipt-1280.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-owner-receipt-1440.png",
+          "label": "cloud-owner-receipt-1440.png"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-receipt-reconciled/cloud-recipient-receipt-1440.png",
+          "label": "cloud-recipient-receipt-1440.png"
         }
       ],
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
