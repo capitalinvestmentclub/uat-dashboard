@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T06:45:34.485Z",
+  "generatedAt": "2026-09-15T07:12:55.647Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "44cd38b414a50f4e65e541ce3fa6cc0f0855e88c",
+      "commit": "c56e7f1be4643b9996095b8e8f27db26b6bffc62",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -3164,7 +3164,7 @@
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
           "status": "PASS",
-          "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op.",
+          "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
           "responsive": [
             {
               "size": "360×800",
@@ -4374,7 +4374,7 @@
       ],
       "targeted": {
         "runId": "2026-09-15-close37-award-journal-backfill",
-        "updatedAt": "2026-09-15T06:39:44Z",
+        "updatedAt": "2026-09-15T07:06:00Z",
         "state": "RETEST PARTIAL — ADM053 receipt and ledger reconciliation closed; other focused acceptance remains open",
         "repairBatch": {
           "runId": "2026-09-15-close37-award-journal-backfill",
@@ -11780,7 +11780,7 @@
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "4b3cb50758a5b70156079f72f0c801a51115694e",
+      "commit": "ba644423badd2f747e233a2efcfc753f59d48c55",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -12309,7 +12309,7 @@
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
           "status": "PASS",
-          "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op.",
+          "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
           "responsive": [
             {
               "size": "360×800",
@@ -13519,7 +13519,7 @@
       ],
       "targeted": {
         "runId": "2026-09-15-close37-award-journal-backfill",
-        "updatedAt": "2026-09-15T06:39:44Z",
+        "updatedAt": "2026-09-15T07:06:00Z",
         "state": "RETEST PARTIAL — ADM053 receipt and ledger reconciliation closed; other focused acceptance remains open",
         "deployments": {
           "webapp": {
@@ -14189,7 +14189,7 @@
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "64cc3c3e8ce5aed117efe88885e8afd53e6d83ef",
+      "commit": "8bd48cdb127362f885e8fc4138977acd4ae255c4",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -14691,7 +14691,7 @@
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
           "status": "PASS",
-          "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op.",
+          "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
           "responsive": [
             {
               "size": "360×800",
@@ -15639,7 +15639,7 @@
       ],
       "targeted": {
         "runId": "2026-09-15-close37-award-journal-backfill",
-        "updatedAt": "2026-09-15T06:39:44Z",
+        "updatedAt": "2026-09-15T07:06:00Z",
         "state": "RETEST PARTIAL — ADM053 receipt and ledger reconciliation closed; other focused acceptance remains open",
         "deployments": {
           "webapp": {
@@ -17559,7 +17559,7 @@
       "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
       "historicalStatus": "Open",
       "status": "PASS",
-      "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op.",
+      "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
       "responsive": [
         {
           "size": "360×800",
