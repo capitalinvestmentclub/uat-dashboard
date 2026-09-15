@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T07:12:55.647Z",
+  "generatedAt": "2026-09-15T07:17:38.095Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "c56e7f1be4643b9996095b8e8f27db26b6bffc62",
+      "commit": "b891291175132416ca729f0659d7141a69db0e95",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -3164,7 +3164,7 @@
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
           "status": "PASS",
-          "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
+          "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
           "responsive": [
             {
               "size": "360×800",
@@ -4378,7 +4378,7 @@
         "state": "RETEST PARTIAL — ADM053 receipt and ledger reconciliation closed; other focused acceptance remains open",
         "repairBatch": {
           "runId": "2026-09-15-close37-award-journal-backfill",
-          "updatedAt": "2026-09-15T06:39:44Z",
+          "updatedAt": "2026-09-15T07:06:00Z",
           "state": "MERGED + LIVE DATA CORRECTED + SIX-SIZE VERIFIED",
           "executionMode": "cloud",
           "browser": "Google Chrome",
@@ -4390,15 +4390,17 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "MERGED — API PR #741",
-          "deploymentStatus": "LIVE DATA CORRECTION; operational API candidate staged; runtime promotion not required",
+          "mergeStatus": "MERGED — API PRs #741, #742 and #743",
+          "deploymentStatus": "LIVE DATA CORRECTION; final hardened operational candidates staged and verified; runtime promotion not required",
           "cloudRetestStatus": "PARTIAL",
           "scope": "ADM053-REC-001 historical award journal correction and six-size Chrome verification. Other findings retain their prior statuses.",
-          "releaseGate": "API PR #741 merged after green checks. The exact-scoped utility created one live journal and two entries, its second run made zero writes, and the deployed Admin Ledger returned one Valid row at all six sizes after an additional full reload.",
+          "releaseGate": "API PRs #741, #742 and #743 merged after green checks. The exact-scoped utility created one live journal and two entries; stricter committed reruns validated the same journal with zero writes; the deployed Admin Ledger returned one Valid row at all six sizes after a full reload.",
           "candidates": {
             "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
             "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
-            "operationalCorrectionMerge": "83924ed6fec3deb83073c8cf619e03e3f8565893"
+            "operationalCorrectionMerge": "83924ed6fec3deb83073c8cf619e03e3f8565893",
+            "operationalHardeningMerge": "05363a6662447537d62fbfb8d0f26d267636afc4",
+            "operationalNullGuardMerge": "250602f99a56666c13dc7bf72eb8219a447c95a4"
           },
           "pullRequests": [
             {
@@ -4424,6 +4426,22 @@
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34937326329",
               "label": "Merged operational candidate deployment — SUCCESS; no runtime promotion required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/742",
+              "label": "API PR #742 — MERGED; exact-reference, debit, ledger-account and attribution hardening"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34939250294",
+              "label": "PR #742 operational candidate policy-34939250294-1 — SUCCESS; no runtime promotion required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/743",
+              "label": "API PR #743 — MERGED; explicit null correction-date rejection"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34939983519",
+              "label": "PR #743 operational candidate deployment — SUCCESS; no runtime promotion required"
             }
           ],
           "deployments": {
@@ -4445,20 +4463,20 @@
             "verifiedBy": "/root"
           },
           "frontendTests": "Merged candidate passed the complete local frontend suite previously recorded for this release line; exact staged build ZbjuA6xlxenb7ANeOMWjU was promoted and visually identified on the live site.",
-          "apiTests": "54/54 related grant and ledger regressions passed. The focused backfill suite also passed 4/4 including conflict refusal, idempotency, source immutability, and transaction rollback.",
+          "apiTests": "58/58 related grant and ledger regressions passed for the hardening batch; the final focused suite passed 8/8, including exact-reference conflicts, exact legacy debit binding, account-ID validation, correction attribution, null-date rejection, idempotency, source immutability and transaction rollback.",
           "findings": [
             {
               "id": "ADM053-REC-001",
               "status": "PASS",
               "classification": "VERIFIED_CLOSED",
-              "summary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op.",
+              "summary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
               "cloudRetestStatus": "PASS"
             },
             {
               "id": "ADM053-CFG-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected.",
+              "summary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the historical award journal is now corrected; this unrelated finding remains open for its stated acceptance gap.",
               "cloudRetestStatus": "FAIL"
             },
             {
@@ -4466,7 +4484,7 @@
               "status": "PARTIAL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
               "cloudRetestStatus": "PARTIAL",
-              "summary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected."
+              "summary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the historical award journal is now corrected; this unrelated finding remains open for its stated acceptance gap."
             }
           ],
           "previousBatchRunId": "2026-09-14-close37-release-deployed-pending",
@@ -11780,7 +11798,7 @@
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "ba644423badd2f747e233a2efcfc753f59d48c55",
+      "commit": "c83b1069df4834227c18d2e5afee32fb5ce314dd",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -12309,7 +12327,7 @@
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
           "status": "PASS",
-          "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
+          "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
           "responsive": [
             {
               "size": "360×800",
@@ -13537,7 +13555,7 @@
         },
         "repairBatch": {
           "runId": "2026-09-15-close37-award-journal-backfill",
-          "updatedAt": "2026-09-15T06:39:44Z",
+          "updatedAt": "2026-09-15T07:06:00Z",
           "state": "MERGED + LIVE DATA CORRECTED + SIX-SIZE VERIFIED",
           "executionMode": "cloud",
           "browser": "Google Chrome",
@@ -13549,15 +13567,17 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "MERGED — API PR #741",
-          "deploymentStatus": "LIVE DATA CORRECTION; operational API candidate staged; runtime promotion not required",
+          "mergeStatus": "MERGED — API PRs #741, #742 and #743",
+          "deploymentStatus": "LIVE DATA CORRECTION; final hardened operational candidates staged and verified; runtime promotion not required",
           "cloudRetestStatus": "PARTIAL",
           "scope": "ADM053-REC-001 historical award journal correction and six-size Chrome verification. Other findings retain their prior statuses.",
-          "releaseGate": "API PR #741 merged after green checks. The exact-scoped utility created one live journal and two entries, its second run made zero writes, and the deployed Admin Ledger returned one Valid row at all six sizes after an additional full reload.",
+          "releaseGate": "API PRs #741, #742 and #743 merged after green checks. The exact-scoped utility created one live journal and two entries; stricter committed reruns validated the same journal with zero writes; the deployed Admin Ledger returned one Valid row at all six sizes after a full reload.",
           "candidates": {
             "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
             "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
-            "operationalCorrectionMerge": "83924ed6fec3deb83073c8cf619e03e3f8565893"
+            "operationalCorrectionMerge": "83924ed6fec3deb83073c8cf619e03e3f8565893",
+            "operationalHardeningMerge": "05363a6662447537d62fbfb8d0f26d267636afc4",
+            "operationalNullGuardMerge": "250602f99a56666c13dc7bf72eb8219a447c95a4"
           },
           "pullRequests": [
             {
@@ -13583,6 +13603,22 @@
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34937326329",
               "label": "Merged operational candidate deployment — SUCCESS; no runtime promotion required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/742",
+              "label": "API PR #742 — MERGED; exact-reference, debit, ledger-account and attribution hardening"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34939250294",
+              "label": "PR #742 operational candidate policy-34939250294-1 — SUCCESS; no runtime promotion required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/743",
+              "label": "API PR #743 — MERGED; explicit null correction-date rejection"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34939983519",
+              "label": "PR #743 operational candidate deployment — SUCCESS; no runtime promotion required"
             }
           ],
           "deployments": {
@@ -13604,20 +13640,20 @@
             "verifiedBy": "/root"
           },
           "frontendTests": "Merged candidate passed the complete local frontend suite previously recorded for this release line; exact staged build ZbjuA6xlxenb7ANeOMWjU was promoted and visually identified on the live site.",
-          "apiTests": "54/54 related grant and ledger regressions passed. The focused backfill suite also passed 4/4 including conflict refusal, idempotency, source immutability, and transaction rollback.",
+          "apiTests": "58/58 related grant and ledger regressions passed for the hardening batch; the final focused suite passed 8/8, including exact-reference conflicts, exact legacy debit binding, account-ID validation, correction attribution, null-date rejection, idempotency, source immutability and transaction rollback.",
           "findings": [
             {
               "id": "ADM053-REC-001",
               "status": "PASS",
               "classification": "VERIFIED_CLOSED",
-              "summary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op.",
+              "summary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
               "cloudRetestStatus": "PASS"
             },
             {
               "id": "ADM053-CFG-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected.",
+              "summary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the historical award journal is now corrected; this unrelated finding remains open for its stated acceptance gap.",
               "cloudRetestStatus": "FAIL"
             },
             {
@@ -13625,7 +13661,7 @@
               "status": "PARTIAL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
               "cloudRetestStatus": "PARTIAL",
-              "summary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected."
+              "summary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the historical award journal is now corrected; this unrelated finding remains open for its stated acceptance gap."
             }
           ],
           "previousBatchRunId": "2026-09-14-close37-release-deployed-pending",
@@ -14189,7 +14225,7 @@
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "8bd48cdb127362f885e8fc4138977acd4ae255c4",
+      "commit": "e9eff527ddd5a7a9bebc3e2bb8dccc492208f84b",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -14691,7 +14727,7 @@
           "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
           "historicalStatus": "Open",
           "status": "PASS",
-          "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
+          "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
           "responsive": [
             {
               "size": "360×800",
@@ -15657,7 +15693,7 @@
         },
         "repairBatch": {
           "runId": "2026-09-15-close37-award-journal-backfill",
-          "updatedAt": "2026-09-15T06:39:44Z",
+          "updatedAt": "2026-09-15T07:06:00Z",
           "state": "MERGED + LIVE DATA CORRECTED + SIX-SIZE VERIFIED",
           "executionMode": "cloud",
           "browser": "Google Chrome",
@@ -15669,15 +15705,17 @@
             "1280×800",
             "1440×900"
           ],
-          "mergeStatus": "MERGED — API PR #741",
-          "deploymentStatus": "LIVE DATA CORRECTION; operational API candidate staged; runtime promotion not required",
+          "mergeStatus": "MERGED — API PRs #741, #742 and #743",
+          "deploymentStatus": "LIVE DATA CORRECTION; final hardened operational candidates staged and verified; runtime promotion not required",
           "cloudRetestStatus": "PARTIAL",
           "scope": "ADM053-REC-001 historical award journal correction and six-size Chrome verification. Other findings retain their prior statuses.",
-          "releaseGate": "API PR #741 merged after green checks. The exact-scoped utility created one live journal and two entries, its second run made zero writes, and the deployed Admin Ledger returned one Valid row at all six sizes after an additional full reload.",
+          "releaseGate": "API PRs #741, #742 and #743 merged after green checks. The exact-scoped utility created one live journal and two entries; stricter committed reruns validated the same journal with zero writes; the deployed Admin Ledger returned one Valid row at all six sizes after a full reload.",
           "candidates": {
             "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
             "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
-            "operationalCorrectionMerge": "83924ed6fec3deb83073c8cf619e03e3f8565893"
+            "operationalCorrectionMerge": "83924ed6fec3deb83073c8cf619e03e3f8565893",
+            "operationalHardeningMerge": "05363a6662447537d62fbfb8d0f26d267636afc4",
+            "operationalNullGuardMerge": "250602f99a56666c13dc7bf72eb8219a447c95a4"
           },
           "pullRequests": [
             {
@@ -15703,6 +15741,22 @@
             {
               "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34937326329",
               "label": "Merged operational candidate deployment — SUCCESS; no runtime promotion required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/742",
+              "label": "API PR #742 — MERGED; exact-reference, debit, ledger-account and attribution hardening"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34939250294",
+              "label": "PR #742 operational candidate policy-34939250294-1 — SUCCESS; no runtime promotion required"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/743",
+              "label": "API PR #743 — MERGED; explicit null correction-date rejection"
+            },
+            {
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34939983519",
+              "label": "PR #743 operational candidate deployment — SUCCESS; no runtime promotion required"
             }
           ],
           "deployments": {
@@ -15724,20 +15778,20 @@
             "verifiedBy": "/root"
           },
           "frontendTests": "Merged candidate passed the complete local frontend suite previously recorded for this release line; exact staged build ZbjuA6xlxenb7ANeOMWjU was promoted and visually identified on the live site.",
-          "apiTests": "54/54 related grant and ledger regressions passed. The focused backfill suite also passed 4/4 including conflict refusal, idempotency, source immutability, and transaction rollback.",
+          "apiTests": "58/58 related grant and ledger regressions passed for the hardening batch; the final focused suite passed 8/8, including exact-reference conflicts, exact legacy debit binding, account-ID validation, correction attribution, null-date rejection, idempotency, source immutability and transaction rollback.",
           "findings": [
             {
               "id": "ADM053-REC-001",
               "status": "PASS",
               "classification": "VERIFIED_CLOSED",
-              "summary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op.",
+              "summary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
               "cloudRetestStatus": "PASS"
             },
             {
               "id": "ADM053-CFG-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected.",
+              "summary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the historical award journal is now corrected; this unrelated finding remains open for its stated acceptance gap.",
               "cloudRetestStatus": "FAIL"
             }
           ],
@@ -17559,7 +17613,7 @@
       "summary": "Wallet movement is correct, but the receipt labels the applicant as sender and the grant as recipient.",
       "historicalStatus": "Open",
       "status": "PASS",
-      "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
+      "retestSummary": "PASS: the user-authorized historical correction created one balanced USD award journal and two entries for the exact controlled award. Chrome exact-reference search returns one Valid Grant Approval row with Grant +100 and Investor Personal -100 at all six measured CSS sizes. Full reload and a fresh search preserve the same row; a second backfill execution is a zero-write no-op. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates. Final merged hardening rejects ambiguous references, unrelated debit legs, wrong ledger accounts, malformed attribution and null audit dates.",
       "responsive": [
         {
           "size": "360×800",
