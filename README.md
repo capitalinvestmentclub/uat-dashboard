@@ -1,6 +1,6 @@
 # CIC UAT dashboard
 
-One summary for ten published E2E reports. Static HTML/CSS/JavaScript; no product API, private test data, runtime framework, or login required.
+One summary for twelve published E2E reports. Static HTML/CSS/JavaScript; no product API, private test data, runtime framework, or login required.
 
 ## Severity and execution analytics
 
@@ -26,10 +26,12 @@ Publish workflow runs on push or manual dispatch. Manual dispatch refreshes repo
 - Unique findings require matching ID and title. Shared Admin/Super Admin/Cross-role findings retain all memberships. Explicit retests supersede missing retest data, not conflicting explicit outcomes.
 - Defects, gaps and questions are distinct. Critical/high defect totals are historical inventory, not a claim that every defect is still open.
 - Only public report data is aggregated; evidence is linked to its original host.
+- Assessor and Investor publish from the webapp `gh-pages` site rather than a dedicated report repo, because that repository is private. They are read from their public Pages URLs and pinned to the webapp commit their payload records.
+- Assessor and Investor scenario verdicts come from each role's `COVERAGE_LEDGER.md`, the release authority for that campaign. `Fail (partial)` means the cells that ran failed and the rest were never run; the Investor campaign's named-browser cells are all unrun by design, so its scenarios read PARTIAL rather than executed.
 
 ## Design and validation scope
 
-Acceptance criteria: ten source reports, all published scenarios, deduplicated findings, literal search, every group/result/view filter, reset and empty/error states, six Chrome sizes, original evidence links, traceable source revisions and deployment.
+Acceptance criteria: twelve source reports, all published scenarios, deduplicated findings, literal search, every group/result/view filter, reset and empty/error states, six Chrome sizes, original evidence links, traceable source revisions and deployment.
 
 `test/dashboard.test.js` maps those data and interaction requirements to normalization, filter-pair, DOM-rendering, missing-data, injection-string and conflict tests. Real Chrome rendering is additionally checked at 360×800, 390×844, 768×1024, 1024×768, 1280×800 and 1440×900.
 
