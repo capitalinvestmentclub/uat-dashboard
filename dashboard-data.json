@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T02:05:22.520Z",
+  "generatedAt": "2026-09-15T04:46:33.135Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "fce4423d78b01d12cc8b130d124d908b2f2d64f9",
+      "commit": "df15a6a3714d0b9b287e009553d9c4ea80e1ca44",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -4334,13 +4334,13 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-kyc-award-partial",
-        "updatedAt": "2026-09-15T02:04:35.489Z",
-        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
+        "runId": "2026-09-14-close37-release-deployed-pending",
+        "updatedAt": "2026-09-15T04:45:48.446Z",
+        "state": "RETEST PARTIAL — coordinated repairs are merged and live; focused cloud acceptance remains open",
         "repairBatch": {
-          "runId": "2026-09-14-close37-live-verification",
-          "updatedAt": "2026-09-15T00:41:27.524Z",
-          "state": "MERGED AND LIVE — targeted cloud verification progressing",
+          "runId": "2026-09-14-close37-release-deployed-pending",
+          "updatedAt": "2026-09-15T04:45:48.446Z",
+          "state": "MERGED AND LIVE — focused deployed acceptance pending",
           "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
@@ -4352,74 +4352,81 @@
             "1440×900"
           ],
           "mergeStatus": "MERGED",
-          "deploymentStatus": "LIVE — both services promoted",
+          "deploymentStatus": "LIVE — API promoted before frontend",
           "cloudRetestStatus": "PARTIAL",
-          "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "Recorded merge commits are live. Cloud closure below is limited to explicit targeted results with six measured CSS viewport outcomes; merged code alone never closes other findings.",
+          "scope": "Five unique critical/high findings across five reports. This publication records the single coordinated release batch and preserves every prior outcome until the affected Chrome checks complete at all six measured CSS sizes.",
+          "releaseGate": "API PR #740 and frontend PR #2354 are merged. Exact candidates are live. Local focused acceptance passed; cloud status remains unchanged where role access, a missing retained fixture, or the historical journal prevents complete verification.",
           "candidates": {
-            "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
-            "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
+            "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
+            "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
           },
           "pullRequests": [
             {
-              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2346",
-              "label": "Frontend PR #2346 — MERGED; f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4"
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/740",
+              "label": "API PR #740 — MERGED; 45b94ccb37efeb612247254f646d0bc2c48a9ebf"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapi/pull/738",
-              "label": "API PR #738 — MERGED; de320d4539f95415a84a3928fce77ee16633ca8f"
+              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2354",
+              "label": "Frontend PR #2354 — MERGED; 7bb5dfcf010415922688bb659e23992f7723bf83"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34910303346",
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34929219077",
               "label": "API exact-version live promotion — SUCCESS"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34910414295",
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34929292626",
               "label": "Frontend exact-version live promotion — SUCCESS"
             }
           ],
           "deployments": {
             "webapp": {
-              "version": "auth-34904805743-1",
-              "commit": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
-              "promotionRun": "34910414295",
-              "promotedAt": "2026-09-14T23:48:05Z",
+              "version": "auth-34925818650-1",
+              "commit": "7bb5dfcf010415922688bb659e23992f7723bf83",
+              "buildId": "ZbjuA6xlxenb7ANeOMWjU",
+              "promotionRun": "34929292626",
+              "promotedAt": "2026-09-15T04:34:35Z",
               "status": "LIVE"
             },
             "webapi": {
-              "version": "policy-34904590658-1",
-              "commit": "de320d4539f95415a84a3928fce77ee16633ca8f",
-              "promotionRun": "34910303346",
-              "promotedAt": "2026-09-14T23:46:36Z",
+              "version": "policy-34928906727-1",
+              "commit": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
+              "promotionRun": "34929219077",
+              "promotedAt": "2026-09-15T04:33:13Z",
               "status": "LIVE"
             },
-            "buildId": "rwHF6H9jwBWTjB7AhtWo1",
             "verifiedBy": "/root"
           },
-          "frontendTests": "Required, focused and CodeQL checks passed; no open review threads. Local visual screenshot acceptance remains deferred, not passed.",
-          "apiTests": "Required CI passed; substantive review resolved; nine review-delta tests passed. Full local suite last checkpoint250 of471 suites/3281 assertions passed,zero failures,still unfinished.",
+          "frontendTests": "Merged candidate passed the complete local frontend suite previously recorded for this release line; exact staged build ZbjuA6xlxenb7ANeOMWjU was promoted and visually identified on the live site.",
+          "apiTests": "Exact repaired head passed 4 focused suites / 93 tests, 14 affected suites / 177 tests, fresh preflight, required GitHub checks, and a normal separate-role local Chrome award/receipt journey.",
           "findings": [
             {
               "id": "ADM053-REC-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "At measured1024x768, Admin Ledger exact recipient-reference search returns zero journals; Reset Filters then grant-description-only search returns only initial Grant Creation Sole journal, no award. Existing wallet debit/credit and six-size receipt proof remain passing, but required Admin ledger reconciliation fails. Source confirms approval award path omits Admin ledger posting while separate explicit-disbursement path posts. No backfill or financial mutation performed.",
+              "summary": "At measured1024x768, Admin Ledger exact recipient-reference search returns zero journals; Reset Filters then grant-description-only search returns only initial Grant Creation Sole journal, no award. Existing wallet debit/credit and six-size receipt proof remain passing, but required Admin ledger reconciliation fails. Source confirms approval award path omits Admin ledger posting while separate explicit-disbursement path posts. No backfill or financial mutation performed. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected.",
               "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-CFG-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
+              "summary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected.",
               "cloudRetestStatus": "FAIL"
+            },
+            {
+              "id": "ADM046-LINK-001",
+              "status": "PARTIAL",
+              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
+              "cloudRetestStatus": "PARTIAL",
+              "summary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected."
             }
           ],
-          "previousBatchRunId": "2026-09-14-close37-pr-open",
+          "previousBatchRunId": "2026-09-14-close37-kyc-award-partial",
           "mergeCommits": {
-            "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
-            "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
+            "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
+            "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
           },
-          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-admin-award-ledger-fail: ADM053-REC-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
+          "cloudRetestSummary": "Release delivery is complete. Acceptance remains intentionally open: the retained Seed fixture returned unavailable, Pitcher cannot enter admin feedback operations, and no historical award-journal mutation was authorized."
         }
       }
     },
@@ -5488,7 +5495,7 @@
     {
       "name": "Grantor",
       "repo": "grantor-uat-report",
-      "commit": "7b1318bd3ecd6605b247c8d924588a367d0a216e",
+      "commit": "5182bd18bbb8e3484a2e7e8cd0108793f4fbef54",
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -6824,9 +6831,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-reporting-seed",
-        "updatedAt": "2026-09-15T01:12:30.494Z",
-        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
+        "runId": "2026-09-14-close37-release-deployed-pending",
+        "updatedAt": "2026-09-15T04:45:48.446Z",
+        "state": "RETEST PARTIAL — coordinated repairs are merged and live; focused cloud acceptance remains open",
         "deployments": {
           "webapp": {
             "version": "auth-34878846169-1",
@@ -6842,9 +6849,9 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-close37-live-verification",
-          "updatedAt": "2026-09-15T00:33:07.121Z",
-          "state": "MERGED AND LIVE — targeted cloud verification progressing",
+          "runId": "2026-09-14-close37-release-deployed-pending",
+          "updatedAt": "2026-09-15T04:45:48.446Z",
+          "state": "MERGED AND LIVE — focused deployed acceptance pending",
           "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
@@ -6856,74 +6863,67 @@
             "1440×900"
           ],
           "mergeStatus": "MERGED",
-          "deploymentStatus": "LIVE — both services promoted",
+          "deploymentStatus": "LIVE — API promoted before frontend",
           "cloudRetestStatus": "PARTIAL",
-          "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "Recorded merge commits are live. Cloud closure below is limited to explicit targeted results with six measured CSS viewport outcomes; merged code alone never closes other findings.",
+          "scope": "Five unique critical/high findings across five reports. This publication records the single coordinated release batch and preserves every prior outcome until the affected Chrome checks complete at all six measured CSS sizes.",
+          "releaseGate": "API PR #740 and frontend PR #2354 are merged. Exact candidates are live. Local focused acceptance passed; cloud status remains unchanged where role access, a missing retained fixture, or the historical journal prevents complete verification.",
           "candidates": {
-            "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
-            "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
+            "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
+            "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
           },
           "pullRequests": [
             {
-              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2346",
-              "label": "Frontend PR #2346 — MERGED; f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4"
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/740",
+              "label": "API PR #740 — MERGED; 45b94ccb37efeb612247254f646d0bc2c48a9ebf"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapi/pull/738",
-              "label": "API PR #738 — MERGED; de320d4539f95415a84a3928fce77ee16633ca8f"
+              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2354",
+              "label": "Frontend PR #2354 — MERGED; 7bb5dfcf010415922688bb659e23992f7723bf83"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34910303346",
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34929219077",
               "label": "API exact-version live promotion — SUCCESS"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34910414295",
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34929292626",
               "label": "Frontend exact-version live promotion — SUCCESS"
             }
           ],
           "deployments": {
             "webapp": {
-              "version": "auth-34904805743-1",
-              "commit": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
-              "promotionRun": "34910414295",
-              "promotedAt": "2026-09-14T23:48:05Z",
+              "version": "auth-34925818650-1",
+              "commit": "7bb5dfcf010415922688bb659e23992f7723bf83",
+              "buildId": "ZbjuA6xlxenb7ANeOMWjU",
+              "promotionRun": "34929292626",
+              "promotedAt": "2026-09-15T04:34:35Z",
               "status": "LIVE"
             },
             "webapi": {
-              "version": "policy-34904590658-1",
-              "commit": "de320d4539f95415a84a3928fce77ee16633ca8f",
-              "promotionRun": "34910303346",
-              "promotedAt": "2026-09-14T23:46:36Z",
+              "version": "policy-34928906727-1",
+              "commit": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
+              "promotionRun": "34929219077",
+              "promotedAt": "2026-09-15T04:33:13Z",
               "status": "LIVE"
             },
-            "buildId": "rwHF6H9jwBWTjB7AhtWo1",
             "verifiedBy": "/root"
           },
-          "frontendTests": "Required, focused and CodeQL checks passed; no open review threads. Local visual screenshot acceptance remains deferred, not passed.",
-          "apiTests": "Required CI passed; substantive review resolved; nine review-delta tests passed. Full local suite last checkpoint250 of471 suites/3281 assertions passed,zero failures,still unfinished.",
+          "frontendTests": "Merged candidate passed the complete local frontend suite previously recorded for this release line; exact staged build ZbjuA6xlxenb7ANeOMWjU was promoted and visually identified on the live site.",
+          "apiTests": "Exact repaired head passed 4 focused suites / 93 tests, 14 affected suites / 177 tests, fresh preflight, required GitHub checks, and a normal separate-role local Chrome award/receipt journey.",
           "findings": [
             {
               "id": "GRT005-CFG-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
+              "summary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected.",
               "cloudRetestStatus": "FAIL"
-            },
-            {
-              "id": "GRT017-REC-001",
-              "status": "FAIL",
-              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
-              "summary": "Original settled award reconciled through actual Chrome Pitcher: six measured owner and recipient Receipt openings/readbacks/visual reviews, creator funding receipt controls at six sizes, and full reload persistence. Grant disbursement debit100USD and recipient credit100USD match grant sender/Investor recipient, settled grant_disbursement, September1 01:22UTC, gross/net100USD and fee0. Creator funding debit and grant credit100USD correlate August19 04:54UTC. Separate receipt/ledger references retained; documents are not claimed identical. Targeted original parties/value-direction defect closed; broader grant lifecycle not certified.",
-              "cloudRetestStatus": "PASS"
             }
           ],
-          "previousBatchRunId": "2026-09-14-close37-pr-open",
+          "previousBatchRunId": "2026-09-14-close37-reporting-seed",
           "mergeCommits": {
-            "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
-            "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
+            "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
+            "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
           },
-          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-receipt-reconciled: GRT017-REC-001 PASS. Other findings retain prior evidence; this is not full-scenario closure."
+          "cloudRetestSummary": "Release delivery is complete. Acceptance remains intentionally open: the retained Seed fixture returned unavailable, Pitcher cannot enter admin feedback operations, and no historical award-journal mutation was authorized."
         }
       }
     },
@@ -11732,7 +11732,7 @@
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "d6a704711b19907f4a39f80ac7be2c4227ea79e1",
+      "commit": "bbee7a2ee6e2073f5fb5b23ce0eddbe9bf62345b",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -13431,9 +13431,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-kyc-award-partial",
-        "updatedAt": "2026-09-15T02:04:35.489Z",
-        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
+        "runId": "2026-09-14-close37-release-deployed-pending",
+        "updatedAt": "2026-09-15T04:45:48.446Z",
+        "state": "RETEST PARTIAL — coordinated repairs are merged and live; focused cloud acceptance remains open",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -13449,9 +13449,9 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-close37-live-verification",
-          "updatedAt": "2026-09-15T00:41:27.524Z",
-          "state": "MERGED AND LIVE — targeted cloud verification progressing",
+          "runId": "2026-09-14-close37-release-deployed-pending",
+          "updatedAt": "2026-09-15T04:45:48.446Z",
+          "state": "MERGED AND LIVE — focused deployed acceptance pending",
           "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
@@ -13463,81 +13463,88 @@
             "1440×900"
           ],
           "mergeStatus": "MERGED",
-          "deploymentStatus": "LIVE — both services promoted",
+          "deploymentStatus": "LIVE — API promoted before frontend",
           "cloudRetestStatus": "PARTIAL",
-          "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "Recorded merge commits are live. Cloud closure below is limited to explicit targeted results with six measured CSS viewport outcomes; merged code alone never closes other findings.",
+          "scope": "Five unique critical/high findings across five reports. This publication records the single coordinated release batch and preserves every prior outcome until the affected Chrome checks complete at all six measured CSS sizes.",
+          "releaseGate": "API PR #740 and frontend PR #2354 are merged. Exact candidates are live. Local focused acceptance passed; cloud status remains unchanged where role access, a missing retained fixture, or the historical journal prevents complete verification.",
           "candidates": {
-            "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
-            "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
+            "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
+            "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
           },
           "pullRequests": [
             {
-              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2346",
-              "label": "Frontend PR #2346 — MERGED; f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4"
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/740",
+              "label": "API PR #740 — MERGED; 45b94ccb37efeb612247254f646d0bc2c48a9ebf"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapi/pull/738",
-              "label": "API PR #738 — MERGED; de320d4539f95415a84a3928fce77ee16633ca8f"
+              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2354",
+              "label": "Frontend PR #2354 — MERGED; 7bb5dfcf010415922688bb659e23992f7723bf83"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34910303346",
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34929219077",
               "label": "API exact-version live promotion — SUCCESS"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34910414295",
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34929292626",
               "label": "Frontend exact-version live promotion — SUCCESS"
             }
           ],
           "deployments": {
             "webapp": {
-              "version": "auth-34904805743-1",
-              "commit": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
-              "promotionRun": "34910414295",
-              "promotedAt": "2026-09-14T23:48:05Z",
+              "version": "auth-34925818650-1",
+              "commit": "7bb5dfcf010415922688bb659e23992f7723bf83",
+              "buildId": "ZbjuA6xlxenb7ANeOMWjU",
+              "promotionRun": "34929292626",
+              "promotedAt": "2026-09-15T04:34:35Z",
               "status": "LIVE"
             },
             "webapi": {
-              "version": "policy-34904590658-1",
-              "commit": "de320d4539f95415a84a3928fce77ee16633ca8f",
-              "promotionRun": "34910303346",
-              "promotedAt": "2026-09-14T23:46:36Z",
+              "version": "policy-34928906727-1",
+              "commit": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
+              "promotionRun": "34929219077",
+              "promotedAt": "2026-09-15T04:33:13Z",
               "status": "LIVE"
             },
-            "buildId": "rwHF6H9jwBWTjB7AhtWo1",
             "verifiedBy": "/root"
           },
-          "frontendTests": "Required, focused and CodeQL checks passed; no open review threads. Local visual screenshot acceptance remains deferred, not passed.",
-          "apiTests": "Required CI passed; substantive review resolved; nine review-delta tests passed. Full local suite last checkpoint250 of471 suites/3281 assertions passed,zero failures,still unfinished.",
+          "frontendTests": "Merged candidate passed the complete local frontend suite previously recorded for this release line; exact staged build ZbjuA6xlxenb7ANeOMWjU was promoted and visually identified on the live site.",
+          "apiTests": "Exact repaired head passed 4 focused suites / 93 tests, 14 affected suites / 177 tests, fresh preflight, required GitHub checks, and a normal separate-role local Chrome award/receipt journey.",
           "findings": [
             {
               "id": "ADM053-REC-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "At measured1024x768, Admin Ledger exact recipient-reference search returns zero journals; Reset Filters then grant-description-only search returns only initial Grant Creation Sole journal, no award. Existing wallet debit/credit and six-size receipt proof remain passing, but required Admin ledger reconciliation fails. Source confirms approval award path omits Admin ledger posting while separate explicit-disbursement path posts. No backfill or financial mutation performed.",
+              "summary": "At measured1024x768, Admin Ledger exact recipient-reference search returns zero journals; Reset Filters then grant-description-only search returns only initial Grant Creation Sole journal, no award. Existing wallet debit/credit and six-size receipt proof remain passing, but required Admin ledger reconciliation fails. Source confirms approval award path omits Admin ledger posting while separate explicit-disbursement path posts. No backfill or financial mutation performed. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected.",
               "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-CFG-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
+              "summary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected.",
               "cloudRetestStatus": "FAIL"
+            },
+            {
+              "id": "ADM046-LINK-001",
+              "status": "PARTIAL",
+              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
+              "cloudRetestStatus": "PARTIAL",
+              "summary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected."
             }
           ],
-          "previousBatchRunId": "2026-09-14-close37-pr-open",
+          "previousBatchRunId": "2026-09-14-close37-kyc-award-partial",
           "mergeCommits": {
-            "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
-            "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
+            "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
+            "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
           },
-          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-admin-award-ledger-fail: ADM053-REC-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
+          "cloudRetestSummary": "Release delivery is complete. Acceptance remains intentionally open: the retained Seed fixture returned unavailable, Pitcher cannot enter admin feedback operations, and no historical award-journal mutation was authorized."
         }
       }
     },
     {
       "name": "Support Operations",
       "repo": "support-operations-uat-report",
-      "commit": "2b35acb8f5a0e4c4118b8267d57d7abb6ac26296",
+      "commit": "2f983a6e86302920431a010994180b7b474c071a",
       "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome Support Operations campaign",
       "scenarios": [
@@ -13971,9 +13978,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-case-navigation-partial",
-        "updatedAt": "2026-09-15T00:53:41.302Z",
-        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
+        "runId": "2026-09-14-close37-release-deployed-pending",
+        "updatedAt": "2026-09-15T04:45:48.446Z",
+        "state": "RETEST PARTIAL — coordinated repairs are merged and live; focused cloud acceptance remains open",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -13989,9 +13996,9 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-merged-deployed-repair",
-          "state": "MERGED AND LIVE — one targeted cloud refund retest passed; remaining cloud retests pending",
-          "executionMode": "real-api-local",
+          "runId": "2026-09-14-close37-release-deployed-pending",
+          "state": "MERGED AND LIVE — focused deployed acceptance pending",
+          "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
             "360×800",
@@ -14002,46 +14009,47 @@
             "1440×900"
           ],
           "mergeStatus": "MERGED",
-          "deploymentStatus": "LIVE",
+          "deploymentStatus": "LIVE — API promoted before frontend",
           "cloudRetestStatus": "PARTIAL",
-          "frontendTests": "Final candidate: 632 suites / 4,943 tests passed; production build passed. Final original-refund real-API Chrome check passed at all six exact sizes.",
-          "apiTests": "Prior complete reconciliation: 468 suites / 5,565 assertions passed; latest API base and refund delta: 5 suites / 82 assertions passed. Separate runs, not one new full-suite execution.",
-          "scope": "Readiness update only. Existing deployed findings and per-size results below remain the last published cloud outcomes until exact-release browser retesting is supplied.",
+          "frontendTests": "Merged candidate passed the complete local frontend suite previously recorded for this release line; exact staged build ZbjuA6xlxenb7ANeOMWjU was promoted and visually identified on the live site.",
+          "apiTests": "Exact repaired head passed 4 focused suites / 93 tests, 14 affected suites / 177 tests, fresh preflight, required GitHub checks, and a normal separate-role local Chrome award/receipt journey.",
+          "scope": "Five unique critical/high findings across five reports. This publication records the single coordinated release batch and preserves every prior outcome until the affected Chrome checks complete at all six measured CSS sizes.",
           "findings": [
             {
               "id": "SUP-F008",
-              "classification": "PRODUCT_FIX_LOCAL_VERIFIED",
-              "summary": "Changed behavior passed focused regression and real API-backed Chrome local checks at all six measured sizes.",
-              "cloudRetestStatus": "PENDING"
+              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
+              "summary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected.",
+              "cloudRetestStatus": "PARTIAL",
+              "status": "PARTIAL"
             }
           ],
-          "updatedAt": "2026-09-14T18:36:20.897Z",
+          "updatedAt": "2026-09-15T04:45:48.446Z",
           "candidates": {
-            "webapp": "b99da21cf757593a3f5419086022556b7965e9b3",
-            "webapi": "f11aba9330b84ee98e0e7f3188a2442b928e4aad"
+            "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
+            "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
           },
           "pullRequests": [
             {
-              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2342",
-              "label": "Frontend PR #2342 — merged"
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/740",
+              "label": "API PR #740 — MERGED; 45b94ccb37efeb612247254f646d0bc2c48a9ebf"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapi/pull/737",
-              "label": "API PR #737 — merged after review corrections"
+              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2354",
+              "label": "Frontend PR #2354 — MERGED; 7bb5dfcf010415922688bb659e23992f7723bf83"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34880983295",
-              "label": "Frontend live promotion — success"
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34929219077",
+              "label": "API exact-version live promotion — SUCCESS"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34880842679",
-              "label": "API live promotion — success"
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34929292626",
+              "label": "Frontend exact-version live promotion — SUCCESS"
             }
           ],
-          "releaseGate": "Both exact merge commits are promoted live; promotion workflows succeeded. User-authorized approval-only override was used after required checks and concrete review corrections passed. New Chrome cloud acceptance is limited to GRT020-BAL-001 at all six measured sizes. Other prior cloud results remain unchanged; merged code alone does not close their findings.",
+          "releaseGate": "API PR #740 and frontend PR #2354 are merged. Exact candidates are live. Local focused acceptance passed; cloud status remains unchanged where role access, a missing retained fixture, or the historical journal prevents complete verification.",
           "mergeCommits": {
-            "webapp": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
-            "webapi": "a86720f026956fa9a9e76e3f4bb23e5e02af445d"
+            "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
+            "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
           },
           "stagedDeployments": {
             "webapp": {
@@ -14061,26 +14069,31 @@
           "apiReviewDelta": "Final review corrections: 44 controller assertions and 66 organization assertions passed; three required API checks passed and zero unresolved review threads.",
           "deployments": {
             "webapp": {
-              "version": "auth-34878846169-1",
-              "commit": "2a16bad104bdbd0c2319523ddc5f145af420c1d4",
-              "promotionRun": "34880983295",
+              "version": "auth-34925818650-1",
+              "commit": "7bb5dfcf010415922688bb659e23992f7723bf83",
+              "buildId": "ZbjuA6xlxenb7ANeOMWjU",
+              "promotionRun": "34929292626",
+              "promotedAt": "2026-09-15T04:34:35Z",
               "status": "LIVE"
             },
             "webapi": {
-              "version": "policy-34880209047-1",
-              "commit": "a86720f026956fa9a9e76e3f4bb23e5e02af445d",
-              "promotionRun": "34880842679",
+              "version": "policy-34928906727-1",
+              "commit": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
+              "promotionRun": "34929219077",
+              "promotedAt": "2026-09-15T04:33:13Z",
               "status": "LIVE"
-            }
+            },
+            "verifiedBy": "/root"
           },
-          "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
+          "cloudRetestSummary": "Release delivery is complete. Acceptance remains intentionally open: the retained Seed fixture returned unavailable, Pitcher cannot enter admin feedback operations, and no historical award-journal mutation was authorized.",
+          "previousBatchRunId": "2026-09-14-close37-case-navigation-partial"
         }
       }
     },
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "674fef0e2c4e5a31d51b59132365bab55e552bff",
+      "commit": "a05fccd0da55252731d8750e3ad991f9f779df27",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -15490,9 +15503,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-kyc-award-partial",
-        "updatedAt": "2026-09-15T02:04:35.489Z",
-        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
+        "runId": "2026-09-14-close37-release-deployed-pending",
+        "updatedAt": "2026-09-15T04:45:48.446Z",
+        "state": "RETEST PARTIAL — coordinated repairs are merged and live; focused cloud acceptance remains open",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -15508,9 +15521,9 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-close37-live-verification",
-          "updatedAt": "2026-09-15T00:41:27.524Z",
-          "state": "MERGED AND LIVE — targeted cloud verification progressing",
+          "runId": "2026-09-14-close37-release-deployed-pending",
+          "updatedAt": "2026-09-15T04:45:48.446Z",
+          "state": "MERGED AND LIVE — focused deployed acceptance pending",
           "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
@@ -15522,74 +15535,74 @@
             "1440×900"
           ],
           "mergeStatus": "MERGED",
-          "deploymentStatus": "LIVE — both services promoted",
+          "deploymentStatus": "LIVE — API promoted before frontend",
           "cloudRetestStatus": "PARTIAL",
-          "scope": "Five findings, three shared causes: mobile grant Actions, grant receipt recipient, organization calendar timezone. Code delivery is separate from deployed acceptance; no finding status or viewport result changed.",
-          "releaseGate": "Recorded merge commits are live. Cloud closure below is limited to explicit targeted results with six measured CSS viewport outcomes; merged code alone never closes other findings.",
+          "scope": "Five unique critical/high findings across five reports. This publication records the single coordinated release batch and preserves every prior outcome until the affected Chrome checks complete at all six measured CSS sizes.",
+          "releaseGate": "API PR #740 and frontend PR #2354 are merged. Exact candidates are live. Local focused acceptance passed; cloud status remains unchanged where role access, a missing retained fixture, or the historical journal prevents complete verification.",
           "candidates": {
-            "webapp": "f6e0fb4c345658bd12011516d67b95ba2421d393",
-            "webapi": "4e9ac2680d49156a59e9bf447db0f8e3f73e8c04"
+            "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
+            "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
           },
           "pullRequests": [
             {
-              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2346",
-              "label": "Frontend PR #2346 — MERGED; f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4"
+              "url": "https://github.com/capitalinvestmentclub/webapi/pull/740",
+              "label": "API PR #740 — MERGED; 45b94ccb37efeb612247254f646d0bc2c48a9ebf"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapi/pull/738",
-              "label": "API PR #738 — MERGED; de320d4539f95415a84a3928fce77ee16633ca8f"
+              "url": "https://github.com/capitalinvestmentclub/webapp/pull/2354",
+              "label": "Frontend PR #2354 — MERGED; 7bb5dfcf010415922688bb659e23992f7723bf83"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34910303346",
+              "url": "https://github.com/capitalinvestmentclub/webapi/actions/runs/34929219077",
               "label": "API exact-version live promotion — SUCCESS"
             },
             {
-              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34910414295",
+              "url": "https://github.com/capitalinvestmentclub/webapp/actions/runs/34929292626",
               "label": "Frontend exact-version live promotion — SUCCESS"
             }
           ],
           "deployments": {
             "webapp": {
-              "version": "auth-34904805743-1",
-              "commit": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
-              "promotionRun": "34910414295",
-              "promotedAt": "2026-09-14T23:48:05Z",
+              "version": "auth-34925818650-1",
+              "commit": "7bb5dfcf010415922688bb659e23992f7723bf83",
+              "buildId": "ZbjuA6xlxenb7ANeOMWjU",
+              "promotionRun": "34929292626",
+              "promotedAt": "2026-09-15T04:34:35Z",
               "status": "LIVE"
             },
             "webapi": {
-              "version": "policy-34904590658-1",
-              "commit": "de320d4539f95415a84a3928fce77ee16633ca8f",
-              "promotionRun": "34910303346",
-              "promotedAt": "2026-09-14T23:46:36Z",
+              "version": "policy-34928906727-1",
+              "commit": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
+              "promotionRun": "34929219077",
+              "promotedAt": "2026-09-15T04:33:13Z",
               "status": "LIVE"
             },
-            "buildId": "rwHF6H9jwBWTjB7AhtWo1",
             "verifiedBy": "/root"
           },
-          "frontendTests": "Required, focused and CodeQL checks passed; no open review threads. Local visual screenshot acceptance remains deferred, not passed.",
-          "apiTests": "Required CI passed; substantive review resolved; nine review-delta tests passed. Full local suite last checkpoint250 of471 suites/3281 assertions passed,zero failures,still unfinished.",
+          "frontendTests": "Merged candidate passed the complete local frontend suite previously recorded for this release line; exact staged build ZbjuA6xlxenb7ANeOMWjU was promoted and visually identified on the live site.",
+          "apiTests": "Exact repaired head passed 4 focused suites / 93 tests, 14 affected suites / 177 tests, fresh preflight, required GitHub checks, and a normal separate-role local Chrome award/receipt journey.",
           "findings": [
             {
               "id": "ADM053-REC-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "At measured1024x768, Admin Ledger exact recipient-reference search returns zero journals; Reset Filters then grant-description-only search returns only initial Grant Creation Sole journal, no award. Existing wallet debit/credit and six-size receipt proof remain passing, but required Admin ledger reconciliation fails. Source confirms approval award path omits Admin ledger posting while separate explicit-disbursement path posts. No backfill or financial mutation performed.",
+              "summary": "At measured1024x768, Admin Ledger exact recipient-reference search returns zero journals; Reset Filters then grant-description-only search returns only initial Grant Creation Sole journal, no award. Existing wallet debit/credit and six-size receipt proof remain passing, but required Admin ledger reconciliation fails. Source confirms approval award path omits Admin ledger posting while separate explicit-disbursement path posts. No backfill or financial mutation performed. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected.",
               "cloudRetestStatus": "FAIL"
             },
             {
               "id": "ADM053-CFG-001",
               "status": "FAIL",
               "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Recorded repair merged and deployed. Latest cloud acceptance remains FAIL; exact-release complete acceptance still pending.",
+              "summary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected.",
               "cloudRetestStatus": "FAIL"
             }
           ],
-          "previousBatchRunId": "2026-09-14-close37-pr-open",
+          "previousBatchRunId": "2026-09-14-close37-kyc-award-partial",
           "mergeCommits": {
-            "webapp": "f5a4396d8cfbfd4c9abad90e44fc8aaf10b22ca4",
-            "webapi": "de320d4539f95415a84a3928fce77ee16633ca8f"
+            "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
+            "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
           },
-          "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-admin-award-ledger-fail: ADM053-REC-001 FAIL. Other findings retain prior evidence; this is not full-scenario closure."
+          "cloudRetestSummary": "Release delivery is complete. Acceptance remains intentionally open: the retained Seed fixture returned unavailable, Pitcher cannot enter admin feedback operations, and no historical award-journal mutation was authorized."
         }
       }
     }
