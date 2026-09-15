@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T00:55:40.491Z",
+  "generatedAt": "2026-09-15T01:13:42.377Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "debac17fba75c4c66173edafada9a79311e31877",
+      "commit": "d82ee8c2df5ccaa24b05a8c980ef57694555f53c",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -3403,86 +3403,152 @@
           "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+          "retestSummary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+              "summary": "Seed remains selected after save/reload in editor but omitted from Details; reporting subcheck PASS.",
               "steps": [
-                "Open original private synthetic matrix draft with reporting enabled.",
-                "Save authored monthly reporting instructions.",
-                "Reload and reopen editor; authored text retained.",
-                "Compare Details, which substitutes generic monthly reporting sentence."
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
               ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "FAIL",
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-                  "label": "cloud-reporting-editor-reloaded-360.png"
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-editor-360.png",
+                  "label": "cloud-seed-editor-360; shared approved evidence, size as filename"
                 },
                 {
-                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-                  "label": "cloud-reporting-details-mismatch-360.png"
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
+                  "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
                 }
-              ],
-              "observedAt": "2026-09-14T23:56:33.561Z"
+              ]
             },
             {
               "size": "390×844",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.561Z"
+              "measuredCss": "390x844",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+                  "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "768×1024",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.561Z"
+              "measuredCss": "768x1024",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1024×768",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.561Z"
+              "measuredCss": "1024x768",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1280×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.561Z"
+              "measuredCss": "1280x800",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1440×900",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.561Z"
+              "measuredCss": "1440x900",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             }
           ],
-          "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
+          "limitations": "Seed tested at360 only; other five Seed cells NOT RUN. Reporting subcheck PASS all six. No published grant, invitation or financial mutation.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-              "label": "cloud-reporting-editor-reloaded-360.png"
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
+              "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
             },
             {
-              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-              "label": "cloud-reporting-details-mismatch-360.png"
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+              "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-disabled-360.png",
+              "label": "cloud-reporting-disabled-360; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-editor-360.png",
+              "label": "cloud-seed-editor-360; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
+              "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
@@ -3496,87 +3562,135 @@
           "scenario": "ADM-053",
           "summary": "Disbursement detail shows a comment never entered and monthly ongoing reporting while tracking is disabled.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+          "status": "PARTIAL",
+          "retestSummary": "Authored reporting instructions PASS six independent enabled edit/save/full reload/editor rereads, including newline, Unicode and long-reference wrapping. Disabled state persisted once and checked at six sizes. Original text/enabled state restored and confirmed after full reload. Whole finding PARTIAL: recipient award/comment comparison remains unexecuted.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
-              "status": "FAIL",
-              "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
               "steps": [
-                "Open original private synthetic matrix draft with reporting enabled.",
-                "Save authored monthly reporting instructions.",
-                "Reload and reopen editor; authored text retained.",
-                "Compare Details, which substitutes generic monthly reporting sentence."
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
               ],
+              "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-                  "label": "cloud-reporting-editor-reloaded-360.png"
-                },
-                {
-                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-                  "label": "cloud-reporting-details-mismatch-360.png"
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
+                  "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
                 }
-              ],
-              "observedAt": "2026-09-14T23:56:33.561Z"
+              ]
             },
             {
               "size": "390×844",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.561Z"
+              "measuredCss": "390x844",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+                  "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "768×1024",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.561Z"
+              "measuredCss": "768x1024",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1024×768",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.561Z"
+              "measuredCss": "1024x768",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1280×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.561Z"
+              "measuredCss": "1280x800",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1440×900",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.561Z"
+              "measuredCss": "1440x900",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             }
           ],
-          "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
+          "limitations": "One disabled save/reload plus six controls/readbacks, not six independent disabled saves. Recipient award/comment branch missing. Desktop screenshots private and excluded.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-              "label": "cloud-reporting-editor-reloaded-360.png"
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
+              "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
             },
             {
-              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-              "label": "cloud-reporting-details-mismatch-360.png"
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+              "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-disabled-360.png",
+              "label": "cloud-reporting-disabled-360; shared approved evidence, size as filename"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
@@ -4186,8 +4300,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-case-navigation-partial",
-        "updatedAt": "2026-09-15T00:53:41.302Z",
+        "runId": "2026-09-14-close37-reporting-seed",
+        "updatedAt": "2026-09-15T01:12:30.494Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "repairBatch": {
           "runId": "2026-09-14-close37-live-verification",
@@ -5340,7 +5454,7 @@
     {
       "name": "Grantor",
       "repo": "grantor-uat-report",
-      "commit": "cd8dbe6aec10676ab29e7b9ccc7564a76318f84c",
+      "commit": "7b1318bd3ecd6605b247c8d924588a367d0a216e",
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5730,86 +5844,152 @@
           "summary": "Funding-stage eligibility disappeared; invitation/public settings reverted; Even Split changed to Fixed Solo; reporting cadence disagreed with setup.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+          "retestSummary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+              "summary": "Seed remains selected after save/reload in editor but omitted from Details; reporting subcheck PASS.",
               "steps": [
-                "Open original private synthetic matrix draft with reporting enabled.",
-                "Save authored monthly reporting instructions.",
-                "Reload and reopen editor; authored text retained.",
-                "Compare Details, which substitutes generic monthly reporting sentence."
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
               ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "FAIL",
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-                  "label": "cloud-reporting-editor-reloaded-360.png"
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-editor-360.png",
+                  "label": "cloud-seed-editor-360; shared approved evidence, size as filename"
                 },
                 {
-                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-                  "label": "cloud-reporting-details-mismatch-360.png"
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
+                  "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
                 }
-              ],
-              "observedAt": "2026-09-14T23:56:33.229Z"
+              ]
             },
             {
               "size": "390×844",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.229Z"
+              "measuredCss": "390x844",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+                  "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "768×1024",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.229Z"
+              "measuredCss": "768x1024",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1024×768",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.229Z"
+              "measuredCss": "1024x768",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1280×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.229Z"
+              "measuredCss": "1280x800",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1440×900",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.229Z"
+              "measuredCss": "1440x900",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             }
           ],
-          "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
+          "limitations": "Seed tested at360 only; other five Seed cells NOT RUN. Reporting subcheck PASS all six. No published grant, invitation or financial mutation.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-              "label": "cloud-reporting-editor-reloaded-360.png"
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
+              "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
             },
             {
-              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-              "label": "cloud-reporting-details-mismatch-360.png"
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+              "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-disabled-360.png",
+              "label": "cloud-reporting-disabled-360; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-editor-360.png",
+              "label": "cloud-seed-editor-360; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
+              "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
@@ -6610,8 +6790,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-receipt-reconciled",
-        "updatedAt": "2026-09-15T00:33:07.121Z",
+        "runId": "2026-09-14-close37-reporting-seed",
+        "updatedAt": "2026-09-15T01:12:30.494Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -11304,7 +11484,7 @@
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "84ce704beff91b49bcee935533c025a2ddb74c33",
+      "commit": "ecb74866180d14931cca2ed44e6bf7aa5b0b91b2",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -12072,86 +12252,152 @@
           "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+          "retestSummary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+              "summary": "Seed remains selected after save/reload in editor but omitted from Details; reporting subcheck PASS.",
               "steps": [
-                "Open original private synthetic matrix draft with reporting enabled.",
-                "Save authored monthly reporting instructions.",
-                "Reload and reopen editor; authored text retained.",
-                "Compare Details, which substitutes generic monthly reporting sentence."
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
               ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "FAIL",
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-                  "label": "cloud-reporting-editor-reloaded-360.png"
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-editor-360.png",
+                  "label": "cloud-seed-editor-360; shared approved evidence, size as filename"
                 },
                 {
-                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-                  "label": "cloud-reporting-details-mismatch-360.png"
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
+                  "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
                 }
-              ],
-              "observedAt": "2026-09-14T23:56:33.929Z"
+              ]
             },
             {
               "size": "390×844",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.929Z"
+              "measuredCss": "390x844",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+                  "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "768×1024",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.929Z"
+              "measuredCss": "768x1024",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1024×768",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.929Z"
+              "measuredCss": "1024x768",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1280×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.929Z"
+              "measuredCss": "1280x800",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1440×900",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.929Z"
+              "measuredCss": "1440x900",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             }
           ],
-          "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
+          "limitations": "Seed tested at360 only; other five Seed cells NOT RUN. Reporting subcheck PASS all six. No published grant, invitation or financial mutation.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-              "label": "cloud-reporting-editor-reloaded-360.png"
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
+              "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
             },
             {
-              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-              "label": "cloud-reporting-details-mismatch-360.png"
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+              "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-disabled-360.png",
+              "label": "cloud-reporting-disabled-360; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-editor-360.png",
+              "label": "cloud-seed-editor-360; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
+              "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
@@ -12165,87 +12411,135 @@
           "scenario": "ADM-053",
           "summary": "Disbursement detail shows a comment never entered and monthly ongoing reporting while tracking is disabled.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+          "status": "PARTIAL",
+          "retestSummary": "Authored reporting instructions PASS six independent enabled edit/save/full reload/editor rereads, including newline, Unicode and long-reference wrapping. Disabled state persisted once and checked at six sizes. Original text/enabled state restored and confirmed after full reload. Whole finding PARTIAL: recipient award/comment comparison remains unexecuted.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
-              "status": "FAIL",
-              "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
               "steps": [
-                "Open original private synthetic matrix draft with reporting enabled.",
-                "Save authored monthly reporting instructions.",
-                "Reload and reopen editor; authored text retained.",
-                "Compare Details, which substitutes generic monthly reporting sentence."
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
               ],
+              "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-                  "label": "cloud-reporting-editor-reloaded-360.png"
-                },
-                {
-                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-                  "label": "cloud-reporting-details-mismatch-360.png"
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
+                  "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
                 }
-              ],
-              "observedAt": "2026-09-14T23:56:33.929Z"
+              ]
             },
             {
               "size": "390×844",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.929Z"
+              "measuredCss": "390x844",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+                  "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "768×1024",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.929Z"
+              "measuredCss": "768x1024",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1024×768",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.929Z"
+              "measuredCss": "1024x768",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1280×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.929Z"
+              "measuredCss": "1280x800",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1440×900",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:33.929Z"
+              "measuredCss": "1440x900",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             }
           ],
-          "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
+          "limitations": "One disabled save/reload plus six controls/readbacks, not six independent disabled saves. Recipient award/comment branch missing. Desktop screenshots private and excluded.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-              "label": "cloud-reporting-editor-reloaded-360.png"
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
+              "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
             },
             {
-              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-              "label": "cloud-reporting-details-mismatch-360.png"
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+              "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-disabled-360.png",
+              "label": "cloud-reporting-disabled-360; shared approved evidence, size as filename"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
@@ -12855,8 +13149,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-case-navigation-partial",
-        "updatedAt": "2026-09-15T00:53:41.302Z",
+        "runId": "2026-09-14-close37-reporting-seed",
+        "updatedAt": "2026-09-15T01:12:30.494Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -13504,7 +13798,7 @@
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "4fb6aded703e643dae2a7c807736e86676a2c864",
+      "commit": "e500141fe64ad21d62684a9f715875e8c9051309",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -14245,86 +14539,152 @@
           "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
           "historicalStatus": "Open",
           "status": "FAIL",
-          "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+          "retestSummary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
               "status": "FAIL",
-              "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+              "summary": "Seed remains selected after save/reload in editor but omitted from Details; reporting subcheck PASS.",
               "steps": [
-                "Open original private synthetic matrix draft with reporting enabled.",
-                "Save authored monthly reporting instructions.",
-                "Reload and reopen editor; authored text retained.",
-                "Compare Details, which substitutes generic monthly reporting sentence."
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
               ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "FAIL",
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-                  "label": "cloud-reporting-editor-reloaded-360.png"
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-editor-360.png",
+                  "label": "cloud-seed-editor-360; shared approved evidence, size as filename"
                 },
                 {
-                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-                  "label": "cloud-reporting-details-mismatch-360.png"
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
+                  "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
                 }
-              ],
-              "observedAt": "2026-09-14T23:56:34.308Z"
+              ]
             },
             {
               "size": "390×844",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:34.308Z"
+              "measuredCss": "390x844",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+                  "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "768×1024",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:34.308Z"
+              "measuredCss": "768x1024",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1024×768",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:34.308Z"
+              "measuredCss": "1024x768",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1280×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:34.308Z"
+              "measuredCss": "1280x800",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1440×900",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:34.308Z"
+              "measuredCss": "1440x900",
+              "status": "PARTIAL",
+              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "seedEligibilityStatus": "NOT RUN",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             }
           ],
-          "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
+          "limitations": "Seed tested at360 only; other five Seed cells NOT RUN. Reporting subcheck PASS all six. No published grant, invitation or financial mutation.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-              "label": "cloud-reporting-editor-reloaded-360.png"
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
+              "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
             },
             {
-              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-              "label": "cloud-reporting-details-mismatch-360.png"
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+              "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-disabled-360.png",
+              "label": "cloud-reporting-disabled-360; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-editor-360.png",
+              "label": "cloud-seed-editor-360; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
+              "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
@@ -14338,87 +14698,135 @@
           "scenario": "ADM-053",
           "summary": "Disbursement detail shows a comment never entered and monthly ongoing reporting while tracking is disabled.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+          "status": "PARTIAL",
+          "retestSummary": "Authored reporting instructions PASS six independent enabled edit/save/full reload/editor rereads, including newline, Unicode and long-reference wrapping. Disabled state persisted once and checked at six sizes. Original text/enabled state restored and confirmed after full reload. Whole finding PARTIAL: recipient award/comment comparison remains unexecuted.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
-              "status": "FAIL",
-              "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
               "steps": [
-                "Open original private synthetic matrix draft with reporting enabled.",
-                "Save authored monthly reporting instructions.",
-                "Reload and reopen editor; authored text retained.",
-                "Compare Details, which substitutes generic monthly reporting sentence."
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
               ],
+              "reportingInstructionsStatus": "PASS",
               "evidence": [
                 {
-                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-                  "label": "cloud-reporting-editor-reloaded-360.png"
-                },
-                {
-                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-                  "label": "cloud-reporting-details-mismatch-360.png"
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
+                  "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
                 }
-              ],
-              "observedAt": "2026-09-14T23:56:34.308Z"
+              ]
             },
             {
               "size": "390×844",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:34.308Z"
+              "measuredCss": "390x844",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+                  "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "768×1024",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:34.308Z"
+              "measuredCss": "768x1024",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1024×768",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:34.308Z"
+              "measuredCss": "1024x768",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1280×800",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:34.308Z"
+              "measuredCss": "1280x800",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             },
             {
               "size": "1440×900",
-              "measuredCss": null,
-              "status": "NOT RUN",
-              "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-              "steps": [],
-              "evidence": [],
-              "observedAt": "2026-09-14T23:56:34.308Z"
+              "measuredCss": "1440x900",
+              "status": "PARTIAL",
+              "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+              "steps": [
+                "Normal Actions/Edit and Next",
+                "Save controlled private draft",
+                "Full reload then Details and editor readback"
+              ],
+              "reportingInstructionsStatus": "PASS",
+              "evidence": [
+                {
+                  "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+                  "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+                }
+              ]
             }
           ],
-          "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
+          "limitations": "One disabled save/reload plus six controls/readbacks, not six independent disabled saves. Recipient award/comment branch missing. Desktop screenshots private and excluded.",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-              "label": "cloud-reporting-editor-reloaded-360.png"
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
+              "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
             },
             {
-              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-              "label": "cloud-reporting-details-mismatch-360.png"
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+              "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            },
+            {
+              "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-disabled-360.png",
+              "label": "cloud-reporting-disabled-360; shared approved evidence, size as filename"
             }
           ],
           "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
@@ -14766,8 +15174,8 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-admin-award-ledger-fail",
-        "updatedAt": "2026-09-15T00:41:27.524Z",
+        "runId": "2026-09-14-close37-reporting-seed",
+        "updatedAt": "2026-09-15T01:12:30.494Z",
         "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
         "deployments": {
           "webapp": {
@@ -16922,86 +17330,152 @@
       "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
       "historicalStatus": "Open",
       "status": "FAIL",
-      "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+      "retestSummary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions.",
       "responsive": [
         {
           "size": "360×800",
           "measuredCss": "360x800",
           "status": "FAIL",
-          "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+          "summary": "Seed remains selected after save/reload in editor but omitted from Details; reporting subcheck PASS.",
           "steps": [
-            "Open original private synthetic matrix draft with reporting enabled.",
-            "Save authored monthly reporting instructions.",
-            "Reload and reopen editor; authored text retained.",
-            "Compare Details, which substitutes generic monthly reporting sentence."
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
           ],
+          "reportingInstructionsStatus": "PASS",
+          "seedEligibilityStatus": "FAIL",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-              "label": "cloud-reporting-editor-reloaded-360.png"
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-editor-360.png",
+              "label": "cloud-seed-editor-360; shared approved evidence, size as filename"
             },
             {
-              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-              "label": "cloud-reporting-details-mismatch-360.png"
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
+              "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
             }
-          ],
-          "observedAt": "2026-09-14T23:56:33.561Z"
+          ]
         },
         {
           "size": "390×844",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.561Z"
+          "measuredCss": "390x844",
+          "status": "PARTIAL",
+          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "seedEligibilityStatus": "NOT RUN",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+              "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+            }
+          ]
         },
         {
           "size": "768×1024",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.561Z"
+          "measuredCss": "768x1024",
+          "status": "PARTIAL",
+          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "seedEligibilityStatus": "NOT RUN",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            }
+          ]
         },
         {
           "size": "1024×768",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.561Z"
+          "measuredCss": "1024x768",
+          "status": "PARTIAL",
+          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "seedEligibilityStatus": "NOT RUN",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            }
+          ]
         },
         {
           "size": "1280×800",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.561Z"
+          "measuredCss": "1280x800",
+          "status": "PARTIAL",
+          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "seedEligibilityStatus": "NOT RUN",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            }
+          ]
         },
         {
           "size": "1440×900",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.561Z"
+          "measuredCss": "1440x900",
+          "status": "PARTIAL",
+          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "seedEligibilityStatus": "NOT RUN",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            }
+          ]
         }
       ],
-      "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
+      "limitations": "Seed tested at360 only; other five Seed cells NOT RUN. Reporting subcheck PASS all six. No published grant, invitation or financial mutation.",
       "evidence": [
         {
-          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-          "label": "cloud-reporting-editor-reloaded-360.png"
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
+          "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
         },
         {
-          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-          "label": "cloud-reporting-details-mismatch-360.png"
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+          "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+          "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-disabled-360.png",
+          "label": "cloud-reporting-disabled-360; shared approved evidence, size as filename"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-editor-360.png",
+          "label": "cloud-seed-editor-360; shared approved evidence, size as filename"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
+          "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
         }
       ],
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
@@ -17020,87 +17494,135 @@
       "scenario": "ADM-053",
       "summary": "Disbursement detail shows a comment never entered and monthly ongoing reporting while tracking is disabled.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+      "status": "PARTIAL",
+      "retestSummary": "Authored reporting instructions PASS six independent enabled edit/save/full reload/editor rereads, including newline, Unicode and long-reference wrapping. Disabled state persisted once and checked at six sizes. Original text/enabled state restored and confirmed after full reload. Whole finding PARTIAL: recipient award/comment comparison remains unexecuted.",
       "responsive": [
         {
           "size": "360×800",
           "measuredCss": "360x800",
-          "status": "FAIL",
-          "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+          "status": "PARTIAL",
+          "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
           "steps": [
-            "Open original private synthetic matrix draft with reporting enabled.",
-            "Save authored monthly reporting instructions.",
-            "Reload and reopen editor; authored text retained.",
-            "Compare Details, which substitutes generic monthly reporting sentence."
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
           ],
+          "reportingInstructionsStatus": "PASS",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-              "label": "cloud-reporting-editor-reloaded-360.png"
-            },
-            {
-              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-              "label": "cloud-reporting-details-mismatch-360.png"
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
+              "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
             }
-          ],
-          "observedAt": "2026-09-14T23:56:33.561Z"
+          ]
         },
         {
           "size": "390×844",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.561Z"
+          "measuredCss": "390x844",
+          "status": "PARTIAL",
+          "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+              "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+            }
+          ]
         },
         {
           "size": "768×1024",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.561Z"
+          "measuredCss": "768x1024",
+          "status": "PARTIAL",
+          "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            }
+          ]
         },
         {
           "size": "1024×768",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.561Z"
+          "measuredCss": "1024x768",
+          "status": "PARTIAL",
+          "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            }
+          ]
         },
         {
           "size": "1280×800",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.561Z"
+          "measuredCss": "1280x800",
+          "status": "PARTIAL",
+          "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            }
+          ]
         },
         {
           "size": "1440×900",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.561Z"
+          "measuredCss": "1440x900",
+          "status": "PARTIAL",
+          "summary": "Authored reporting instructions saved, full reloaded and editor reread PASS; recipient award comparison NOT RUN.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            }
+          ]
         }
       ],
-      "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
+      "limitations": "One disabled save/reload plus six controls/readbacks, not six independent disabled saves. Recipient award/comment branch missing. Desktop screenshots private and excluded.",
       "evidence": [
         {
-          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-          "label": "cloud-reporting-editor-reloaded-360.png"
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
+          "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
         },
         {
-          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-          "label": "cloud-reporting-details-mismatch-360.png"
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+          "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+          "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-disabled-360.png",
+          "label": "cloud-reporting-disabled-360; shared approved evidence, size as filename"
         }
       ],
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
@@ -18715,86 +19237,152 @@
       "summary": "Funding-stage eligibility disappeared; invitation/public settings reverted; Even Split changed to Fixed Solo; reporting cadence disagreed with setup.",
       "historicalStatus": "Open",
       "status": "FAIL",
-      "retestSummary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+      "retestSummary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions.",
       "responsive": [
         {
           "size": "360×800",
           "measuredCss": "360x800",
           "status": "FAIL",
-          "summary": "Fresh exact-live-release360x800 enabled-reporting check: authored instructions \"Close37 verified 360: report progress, challenges and next steps monthly. Synthetic draft only.\" persist after save/reload/reopen editor, but Details replaces them with \"This grantor requires monthly reporting.\" One shared display/configuration mismatch; other five sizes not executed for this fresh branch. No funding or publication.",
+          "summary": "Seed remains selected after save/reload in editor but omitted from Details; reporting subcheck PASS.",
           "steps": [
-            "Open original private synthetic matrix draft with reporting enabled.",
-            "Save authored monthly reporting instructions.",
-            "Reload and reopen editor; authored text retained.",
-            "Compare Details, which substitutes generic monthly reporting sentence."
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
           ],
+          "reportingInstructionsStatus": "PASS",
+          "seedEligibilityStatus": "FAIL",
           "evidence": [
             {
-              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-              "label": "cloud-reporting-editor-reloaded-360.png"
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-editor-360.png",
+              "label": "cloud-seed-editor-360; shared approved evidence, size as filename"
             },
             {
-              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-              "label": "cloud-reporting-details-mismatch-360.png"
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
+              "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
             }
-          ],
-          "observedAt": "2026-09-14T23:56:33.229Z"
+          ]
         },
         {
           "size": "390×844",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.229Z"
+          "measuredCss": "390x844",
+          "status": "PARTIAL",
+          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "seedEligibilityStatus": "NOT RUN",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+              "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+            }
+          ]
         },
         {
           "size": "768×1024",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.229Z"
+          "measuredCss": "768x1024",
+          "status": "PARTIAL",
+          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "seedEligibilityStatus": "NOT RUN",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            }
+          ]
         },
         {
           "size": "1024×768",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.229Z"
+          "measuredCss": "1024x768",
+          "status": "PARTIAL",
+          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "seedEligibilityStatus": "NOT RUN",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            }
+          ]
         },
         {
           "size": "1280×800",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.229Z"
+          "measuredCss": "1280x800",
+          "status": "PARTIAL",
+          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "seedEligibilityStatus": "NOT RUN",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            }
+          ]
         },
         {
           "size": "1440×900",
-          "measuredCss": null,
-          "status": "NOT RUN",
-          "summary": "Not executed for this fresh exact-release enabled-reporting branch; historical results preserved.",
-          "steps": [],
-          "evidence": [],
-          "observedAt": "2026-09-14T23:56:33.229Z"
+          "measuredCss": "1440x900",
+          "status": "PARTIAL",
+          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "steps": [
+            "Normal Actions/Edit and Next",
+            "Save controlled private draft",
+            "Full reload then Details and editor readback"
+          ],
+          "reportingInstructionsStatus": "PASS",
+          "seedEligibilityStatus": "NOT RUN",
+          "evidence": [
+            {
+              "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+              "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+            }
+          ]
         }
       ],
-      "limitations": "Fresh360 authored-reporting mismatch only, on recorded live versions. Other five cells NOT RUN for this branch; previous results preserved in archive. Existing OFF-reporting evidence is not invalidated. No complete six-size acceptance claimed.",
+      "limitations": "Seed tested at360 only; other five Seed cells NOT RUN. Reporting subcheck PASS all six. No published grant, invitation or financial mutation.",
       "evidence": [
         {
-          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-editor-reloaded-360.png",
-          "label": "cloud-reporting-editor-reloaded-360.png"
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
+          "label": "cloud-reporting-fixed-360; shared approved evidence, size as filename"
         },
         {
-          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-live-authored-reporting/cloud-reporting-details-mismatch-360.png",
-          "label": "cloud-reporting-details-mismatch-360.png"
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
+          "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
+          "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-disabled-360.png",
+          "label": "cloud-reporting-disabled-360; shared approved evidence, size as filename"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-editor-360.png",
+          "label": "cloud-seed-editor-360; shared approved evidence, size as filename"
+        },
+        {
+          "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
+          "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
         }
       ],
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
