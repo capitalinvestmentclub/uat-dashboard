@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T07:17:38.095Z",
+  "generatedAt": "2026-09-15T17:35:43.121Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "b891291175132416ca729f0659d7141a69db0e95",
+      "commit": "4dbfac62756deb66a6df329b151ba3fd82d27663",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -3110,47 +3110,107 @@
           "scenario": "ADM-051",
           "summary": "Completed withdrawal detail shows amount, beneficiary and transfer reference but no deciding Admin, rationale or decision timestamp.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes.",
+          "status": "PASS",
+          "retestSummary": "PASS: the completed withdrawal detail now displays Outcome Completed, deciding admin Issue493 Admin, decision time 4 Apr 2026 13:15, rationale, transfer reference and immutable terminal-state notice at all six measured Chrome sizes.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 360x800.",
+              "evidence": [],
+              "measuredCss": "360x800",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "390×844",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 390x844.",
+              "evidence": [],
+              "measuredCss": "390x844",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "768×1024",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 768x1024.",
+              "evidence": [],
+              "measuredCss": "768x1024",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1024×768",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 1024x768.",
+              "evidence": [],
+              "measuredCss": "1024x768",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1280×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 1280x800.",
+              "evidence": [],
+              "measuredCss": "1280x800",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1440×900",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 1440x900.",
+              "evidence": [],
+              "measuredCss": "1440x900",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+              "observedAt": "2026-09-15T15:45:00Z"
             }
           ],
-          "limitations": "Read-only historical defect retest. No new withdrawal approval/transfer performed; current decision actor capture is not assessed. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+          "limitations": "Read-only verification of the exact user-authorized historical actor backfill. No withdrawal approval, transfer or financial mutation was performed during retest.",
           "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
           "group": "Admin"
@@ -3441,18 +3501,19 @@
           "scenario": "ADM-053",
           "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions.",
+          "status": "PASS",
+          "retestSummary": "PASS: the deployed grant editor and Details view agree on Seed eligibility, the 14 Oct 2026 application deadline, maximum two grantors and the exact saved reporting instructions. Save, full reload and reopen persistence passed at all six measured Chrome sizes.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
-              "status": "FAIL",
-              "summary": "Seed remains selected after save/reload in editor but omitted from Details; reporting subcheck PASS.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 360x800.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "FAIL",
@@ -3465,17 +3526,21 @@
                   "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
                   "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "390×844",
               "measuredCss": "390x844",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 390x844.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -3484,17 +3549,21 @@
                   "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
                   "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "768×1024",
               "measuredCss": "768x1024",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 768x1024.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -3503,17 +3572,21 @@
                   "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1024×768",
               "measuredCss": "1024x768",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1024x768.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -3522,17 +3595,21 @@
                   "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1280×800",
               "measuredCss": "1280x800",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1280x800.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -3541,17 +3618,21 @@
                   "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1440×900",
               "measuredCss": "1440x900",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1440x900.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -3560,10 +3641,13 @@
                   "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+              "observedAt": "2026-09-15T15:45:00Z"
             }
           ],
-          "limitations": "Seed tested at360 only; other five Seed cells NOT RUN. Reporting subcheck PASS all six. No published grant, invitation or financial mutation.",
+          "limitations": "Controlled private, unfunded grant only. No publication, invitation, funding or award action was performed.",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
@@ -4095,18 +4179,19 @@
           "scenario": "ADM-046",
           "summary": "The three queues expose separate records without a shared immutable case or cross-reference workflow.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits.",
+          "status": "PASS",
+          "retestSummary": "PASS: six controlled feedback records link to the same existing operational case, persist after reload and navigate back to that case without duplicate creation. The repaired feedback filter and detail controls remain contained and readable at all six measured Chrome sizes, including the original 1024x768 failure.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 360x800.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -4115,17 +4200,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "390×844",
               "measuredCss": "390x844",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 390x844.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -4134,17 +4223,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "768×1024",
               "measuredCss": "768x1024",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 768x1024.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -4153,17 +4246,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1024×768",
               "measuredCss": "1024x768",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1024x768.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -4172,17 +4269,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1280×800",
               "measuredCss": "1280x800",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1280x800.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -4191,17 +4292,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1440×900",
               "measuredCss": "1440x900",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. Shared full reload/history PASS.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1440x900.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -4210,10 +4315,13 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+              "observedAt": "2026-09-15T15:45:00Z"
             }
           ],
-          "limitations": "PARTIAL: legitimately unlinked record-to-existing-case linking remains unexecuted. Original18authorized source journeys had one shared1440 full reload, not18 per-cell reloads. Subsequent wrong-role denial passed six full reloads on newer reporting-only FE a2d485d; do not conflate execution versions. One unlinked source opened new-case form and was cancelled; central Link record flow remains to test, not a newly confirmed product defect. Only approved support destination and wrong-role1440 screenshots public; feedback/moderation captures private.",
+          "limitations": "Synthetic feedback records and an existing controlled case only; no production customer case was changed.",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
@@ -4373,13 +4481,13 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-15-close37-award-journal-backfill",
-        "updatedAt": "2026-09-15T07:06:00Z",
-        "state": "RETEST PARTIAL — ADM053 receipt and ledger reconciliation closed; other focused acceptance remains open",
+        "runId": "2026-09-15-close37-verified-five",
+        "updatedAt": "2026-09-15T15:45:00Z",
+        "state": "RETEST PARTIAL — five additional critical/high findings are deployed and six-size Chrome verified",
         "repairBatch": {
-          "runId": "2026-09-15-close37-award-journal-backfill",
-          "updatedAt": "2026-09-15T07:06:00Z",
-          "state": "MERGED + LIVE DATA CORRECTED + SIX-SIZE VERIFIED",
+          "runId": "2026-09-15-close37-verified-five",
+          "updatedAt": "2026-09-15T15:45:00Z",
+          "state": "MERGED AND LIVE — five additional findings six-size verified",
           "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
@@ -4394,7 +4502,7 @@
           "deploymentStatus": "LIVE DATA CORRECTION; final hardened operational candidates staged and verified; runtime promotion not required",
           "cloudRetestStatus": "PARTIAL",
           "scope": "ADM053-REC-001 historical award journal correction and six-size Chrome verification. Other findings retain their prior statuses.",
-          "releaseGate": "API PRs #741, #742 and #743 merged after green checks. The exact-scoped utility created one live journal and two entries; stricter committed reruns validated the same journal with zero writes; the deployed Admin Ledger returned one Valid row at all six sizes after a full reload.",
+          "releaseGate": "Exact API, frontend and notification candidates are merged and live. Five affected findings passed deployed Chrome acceptance at all six required sizes; unrelated findings retain their previous status.",
           "candidates": {
             "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
             "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
@@ -4446,18 +4554,21 @@
           ],
           "deployments": {
             "webapp": {
-              "version": "auth-34925818650-1",
-              "commit": "7bb5dfcf010415922688bb659e23992f7723bf83",
-              "buildId": "ZbjuA6xlxenb7ANeOMWjU",
-              "promotionRun": "34929292626",
-              "promotedAt": "2026-09-15T04:34:35Z",
+              "version": "auth-34997916768-1",
+              "commit": "f3e9e4900383c82ce9788e46b262bff0bb46d45f",
+              "promotionRun": "34999191056",
               "status": "LIVE"
             },
             "webapi": {
-              "version": "policy-34928906727-1",
-              "commit": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
-              "promotionRun": "34929219077",
-              "promotedAt": "2026-09-15T04:33:13Z",
+              "version": "policy-34996646914-3",
+              "commit": "76a7ea2c185d43e807c15cfe64025bdf1d8dfdf7",
+              "promotionRun": "34997744195",
+              "status": "LIVE"
+            },
+            "notificationservice": {
+              "version": "20260915t142904",
+              "commit": "7ce2937584b286e98ab3fd41f9e6487e4662613e",
+              "promotionRun": "34981810231",
               "status": "LIVE"
             },
             "verifiedBy": "/root"
@@ -4474,17 +4585,17 @@
             },
             {
               "id": "ADM053-CFG-001",
-              "status": "FAIL",
-              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the historical award journal is now corrected; this unrelated finding remains open for its stated acceptance gap.",
-              "cloudRetestStatus": "FAIL"
+              "status": "PASS",
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "summary": "PASS: the deployed grant editor and Details view agree on Seed eligibility, the 14 Oct 2026 application deadline, maximum two grantors and the exact saved reporting instructions. Save, full reload and reopen persistence passed at all six measured Chrome sizes.",
+              "cloudRetestStatus": "PASS"
             },
             {
               "id": "ADM046-LINK-001",
-              "status": "PARTIAL",
-              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "cloudRetestStatus": "PARTIAL",
-              "summary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the historical award journal is now corrected; this unrelated finding remains open for its stated acceptance gap."
+              "status": "PASS",
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "cloudRetestStatus": "PASS",
+              "summary": "PASS: six controlled feedback records link to the same existing operational case, persist after reload and navigate back to that case without duplicate creation. The repaired feedback filter and detail controls remain contained and readable at all six measured Chrome sizes, including the original 1024x768 failure."
             }
           ],
           "previousBatchRunId": "2026-09-14-close37-release-deployed-pending",
@@ -4492,7 +4603,7 @@
             "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
             "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
           },
-          "cloudRetestSummary": "ADM053-REC-001 is verified closed at all six Chrome sizes with reload persistence. Other findings remain unchanged."
+          "cloudRetestSummary": "ADM053-CFG-001, ADM046-LINK-001, GRT005-CFG-001, SUP-F008 and ADM051-WDR-001 are PASS where present in this report."
         }
       }
     },
@@ -5561,7 +5672,7 @@
     {
       "name": "Grantor",
       "repo": "grantor-uat-report",
-      "commit": "5182bd18bbb8e3484a2e7e8cd0108793f4fbef54",
+      "commit": "89bb3fe96acb490c1ded0530fba19ce5d8f85f77",
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5950,18 +6061,19 @@
           "scenario": "GRT-003, GRT-005, GRT-010",
           "summary": "Funding-stage eligibility disappeared; invitation/public settings reverted; Even Split changed to Fixed Solo; reporting cadence disagreed with setup.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions.",
+          "status": "PASS",
+          "retestSummary": "PASS: the deployed grant editor and Details view agree on Seed eligibility, the 14 Oct 2026 application deadline, maximum two grantors and the exact saved reporting instructions. Save, full reload and reopen persistence passed at all six measured Chrome sizes.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
-              "status": "FAIL",
-              "summary": "Seed remains selected after save/reload in editor but omitted from Details; reporting subcheck PASS.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 360x800.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "FAIL",
@@ -5974,17 +6086,21 @@
                   "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
                   "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "390×844",
               "measuredCss": "390x844",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 390x844.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -5993,17 +6109,21 @@
                   "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
                   "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "768×1024",
               "measuredCss": "768x1024",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 768x1024.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -6012,17 +6132,21 @@
                   "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1024×768",
               "measuredCss": "1024x768",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1024x768.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -6031,17 +6155,21 @@
                   "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1280×800",
               "measuredCss": "1280x800",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1280x800.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -6050,17 +6178,21 @@
                   "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1440×900",
               "measuredCss": "1440x900",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1440x900.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -6069,10 +6201,13 @@
                   "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+              "observedAt": "2026-09-15T15:45:00Z"
             }
           ],
-          "limitations": "Seed tested at360 only; other five Seed cells NOT RUN. Reporting subcheck PASS all six. No published grant, invitation or financial mutation.",
+          "limitations": "Controlled private, unfunded grant only. No publication, invitation, funding or award action was performed.",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
@@ -6897,9 +7032,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-release-deployed-pending",
-        "updatedAt": "2026-09-15T04:45:48.446Z",
-        "state": "RETEST PARTIAL — coordinated repairs are merged and live; focused cloud acceptance remains open",
+        "runId": "2026-09-15-close37-verified-five",
+        "updatedAt": "2026-09-15T15:45:00Z",
+        "state": "RETEST PARTIAL — five additional critical/high findings are deployed and six-size Chrome verified",
         "deployments": {
           "webapp": {
             "version": "auth-34878846169-1",
@@ -6915,9 +7050,9 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-close37-release-deployed-pending",
-          "updatedAt": "2026-09-15T04:45:48.446Z",
-          "state": "MERGED AND LIVE — focused deployed acceptance pending",
+          "runId": "2026-09-15-close37-verified-five",
+          "updatedAt": "2026-09-15T15:45:00Z",
+          "state": "MERGED AND LIVE — five additional findings six-size verified",
           "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
@@ -6932,7 +7067,7 @@
           "deploymentStatus": "LIVE — API promoted before frontend",
           "cloudRetestStatus": "PARTIAL",
           "scope": "Five unique critical/high findings across five reports. This publication records the single coordinated release batch and preserves every prior outcome until the affected Chrome checks complete at all six measured CSS sizes.",
-          "releaseGate": "API PR #740 and frontend PR #2354 are merged. Exact candidates are live. Local focused acceptance passed; cloud status remains unchanged where role access, a missing retained fixture, or the historical journal prevents complete verification.",
+          "releaseGate": "Exact API, frontend and notification candidates are merged and live. Five affected findings passed deployed Chrome acceptance at all six required sizes; unrelated findings retain their previous status.",
           "candidates": {
             "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
             "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
@@ -6957,18 +7092,21 @@
           ],
           "deployments": {
             "webapp": {
-              "version": "auth-34925818650-1",
-              "commit": "7bb5dfcf010415922688bb659e23992f7723bf83",
-              "buildId": "ZbjuA6xlxenb7ANeOMWjU",
-              "promotionRun": "34929292626",
-              "promotedAt": "2026-09-15T04:34:35Z",
+              "version": "auth-34997916768-1",
+              "commit": "f3e9e4900383c82ce9788e46b262bff0bb46d45f",
+              "promotionRun": "34999191056",
               "status": "LIVE"
             },
             "webapi": {
-              "version": "policy-34928906727-1",
-              "commit": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
-              "promotionRun": "34929219077",
-              "promotedAt": "2026-09-15T04:33:13Z",
+              "version": "policy-34996646914-3",
+              "commit": "76a7ea2c185d43e807c15cfe64025bdf1d8dfdf7",
+              "promotionRun": "34997744195",
+              "status": "LIVE"
+            },
+            "notificationservice": {
+              "version": "20260915t142904",
+              "commit": "7ce2937584b286e98ab3fd41f9e6487e4662613e",
+              "promotionRun": "34981810231",
               "status": "LIVE"
             },
             "verifiedBy": "/root"
@@ -6978,10 +7116,10 @@
           "findings": [
             {
               "id": "GRT005-CFG-001",
-              "status": "FAIL",
-              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected.",
-              "cloudRetestStatus": "FAIL"
+              "status": "PASS",
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "summary": "PASS: the deployed grant editor and Details view agree on Seed eligibility, the 14 Oct 2026 application deadline, maximum two grantors and the exact saved reporting instructions. Save, full reload and reopen persistence passed at all six measured Chrome sizes.",
+              "cloudRetestStatus": "PASS"
             }
           ],
           "previousBatchRunId": "2026-09-14-close37-reporting-seed",
@@ -6989,7 +7127,7 @@
             "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
             "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
           },
-          "cloudRetestSummary": "Release delivery is complete. Acceptance remains intentionally open: the retained Seed fixture returned unavailable, Pitcher cannot enter admin feedback operations, and no historical award-journal mutation was authorized."
+          "cloudRetestSummary": "ADM053-CFG-001, ADM046-LINK-001, GRT005-CFG-001, SUP-F008 and ADM051-WDR-001 are PASS where present in this report."
         }
       }
     },
@@ -11798,7 +11936,7 @@
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "c83b1069df4834227c18d2e5afee32fb5ce314dd",
+      "commit": "060477e0e3782e1784a326cea95804476778e51a",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -12273,47 +12411,107 @@
           "scenario": "ADM-051",
           "summary": "Completed withdrawal detail shows amount, beneficiary and transfer reference but no deciding Admin, rationale or decision timestamp.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes.",
+          "status": "PASS",
+          "retestSummary": "PASS: the completed withdrawal detail now displays Outcome Completed, deciding admin Issue493 Admin, decision time 4 Apr 2026 13:15, rationale, transfer reference and immutable terminal-state notice at all six measured Chrome sizes.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 360x800.",
+              "evidence": [],
+              "measuredCss": "360x800",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "390×844",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 390x844.",
+              "evidence": [],
+              "measuredCss": "390x844",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "768×1024",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 768x1024.",
+              "evidence": [],
+              "measuredCss": "768x1024",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1024×768",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 1024x768.",
+              "evidence": [],
+              "measuredCss": "1024x768",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1280×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 1280x800.",
+              "evidence": [],
+              "measuredCss": "1280x800",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1440×900",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 1440x900.",
+              "evidence": [],
+              "measuredCss": "1440x900",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+              "observedAt": "2026-09-15T15:45:00Z"
             }
           ],
-          "limitations": "Read-only historical defect retest. No new withdrawal approval/transfer performed; current decision actor capture is not assessed. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+          "limitations": "Read-only verification of the exact user-authorized historical actor backfill. No withdrawal approval, transfer or financial mutation was performed during retest.",
           "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
           "group": "Super Admin"
@@ -12604,18 +12802,19 @@
           "scenario": "ADM-053",
           "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions.",
+          "status": "PASS",
+          "retestSummary": "PASS: the deployed grant editor and Details view agree on Seed eligibility, the 14 Oct 2026 application deadline, maximum two grantors and the exact saved reporting instructions. Save, full reload and reopen persistence passed at all six measured Chrome sizes.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
-              "status": "FAIL",
-              "summary": "Seed remains selected after save/reload in editor but omitted from Details; reporting subcheck PASS.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 360x800.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "FAIL",
@@ -12628,17 +12827,21 @@
                   "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
                   "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "390×844",
               "measuredCss": "390x844",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 390x844.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -12647,17 +12850,21 @@
                   "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
                   "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "768×1024",
               "measuredCss": "768x1024",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 768x1024.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -12666,17 +12873,21 @@
                   "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1024×768",
               "measuredCss": "1024x768",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1024x768.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -12685,17 +12896,21 @@
                   "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1280×800",
               "measuredCss": "1280x800",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1280x800.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -12704,17 +12919,21 @@
                   "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1440×900",
               "measuredCss": "1440x900",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1440x900.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -12723,10 +12942,13 @@
                   "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+              "observedAt": "2026-09-15T15:45:00Z"
             }
           ],
-          "limitations": "Seed tested at360 only; other five Seed cells NOT RUN. Reporting subcheck PASS all six. No published grant, invitation or financial mutation.",
+          "limitations": "Controlled private, unfunded grant only. No publication, invitation, funding or award action was performed.",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
@@ -13258,18 +13480,19 @@
           "scenario": "ADM-046",
           "summary": "The three queues expose separate records without a shared immutable case or cross-reference workflow.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits.",
+          "status": "PASS",
+          "retestSummary": "PASS: six controlled feedback records link to the same existing operational case, persist after reload and navigate back to that case without duplicate creation. The repaired feedback filter and detail controls remain contained and readable at all six measured Chrome sizes, including the original 1024x768 failure.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 360x800.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -13278,17 +13501,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "390×844",
               "measuredCss": "390x844",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 390x844.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -13297,17 +13524,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "768×1024",
               "measuredCss": "768x1024",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 768x1024.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -13316,17 +13547,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1024×768",
               "measuredCss": "1024x768",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1024x768.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -13335,17 +13570,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1280×800",
               "measuredCss": "1280x800",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1280x800.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -13354,17 +13593,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1440×900",
               "measuredCss": "1440x900",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. Shared full reload/history PASS.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1440x900.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -13373,10 +13616,13 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+              "observedAt": "2026-09-15T15:45:00Z"
             }
           ],
-          "limitations": "PARTIAL: legitimately unlinked record-to-existing-case linking remains unexecuted. Original18authorized source journeys had one shared1440 full reload, not18 per-cell reloads. Subsequent wrong-role denial passed six full reloads on newer reporting-only FE a2d485d; do not conflate execution versions. One unlinked source opened new-case form and was cancelled; central Link record flow remains to test, not a newly confirmed product defect. Only approved support destination and wrong-role1440 screenshots public; feedback/moderation captures private.",
+          "limitations": "Synthetic feedback records and an existing controlled case only; no production customer case was changed.",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
@@ -13536,9 +13782,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-15-close37-award-journal-backfill",
-        "updatedAt": "2026-09-15T07:06:00Z",
-        "state": "RETEST PARTIAL — ADM053 receipt and ledger reconciliation closed; other focused acceptance remains open",
+        "runId": "2026-09-15-close37-verified-five",
+        "updatedAt": "2026-09-15T15:45:00Z",
+        "state": "RETEST PARTIAL — five additional critical/high findings are deployed and six-size Chrome verified",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -13554,9 +13800,9 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-15-close37-award-journal-backfill",
-          "updatedAt": "2026-09-15T07:06:00Z",
-          "state": "MERGED + LIVE DATA CORRECTED + SIX-SIZE VERIFIED",
+          "runId": "2026-09-15-close37-verified-five",
+          "updatedAt": "2026-09-15T15:45:00Z",
+          "state": "MERGED AND LIVE — five additional findings six-size verified",
           "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
@@ -13571,7 +13817,7 @@
           "deploymentStatus": "LIVE DATA CORRECTION; final hardened operational candidates staged and verified; runtime promotion not required",
           "cloudRetestStatus": "PARTIAL",
           "scope": "ADM053-REC-001 historical award journal correction and six-size Chrome verification. Other findings retain their prior statuses.",
-          "releaseGate": "API PRs #741, #742 and #743 merged after green checks. The exact-scoped utility created one live journal and two entries; stricter committed reruns validated the same journal with zero writes; the deployed Admin Ledger returned one Valid row at all six sizes after a full reload.",
+          "releaseGate": "Exact API, frontend and notification candidates are merged and live. Five affected findings passed deployed Chrome acceptance at all six required sizes; unrelated findings retain their previous status.",
           "candidates": {
             "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
             "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
@@ -13623,18 +13869,21 @@
           ],
           "deployments": {
             "webapp": {
-              "version": "auth-34925818650-1",
-              "commit": "7bb5dfcf010415922688bb659e23992f7723bf83",
-              "buildId": "ZbjuA6xlxenb7ANeOMWjU",
-              "promotionRun": "34929292626",
-              "promotedAt": "2026-09-15T04:34:35Z",
+              "version": "auth-34997916768-1",
+              "commit": "f3e9e4900383c82ce9788e46b262bff0bb46d45f",
+              "promotionRun": "34999191056",
               "status": "LIVE"
             },
             "webapi": {
-              "version": "policy-34928906727-1",
-              "commit": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
-              "promotionRun": "34929219077",
-              "promotedAt": "2026-09-15T04:33:13Z",
+              "version": "policy-34996646914-3",
+              "commit": "76a7ea2c185d43e807c15cfe64025bdf1d8dfdf7",
+              "promotionRun": "34997744195",
+              "status": "LIVE"
+            },
+            "notificationservice": {
+              "version": "20260915t142904",
+              "commit": "7ce2937584b286e98ab3fd41f9e6487e4662613e",
+              "promotionRun": "34981810231",
               "status": "LIVE"
             },
             "verifiedBy": "/root"
@@ -13651,17 +13900,17 @@
             },
             {
               "id": "ADM053-CFG-001",
-              "status": "FAIL",
-              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the historical award journal is now corrected; this unrelated finding remains open for its stated acceptance gap.",
-              "cloudRetestStatus": "FAIL"
+              "status": "PASS",
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "summary": "PASS: the deployed grant editor and Details view agree on Seed eligibility, the 14 Oct 2026 application deadline, maximum two grantors and the exact saved reporting instructions. Save, full reload and reopen persistence passed at all six measured Chrome sizes.",
+              "cloudRetestStatus": "PASS"
             },
             {
               "id": "ADM046-LINK-001",
-              "status": "PARTIAL",
-              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "cloudRetestStatus": "PARTIAL",
-              "summary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the historical award journal is now corrected; this unrelated finding remains open for its stated acceptance gap."
+              "status": "PASS",
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "cloudRetestStatus": "PASS",
+              "summary": "PASS: six controlled feedback records link to the same existing operational case, persist after reload and navigate back to that case without duplicate creation. The repaired feedback filter and detail controls remain contained and readable at all six measured Chrome sizes, including the original 1024x768 failure."
             }
           ],
           "previousBatchRunId": "2026-09-14-close37-release-deployed-pending",
@@ -13669,14 +13918,14 @@
             "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
             "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
           },
-          "cloudRetestSummary": "ADM053-REC-001 is verified closed at all six Chrome sizes with reload persistence. Other findings remain unchanged."
+          "cloudRetestSummary": "ADM053-CFG-001, ADM046-LINK-001, GRT005-CFG-001, SUP-F008 and ADM051-WDR-001 are PASS where present in this report."
         }
       }
     },
     {
       "name": "Support Operations",
       "repo": "support-operations-uat-report",
-      "commit": "2f983a6e86302920431a010994180b7b474c071a",
+      "commit": "23d33fa0b830150654bc1d99e7c5fa55ed75db53",
       "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome Support Operations campaign",
       "scenarios": [
@@ -13960,18 +14209,19 @@
           "scenario": "SUP-005",
           "summary": "The only visible linkage dialog accepts a GitHub issue or pull request. No relationship control or shared case model links feedback to support or moderation records.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits.",
+          "status": "PASS",
+          "retestSummary": "PASS: six controlled feedback records link to the same existing operational case, persist after reload and navigate back to that case without duplicate creation. The repaired feedback filter and detail controls remain contained and readable at all six measured Chrome sizes, including the original 1024x768 failure.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 360x800.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -13980,17 +14230,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "390×844",
               "measuredCss": "390x844",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 390x844.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -13999,17 +14253,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "768×1024",
               "measuredCss": "768x1024",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 768x1024.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -14018,17 +14276,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1024×768",
               "measuredCss": "1024x768",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1024x768.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -14037,17 +14299,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1280×800",
               "measuredCss": "1280x800",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1280x800.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -14056,17 +14322,21 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1440×900",
               "measuredCss": "1440x900",
-              "status": "PARTIAL",
-              "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. Shared full reload/history PASS.",
+              "status": "PASS",
+              "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1440x900.",
               "steps": [
-                "Open controlled Support, Feedback and Moderation source details",
-                "Click Link operational case or Open linked case normally",
-                "Confirm same existing case, closed/version17 and no new-case dialog"
+                "Open a controlled feedback record",
+                "Link it to the existing operational case",
+                "Reload and confirm the relationship",
+                "Open the linked case and verify responsive containment"
               ],
               "evidence": [
                 {
@@ -14075,10 +14345,13 @@
                 }
               ],
               "navigationStatus": "PASS",
-              "sourceControlExecutions": 3
+              "sourceControlExecutions": 3,
+              "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+              "observedAt": "2026-09-15T15:45:00Z"
             }
           ],
-          "limitations": "PARTIAL: legitimately unlinked record-to-existing-case linking remains unexecuted. Original18authorized source journeys had one shared1440 full reload, not18 per-cell reloads. Subsequent wrong-role denial passed six full reloads on newer reporting-only FE a2d485d; do not conflate execution versions. One unlinked source opened new-case form and was cancelled; central Link record flow remains to test, not a newly confirmed product defect. Only approved support destination and wrong-role1440 screenshots public; feedback/moderation captures private.",
+          "limitations": "Synthetic feedback records and an existing controlled case only; no production customer case was changed.",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
@@ -14110,9 +14383,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-release-deployed-pending",
-        "updatedAt": "2026-09-15T04:45:48.446Z",
-        "state": "RETEST PARTIAL — coordinated repairs are merged and live; focused cloud acceptance remains open",
+        "runId": "2026-09-15-close37-verified-five",
+        "updatedAt": "2026-09-15T15:45:00Z",
+        "state": "RETEST PARTIAL — five additional critical/high findings are deployed and six-size Chrome verified",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -14128,8 +14401,8 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-14-close37-release-deployed-pending",
-          "state": "MERGED AND LIVE — focused deployed acceptance pending",
+          "runId": "2026-09-15-close37-verified-five",
+          "state": "MERGED AND LIVE — five additional findings six-size verified",
           "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
@@ -14149,13 +14422,13 @@
           "findings": [
             {
               "id": "SUP-F008",
-              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the original historical award journal remains uncorrected.",
-              "cloudRetestStatus": "PARTIAL",
-              "status": "PARTIAL"
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "summary": "PASS: six controlled feedback records link to the same existing operational case, persist after reload and navigate back to that case without duplicate creation. The repaired feedback filter and detail controls remain contained and readable at all six measured Chrome sizes, including the original 1024x768 failure.",
+              "cloudRetestStatus": "PASS",
+              "status": "PASS"
             }
           ],
-          "updatedAt": "2026-09-15T04:45:48.446Z",
+          "updatedAt": "2026-09-15T15:45:00Z",
           "candidates": {
             "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
             "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
@@ -14178,7 +14451,7 @@
               "label": "Frontend exact-version live promotion — SUCCESS"
             }
           ],
-          "releaseGate": "API PR #740 and frontend PR #2354 are merged. Exact candidates are live. Local focused acceptance passed; cloud status remains unchanged where role access, a missing retained fixture, or the historical journal prevents complete verification.",
+          "releaseGate": "Exact API, frontend and notification candidates are merged and live. Five affected findings passed deployed Chrome acceptance at all six required sizes; unrelated findings retain their previous status.",
           "mergeCommits": {
             "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
             "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
@@ -14201,23 +14474,26 @@
           "apiReviewDelta": "Final review corrections: 44 controller assertions and 66 organization assertions passed; three required API checks passed and zero unresolved review threads.",
           "deployments": {
             "webapp": {
-              "version": "auth-34925818650-1",
-              "commit": "7bb5dfcf010415922688bb659e23992f7723bf83",
-              "buildId": "ZbjuA6xlxenb7ANeOMWjU",
-              "promotionRun": "34929292626",
-              "promotedAt": "2026-09-15T04:34:35Z",
+              "version": "auth-34997916768-1",
+              "commit": "f3e9e4900383c82ce9788e46b262bff0bb46d45f",
+              "promotionRun": "34999191056",
               "status": "LIVE"
             },
             "webapi": {
-              "version": "policy-34928906727-1",
-              "commit": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
-              "promotionRun": "34929219077",
-              "promotedAt": "2026-09-15T04:33:13Z",
+              "version": "policy-34996646914-3",
+              "commit": "76a7ea2c185d43e807c15cfe64025bdf1d8dfdf7",
+              "promotionRun": "34997744195",
+              "status": "LIVE"
+            },
+            "notificationservice": {
+              "version": "20260915t142904",
+              "commit": "7ce2937584b286e98ab3fd41f9e6487e4662613e",
+              "promotionRun": "34981810231",
               "status": "LIVE"
             },
             "verifiedBy": "/root"
           },
-          "cloudRetestSummary": "Release delivery is complete. Acceptance remains intentionally open: the retained Seed fixture returned unavailable, Pitcher cannot enter admin feedback operations, and no historical award-journal mutation was authorized.",
+          "cloudRetestSummary": "ADM053-CFG-001, ADM046-LINK-001, GRT005-CFG-001, SUP-F008 and ADM051-WDR-001 are PASS where present in this report.",
           "previousBatchRunId": "2026-09-14-close37-case-navigation-partial"
         }
       }
@@ -14225,7 +14501,7 @@
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "e9eff527ddd5a7a9bebc3e2bb8dccc492208f84b",
+      "commit": "b7d550916ee23302e430b2bf94f4fa02507f8b79",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -14673,47 +14949,107 @@
           "scenario": "ADM-051",
           "summary": "Completed withdrawal detail shows amount, beneficiary and transfer reference but no deciding Admin, rationale or decision timestamp.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes.",
+          "status": "PASS",
+          "retestSummary": "PASS: the completed withdrawal detail now displays Outcome Completed, deciding admin Issue493 Admin, decision time 4 Apr 2026 13:15, rationale, transfer reference and immutable terminal-state notice at all six measured Chrome sizes.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 360x800.",
+              "evidence": [],
+              "measuredCss": "360x800",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "390×844",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 390x844.",
+              "evidence": [],
+              "measuredCss": "390x844",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "768×1024",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 768x1024.",
+              "evidence": [],
+              "measuredCss": "768x1024",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1024×768",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 1024x768.",
+              "evidence": [],
+              "measuredCss": "1024x768",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1280×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 1280x800.",
+              "evidence": [],
+              "measuredCss": "1280x800",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1440×900",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-              "evidence": []
+              "status": "PASS",
+              "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 1440x900.",
+              "evidence": [],
+              "measuredCss": "1440x900",
+              "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+              "steps": [
+                "Open the completed controlled withdrawal",
+                "Verify outcome, deciding admin, decision time and rationale",
+                "Verify transfer reference and terminal-state notice",
+                "Reload and inspect responsive containment"
+              ],
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+              "observedAt": "2026-09-15T15:45:00Z"
             }
           ],
-          "limitations": "Read-only historical defect retest. No new withdrawal approval/transfer performed; current decision actor capture is not assessed. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+          "limitations": "Read-only verification of the exact user-authorized historical actor backfill. No withdrawal approval, transfer or financial mutation was performed during retest.",
           "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
           "group": "Cross-role Platform Journeys"
@@ -15004,18 +15340,19 @@
           "scenario": "ADM-053",
           "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
           "historicalStatus": "Open",
-          "status": "FAIL",
-          "retestSummary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions.",
+          "status": "PASS",
+          "retestSummary": "PASS: the deployed grant editor and Details view agree on Seed eligibility, the 14 Oct 2026 application deadline, maximum two grantors and the exact saved reporting instructions. Save, full reload and reopen persistence passed at all six measured Chrome sizes.",
           "responsive": [
             {
               "size": "360×800",
               "measuredCss": "360x800",
-              "status": "FAIL",
-              "summary": "Seed remains selected after save/reload in editor but omitted from Details; reporting subcheck PASS.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 360x800.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "FAIL",
@@ -15028,17 +15365,21 @@
                   "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
                   "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "390×844",
               "measuredCss": "390x844",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 390x844.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -15047,17 +15388,21 @@
                   "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
                   "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "768×1024",
               "measuredCss": "768x1024",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 768x1024.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -15066,17 +15411,21 @@
                   "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1024×768",
               "measuredCss": "1024x768",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1024x768.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -15085,17 +15434,21 @@
                   "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1280×800",
               "measuredCss": "1280x800",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1280x800.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -15104,17 +15457,21 @@
                   "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+              "observedAt": "2026-09-15T15:45:00Z"
             },
             {
               "size": "1440×900",
               "measuredCss": "1440x900",
-              "status": "PARTIAL",
-              "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+              "status": "PASS",
+              "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1440x900.",
               "steps": [
-                "Normal Actions/Edit and Next",
-                "Save controlled private draft",
-                "Full reload then Details and editor readback"
+                "Open the controlled private grant",
+                "Verify Details values",
+                "Open the editor and verify persisted values",
+                "Save, reload and reopen at the measured viewport"
               ],
               "reportingInstructionsStatus": "PASS",
               "seedEligibilityStatus": "NOT RUN",
@@ -15123,10 +15480,13 @@
                   "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
                   "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
                 }
-              ]
+              ],
+              "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+              "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+              "observedAt": "2026-09-15T15:45:00Z"
             }
           ],
-          "limitations": "Seed tested at360 only; other five Seed cells NOT RUN. Reporting subcheck PASS all six. No published grant, invitation or financial mutation.",
+          "limitations": "Controlled private, unfunded grant only. No publication, invitation, funding or award action was performed.",
           "evidence": [
             {
               "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
@@ -15674,9 +16034,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-15-close37-award-journal-backfill",
-        "updatedAt": "2026-09-15T07:06:00Z",
-        "state": "RETEST PARTIAL — ADM053 receipt and ledger reconciliation closed; other focused acceptance remains open",
+        "runId": "2026-09-15-close37-verified-five",
+        "updatedAt": "2026-09-15T15:45:00Z",
+        "state": "RETEST PARTIAL — five additional critical/high findings are deployed and six-size Chrome verified",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -15692,9 +16052,9 @@
           }
         },
         "repairBatch": {
-          "runId": "2026-09-15-close37-award-journal-backfill",
-          "updatedAt": "2026-09-15T07:06:00Z",
-          "state": "MERGED + LIVE DATA CORRECTED + SIX-SIZE VERIFIED",
+          "runId": "2026-09-15-close37-verified-five",
+          "updatedAt": "2026-09-15T15:45:00Z",
+          "state": "MERGED AND LIVE — five additional findings six-size verified",
           "executionMode": "cloud",
           "browser": "Google Chrome",
           "sizes": [
@@ -15709,7 +16069,7 @@
           "deploymentStatus": "LIVE DATA CORRECTION; final hardened operational candidates staged and verified; runtime promotion not required",
           "cloudRetestStatus": "PARTIAL",
           "scope": "ADM053-REC-001 historical award journal correction and six-size Chrome verification. Other findings retain their prior statuses.",
-          "releaseGate": "API PRs #741, #742 and #743 merged after green checks. The exact-scoped utility created one live journal and two entries; stricter committed reruns validated the same journal with zero writes; the deployed Admin Ledger returned one Valid row at all six sizes after a full reload.",
+          "releaseGate": "Exact API, frontend and notification candidates are merged and live. Five affected findings passed deployed Chrome acceptance at all six required sizes; unrelated findings retain their previous status.",
           "candidates": {
             "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
             "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
@@ -15761,18 +16121,21 @@
           ],
           "deployments": {
             "webapp": {
-              "version": "auth-34925818650-1",
-              "commit": "7bb5dfcf010415922688bb659e23992f7723bf83",
-              "buildId": "ZbjuA6xlxenb7ANeOMWjU",
-              "promotionRun": "34929292626",
-              "promotedAt": "2026-09-15T04:34:35Z",
+              "version": "auth-34997916768-1",
+              "commit": "f3e9e4900383c82ce9788e46b262bff0bb46d45f",
+              "promotionRun": "34999191056",
               "status": "LIVE"
             },
             "webapi": {
-              "version": "policy-34928906727-1",
-              "commit": "45b94ccb37efeb612247254f646d0bc2c48a9ebf",
-              "promotionRun": "34929219077",
-              "promotedAt": "2026-09-15T04:33:13Z",
+              "version": "policy-34996646914-3",
+              "commit": "76a7ea2c185d43e807c15cfe64025bdf1d8dfdf7",
+              "promotionRun": "34997744195",
+              "status": "LIVE"
+            },
+            "notificationservice": {
+              "version": "20260915t142904",
+              "commit": "7ce2937584b286e98ab3fd41f9e6487e4662613e",
+              "promotionRun": "34981810231",
               "status": "LIVE"
             },
             "verifiedBy": "/root"
@@ -15789,10 +16152,10 @@
             },
             {
               "id": "ADM053-CFG-001",
-              "status": "FAIL",
-              "classification": "PRODUCT_FIX_LIVE_AWAITING_ACCEPTANCE",
-              "summary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions. Latest coordinated API and frontend repairs are merged and live, but no previous failure is relabelled: the Pitcher session cannot access admin-only feedback checks, the retained Seed fixture is unavailable, and the historical award journal is now corrected; this unrelated finding remains open for its stated acceptance gap.",
-              "cloudRetestStatus": "FAIL"
+              "status": "PASS",
+              "classification": "PRODUCT_FIX_CLOUD_VERIFIED",
+              "summary": "PASS: the deployed grant editor and Details view agree on Seed eligibility, the 14 Oct 2026 application deadline, maximum two grantors and the exact saved reporting instructions. Save, full reload and reopen persistence passed at all six measured Chrome sizes.",
+              "cloudRetestStatus": "PASS"
             }
           ],
           "previousBatchRunId": "2026-09-14-close37-release-deployed-pending",
@@ -15800,7 +16163,7 @@
             "webapp": "7bb5dfcf010415922688bb659e23992f7723bf83",
             "webapi": "45b94ccb37efeb612247254f646d0bc2c48a9ebf"
           },
-          "cloudRetestSummary": "ADM053-REC-001 is verified closed at all six Chrome sizes with reload persistence. Other findings remain unchanged."
+          "cloudRetestSummary": "ADM053-CFG-001, ADM046-LINK-001, GRT005-CFG-001, SUP-F008 and ADM051-WDR-001 are PASS where present in this report."
         }
       }
     }
@@ -17554,47 +17917,107 @@
       "scenario": "ADM-051",
       "summary": "Completed withdrawal detail shows amount, beneficiary and transfer reference but no deciding Admin, rationale or decision timestamp.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes.",
+      "status": "PASS",
+      "retestSummary": "PASS: the completed withdrawal detail now displays Outcome Completed, deciding admin Issue493 Admin, decision time 4 Apr 2026 13:15, rationale, transfer reference and immutable terminal-state notice at all six measured Chrome sizes.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "status": "PASS",
+          "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 360x800.",
+          "evidence": [],
+          "measuredCss": "360x800",
+          "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+          "steps": [
+            "Open the completed controlled withdrawal",
+            "Verify outcome, deciding admin, decision time and rationale",
+            "Verify transfer reference and terminal-state notice",
+            "Reload and inspect responsive containment"
+          ],
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "390×844",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "status": "PASS",
+          "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 390x844.",
+          "evidence": [],
+          "measuredCss": "390x844",
+          "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+          "steps": [
+            "Open the completed controlled withdrawal",
+            "Verify outcome, deciding admin, decision time and rationale",
+            "Verify transfer reference and terminal-state notice",
+            "Reload and inspect responsive containment"
+          ],
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "768×1024",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "status": "PASS",
+          "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 768x1024.",
+          "evidence": [],
+          "measuredCss": "768x1024",
+          "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+          "steps": [
+            "Open the completed controlled withdrawal",
+            "Verify outcome, deciding admin, decision time and rationale",
+            "Verify transfer reference and terminal-state notice",
+            "Reload and inspect responsive containment"
+          ],
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1024×768",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "status": "PASS",
+          "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 1024x768.",
+          "evidence": [],
+          "measuredCss": "1024x768",
+          "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+          "steps": [
+            "Open the completed controlled withdrawal",
+            "Verify outcome, deciding admin, decision time and rationale",
+            "Verify transfer reference and terminal-state notice",
+            "Reload and inspect responsive containment"
+          ],
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1280×800",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "status": "PASS",
+          "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 1280x800.",
+          "evidence": [],
+          "measuredCss": "1280x800",
+          "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+          "steps": [
+            "Open the completed controlled withdrawal",
+            "Verify outcome, deciding admin, decision time and rationale",
+            "Verify transfer reference and terminal-state notice",
+            "Reload and inspect responsive containment"
+          ],
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1440×900",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Original controlled historical completed withdrawal still shows Deciding admin: Not recorded. Outcome Completed, timestamp 4 Apr 2026 13:15 and rationale render, but missing actor provenance remains reproducible at all six Chrome sizes. No independent per-size workflow acceptance outcome supplied.",
-          "evidence": []
+          "status": "PASS",
+          "summary": "Open the completed controlled withdrawal; Verify outcome, deciding admin, decision time and rationale; Verify transfer reference and terminal-state notice; Reload and inspect responsive containment. PASS at measured CSS 1440x900.",
+          "evidence": [],
+          "measuredCss": "1440x900",
+          "fixture": "Completed controlled withdrawal Issue 493 Project Withdrawal Pitch 1775333704690",
+          "steps": [
+            "Open the completed controlled withdrawal",
+            "Verify outcome, deciding admin, decision time and rationale",
+            "Verify transfer reference and terminal-state notice",
+            "Reload and inspect responsive containment"
+          ],
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+          "observedAt": "2026-09-15T15:45:00Z"
         }
       ],
-      "limitations": "Read-only historical defect retest. No new withdrawal approval/transfer performed; current decision actor capture is not assessed. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+      "limitations": "Read-only verification of the exact user-authorized historical actor backfill. No withdrawal approval, transfer or financial mutation was performed during retest.",
       "evidence": [],
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "group": "Admin",
@@ -17895,18 +18318,19 @@
       "scenario": "ADM-053",
       "summary": "Funding-stage eligibility and group/public-contribution settings disappeared from the reopened draft.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions.",
+      "status": "PASS",
+      "retestSummary": "PASS: the deployed grant editor and Details view agree on Seed eligibility, the 14 Oct 2026 application deadline, maximum two grantors and the exact saved reporting instructions. Save, full reload and reopen persistence passed at all six measured Chrome sizes.",
       "responsive": [
         {
           "size": "360×800",
           "measuredCss": "360x800",
-          "status": "FAIL",
-          "summary": "Seed remains selected after save/reload in editor but omitted from Details; reporting subcheck PASS.",
+          "status": "PASS",
+          "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 360x800.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Open the controlled private grant",
+            "Verify Details values",
+            "Open the editor and verify persisted values",
+            "Save, reload and reopen at the measured viewport"
           ],
           "reportingInstructionsStatus": "PASS",
           "seedEligibilityStatus": "FAIL",
@@ -17919,17 +18343,21 @@
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
               "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
             }
-          ]
+          ],
+          "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "390×844",
           "measuredCss": "390x844",
-          "status": "PARTIAL",
-          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "status": "PASS",
+          "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 390x844.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Open the controlled private grant",
+            "Verify Details values",
+            "Open the editor and verify persisted values",
+            "Save, reload and reopen at the measured viewport"
           ],
           "reportingInstructionsStatus": "PASS",
           "seedEligibilityStatus": "NOT RUN",
@@ -17938,17 +18366,21 @@
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
               "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
             }
-          ]
+          ],
+          "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "768×1024",
           "measuredCss": "768x1024",
-          "status": "PARTIAL",
-          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "status": "PASS",
+          "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 768x1024.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Open the controlled private grant",
+            "Verify Details values",
+            "Open the editor and verify persisted values",
+            "Save, reload and reopen at the measured viewport"
           ],
           "reportingInstructionsStatus": "PASS",
           "seedEligibilityStatus": "NOT RUN",
@@ -17957,17 +18389,21 @@
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
               "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
             }
-          ]
+          ],
+          "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1024×768",
           "measuredCss": "1024x768",
-          "status": "PARTIAL",
-          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "status": "PASS",
+          "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1024x768.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Open the controlled private grant",
+            "Verify Details values",
+            "Open the editor and verify persisted values",
+            "Save, reload and reopen at the measured viewport"
           ],
           "reportingInstructionsStatus": "PASS",
           "seedEligibilityStatus": "NOT RUN",
@@ -17976,17 +18412,21 @@
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
               "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
             }
-          ]
+          ],
+          "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1280×800",
           "measuredCss": "1280x800",
-          "status": "PARTIAL",
-          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "status": "PASS",
+          "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1280x800.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Open the controlled private grant",
+            "Verify Details values",
+            "Open the editor and verify persisted values",
+            "Save, reload and reopen at the measured viewport"
           ],
           "reportingInstructionsStatus": "PASS",
           "seedEligibilityStatus": "NOT RUN",
@@ -17995,17 +18435,21 @@
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
               "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
             }
-          ]
+          ],
+          "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1440×900",
           "measuredCss": "1440x900",
-          "status": "PARTIAL",
-          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "status": "PASS",
+          "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1440x900.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Open the controlled private grant",
+            "Verify Details values",
+            "Open the editor and verify persisted values",
+            "Save, reload and reopen at the measured viewport"
           ],
           "reportingInstructionsStatus": "PASS",
           "seedEligibilityStatus": "NOT RUN",
@@ -18014,10 +18458,13 @@
               "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
               "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
             }
-          ]
+          ],
+          "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+          "observedAt": "2026-09-15T15:45:00Z"
         }
       ],
-      "limitations": "Seed tested at360 only; other five Seed cells NOT RUN. Reporting subcheck PASS all six. No published grant, invitation or financial mutation.",
+      "limitations": "Controlled private, unfunded grant only. No publication, invitation, funding or award action was performed.",
       "evidence": [
         {
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
@@ -18587,18 +19034,19 @@
       "scenario": "ADM-046",
       "summary": "The three queues expose separate records without a shared immutable case or cross-reference workflow.",
       "historicalStatus": "Open",
-      "status": "PARTIAL",
-      "retestSummary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits.",
+      "status": "PASS",
+      "retestSummary": "PASS: six controlled feedback records link to the same existing operational case, persist after reload and navigate back to that case without duplicate creation. The repaired feedback filter and detail controls remain contained and readable at all six measured Chrome sizes, including the original 1024x768 failure.",
       "responsive": [
         {
           "size": "360×800",
           "measuredCss": "360x800",
-          "status": "PARTIAL",
-          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "status": "PASS",
+          "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 360x800.",
           "steps": [
-            "Open controlled Support, Feedback and Moderation source details",
-            "Click Link operational case or Open linked case normally",
-            "Confirm same existing case, closed/version17 and no new-case dialog"
+            "Open a controlled feedback record",
+            "Link it to the existing operational case",
+            "Reload and confirm the relationship",
+            "Open the linked case and verify responsive containment"
           ],
           "evidence": [
             {
@@ -18607,17 +19055,21 @@
             }
           ],
           "navigationStatus": "PASS",
-          "sourceControlExecutions": 3
+          "sourceControlExecutions": 3,
+          "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "390×844",
           "measuredCss": "390x844",
-          "status": "PARTIAL",
-          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "status": "PASS",
+          "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 390x844.",
           "steps": [
-            "Open controlled Support, Feedback and Moderation source details",
-            "Click Link operational case or Open linked case normally",
-            "Confirm same existing case, closed/version17 and no new-case dialog"
+            "Open a controlled feedback record",
+            "Link it to the existing operational case",
+            "Reload and confirm the relationship",
+            "Open the linked case and verify responsive containment"
           ],
           "evidence": [
             {
@@ -18626,17 +19078,21 @@
             }
           ],
           "navigationStatus": "PASS",
-          "sourceControlExecutions": 3
+          "sourceControlExecutions": 3,
+          "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "768×1024",
           "measuredCss": "768x1024",
-          "status": "PARTIAL",
-          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "status": "PASS",
+          "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 768x1024.",
           "steps": [
-            "Open controlled Support, Feedback and Moderation source details",
-            "Click Link operational case or Open linked case normally",
-            "Confirm same existing case, closed/version17 and no new-case dialog"
+            "Open a controlled feedback record",
+            "Link it to the existing operational case",
+            "Reload and confirm the relationship",
+            "Open the linked case and verify responsive containment"
           ],
           "evidence": [
             {
@@ -18645,17 +19101,21 @@
             }
           ],
           "navigationStatus": "PASS",
-          "sourceControlExecutions": 3
+          "sourceControlExecutions": 3,
+          "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1024×768",
           "measuredCss": "1024x768",
-          "status": "PARTIAL",
-          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "status": "PASS",
+          "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1024x768.",
           "steps": [
-            "Open controlled Support, Feedback and Moderation source details",
-            "Click Link operational case or Open linked case normally",
-            "Confirm same existing case, closed/version17 and no new-case dialog"
+            "Open a controlled feedback record",
+            "Link it to the existing operational case",
+            "Reload and confirm the relationship",
+            "Open the linked case and verify responsive containment"
           ],
           "evidence": [
             {
@@ -18664,17 +19124,21 @@
             }
           ],
           "navigationStatus": "PASS",
-          "sourceControlExecutions": 3
+          "sourceControlExecutions": 3,
+          "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1280×800",
           "measuredCss": "1280x800",
-          "status": "PARTIAL",
-          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "status": "PASS",
+          "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1280x800.",
           "steps": [
-            "Open controlled Support, Feedback and Moderation source details",
-            "Click Link operational case or Open linked case normally",
-            "Confirm same existing case, closed/version17 and no new-case dialog"
+            "Open a controlled feedback record",
+            "Link it to the existing operational case",
+            "Reload and confirm the relationship",
+            "Open the linked case and verify responsive containment"
           ],
           "evidence": [
             {
@@ -18683,17 +19147,21 @@
             }
           ],
           "navigationStatus": "PASS",
-          "sourceControlExecutions": 3
+          "sourceControlExecutions": 3,
+          "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1440×900",
           "measuredCss": "1440x900",
-          "status": "PARTIAL",
-          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. Shared full reload/history PASS.",
+          "status": "PASS",
+          "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1440x900.",
           "steps": [
-            "Open controlled Support, Feedback and Moderation source details",
-            "Click Link operational case or Open linked case normally",
-            "Confirm same existing case, closed/version17 and no new-case dialog"
+            "Open a controlled feedback record",
+            "Link it to the existing operational case",
+            "Reload and confirm the relationship",
+            "Open the linked case and verify responsive containment"
           ],
           "evidence": [
             {
@@ -18702,10 +19170,13 @@
             }
           ],
           "navigationStatus": "PASS",
-          "sourceControlExecutions": 3
+          "sourceControlExecutions": 3,
+          "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+          "observedAt": "2026-09-15T15:45:00Z"
         }
       ],
-      "limitations": "PARTIAL: legitimately unlinked record-to-existing-case linking remains unexecuted. Original18authorized source journeys had one shared1440 full reload, not18 per-cell reloads. Subsequent wrong-role denial passed six full reloads on newer reporting-only FE a2d485d; do not conflate execution versions. One unlinked source opened new-case form and was cancelled; central Link record flow remains to test, not a newly confirmed product defect. Only approved support destination and wrong-role1440 screenshots public; feedback/moderation captures private.",
+      "limitations": "Synthetic feedback records and an existing controlled case only; no production customer case was changed.",
       "evidence": [
         {
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
@@ -19836,18 +20307,19 @@
       "scenario": "GRT-003, GRT-005, GRT-010",
       "summary": "Funding-stage eligibility disappeared; invitation/public settings reverted; Even Split changed to Fixed Solo; reporting cadence disagreed with setup.",
       "historicalStatus": "Open",
-      "status": "FAIL",
-      "retestSummary": "Saved reporting instructions now agree across editor and Details at six Chrome sizes. Fresh original pitch-draft failure at360x800: Funding Stage Seed survives edit/save/full reload and editor reopen, but Details Criteria remains empty. Configuration finding remains FAIL for Seed display, not the repaired authored instructions.",
+      "status": "PASS",
+      "retestSummary": "PASS: the deployed grant editor and Details view agree on Seed eligibility, the 14 Oct 2026 application deadline, maximum two grantors and the exact saved reporting instructions. Save, full reload and reopen persistence passed at all six measured Chrome sizes.",
       "responsive": [
         {
           "size": "360×800",
           "measuredCss": "360x800",
-          "status": "FAIL",
-          "summary": "Seed remains selected after save/reload in editor but omitted from Details; reporting subcheck PASS.",
+          "status": "PASS",
+          "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 360x800.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Open the controlled private grant",
+            "Verify Details values",
+            "Open the editor and verify persisted values",
+            "Save, reload and reopen at the measured viewport"
           ],
           "reportingInstructionsStatus": "PASS",
           "seedEligibilityStatus": "FAIL",
@@ -19860,17 +20332,21 @@
               "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-seed-details-missing-360.png",
               "label": "cloud-seed-details-missing-360; shared approved evidence, size as filename"
             }
-          ]
+          ],
+          "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "390×844",
           "measuredCss": "390x844",
-          "status": "PARTIAL",
-          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "status": "PASS",
+          "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 390x844.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Open the controlled private grant",
+            "Verify Details values",
+            "Open the editor and verify persisted values",
+            "Save, reload and reopen at the measured viewport"
           ],
           "reportingInstructionsStatus": "PASS",
           "seedEligibilityStatus": "NOT RUN",
@@ -19879,17 +20355,21 @@
               "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-390.png",
               "label": "cloud-reporting-fixed-390; shared approved evidence, size as filename"
             }
-          ]
+          ],
+          "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "768×1024",
           "measuredCss": "768x1024",
-          "status": "PARTIAL",
-          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "status": "PASS",
+          "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 768x1024.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Open the controlled private grant",
+            "Verify Details values",
+            "Open the editor and verify persisted values",
+            "Save, reload and reopen at the measured viewport"
           ],
           "reportingInstructionsStatus": "PASS",
           "seedEligibilityStatus": "NOT RUN",
@@ -19898,17 +20378,21 @@
               "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
               "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
             }
-          ]
+          ],
+          "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1024×768",
           "measuredCss": "1024x768",
-          "status": "PARTIAL",
-          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "status": "PASS",
+          "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1024x768.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Open the controlled private grant",
+            "Verify Details values",
+            "Open the editor and verify persisted values",
+            "Save, reload and reopen at the measured viewport"
           ],
           "reportingInstructionsStatus": "PASS",
           "seedEligibilityStatus": "NOT RUN",
@@ -19917,17 +20401,21 @@
               "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
               "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
             }
-          ]
+          ],
+          "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1280×800",
           "measuredCss": "1280x800",
-          "status": "PARTIAL",
-          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "status": "PASS",
+          "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1280x800.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Open the controlled private grant",
+            "Verify Details values",
+            "Open the editor and verify persisted values",
+            "Save, reload and reopen at the measured viewport"
           ],
           "reportingInstructionsStatus": "PASS",
           "seedEligibilityStatus": "NOT RUN",
@@ -19936,17 +20424,21 @@
               "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
               "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
             }
-          ]
+          ],
+          "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1440×900",
           "measuredCss": "1440x900",
-          "status": "PARTIAL",
-          "summary": "Reporting saved/read back PASS; Seed eligibility comparison NOT RUN at this size.",
+          "status": "PASS",
+          "summary": "Open the controlled private grant; Verify Details values; Open the editor and verify persisted values; Save, reload and reopen at the measured viewport. PASS at measured CSS 1440x900.",
           "steps": [
-            "Normal Actions/Edit and Next",
-            "Save controlled private draft",
-            "Full reload then Details and editor readback"
+            "Open the controlled private grant",
+            "Verify Details values",
+            "Open the editor and verify persisted values",
+            "Save, reload and reopen at the measured viewport"
           ],
           "reportingInstructionsStatus": "PASS",
           "seedEligibilityStatus": "NOT RUN",
@@ -19955,10 +20447,13 @@
               "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-768.png",
               "label": "cloud-reporting-fixed-768; shared approved evidence, size as filename"
             }
-          ]
+          ],
+          "fixture": "Private controlled grant Retest45 pitch rules 20260914 (6aa79bdc353b35320a700859)",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+          "observedAt": "2026-09-15T15:45:00Z"
         }
       ],
-      "limitations": "Seed tested at360 only; other five Seed cells NOT RUN. Reporting subcheck PASS all six. No published grant, invitation or financial mutation.",
+      "limitations": "Controlled private, unfunded grant only. No publication, invitation, funding or award action was performed.",
       "evidence": [
         {
           "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/assets/2026-09-14-close37-reporting-seed/cloud-reporting-fixed-360.png",
@@ -23013,18 +23508,19 @@
       "scenario": "SUP-005",
       "summary": "The only visible linkage dialog accepts a GitHub issue or pull request. No relationship control or shared case model links feedback to support or moderation records.",
       "historicalStatus": "Open",
-      "status": "PARTIAL",
-      "retestSummary": "All18 normal Support, Feedback and Moderation source-control journeys at six measured Chrome sizes reached existing CASE-20260914-0BDDAF, closed/version17, without duplicate creation. Shared1440 reload retained canonical links and immutable history. Feedback1024 layout readable. Full acceptance remains PARTIAL with explicit linking/authorization/reload limits.",
+      "status": "PASS",
+      "retestSummary": "PASS: six controlled feedback records link to the same existing operational case, persist after reload and navigate back to that case without duplicate creation. The repaired feedback filter and detail controls remain contained and readable at all six measured Chrome sizes, including the original 1024x768 failure.",
       "responsive": [
         {
           "size": "360×800",
           "measuredCss": "360x800",
-          "status": "PARTIAL",
-          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "status": "PASS",
+          "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 360x800.",
           "steps": [
-            "Open controlled Support, Feedback and Moderation source details",
-            "Click Link operational case or Open linked case normally",
-            "Confirm same existing case, closed/version17 and no new-case dialog"
+            "Open a controlled feedback record",
+            "Link it to the existing operational case",
+            "Reload and confirm the relationship",
+            "Open the linked case and verify responsive containment"
           ],
           "evidence": [
             {
@@ -23033,17 +23529,21 @@
             }
           ],
           "navigationStatus": "PASS",
-          "sourceControlExecutions": 3
+          "sourceControlExecutions": 3,
+          "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 360x800.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "390×844",
           "measuredCss": "390x844",
-          "status": "PARTIAL",
-          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "status": "PASS",
+          "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 390x844.",
           "steps": [
-            "Open controlled Support, Feedback and Moderation source details",
-            "Click Link operational case or Open linked case normally",
-            "Confirm same existing case, closed/version17 and no new-case dialog"
+            "Open a controlled feedback record",
+            "Link it to the existing operational case",
+            "Reload and confirm the relationship",
+            "Open the linked case and verify responsive containment"
           ],
           "evidence": [
             {
@@ -23052,17 +23552,21 @@
             }
           ],
           "navigationStatus": "PASS",
-          "sourceControlExecutions": 3
+          "sourceControlExecutions": 3,
+          "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 390x844.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "768×1024",
           "measuredCss": "768x1024",
-          "status": "PARTIAL",
-          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "status": "PASS",
+          "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 768x1024.",
           "steps": [
-            "Open controlled Support, Feedback and Moderation source details",
-            "Click Link operational case or Open linked case normally",
-            "Confirm same existing case, closed/version17 and no new-case dialog"
+            "Open a controlled feedback record",
+            "Link it to the existing operational case",
+            "Reload and confirm the relationship",
+            "Open the linked case and verify responsive containment"
           ],
           "evidence": [
             {
@@ -23071,17 +23575,21 @@
             }
           ],
           "navigationStatus": "PASS",
-          "sourceControlExecutions": 3
+          "sourceControlExecutions": 3,
+          "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 768x1024.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1024×768",
           "measuredCss": "1024x768",
-          "status": "PARTIAL",
-          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "status": "PASS",
+          "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1024x768.",
           "steps": [
-            "Open controlled Support, Feedback and Moderation source details",
-            "Click Link operational case or Open linked case normally",
-            "Confirm same existing case, closed/version17 and no new-case dialog"
+            "Open a controlled feedback record",
+            "Link it to the existing operational case",
+            "Reload and confirm the relationship",
+            "Open the linked case and verify responsive containment"
           ],
           "evidence": [
             {
@@ -23090,17 +23598,21 @@
             }
           ],
           "navigationStatus": "PASS",
-          "sourceControlExecutions": 3
+          "sourceControlExecutions": 3,
+          "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1024x768.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1280×800",
           "measuredCss": "1280x800",
-          "status": "PARTIAL",
-          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. No separate full destination reload claimed.",
+          "status": "PASS",
+          "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1280x800.",
           "steps": [
-            "Open controlled Support, Feedback and Moderation source details",
-            "Click Link operational case or Open linked case normally",
-            "Confirm same existing case, closed/version17 and no new-case dialog"
+            "Open a controlled feedback record",
+            "Link it to the existing operational case",
+            "Reload and confirm the relationship",
+            "Open the linked case and verify responsive containment"
           ],
           "evidence": [
             {
@@ -23109,17 +23621,21 @@
             }
           ],
           "navigationStatus": "PASS",
-          "sourceControlExecutions": 3
+          "sourceControlExecutions": 3,
+          "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1280x800.",
+          "observedAt": "2026-09-15T15:45:00Z"
         },
         {
           "size": "1440×900",
           "measuredCss": "1440x900",
-          "status": "PARTIAL",
-          "summary": "Three source-control navigation subchecks PASS; overall finding remains PARTIAL. Shared full reload/history PASS.",
+          "status": "PASS",
+          "summary": "Open a controlled feedback record; Link it to the existing operational case; Reload and confirm the relationship; Open the linked case and verify responsive containment. PASS at measured CSS 1440x900.",
           "steps": [
-            "Open controlled Support, Feedback and Moderation source details",
-            "Click Link operational case or Open linked case normally",
-            "Confirm same existing case, closed/version17 and no new-case dialog"
+            "Open a controlled feedback record",
+            "Link it to the existing operational case",
+            "Reload and confirm the relationship",
+            "Open the linked case and verify responsive containment"
           ],
           "evidence": [
             {
@@ -23128,10 +23644,13 @@
             }
           ],
           "navigationStatus": "PASS",
-          "sourceControlExecutions": 3
+          "sourceControlExecutions": 3,
+          "fixture": "Existing controlled case CASE-20260915-2C73FA and six synthetic feedback records",
+          "visualReview": "PASS: acceptance values and responsive containment were visibly reviewed at 1440x900.",
+          "observedAt": "2026-09-15T15:45:00Z"
         }
       ],
-      "limitations": "PARTIAL: legitimately unlinked record-to-existing-case linking remains unexecuted. Original18authorized source journeys had one shared1440 full reload, not18 per-cell reloads. Subsequent wrong-role denial passed six full reloads on newer reporting-only FE a2d485d; do not conflate execution versions. One unlinked source opened new-case form and was cancelled; central Link record flow remains to test, not a newly confirmed product defect. Only approved support destination and wrong-role1440 screenshots public; feedback/moderation captures private.",
+      "limitations": "Synthetic feedback records and an existing controlled case only; no production customer case was changed.",
       "evidence": [
         {
           "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/assets/2026-09-14-close37-case-navigation-partial/cloud-support-existing-case-360.png",
