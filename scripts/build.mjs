@@ -5,10 +5,17 @@ import { normalizeGroup, deduplicate } from '../model.js';
 
 const names = ['Pitcher','Admin','Organization','Grantor','Guest / Public','KYC Reviewer','KYC Approval','Super Admin','Support Operations','Cross-role Platform Journeys'];
 const repos = ['pitcher','admin','organization','grantor','guest-public','kyc-reviewer','kyc-approval','super-admin','support-operations','cross-role-platform-journeys'];
+// Assessor and Investor publish from the webapp gh-pages branch rather than a
+// dedicated <role>-uat-report repo. webapp is private, so they are read from
+// their public Pages URLs and pinned to the webapp commit recorded in the payload.
+const hosted = [
+  {name:'Assessor', url:'https://capitalinvestmentclub.github.io/webapp/pr-2323-review-report/', repo:'webapp'},
+  {name:'Investor', url:'https://capitalinvestmentclub.github.io/webapp/pr-2328-review-report/', repo:'webapp'},
+];
 // Only extract known, published report scripts. No source script runs in the browser.
 function extract(source) {
   const context = vm.createContext({ window: {}, document: { getElementById: () => ({}) } }, {codeGeneration:{strings:false,wasm:false}});
-  vm.runInContext(source + '\n;globalThis.extracted = {report: typeof report === "undefined" ? null : report, data: window.ADMIN_UAT || window.GUEST_PUBLIC_UAT, review: window.PR_REVIEW_DATA, updates: window.PR_REVIEW_UPDATES};', context, {timeout:1000});
+  vm.runInContext(source + '\n;globalThis.extracted = {report: typeof report === "undefined" ? null : report, data: window.ADMIN_UAT || window.GUEST_PUBLIC_UAT || window.ASSESSOR_UAT || window.INVESTOR_UAT, review: window.PR_REVIEW_DATA, updates: window.PR_REVIEW_UPDATES};', context, {timeout:1000});
   return JSON.parse(JSON.stringify(context.extracted));
 }
 async function get(url, optional=false) {
@@ -28,5 +35,17 @@ const groups = await Promise.all(repos.map(async (name,index) => {
   console.log(`${group.name}: ${group.scenarios.length} scenarios, ${group.findings.length} findings`);
   return group;
 }));
+const hostedGroups = await Promise.all(hosted.map(async (entry) => {
+  // webapp is private, so raw.githubusercontent cannot serve it. Its Pages site
+  // is public, and the payload carries the webapp commit it was generated from,
+  // which is the provenance that matters for these two roles.
+  const parsed = extract(await get(`${entry.url}data.js`));
+  const commit = parsed.data?.source?.commit;
+  if (!/^[a-f0-9]{40}$/.test(commit || '')) throw new Error(`Missing source commit: ${entry.name}`);
+  const group = normalizeGroup({name:entry.name,repo:entry.repo,commit,parsed,updates:{},targeted:null,url:entry.url});
+  console.log(`${group.name}: ${group.scenarios.length} scenarios, ${group.findings.length} findings`);
+  return group;
+}));
+groups.push(...hostedGroups);
 const data = {generatedAt:new Date().toISOString(),sizes:['360×800','390×844','768×1024','1024×768','1280×800','1440×900'],groups,uniqueFindings:deduplicate(groups)};
 await writeFile(new URL('../dashboard-data.json',import.meta.url), JSON.stringify(data,null,2)+'\n');

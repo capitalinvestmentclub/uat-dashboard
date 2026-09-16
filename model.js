@@ -4,10 +4,13 @@ export function status(value) {
   if (text.startsWith('IN PROGRESS')) return 'PARTIAL';
   return statuses.find(s => text === s || text.startsWith(s+' ·')) || 'NOT REPORTED';
 }
-export function normalizeGroup({name,repo,commit,parsed,updates={},targeted=null}) {
+export function normalizeGroup({name,repo,commit,parsed,updates={},targeted=null,url:reportUrl=null}) {
   const source = parsed.report || parsed.data;
   if (!source || !Array.isArray(source.scenarios) || !source.scenarios.length) throw new Error(`Missing scenarios: ${repo}`);
-  const url = `https://capitalinvestmentclub.github.io/${repo}/`;
+  // Most roles publish at <repo>.github.io/<repo>/. A role whose report lives in a
+  // subdirectory of another repo's Pages site passes its own URL instead, so the
+  // repo stays the real repository name and its commit link keeps working.
+  const url = reportUrl || `https://capitalinvestmentclub.github.io/${repo}/`;
   const sizes = source.sizes || [];
   const prefix = repo.startsWith('pitcher') ? 'PIT' : repo.startsWith('kyc-reviewer') ? 'KYCR' : 'KYCA';
   const scenarios = source.scenarios.map(row => {

@@ -17,10 +17,10 @@ async function page(payload=data,ok=true){
   return dom;
 }
 test('snapshot has complete known source inventory and honest scenario outcomes',()=>{
-  assert.equal(data.groups.length,10);assert.equal(data.groups.flatMap(g=>g.scenarios).length,198);assert.equal(data.uniqueFindings.length,118);
+  assert.equal(data.groups.length,12);assert.equal(data.groups.flatMap(g=>g.scenarios).length,280);assert.equal(data.uniqueFindings.length,355);
   assert(data.groups.every(g=>/^[a-f0-9]{40}$/.test(g.commit)));
   assert(data.groups[0].scenarios.every(s=>s.status==='PARTIAL'));
-  assert.equal(data.uniqueFindings.filter(f=>['high','critical'].includes(f.severity)&&f.type==='Defect').length,65);
+  assert.equal(data.uniqueFindings.filter(f=>['high','critical'].includes(f.severity)&&f.type==='Defect').length,190);
   assert.equal(data.uniqueFindings.filter(f=>f.status==='CONFLICT').length,0);
   assert(data.groups.flatMap(g=>g.findings).every(f=>f.id&&f.title));
 });
@@ -78,13 +78,13 @@ test('repair progress is visible, escaped, and separate from pie and execution c
 });
 test('rendering and every view/group/result combination, reset and empty state',async()=>{
   const dom=await page();const d=dom.window.document;const event=()=>new dom.window.Event('change',{bubbles:true});
-  assert.equal(d.querySelectorAll('.group-card').length,10);assert.equal(d.querySelectorAll('#results details').length,198);
+  assert.equal(d.querySelectorAll('.group-card').length,12);assert.equal(d.querySelectorAll('#results details').length,280);
   for(const view of ['scenarios','findings'])for(const group of ['',...data.groups.map(g=>g.name)])for(const result of ['',...statuses,'CONFLICT']){
     d.querySelector('#view').value=view;d.querySelector('#group').value=group;d.querySelector('#status').value=result;d.querySelector('#status').dispatchEvent(event());
     const source=view==='findings'?data.uniqueFindings:data.groups.flatMap(g=>g.scenarios.map(s=>({...s,group:g.name})));
     assert.equal(d.querySelectorAll('#results details').length,source.filter(r=>matches(r,'',group,result)).length);
   }
-  d.querySelector('#filters').reset();await new Promise(r=>setImmediate(r));assert.equal(d.querySelectorAll('#results details').length,198);
+  d.querySelector('#filters').reset();await new Promise(r=>setImmediate(r));assert.equal(d.querySelectorAll('#results details').length,280);
   d.querySelector('#search').value='<img src=x onerror=alert(1)>';d.querySelector('#search').dispatchEvent(new dom.window.Event('input',{bubbles:true}));assert(d.querySelector('.empty'));assert.equal(d.querySelectorAll('#results img').length,0);
   for(const b of d.querySelectorAll('[data-group]')){b.click();assert.equal(d.querySelector('#group').value,b.dataset.group);}
   d.querySelector('#groups').dispatchEvent(new dom.window.Event('click',{bubbles:true}));
@@ -94,18 +94,18 @@ test('failure states do not display fabricated results',async()=>{
   for(const [payload,ok] of [[data,false],[{},true]]){const dom=await page(payload,ok);assert(dom.window.document.querySelector('[role=alert]'));assert.equal(dom.window.document.querySelectorAll('#results details').length,0);dom.window.close();}
 });
 test('severity percentages and execution totals are exact, conservative and zero-safe',()=>{
-  const dist=severityBreakdown(data.uniqueFindings);assert.equal(dist.reduce((n,d)=>n+d.count,0),118);
+  const dist=severityBreakdown(data.uniqueFindings);assert.equal(dist.reduce((n,d)=>n+d.count,0),355);
   assert(Math.abs(dist.reduce((n,d)=>n+d.percent,0)-100)<1e-10);
   assert.equal(severityBreakdown([{severity:'unexpected',status:'FAIL'}])[4].count,1);
   assert(severityBreakdown([]).every(d=>d.percent===0));
   const c=executionBreakdown(data.groups.flatMap(g=>g.scenarios));
-  assert.deepEqual(c,{total:198,executed:116,partial:40,blocked:21,notRun:21,unknown:0,percent:116/198*100});
+  assert.deepEqual(c,{total:280,executed:171,partial:67,blocked:21,notRun:21,unknown:0,percent:171/280*100});
   assert.equal(executionBreakdown([]).percent,0);
   assert.equal(executionBreakdown([{status:'unknown'}]).unknown,1);
 });
 test('severity drilldowns, every severity/group pair, scope synchronization and reset',async()=>{
   const dom=await page();const d=dom.window.document;const change=id=>d.getElementById(id).dispatchEvent(new dom.window.Event('change',{bubbles:true}));
-  assert(d.getElementById('severity').disabled);assert.equal(d.querySelector('[role=progressbar]').getAttribute('aria-valuenow'),'58.6');
+  assert(d.getElementById('severity').disabled);assert.equal(d.querySelector('[role=progressbar]').getAttribute('aria-valuenow'),'61.1');
   for(const group of ['',...data.groups.map(g=>g.name)]){
     d.getElementById('chart-group').value=group;change('chart-group');assert.equal(d.getElementById('group').value,group);
     for(const severity of severities){
@@ -127,7 +127,7 @@ test('empty chart scope never shows NaN or fabricated progress',async()=>{
 });
 test('latest status pie excludes questions and reconciles all defect outcomes',()=>{
   const pie=defectStatusBreakdown(data.uniqueFindings);
-  assert.equal(pie.reduce((n,d)=>n+d.count,0),96);
+  assert.equal(pie.reduce((n,d)=>n+d.count,0),259);
   for(const outcome of [...statuses,'CONFLICT']) {
     assert.equal(pie.find(d=>d.status===outcome)?.count || 0,
       data.uniqueFindings.filter(f=>f.type==='Defect'&&f.status===outcome).length);
