@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T17:35:43.121Z",
+  "generatedAt": "2026-09-16T01:02:13.689Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -2635,7 +2635,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "4dbfac62756deb66a6df329b151ba3fd82d27663",
+      "commit": "125224602cb229d847da4718988f3e2f0a96c28f",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -2739,47 +2739,47 @@
           "scenario": "ADM-050",
           "summary": "The delivered confirmation CTA reaches the configured tracking domain and Chrome stops on ERR_CERT_COMMON_NAME_INVALID. Email verification and approval cannot complete normally.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link.",
+          "status": "PASS",
+          "retestSummary": "A fresh reviewer-issued KYC confirmation email arrived in the controlled mailbox within about one minute. Its first-party HTTPS confirmation link opened without a certificate warning, was accepted by the deployed application, and redirected to login. The accepted result rendered without horizontal overflow at all six Chrome sizes.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "390×844",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "768×1024",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "1024×768",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "1280×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "1440×900",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             }
           ],
-          "limitations": "Historical token replay only. Fresh KYC confirmation issuance, token acceptance and reviewer/approver readback are not completed. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+          "limitations": "The controlled record was already marked email-verified before this resend, so this run proves fresh issuance, delivery, HTTPS acceptance, and responsive routing; it does not claim a second verification-state transition.",
           "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
           "group": "Admin"
@@ -2899,46 +2899,46 @@
           "summary": "Running balances, signs, timestamps and counterparties conflict with current balances on inspected bid records.",
           "historicalStatus": "Open",
           "status": "PARTIAL",
-          "retestSummary": "Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access.",
+          "retestSummary": "The controlled Pitcher wallet freshly exposed current and available NGN balances and recent running-balance rows. The historical journal remains mathematically balanced from the prior same-release six-size verification, but the normal wallet search could not correlate the exact historical bid: one search fanned out into dozens of page requests and remained in a loading state, while an internal-record-id search returned no UI row.",
           "responsive": [
             {
               "size": "360×800",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "390×844",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "768×1024",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "1024×768",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "1280×800",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "1440×900",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             }
           ],
-          "limitations": "Historical double-entry equations pass, but original defect also concerns current wallet/running-balance consistency and counterparties. No fresh bid/refund/capture or wallet running-balance comparison was performed, so the full defect remains partially verified. Journal detail uses raw internal account identifiers; those details were not saved as public evidence. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+          "limitations": "The exact historical bid row, public reference, matching counterparty leg, and running-balance transition were not jointly available through the normal deployed UI. No transaction, backfill, capture, refund, or balance mutation was performed.",
           "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
           "group": "Admin"
@@ -4481,9 +4481,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-15-close37-verified-five",
-        "updatedAt": "2026-09-15T15:45:00Z",
-        "state": "RETEST PARTIAL — five additional critical/high findings are deployed and six-size Chrome verified",
+        "runId": "2026-09-15-verify-eight-partials",
+        "updatedAt": "2026-09-16T00:57:50Z",
+        "state": "PARTIAL VERIFICATION — 8 CRITICAL FINDINGS",
         "repairBatch": {
           "runId": "2026-09-15-close37-verified-five",
           "updatedAt": "2026-09-15T15:45:00Z",
@@ -4610,7 +4610,7 @@
     {
       "name": "Organization",
       "repo": "organization-uat-report",
-      "commit": "7ee479b7b2bb5538822dfad7f135eeff1afffe85",
+      "commit": "4752518c4fd43e88cd839185e329e2208b41dceb",
       "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5022,47 +5022,47 @@
           "scenario": "ORG-005",
           "summary": "Signup and confirmation emails arrived, but the recovery flow sent a second-stage magic link that resolved to the already-consumed token and reported invalid or expired.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "Fresh synthetic invitee recovery request delivered email. First confirmation sent a second magic link, which opened the Change your password form successfully at all six sizes. Password entry and submission handed to user; no credential changed by agent.",
+          "status": "PASS",
+          "retestSummary": "A fresh two-stage password-recovery chain produced a usable second-stage link. The reset form was complete at all six Chrome sizes, the new credential signed in successfully, and replaying the consumed link returned Invalid or expired. Organization membership remained available after login.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh synthetic invitee recovery request delivered email. First confirmation sent a second magic link, which opened the Change your password form successfully at all six sizes. Password entry and submission handed to user; no credential changed by agent. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "The fresh reset form and its submission controls were usable at this Chrome size; the consumed-token replay remained rejected.",
               "evidence": []
             },
             {
               "size": "390×844",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh synthetic invitee recovery request delivered email. First confirmation sent a second magic link, which opened the Change your password form successfully at all six sizes. Password entry and submission handed to user; no credential changed by agent. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "The fresh reset form and its submission controls were usable at this Chrome size; the consumed-token replay remained rejected.",
               "evidence": []
             },
             {
               "size": "768×1024",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh synthetic invitee recovery request delivered email. First confirmation sent a second magic link, which opened the Change your password form successfully at all six sizes. Password entry and submission handed to user; no credential changed by agent. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "The fresh reset form and its submission controls were usable at this Chrome size; the consumed-token replay remained rejected.",
               "evidence": []
             },
             {
               "size": "1024×768",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh synthetic invitee recovery request delivered email. First confirmation sent a second magic link, which opened the Change your password form successfully at all six sizes. Password entry and submission handed to user; no credential changed by agent. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "The fresh reset form and its submission controls were usable at this Chrome size; the consumed-token replay remained rejected.",
               "evidence": []
             },
             {
               "size": "1280×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh synthetic invitee recovery request delivered email. First confirmation sent a second magic link, which opened the Change your password form successfully at all six sizes. Password entry and submission handed to user; no credential changed by agent. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "The fresh reset form and its submission controls were usable at this Chrome size; the consumed-token replay remained rejected.",
               "evidence": []
             },
             {
               "size": "1440×900",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh synthetic invitee recovery request delivered email. First confirmation sent a second magic link, which opened the Change your password form successfully at all six sizes. Password entry and submission handed to user; no credential changed by agent. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "The fresh reset form and its submission controls were usable at this Chrome size; the consumed-token replay remained rejected.",
               "evidence": []
             }
           ],
-          "limitations": "New-password completion, subsequent login and consumed-link replay await user handoff. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+          "limitations": "Credentials, mailbox content, MFA values, token URLs, and organization identifiers are withheld from the public report.",
           "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
           "group": "Organization"
@@ -5587,9 +5587,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-calendar-functional-partial",
-        "updatedAt": "2026-09-15T00:11:31.379Z",
-        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
+        "runId": "2026-09-15-verify-eight-partials",
+        "updatedAt": "2026-09-16T00:57:50Z",
+        "state": "PARTIAL VERIFICATION — 8 CRITICAL FINDINGS",
         "repairBatch": {
           "runId": "2026-09-14-close37-live-verification",
           "updatedAt": "2026-09-15T00:11:31.379Z",
@@ -7134,7 +7134,7 @@
     {
       "name": "Guest / Public",
       "repo": "guest-public-uat-report",
-      "commit": "45882f3e15591ab2b1fab49dd132f9c3c439e108",
+      "commit": "efdc43a67c4d88404ccbb4b2f7a273b6428a3cc5",
       "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -8089,47 +8089,47 @@
           "scenario": "PUB-016",
           "summary": "Qualifying same-deployment evidence from the Organization new-user recovery journey showed the emailed recovery chain resolving to an invalid already-consumed token.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "Fresh recovery email chain reaches a usable new-password form across six Chrome sizes. No consumed token exists yet because changing the credential requires user completion.",
+          "status": "PASS",
+          "retestSummary": "Shared fresh recovery evidence confirms that the deployed flow issues a new usable second-stage link and rejects exact replay after consumption. The reset form was usable at all six Chrome sizes and the resulting credential signed in successfully.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh recovery email chain reaches a usable new-password form across six Chrome sizes. No consumed token exists yet because changing the credential requires user completion. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "The new recovery link was usable and the exact consumed-token replay was rejected at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "390×844",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh recovery email chain reaches a usable new-password form across six Chrome sizes. No consumed token exists yet because changing the credential requires user completion. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "The new recovery link was usable and the exact consumed-token replay was rejected at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "768×1024",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh recovery email chain reaches a usable new-password form across six Chrome sizes. No consumed token exists yet because changing the credential requires user completion. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "The new recovery link was usable and the exact consumed-token replay was rejected at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "1024×768",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh recovery email chain reaches a usable new-password form across six Chrome sizes. No consumed token exists yet because changing the credential requires user completion. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "The new recovery link was usable and the exact consumed-token replay was rejected at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "1280×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh recovery email chain reaches a usable new-password form across six Chrome sizes. No consumed token exists yet because changing the credential requires user completion. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "The new recovery link was usable and the exact consumed-token replay was rejected at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "1440×900",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh recovery email chain reaches a usable new-password form across six Chrome sizes. No consumed token exists yet because changing the credential requires user completion. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "The new recovery link was usable and the exact consumed-token replay was rejected at this measured Chrome size.",
               "evidence": []
             }
           ],
-          "limitations": "Consumed-token replay is not passed; user handoff pending. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+          "limitations": "The Organization and Guest/Public findings share the same deployed recovery defect and acceptance evidence. Secret values and token URLs are not published.",
           "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
           "group": "Guest / Public"
@@ -8159,46 +8159,46 @@
           "summary": "Open grant cards advertise public contributions, but the blank public grant body contains no Contribute control, preventing amount, provider, callback and receipt testing.",
           "historicalStatus": "Open",
           "status": "PARTIAL",
-          "retestSummary": "Fund this grant opens guest contribution dialog at all six sizes. Blank, zero and negative amounts are rejected; positive 100 advances validation to required email/phone. No payment or verification message sent.",
+          "retestSummary": "The public grant exposes both Apply and Fund controls at all six Chrome sizes. Fund opens a responsive Verify and fund dialog; blank amount and amount-only submissions are rejected with the correct amount and contact-verification guards. Checkout and settlement remain unexecuted.",
           "responsive": [
             {
               "size": "360×800",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fund this grant opens guest contribution dialog at all six sizes. Blank, zero and negative amounts are rejected; positive 100 advances validation to required email/phone. No payment or verification message sent. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Apply and Fund were reachable; the contribution dialog and verification control rendered without page overflow at this Chrome size. SMS and payment were not sent.",
               "evidence": []
             },
             {
               "size": "390×844",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fund this grant opens guest contribution dialog at all six sizes. Blank, zero and negative amounts are rejected; positive 100 advances validation to required email/phone. No payment or verification message sent. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Apply and Fund were reachable; the contribution dialog and verification control rendered without page overflow at this Chrome size. SMS and payment were not sent.",
               "evidence": []
             },
             {
               "size": "768×1024",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fund this grant opens guest contribution dialog at all six sizes. Blank, zero and negative amounts are rejected; positive 100 advances validation to required email/phone. No payment or verification message sent. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Apply and Fund were reachable; the contribution dialog and verification control rendered without page overflow at this Chrome size. SMS and payment were not sent.",
               "evidence": []
             },
             {
               "size": "1024×768",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fund this grant opens guest contribution dialog at all six sizes. Blank, zero and negative amounts are rejected; positive 100 advances validation to required email/phone. No payment or verification message sent. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Apply and Fund were reachable; the contribution dialog and verification control rendered without page overflow at this Chrome size. SMS and payment were not sent.",
               "evidence": []
             },
             {
               "size": "1280×800",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fund this grant opens guest contribution dialog at all six sizes. Blank, zero and negative amounts are rejected; positive 100 advances validation to required email/phone. No payment or verification message sent. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Apply and Fund were reachable; the contribution dialog and verification control rendered without page overflow at this Chrome size. SMS and payment were not sent.",
               "evidence": []
             },
             {
               "size": "1440×900",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fund this grant opens guest contribution dialog at all six sizes. Blank, zero and negative amounts are rejected; positive 100 advances validation to required email/phone. No payment or verification message sent. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Apply and Fund were reachable; the contribution dialog and verification control rendered without page overflow at this Chrome size. SMS and payment were not sent.",
               "evidence": []
             }
           ],
-          "limitations": "Controlled SMS endpoint requested from user; settlement, decline, cancel and replay untested. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+          "limitations": "No controlled SMS inbox/number and payment sandbox settlement path is available. No verification message, payment, decline, cancellation, callback, receipt, or replay was triggered.",
           "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
           "group": "Guest / Public"
@@ -8212,55 +8212,55 @@
           "summary": "The selected public grant detail is blank and exposes no Apply action, so destination-preserving signup, verification, KYC, application and query/reply cannot be joined.",
           "historicalStatus": "Open",
           "status": "PARTIAL",
-          "retestSummary": "Guest Apply preserved the selected grant in returnUrl and opened its application dialog immediately after controlled Pitcher login. Blank submission rejected. A synthetic draft with text/boolean answers persisted after reload, resumed with criteria version 1, and submitted once. Your applications (1) now shows Pending and Already Applied blocks duplicate entry.",
+          "retestSummary": "Guest Apply preserved the selected grant in returnUrl and automatically reopened the application dialog after controlled login. A previously submitted controlled application remains Pending, and the Already Applied duplicate guard plus the submitted application row render correctly at all six Chrome sizes.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "NOT RUN",
-              "summary": "No new per-size outcome supplied.",
+              "status": "PARTIAL",
+              "summary": "The Pending application, amount, withdrawal action, and disabled Already Applied duplicate guard were visible without page overflow at this Chrome size.",
               "evidence": []
             },
             {
               "size": "390×844",
-              "status": "NOT RUN",
-              "summary": "No new per-size outcome supplied.",
+              "status": "PARTIAL",
+              "summary": "The Pending application, amount, withdrawal action, and disabled Already Applied duplicate guard were visible without page overflow at this Chrome size.",
               "evidence": []
             },
             {
               "size": "768×1024",
-              "status": "NOT RUN",
-              "summary": "No new per-size outcome supplied.",
+              "status": "PARTIAL",
+              "summary": "The Pending application, amount, withdrawal action, and disabled Already Applied duplicate guard were visible without page overflow at this Chrome size.",
               "evidence": []
             },
             {
               "size": "1024×768",
-              "status": "NOT RUN",
-              "summary": "No new per-size outcome supplied.",
+              "status": "PARTIAL",
+              "summary": "The Pending application, amount, withdrawal action, and disabled Already Applied duplicate guard were visible without page overflow at this Chrome size.",
               "evidence": []
             },
             {
               "size": "1280×800",
-              "status": "NOT RUN",
-              "summary": "No new per-size outcome supplied.",
+              "status": "PARTIAL",
+              "summary": "The Pending application, amount, withdrawal action, and disabled Already Applied duplicate guard were visible without page overflow at this Chrome size.",
               "evidence": []
             },
             {
               "size": "1440×900",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Guest Apply preserved the selected grant in returnUrl and opened its application dialog immediately after controlled Pitcher login. Blank submission rejected. A synthetic draft with text/boolean answers persisted after reload, resumed with criteria version 1, and submitted once. Your applications (1) now shows Pending and Already Applied blocks duplicate entry. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "The Pending application, amount, withdrawal action, and disabled Already Applied duplicate guard were visible without page overflow at this Chrome size.",
               "evidence": []
             }
           ],
-          "limitations": "Fresh signup/verification/KYC and grantor query/reply, six-size completed-state coverage remain pending. No award requested. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+          "limitations": "A fresh signup/KYC branch and the grant-owner query plus applicant reply branch were not completed. The exact grant-owner credential is not available in the controlled Chrome profile, and no synthetic application was resubmitted.",
           "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
           "group": "Guest / Public"
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37",
-        "updatedAt": "2026-09-14T20:08:09.142Z",
-        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
+        "runId": "2026-09-15-verify-eight-partials",
+        "updatedAt": "2026-09-16T00:57:50Z",
+        "state": "PARTIAL VERIFICATION — 8 CRITICAL FINDINGS",
         "repairBatch": {
           "runId": "2026-09-14-merged-deployed-repair",
           "state": "MERGED AND LIVE — targeted cloud verification progressing",
@@ -8367,7 +8367,7 @@
     {
       "name": "KYC Reviewer",
       "repo": "kyc-reviewer-uat-report",
-      "commit": "521c1de07c8b32a50ff01837fae32a1b388a76c3",
+      "commit": "c26e742bd6e9dfded0ede506897c2a20f238aaaa",
       "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/",
       "checkpoint": "2026-09-12 interim checkpoint",
       "scenarios": [
@@ -9581,155 +9581,48 @@
           "scenario": "KYCR-004 / KYCR-006 / KYCR-009",
           "summary": "The passport PDF preview remained black, the photograph preview was blank, and Open document did not navigate.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "Original black/blank document symptom not reproduced: inline synthetic PDF and photograph rendered at six source-app CSS sizes; actual Open Document clicked at each, then native fallback separately measured to exact six sizes and whole content read. Ordinary non-KYC role denied dashboard entry after six full reloads. Overall PARTIAL; full inline PDF zoom/scroll remains outstanding.",
+          "status": "FAIL",
+          "retestSummary": "The reviewer opened an authorized controlled passport preview through the normal audited workflow. The inline PDF pane rendered solid black at all six Chrome sizes, and the signed Open document fallback also rendered black, so the required identity evidence remained unreadable.",
           "responsive": [
             {
               "size": "360×800",
-              "measuredCss": "360x800",
-              "status": "PARTIAL",
-              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-              "steps": [
-                "Open synthetic document using normal authorized employee preview and audited reason",
-                "Read rendered inline content, use actual Open Document fallback",
-                "Independently measure native fallback viewport and read whole document with scrolling",
-                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-              ],
-              "evidence": [
-                {
-                  "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-                }
-              ],
-              "inlineRenderingStatus": "PASS",
-              "nativeFallbackReadStatus": "PASS",
-              "entryRoleBoundaryStatus": "PASS",
-              "signedResourceBoundaryStatus": "NOT RUN",
-              "inlineFullPdfReadStatus": "PARTIAL"
+              "status": "FAIL",
+              "summary": "The authorized passport preview was present but rendered as a solid black, unreadable pane at this Chrome size.",
+              "evidence": []
             },
             {
               "size": "390×844",
-              "measuredCss": "390x844",
-              "status": "PARTIAL",
-              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-              "steps": [
-                "Open synthetic document using normal authorized employee preview and audited reason",
-                "Read rendered inline content, use actual Open Document fallback",
-                "Independently measure native fallback viewport and read whole document with scrolling",
-                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-              ],
-              "evidence": [
-                {
-                  "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-                }
-              ],
-              "inlineRenderingStatus": "PASS",
-              "nativeFallbackReadStatus": "PASS",
-              "entryRoleBoundaryStatus": "PASS",
-              "signedResourceBoundaryStatus": "NOT RUN",
-              "inlineFullPdfReadStatus": "PARTIAL"
+              "status": "FAIL",
+              "summary": "The authorized passport preview was present but rendered as a solid black, unreadable pane at this Chrome size.",
+              "evidence": []
             },
             {
               "size": "768×1024",
-              "measuredCss": "768x1024",
-              "status": "PARTIAL",
-              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding. Inline photo bottom still outstanding.",
-              "steps": [
-                "Open synthetic document using normal authorized employee preview and audited reason",
-                "Read rendered inline content, use actual Open Document fallback",
-                "Independently measure native fallback viewport and read whole document with scrolling",
-                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-              ],
-              "evidence": [
-                {
-                  "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-                }
-              ],
-              "inlineRenderingStatus": "PASS",
-              "nativeFallbackReadStatus": "PASS",
-              "entryRoleBoundaryStatus": "PASS",
-              "signedResourceBoundaryStatus": "NOT RUN",
-              "inlineFullPdfReadStatus": "PARTIAL"
+              "status": "FAIL",
+              "summary": "The authorized passport preview was present but rendered as a solid black, unreadable pane at this Chrome size.",
+              "evidence": []
             },
             {
               "size": "1024×768",
-              "measuredCss": "1024x768",
-              "status": "PARTIAL",
-              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-              "steps": [
-                "Open synthetic document using normal authorized employee preview and audited reason",
-                "Read rendered inline content, use actual Open Document fallback",
-                "Independently measure native fallback viewport and read whole document with scrolling",
-                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-              ],
-              "evidence": [
-                {
-                  "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-                }
-              ],
-              "inlineRenderingStatus": "PASS",
-              "nativeFallbackReadStatus": "PASS",
-              "entryRoleBoundaryStatus": "PASS",
-              "signedResourceBoundaryStatus": "NOT RUN",
-              "inlineFullPdfReadStatus": "PARTIAL"
+              "status": "FAIL",
+              "summary": "The authorized passport preview was present but rendered as a solid black, unreadable pane at this Chrome size.",
+              "evidence": []
             },
             {
               "size": "1280×800",
-              "measuredCss": "1280x800",
-              "status": "PARTIAL",
-              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-              "steps": [
-                "Open synthetic document using normal authorized employee preview and audited reason",
-                "Read rendered inline content, use actual Open Document fallback",
-                "Independently measure native fallback viewport and read whole document with scrolling",
-                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-              ],
-              "evidence": [
-                {
-                  "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-                }
-              ],
-              "inlineRenderingStatus": "PASS",
-              "nativeFallbackReadStatus": "PASS",
-              "entryRoleBoundaryStatus": "PASS",
-              "signedResourceBoundaryStatus": "NOT RUN",
-              "inlineFullPdfReadStatus": "PARTIAL"
+              "status": "FAIL",
+              "summary": "The authorized passport preview was present but rendered as a solid black, unreadable pane at this Chrome size.",
+              "evidence": []
             },
             {
               "size": "1440×900",
-              "measuredCss": "1440x900",
-              "status": "PARTIAL",
-              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-              "steps": [
-                "Open synthetic document using normal authorized employee preview and audited reason",
-                "Read rendered inline content, use actual Open Document fallback",
-                "Independently measure native fallback viewport and read whole document with scrolling",
-                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-              ],
-              "evidence": [
-                {
-                  "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-                }
-              ],
-              "inlineRenderingStatus": "PASS",
-              "nativeFallbackReadStatus": "PASS",
-              "entryRoleBoundaryStatus": "PASS",
-              "signedResourceBoundaryStatus": "NOT RUN",
-              "inlineFullPdfReadStatus": "PARTIAL"
+              "status": "FAIL",
+              "summary": "The authorized passport preview was present but rendered as a solid black, unreadable pane at this Chrome size.",
+              "evidence": []
             }
           ],
-          "limitations": "Private identity captures, document contents, account identifiers and signed URLs excluded. Shared generic1440 image proves entry-gate denial only, not document readability or signed-resource server authorization. Native phone PDF needs horizontal scrolling. Full inline PDF reading incomplete. Reviewer768 inline photograph bottom remains outstanding.",
-          "evidence": [
-            {
-              "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-            }
-          ],
+          "limitations": "Applicant identity data, signed document URLs, and document images are withheld. No Accept, Query, Reject, or overall review decision was changed.",
+          "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/",
           "group": "KYC Reviewer"
         },
@@ -9943,9 +9836,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-kyc-award-partial",
-        "updatedAt": "2026-09-15T02:04:35.489Z",
-        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
+        "runId": "2026-09-15-verify-eight-partials",
+        "updatedAt": "2026-09-16T00:57:50Z",
+        "state": "PARTIAL VERIFICATION — 8 CRITICAL FINDINGS",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -10045,7 +9938,7 @@
     {
       "name": "KYC Approval",
       "repo": "kyc-approval-uat-report",
-      "commit": "d9b5ee4006c42b18b54901f39defb561f013c9f9",
+      "commit": "176731b2162c5f7019fb6d4dc3c74bb6efd24c96",
       "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome campaign",
       "scenarios": [
@@ -11259,155 +11152,48 @@
           "scenario": "KYCA-004 / KYCA-006 / KYCA-016 / KYCA-019",
           "summary": "The authorized PDF frame rendered black at 360×800, 390×844, 768×1024, 1024×768, 1280×800 and 1440×900.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "Original black/blank document symptom not reproduced: inline synthetic PDF and photograph rendered at six source-app CSS sizes; actual Open Document clicked at each, then native fallback separately measured to exact six sizes and whole content read. Ordinary non-KYC role denied dashboard entry after six full reloads. Overall PARTIAL; full inline PDF zoom/scroll remains outstanding.",
+          "status": "FAIL",
+          "retestSummary": "The approver opened an authorized controlled passport preview through the normal audited workflow. The inline PDF pane rendered solid black and unreadable at every required Chrome size, reproducing the critical defect.",
           "responsive": [
             {
               "size": "360×800",
-              "measuredCss": "360x800",
-              "status": "PARTIAL",
-              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-              "steps": [
-                "Open synthetic document using normal authorized employee preview and audited reason",
-                "Read rendered inline content, use actual Open Document fallback",
-                "Independently measure native fallback viewport and read whole document with scrolling",
-                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-              ],
-              "evidence": [
-                {
-                  "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-                }
-              ],
-              "inlineRenderingStatus": "PASS",
-              "nativeFallbackReadStatus": "PASS",
-              "entryRoleBoundaryStatus": "PASS",
-              "signedResourceBoundaryStatus": "NOT RUN",
-              "inlineFullPdfReadStatus": "PARTIAL"
+              "status": "FAIL",
+              "summary": "The authorized passport PDF pane rendered solid black and unreadable at this Chrome size.",
+              "evidence": []
             },
             {
               "size": "390×844",
-              "measuredCss": "390x844",
-              "status": "PARTIAL",
-              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-              "steps": [
-                "Open synthetic document using normal authorized employee preview and audited reason",
-                "Read rendered inline content, use actual Open Document fallback",
-                "Independently measure native fallback viewport and read whole document with scrolling",
-                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-              ],
-              "evidence": [
-                {
-                  "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-                }
-              ],
-              "inlineRenderingStatus": "PASS",
-              "nativeFallbackReadStatus": "PASS",
-              "entryRoleBoundaryStatus": "PASS",
-              "signedResourceBoundaryStatus": "NOT RUN",
-              "inlineFullPdfReadStatus": "PARTIAL"
+              "status": "FAIL",
+              "summary": "The authorized passport PDF pane rendered solid black and unreadable at this Chrome size.",
+              "evidence": []
             },
             {
               "size": "768×1024",
-              "measuredCss": "768x1024",
-              "status": "PARTIAL",
-              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-              "steps": [
-                "Open synthetic document using normal authorized employee preview and audited reason",
-                "Read rendered inline content, use actual Open Document fallback",
-                "Independently measure native fallback viewport and read whole document with scrolling",
-                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-              ],
-              "evidence": [
-                {
-                  "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-                }
-              ],
-              "inlineRenderingStatus": "PASS",
-              "nativeFallbackReadStatus": "PASS",
-              "entryRoleBoundaryStatus": "PASS",
-              "signedResourceBoundaryStatus": "NOT RUN",
-              "inlineFullPdfReadStatus": "PARTIAL"
+              "status": "FAIL",
+              "summary": "The authorized passport PDF pane rendered solid black and unreadable at this Chrome size.",
+              "evidence": []
             },
             {
               "size": "1024×768",
-              "measuredCss": "1024x768",
-              "status": "PARTIAL",
-              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-              "steps": [
-                "Open synthetic document using normal authorized employee preview and audited reason",
-                "Read rendered inline content, use actual Open Document fallback",
-                "Independently measure native fallback viewport and read whole document with scrolling",
-                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-              ],
-              "evidence": [
-                {
-                  "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-                }
-              ],
-              "inlineRenderingStatus": "PASS",
-              "nativeFallbackReadStatus": "PASS",
-              "entryRoleBoundaryStatus": "PASS",
-              "signedResourceBoundaryStatus": "NOT RUN",
-              "inlineFullPdfReadStatus": "PARTIAL"
+              "status": "FAIL",
+              "summary": "The authorized passport PDF pane rendered solid black and unreadable at this Chrome size.",
+              "evidence": []
             },
             {
               "size": "1280×800",
-              "measuredCss": "1280x800",
-              "status": "PARTIAL",
-              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-              "steps": [
-                "Open synthetic document using normal authorized employee preview and audited reason",
-                "Read rendered inline content, use actual Open Document fallback",
-                "Independently measure native fallback viewport and read whole document with scrolling",
-                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-              ],
-              "evidence": [
-                {
-                  "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-                }
-              ],
-              "inlineRenderingStatus": "PASS",
-              "nativeFallbackReadStatus": "PASS",
-              "entryRoleBoundaryStatus": "PASS",
-              "signedResourceBoundaryStatus": "NOT RUN",
-              "inlineFullPdfReadStatus": "PARTIAL"
+              "status": "FAIL",
+              "summary": "The authorized passport PDF pane rendered solid black and unreadable at this Chrome size.",
+              "evidence": []
             },
             {
               "size": "1440×900",
-              "measuredCss": "1440x900",
-              "status": "PARTIAL",
-              "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-              "steps": [
-                "Open synthetic document using normal authorized employee preview and audited reason",
-                "Read rendered inline content, use actual Open Document fallback",
-                "Independently measure native fallback viewport and read whole document with scrolling",
-                "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-              ],
-              "evidence": [
-                {
-                  "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-                  "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-                }
-              ],
-              "inlineRenderingStatus": "PASS",
-              "nativeFallbackReadStatus": "PASS",
-              "entryRoleBoundaryStatus": "PASS",
-              "signedResourceBoundaryStatus": "NOT RUN",
-              "inlineFullPdfReadStatus": "PARTIAL"
+              "status": "FAIL",
+              "summary": "The authorized passport PDF pane rendered solid black and unreadable at this Chrome size.",
+              "evidence": []
             }
           ],
-          "limitations": "Private identity captures, document contents, account identifiers and signed URLs excluded. Shared generic1440 image proves entry-gate denial only, not document readability or signed-resource server authorization. Native phone PDF needs horizontal scrolling. Full inline PDF reading incomplete. Approver768 photograph initial fetch error recovered through visible Retry Preview; prior failure retained as history.",
-          "evidence": [
-            {
-              "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-            }
-          ],
+          "limitations": "Applicant identity data, signed document URLs, and document images are withheld. The fallback was not used to weaken the inline-readability acceptance requirement, and no approval decision was changed.",
+          "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/",
           "group": "KYC Approval"
         },
@@ -11834,9 +11620,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-14-close37-kyc-award-partial",
-        "updatedAt": "2026-09-15T02:04:35.489Z",
-        "state": "RETEST PARTIAL — completed targeted batch published; remaining findings retain their latest recorded outcomes",
+        "runId": "2026-09-15-verify-eight-partials",
+        "updatedAt": "2026-09-16T00:57:50Z",
+        "state": "PARTIAL VERIFICATION — 8 CRITICAL FINDINGS",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -11936,7 +11722,7 @@
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "060477e0e3782e1784a326cea95804476778e51a",
+      "commit": "5ae232074ad388778aade17f319561595f18713e",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -12040,47 +11826,47 @@
           "scenario": "ADM-050",
           "summary": "The delivered confirmation CTA reaches the configured tracking domain and Chrome stops on ERR_CERT_COMMON_NAME_INVALID. Email verification and approval cannot complete normally.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link.",
+          "status": "PASS",
+          "retestSummary": "A fresh reviewer-issued KYC confirmation email arrived in the controlled mailbox within about one minute. Its first-party HTTPS confirmation link opened without a certificate warning, was accepted by the deployed application, and redirected to login. The accepted result rendered without horizontal overflow at all six Chrome sizes.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "390×844",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "768×1024",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "1024×768",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "1280×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "1440×900",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             }
           ],
-          "limitations": "Historical token replay only. Fresh KYC confirmation issuance, token acceptance and reviewer/approver readback are not completed. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+          "limitations": "The controlled record was already marked email-verified before this resend, so this run proves fresh issuance, delivery, HTTPS acceptance, and responsive routing; it does not claim a second verification-state transition.",
           "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
           "group": "Super Admin"
@@ -12200,46 +11986,46 @@
           "summary": "Running balances, signs, timestamps and counterparties conflict with current balances on inspected bid records.",
           "historicalStatus": "Open",
           "status": "PARTIAL",
-          "retestSummary": "Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access.",
+          "retestSummary": "The controlled Pitcher wallet freshly exposed current and available NGN balances and recent running-balance rows. The historical journal remains mathematically balanced from the prior same-release six-size verification, but the normal wallet search could not correlate the exact historical bid: one search fanned out into dozens of page requests and remained in a loading state, while an internal-record-id search returned no UI row.",
           "responsive": [
             {
               "size": "360×800",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "390×844",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "768×1024",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "1024×768",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "1280×800",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "1440×900",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             }
           ],
-          "limitations": "Historical double-entry equations pass, but original defect also concerns current wallet/running-balance consistency and counterparties. No fresh bid/refund/capture or wallet running-balance comparison was performed, so the full defect remains partially verified. Journal detail uses raw internal account identifiers; those details were not saved as public evidence. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+          "limitations": "The exact historical bid row, public reference, matching counterparty leg, and running-balance transition were not jointly available through the normal deployed UI. No transaction, backfill, capture, refund, or balance mutation was performed.",
           "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
           "group": "Super Admin"
@@ -13782,9 +13568,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-15-close37-verified-five",
-        "updatedAt": "2026-09-15T15:45:00Z",
-        "state": "RETEST PARTIAL — five additional critical/high findings are deployed and six-size Chrome verified",
+        "runId": "2026-09-15-verify-eight-partials",
+        "updatedAt": "2026-09-16T00:57:50Z",
+        "state": "PARTIAL VERIFICATION — 8 CRITICAL FINDINGS",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -14501,7 +14287,7 @@
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "b7d550916ee23302e430b2bf94f4fa02507f8b79",
+      "commit": "4e2e38102a111306e411c33d1133f9f048b1840c",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -14578,47 +14364,47 @@
           "scenario": "ADM-050",
           "summary": "The delivered confirmation CTA reaches the configured tracking domain and Chrome stops on ERR_CERT_COMMON_NAME_INVALID. Email verification and approval cannot complete normally.",
           "historicalStatus": "Open",
-          "status": "PARTIAL",
-          "retestSummary": "Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link.",
+          "status": "PASS",
+          "retestSummary": "A fresh reviewer-issued KYC confirmation email arrived in the controlled mailbox within about one minute. Its first-party HTTPS confirmation link opened without a certificate warning, was accepted by the deployed application, and redirected to login. The accepted result rendered without horizontal overflow at all six Chrome sizes.",
           "responsive": [
             {
               "size": "360×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "390×844",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "768×1024",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "1024×768",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "1280×800",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             },
             {
               "size": "1440×900",
-              "status": "PARTIAL",
-              "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+              "status": "PASS",
+              "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
               "evidence": []
             }
           ],
-          "limitations": "Historical token replay only. Fresh KYC confirmation issuance, token acceptance and reviewer/approver readback are not completed. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+          "limitations": "The controlled record was already marked email-verified before this resend, so this run proves fresh issuance, delivery, HTTPS acceptance, and responsive routing; it does not claim a second verification-state transition.",
           "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
           "group": "Cross-role Platform Journeys"
@@ -14738,46 +14524,46 @@
           "summary": "Running balances, signs, timestamps and counterparties conflict with current balances on inspected bid records.",
           "historicalStatus": "Open",
           "status": "PARTIAL",
-          "retestSummary": "Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access.",
+          "retestSummary": "The controlled Pitcher wallet freshly exposed current and available NGN balances and recent running-balance rows. The historical journal remains mathematically balanced from the prior same-release six-size verification, but the normal wallet search could not correlate the exact historical bid: one search fanned out into dozens of page requests and remained in a loading state, while an internal-record-id search returned no UI row.",
           "responsive": [
             {
               "size": "360×800",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "390×844",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "768×1024",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "1024×768",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "1280×800",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             },
             {
               "size": "1440×900",
               "status": "PARTIAL",
-              "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+              "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
               "evidence": []
             }
           ],
-          "limitations": "Historical double-entry equations pass, but original defect also concerns current wallet/running-balance consistency and counterparties. No fresh bid/refund/capture or wallet running-balance comparison was performed, so the full defect remains partially verified. Journal detail uses raw internal account identifiers; those details were not saved as public evidence. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+          "limitations": "The exact historical bid row, public reference, matching counterparty leg, and running-balance transition were not jointly available through the normal deployed UI. No transaction, backfill, capture, refund, or balance mutation was performed.",
           "evidence": [],
           "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
           "group": "Cross-role Platform Journeys"
@@ -16034,9 +15820,9 @@
         }
       ],
       "targeted": {
-        "runId": "2026-09-15-close37-verified-five",
-        "updatedAt": "2026-09-15T15:45:00Z",
-        "state": "RETEST PARTIAL — five additional critical/high findings are deployed and six-size Chrome verified",
+        "runId": "2026-09-15-verify-eight-partials",
+        "updatedAt": "2026-09-16T00:57:50Z",
+        "state": "PARTIAL VERIFICATION — 8 CRITICAL FINDINGS",
         "deployments": {
           "webapp": {
             "commit": "5061ed8dcb1b62fcba7e8bd411681426b2a52fb9",
@@ -22065,47 +21851,47 @@
       "scenario": "ADM-050",
       "summary": "The delivered confirmation CTA reaches the configured tracking domain and Chrome stops on ERR_CERT_COMMON_NAME_INVALID. Email verification and approval cannot complete normally.",
       "historicalStatus": "Open",
-      "status": "PARTIAL",
-      "retestSummary": "Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link.",
+      "status": "PASS",
+      "retestSummary": "A fresh reviewer-issued KYC confirmation email arrived in the controlled mailbox within about one minute. Its first-party HTTPS confirmation link opened without a certificate warning, was accepted by the deployed application, and redirected to login. The accepted result rendered without horizontal overflow at all six Chrome sizes.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
           "evidence": []
         },
         {
           "size": "390×844",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
           "evidence": []
         },
         {
           "size": "768×1024",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
           "evidence": []
         },
         {
           "size": "1024×768",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
           "evidence": []
         },
         {
           "size": "1280×800",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
           "evidence": []
         },
         {
           "size": "1440×900",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Opened the actual September 8 KYC Email Confirmation in the controlled Pitcher inbox. Tracking redirect now reaches the canonical HTTPS verification page without a Chrome certificate warning. It reports Token is Invalid or expired at all six sizes, with a login recovery link. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "Fresh confirmation reached the normal deployed login route without TLS or layout failure at this measured Chrome size.",
           "evidence": []
         }
       ],
-      "limitations": "Historical token replay only. Fresh KYC confirmation issuance, token acceptance and reviewer/approver readback are not completed. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+      "limitations": "The controlled record was already marked email-verified before this resend, so this run proves fresh issuance, delivery, HTTPS acceptance, and responsive routing; it does not claim a second verification-state transition.",
       "evidence": [],
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "group": "Admin",
@@ -22240,46 +22026,46 @@
       "summary": "Running balances, signs, timestamps and counterparties conflict with current balances on inspected bid records.",
       "historicalStatus": "Open",
       "status": "PARTIAL",
-      "retestSummary": "Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access.",
+      "retestSummary": "The controlled Pitcher wallet freshly exposed current and available NGN balances and recent running-balance rows. The historical journal remains mathematically balanced from the prior same-release six-size verification, but the normal wallet search could not correlate the exact historical bid: one search fanned out into dozens of page requests and remained in a loading state, while an internal-record-id search returned no UI row.",
       "responsive": [
         {
           "size": "360×800",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+          "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
           "evidence": []
         },
         {
           "size": "390×844",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+          "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
           "evidence": []
         },
         {
           "size": "768×1024",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+          "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
           "evidence": []
         },
         {
           "size": "1024×768",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+          "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
           "evidence": []
         },
         {
           "size": "1280×800",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+          "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
           "evidence": []
         },
         {
           "size": "1440×900",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh controlled owner-rejection filter returned eight journal rows covering 100.00 and 100.01 submit/reject cycles. All fourteen account amounts per row sum to zero, every Control is Valid, and all account aggregates are 0.00. Mobile journal cards show the paired signs. Actual horizontal scrolling reached rightmost account/control columns; six-size images record that access. No independent per-size workflow acceptance outcome supplied.",
+          "summary": "Prior same-release journal accessibility remains recorded at this size; the fresh wallet-to-historical-row correlation is still incomplete.",
           "evidence": []
         }
       ],
-      "limitations": "Historical double-entry equations pass, but original defect also concerns current wallet/running-balance consistency and counterparties. No fresh bid/refund/capture or wallet running-balance comparison was performed, so the full defect remains partially verified. Journal detail uses raw internal account identifiers; those details were not saved as public evidence. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+      "limitations": "The exact historical bid row, public reference, matching counterparty leg, and running-balance transition were not jointly available through the normal deployed UI. No transaction, backfill, capture, refund, or balance mutation was performed.",
       "evidence": [],
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "group": "Admin",
@@ -24098,47 +23884,47 @@
       "scenario": "ORG-005",
       "summary": "Signup and confirmation emails arrived, but the recovery flow sent a second-stage magic link that resolved to the already-consumed token and reported invalid or expired.",
       "historicalStatus": "Open",
-      "status": "PARTIAL",
-      "retestSummary": "Fresh synthetic invitee recovery request delivered email. First confirmation sent a second magic link, which opened the Change your password form successfully at all six sizes. Password entry and submission handed to user; no credential changed by agent.",
+      "status": "PASS",
+      "retestSummary": "A fresh two-stage password-recovery chain produced a usable second-stage link. The reset form was complete at all six Chrome sizes, the new credential signed in successfully, and replaying the consumed link returned Invalid or expired. Organization membership remained available after login.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh synthetic invitee recovery request delivered email. First confirmation sent a second magic link, which opened the Change your password form successfully at all six sizes. Password entry and submission handed to user; no credential changed by agent. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "The fresh reset form and its submission controls were usable at this Chrome size; the consumed-token replay remained rejected.",
           "evidence": []
         },
         {
           "size": "390×844",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh synthetic invitee recovery request delivered email. First confirmation sent a second magic link, which opened the Change your password form successfully at all six sizes. Password entry and submission handed to user; no credential changed by agent. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "The fresh reset form and its submission controls were usable at this Chrome size; the consumed-token replay remained rejected.",
           "evidence": []
         },
         {
           "size": "768×1024",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh synthetic invitee recovery request delivered email. First confirmation sent a second magic link, which opened the Change your password form successfully at all six sizes. Password entry and submission handed to user; no credential changed by agent. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "The fresh reset form and its submission controls were usable at this Chrome size; the consumed-token replay remained rejected.",
           "evidence": []
         },
         {
           "size": "1024×768",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh synthetic invitee recovery request delivered email. First confirmation sent a second magic link, which opened the Change your password form successfully at all six sizes. Password entry and submission handed to user; no credential changed by agent. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "The fresh reset form and its submission controls were usable at this Chrome size; the consumed-token replay remained rejected.",
           "evidence": []
         },
         {
           "size": "1280×800",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh synthetic invitee recovery request delivered email. First confirmation sent a second magic link, which opened the Change your password form successfully at all six sizes. Password entry and submission handed to user; no credential changed by agent. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "The fresh reset form and its submission controls were usable at this Chrome size; the consumed-token replay remained rejected.",
           "evidence": []
         },
         {
           "size": "1440×900",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh synthetic invitee recovery request delivered email. First confirmation sent a second magic link, which opened the Change your password form successfully at all six sizes. Password entry and submission handed to user; no credential changed by agent. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "The fresh reset form and its submission controls were usable at this Chrome size; the consumed-token replay remained rejected.",
           "evidence": []
         }
       ],
-      "limitations": "New-password completion, subsequent login and consumed-link replay await user handoff. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+      "limitations": "Credentials, mailbox content, MFA values, token URLs, and organization identifiers are withheld from the public report.",
       "evidence": [],
       "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
       "group": "Organization",
@@ -26644,47 +26430,47 @@
       "scenario": "PUB-016",
       "summary": "Qualifying same-deployment evidence from the Organization new-user recovery journey showed the emailed recovery chain resolving to an invalid already-consumed token.",
       "historicalStatus": "Open",
-      "status": "PARTIAL",
-      "retestSummary": "Fresh recovery email chain reaches a usable new-password form across six Chrome sizes. No consumed token exists yet because changing the credential requires user completion.",
+      "status": "PASS",
+      "retestSummary": "Shared fresh recovery evidence confirms that the deployed flow issues a new usable second-stage link and rejects exact replay after consumption. The reset form was usable at all six Chrome sizes and the resulting credential signed in successfully.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh recovery email chain reaches a usable new-password form across six Chrome sizes. No consumed token exists yet because changing the credential requires user completion. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "The new recovery link was usable and the exact consumed-token replay was rejected at this measured Chrome size.",
           "evidence": []
         },
         {
           "size": "390×844",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh recovery email chain reaches a usable new-password form across six Chrome sizes. No consumed token exists yet because changing the credential requires user completion. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "The new recovery link was usable and the exact consumed-token replay was rejected at this measured Chrome size.",
           "evidence": []
         },
         {
           "size": "768×1024",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh recovery email chain reaches a usable new-password form across six Chrome sizes. No consumed token exists yet because changing the credential requires user completion. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "The new recovery link was usable and the exact consumed-token replay was rejected at this measured Chrome size.",
           "evidence": []
         },
         {
           "size": "1024×768",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh recovery email chain reaches a usable new-password form across six Chrome sizes. No consumed token exists yet because changing the credential requires user completion. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "The new recovery link was usable and the exact consumed-token replay was rejected at this measured Chrome size.",
           "evidence": []
         },
         {
           "size": "1280×800",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh recovery email chain reaches a usable new-password form across six Chrome sizes. No consumed token exists yet because changing the credential requires user completion. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "The new recovery link was usable and the exact consumed-token replay was rejected at this measured Chrome size.",
           "evidence": []
         },
         {
           "size": "1440×900",
-          "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fresh recovery email chain reaches a usable new-password form across six Chrome sizes. No consumed token exists yet because changing the credential requires user completion. No independent per-size workflow acceptance outcome supplied.",
+          "status": "PASS",
+          "summary": "The new recovery link was usable and the exact consumed-token replay was rejected at this measured Chrome size.",
           "evidence": []
         }
       ],
-      "limitations": "Consumed-token replay is not passed; user handoff pending. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+      "limitations": "The Organization and Guest/Public findings share the same deployed recovery defect and acceptance evidence. Secret values and token URLs are not published.",
       "evidence": [],
       "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
       "group": "Guest / Public",
@@ -26720,46 +26506,46 @@
       "summary": "Open grant cards advertise public contributions, but the blank public grant body contains no Contribute control, preventing amount, provider, callback and receipt testing.",
       "historicalStatus": "Open",
       "status": "PARTIAL",
-      "retestSummary": "Fund this grant opens guest contribution dialog at all six sizes. Blank, zero and negative amounts are rejected; positive 100 advances validation to required email/phone. No payment or verification message sent.",
+      "retestSummary": "The public grant exposes both Apply and Fund controls at all six Chrome sizes. Fund opens a responsive Verify and fund dialog; blank amount and amount-only submissions are rejected with the correct amount and contact-verification guards. Checkout and settlement remain unexecuted.",
       "responsive": [
         {
           "size": "360×800",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fund this grant opens guest contribution dialog at all six sizes. Blank, zero and negative amounts are rejected; positive 100 advances validation to required email/phone. No payment or verification message sent. No independent per-size workflow acceptance outcome supplied.",
+          "summary": "Apply and Fund were reachable; the contribution dialog and verification control rendered without page overflow at this Chrome size. SMS and payment were not sent.",
           "evidence": []
         },
         {
           "size": "390×844",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fund this grant opens guest contribution dialog at all six sizes. Blank, zero and negative amounts are rejected; positive 100 advances validation to required email/phone. No payment or verification message sent. No independent per-size workflow acceptance outcome supplied.",
+          "summary": "Apply and Fund were reachable; the contribution dialog and verification control rendered without page overflow at this Chrome size. SMS and payment were not sent.",
           "evidence": []
         },
         {
           "size": "768×1024",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fund this grant opens guest contribution dialog at all six sizes. Blank, zero and negative amounts are rejected; positive 100 advances validation to required email/phone. No payment or verification message sent. No independent per-size workflow acceptance outcome supplied.",
+          "summary": "Apply and Fund were reachable; the contribution dialog and verification control rendered without page overflow at this Chrome size. SMS and payment were not sent.",
           "evidence": []
         },
         {
           "size": "1024×768",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fund this grant opens guest contribution dialog at all six sizes. Blank, zero and negative amounts are rejected; positive 100 advances validation to required email/phone. No payment or verification message sent. No independent per-size workflow acceptance outcome supplied.",
+          "summary": "Apply and Fund were reachable; the contribution dialog and verification control rendered without page overflow at this Chrome size. SMS and payment were not sent.",
           "evidence": []
         },
         {
           "size": "1280×800",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fund this grant opens guest contribution dialog at all six sizes. Blank, zero and negative amounts are rejected; positive 100 advances validation to required email/phone. No payment or verification message sent. No independent per-size workflow acceptance outcome supplied.",
+          "summary": "Apply and Fund were reachable; the contribution dialog and verification control rendered without page overflow at this Chrome size. SMS and payment were not sent.",
           "evidence": []
         },
         {
           "size": "1440×900",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Fund this grant opens guest contribution dialog at all six sizes. Blank, zero and negative amounts are rejected; positive 100 advances validation to required email/phone. No payment or verification message sent. No independent per-size workflow acceptance outcome supplied.",
+          "summary": "Apply and Fund were reachable; the contribution dialog and verification control rendered without page overflow at this Chrome size. SMS and payment were not sent.",
           "evidence": []
         }
       ],
-      "limitations": "Controlled SMS endpoint requested from user; settlement, decline, cancel and replay untested. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+      "limitations": "No controlled SMS inbox/number and payment sandbox settlement path is available. No verification message, payment, decline, cancellation, callback, receipt, or replay was triggered.",
       "evidence": [],
       "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
       "group": "Guest / Public",
@@ -26776,46 +26562,46 @@
       "summary": "The selected public grant detail is blank and exposes no Apply action, so destination-preserving signup, verification, KYC, application and query/reply cannot be joined.",
       "historicalStatus": "Open",
       "status": "PARTIAL",
-      "retestSummary": "Guest Apply preserved the selected grant in returnUrl and opened its application dialog immediately after controlled Pitcher login. Blank submission rejected. A synthetic draft with text/boolean answers persisted after reload, resumed with criteria version 1, and submitted once. Your applications (1) now shows Pending and Already Applied blocks duplicate entry.",
+      "retestSummary": "Guest Apply preserved the selected grant in returnUrl and automatically reopened the application dialog after controlled login. A previously submitted controlled application remains Pending, and the Already Applied duplicate guard plus the submitted application row render correctly at all six Chrome sizes.",
       "responsive": [
         {
           "size": "360×800",
-          "status": "NOT RUN",
-          "summary": "No new per-size outcome supplied.",
+          "status": "PARTIAL",
+          "summary": "The Pending application, amount, withdrawal action, and disabled Already Applied duplicate guard were visible without page overflow at this Chrome size.",
           "evidence": []
         },
         {
           "size": "390×844",
-          "status": "NOT RUN",
-          "summary": "No new per-size outcome supplied.",
+          "status": "PARTIAL",
+          "summary": "The Pending application, amount, withdrawal action, and disabled Already Applied duplicate guard were visible without page overflow at this Chrome size.",
           "evidence": []
         },
         {
           "size": "768×1024",
-          "status": "NOT RUN",
-          "summary": "No new per-size outcome supplied.",
+          "status": "PARTIAL",
+          "summary": "The Pending application, amount, withdrawal action, and disabled Already Applied duplicate guard were visible without page overflow at this Chrome size.",
           "evidence": []
         },
         {
           "size": "1024×768",
-          "status": "NOT RUN",
-          "summary": "No new per-size outcome supplied.",
+          "status": "PARTIAL",
+          "summary": "The Pending application, amount, withdrawal action, and disabled Already Applied duplicate guard were visible without page overflow at this Chrome size.",
           "evidence": []
         },
         {
           "size": "1280×800",
-          "status": "NOT RUN",
-          "summary": "No new per-size outcome supplied.",
+          "status": "PARTIAL",
+          "summary": "The Pending application, amount, withdrawal action, and disabled Already Applied duplicate guard were visible without page overflow at this Chrome size.",
           "evidence": []
         },
         {
           "size": "1440×900",
           "status": "PARTIAL",
-          "summary": "Rendered state inspected: Guest Apply preserved the selected grant in returnUrl and opened its application dialog immediately after controlled Pitcher login. Blank submission rejected. A synthetic draft with text/boolean answers persisted after reload, resumed with criteria version 1, and submitted once. Your applications (1) now shows Pending and Already Applied blocks duplicate entry. No independent per-size workflow acceptance outcome supplied.",
+          "summary": "The Pending application, amount, withdrawal action, and disabled Already Applied duplicate guard were visible without page overflow at this Chrome size.",
           "evidence": []
         }
       ],
-      "limitations": "Fresh signup/verification/KYC and grantor query/reply, six-size completed-state coverage remain pending. No award requested. Evidence withheld pending explicit public-asset review. Private document captures, signed links and local paths are never copied automatically.",
+      "limitations": "A fresh signup/KYC branch and the grant-owner query plus applicant reply branch were not completed. The exact grant-owner credential is not available in the controlled Chrome profile, and no synthetic application was resubmitted.",
       "evidence": [],
       "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
       "group": "Guest / Public",
@@ -26831,155 +26617,48 @@
       "scenario": "KYCR-004 / KYCR-006 / KYCR-009",
       "summary": "The passport PDF preview remained black, the photograph preview was blank, and Open document did not navigate.",
       "historicalStatus": "Open",
-      "status": "PARTIAL",
-      "retestSummary": "Original black/blank document symptom not reproduced: inline synthetic PDF and photograph rendered at six source-app CSS sizes; actual Open Document clicked at each, then native fallback separately measured to exact six sizes and whole content read. Ordinary non-KYC role denied dashboard entry after six full reloads. Overall PARTIAL; full inline PDF zoom/scroll remains outstanding.",
+      "status": "FAIL",
+      "retestSummary": "The reviewer opened an authorized controlled passport preview through the normal audited workflow. The inline PDF pane rendered solid black at all six Chrome sizes, and the signed Open document fallback also rendered black, so the required identity evidence remained unreadable.",
       "responsive": [
         {
           "size": "360×800",
-          "measuredCss": "360x800",
-          "status": "PARTIAL",
-          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-          "steps": [
-            "Open synthetic document using normal authorized employee preview and audited reason",
-            "Read rendered inline content, use actual Open Document fallback",
-            "Independently measure native fallback viewport and read whole document with scrolling",
-            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-          ],
-          "evidence": [
-            {
-              "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-            }
-          ],
-          "inlineRenderingStatus": "PASS",
-          "nativeFallbackReadStatus": "PASS",
-          "entryRoleBoundaryStatus": "PASS",
-          "signedResourceBoundaryStatus": "NOT RUN",
-          "inlineFullPdfReadStatus": "PARTIAL"
+          "status": "FAIL",
+          "summary": "The authorized passport preview was present but rendered as a solid black, unreadable pane at this Chrome size.",
+          "evidence": []
         },
         {
           "size": "390×844",
-          "measuredCss": "390x844",
-          "status": "PARTIAL",
-          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-          "steps": [
-            "Open synthetic document using normal authorized employee preview and audited reason",
-            "Read rendered inline content, use actual Open Document fallback",
-            "Independently measure native fallback viewport and read whole document with scrolling",
-            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-          ],
-          "evidence": [
-            {
-              "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-            }
-          ],
-          "inlineRenderingStatus": "PASS",
-          "nativeFallbackReadStatus": "PASS",
-          "entryRoleBoundaryStatus": "PASS",
-          "signedResourceBoundaryStatus": "NOT RUN",
-          "inlineFullPdfReadStatus": "PARTIAL"
+          "status": "FAIL",
+          "summary": "The authorized passport preview was present but rendered as a solid black, unreadable pane at this Chrome size.",
+          "evidence": []
         },
         {
           "size": "768×1024",
-          "measuredCss": "768x1024",
-          "status": "PARTIAL",
-          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding. Inline photo bottom still outstanding.",
-          "steps": [
-            "Open synthetic document using normal authorized employee preview and audited reason",
-            "Read rendered inline content, use actual Open Document fallback",
-            "Independently measure native fallback viewport and read whole document with scrolling",
-            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-          ],
-          "evidence": [
-            {
-              "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-            }
-          ],
-          "inlineRenderingStatus": "PASS",
-          "nativeFallbackReadStatus": "PASS",
-          "entryRoleBoundaryStatus": "PASS",
-          "signedResourceBoundaryStatus": "NOT RUN",
-          "inlineFullPdfReadStatus": "PARTIAL"
+          "status": "FAIL",
+          "summary": "The authorized passport preview was present but rendered as a solid black, unreadable pane at this Chrome size.",
+          "evidence": []
         },
         {
           "size": "1024×768",
-          "measuredCss": "1024x768",
-          "status": "PARTIAL",
-          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-          "steps": [
-            "Open synthetic document using normal authorized employee preview and audited reason",
-            "Read rendered inline content, use actual Open Document fallback",
-            "Independently measure native fallback viewport and read whole document with scrolling",
-            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-          ],
-          "evidence": [
-            {
-              "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-            }
-          ],
-          "inlineRenderingStatus": "PASS",
-          "nativeFallbackReadStatus": "PASS",
-          "entryRoleBoundaryStatus": "PASS",
-          "signedResourceBoundaryStatus": "NOT RUN",
-          "inlineFullPdfReadStatus": "PARTIAL"
+          "status": "FAIL",
+          "summary": "The authorized passport preview was present but rendered as a solid black, unreadable pane at this Chrome size.",
+          "evidence": []
         },
         {
           "size": "1280×800",
-          "measuredCss": "1280x800",
-          "status": "PARTIAL",
-          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-          "steps": [
-            "Open synthetic document using normal authorized employee preview and audited reason",
-            "Read rendered inline content, use actual Open Document fallback",
-            "Independently measure native fallback viewport and read whole document with scrolling",
-            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-          ],
-          "evidence": [
-            {
-              "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-            }
-          ],
-          "inlineRenderingStatus": "PASS",
-          "nativeFallbackReadStatus": "PASS",
-          "entryRoleBoundaryStatus": "PASS",
-          "signedResourceBoundaryStatus": "NOT RUN",
-          "inlineFullPdfReadStatus": "PARTIAL"
+          "status": "FAIL",
+          "summary": "The authorized passport preview was present but rendered as a solid black, unreadable pane at this Chrome size.",
+          "evidence": []
         },
         {
           "size": "1440×900",
-          "measuredCss": "1440x900",
-          "status": "PARTIAL",
-          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-          "steps": [
-            "Open synthetic document using normal authorized employee preview and audited reason",
-            "Read rendered inline content, use actual Open Document fallback",
-            "Independently measure native fallback viewport and read whole document with scrolling",
-            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-          ],
-          "evidence": [
-            {
-              "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-            }
-          ],
-          "inlineRenderingStatus": "PASS",
-          "nativeFallbackReadStatus": "PASS",
-          "entryRoleBoundaryStatus": "PASS",
-          "signedResourceBoundaryStatus": "NOT RUN",
-          "inlineFullPdfReadStatus": "PARTIAL"
+          "status": "FAIL",
+          "summary": "The authorized passport preview was present but rendered as a solid black, unreadable pane at this Chrome size.",
+          "evidence": []
         }
       ],
-      "limitations": "Private identity captures, document contents, account identifiers and signed URLs excluded. Shared generic1440 image proves entry-gate denial only, not document readability or signed-resource server authorization. Native phone PDF needs horizontal scrolling. Full inline PDF reading incomplete. Reviewer768 inline photograph bottom remains outstanding.",
-      "evidence": [
-        {
-          "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-          "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-        }
-      ],
+      "limitations": "Applicant identity data, signed document URLs, and document images are withheld. No Accept, Query, Reject, or overall review decision was changed.",
+      "evidence": [],
       "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/",
       "group": "KYC Reviewer",
       "groups": [
@@ -27214,155 +26893,48 @@
       "scenario": "KYCA-004 / KYCA-006 / KYCA-016 / KYCA-019",
       "summary": "The authorized PDF frame rendered black at 360×800, 390×844, 768×1024, 1024×768, 1280×800 and 1440×900.",
       "historicalStatus": "Open",
-      "status": "PARTIAL",
-      "retestSummary": "Original black/blank document symptom not reproduced: inline synthetic PDF and photograph rendered at six source-app CSS sizes; actual Open Document clicked at each, then native fallback separately measured to exact six sizes and whole content read. Ordinary non-KYC role denied dashboard entry after six full reloads. Overall PARTIAL; full inline PDF zoom/scroll remains outstanding.",
+      "status": "FAIL",
+      "retestSummary": "The approver opened an authorized controlled passport preview through the normal audited workflow. The inline PDF pane rendered solid black and unreadable at every required Chrome size, reproducing the critical defect.",
       "responsive": [
         {
           "size": "360×800",
-          "measuredCss": "360x800",
-          "status": "PARTIAL",
-          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-          "steps": [
-            "Open synthetic document using normal authorized employee preview and audited reason",
-            "Read rendered inline content, use actual Open Document fallback",
-            "Independently measure native fallback viewport and read whole document with scrolling",
-            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-          ],
-          "evidence": [
-            {
-              "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-            }
-          ],
-          "inlineRenderingStatus": "PASS",
-          "nativeFallbackReadStatus": "PASS",
-          "entryRoleBoundaryStatus": "PASS",
-          "signedResourceBoundaryStatus": "NOT RUN",
-          "inlineFullPdfReadStatus": "PARTIAL"
+          "status": "FAIL",
+          "summary": "The authorized passport PDF pane rendered solid black and unreadable at this Chrome size.",
+          "evidence": []
         },
         {
           "size": "390×844",
-          "measuredCss": "390x844",
-          "status": "PARTIAL",
-          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-          "steps": [
-            "Open synthetic document using normal authorized employee preview and audited reason",
-            "Read rendered inline content, use actual Open Document fallback",
-            "Independently measure native fallback viewport and read whole document with scrolling",
-            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-          ],
-          "evidence": [
-            {
-              "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-            }
-          ],
-          "inlineRenderingStatus": "PASS",
-          "nativeFallbackReadStatus": "PASS",
-          "entryRoleBoundaryStatus": "PASS",
-          "signedResourceBoundaryStatus": "NOT RUN",
-          "inlineFullPdfReadStatus": "PARTIAL"
+          "status": "FAIL",
+          "summary": "The authorized passport PDF pane rendered solid black and unreadable at this Chrome size.",
+          "evidence": []
         },
         {
           "size": "768×1024",
-          "measuredCss": "768x1024",
-          "status": "PARTIAL",
-          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-          "steps": [
-            "Open synthetic document using normal authorized employee preview and audited reason",
-            "Read rendered inline content, use actual Open Document fallback",
-            "Independently measure native fallback viewport and read whole document with scrolling",
-            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-          ],
-          "evidence": [
-            {
-              "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-            }
-          ],
-          "inlineRenderingStatus": "PASS",
-          "nativeFallbackReadStatus": "PASS",
-          "entryRoleBoundaryStatus": "PASS",
-          "signedResourceBoundaryStatus": "NOT RUN",
-          "inlineFullPdfReadStatus": "PARTIAL"
+          "status": "FAIL",
+          "summary": "The authorized passport PDF pane rendered solid black and unreadable at this Chrome size.",
+          "evidence": []
         },
         {
           "size": "1024×768",
-          "measuredCss": "1024x768",
-          "status": "PARTIAL",
-          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-          "steps": [
-            "Open synthetic document using normal authorized employee preview and audited reason",
-            "Read rendered inline content, use actual Open Document fallback",
-            "Independently measure native fallback viewport and read whole document with scrolling",
-            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-          ],
-          "evidence": [
-            {
-              "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-            }
-          ],
-          "inlineRenderingStatus": "PASS",
-          "nativeFallbackReadStatus": "PASS",
-          "entryRoleBoundaryStatus": "PASS",
-          "signedResourceBoundaryStatus": "NOT RUN",
-          "inlineFullPdfReadStatus": "PARTIAL"
+          "status": "FAIL",
+          "summary": "The authorized passport PDF pane rendered solid black and unreadable at this Chrome size.",
+          "evidence": []
         },
         {
           "size": "1280×800",
-          "measuredCss": "1280x800",
-          "status": "PARTIAL",
-          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-          "steps": [
-            "Open synthetic document using normal authorized employee preview and audited reason",
-            "Read rendered inline content, use actual Open Document fallback",
-            "Independently measure native fallback viewport and read whole document with scrolling",
-            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-          ],
-          "evidence": [
-            {
-              "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-            }
-          ],
-          "inlineRenderingStatus": "PASS",
-          "nativeFallbackReadStatus": "PASS",
-          "entryRoleBoundaryStatus": "PASS",
-          "signedResourceBoundaryStatus": "NOT RUN",
-          "inlineFullPdfReadStatus": "PARTIAL"
+          "status": "FAIL",
+          "summary": "The authorized passport PDF pane rendered solid black and unreadable at this Chrome size.",
+          "evidence": []
         },
         {
           "size": "1440×900",
-          "measuredCss": "1440x900",
-          "status": "PARTIAL",
-          "summary": "Inline rendering and exact native fallback whole-reading subchecks PASS; normal-role dashboard entry denial PASS after fresh reload. Complete inline PDF reading outstanding.",
-          "steps": [
-            "Open synthetic document using normal authorized employee preview and audited reason",
-            "Read rendered inline content, use actual Open Document fallback",
-            "Independently measure native fallback viewport and read whole document with scrolling",
-            "Log out normally, sign in ordinary Pitcher, full reload KYC dashboard and confirm unavailable-role heading with zero Preview Passport controls"
-          ],
-          "evidence": [
-            {
-              "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-              "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-            }
-          ],
-          "inlineRenderingStatus": "PASS",
-          "nativeFallbackReadStatus": "PASS",
-          "entryRoleBoundaryStatus": "PASS",
-          "signedResourceBoundaryStatus": "NOT RUN",
-          "inlineFullPdfReadStatus": "PARTIAL"
+          "status": "FAIL",
+          "summary": "The authorized passport PDF pane rendered solid black and unreadable at this Chrome size.",
+          "evidence": []
         }
       ],
-      "limitations": "Private identity captures, document contents, account identifiers and signed URLs excluded. Shared generic1440 image proves entry-gate denial only, not document readability or signed-resource server authorization. Native phone PDF needs horizontal scrolling. Full inline PDF reading incomplete. Approver768 photograph initial fetch error recovered through visible Retry Preview; prior failure retained as history.",
-      "evidence": [
-        {
-          "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/assets/2026-09-14-close37-kyc-award-partial/cloud-kyc-wrong-role-1440.png",
-          "label": "Shared1440 generic role-entry denial only; not document-readability evidence"
-        }
-      ],
+      "limitations": "Applicant identity data, signed document URLs, and document images are withheld. The fallback was not used to weaken the inline-readability acceptance requirement, and no approval decision was changed.",
+      "evidence": [],
       "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/",
       "group": "KYC Approval",
       "groups": [
