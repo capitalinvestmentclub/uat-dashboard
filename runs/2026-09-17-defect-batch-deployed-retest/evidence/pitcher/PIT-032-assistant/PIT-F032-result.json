@@ -1,0 +1,47 @@
+{
+  "findingIds": [
+    "PIT-F032"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/assistant?from=%2Fmanage-grants%2F6a8537085d0f439c8ef23319%3Fid%3D6a8537085d0f439c8ef23319",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "project: grounded=false; acknowledgedUnavailable=false; safeUncertainty=false; confidence=0.51; fallback=none",
+    "grant: grounded=false; acknowledgedUnavailable=false; safeUncertainty=false; confidence=0.52; fallback=none"
+  ],
+  "observations": [
+    {
+      "context": "project",
+      "httpStatus": 200,
+      "grounded": false,
+      "unavailable": false,
+      "safeUncertainty": false,
+      "confidence": 0.51,
+      "fallbackAction": "none",
+      "answer": "A project is created when a pitch successfully raises its funding target and transitions from the pitching phase to the execution phase. Project wallets hold the funds raised during the pitch phase and disburse them based on milestone completion and stakeholder approvals. The CIC marketplace is where members discover and interact with active pitches, projects, and grant opportunities.",
+      "screenshot": "PIT-F032-project-answer.png"
+    },
+    {
+      "context": "grant",
+      "httpStatus": 200,
+      "grounded": false,
+      "unavailable": false,
+      "safeUncertainty": false,
+      "confidence": 0.52,
+      "fallbackAction": "none",
+      "answer": "A grant is a funding opportunity created by a member or organization on the CIC platform to support projects, businesses, or initiatives. Grant applications support threaded messaging between applicants and grantors for clarification, document requests, and status updates. Grant feedback lets participants rate their experience with a specific grant including the application process, communication, and disbursement timeliness.",
+      "screenshot": "PIT-F032-grant-answer.png"
+    }
+  ],
+  "screenshots": [
+    "PIT-F032-project-answer.png",
+    "PIT-F032-grant-answer.png"
+  ],
+  "testedAt": "2026-09-18T08:15:53.887Z"
+}
