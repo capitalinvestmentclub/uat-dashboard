@@ -28,10 +28,10 @@ const groups = await Promise.all(repos.map(async (name,index) => {
   const repo = `${name}-uat-report`;
   const commit = execFileSync('gh',['api',`repos/capitalinvestmentclub/${repo}/commits/HEAD`,'--jq','.sha'],{encoding:'utf8'}).trim();
   const raw = `https://raw.githubusercontent.com/capitalinvestmentclub/${repo}/${commit}/`;
-  const [source,retest,targeted] = await Promise.all([get(raw+'data.js'),get(raw+'retest.js',true),get(raw+'targeted-run.json',true)]);
+  const [source,retest,targeted,releaseStatus] = await Promise.all([get(raw+'data.js'),get(raw+'retest.js',true),get(raw+'targeted-run.json',true),get(raw+'release-status.json',true)]);
   const parsed = extract(source);
   const updates = name === 'pitcher' && retest ? extract(retest).updates : {};
-  const group = normalizeGroup({name:names[index],repo,commit,parsed,updates,targeted:targeted ? JSON.parse(targeted) : null});
+  const group = normalizeGroup({name:names[index],repo,commit,parsed,updates,targeted:targeted ? JSON.parse(targeted) : null,releaseStatus:releaseStatus ? JSON.parse(releaseStatus) : null});
   console.log(`${group.name}: ${group.scenarios.length} scenarios, ${group.findings.length} findings`);
   return group;
 }));

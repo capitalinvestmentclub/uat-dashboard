@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T01:02:13.689Z",
+  "generatedAt": "2026-09-18T04:51:01.628Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -12,7 +12,7 @@
     {
       "name": "Pitcher",
       "repo": "pitcher-uat-report",
-      "commit": "6b11147f887c321867168f9b9f21319f7645b229",
+      "commit": "df518eeec50078148e5fe5612d0a1e42d40e3e20",
       "url": "https://capitalinvestmentclub.github.io/pitcher-uat-report/",
       "checkpoint": "2026-09-12 deployed retest",
       "scenarios": [
@@ -2630,12 +2630,56 @@
           "group": "Pitcher"
         }
       ],
-      "targeted": null
+      "targeted": null,
+      "releaseStatus": {
+        "releaseId": "2026-09-17-defect-batch-276",
+        "updatedAt": "2026-09-18T04:34:00Z",
+        "state": "MERGED · CANDIDATES DEPLOYED · DEPLOYED UAT PENDING",
+        "reportEntriesLinked": 276,
+        "uatStatusesChanged": 0,
+        "scope": "Delivery-state update for the 276 across-board report entries previously classified unresolved. This is not a browser retest and does not change historical scores or finding outcomes.",
+        "acceptanceBoundary": "Code delivery is not UAT closure. Findings remain unresolved/not proven fixed until deployed Chrome retest against promoted/live revisions.",
+        "repositories": [
+          {
+            "name": "webapp",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapp/pull/2370",
+            "mergeCommit": "d8777aae575f942514538381d54d3715aabf4b8c",
+            "deliveryState": "CANDIDATE_DEPLOYED_NO_TRAFFIC",
+            "candidateVersion": "auth-35306705473-1",
+            "candidateUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapp/actions/runs/35306705473",
+            "testState": "PR gates passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "Candidate deployed with --no-promote; traffic promotion was skipped."
+          },
+          {
+            "name": "webapi",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapi/pull/753",
+            "mergeCommit": "46a098ebcdcdebac39d1ba73569c793cd70a72fb",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782294",
+            "postMergeTestRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782628",
+            "testState": "POST-MERGE FULL TEST FAILED",
+            "uatState": "NOT RUN",
+            "note": "5 suites and 7 tests failed; a second shard was cancelled. Deployment success does not clear this test risk."
+          },
+          {
+            "name": "notificationservice",
+            "pullRequest": "https://github.com/capitalinvestmentclub/notificationservice/pull/149",
+            "mergeCommit": "08b76889070663f7e7d57cad2003d5cd87378340",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/notificationservice/actions/runs/35281688626",
+            "testState": "PR CI passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "No deployed end-user notification journey has been rerun for this batch."
+          }
+        ]
+      }
     },
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "125224602cb229d847da4718988f3e2f0a96c28f",
+      "commit": "2ada125b0477c00f0ecfb7985ad9900bbe846b6a",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -4605,12 +4649,56 @@
           },
           "cloudRetestSummary": "ADM053-CFG-001, ADM046-LINK-001, GRT005-CFG-001, SUP-F008 and ADM051-WDR-001 are PASS where present in this report."
         }
+      },
+      "releaseStatus": {
+        "releaseId": "2026-09-17-defect-batch-276",
+        "updatedAt": "2026-09-18T04:34:00Z",
+        "state": "MERGED · CANDIDATES DEPLOYED · DEPLOYED UAT PENDING",
+        "reportEntriesLinked": 276,
+        "uatStatusesChanged": 0,
+        "scope": "Delivery-state update for the 276 across-board report entries previously classified unresolved. This is not a browser retest and does not change historical scores or finding outcomes.",
+        "acceptanceBoundary": "Code delivery is not UAT closure. Findings remain unresolved/not proven fixed until deployed Chrome retest against promoted/live revisions.",
+        "repositories": [
+          {
+            "name": "webapp",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapp/pull/2370",
+            "mergeCommit": "d8777aae575f942514538381d54d3715aabf4b8c",
+            "deliveryState": "CANDIDATE_DEPLOYED_NO_TRAFFIC",
+            "candidateVersion": "auth-35306705473-1",
+            "candidateUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapp/actions/runs/35306705473",
+            "testState": "PR gates passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "Candidate deployed with --no-promote; traffic promotion was skipped."
+          },
+          {
+            "name": "webapi",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapi/pull/753",
+            "mergeCommit": "46a098ebcdcdebac39d1ba73569c793cd70a72fb",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782294",
+            "postMergeTestRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782628",
+            "testState": "POST-MERGE FULL TEST FAILED",
+            "uatState": "NOT RUN",
+            "note": "5 suites and 7 tests failed; a second shard was cancelled. Deployment success does not clear this test risk."
+          },
+          {
+            "name": "notificationservice",
+            "pullRequest": "https://github.com/capitalinvestmentclub/notificationservice/pull/149",
+            "mergeCommit": "08b76889070663f7e7d57cad2003d5cd87378340",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/notificationservice/actions/runs/35281688626",
+            "testState": "PR CI passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "No deployed end-user notification journey has been rerun for this batch."
+          }
+        ]
       }
     },
     {
       "name": "Organization",
       "repo": "organization-uat-report",
-      "commit": "4752518c4fd43e88cd839185e329e2208b41dceb",
+      "commit": "ddfb62fae3786d112bd7e6997420c1777ef65f48",
       "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5667,12 +5755,56 @@
           },
           "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37-calendar-functional-partial: ORG020-CAL-001 PARTIAL. Other findings retain prior evidence; this is not full-scenario closure."
         }
+      },
+      "releaseStatus": {
+        "releaseId": "2026-09-17-defect-batch-276",
+        "updatedAt": "2026-09-18T04:34:00Z",
+        "state": "MERGED · CANDIDATES DEPLOYED · DEPLOYED UAT PENDING",
+        "reportEntriesLinked": 276,
+        "uatStatusesChanged": 0,
+        "scope": "Delivery-state update for the 276 across-board report entries previously classified unresolved. This is not a browser retest and does not change historical scores or finding outcomes.",
+        "acceptanceBoundary": "Code delivery is not UAT closure. Findings remain unresolved/not proven fixed until deployed Chrome retest against promoted/live revisions.",
+        "repositories": [
+          {
+            "name": "webapp",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapp/pull/2370",
+            "mergeCommit": "d8777aae575f942514538381d54d3715aabf4b8c",
+            "deliveryState": "CANDIDATE_DEPLOYED_NO_TRAFFIC",
+            "candidateVersion": "auth-35306705473-1",
+            "candidateUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapp/actions/runs/35306705473",
+            "testState": "PR gates passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "Candidate deployed with --no-promote; traffic promotion was skipped."
+          },
+          {
+            "name": "webapi",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapi/pull/753",
+            "mergeCommit": "46a098ebcdcdebac39d1ba73569c793cd70a72fb",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782294",
+            "postMergeTestRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782628",
+            "testState": "POST-MERGE FULL TEST FAILED",
+            "uatState": "NOT RUN",
+            "note": "5 suites and 7 tests failed; a second shard was cancelled. Deployment success does not clear this test risk."
+          },
+          {
+            "name": "notificationservice",
+            "pullRequest": "https://github.com/capitalinvestmentclub/notificationservice/pull/149",
+            "mergeCommit": "08b76889070663f7e7d57cad2003d5cd87378340",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/notificationservice/actions/runs/35281688626",
+            "testState": "PR CI passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "No deployed end-user notification journey has been rerun for this batch."
+          }
+        ]
       }
     },
     {
       "name": "Grantor",
       "repo": "grantor-uat-report",
-      "commit": "89bb3fe96acb490c1ded0530fba19ce5d8f85f77",
+      "commit": "f626f7408e6791b0ae85755ebf798501894d8809",
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -7129,12 +7261,56 @@
           },
           "cloudRetestSummary": "ADM053-CFG-001, ADM046-LINK-001, GRT005-CFG-001, SUP-F008 and ADM051-WDR-001 are PASS where present in this report."
         }
+      },
+      "releaseStatus": {
+        "releaseId": "2026-09-17-defect-batch-276",
+        "updatedAt": "2026-09-18T04:34:00Z",
+        "state": "MERGED · CANDIDATES DEPLOYED · DEPLOYED UAT PENDING",
+        "reportEntriesLinked": 276,
+        "uatStatusesChanged": 0,
+        "scope": "Delivery-state update for the 276 across-board report entries previously classified unresolved. This is not a browser retest and does not change historical scores or finding outcomes.",
+        "acceptanceBoundary": "Code delivery is not UAT closure. Findings remain unresolved/not proven fixed until deployed Chrome retest against promoted/live revisions.",
+        "repositories": [
+          {
+            "name": "webapp",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapp/pull/2370",
+            "mergeCommit": "d8777aae575f942514538381d54d3715aabf4b8c",
+            "deliveryState": "CANDIDATE_DEPLOYED_NO_TRAFFIC",
+            "candidateVersion": "auth-35306705473-1",
+            "candidateUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapp/actions/runs/35306705473",
+            "testState": "PR gates passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "Candidate deployed with --no-promote; traffic promotion was skipped."
+          },
+          {
+            "name": "webapi",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapi/pull/753",
+            "mergeCommit": "46a098ebcdcdebac39d1ba73569c793cd70a72fb",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782294",
+            "postMergeTestRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782628",
+            "testState": "POST-MERGE FULL TEST FAILED",
+            "uatState": "NOT RUN",
+            "note": "5 suites and 7 tests failed; a second shard was cancelled. Deployment success does not clear this test risk."
+          },
+          {
+            "name": "notificationservice",
+            "pullRequest": "https://github.com/capitalinvestmentclub/notificationservice/pull/149",
+            "mergeCommit": "08b76889070663f7e7d57cad2003d5cd87378340",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/notificationservice/actions/runs/35281688626",
+            "testState": "PR CI passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "No deployed end-user notification journey has been rerun for this batch."
+          }
+        ]
       }
     },
     {
       "name": "Guest / Public",
       "repo": "guest-public-uat-report",
-      "commit": "efdc43a67c4d88404ccbb4b2f7a273b6428a3cc5",
+      "commit": "8ed0a33977a2d74a962c1f51a02660c0b8a2c715",
       "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -8362,12 +8538,56 @@
           },
           "cloudRetestSummary": "Latest targeted batch 2026-09-14-close37: PUB001-RESP-001 PASS, PUB002-SEARCH-001 PASS, PUB003-AUTH-001 PASS. Other findings retain prior evidence; this is not full-scenario closure."
         }
+      },
+      "releaseStatus": {
+        "releaseId": "2026-09-17-defect-batch-276",
+        "updatedAt": "2026-09-18T04:34:00Z",
+        "state": "MERGED · CANDIDATES DEPLOYED · DEPLOYED UAT PENDING",
+        "reportEntriesLinked": 276,
+        "uatStatusesChanged": 0,
+        "scope": "Delivery-state update for the 276 across-board report entries previously classified unresolved. This is not a browser retest and does not change historical scores or finding outcomes.",
+        "acceptanceBoundary": "Code delivery is not UAT closure. Findings remain unresolved/not proven fixed until deployed Chrome retest against promoted/live revisions.",
+        "repositories": [
+          {
+            "name": "webapp",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapp/pull/2370",
+            "mergeCommit": "d8777aae575f942514538381d54d3715aabf4b8c",
+            "deliveryState": "CANDIDATE_DEPLOYED_NO_TRAFFIC",
+            "candidateVersion": "auth-35306705473-1",
+            "candidateUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapp/actions/runs/35306705473",
+            "testState": "PR gates passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "Candidate deployed with --no-promote; traffic promotion was skipped."
+          },
+          {
+            "name": "webapi",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapi/pull/753",
+            "mergeCommit": "46a098ebcdcdebac39d1ba73569c793cd70a72fb",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782294",
+            "postMergeTestRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782628",
+            "testState": "POST-MERGE FULL TEST FAILED",
+            "uatState": "NOT RUN",
+            "note": "5 suites and 7 tests failed; a second shard was cancelled. Deployment success does not clear this test risk."
+          },
+          {
+            "name": "notificationservice",
+            "pullRequest": "https://github.com/capitalinvestmentclub/notificationservice/pull/149",
+            "mergeCommit": "08b76889070663f7e7d57cad2003d5cd87378340",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/notificationservice/actions/runs/35281688626",
+            "testState": "PR CI passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "No deployed end-user notification journey has been rerun for this batch."
+          }
+        ]
       }
     },
     {
       "name": "KYC Reviewer",
       "repo": "kyc-reviewer-uat-report",
-      "commit": "c26e742bd6e9dfded0ede506897c2a20f238aaaa",
+      "commit": "8b40a5cac6ecc82868cb404c12d14b443c4b2aca",
       "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/",
       "checkpoint": "2026-09-12 interim checkpoint",
       "scenarios": [
@@ -9933,12 +10153,56 @@
           },
           "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
         }
+      },
+      "releaseStatus": {
+        "releaseId": "2026-09-17-defect-batch-276",
+        "updatedAt": "2026-09-18T04:34:00Z",
+        "state": "MERGED · CANDIDATES DEPLOYED · DEPLOYED UAT PENDING",
+        "reportEntriesLinked": 276,
+        "uatStatusesChanged": 0,
+        "scope": "Delivery-state update for the 276 across-board report entries previously classified unresolved. This is not a browser retest and does not change historical scores or finding outcomes.",
+        "acceptanceBoundary": "Code delivery is not UAT closure. Findings remain unresolved/not proven fixed until deployed Chrome retest against promoted/live revisions.",
+        "repositories": [
+          {
+            "name": "webapp",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapp/pull/2370",
+            "mergeCommit": "d8777aae575f942514538381d54d3715aabf4b8c",
+            "deliveryState": "CANDIDATE_DEPLOYED_NO_TRAFFIC",
+            "candidateVersion": "auth-35306705473-1",
+            "candidateUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapp/actions/runs/35306705473",
+            "testState": "PR gates passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "Candidate deployed with --no-promote; traffic promotion was skipped."
+          },
+          {
+            "name": "webapi",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapi/pull/753",
+            "mergeCommit": "46a098ebcdcdebac39d1ba73569c793cd70a72fb",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782294",
+            "postMergeTestRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782628",
+            "testState": "POST-MERGE FULL TEST FAILED",
+            "uatState": "NOT RUN",
+            "note": "5 suites and 7 tests failed; a second shard was cancelled. Deployment success does not clear this test risk."
+          },
+          {
+            "name": "notificationservice",
+            "pullRequest": "https://github.com/capitalinvestmentclub/notificationservice/pull/149",
+            "mergeCommit": "08b76889070663f7e7d57cad2003d5cd87378340",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/notificationservice/actions/runs/35281688626",
+            "testState": "PR CI passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "No deployed end-user notification journey has been rerun for this batch."
+          }
+        ]
       }
     },
     {
       "name": "KYC Approval",
       "repo": "kyc-approval-uat-report",
-      "commit": "176731b2162c5f7019fb6d4dc3c74bb6efd24c96",
+      "commit": "11000aa09bfa453c81026feab5ce0189f3c36172",
       "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome campaign",
       "scenarios": [
@@ -11717,12 +11981,56 @@
           },
           "cloudRetestSummary": "GRT020-BAL-001 PASS: original terminated grant shows its existing USD -1 refund, USD +1 contribution and zero available/current balance after reload. Six exact measured Chrome CSS viewports passed. No fresh financial transaction was executed; other cloud retests are pending."
         }
+      },
+      "releaseStatus": {
+        "releaseId": "2026-09-17-defect-batch-276",
+        "updatedAt": "2026-09-18T04:34:00Z",
+        "state": "MERGED · CANDIDATES DEPLOYED · DEPLOYED UAT PENDING",
+        "reportEntriesLinked": 276,
+        "uatStatusesChanged": 0,
+        "scope": "Delivery-state update for the 276 across-board report entries previously classified unresolved. This is not a browser retest and does not change historical scores or finding outcomes.",
+        "acceptanceBoundary": "Code delivery is not UAT closure. Findings remain unresolved/not proven fixed until deployed Chrome retest against promoted/live revisions.",
+        "repositories": [
+          {
+            "name": "webapp",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapp/pull/2370",
+            "mergeCommit": "d8777aae575f942514538381d54d3715aabf4b8c",
+            "deliveryState": "CANDIDATE_DEPLOYED_NO_TRAFFIC",
+            "candidateVersion": "auth-35306705473-1",
+            "candidateUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapp/actions/runs/35306705473",
+            "testState": "PR gates passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "Candidate deployed with --no-promote; traffic promotion was skipped."
+          },
+          {
+            "name": "webapi",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapi/pull/753",
+            "mergeCommit": "46a098ebcdcdebac39d1ba73569c793cd70a72fb",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782294",
+            "postMergeTestRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782628",
+            "testState": "POST-MERGE FULL TEST FAILED",
+            "uatState": "NOT RUN",
+            "note": "5 suites and 7 tests failed; a second shard was cancelled. Deployment success does not clear this test risk."
+          },
+          {
+            "name": "notificationservice",
+            "pullRequest": "https://github.com/capitalinvestmentclub/notificationservice/pull/149",
+            "mergeCommit": "08b76889070663f7e7d57cad2003d5cd87378340",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/notificationservice/actions/runs/35281688626",
+            "testState": "PR CI passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "No deployed end-user notification journey has been rerun for this batch."
+          }
+        ]
       }
     },
     {
       "name": "Super Admin",
       "repo": "super-admin-uat-report",
-      "commit": "5ae232074ad388778aade17f319561595f18713e",
+      "commit": "f914ddb8cf8749074154564bef51f3dfbd3a4dfd",
       "url": "https://capitalinvestmentclub.github.io/super-admin-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome priority campaign",
       "scenarios": [
@@ -13706,12 +14014,56 @@
           },
           "cloudRetestSummary": "ADM053-CFG-001, ADM046-LINK-001, GRT005-CFG-001, SUP-F008 and ADM051-WDR-001 are PASS where present in this report."
         }
+      },
+      "releaseStatus": {
+        "releaseId": "2026-09-17-defect-batch-276",
+        "updatedAt": "2026-09-18T04:34:00Z",
+        "state": "MERGED · CANDIDATES DEPLOYED · DEPLOYED UAT PENDING",
+        "reportEntriesLinked": 276,
+        "uatStatusesChanged": 0,
+        "scope": "Delivery-state update for the 276 across-board report entries previously classified unresolved. This is not a browser retest and does not change historical scores or finding outcomes.",
+        "acceptanceBoundary": "Code delivery is not UAT closure. Findings remain unresolved/not proven fixed until deployed Chrome retest against promoted/live revisions.",
+        "repositories": [
+          {
+            "name": "webapp",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapp/pull/2370",
+            "mergeCommit": "d8777aae575f942514538381d54d3715aabf4b8c",
+            "deliveryState": "CANDIDATE_DEPLOYED_NO_TRAFFIC",
+            "candidateVersion": "auth-35306705473-1",
+            "candidateUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapp/actions/runs/35306705473",
+            "testState": "PR gates passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "Candidate deployed with --no-promote; traffic promotion was skipped."
+          },
+          {
+            "name": "webapi",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapi/pull/753",
+            "mergeCommit": "46a098ebcdcdebac39d1ba73569c793cd70a72fb",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782294",
+            "postMergeTestRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782628",
+            "testState": "POST-MERGE FULL TEST FAILED",
+            "uatState": "NOT RUN",
+            "note": "5 suites and 7 tests failed; a second shard was cancelled. Deployment success does not clear this test risk."
+          },
+          {
+            "name": "notificationservice",
+            "pullRequest": "https://github.com/capitalinvestmentclub/notificationservice/pull/149",
+            "mergeCommit": "08b76889070663f7e7d57cad2003d5cd87378340",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/notificationservice/actions/runs/35281688626",
+            "testState": "PR CI passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "No deployed end-user notification journey has been rerun for this batch."
+          }
+        ]
       }
     },
     {
       "name": "Support Operations",
       "repo": "support-operations-uat-report",
-      "commit": "23d33fa0b830150654bc1d99e7c5fa55ed75db53",
+      "commit": "e12c58d5a8bed7da3a632eafba6dd6a8827d0d8a",
       "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome Support Operations campaign",
       "scenarios": [
@@ -14282,12 +14634,56 @@
           "cloudRetestSummary": "ADM053-CFG-001, ADM046-LINK-001, GRT005-CFG-001, SUP-F008 and ADM051-WDR-001 are PASS where present in this report.",
           "previousBatchRunId": "2026-09-14-close37-case-navigation-partial"
         }
+      },
+      "releaseStatus": {
+        "releaseId": "2026-09-17-defect-batch-276",
+        "updatedAt": "2026-09-18T04:34:00Z",
+        "state": "MERGED · CANDIDATES DEPLOYED · DEPLOYED UAT PENDING",
+        "reportEntriesLinked": 276,
+        "uatStatusesChanged": 0,
+        "scope": "Delivery-state update for the 276 across-board report entries previously classified unresolved. This is not a browser retest and does not change historical scores or finding outcomes.",
+        "acceptanceBoundary": "Code delivery is not UAT closure. Findings remain unresolved/not proven fixed until deployed Chrome retest against promoted/live revisions.",
+        "repositories": [
+          {
+            "name": "webapp",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapp/pull/2370",
+            "mergeCommit": "d8777aae575f942514538381d54d3715aabf4b8c",
+            "deliveryState": "CANDIDATE_DEPLOYED_NO_TRAFFIC",
+            "candidateVersion": "auth-35306705473-1",
+            "candidateUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapp/actions/runs/35306705473",
+            "testState": "PR gates passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "Candidate deployed with --no-promote; traffic promotion was skipped."
+          },
+          {
+            "name": "webapi",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapi/pull/753",
+            "mergeCommit": "46a098ebcdcdebac39d1ba73569c793cd70a72fb",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782294",
+            "postMergeTestRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782628",
+            "testState": "POST-MERGE FULL TEST FAILED",
+            "uatState": "NOT RUN",
+            "note": "5 suites and 7 tests failed; a second shard was cancelled. Deployment success does not clear this test risk."
+          },
+          {
+            "name": "notificationservice",
+            "pullRequest": "https://github.com/capitalinvestmentclub/notificationservice/pull/149",
+            "mergeCommit": "08b76889070663f7e7d57cad2003d5cd87378340",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/notificationservice/actions/runs/35281688626",
+            "testState": "PR CI passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "No deployed end-user notification journey has been rerun for this batch."
+          }
+        ]
       }
     },
     {
       "name": "Cross-role Platform Journeys",
       "repo": "cross-role-platform-journeys-uat-report",
-      "commit": "4e2e38102a111306e411c33d1133f9f048b1840c",
+      "commit": "2686bea12d263fea023be8e30154cf69b2833460",
       "url": "https://capitalinvestmentclub.github.io/cross-role-platform-journeys-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome cross-role journey campaign",
       "scenarios": [
@@ -15951,6 +16347,50 @@
           },
           "cloudRetestSummary": "ADM053-CFG-001, ADM046-LINK-001, GRT005-CFG-001, SUP-F008 and ADM051-WDR-001 are PASS where present in this report."
         }
+      },
+      "releaseStatus": {
+        "releaseId": "2026-09-17-defect-batch-276",
+        "updatedAt": "2026-09-18T04:34:00Z",
+        "state": "MERGED · CANDIDATES DEPLOYED · DEPLOYED UAT PENDING",
+        "reportEntriesLinked": 276,
+        "uatStatusesChanged": 0,
+        "scope": "Delivery-state update for the 276 across-board report entries previously classified unresolved. This is not a browser retest and does not change historical scores or finding outcomes.",
+        "acceptanceBoundary": "Code delivery is not UAT closure. Findings remain unresolved/not proven fixed until deployed Chrome retest against promoted/live revisions.",
+        "repositories": [
+          {
+            "name": "webapp",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapp/pull/2370",
+            "mergeCommit": "d8777aae575f942514538381d54d3715aabf4b8c",
+            "deliveryState": "CANDIDATE_DEPLOYED_NO_TRAFFIC",
+            "candidateVersion": "auth-35306705473-1",
+            "candidateUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapp/actions/runs/35306705473",
+            "testState": "PR gates passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "Candidate deployed with --no-promote; traffic promotion was skipped."
+          },
+          {
+            "name": "webapi",
+            "pullRequest": "https://github.com/capitalinvestmentclub/webapi/pull/753",
+            "mergeCommit": "46a098ebcdcdebac39d1ba73569c793cd70a72fb",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782294",
+            "postMergeTestRun": "https://github.com/capitalinvestmentclub/webapi/actions/runs/35281782628",
+            "testState": "POST-MERGE FULL TEST FAILED",
+            "uatState": "NOT RUN",
+            "note": "5 suites and 7 tests failed; a second shard was cancelled. Deployment success does not clear this test risk."
+          },
+          {
+            "name": "notificationservice",
+            "pullRequest": "https://github.com/capitalinvestmentclub/notificationservice/pull/149",
+            "mergeCommit": "08b76889070663f7e7d57cad2003d5cd87378340",
+            "deliveryState": "DEPLOYMENT_WORKFLOW_SUCCESS",
+            "deploymentRun": "https://github.com/capitalinvestmentclub/notificationservice/actions/runs/35281688626",
+            "testState": "PR CI passed; deployment workflow succeeded",
+            "uatState": "NOT RUN",
+            "note": "No deployed end-user notification journey has been rerun for this batch."
+          }
+        ]
       }
     },
     {
@@ -19624,7 +20064,8 @@
           "group": "Assessor"
         }
       ],
-      "targeted": null
+      "targeted": null,
+      "releaseStatus": null
     },
     {
       "name": "Investor",
@@ -20505,7 +20946,8 @@
           "group": "Investor"
         }
       ],
-      "targeted": null
+      "targeted": null,
+      "releaseStatus": null
     }
   ],
   "uniqueFindings": [

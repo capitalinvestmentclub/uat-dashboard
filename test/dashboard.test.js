@@ -48,6 +48,16 @@ test('normalization preserves schema boundaries and rejects missing scenarios',(
   assert.match(targeted.findings[0].responsive[0].evidence[0].url,/\/small.png$/);
   const pitcher=normalizeGroup({name:'Pitcher',repo:'pitcher-uat-report',parsed:{report:{sizes:['360×800'],scenarios:[[1,'Title','Observed','Gap']],findings:[['High',[1],'Title','Steps','Description','Expected','Observed defect'],['High',[1],'Question','Steps','Description','Expected','Reconciliation needed']]}}});
   assert.equal(pitcher.scenarios[0].responsive[0].status,'PARTIAL');assert.equal(pitcher.findings[1].type,'Question');
+  const releaseStatus={releaseId:'batch',reportEntriesLinked:276,uatStatusesChanged:0};
+  assert.deepEqual(normalizeGroup({...base,releaseStatus}).releaseStatus,releaseStatus);
+});
+test('current delivery ledger is visible, escaped, and does not change UAT outcomes',async()=>{
+  const payload=structuredClone(data);
+  payload.groups[0].releaseStatus={releaseId:'batch',state:'MERGED <script>',reportEntriesLinked:276,uatStatusesChanged:0,acceptanceBoundary:'Retest required.',repositories:[{name:'webapi',deliveryState:'DEPLOYED',uatState:'NOT RUN',testState:'POST-MERGE FULL TEST FAILED',note:'5 suites failed.',pullRequest:'javascript:alert(1)',deploymentRun:'https://example.com/deploy'}]};
+  const dom=await page(payload);const section=dom.window.document.querySelector('#delivery-ledger');
+  assert.match(section.textContent,/276 report entries/);assert.match(section.textContent,/POST-MERGE FULL TEST FAILED/);
+  assert.equal(section.querySelector('script'),null);assert.equal(section.querySelector('a').getAttribute('href'),'#');
+  assert.equal(payload.uniqueFindings.length,data.uniqueFindings.length);dom.window.close();
 });
 test('dedup preserves memberships and distinguishes conflicts from absent retests',()=>{
   const group=(name,status,title='Title')=>({name,findings:[{id:'F',title,status}]});

@@ -4,7 +4,7 @@ export function status(value) {
   if (text.startsWith('IN PROGRESS')) return 'PARTIAL';
   return statuses.find(s => text === s || text.startsWith(s+' ·')) || 'NOT REPORTED';
 }
-export function normalizeGroup({name,repo,commit,parsed,updates={},targeted=null,url:reportUrl=null}) {
+export function normalizeGroup({name,repo,commit,parsed,updates={},targeted=null,releaseStatus=null,url:reportUrl=null}) {
   const source = parsed.report || parsed.data;
   if (!source || !Array.isArray(source.scenarios) || !source.scenarios.length) throw new Error(`Missing scenarios: ${repo}`);
   // Most roles publish at <repo>.github.io/<repo>/. A role whose report lives in a
@@ -27,7 +27,7 @@ export function normalizeGroup({name,repo,commit,parsed,updates={},targeted=null
     const responsive=(retest?.responsive || update?.retest?.sizes || []).map(cell=>({...cell,evidence:(cell.evidence || []).map(e=>({...e,url:new URL(e.url,url).href}))}));
     return {id:f.id,title:f.title,type:f.type || 'Defect',severity:String(f.severity || 'not reported').toLowerCase(),scenario:f.scenario || '',summary:f.summary || f.description || '',historicalStatus:f.status || 'Open',status:retest ? status(retest.status) : update?.status === 'Fixed' ? 'PASS' : 'NOT REPORTED',retestSummary:retest?.summary || update?.resolution || '',responsive,limitations:retest?.limitations || [],evidence:(retest?.evidence || update?.fix?.evidence || []).map(e=>({...e,url:new URL(e.url,url).href})),url,group:name};
   });
-  return {name,repo,commit,url,checkpoint:source.cutoff || source.updated || parsed.review?.meta?.checkpoint || 'See source report',scenarios,findings,targeted:targeted ? {runId:targeted.runId,updatedAt:targeted.updatedAt,state:targeted.state,deployments:targeted.deployments,repairBatch:targeted.repairBatch || null} : null};
+  return {name,repo,commit,url,checkpoint:source.cutoff || source.updated || parsed.review?.meta?.checkpoint || 'See source report',scenarios,findings,targeted:targeted ? {runId:targeted.runId,updatedAt:targeted.updatedAt,state:targeted.state,deployments:targeted.deployments,repairBatch:targeted.repairBatch || null} : null,releaseStatus};
 }
 export function deduplicate(groups) {
   const unique = new Map();
