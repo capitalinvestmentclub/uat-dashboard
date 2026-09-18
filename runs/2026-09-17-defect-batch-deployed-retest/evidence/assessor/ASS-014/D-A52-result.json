@@ -1,0 +1,21 @@
+{
+  "findingIds": [
+    "D-A52"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Submitting a complete non-Review form with zero tasks shows the actionable missing-task error",
+    "Adding and filling one valid task immediately removes the stale error",
+    "The Request action becomes enabled after correction",
+    "The corrected request was not submitted"
+  ],
+  "screenshot": "D-A52-corrected-task-clears-error-1792x976.png",
+  "testedAt": "2026-09-18T06:51:26.511Z"
+}

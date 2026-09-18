@@ -1,0 +1,19 @@
+{
+  "findingIds": [
+    "G-A17"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The visible directory close icon is exposed as a button named Close assessor directory",
+    "Activating the named close button dismisses the directory dialog"
+  ],
+  "screenshot": "G-A17-named-directory-close-button-1792x976.png",
+  "testedAt": "2026-09-18T06:38:46.268Z"
+}

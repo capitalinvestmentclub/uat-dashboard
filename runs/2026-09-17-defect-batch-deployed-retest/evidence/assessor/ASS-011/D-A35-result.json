@@ -2,9 +2,8 @@
   "findingIds": [
     "D-A35"
   ],
-  "outcome": "PASSED_OVER",
-  "disposition": "FIXTURE_GAP_NO_PRODUCT_PASS",
-  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
   "browserName": "chromium",
   "browserVersion": "153.0.8010.52",
   "viewport": {
@@ -12,15 +11,16 @@
     "height": 976
   },
   "observed": {
-    "authenticatedRole": "Assessor",
-    "requiredRole": "Pitcher or pitch owner",
-    "requiredSurface": "Hire Assessor directory"
+    "pitchId": "6a9ebed3d26f574c91434a15",
+    "selectedExpertise": "Accounting",
+    "apiExpertiseArea": "accounting",
+    "responseStatus": 200
   },
   "assertions": [
-    "The deployed authenticated actor is Test Assessor with role Assessor",
-    "D-A35 requires a Pitcher-owned pitch and the Hire Assessor directory",
-    "No authenticated Pitcher/owner state is available locally; no product pass is claimed"
+    "The real Pitcher-owned active pitch exposes Hire Assessor",
+    "Keyboard selection of Accounting issues a successful real directory request with expertiseArea=accounting",
+    "The visible match context remains filtered after the initial unfiltered request has time to settle"
   ],
-  "screenshot": "D-A35-assessor-only-actor-1792x976.png",
-  "testedAt": "2026-09-18T06:11:34Z"
+  "screenshot": "D-A35-keyboard-expertise-filter-applied-1792x976.png",
+  "testedAt": "2026-09-18T06:33:00.801Z"
 }

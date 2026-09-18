@@ -1,0 +1,35 @@
+{
+  "findingIds": [
+    "G-A18"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 360,
+    "height": 844
+  },
+  "observed": [
+    {
+      "width": 360,
+      "directoryOverflow": 0,
+      "cardOverflow": 0
+    },
+    {
+      "width": 390,
+      "directoryOverflow": 0,
+      "cardOverflow": 0
+    }
+  ],
+  "assertions": [
+    "At both required compact widths the directory switches from the wide table to compact assessor cards",
+    "Each card keeps public-profile identity, rating, rate, and the named Request action together",
+    "Neither the dialog nor the assessor card requires horizontal scrolling"
+  ],
+  "screenshots": [
+    "G-A18-compact-directory-360x844.png",
+    "G-A18-compact-directory-390x844.png"
+  ],
+  "testedAt": "2026-09-18T06:39:56.216Z"
+}

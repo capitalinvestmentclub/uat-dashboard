@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T06:28:37.229Z",
+  "updatedAt": "2026-09-18T06:51:26.511Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -1396,18 +1396,18 @@
       "scenarioId": "ASS-011",
       "severity": "HIGH",
       "title": "Keyboard expertise selection displays the filter without applying it",
-      "status": "PASSED_OVER",
-      "disposition": "FIXTURE_GAP_NO_PRODUCT_PASS",
-      "testedAt": "2026-09-18T06:11:34Z",
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:33:00.801Z",
       "browser": "Chrome",
       "viewport": "1792x976",
-      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
-        "evidence/assessor/ASS-011/D-A35-assessor-only-actor-1792x976.png",
+        "evidence/assessor/ASS-011/D-A35-keyboard-expertise-filter-applied-1792x976.png",
         "evidence/assessor/ASS-011/D-A35-result.json"
       ],
-      "notes": "The deployed authenticated actor is Test Assessor with role Assessor; D-A35 requires a Pitcher-owned pitch and the Hire Assessor directory; No authenticated Pitcher/owner state is available locally; no product pass is claimed"
+      "notes": "The real Pitcher-owned active pitch exposes Hire Assessor; Keyboard selection of Accounting issues a successful real directory request with expertiseArea=accounting; The visible match context remains filtered after the initial unfiltered request has time to settle"
     },
     {
       "id": "D-A36",
@@ -1415,15 +1415,18 @@
       "scenarioId": "ASS-011",
       "severity": "HIGH",
       "title": "Directory omits required readiness, capacity and profile evidence",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "PARTIALLY_FIXED_CAPACITY_EVIDENCE_MISSING",
+      "testedAt": "2026-09-18T06:34:43Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-011/D-A36-capacity-evidence-missing-1792x976.png",
+        "evidence/assessor/ASS-011/D-A36-result.json"
+      ],
+      "notes": "The real directory now exposes KYC/readiness, eligibility, industry, specialization, recorded years/evidence, pricing, and public-profile comparison data; The availability field only says Accepting new requests and does not expose used, maximum, or available assessment slots; The capacity portion of D-A36 remains unresolved"
     },
     {
       "id": "D-A37",
@@ -1431,15 +1434,18 @@
       "scenarioId": "ASS-011",
       "severity": "HIGH",
       "title": "Request handoff loses the selected Assessor identity",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:37:56.162Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-011/D-A37-selected-assessor-handoff-1792x976.png",
+        "evidence/assessor/ASS-011/D-A37-result.json"
+      ],
+      "notes": "Selecting a real directory row opens Request an assessment without submitting it; The builder names the exact selected directory identity and specialization; The verification link retains the exact selected public-profile href; Readiness and directory pricing context remain visible in the handoff"
     },
     {
       "id": "D-A38",
@@ -1610,15 +1616,18 @@
       "scenarioId": "ASS-014",
       "severity": "HIGH",
       "title": "Decision dialog omits essential request identity and commercial context",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_ACTIONABLE_DEPLOYED_REQUEST_FIXTURE",
+      "testedAt": "2026-09-18T06:41:52.604Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-014/D-A48-no-actionable-decision-fixture-1792x976.png",
+        "evidence/assessor/ASS-014/D-A48-result.json"
+      ],
+      "notes": "The real Assessor request queue loaded successfully; All 173 deployed request rows lack an Accept, Reject, or Review decision action; The irreversible decision dialog cannot be opened without an actionable pending request; no state-changing fixture was fabricated"
     },
     {
       "id": "D-A49",
@@ -1626,15 +1635,18 @@
       "scenarioId": "ASS-014",
       "severity": "HIGH",
       "title": "Scope and request-document workflows are absent",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:49:49.298Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-014/D-A49-scope-document-workflow-present-1792x976.png",
+        "evidence/assessor/ASS-014/D-A49-result.json"
+      ],
+      "notes": "Selecting a non-Review assessment type exposes the scope field; The builder exposes the requester-note field; The permitted pitch-document section is present and truthfully reports that this pitch has no eligible documents; No request was submitted"
     },
     {
       "id": "D-A50",
@@ -1642,15 +1654,18 @@
       "scenarioId": "ASS-014",
       "severity": "HIGH",
       "title": "Legal documents cannot support versioned, auditable consent",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_ACTIONABLE_DEPLOYED_REQUEST_FIXTURE",
+      "testedAt": "2026-09-18T06:43:59Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-014/D-A48-no-actionable-decision-fixture-1792x976.png",
+        "evidence/assessor/ASS-014/D-A50-result.json"
+      ],
+      "notes": "D-A50 requires the Assessor Accept dialog that contains the terms and confidentiality controls; The real queue currently exposes no Accept, Reject, or Review action because every available request is response-expired; The versioned consent documents cannot be inspected without an actionable pending request"
     },
     {
       "id": "D-A51",
@@ -1658,15 +1673,18 @@
       "scenarioId": "ASS-014",
       "severity": "MEDIUM",
       "title": "Duplicate tasks are accepted without detection or clarification",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "UNRESOLVED_DEPLOYED",
+      "testedAt": "2026-09-18T06:47:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-014/D-A51-duplicate-not-detected-1792x976.png",
+        "evidence/assessor/ASS-014/D-A51-result.json"
+      ],
+      "notes": "The deployed builder did not identify a case- and whitespace-normalized duplicate pair; Blurring the second task did not trigger duplicate validation; No request was submitted"
     },
     {
       "id": "D-A52",
@@ -1674,15 +1692,18 @@
       "scenarioId": "ASS-014",
       "severity": "MEDIUM",
       "title": "Zero-task validation remains after the form is corrected",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:51:26.511Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-014/D-A52-corrected-task-clears-error-1792x976.png",
+        "evidence/assessor/ASS-014/D-A52-result.json"
+      ],
+      "notes": "Submitting a complete non-Review form with zero tasks shows the actionable missing-task error; Adding and filling one valid task immediately removes the stale error; The Request action becomes enabled after correction; The corrected request was not submitted"
     },
     {
       "id": "D-A53",
@@ -3754,15 +3775,18 @@
       "scenarioId": "ASS-011",
       "severity": "MEDIUM",
       "title": "Directory close icon has no semantic interactive identity",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:38:46.268Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-011/G-A17-named-directory-close-button-1792x976.png",
+        "evidence/assessor/ASS-011/G-A17-result.json"
+      ],
+      "notes": "The visible directory close icon is exposed as a button named Close assessor directory; Activating the named close button dismisses the directory dialog"
     },
     {
       "id": "G-A18",
@@ -3770,15 +3794,19 @@
       "scenarioId": "ASS-011",
       "severity": "MEDIUM",
       "title": "Compact directory separates identity from the request action",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:39:56.216Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "360x844",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-011/G-A18-compact-directory-360x844.png",
+        "evidence/assessor/ASS-011/G-A18-compact-directory-390x844.png",
+        "evidence/assessor/ASS-011/G-A18-result.json"
+      ],
+      "notes": "At both required compact widths the directory switches from the wide table to compact assessor cards; Each card keeps public-profile identity, rating, rate, and the named Request action together; Neither the dialog nor the assessor card requires horizontal scrolling"
     },
     {
       "id": "G-A19",

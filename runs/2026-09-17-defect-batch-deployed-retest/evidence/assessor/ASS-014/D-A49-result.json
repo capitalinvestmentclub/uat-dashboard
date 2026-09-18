@@ -1,0 +1,27 @@
+{
+  "findingIds": [
+    "D-A49"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "scopeCount": 1,
+    "noteCount": 1,
+    "documentSectionVisible": true,
+    "eligibleDocumentCount": 0
+  },
+  "assertions": [
+    "Selecting a non-Review assessment type exposes the scope field",
+    "The builder exposes the requester-note field",
+    "The permitted pitch-document section is present and truthfully reports that this pitch has no eligible documents",
+    "No request was submitted"
+  ],
+  "screenshot": "D-A49-scope-document-workflow-present-1792x976.png",
+  "testedAt": "2026-09-18T06:49:49.298Z"
+}

@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "D-A48"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "NO_ACTIONABLE_DEPLOYED_REQUEST_FIXTURE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "rowCount": 173,
+    "decisionActionCount": 0
+  },
+  "assertions": [
+    "The real Assessor request queue loaded successfully",
+    "All 173 deployed request rows lack an Accept, Reject, or Review decision action",
+    "The irreversible decision dialog cannot be opened without an actionable pending request; no state-changing fixture was fabricated"
+  ],
+  "screenshot": "D-A48-no-actionable-decision-fixture-1792x976.png",
+  "testedAt": "2026-09-18T06:41:52.604Z"
+}
