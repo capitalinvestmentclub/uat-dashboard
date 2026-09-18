@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T16:07:52.353Z",
+  "updatedAt": "2026-09-18T16:14:17.722Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3784,15 +3784,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T16:14:17.722Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=3",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F016/INV-F016-expired-bid-history.png",
+        "evidence/investor/INV-F016/INV-F016-result.json"
+      ],
+      "notes": "The live pending bid reserved USD 1000 without reducing current balance; After its real expiry and a deployed page reload, the bid moved to history with Expired status; The persisted bid status is expired, expiredOn is set, and reservedAmount is zero; The Investor pending and available wallet balances returned exactly to their pre-bid values"
     },
     {
       "id": "INV-F017",
