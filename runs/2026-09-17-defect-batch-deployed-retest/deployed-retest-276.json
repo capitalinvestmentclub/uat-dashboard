@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T06:51:26.511Z",
+  "updatedAt": "2026-09-18T07:11:46Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -868,15 +868,18 @@
       "scenarioId": "ASS-003",
       "severity": "HIGH",
       "title": "Registration data does not reach the assessor readiness surface",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_FRESH_REGISTRATION_PROVENANCE",
+      "testedAt": "2026-09-18T07:03:56Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-003/D-A1-existing-assessor-readiness-1792x976.png",
+        "evidence/assessor/ASS-003/D-A1-result.json"
+      ],
+      "notes": "The authenticated Assessor profile currently has populated expertise, specialization, industry, and experience readiness data; This long-lived account does not preserve evidence tying those values to its original registration submission; A fresh submitted and verified Assessor registration is required to prove registration-to-readiness propagation end to end"
     },
     {
       "id": "D-A2",
@@ -884,15 +887,19 @@
       "scenarioId": "ASS-003",
       "severity": "MEDIUM",
       "title": "Duplicate industries are accepted",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T07:01:32.813Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-003/D-A2-duplicate-industry-blocked-1792x976.png",
+        "evidence/assessor/ASS-003/D-A3-experience-age-cap-1792x976.png",
+        "evidence/assessor/ASS-003/D-A2-D-A3-result.json"
+      ],
+      "notes": "Case- and whitespace-normalized duplicate industries are rejected before any signup request; The 60 Years experience option is absent for a user born in 1990; The age-compatible 18 Years option remains available; No account was created"
     },
     {
       "id": "D-A3",
@@ -900,15 +907,19 @@
       "scenarioId": "ASS-003",
       "severity": "MEDIUM",
       "title": "Experience is not cross-validated against date of birth",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T07:01:32.813Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-003/D-A2-duplicate-industry-blocked-1792x976.png",
+        "evidence/assessor/ASS-003/D-A3-experience-age-cap-1792x976.png",
+        "evidence/assessor/ASS-003/D-A2-D-A3-result.json"
+      ],
+      "notes": "Case- and whitespace-normalized duplicate industries are rejected before any signup request; The 60 Years experience option is absent for a user born in 1990; The age-compatible 18 Years option remains available; No account was created"
     },
     {
       "id": "D-A6",
@@ -980,15 +991,18 @@
       "scenarioId": "ASS-004",
       "severity": "HIGH",
       "title": "At 360×800 the role-change dialog's Cancel and Submit render outside the dialog's painted box and outside the viewport, with page scroll locked and…",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T07:04:59.769Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "360x800",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-004/D-A10-role-change-actions-360x800.png",
+        "evidence/assessor/ASS-004/D-A10-result.json"
+      ],
+      "notes": "At 360x800 the role-change dialog is visible and contained inside the viewport; Cancel and Submit are visible inside the painted dialog; Both pointer/touch actions are reachable without keyboard-only recovery; No role-change request was submitted"
     },
     {
       "id": "D-A11",
@@ -1127,15 +1141,18 @@
       "scenarioId": "ASS-004",
       "severity": "HIGH",
       "title": "An explicitly incomplete Assessor can bypass mandatory profile readiness through Dashboard, Manage Assessments and Browse Pitches, open the live as…",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_INCOMPLETE_ROLE_PROFILE_FIXTURE",
+      "testedAt": "2026-09-18T07:05:56Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-004/D-A19-no-incomplete-role-fixture-1792x976.png",
+        "evidence/assessor/ASS-004/D-A19-result.json"
+      ],
+      "notes": "The authenticated Assessor has no incomplete-role profile marker; Its real profile is populated with expertise, specializations, industries, credentials, and employment; KYC In Review is not equivalent to the missing mandatory role-profile data required by D-A19; A deliberately incomplete Assessor fixture is required to test navigation and mutation blocking"
     },
     {
       "id": "D-A20",
@@ -1201,15 +1218,18 @@
       "scenarioId": "ASS-007",
       "severity": "HIGH",
       "title": "Expertise catalogue selection can create a mismatched area",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_DISPOSABLE_EDITABLE_PROFILE_FIXTURE",
+      "testedAt": "2026-09-18T07:11:46Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-007/D-A24-D-A25-existing-profile-precondition-1792x976.png",
+        "evidence/assessor/ASS-007/D-A24-D-A25-result.json"
+      ],
+      "notes": "Technology is already a persisted expertise area, so the exact catalogue-add precondition for D-A24 is unavailable; D-A25 requires adding, saving, and reloading a normalized duplicate qualification; Removing expertise or saving duplicate credentials on this long-lived non-disposable account would mutate unrelated profile data; A disposable editable Assessor profile is required for both persistence checks"
     },
     {
       "id": "D-A25",
@@ -1217,15 +1237,18 @@
       "scenarioId": "ASS-007",
       "severity": "MEDIUM",
       "title": "Qualification duplicates are not normalized",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_DISPOSABLE_EDITABLE_PROFILE_FIXTURE",
+      "testedAt": "2026-09-18T07:11:46Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-007/D-A24-D-A25-existing-profile-precondition-1792x976.png",
+        "evidence/assessor/ASS-007/D-A24-D-A25-result.json"
+      ],
+      "notes": "Technology is already a persisted expertise area, so the exact catalogue-add precondition for D-A24 is unavailable; D-A25 requires adding, saving, and reloading a normalized duplicate qualification; Removing expertise or saving duplicate credentials on this long-lived non-disposable account would mutate unrelated profile data; A disposable editable Assessor profile is required for both persistence checks"
     },
     {
       "id": "D-A26",
@@ -1252,15 +1275,18 @@
       "scenarioId": "ASS-007",
       "severity": "HIGH",
       "title": "Employment date picker displays one year and saves another",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_EDITABLE_EMPLOYMENT_FIXTURE",
+      "testedAt": "2026-09-18T07:11:08Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-007/D-A27-employment-month-disabled-1792x976.png",
+        "evidence/assessor/ASS-007/D-A27-result.json"
+      ],
+      "notes": "The Employment section was opened on the real Assessor profile; The existing employment month controls remain disabled and cannot accept a new year/month selection; An editable disposable Assessor employment fixture is required to verify selection and persisted display"
     },
     {
       "id": "D-A28",
@@ -1711,15 +1737,19 @@
       "scenarioId": "ASS-015",
       "severity": "CRITICAL",
       "title": "Accepted requests are stranded outside the Assessor workspaces",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
+      "testedAt": "2026-09-18T06:59:55.770Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-015-017/ASS-015-017-assessor-identity-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-requestable-directory-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-pending-fixture-result.json"
+      ],
+      "notes": "The authenticated Assessor identity is Test Assessor and is currently KYC In Review; Test Assessor is absent from the real requestable directory; Creating a request for any visible directory row would target a different account and cannot unlock matching cross-actor lifecycle coverage; The grouped findings require a matching pending or accepted request, rejection, negotiation, wallet, notification, or mailbox event"
     },
     {
       "id": "D-A54",
@@ -1727,15 +1757,19 @@
       "scenarioId": "ASS-015",
       "severity": "CRITICAL",
       "title": "Requesters can open the Assessor's editable submission form",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
+      "testedAt": "2026-09-18T06:59:55.770Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-015-017/ASS-015-017-assessor-identity-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-requestable-directory-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-pending-fixture-result.json"
+      ],
+      "notes": "The authenticated Assessor identity is Test Assessor and is currently KYC In Review; Test Assessor is absent from the real requestable directory; Creating a request for any visible directory row would target a different account and cannot unlock matching cross-actor lifecycle coverage; The grouped findings require a matching pending or accepted request, rejection, negotiation, wallet, notification, or mailbox event"
     },
     {
       "id": "D-A55",
@@ -1743,15 +1777,19 @@
       "scenarioId": "ASS-015",
       "severity": "MEDIUM",
       "title": "Free acceptance communications claim a zero-value wallet hold",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
+      "testedAt": "2026-09-18T06:59:55.770Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-015-017/ASS-015-017-assessor-identity-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-requestable-directory-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-pending-fixture-result.json"
+      ],
+      "notes": "The authenticated Assessor identity is Test Assessor and is currently KYC In Review; Test Assessor is absent from the real requestable directory; Creating a request for any visible directory row would target a different account and cannot unlock matching cross-actor lifecycle coverage; The grouped findings require a matching pending or accepted request, rejection, negotiation, wallet, notification, or mailbox event"
     },
     {
       "id": "D-A56",
@@ -1759,15 +1797,19 @@
       "scenarioId": "ASS-016",
       "severity": "HIGH",
       "title": "Rejection is an unconfirmed one-click action with no required reason",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
+      "testedAt": "2026-09-18T06:59:55.770Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-015-017/ASS-015-017-assessor-identity-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-requestable-directory-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-pending-fixture-result.json"
+      ],
+      "notes": "The authenticated Assessor identity is Test Assessor and is currently KYC In Review; Test Assessor is absent from the real requestable directory; Creating a request for any visible directory row would target a different account and cannot unlock matching cross-actor lifecycle coverage; The grouped findings require a matching pending or accepted request, rejection, negotiation, wallet, notification, or mailbox event"
     },
     {
       "id": "D-A57",
@@ -1775,15 +1817,19 @@
       "scenarioId": "ASS-016",
       "severity": "CRITICAL",
       "title": "One rejection is represented as two positive wallet reversals and rewrites the original hold",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
+      "testedAt": "2026-09-18T06:59:55.770Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-015-017/ASS-015-017-assessor-identity-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-requestable-directory-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-pending-fixture-result.json"
+      ],
+      "notes": "The authenticated Assessor identity is Test Assessor and is currently KYC In Review; Test Assessor is absent from the real requestable directory; Creating a request for any visible directory row would target a different account and cannot unlock matching cross-actor lifecycle coverage; The grouped findings require a matching pending or accepted request, rejection, negotiation, wallet, notification, or mailbox event"
     },
     {
       "id": "D-A58",
@@ -1791,15 +1837,19 @@
       "scenarioId": "ASS-016",
       "severity": "CRITICAL",
       "title": "Requester cancellation removes the record but leaves NGN 25,000 locked",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
+      "testedAt": "2026-09-18T06:59:55.770Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-015-017/ASS-015-017-assessor-identity-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-requestable-directory-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-pending-fixture-result.json"
+      ],
+      "notes": "The authenticated Assessor identity is Test Assessor and is currently KYC In Review; Test Assessor is absent from the real requestable directory; Creating a request for any visible directory row would target a different account and cannot unlock matching cross-actor lifecycle coverage; The grouped findings require a matching pending or accepted request, rejection, negotiation, wallet, notification, or mailbox event"
     },
     {
       "id": "D-A59",
@@ -1807,15 +1857,18 @@
       "scenarioId": "ASS-016",
       "severity": "CRITICAL",
       "title": "Response-deadline expiry is not enforced and expired requests can be accepted",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:53:28.205Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-016/D-A59-expired-requests-non-actionable-1792x976.png",
+        "evidence/assessor/ASS-016/D-A59-result.json"
+      ],
+      "notes": "Real requests beyond their response deadline render the terminal Response Expired state; Expired request rows expose no Accept, Reject, or Review action; The check used a fresh deployed queue load rather than a dialog opened before expiry"
     },
     {
       "id": "D-A60",
@@ -1823,15 +1876,19 @@
       "scenarioId": "ASS-016",
       "severity": "HIGH",
       "title": "Incoming paid-request emails were not delivered to the Assessor",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
+      "testedAt": "2026-09-18T06:59:55.770Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-015-017/ASS-015-017-assessor-identity-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-requestable-directory-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-pending-fixture-result.json"
+      ],
+      "notes": "The authenticated Assessor identity is Test Assessor and is currently KYC In Review; Test Assessor is absent from the real requestable directory; Creating a request for any visible directory row would target a different account and cannot unlock matching cross-actor lifecycle coverage; The grouped findings require a matching pending or accepted request, rejection, negotiation, wallet, notification, or mailbox event"
     },
     {
       "id": "D-A61",
@@ -1839,15 +1896,19 @@
       "scenarioId": "ASS-017",
       "severity": "HIGH",
       "title": "Negative rates are silently converted into positive proposals",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
+      "testedAt": "2026-09-18T06:59:55.770Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-015-017/ASS-015-017-assessor-identity-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-requestable-directory-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-pending-fixture-result.json"
+      ],
+      "notes": "The authenticated Assessor identity is Test Assessor and is currently KYC In Review; Test Assessor is absent from the real requestable directory; Creating a request for any visible directory row would target a different account and cannot unlock matching cross-actor lifecycle coverage; The grouped findings require a matching pending or accepted request, rejection, negotiation, wallet, notification, or mailbox event"
     },
     {
       "id": "D-A63",
@@ -1855,15 +1916,19 @@
       "scenarioId": "ASS-017",
       "severity": "MEDIUM",
       "title": "Negotiation notes are double-escaped across application and email",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
+      "testedAt": "2026-09-18T06:59:55.770Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-015-017/ASS-015-017-assessor-identity-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-requestable-directory-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-pending-fixture-result.json"
+      ],
+      "notes": "The authenticated Assessor identity is Test Assessor and is currently KYC In Review; Test Assessor is absent from the real requestable directory; Creating a request for any visible directory row would target a different account and cannot unlock matching cross-actor lifecycle coverage; The grouped findings require a matching pending or accepted request, rejection, negotiation, wallet, notification, or mailbox event"
     },
     {
       "id": "D-A64",
@@ -1871,15 +1936,19 @@
       "scenarioId": "ASS-017",
       "severity": "HIGH",
       "title": "Proposal success can be reported without durable persistence",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
+      "testedAt": "2026-09-18T06:59:55.770Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-015-017/ASS-015-017-assessor-identity-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-requestable-directory-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-pending-fixture-result.json"
+      ],
+      "notes": "The authenticated Assessor identity is Test Assessor and is currently KYC In Review; Test Assessor is absent from the real requestable directory; Creating a request for any visible directory row would target a different account and cannot unlock matching cross-actor lifecycle coverage; The grouped findings require a matching pending or accepted request, rejection, negotiation, wallet, notification, or mailbox event"
     },
     {
       "id": "D-A65",
@@ -1887,15 +1956,19 @@
       "scenarioId": "ASS-017",
       "severity": "MEDIUM",
       "title": "Assessor-authored rates are mislabeled as client proposals",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
+      "testedAt": "2026-09-18T06:59:55.770Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-015-017/ASS-015-017-assessor-identity-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-requestable-directory-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-pending-fixture-result.json"
+      ],
+      "notes": "The authenticated Assessor identity is Test Assessor and is currently KYC In Review; Test Assessor is absent from the real requestable directory; Creating a request for any visible directory row would target a different account and cannot unlock matching cross-actor lifecycle coverage; The grouped findings require a matching pending or accepted request, rejection, negotiation, wallet, notification, or mailbox event"
     },
     {
       "id": "D-A66",
@@ -1903,15 +1976,19 @@
       "scenarioId": "ASS-017",
       "severity": "HIGH",
       "title": "Assessor does not receive rate-outcome notifications or complete email delivery",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
+      "testedAt": "2026-09-18T06:59:55.770Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-015-017/ASS-015-017-assessor-identity-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-requestable-directory-1792x976.png",
+        "evidence/assessor/ASS-015-017/ASS-015-017-pending-fixture-result.json"
+      ],
+      "notes": "The authenticated Assessor identity is Test Assessor and is currently KYC In Review; Test Assessor is absent from the real requestable directory; Creating a request for any visible directory row would target a different account and cannot unlock matching cross-actor lifecycle coverage; The grouped findings require a matching pending or accepted request, rejection, negotiation, wallet, notification, or mailbox event"
     },
     {
       "id": "D-A67",
@@ -1919,15 +1996,18 @@
       "scenarioId": "ASS-017",
       "severity": "HIGH",
       "title": "Request copy misstates when funds are committed",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:55:41.943Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-017/D-A67-immediate-reservation-copy-1792x976.png",
+        "evidence/assessor/ASS-017/D-A67-result.json"
+      ],
+      "notes": "The deployed copy states that submitting immediately reserves the displayed amount; It explains negotiated-rate adjustment and release after decline or cancellation; No request was submitted"
     },
     {
       "id": "D-A68",

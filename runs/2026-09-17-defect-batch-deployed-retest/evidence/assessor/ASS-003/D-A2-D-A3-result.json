@@ -1,0 +1,30 @@
+{
+  "findingIds": [
+    "D-A2",
+    "D-A3"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "signupRequests": 0,
+    "dateOfBirth": "1990-01-15",
+    "forbiddenExperienceOptionCount": 0
+  },
+  "assertions": [
+    "Case- and whitespace-normalized duplicate industries are rejected before any signup request",
+    "The 60 Years experience option is absent for a user born in 1990",
+    "The age-compatible 18 Years option remains available",
+    "No account was created"
+  ],
+  "screenshots": [
+    "D-A2-duplicate-industry-blocked-1792x976.png",
+    "D-A3-experience-age-cap-1792x976.png"
+  ],
+  "testedAt": "2026-09-18T07:01:32.813Z"
+}

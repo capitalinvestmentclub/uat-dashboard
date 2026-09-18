@@ -1,0 +1,41 @@
+{
+  "findingIds": [
+    "D-A10"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 360,
+    "height": 800
+  },
+  "observed": {
+    "dialogBox": {
+      "x": 32,
+      "y": 88.859375,
+      "width": 296,
+      "height": 622.28125
+    },
+    "cancelBox": {
+      "x": 48,
+      "y": 653.140625,
+      "width": 124,
+      "height": 42
+    },
+    "submitBox": {
+      "x": 188,
+      "y": 653.140625,
+      "width": 124,
+      "height": 42
+    }
+  },
+  "assertions": [
+    "At 360x800 the role-change dialog is visible and contained inside the viewport",
+    "Cancel and Submit are visible inside the painted dialog",
+    "Both pointer/touch actions are reachable without keyboard-only recovery",
+    "No role-change request was submitted"
+  ],
+  "screenshot": "D-A10-role-change-actions-360x800.png",
+  "testedAt": "2026-09-18T07:04:59.769Z"
+}

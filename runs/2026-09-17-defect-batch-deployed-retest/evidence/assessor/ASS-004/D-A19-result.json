@@ -1,0 +1,30 @@
+{
+  "findingIds": [
+    "D-A19"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "NO_INCOMPLETE_ROLE_PROFILE_FIXTURE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "profile": "Test Assessor",
+    "kycStatus": "In Review",
+    "roleProfileCompletionRequired": null,
+    "expertiseAreas": 4,
+    "specializations": 7,
+    "industriesVisible": true
+  },
+  "assertions": [
+    "The authenticated Assessor has no incomplete-role profile marker",
+    "Its real profile is populated with expertise, specializations, industries, credentials, and employment",
+    "KYC In Review is not equivalent to the missing mandatory role-profile data required by D-A19",
+    "A deliberately incomplete Assessor fixture is required to test navigation and mutation blocking"
+  ],
+  "screenshot": "D-A19-no-incomplete-role-fixture-1792x976.png",
+  "testedAt": "2026-09-18T07:05:56Z"
+}

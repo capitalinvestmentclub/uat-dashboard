@@ -1,0 +1,29 @@
+{
+  "findingIds": [
+    "D-A24",
+    "D-A25"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "NO_DISPOSABLE_EDITABLE_PROFILE_FIXTURE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "profile": "Test Assessor",
+    "technologyAreaAlreadyPresent": true,
+    "existingQualification": "MBA",
+    "longLivedProfile": true
+  },
+  "assertions": [
+    "Technology is already a persisted expertise area, so the exact catalogue-add precondition for D-A24 is unavailable",
+    "D-A25 requires adding, saving, and reloading a normalized duplicate qualification",
+    "Removing expertise or saving duplicate credentials on this long-lived non-disposable account would mutate unrelated profile data",
+    "A disposable editable Assessor profile is required for both persistence checks"
+  ],
+  "screenshot": "D-A24-D-A25-existing-profile-precondition-1792x976.png",
+  "testedAt": "2026-09-18T07:11:46Z"
+}
