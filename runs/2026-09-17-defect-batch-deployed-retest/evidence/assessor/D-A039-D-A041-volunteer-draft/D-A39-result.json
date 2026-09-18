@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "D-A39"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "pitchId": null,
+  "pitchTitle": null,
+  "draftId": null,
+  "testedAt": "2026-09-18T09:37:15.434Z",
+  "assertions": [
+    "No active, accessible deployed volunteer-draft fixture was available for the Assessor; the existing volunteer drafts pointed to inactive pitches",
+    "The Assessor KYC state was visibly incomplete/unverified",
+    "Write Free Review count=0; Resume Volunteer Draft count=0",
+    "Eligibility response=unavailable"
+  ],
+  "screenshots": [
+    "D-A40-manage-assessments-draft.png"
+  ]
+}

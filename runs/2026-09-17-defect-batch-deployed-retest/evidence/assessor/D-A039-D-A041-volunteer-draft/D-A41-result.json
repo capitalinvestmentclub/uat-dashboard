@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "D-A41"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "/dashboard and /manage-assessments",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "pitchId": "6a103fbe1e32b70b9a4e36f9",
+  "pitchTitle": "Memo_Random",
+  "draftId": "6a2c44ecdb0e8848633ce654",
+  "testedAt": "2026-09-18T09:37:15.434Z",
+  "assertions": [
+    "Manage Assessments displayed the volunteer draft=true",
+    "The dashboard displayed the same pitch title=true",
+    "The dashboard Active Assessments value was 6"
+  ],
+  "screenshots": [
+    "D-A41-dashboard-work-queue.png",
+    "D-A40-manage-assessments-draft.png"
+  ]
+}
