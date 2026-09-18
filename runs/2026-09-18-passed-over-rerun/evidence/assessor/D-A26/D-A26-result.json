@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "D-A26"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "NO_POPULATED_ACCOMPLISHMENT_FIXTURE_AFTER_ONE_RECOVERY",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The initial deployed-Chrome run found the accomplishment year field inside a collapsed profile section.",
+    "The single locator recovery opened the containing Qualifications section and reached the accomplishment inputs.",
+    "The deployed profile has no populated accomplishment; its first row is only an empty placeholder and year validation is conditional on a populated title.",
+    "A second fixture/setup change would be required to exercise invalid-year save and reload, so D-A26 remains unverified under the one-recovery rule; no data was saved."
+  ],
+  "screenshots": [],
+  "testedAt": "2026-09-18T20:20:08Z"
+}

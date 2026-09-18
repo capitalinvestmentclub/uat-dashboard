@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T20:18:25.231Z",
+  "updatedAt": "2026-09-18T20:20:08Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1061,15 +1061,17 @@
       "previousDisposition": "UI_COVERAGE_GAP_NO_PRODUCT_PASS",
       "wave": 2,
       "familyId": "profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "NO_POPULATED_ACCOMPLISHMENT_FIXTURE_AFTER_ONE_RECOVERY",
+      "testedAt": "2026-09-18T20:20:08Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A26/D-A26-result.json"
+      ],
+      "notes": "The initial deployed-Chrome run found the accomplishment year field inside a collapsed profile section.; The single locator recovery opened the containing Qualifications section and reached the accomplishment inputs.; The deployed profile has no populated accomplishment; its first row is only an empty placeholder and year validation is conditional on a populated title.; A second fixture/setup change would be required to exercise invalid-year save and reload, so D-A26 remains unverified under the one-recovery rule; no data was saved."
     },
     {
       "id": "D-A27",
