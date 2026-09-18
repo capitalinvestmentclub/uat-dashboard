@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T10:07:00Z",
+  "updatedAt": "2026-09-18T10:10:00Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -4771,15 +4771,17 @@
       "scenarioId": "INV-006",
       "severity": "MEDIUM",
       "title": "Owner and public profile scores disagree",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F003",
@@ -4787,15 +4789,17 @@
       "scenarioId": "INV-030",
       "severity": "HIGH",
       "title": "Investor is offered a Pitcher signature control",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F004",
@@ -4803,15 +4807,17 @@
       "scenarioId": "INV-018",
       "severity": "MEDIUM",
       "title": "Summary counts disagree with empty history lists",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F005",
@@ -4819,15 +4825,17 @@
       "scenarioId": "INV-039",
       "severity": "MEDIUM",
       "title": "Empty required grant details advance to setup",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F006",
@@ -4835,15 +4843,17 @@
       "scenarioId": "INV-044",
       "severity": "MEDIUM",
       "title": "Mobile drawer cannot reach Deactivate Profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F007",
@@ -4851,15 +4861,17 @@
       "scenarioId": "INV-003",
       "severity": "HIGH",
       "title": "Non-anonymous signup fails on null alias and emits duplicate confirmation mail",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F008",
@@ -4867,15 +4879,17 @@
       "scenarioId": "INV-042",
       "severity": "MEDIUM",
       "title": "Notification navigation badge remains stale after mark-read",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F009",
@@ -4883,15 +4897,17 @@
       "scenarioId": "INV-037",
       "severity": "HIGH",
       "title": "Failed withdrawal does not release its reservation",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F010",
@@ -4899,15 +4915,17 @@
       "scenarioId": "INV-037",
       "severity": "HIGH",
       "title": "Withdrawal quote total excludes its displayed fee",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F011",
@@ -4915,15 +4933,17 @@
       "scenarioId": "INV-022",
       "severity": "MEDIUM",
       "title": "Cancelled sessions still offer Join live room",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F012",
@@ -4931,15 +4951,17 @@
       "scenarioId": "INV-022",
       "severity": "MEDIUM",
       "title": "Reschedule email converts 30 minutes to 1800 minutes",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F013",
@@ -4947,15 +4969,17 @@
       "scenarioId": "INV-031",
       "severity": "HIGH",
       "title": "Distribution form reports no available profit in the wrong currency",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F014",
@@ -4963,15 +4987,17 @@
       "scenarioId": "INV-040",
       "severity": "HIGH",
       "title": "Incoming financial receipts reverse sender and recipient",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F015",
@@ -4979,15 +5005,17 @@
       "scenarioId": "INV-017",
       "severity": "HIGH",
       "title": "Counteroffer terminates negotiation without an Investor response path",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F016",
@@ -4995,15 +5023,17 @@
       "scenarioId": "INV-017",
       "severity": "HIGH",
       "title": "Expired pending bid remains active and keeps funds reserved",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F017",
@@ -5011,15 +5041,17 @@
       "scenarioId": "INV-013",
       "severity": "MEDIUM",
       "title": "Pitch preference state is contradictory and Favourites filtering is inaccurate",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F018",
@@ -5027,15 +5059,17 @@
       "scenarioId": "INV-013",
       "severity": "MEDIUM",
       "title": "Follow and unfollow totals remain stale until identity handoff",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F019",
@@ -5043,15 +5077,17 @@
       "scenarioId": "INV-013",
       "severity": "LOW",
       "title": "Successful profile report renders a blank acknowledgement toast",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F020",
@@ -5059,15 +5095,17 @@
       "scenarioId": "INV-024",
       "severity": "HIGH",
       "title": "Investor project wallet falsely displays zero balance and no ledger",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F021",
@@ -5075,15 +5113,17 @@
       "scenarioId": "INV-024",
       "severity": "HIGH",
       "title": "Project Equity omits other CIC shareholders and contradicts funded ownership",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F022",
@@ -5091,15 +5131,17 @@
       "scenarioId": "INV-025",
       "severity": "HIGH",
       "title": "Owner cannot create a milestone using selectable valid dates",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F023",
@@ -5107,15 +5149,17 @@
       "scenarioId": "INV-025",
       "severity": "MEDIUM",
       "title": "Milestone comment validation and Unicode recovery silently lose input",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F024",
@@ -5123,15 +5167,17 @@
       "scenarioId": "INV-025",
       "severity": "HIGH",
       "title": "Owner and unrelated Investor can mutate milestone review state",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F025",
@@ -5139,15 +5185,17 @@
       "scenarioId": "INV-025",
       "severity": "HIGH",
       "title": "Required milestone delivery and acceptance lifecycle is absent",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F026",
@@ -5155,15 +5203,17 @@
       "scenarioId": "INV-026",
       "severity": "HIGH",
       "title": "Valid project RFI submission is silently lost",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F027",
@@ -5171,15 +5221,17 @@
       "scenarioId": "INV-026",
       "severity": "HIGH",
       "title": "Project RFI follow-up, acknowledgment and reopen lifecycle is absent",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F028",
@@ -5187,15 +5239,17 @@
       "scenarioId": "INV-026",
       "severity": "HIGH",
       "title": "Whitespace-only project RFI response closes and persists blank",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     },
     {
       "id": "INV-F029",
@@ -5203,15 +5257,17 @@
       "scenarioId": "INV-027",
       "severity": "HIGH",
       "title": "Required governance-report obligation, review and revision lifecycle is absent",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:10:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/remaining-fixture-inventory/investor-remaining-result.json"
+      ],
+      "notes": "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt; INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations; INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures; Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
     }
   ]
 }

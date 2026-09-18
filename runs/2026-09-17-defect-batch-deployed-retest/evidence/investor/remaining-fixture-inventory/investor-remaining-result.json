@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "INV-F002", "INV-F003", "INV-F004", "INV-F005", "INV-F006", "INV-F007",
+    "INV-F008", "INV-F009", "INV-F010", "INV-F011", "INV-F012", "INV-F013",
+    "INV-F014", "INV-F015", "INV-F016", "INV-F017", "INV-F018", "INV-F019",
+    "INV-F020", "INV-F021", "INV-F022", "INV-F023", "INV-F024", "INV-F025",
+    "INV-F026", "INV-F027", "INV-F028", "INV-F029"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {"width": 1792, "height": 976},
+  "assertions": [
+    "The established Investor account authenticated successfully, then required current policy re-consent; after acceptance the protected profile remained blank and the expected owner-score surface did not render within the bounded attempt",
+    "INV-F002 through INV-F008 require a stable Investor profile/dashboard/grant/notification session; INV-F009 through INV-F016 require withdrawal, session, distribution, receipt, bid, and reservation mutations",
+    "INV-F017 through INV-F019 require preference/follow/report mutations; INV-F020 through INV-F029 require exact owner/unrelated-Investor project, milestone, RFI, and governance fixtures",
+    "Continuing through the blank protected state would not provide trustworthy UI evidence, and no financial, session, bid, preference, report, project, milestone, RFI, or governance state was changed"
+  ],
+  "screenshots": [],
+  "testedAt": "2026-09-18T10:10:00Z"
+}
