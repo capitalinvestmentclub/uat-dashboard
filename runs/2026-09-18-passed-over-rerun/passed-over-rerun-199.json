@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T19:59:57.245Z",
+  "updatedAt": "2026-09-18T20:02:00Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -925,15 +925,17 @@
       "previousDisposition": "DEACTIVATION_ENTRY_UNAVAILABLE_ON_DEPLOYED_DESKTOP",
       "wave": 2,
       "familyId": "profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "DEPLOYED_DESKTOP_ENTRY_NOT_REACHED_AFTER_ONE_RECOVERY_ATTEMPT",
+      "testedAt": "2026-09-18T20:02:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A14/D-A14-result.json"
+      ],
+      "notes": "The authenticated Assessor profile loaded successfully at the standard desktop viewport.; The attempted account-menu path did not expose an actionable Deactivate Profile entry to the browser test.; One locator recovery attempt also failed, so the password-step-up dialog was not reached and no account-closure request was sent.; D-A14 remains unverified rather than being inferred from source or mocked coverage."
     },
     {
       "id": "D-A17",
