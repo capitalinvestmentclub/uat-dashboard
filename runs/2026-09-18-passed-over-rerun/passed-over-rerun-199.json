@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T23:30:26.571Z",
+  "updatedAt": "2026-09-18T23:34:11.347Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2326,15 +2326,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T23:34:11.347Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&task=6aadb8046b8d9dde2f7a654c",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A103/D-A103-submitted-assessment-terminated.png",
+        "evidence/D-A103/D-A103-result.json"
+      ],
+      "notes": "A requester can terminate a completed but unpaid submitted assessment without waiting for the late window; The UI rejects an empty reason, then persists the supplied termination reason and terminal audit state across reload; Termination removes Pay Now, clears the NGN 25,000 reservation, and restores the requester available balance exactly once; The ledger retains one immutable cancelled hold and one linked successful refund without changing total wallet balance"
     },
     {
       "id": "D-A104",
