@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "PIT-F014"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "PARTIAL_BRANCH_OBSERVED_REMAINING_FIXTURES_UNAVAILABLE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aa79266353b35320a6f6c5e",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Observed the saved draft grant display Applications Closed 13 Oct 2026 and Contribution Target Date: 13 Oct 2026 in Chrome under America/Phoenix, with the edit form reopening the application deadline as 2026-10-13",
+    "The edit modal was closed without saving and no grant record was mutated",
+    "Automated evidence capture encountered an intermittent grant-detail loading state after the bounded correction attempt",
+    "Passed over the consolidated KYC, external-holder, agreement, milestone, and financial-report date branches because no isolated exact-date fixture and reversible save/readback path was available in this interval"
+  ],
+  "screenshots": [],
+  "testedAt": "2026-09-18T08:34:27Z"
+}
