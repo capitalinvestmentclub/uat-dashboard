@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T23:25:28.147Z",
+  "updatedAt": "2026-09-18T23:30:26.571Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2303,15 +2303,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "REPRODUCED_DEPLOYED",
+      "testedAt": "2026-09-18T23:30:26.571Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A102/D-A102-release-receipt-inaccessible.png",
+        "evidence/D-A102/D-A102-result.json"
+      ],
+      "notes": "The release is represented by exactly two economically distinct rows: the immutable negative hold and one positive refund; The original hold remains negative and carries cancelled release-resolution metadata instead of mutating into a second credit; The receipt API now identifies CIC assessment escrow as sender and the requester wallet owner as recipient; The deployed wallet row still renders an em dash instead of a Receipt action, so the corrected receipt is inaccessible to the requester; D-A102 remains unresolved at the user-facing boundary even though its duplicate-row and API party-direction sub-defects are corrected"
     },
     {
       "id": "D-A103",
