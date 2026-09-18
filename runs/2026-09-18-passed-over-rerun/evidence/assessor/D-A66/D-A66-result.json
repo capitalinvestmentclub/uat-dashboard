@@ -1,0 +1,37 @@
+{
+  "findingIds": [
+    "D-A66"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aadadb76b8d9dde2f79da8c",
+  "observed": {
+    "subject": "Your assessment rate proposal was declined",
+    "body": "Test Pitcher declined your NGN 26,000.00 proposal for Testing Small Pitch.",
+    "url": "/manage-assessments?tab=requests&requestId=6aadadb76b8d9dde2f79da8c",
+    "outcome": "declined",
+    "amountLabel": "NGN 26,000.00",
+    "emailRecipient": "cic.test.assessor@gmail.com",
+    "emailSubject": "Your assessment rate proposal was declined",
+    "emailBodySummary": "Test Pitcher declined your assessment rate proposal. Testing Small Pitch. Outcome Declined. Proposed rate NGN 26,000.00.",
+    "emailReceivedTime": "2026-09-18 14:43 America/Phoenix"
+  },
+  "assertions": [
+    "The Pitcher rejected the real NGN 26,000 rate proposal through the deployed Chrome UI",
+    "The Assessor notification feed received a rate-outcome notification for the exact request",
+    "The notification identifies the declined outcome and proposed amount",
+    "The notification deep link targets the exact Assessor request workspace",
+    "The Assessor's actual Gmail inbox received a complete matching outcome email with pitch, outcome, and NGN 26,000.00 amount"
+  ],
+  "screenshots": [
+    "D-A66-rate-outcome-notification.png"
+  ],
+  "testedAt": "2026-09-18T21:44:01.617Z"
+}

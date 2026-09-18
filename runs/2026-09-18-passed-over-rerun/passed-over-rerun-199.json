@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T21:39:00.000Z",
+  "updatedAt": "2026-09-18T21:44:01.617Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1631,15 +1631,18 @@
       "previousDisposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
       "wave": 4,
       "familyId": "communications",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T21:44:01.617Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A66/D-A66-rate-outcome-notification.png",
+        "evidence/assessor/D-A66/D-A66-result.json"
+      ],
+      "notes": "The Pitcher rejected the real NGN 26,000 rate proposal through the deployed Chrome UI; The Assessor notification feed received a rate-outcome notification for the exact request; The notification identifies the declined outcome and proposed amount; The notification deep link targets the exact Assessor request workspace; The Assessor's actual Gmail inbox received a complete matching outcome email with pitch, outcome, and NGN 26,000.00 amount"
     },
     {
       "id": "D-A68",
