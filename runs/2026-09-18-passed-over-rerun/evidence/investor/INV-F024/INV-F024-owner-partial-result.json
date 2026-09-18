@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "INV-F024"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "BLOCKED_TEST_ACTOR_AUTH",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/692dd85220b2c00478938390?id=692dd85220b2c00478938390&tab=4",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The Pitcher owner saw no Support or Push back controls on the owner-created milestone",
+    "The owner therefore had no rendered path to inflate approval or rejection signals on the owner-created milestone",
+    "The unrelated-Investor half could not be completed after the one allowed setup attempt because login-code verification did not establish a reusable Chrome session",
+    "The existing unrelated Investor password was restored immediately after the setup attempt"
+  ],
+  "blocker": "A reusable authenticated Chrome session for a confirmed unrelated Investor is still required to prove that role has no mutation controls and receives API denial.",
+  "screenshots": [
+    "INV-F024-owner-read-only-review-controls.png"
+  ],
+  "testedAt": "2026-09-18T16:48:06.211Z"
+}
