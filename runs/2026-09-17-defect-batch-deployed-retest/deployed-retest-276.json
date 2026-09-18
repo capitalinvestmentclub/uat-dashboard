@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T07:17:26Z",
+  "updatedAt": "2026-09-18T07:21:59Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -1064,15 +1064,18 @@
       "scenarioId": "ASS-037",
       "severity": "HIGH",
       "title": "Account deactivation Submit becomes enabled with only a reason and static phrase",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "DEACTIVATION_ENTRY_UNAVAILABLE_ON_DEPLOYED_DESKTOP",
+      "testedAt": "2026-09-18T07:21:59Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-037/D-A14-deactivation-entry-unavailable-1792x976.png",
+        "evidence/assessor/ASS-037/D-A14-result.json"
+      ],
+      "notes": "The deployed desktop profile did not expose an actionable Deactivate Profile entry; The Open navigation menu path used by the mocked regression is not present on this deployed desktop layout; The closure dialog and its password requirement could not be inspected without changing to a different navigation context"
     },
     {
       "id": "D-A15",
