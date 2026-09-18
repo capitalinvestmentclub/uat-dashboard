@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T23:42:41.536Z",
+  "updatedAt": "2026-09-18T23:51:36.294Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2371,15 +2371,20 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T23:51:36.294Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a056d88ba2af459fbda5f9c?id=6a056d88ba2af459fbda5f9c&tab=2&task=6a143af7e33eabf6cff6df4d",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A105/D-A105-assessor-response.png",
+        "evidence/D-A105/D-A105-requester-acknowledged.png",
+        "evidence/D-A105/D-A105-administration-decision.png",
+        "evidence/D-A105/D-A105-result.json"
+      ],
+      "notes": "The Assessor dispute notification deep-links to the exact delivered assessment record instead of a generic list; The exact record displays the filed type, reason, timestamp, evidence, and an Assessor response action; The Assessor response appears in the requester view, the requester can acknowledge it, and administration can decide it; The final upheld record persists after cross-role reload with a four-event actor-attributed audit history"
     },
     {
       "id": "D-A106",
