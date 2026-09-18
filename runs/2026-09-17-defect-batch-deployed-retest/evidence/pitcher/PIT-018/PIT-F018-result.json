@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "PIT-F018"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6aa39a936aaab838c8d7bad4?id=6aa39a936aaab838c8d7bad4&tab=6",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed RFI composer exposes a 500-character maximum matching its visible counter",
+    "Entering 501 characters through Chrome retains exactly 500 characters and displays 500 / 500",
+    "The test stopped before submission; no information request was created"
+  ],
+  "screenshots": [
+    "PIT-F018-rfi-500-character-boundary.png"
+  ],
+  "testedAt": "2026-09-18T07:47:37.262Z"
+}
