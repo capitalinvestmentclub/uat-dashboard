@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T14:55:21.153Z",
+  "updatedAt": "2026-09-18T14:56:24.166Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3557,15 +3557,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 1,
       "familyId": "identity",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T14:56:24.166Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "390x844",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F006/INV-F006-mobile-drawer-deactivate-reachable.png",
+        "evidence/investor/INV-F006/INV-F006-result.json"
+      ],
+      "notes": "The 390x844 account drawer is independently scrollable.; Deactivate Profile becomes visible without moving the underlying page.; Selecting Deactivate Profile opens the account-closure dialog."
     },
     {
       "id": "INV-F007",
