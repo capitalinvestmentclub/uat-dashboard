@@ -1,0 +1,99 @@
+{
+  "findingIds": [
+    "PIT-F033"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6a8537085d0f439c8ef23319",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Long invitation chip at 390x844 remained inside the edit dialog without horizontal clipping: true",
+    "Voting-stage and approval text remained horizontally legible at 1792x976: true",
+    "Voting-stage and approval text remained horizontally legible at 1024x768: true",
+    "The edit modal was closed without saving, so no grant or invitation record was mutated"
+  ],
+  "observations": [
+    {
+      "branch": "invitation-chip-390",
+      "legible": true,
+      "metrics": {
+        "left": 61,
+        "right": 297.5625,
+        "top": 591.6875,
+        "bottom": 626.53125,
+        "width": 236.5625,
+        "height": 34.84375,
+        "scrollWidth": 0,
+        "clientWidth": 0,
+        "lineHeight": 16.9,
+        "overflowWrap": "anywhere"
+      }
+    },
+    {
+      "branch": "voting-table-1792",
+      "legible": true,
+      "metrics": {
+        "left": 1230.15625,
+        "right": 1409.921875,
+        "top": 889.625,
+        "bottom": 911.625,
+        "width": 179.765625,
+        "height": 22,
+        "scrollWidth": 180,
+        "clientWidth": 180,
+        "lineHeight": 22,
+        "overflowWrap": "normal"
+      },
+      "approvedMetrics": {
+        "left": 1440.75,
+        "right": 1511.65625,
+        "top": 889.625,
+        "bottom": 911.625,
+        "width": 70.90625,
+        "height": 22,
+        "scrollWidth": 71,
+        "clientWidth": 71,
+        "lineHeight": 22,
+        "overflowWrap": "normal"
+      }
+    },
+    {
+      "branch": "voting-table-1024",
+      "legible": true,
+      "metrics": {
+        "left": 587.484375,
+        "right": 767.25,
+        "top": 709.625,
+        "bottom": 731.625,
+        "width": 179.765625,
+        "height": 22,
+        "scrollWidth": 180,
+        "clientWidth": 180,
+        "lineHeight": 22,
+        "overflowWrap": "normal"
+      },
+      "approvedMetrics": {
+        "left": 767.25,
+        "right": 838.15625,
+        "top": 709.625,
+        "bottom": 731.625,
+        "width": 70.90625,
+        "height": 22,
+        "scrollWidth": 71,
+        "clientWidth": 71,
+        "lineHeight": 22,
+        "overflowWrap": "normal"
+      }
+    }
+  ],
+  "screenshots": [
+    "PIT-F033-long-invitation-chip-390.png",
+    "PIT-F033-voting-table-1792.png",
+    "PIT-F033-voting-table-1024.png"
+  ],
+  "testedAt": "2026-09-18T08:22:34.248Z"
+}

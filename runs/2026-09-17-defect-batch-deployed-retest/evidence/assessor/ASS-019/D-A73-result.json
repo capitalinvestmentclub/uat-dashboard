@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "D-A73"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_ON_DEPLOYED_CANDIDATE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "exactCaseQuery": "PASS",
+    "lowercaseQuery": "FAIL",
+    "failedQuery": "ultrawatt project"
+  },
+  "assertions": [
+    "The exact-case real pitch title query returned request rows",
+    "The lowercase form of the same visible title issued a successful real API request but rendered No requests match this search"
+  ],
+  "screenshot": "D-A73-lowercase-search-still-empty-1792x976.png",
+  "testedAt": "2026-09-18T06:02:33Z"
+}

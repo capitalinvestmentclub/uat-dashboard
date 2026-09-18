@@ -1,0 +1,21 @@
+{
+  "findingIds": [
+    "G-A34"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/support",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Topic, phone, summary, and privacy-consent controls expose their visible purpose programmatically",
+    "The privacy-consent checkbox is keyboard-operable and reflects checked state",
+    "The callback form was not submitted and no support request was created",
+    "No observed request returned 5xx"
+  ],
+  "screenshot": "G-A34-named-secure-callback-controls-1792x976.png",
+  "testedAt": "2026-09-18T05:25:36.948Z"
+}

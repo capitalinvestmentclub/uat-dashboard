@@ -1,0 +1,24 @@
+{
+  "findingIds": [
+    "PUB007-COVERAGE-001",
+    "PUB017-COVERAGE-001",
+    "GRT024-COVERAGE-001",
+    "ORG025-COVERAGE-001"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "PASSED_OVER_MISSING_RUN_SCOPED_FIXTURES",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "These four entries are coverage gaps rather than isolated product defects",
+    "The required disposable verified accounts, allowed/restricted identity pair, and complete organization lifecycle fixtures are not configured in the retest environment",
+    "No approved mailbox or lifecycle reset capability is exposed to this run",
+    "No product pass is claimed; each entry is terminally passed over with its prerequisite gap retained"
+  ],
+  "testedAt": "2026-09-18T05:20:00.000Z"
+}

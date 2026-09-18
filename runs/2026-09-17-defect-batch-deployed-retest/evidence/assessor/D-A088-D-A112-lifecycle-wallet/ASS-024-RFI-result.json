@@ -1,0 +1,15 @@
+{
+  "findingIds": ["D-A88", "D-A89", "D-A90", "D-A91", "D-A92"],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {"width": 1792, "height": 976},
+  "assertions": [
+    "The RFI findings require an active assessment shared by isolated Assessor and requester actors",
+    "Duplicate creation, whitespace response, later submissions, notification, and email checks all persist durable RFI state and cannot be cleaned up from the current inactive fixtures",
+    "No RFI was created, answered, or closed on shared deployed data"
+  ],
+  "screenshots": ["D-A112-wallet-amount-sort.png"],
+  "testedAt": "2026-09-18T09:59:18.433Z"
+}

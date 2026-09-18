@@ -1,0 +1,21 @@
+{
+  "findingIds": [
+    "D-A151"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_ON_DEPLOYED_CANDIDATE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/assistant?from=/dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The answer was topically related and cited the Assessments and assessors knowledge source",
+    "The answer did not explain how to return to the dashboard or how to open assigned assessments",
+    "The incomplete non-actionable answer was still labelled High confidence at 75 percent"
+  ],
+  "screenshot": "D-A151-incomplete-high-confidence-answer-1792x976.png",
+  "testedAt": "2026-09-18T05:40:50.000Z"
+}

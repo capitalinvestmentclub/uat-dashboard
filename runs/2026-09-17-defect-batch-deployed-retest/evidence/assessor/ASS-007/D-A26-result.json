@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "D-A26"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "UI_COVERAGE_GAP_NO_PRODUCT_PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "awardsSectionOpened": true,
+    "existingYearInputPresentInDom": true,
+    "existingYearInputVisible": false
+  },
+  "assertions": [
+    "The deployed Awards section was opened for the real Assessor profile",
+    "The existing accomplishment year input remained hidden inside a collapsed editor",
+    "The single allowed harness correction was exhausted resolving the Awards control ambiguity; persistence was not exercised and no product pass is claimed"
+  ],
+  "screenshot": "D-A26-award-editor-collapsed-1792x976.png",
+  "testedAt": "2026-09-18T06:17:09Z"
+}

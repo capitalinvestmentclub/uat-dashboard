@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "D-A16"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "beforePrice": 57900.33,
+    "afterPrice": 57900.33
+  },
+  "assertions": [
+    "The deployed Assessor fixture has a real owned marketplace holding",
+    "Its displayed current price is non-zero before refresh",
+    "The exact displayed current price remains unchanged after refresh",
+    "No observed request returned 5xx"
+  ],
+  "screenshot": "D-A16-holding-price-stable-after-refresh-1792x976.png",
+  "testedAt": "2026-09-18T05:33:23.409Z"
+}

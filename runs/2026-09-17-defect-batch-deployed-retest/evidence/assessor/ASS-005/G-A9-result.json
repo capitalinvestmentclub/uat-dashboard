@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "G-A9"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "assertions": [
+    "At 360x800 and 390x844 the account-tab strip exposes an explicit right-scroll control",
+    "After scrolling, the left-scroll control and final Assistant tab are reachable",
+    "The navigation region stays within the viewport at both affected widths"
+  ],
+  "screenshots": [
+    "G-A9-account-tabs-360x800.png",
+    "G-A9-account-tabs-390x844.png"
+  ],
+  "testedAt": "2026-09-18T05:30:19.292Z"
+}

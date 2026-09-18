@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "PIT-F016"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/69bbf6e2c800e2d0a401bb6a",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed ended session exposes a processed cloud recording and visible video player",
+    "The signed recording endpoint returned HTTP 206 with binary/octet-stream content that Chrome decoded",
+    "Chrome loaded finite playable metadata with duration 497.55 seconds",
+    "The signed media URL was intentionally excluded from committed evidence"
+  ],
+  "screenshots": [
+    "PIT-F016-completed-recording-playable.png"
+  ],
+  "testedAt": "2026-09-18T08:08:28.932Z"
+}

@@ -1,0 +1,21 @@
+{
+  "findingIds": ["D-A14"],
+  "outcome": "PASSED_OVER",
+  "disposition": "DEACTIVATION_ENTRY_UNAVAILABLE_ON_DEPLOYED_DESKTOP",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1792, "height": 976 },
+  "observed": {
+    "desktopDeactivateProfileVisible": false,
+    "openNavigationMenuAvailable": false,
+    "accountClosureDialogOpened": false
+  },
+  "assertions": [
+    "The deployed desktop profile did not expose an actionable Deactivate Profile entry",
+    "The Open navigation menu path used by the mocked regression is not present on this deployed desktop layout",
+    "The closure dialog and its password requirement could not be inspected without changing to a different navigation context"
+  ],
+  "screenshot": "D-A14-deactivation-entry-unavailable-1792x976.png",
+  "testedAt": "2026-09-18T07:21:59Z"
+}

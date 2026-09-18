@@ -1,0 +1,20 @@
+{
+  "findingIds": [
+    "G-A19"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitches",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Pitch search and rating controls expose stable programmatic names",
+    "All five advanced range sliders expose distinct names",
+    "Minimum assessor rating and minimum accepted-bid decrement/increment controls expose contextual names"
+  ],
+  "screenshot": "G-A19-pitch-discovery-control-names-1792x976.png",
+  "testedAt": "2026-09-18T06:26:58.449Z"
+}

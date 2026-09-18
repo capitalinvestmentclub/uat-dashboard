@@ -1,0 +1,21 @@
+{
+  "findingIds": [
+    "G-A3"
+  ],
+  "outcome": "PASS",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+  "screenshots": [
+    "signup-accessibility-controls.png"
+  ],
+  "testedAt": "2026-09-18T10:06:52.859Z",
+  "assertions": [
+    "Date-of-birth picker maxDate=2008-09-18T07:00:00.000Z",
+    "The configured maximum blocks future dates=true"
+  ]
+}

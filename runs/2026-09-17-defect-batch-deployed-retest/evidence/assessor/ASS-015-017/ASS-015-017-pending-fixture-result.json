@@ -1,0 +1,45 @@
+{
+  "findingIds": [
+    "D-A53",
+    "D-A54",
+    "D-A55",
+    "D-A56",
+    "D-A57",
+    "D-A58",
+    "D-A60",
+    "D-A61",
+    "D-A63",
+    "D-A64",
+    "D-A65",
+    "D-A66"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "authenticatedAssessor": "Test Assessor",
+    "assessorReadiness": "KYC In Review",
+    "requestableDirectoryIdentities": [
+      "PIT019-A1 Synthetic Fixture",
+      "Adebayo Guerrilla-UAT",
+      "Uat assessor"
+    ]
+  },
+  "assertions": [
+    "The authenticated Assessor identity is Test Assessor and is currently KYC In Review",
+    "Test Assessor is absent from the real requestable directory",
+    "Creating a request for any visible directory row would target a different account and cannot unlock matching cross-actor lifecycle coverage",
+    "The grouped findings require a matching pending or accepted request, rejection, negotiation, wallet, notification, or mailbox event"
+  ],
+  "screenshots": [
+    "ASS-015-017-assessor-identity-1792x976.png",
+    "ASS-015-017-requestable-directory-1792x976.png"
+  ],
+  "testedAt": "2026-09-18T06:59:55.770Z"
+}

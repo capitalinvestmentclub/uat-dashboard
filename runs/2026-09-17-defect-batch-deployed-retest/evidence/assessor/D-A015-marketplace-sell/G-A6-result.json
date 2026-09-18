@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "G-A6"
+  ],
+  "outcome": "FAIL",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The asset, percentage, and price inputs still share the duplicated id outlined-adornment-weight",
+    "The percentage and price inputs still expose the generic accessible name weight rather than their visible labels"
+  ],
+  "failure": "The deployed sell dialog retains duplicate IDs and ambiguous numeric-field accessible names.",
+  "screenshots": [
+    "D-A15-valid-partial-sell-error.png"
+  ],
+  "testedAt": "2026-09-18T09:22:49Z"
+}

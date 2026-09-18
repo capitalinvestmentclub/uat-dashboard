@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "D-A59"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "expiredRowCount": 68
+  },
+  "assertions": [
+    "Real requests beyond their response deadline render the terminal Response Expired state",
+    "Expired request rows expose no Accept, Reject, or Review action",
+    "The check used a fresh deployed queue load rather than a dialog opened before expiry"
+  ],
+  "screenshot": "D-A59-expired-requests-non-actionable-1792x976.png",
+  "testedAt": "2026-09-18T06:53:28.205Z"
+}

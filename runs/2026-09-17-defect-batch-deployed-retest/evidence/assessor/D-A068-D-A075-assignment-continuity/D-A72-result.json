@@ -1,0 +1,19 @@
+{
+  "findingIds": [
+    "D-A72"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "/manage-assessments",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "testedAt": "2026-09-18T09:47:40.862Z",
+  "assertions": [
+    "An active paid draft assignment was not available",
+    "Overview navigation removed assignment identifiers and replaced the editable assessment body=false"
+  ],
+  "screenshots": []
+}

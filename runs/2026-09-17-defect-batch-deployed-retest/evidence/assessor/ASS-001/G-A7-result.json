@@ -1,0 +1,21 @@
+{
+  "findingIds": [
+    "G-A7"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/login",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Email label remains visible after entry",
+    "Password label remains visible after entry",
+    "Inputs retain programmatic accessible names",
+    "Login submit control retains a visible label"
+  ],
+  "screenshot": "G-A7-login-visible-labels-1792x976.png",
+  "testedAt": "2026-09-18T05:13:59.622Z"
+}

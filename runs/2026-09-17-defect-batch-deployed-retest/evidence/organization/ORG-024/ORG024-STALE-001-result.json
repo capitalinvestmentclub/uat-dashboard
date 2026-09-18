@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "ORG024-STALE-001"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/organizations",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "conflictDetected": true,
+    "staleReloadedWinningValue": true,
+    "originalTaglineRestored": true
+  },
+  "assertions": [
+    "A first tab persisted a uniquely marked profile tagline",
+    "A stale second tab was rejected instead of overwriting the newer value",
+    "The stale tab reloaded the winning value after the conflict",
+    "The original tagline was restored and verified after reload"
+  ],
+  "screenshot": "ORG024-stale-save-conflict-1792x976.png",
+  "testedAt": "2026-09-18T07:32:06.611Z"
+}

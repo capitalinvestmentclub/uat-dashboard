@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "PIT-F038"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=11",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed pitch API returned publicationSubmittedAt=2026-09-07T13:52:27.023Z",
+    "The read-only admin Lifecycle renders Pitch submitted with 7 Sept 2026, 6:52",
+    "The rendered source label is pitch.publicationSubmittedAt and the submission entry is not Unavailable",
+    "No pitch record was changed during this read-only retest"
+  ],
+  "screenshots": [
+    "PIT-F038-submission-lifecycle.png"
+  ],
+  "testedAt": "2026-09-18T08:30:43.588Z"
+}

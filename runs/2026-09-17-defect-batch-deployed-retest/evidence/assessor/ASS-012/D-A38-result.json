@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "D-A38"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitches",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "attemptedValue": -1,
+    "normalizedVisibleValue": 0,
+    "negativeApiRequests": 0
+  },
+  "assertions": [
+    "The deployed Minimum accepted bids control exposes a programmatic name",
+    "Entering -1 normalizes the visible value to 0 and renders the non-negative whole-number message",
+    "No observed real pitch request sent minAcceptedBids=-1"
+  ],
+  "screenshot": "D-A38-negative-minimum-bids-rejected-1792x976.png",
+  "testedAt": "2026-09-18T06:25:48.492Z"
+}

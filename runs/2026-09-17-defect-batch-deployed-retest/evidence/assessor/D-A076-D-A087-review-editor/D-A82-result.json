@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "D-A82"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "/manage-assessments",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "testedAt": "2026-09-18T09:54:16.242Z",
+  "assertions": [
+    "An active submitted assessment whose legacy reviewId URL could be exercised was not available",
+    "The legacy draft URL exposed no Save/Submit controls and rendered a terminal read-only outcome=false",
+    "No active submitted-detail outcome was available"
+  ],
+  "screenshots": [
+    "D-A83-submitted-status.png"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "findingIds": [
+    "PIT-F021"
+  ],
+  "outcome": "FAIL",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=4",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Malformed email produced Please enter a valid email address and sent no external-shareholder write",
+    "A unique valid external holder persisted with its email and appeared in the deployed equity table",
+    "Editing the newly created holder failed in the deployed UI with Pitch changed publication state while this shareholder change was being saved",
+    "The temporary holder was absent from API readback after cleanup"
+  ],
+  "failure": "External-holder edit remains unreliable: an immediately created holder could not be edited because the API rejected the save after detecting a publication-state change.",
+  "relevantWrites": [
+    "POST",
+    "PATCH",
+    "DELETE"
+  ],
+  "screenshots": [
+    "PIT-F021-edit-publication-state-conflict.png"
+  ],
+  "testedAt": "2026-09-18T04:54:00.000Z"
+}

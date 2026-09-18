@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "G-A1"
+  ],
+  "outcome": "PASS",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+  "screenshots": [
+    "signup-accessibility-controls.png"
+  ],
+  "testedAt": "2026-09-18T10:06:52.859Z",
+  "assertions": [
+    "Add another Industry, Professional Qualifications, and Awards and Certifications are exposed by semantic roles=true",
+    "Experience control ids are unique=true; ids=assessor-experience-0, assessor-experience-1",
+    "No signup request was submitted and no account was created"
+  ]
+}

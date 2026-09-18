@@ -1,0 +1,24 @@
+{
+  "findingIds": [
+    "G-A12"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user/63b9b30ec4c53f00275907af",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1024,
+    "height": 768
+  },
+  "assertions": [
+    "At 768x1024 all three assessment-expertise metric tiles are visible and in bounds",
+    "At 1024x768 the Assessment lens occupies a usable majority-width column instead of a narrow word stack",
+    "Both affected layouts keep the metrics and lens inside the viewport",
+    "No observed request returned 5xx"
+  ],
+  "screenshots": [
+    "G-A12-public-profile-768x1024.png",
+    "G-A12-public-profile-1024x768.png"
+  ],
+  "testedAt": "2026-09-18T05:29:02.825Z"
+}

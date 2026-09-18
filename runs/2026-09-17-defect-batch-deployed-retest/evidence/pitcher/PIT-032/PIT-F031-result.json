@@ -1,0 +1,50 @@
+{
+  "findingIds": [
+    "PIT-F031"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "observed": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "dialogBox": {
+        "x": 420,
+        "y": 205.65625,
+        "width": 600,
+        "height": 488.671875
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "dialogBox": {
+        "x": 32,
+        "y": 120.125,
+        "width": 326,
+        "height": 603.75
+      }
+    }
+  ],
+  "assertions": [
+    "The Pitcher dashboard exposes the feedback launcher at 1440 and 390 widths",
+    "The Send feedback dialog opens visibly at both widths",
+    "The compact dialog remains horizontally contained inside the 390px viewport",
+    "No feedback was submitted"
+  ],
+  "screenshots": [
+    "PIT-F031-feedback-1440x900.png",
+    "PIT-F031-feedback-390x844.png"
+  ],
+  "testedAt": "2026-09-18T07:37:56.664Z"
+}

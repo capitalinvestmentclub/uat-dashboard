@@ -1,0 +1,21 @@
+{
+  "findingIds": [
+    "D-A68"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "/manage-assessments?tab=requests",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "testedAt": "2026-09-18T09:47:40.862Z",
+  "assertions": [
+    "The date-only correction must be compared against a newly delivered real counter-offer/request email",
+    "No controlled Assessor/requester mailbox and reversible negotiation fixture are available in this deployed run"
+  ],
+  "screenshots": [
+    "D-A71-due-date-negotiation-note.png"
+  ]
+}

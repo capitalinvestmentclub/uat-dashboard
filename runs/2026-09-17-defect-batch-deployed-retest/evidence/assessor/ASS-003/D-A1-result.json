@@ -1,0 +1,29 @@
+{
+  "findingIds": [
+    "D-A1"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "NO_FRESH_REGISTRATION_PROVENANCE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "profile": "Test Assessor",
+    "memberSince": "2023-01-07",
+    "expertiseAreas": 4,
+    "specializations": 7,
+    "yearsOfExperience": 57,
+    "industriesVisible": true
+  },
+  "assertions": [
+    "The authenticated Assessor profile currently has populated expertise, specialization, industry, and experience readiness data",
+    "This long-lived account does not preserve evidence tying those values to its original registration submission",
+    "A fresh submitted and verified Assessor registration is required to prove registration-to-readiness propagation end to end"
+  ],
+  "screenshot": "D-A1-existing-assessor-readiness-1792x976.png",
+  "testedAt": "2026-09-18T07:03:56Z"
+}

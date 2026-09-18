@@ -32754,5 +32754,82 @@
         "Investor"
       ]
     }
-  ]
+  ],
+  "deployedRetest": {
+    "runId": "2026-09-17-defect-batch-deployed-retest",
+    "state": "COMPLETE",
+    "completedAt": "2026-09-18T10:10:00Z",
+    "browser": "Chrome",
+    "defaultViewport": "1792x976",
+    "total": 276,
+    "outcomes": {
+      "DUPLICATE_COVERAGE": 1,
+      "FAIL": 12,
+      "PASS": 64,
+      "PASSED_OVER": 199
+    },
+    "groups": [
+      {
+        "group": "Pitcher",
+        "total": 26,
+        "FAIL": 3,
+        "PASS": 11,
+        "PASSED_OVER": 12
+      },
+      {
+        "group": "Admin",
+        "total": 8,
+        "PASSED_OVER": 8
+      },
+      {
+        "group": "Organization",
+        "total": 3,
+        "PASS": 2,
+        "PASSED_OVER": 1
+      },
+      {
+        "group": "Grantor",
+        "total": 3,
+        "PASS": 1,
+        "PASSED_OVER": 2
+      },
+      {
+        "group": "Guest / Public",
+        "total": 4,
+        "FAIL": 1,
+        "PASS": 1,
+        "PASSED_OVER": 2
+      },
+      {
+        "group": "KYC Reviewer",
+        "total": 1,
+        "PASSED_OVER": 1
+      },
+      {
+        "group": "KYC Approval",
+        "total": 1,
+        "PASSED_OVER": 1
+      },
+      {
+        "group": "Support Operations",
+        "total": 5,
+        "PASSED_OVER": 5
+      },
+      {
+        "group": "Assessor",
+        "total": 196,
+        "DUPLICATE_COVERAGE": 1,
+        "FAIL": 8,
+        "PASS": 48,
+        "PASSED_OVER": 139
+      },
+      {
+        "group": "Investor",
+        "total": 29,
+        "PASS": 1,
+        "PASSED_OVER": 28
+      }
+    ],
+    "ledger": "runs/2026-09-17-defect-batch-deployed-retest/deployed-retest-276.json"
+  }
 }

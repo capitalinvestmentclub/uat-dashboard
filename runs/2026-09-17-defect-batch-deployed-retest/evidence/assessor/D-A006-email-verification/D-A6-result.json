@@ -1,0 +1,21 @@
+{
+  "findingIds": [
+    "D-A6"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The approved Test Assessor account is already verified and cannot exercise the first-use verification success state",
+    "The approved test-account set contains no disposable unverified Assessor with a controlled verification inbox",
+    "An invalid or fabricated token would only test failure handling and cannot prove the reported missing success confirmation"
+  ],
+  "limitation": "A fresh unverified Assessor and its real verification email link are required. Creating an unmanaged account or inventing a token would not provide valid deployed evidence, so the finding remains unproven.",
+  "screenshots": [],
+  "testedAt": "2026-09-18T09:12:35Z"
+}

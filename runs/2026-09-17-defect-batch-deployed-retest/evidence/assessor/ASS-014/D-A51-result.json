@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "D-A51"
+  ],
+  "outcome": "FAIL",
+  "disposition": "UNRESOLVED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "canonicalTask": "Confirm the deployment controls and evidence.",
+    "normalizedDuplicate": "confirm THE deployment controls and evidence.",
+    "duplicateMessageVisible": false
+  },
+  "assertions": [
+    "The deployed builder did not identify a case- and whitespace-normalized duplicate pair",
+    "Blurring the second task did not trigger duplicate validation",
+    "No request was submitted"
+  ],
+  "screenshot": "D-A51-duplicate-not-detected-1792x976.png",
+  "testedAt": "2026-09-18T06:47:00Z"
+}

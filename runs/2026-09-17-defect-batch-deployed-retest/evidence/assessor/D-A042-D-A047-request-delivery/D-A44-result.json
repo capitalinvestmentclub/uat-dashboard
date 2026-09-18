@@ -1,0 +1,21 @@
+{
+  "findingIds": [
+    "D-A44"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "/notifications",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "testedAt": "2026-09-18T09:41:13.323Z",
+  "assertions": [
+    "The date-only correction must be compared against a newly generated real email",
+    "No isolated requester mailbox is available in this deployed session, and creating a new paid request would leave durable financial/request state"
+  ],
+  "screenshots": [
+    "assessment-notification-links.png"
+  ]
+}

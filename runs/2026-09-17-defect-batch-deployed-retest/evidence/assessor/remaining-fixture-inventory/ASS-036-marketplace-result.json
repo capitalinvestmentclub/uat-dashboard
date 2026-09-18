@@ -1,0 +1,16 @@
+{
+  "findingIds": ["D-A155", "D-A156", "D-A157", "D-A158"],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {"width": 1792, "height": 976},
+  "assertions": [
+    "Marketplace rendered 33 visible assets but zero live listings, watched assets, or owned assets",
+    "Holder privacy, per-listing Buy labels, cross-surface listing currency, and bid-expiry input require an actual listed asset plus owner and unrelated visitor actors",
+    "The selected-asset Buy now control was visible, but no listing-row Buy or bid dialog existed to prove the four findings",
+    "No trade, watch, bid, or holder state was changed"
+  ],
+  "screenshots": ["marketplace-fixture-inventory.png"],
+  "testedAt": "2026-09-18T10:02:02Z"
+}

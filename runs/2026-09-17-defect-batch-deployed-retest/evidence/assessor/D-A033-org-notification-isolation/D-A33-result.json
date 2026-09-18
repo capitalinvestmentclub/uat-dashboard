@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "D-A33"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "organization": "PWC",
+  "securityItemCount": 0,
+  "leakedTexts": [],
+  "assertions": [
+    "The active profile context visibly switched from Test Assessor Personal to PWC organization",
+    "The organization notification list contained no personal sign-in or password security events",
+    "The test restored Personal context in cleanup"
+  ],
+  "screenshots": [
+    "D-A33-organization-notifications.png"
+  ],
+  "testedAt": "2026-09-18T09:27:19.111Z"
+}

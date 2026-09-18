@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "PIT-F029"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging/6a2d07b645f2d1b0e43cf463",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The Pitcher dashboard loaded with a live global Messaging unread badge baseline of 3",
+    "The known Test Assessor and Test Pitcher direct thread loaded but its composer was contenteditable=false",
+    "Five additional existing Test Assessor and Test Pitcher thread candidates were unavailable or also read-only",
+    "No probe message was sent and no deployed message state was mutated"
+  ],
+  "limitation": "Every authorized second-actor thread suitable for generating an inbound event was unavailable or displayed This chat is temporarily read-only while assessment status is loading. Without a safe writable second-actor thread, neither real-time inbound rendering nor the unread-badge increment can be proven.",
+  "screenshots": [
+    "PIT-F029-assessor-thread-read-only.png",
+    "PIT-F029-pitcher-unread-baseline.png"
+  ],
+  "testedAt": "2026-09-18T09:10:44Z"
+}

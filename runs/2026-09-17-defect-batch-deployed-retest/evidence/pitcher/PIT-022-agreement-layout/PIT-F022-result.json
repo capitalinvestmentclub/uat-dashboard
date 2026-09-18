@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "PIT-F022"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=10",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewports": [
+    {
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "width": 1280,
+      "height": 800
+    }
+  ],
+  "assertions": [
+    "A current readable pitch with a populated shareholders agreement was selected after the original dashboard-list fixture returned 404",
+    "The populated deployed agreement rendered at 1024x768 with its title, party email, $1,000.00 consideration, clauses, and signatures"
+  ],
+  "limitation": "The single allowed harness-correction attempt stopped on an overly literal USD text assertion before layout metrics and the 1280x800 cell completed. The assertion is corrected locally, but no second rerun was made, so the overlap fix is not proven.",
+  "screenshots": [],
+  "testedAt": "2026-09-18T05:03:00.000Z"
+}

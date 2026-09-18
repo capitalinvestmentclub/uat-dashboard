@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "D-A21"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_ON_DEPLOYED_CANDIDATE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "controlBefore": "Show dashboard financial amounts",
+    "controlAfterClick": "Show dashboard financial amounts",
+    "walletBalanceAfterClick": "••••"
+  },
+  "assertions": [
+    "The named Show dashboard financial amounts control was visible and clicked",
+    "The control did not transition to Hide dashboard financial amounts",
+    "The wallet balance remained masked, so navigation and refresh persistence could not be reached"
+  ],
+  "screenshot": "D-A21-show-amounts-remains-masked-1792x976.png",
+  "testedAt": "2026-09-18T06:08:41Z"
+}

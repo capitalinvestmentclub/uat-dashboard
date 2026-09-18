@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "PIT-F039"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitches",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The exact deployed pitch title reduced the public directory to the expected result",
+    "Pressing Return preserved the exact query in the search control",
+    "The expected single filtered pitch remained visible after Return"
+  ],
+  "screenshots": [
+    "PIT-F039-return-search-pass.png"
+  ],
+  "testedAt": "2026-09-18T08:10:44.977Z"
+}

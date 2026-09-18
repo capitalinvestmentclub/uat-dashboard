@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "G-A30",
+    "D-A143"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Conversation search, message composer, formatting toolbar, and conversation row actions expose contextual accessible names",
+    "The first two conversation row action controls expose distinct names tied to their conversations",
+    "A Unicode unsent draft survived refresh and reopening of the exact conversation",
+    "The test draft was cleared without sending it"
+  ],
+  "screenshot": "D-A143-unsent-draft-restored-1792x976.png",
+  "testedAt": "2026-09-18T05:55:55Z"
+}

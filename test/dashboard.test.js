@@ -59,6 +59,18 @@ test('current delivery ledger is visible, escaped, and does not change UAT outco
   assert.equal(section.querySelector('script'),null);assert.equal(section.querySelector('a').getAttribute('href'),'#');
   assert.equal(payload.uniqueFindings.length,data.uniqueFindings.length);dom.window.close();
 });
+test('completed 276-finding deployed retest is reconciled and visible',async()=>{
+  assert.equal(data.deployedRetest.state,'COMPLETE');
+  assert.equal(data.deployedRetest.total,276);
+  assert.deepEqual(data.deployedRetest.outcomes,{DUPLICATE_COVERAGE:1,FAIL:12,PASS:64,PASSED_OVER:199});
+  assert.equal(data.deployedRetest.groups.length,10);
+  assert.equal(data.deployedRetest.groups.reduce((total,group)=>total+group.total,0),276);
+  const dom=await page();const section=dom.window.document.querySelector('#deployed-retest');
+  assert.match(section.textContent,/276 of 276 entries/);
+  assert.match(section.textContent,/64 passed/);
+  assert.equal(section.querySelectorAll('tbody tr').length,10);
+  dom.window.close();
+});
 test('dedup preserves memberships and distinguishes conflicts from absent retests',()=>{
   const group=(name,status,title='Title')=>({name,findings:[{id:'F',title,status}]});
   assert.equal(deduplicate([group('A','NOT REPORTED'),group('B','PASS')])[0].status,'PASS');

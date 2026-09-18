@@ -1,0 +1,24 @@
+{
+  "findingIds": [
+    "D-A7",
+    "D-A8",
+    "D-A9"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/login",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "D-A7, D-A8, and D-A9 depend on the same sequence of repeated failed logins through the lockout threshold",
+    "The approved Test Assessor is a shared active fixture and intentionally locking it would disrupt the remaining 155-entry run",
+    "No approved disposable Assessor with a controlled security-notification inbox is available",
+    "Testing an unknown email would not prove warning behavior, account enumeration, or notification delivery for a real account"
+  ],
+  "limitation": "A disposable real Assessor account, known clean attempt counter, controlled inbox, and safe admin unlock path are required. The shared Test Assessor was not put at risk, so pre-lock warning, terminal-message non-enumeration, and lockout notification delivery remain unproven.",
+  "screenshots": [],
+  "testedAt": "2026-09-18T09:13:03Z"
+}

@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "D-A37"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "pitchId": "6a9ebed3d26f574c91434a15",
+    "selectedProfileHref": "/user/6aa3a20e01475402e044ad4a"
+  },
+  "assertions": [
+    "Selecting a real directory row opens Request an assessment without submitting it",
+    "The builder names the exact selected directory identity and specialization",
+    "The verification link retains the exact selected public-profile href",
+    "Readiness and directory pricing context remain visible in the handoff"
+  ],
+  "screenshot": "D-A37-selected-assessor-handoff-1792x976.png",
+  "testedAt": "2026-09-18T06:37:56.162Z"
+}

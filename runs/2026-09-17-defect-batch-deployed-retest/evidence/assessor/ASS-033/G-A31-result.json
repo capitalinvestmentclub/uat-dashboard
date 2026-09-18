@@ -1,0 +1,19 @@
+{
+  "findingIds": [
+    "G-A31"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging/6aa8a42219099af7ec070234",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 360,
+    "height": 800
+  },
+  "assertions": [
+    "The participant name and role remain visible and in bounds at 360x800",
+    "The assessment thread context remains visible, in bounds, and untruncated at 360x800"
+  ],
+  "screenshot": "G-A31-messaging-context-360x800.png",
+  "testedAt": "2026-09-18T05:57:09.602Z"
+}

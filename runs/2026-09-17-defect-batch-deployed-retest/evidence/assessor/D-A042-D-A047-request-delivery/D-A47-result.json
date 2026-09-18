@@ -1,0 +1,21 @@
+{
+  "findingIds": [
+    "D-A47"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "/dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "testedAt": "2026-09-18T09:41:13.323Z",
+  "assertions": [
+    "The finding requires the originating Investor session and its exact pitch Hires view",
+    "This run has no authenticated Investor actor or reversible isolated Investor-owned request fixture"
+  ],
+  "screenshots": [
+    "request-delivery-dashboard.png"
+  ]
+}

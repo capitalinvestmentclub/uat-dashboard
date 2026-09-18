@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "D-A87"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "/manage-assessments",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "testedAt": "2026-09-18T09:54:16.242Z",
+  "assertions": [
+    "The deployed Assessor has 5 saved draft record(s), but none points to an active, editable pitch",
+    "The check was passed over without changing or overwriting shared assessment content",
+    "Unsaved-navigation protection requires editing a disposable active draft before leaving the route"
+  ],
+  "screenshots": [
+    "D-A83-submitted-status.png"
+  ]
+}

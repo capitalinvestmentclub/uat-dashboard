@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "PIT-F027"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/grants/6a8537085d0f439c8ef23319",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed public grant explicitly displays Applications Closed, Funding Closed, and closed status",
+    "No button or link whose accessible name contains Apply is rendered",
+    "The grant deadline is historical and the page does not offer stale application entry"
+  ],
+  "screenshots": [
+    "PIT-F027-closed-grant-no-apply.png"
+  ],
+  "testedAt": "2026-09-18T07:44:58.892Z"
+}

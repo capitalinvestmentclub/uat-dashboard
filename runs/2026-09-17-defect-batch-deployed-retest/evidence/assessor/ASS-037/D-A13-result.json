@@ -1,0 +1,20 @@
+{
+  "findingIds": [
+    "D-A13"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Download Data opens a named step-up dialog before any download begins",
+    "The dialog identifies the sensitive data classes included",
+    "No file downloads until the current password is verified"
+  ],
+  "screenshot": "D-A13-personal-data-export-step-up-1792x976.png",
+  "testedAt": "2026-09-18T07:16:10.155Z"
+}

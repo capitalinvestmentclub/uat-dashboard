@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "D-A27"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "NO_EDITABLE_EMPLOYMENT_FIXTURE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "profile": "Test Assessor",
+    "employmentEndMonthValue": "2004-01",
+    "employmentEndMonthDisabled": true
+  },
+  "assertions": [
+    "The Employment section was opened on the real Assessor profile",
+    "The existing employment month controls remain disabled and cannot accept a new year/month selection",
+    "An editable disposable Assessor employment fixture is required to verify selection and persisted display"
+  ],
+  "screenshot": "D-A27-employment-month-disabled-1792x976.png",
+  "testedAt": "2026-09-18T07:11:08Z"
+}

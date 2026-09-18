@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "PUB006-PROFILE-001"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_ON_DEPLOYED_CANDIDATE",
+  "targetUrl": "https://planar-truck-361704.uc.r.appspot.com/login?returnUrl=%2Fuser%2F6aa36ded5b99bdd47f874365",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "fixture": {
+    "grantId": "6aa4006298a889dfcabb5d93",
+    "creatorId": "6aa36ded5b99bdd47f874365"
+  },
+  "assertions": [
+    "The real public catalog rendered an active published grant and creator link",
+    "Clicking the creator link opened the default app host rather than remaining on the candidate host",
+    "The signed-out destination redirected to Login with the intended public profile in returnUrl",
+    "The privacy-safe public profile was not rendered"
+  ],
+  "screenshot": "PUB006-redirected-to-login-1792x976.png",
+  "testedAt": "2026-09-18T05:18:36.000Z"
+}

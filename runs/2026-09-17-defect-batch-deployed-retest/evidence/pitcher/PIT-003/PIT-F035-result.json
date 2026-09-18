@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "PIT-F035"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "FIXTURE_PRECONDITION_UNAVAILABLE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The established deployed Pitcher session is already activated and lands on the operational Pitcher Dashboard",
+    "No activation, email-verification, or registration-completion entry is exposed for this actor",
+    "Replaying the one-time activation CTA would require a fresh isolated mailbox-backed Pitcher fixture; no account was created or mutated"
+  ],
+  "screenshots": [
+    "PIT-F035-activated-pitcher-boundary.png"
+  ],
+  "testedAt": "2026-09-18T07:41:11.969Z"
+}

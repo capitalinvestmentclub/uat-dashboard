@@ -1,0 +1,22 @@
+{
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "screenshots": [
+    "PIT-wallet-history-refresh.png"
+  ],
+  "testedAt": "2026-09-18T08:45:24.349Z",
+  "findingIds": [
+    "PIT-F020"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "STABILITY_CONTROL_PASSED_EXACT_HOLD_RELEASE_REPLAY_UNAVAILABLE",
+  "assertions": [
+    "The existing marketplace debit remained identical across a full reload: USD -500.00, running balance USD 997,733.97, Marketplace seller, Transfer",
+    "This proves one immutable deployed ledger control but does not replay the original later hold/release sequence needed to close the consolidated historical-stability finding"
+  ]
+}

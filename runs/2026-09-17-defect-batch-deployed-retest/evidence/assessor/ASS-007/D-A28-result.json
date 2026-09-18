@@ -1,0 +1,28 @@
+{
+  "findingIds": [
+    "D-A28"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "UI_COVERAGE_GAP_NO_PRODUCT_PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "profileLinkInputPresentInDom": true,
+    "profileLinkInputVisibleAfterSectionOpen": true,
+    "profileLinkEditorRemainedStableForEntry": false,
+    "unsafePayloadExecuted": false,
+    "unsafePayloadSaved": false
+  },
+  "assertions": [
+    "The deployed real profile contains a saved HTTPS public link",
+    "The Profile links editor repeatedly collapsed during the controlled invalid-entry attempt",
+    "The single allowed correction was exhausted; unsafe persistence was not exercised and no product pass is claimed"
+  ],
+  "screenshot": "D-A28-profile-link-editor-collapsed-1792x976.png",
+  "testedAt": "2026-09-18T06:20:31Z"
+}
