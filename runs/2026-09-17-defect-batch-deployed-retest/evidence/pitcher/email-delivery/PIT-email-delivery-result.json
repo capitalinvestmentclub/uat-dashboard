@@ -1,0 +1,27 @@
+{
+  "findingIds": [
+    "PIT-F017",
+    "PIT-F024",
+    "PIT-F030",
+    "PIT-F036"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "EXTERNAL_MAILBOX_AND_EVENT_FIXTURE_UNAVAILABLE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed notification-preference panel and optional Marketing email and Community email controls load for the established actor",
+    "This run has no authenticated mailbox readback for the Pitcher account, so message body, recipient role, duration, timezone, reason, and CTA destination cannot be verified",
+    "No isolated session reschedule/cancellation, pitch promotion/agreement, or grant application/rejection event fixture is available; shared lifecycle records were not mutated",
+    "The four email-delivery findings are passed over without any claim that delivery or content is fixed"
+  ],
+  "screenshots": [
+    "PIT-email-delivery-fixture-boundary.png"
+  ],
+  "testedAt": "2026-09-18T08:11:48.581Z"
+}

@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T08:10:44.977Z",
+  "updatedAt": "2026-09-18T08:11:48.581Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -92,15 +92,18 @@
       "scenarioId": "PIT-017",
       "severity": "MEDIUM",
       "title": "Session emails contain wrong duration and destination",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "EXTERNAL_MAILBOX_AND_EVENT_FIXTURE_UNAVAILABLE",
+      "testedAt": "2026-09-18T08:11:48.581Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/email-delivery/PIT-email-delivery-fixture-boundary.png",
+        "evidence/pitcher/email-delivery/PIT-email-delivery-result.json"
+      ],
+      "notes": "The deployed notification-preference panel and optional Marketing email and Community email controls load for the established actor; This run has no authenticated mailbox readback for the Pitcher account, so message body, recipient role, duration, timezone, reason, and CTA destination cannot be verified; No isolated session reschedule/cancellation, pitch promotion/agreement, or grant application/rejection event fixture is available; shared lifecycle records were not mutated; The four email-delivery findings are passed over without any claim that delivery or content is fixed"
     },
     {
       "id": "PIT-F018",
@@ -207,15 +210,18 @@
       "scenarioId": "PIT-027",
       "severity": "MEDIUM",
       "title": "Agreement email link becomes empty after promotion",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "EXTERNAL_MAILBOX_AND_EVENT_FIXTURE_UNAVAILABLE",
+      "testedAt": "2026-09-18T08:11:48.581Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/email-delivery/PIT-email-delivery-fixture-boundary.png",
+        "evidence/pitcher/email-delivery/PIT-email-delivery-result.json"
+      ],
+      "notes": "The deployed notification-preference panel and optional Marketing email and Community email controls load for the established actor; This run has no authenticated mailbox readback for the Pitcher account, so message body, recipient role, duration, timezone, reason, and CTA destination cannot be verified; No isolated session reschedule/cancellation, pitch promotion/agreement, or grant application/rejection event fixture is available; shared lifecycle records were not mutated; The four email-delivery findings are passed over without any claim that delivery or content is fixed"
     },
     {
       "id": "PIT-F025",
@@ -290,15 +296,18 @@
       "scenarioId": "PIT-031",
       "severity": "MEDIUM",
       "title": "Email-preference positive control not established",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "EXTERNAL_MAILBOX_AND_EVENT_FIXTURE_UNAVAILABLE",
+      "testedAt": "2026-09-18T08:11:48.581Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/email-delivery/PIT-email-delivery-fixture-boundary.png",
+        "evidence/pitcher/email-delivery/PIT-email-delivery-result.json"
+      ],
+      "notes": "The deployed notification-preference panel and optional Marketing email and Community email controls load for the established actor; This run has no authenticated mailbox readback for the Pitcher account, so message body, recipient role, duration, timezone, reason, and CTA destination cannot be verified; No isolated session reschedule/cancellation, pitch promotion/agreement, or grant application/rejection event fixture is available; shared lifecycle records were not mutated; The four email-delivery findings are passed over without any claim that delivery or content is fixed"
     },
     {
       "id": "PIT-F031",
@@ -393,15 +402,18 @@
       "scenarioId": "PIT-030 / PIT-035",
       "severity": "LOW",
       "title": "Grant emails omit context or address the wrong role",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "EXTERNAL_MAILBOX_AND_EVENT_FIXTURE_UNAVAILABLE",
+      "testedAt": "2026-09-18T08:11:48.581Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/email-delivery/PIT-email-delivery-fixture-boundary.png",
+        "evidence/pitcher/email-delivery/PIT-email-delivery-result.json"
+      ],
+      "notes": "The deployed notification-preference panel and optional Marketing email and Community email controls load for the established actor; This run has no authenticated mailbox readback for the Pitcher account, so message body, recipient role, duration, timezone, reason, and CTA destination cannot be verified; No isolated session reschedule/cancellation, pitch promotion/agreement, or grant application/rejection event fixture is available; shared lifecycle records were not mutated; The four email-delivery findings are passed over without any claim that delivery or content is fixed"
     },
     {
       "id": "PIT-F038",
