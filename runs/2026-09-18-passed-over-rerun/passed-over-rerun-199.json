@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T14:54:25.000Z",
+  "updatedAt": "2026-09-18T14:55:21.153Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3534,15 +3534,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 1,
       "familyId": "identity",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T14:55:21.153Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F005/INV-F005-required-grant-details-blocked.png",
+        "evidence/investor/INV-F005/INV-F005-result.json"
+      ],
+      "notes": "Empty required grant details remain on Step 1 of 2.; The form identifies missing title, positive amount, and purpose in a summary and inline errors.; Grant Setup is not rendered after the invalid Next action."
     },
     {
       "id": "INV-F006",
