@@ -1,0 +1,61 @@
+{
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "screenshots": [
+    "PIT-wallet-history-refresh.png"
+  ],
+  "testedAt": "2026-09-18T08:45:24.349Z",
+  "findingIds": [
+    "PIT-F023"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_DEPLOYED",
+  "assertions": [
+    "Grant contribution receipt correctly shows personal sender, grant recipient, USD 100: true",
+    "Grant award receipt correctly shows grant sender, personal recipient, USD 20: true",
+    "Positive personal-wallet refund receipt correctly shows grant sender, personal recipient, USD 100: false"
+  ],
+  "receiptSummary": {
+    "contribution": {
+      "type": "grant_contribution",
+      "amount": 100,
+      "sender": {
+        "name": "Test Pitcher",
+        "walletContext": "Personal wallet"
+      },
+      "recipient": {
+        "name": "UAT Guest Privacy 202608190454 Grant",
+        "walletContext": "Internal or provider wallet"
+      }
+    },
+    "award": {
+      "type": "grant_disbursement",
+      "amount": 20,
+      "sender": {
+        "name": "Viltrumites I Grant",
+        "walletContext": "Grant wallet"
+      },
+      "recipient": {
+        "name": "Test Pitcher",
+        "walletContext": "Personal wallet"
+      }
+    },
+    "refund": {
+      "type": "refund",
+      "amount": 100,
+      "sender": {
+        "name": "Test Pitcher",
+        "walletContext": "Personal wallet"
+      },
+      "recipient": {
+        "name": "UI Layout Test Grant",
+        "walletContext": "Internal or provider wallet"
+      }
+    }
+  }
+}
