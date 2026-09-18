@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "D-A48"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests&requestId=6aada27e6b8d9dde2f79731f",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aada27e6b8d9dde2f79731f",
+  "assertions": [
+    "The exact request row opened its Accept/Reject decision dialog",
+    "The dialog identifies Test Pitcher, Review, current status, response deadline, due date, USD currency, and Testing Small Pitch",
+    "The underlying request row exposes the USD 0.00 commercial rate",
+    "No decision was submitted; the request remains awaiting for subsequent lifecycle retests"
+  ],
+  "screenshots": [
+    "D-A48-decision-context.png"
+  ],
+  "testedAt": "2026-09-18T20:55:14.318Z"
+}
