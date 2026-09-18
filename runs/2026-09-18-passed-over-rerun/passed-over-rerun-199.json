@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T21:44:01.617Z",
+  "updatedAt": "2026-09-18T21:55:09.394Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1654,15 +1654,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "communications",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T21:55:09.394Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests&requestId=6aadb17f6b8d9dde2f7a0b24",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A68/D-A68-calendar-dates-in-app.png",
+        "evidence/D-A68/D-A68-app-result.json"
+      ],
+      "notes": "The deployed decision dialog rendered response deadline September 20 and due date October 6 without a one-day shift; The Assessor proposed October 8 through the deployed Chrome UI with an explicit same-date note; The durable record retained September 20, October 6, and proposed October 8 as the exact calendar dates; The actual Assessor Gmail request email displayed September 20, 2026, matching the app response deadline; The actual Pitcher Gmail counter-offer email displayed October 8, 2026, matching the proposed date"
     },
     {
       "id": "D-A72",
