@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T09:54:30Z",
+  "updatedAt": "2026-09-18T09:59:18.433Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -2598,15 +2598,18 @@
       "scenarioId": "ASS-024",
       "severity": "HIGH",
       "title": "Exact duplicate RFIs are accepted as independent requests",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-024-RFI-result.json"
+      ],
+      "notes": "The RFI findings require an active assessment shared by isolated Assessor and requester actors; Duplicate creation, whitespace response, later submissions, notification, and email checks all persist durable RFI state and cannot be cleaned up from the current inactive fixtures; No RFI was created, answered, or closed on shared deployed data"
     },
     {
       "id": "D-A89",
@@ -2614,15 +2617,18 @@
       "scenarioId": "ASS-024",
       "severity": "HIGH",
       "title": "RFI creation and response produce no in-app notification or email",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-024-RFI-result.json"
+      ],
+      "notes": "The RFI findings require an active assessment shared by isolated Assessor and requester actors; Duplicate creation, whitespace response, later submissions, notification, and email checks all persist durable RFI state and cannot be cleaned up from the current inactive fixtures; No RFI was created, answered, or closed on shared deployed data"
     },
     {
       "id": "D-A90",
@@ -2630,15 +2636,18 @@
       "scenarioId": "ASS-024",
       "severity": "HIGH",
       "title": "Whitespace response can close an RFI with blank persisted content",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-024-RFI-result.json"
+      ],
+      "notes": "The RFI findings require an active assessment shared by isolated Assessor and requester actors; Duplicate creation, whitespace response, later submissions, notification, and email checks all persist durable RFI state and cannot be cleaned up from the current inactive fixtures; No RFI was created, answered, or closed on shared deployed data"
     },
     {
       "id": "D-A91",
@@ -2646,15 +2655,18 @@
       "scenarioId": "ASS-024",
       "severity": "HIGH",
       "title": "RFI is a one-shot close, not an auditable Q&A lifecycle",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-024-RFI-result.json"
+      ],
+      "notes": "The RFI findings require an active assessment shared by isolated Assessor and requester actors; Duplicate creation, whitespace response, later submissions, notification, and email checks all persist durable RFI state and cannot be cleaned up from the current inactive fixtures; No RFI was created, answered, or closed on shared deployed data"
     },
     {
       "id": "D-A92",
@@ -2662,15 +2674,18 @@
       "scenarioId": "ASS-024",
       "severity": "MEDIUM",
       "title": "Later valid RFI submissions silently disappear",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-024-RFI-result.json"
+      ],
+      "notes": "The RFI findings require an active assessment shared by isolated Assessor and requester actors; Duplicate creation, whitespace response, later submissions, notification, and email checks all persist durable RFI state and cannot be cleaned up from the current inactive fixtures; No RFI was created, answered, or closed on shared deployed data"
     },
     {
       "id": "D-A93",
@@ -2678,15 +2693,18 @@
       "scenarioId": "ASS-025",
       "severity": "HIGH",
       "title": "Final Review accepts an assessment with almost every category comment blank",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-025-completion-result.json"
+      ],
+      "notes": "Final-review validation, Technology task persistence, settlement, balance direction, and completion delivery require a new disposable paid assignment; No active editable paid assignment, controlled requester session, or controlled mailbox is available for end-to-end completion; No assessment was submitted and no balance or reservation was mutated"
     },
     {
       "id": "D-A94",
@@ -2694,15 +2712,18 @@
       "scenarioId": "ASS-025",
       "severity": "HIGH",
       "title": "Completed paid Review remains reserved with no observed settlement path",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-025-completion-result.json"
+      ],
+      "notes": "Final-review validation, Technology task persistence, settlement, balance direction, and completion delivery require a new disposable paid assignment; No active editable paid assignment, controlled requester session, or controlled mailbox is available for end-to-end completion; No assessment was submitted and no balance or reservation was mutated"
     },
     {
       "id": "D-A95",
@@ -2710,15 +2731,18 @@
       "scenarioId": "ASS-025",
       "severity": "HIGH",
       "title": "Final assessment completion is not delivered in app or by email",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-025-completion-result.json"
+      ],
+      "notes": "Final-review validation, Technology task persistence, settlement, balance direction, and completion delivery require a new disposable paid assignment; No active editable paid assignment, controlled requester session, or controlled mailbox is available for end-to-end completion; No assessment was submitted and no balance or reservation was mutated"
     },
     {
       "id": "D-A96",
@@ -2726,15 +2750,18 @@
       "scenarioId": "ASS-025",
       "severity": "HIGH",
       "title": "Technology Task 2 persists Task 1's answer",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-025-completion-result.json"
+      ],
+      "notes": "Final-review validation, Technology task persistence, settlement, balance direction, and completion delivery require a new disposable paid assignment; No active editable paid assignment, controlled requester session, or controlled mailbox is available for end-to-end completion; No assessment was submitted and no balance or reservation was mutated"
     },
     {
       "id": "D-A97",
@@ -2742,15 +2769,18 @@
       "scenarioId": "ASS-025",
       "severity": "CRITICAL",
       "title": "Successful Technology capture removes value from the Assessor balance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-025-completion-result.json"
+      ],
+      "notes": "Final-review validation, Technology task persistence, settlement, balance direction, and completion delivery require a new disposable paid assignment; No active editable paid assignment, controlled requester session, or controlled mailbox is available for end-to-end completion; No assessment was submitted and no balance or reservation was mutated"
     },
     {
       "id": "D-A98",
@@ -2758,15 +2788,18 @@
       "scenarioId": "ASS-026",
       "severity": "HIGH",
       "title": "No explicit post-submission rework lifecycle exists",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-026-rework-result.json"
+      ],
+      "notes": "Rework and version-audit checks require an active completed assignment plus its requester to request changes and compare revisions; The available submitted rows do not expose a safe active requester-owned rework fixture; No terminal assessment was altered"
     },
     {
       "id": "D-A99",
@@ -2774,15 +2807,18 @@
       "scenarioId": "ASS-026",
       "severity": "HIGH",
       "title": "Terminal assessments have no version identity or revision audit surface",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-026-rework-result.json"
+      ],
+      "notes": "Rework and version-audit checks require an active completed assignment plus its requester to request changes and compare revisions; The available submitted rows do not expose a safe active requester-owned rework fixture; No terminal assessment was altered"
     },
     {
       "id": "D-A101",
@@ -2790,15 +2826,18 @@
       "scenarioId": "ASS-027",
       "severity": "CRITICAL",
       "title": "Pending requester holds contaminate the Assessor current balance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-027-termination-result.json"
+      ],
+      "notes": "Balance contamination, release receipts, termination timing, lifecycle delivery, and dispute links require one isolated funded requester/Assessor assignment across deadline transitions; Historical wallet rows cannot prove a new post-fix hold/release lifecycle and the current account has no reversible termination fixture; No request, hold, release, or dispute state was mutated"
     },
     {
       "id": "D-A102",
@@ -2806,15 +2845,18 @@
       "scenarioId": "ASS-027",
       "severity": "HIGH",
       "title": "One termination release is represented twice and its receipt reverses the money direction",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-027-termination-result.json"
+      ],
+      "notes": "Balance contamination, release receipts, termination timing, lifecycle delivery, and dispute links require one isolated funded requester/Assessor assignment across deadline transitions; Historical wallet rows cannot prove a new post-fix hold/release lifecycle and the current account has no reversible termination fixture; No request, hold, release, or dispute state was mutated"
     },
     {
       "id": "D-A103",
@@ -2822,15 +2864,18 @@
       "scenarioId": "ASS-027",
       "severity": "HIGH",
       "title": "Requester cancellation/termination is unavailable outside the late window",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-027-termination-result.json"
+      ],
+      "notes": "Balance contamination, release receipts, termination timing, lifecycle delivery, and dispute links require one isolated funded requester/Assessor assignment across deadline transitions; Historical wallet rows cannot prove a new post-fix hold/release lifecycle and the current account has no reversible termination fixture; No request, hold, release, or dispute state was mutated"
     },
     {
       "id": "D-A104",
@@ -2838,15 +2883,18 @@
       "scenarioId": "ASS-027",
       "severity": "HIGH",
       "title": "Deadline, auto-fail and termination events send no in-app or email communication",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-027-termination-result.json"
+      ],
+      "notes": "Balance contamination, release receipts, termination timing, lifecycle delivery, and dispute links require one isolated funded requester/Assessor assignment across deadline transitions; Historical wallet rows cannot prove a new post-fix hold/release lifecycle and the current account has no reversible termination fixture; No request, hold, release, or dispute state was mutated"
     },
     {
       "id": "D-A105",
@@ -2854,15 +2902,18 @@
       "scenarioId": "ASS-027",
       "severity": "HIGH",
       "title": "Dispute alert has no usable Assessor response or record deep link",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-027-termination-result.json"
+      ],
+      "notes": "Balance contamination, release receipts, termination timing, lifecycle delivery, and dispute links require one isolated funded requester/Assessor assignment across deadline transitions; Historical wallet rows cannot prove a new post-fix hold/release lifecycle and the current account has no reversible termination fixture; No request, hold, release, or dispute state was mutated"
     },
     {
       "id": "D-A106",
@@ -2870,15 +2921,18 @@
       "scenarioId": "ASS-028",
       "severity": "HIGH",
       "title": "Eligible requesters cannot rate completed Assessor work",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-028-rating-report-result.json"
+      ],
+      "notes": "Rating eligibility and durable report receipts require the exact requester of a completed assessment plus a disposable report target; No authenticated originating requester and isolated completed assignment pair is available; No rating or report was submitted against shared users"
     },
     {
       "id": "D-A107",
@@ -2886,15 +2940,18 @@
       "scenarioId": "ASS-028",
       "severity": "HIGH",
       "title": "Assessor reputation has no auditable aggregate or rating history",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-028-rating-report-result.json"
+      ],
+      "notes": "Rating eligibility and durable report receipts require the exact requester of a completed assessment plus a disposable report target; No authenticated originating requester and isolated completed assignment pair is available; No rating or report was submitted against shared users"
     },
     {
       "id": "D-A108",
@@ -2902,15 +2959,18 @@
       "scenarioId": "ASS-028",
       "severity": "MEDIUM",
       "title": "Report workflows are inconsistent and provide no durable reporter audit trail",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-028-rating-report-result.json"
+      ],
+      "notes": "Rating eligibility and durable report receipts require the exact requester of a completed assessment plus a disposable report target; No authenticated originating requester and isolated completed assignment pair is available; No rating or report was submitted against shared users"
     },
     {
       "id": "D-A109",
@@ -2918,15 +2978,18 @@
       "scenarioId": "ASS-029",
       "severity": "HIGH",
       "title": "Reciprocal settled receipts disagree on payer/payee direction",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-029-payout-result.json"
+      ],
+      "notes": "Reciprocal receipt direction requires both payer and payee actors for the same settlement; The current Assessor is KYC In Review, so it cannot prove the approved-KYC linked-account and withdrawal lifecycle; No payout account was linked and no withdrawal was initiated"
     },
     {
       "id": "D-A110",
@@ -2934,15 +2997,18 @@
       "scenarioId": "ASS-029",
       "severity": "HIGH",
       "title": "Linked financial-account UI is not credibly user-scoped or usable for payout",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-029-payout-result.json"
+      ],
+      "notes": "Reciprocal receipt direction requires both payer and payee actors for the same settlement; The current Assessor is KYC In Review, so it cannot prove the approved-KYC linked-account and withdrawal lifecycle; No payout account was linked and no withdrawal was initiated"
     },
     {
       "id": "D-A111",
@@ -2950,15 +3016,18 @@
       "scenarioId": "ASS-029",
       "severity": "HIGH",
       "title": "Approved-KYC Assessor cannot configure or complete any withdrawal",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/ASS-029-payout-result.json"
+      ],
+      "notes": "Reciprocal receipt direction requires both payer and payee actors for the same settlement; The current Assessor is KYC In Review, so it cannot prove the approved-KYC linked-account and withdrawal lifecycle; No payout account was linked and no withdrawal was initiated"
     },
     {
       "id": "D-A112",
@@ -2966,15 +3035,18 @@
       "scenarioId": "ASS-029",
       "severity": "MEDIUM",
       "title": "Wallet sort controls are inert",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T09:59:18.433Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-wallet-amount-sort.png",
+        "evidence/assessor/D-A088-D-A112-lifecycle-wallet/D-A112-result.json"
+      ],
+      "notes": "Visible transaction rows=10; Date sort changed the first five visible rows=true; aria-sort=ascending; Amount sort changed the first five visible rows=true; aria-sort=ascending"
     },
     {
       "id": "D-A113",

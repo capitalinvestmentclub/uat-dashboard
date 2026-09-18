@@ -1,0 +1,15 @@
+{
+  "findingIds": ["D-A101", "D-A102", "D-A103", "D-A104", "D-A105"],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {"width": 1792, "height": 976},
+  "assertions": [
+    "Balance contamination, release receipts, termination timing, lifecycle delivery, and dispute links require one isolated funded requester/Assessor assignment across deadline transitions",
+    "Historical wallet rows cannot prove a new post-fix hold/release lifecycle and the current account has no reversible termination fixture",
+    "No request, hold, release, or dispute state was mutated"
+  ],
+  "screenshots": ["D-A112-wallet-amount-sort.png"],
+  "testedAt": "2026-09-18T09:59:18.433Z"
+}

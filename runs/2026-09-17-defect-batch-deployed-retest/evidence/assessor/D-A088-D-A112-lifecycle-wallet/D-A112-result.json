@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "D-A112"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "transactionCount": 10,
+  "assertions": [
+    "Visible transaction rows=10",
+    "Date sort changed the first five visible rows=true; aria-sort=ascending",
+    "Amount sort changed the first five visible rows=true; aria-sort=ascending"
+  ],
+  "screenshots": [
+    "D-A112-wallet-amount-sort.png"
+  ],
+  "testedAt": "2026-09-18T09:59:18.433Z"
+}
