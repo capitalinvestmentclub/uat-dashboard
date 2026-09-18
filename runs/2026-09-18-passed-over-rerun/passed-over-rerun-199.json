@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T16:24:33.510Z",
+  "updatedAt": "2026-09-18T16:28:28.208Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3853,15 +3853,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 3,
       "familyId": "investorSocial",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T16:28:28.208Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user/63b9ae02c077c30027bd3475?id=63b9ae02c077c30027bd3475",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F019/INV-F019-profile-report-acknowledgement.png",
+        "evidence/investor/INV-F019/INV-F019-result.json"
+      ],
+      "notes": "The deployed API returned the meaningful acknowledgement: Profile report already submitted.; The success alert rendered that non-blank acknowledgement in Chrome; A durable confidential report reference and status rendered on the profile; The acknowledgement exposed a Track in Feedback link"
     },
     {
       "id": "INV-F020",

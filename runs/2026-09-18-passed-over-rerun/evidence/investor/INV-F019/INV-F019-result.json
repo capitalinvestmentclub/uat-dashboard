@@ -1,0 +1,28 @@
+{
+  "findingIds": [
+    "INV-F019"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user/63b9ae02c077c30027bd3475?id=63b9ae02c077c30027bd3475",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed API returned the meaningful acknowledgement: Profile report already submitted.",
+    "The success alert rendered that non-blank acknowledgement in Chrome",
+    "A durable confidential report reference and status rendered on the profile",
+    "The acknowledgement exposed a Track in Feedback link"
+  ],
+  "seededData": {
+    "targetUserId": "63b9ae02c077c30027bd3475",
+    "reportReferenceId": "FB-20260918-JVSDLN",
+    "permanent": true
+  },
+  "screenshots": [
+    "INV-F019-profile-report-acknowledgement.png"
+  ],
+  "testedAt": "2026-09-18T16:28:28.208Z"
+}
