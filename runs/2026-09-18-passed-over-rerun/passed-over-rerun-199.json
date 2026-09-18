@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T20:44:30Z",
+  "updatedAt": "2026-09-18T20:47:50.318Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1287,15 +1287,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "communications",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T20:47:50.318Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A46/D-A46-one-request-one-notification.png",
+        "evidence/assessor/D-A46/D-A46-result.json"
+      ],
+      "notes": "The Assessor API returned exactly one durable request row for request 6aada27e6b8d9dde2f79731f.; The notification API returned exactly one notification linked to that request.; The rendered Notifications page exposed exactly one visible request-specific action for that request.; The real Assessor Gmail search returned exactly one newly delivered email for the same request and pitch.; The request, in-app notification, and email channels therefore reconcile 1:1:1."
     },
     {
       "id": "D-A47",
