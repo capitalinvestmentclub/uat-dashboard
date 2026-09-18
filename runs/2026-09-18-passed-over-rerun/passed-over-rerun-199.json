@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T22:41:21.215Z",
+  "updatedAt": "2026-09-18T22:49:18.555Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2022,15 +2022,19 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "assessment",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T22:49:18.555Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A89/D-A89-pitcher-rfi-response.png",
+        "evidence/D-A89/D-A89-assessor-response-notification.png",
+        "evidence/D-A89/D-A89-result.json"
+      ],
+      "notes": "The pitcher received an in-app creation notification with a deep link to the exact RFI; The pitcher Gmail mailbox received the matching New information request email for the exact title; The pitcher submitted a durable nonblank response through the deployed RFI UI; The assessor received an in-app answered notification with a deep link to the exact RFI; The assessor Gmail mailbox received the matching Information request answered email for the exact title"
     },
     {
       "id": "D-A90",
