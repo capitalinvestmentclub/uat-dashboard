@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T18:43:42.914Z",
+  "updatedAt": "2026-09-18T18:46:40.291Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -504,15 +504,18 @@
       "previousDisposition": "PASSED_OVER_MISSING_RUN_SCOPED_FIXTURES",
       "wave": 7,
       "familyId": "organizationPublic",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "MISSING_RUN_SCOPED_ROLE_LIFECYCLE_FIXTURES",
+      "testedAt": "2026-09-18T18:46:40.291Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/organizations",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/organization/ORG025-COVERAGE-001/ORG025-COVERAGE-001-assessor-organization-contexts.png",
+        "evidence/organization/ORG025-COVERAGE-001/ORG025-COVERAGE-001-result.json"
+      ],
+      "notes": "Authenticated API audit found 28 Pitcher-account organizations and 17 Investor-account organizations; The Assessor account has three organizations, but their memberships are only Pitcher or Investor; no Assessor organization context is available; No isolated new organization, invitation/KYB, counterpart, transaction, settlement, notification, and recovery fixtures exist for all three required full lifecycles"
     },
     {
       "id": "GRT014-STATE-001",
