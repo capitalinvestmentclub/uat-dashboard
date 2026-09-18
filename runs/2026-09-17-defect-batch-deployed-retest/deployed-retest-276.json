@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T09:37:15.434Z",
+  "updatedAt": "2026-09-18T09:41:13.323Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -1732,15 +1732,18 @@
       "scenarioId": "ASS-013",
       "severity": "HIGH",
       "title": "Ambiguous retry creates a duplicate paid request instead of reconciling one intent",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:41:13.323Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "/dashboard",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A042-D-A047-request-delivery/request-delivery-dashboard.png",
+        "evidence/assessor/D-A042-D-A047-request-delivery/D-A42-result.json"
+      ],
+      "notes": "The dashboard request count was still loading during the evidence capture, so no live count was claimed; An idempotency retest requires an isolated funded requester and two identical paid submissions; the shared deployed account has no reversible cleanup path for financial request holds"
     },
     {
       "id": "D-A43",
@@ -1748,15 +1751,19 @@
       "scenarioId": "ASS-013",
       "severity": "HIGH",
       "title": "Request CTAs lose object identity and open unrelated default work",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T09:41:13.323Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "/manage-assessments?tab=requests&requestId=694300f59164cff65765e135",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A042-D-A047-request-delivery/assessment-notification-links.png",
+        "evidence/assessor/D-A042-D-A047-request-delivery/exact-request-deep-link.png",
+        "evidence/assessor/D-A042-D-A047-request-delivery/D-A43-result.json"
+      ],
+      "notes": "Visible actionable notification links=6; Request-specific assessment links=2; generic assessment links=0; The first request-specific link targeted request 694300f59164cff65765e135; exact row focus=true"
     },
     {
       "id": "D-A44",
@@ -1764,15 +1771,18 @@
       "scenarioId": "ASS-013",
       "severity": "HIGH",
       "title": "Real email shifts response deadlines one calendar day earlier",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:41:13.323Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A042-D-A047-request-delivery/assessment-notification-links.png",
+        "evidence/assessor/D-A042-D-A047-request-delivery/D-A44-result.json"
+      ],
+      "notes": "The date-only correction must be compared against a newly generated real email; No isolated requester mailbox is available in this deployed session, and creating a new paid request would leave durable financial/request state"
     },
     {
       "id": "D-A45",
@@ -1780,15 +1790,18 @@
       "scenarioId": "ASS-013",
       "severity": "MEDIUM",
       "title": "Free request email is described as a paid-assessment request",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:41:13.323Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A042-D-A047-request-delivery/assessment-notification-links.png",
+        "evidence/assessor/D-A042-D-A047-request-delivery/D-A45-result.json"
+      ],
+      "notes": "The free-versus-paid wording correction must be verified in a newly generated real email; No isolated free-request requester and controlled mailbox are available for this run"
     },
     {
       "id": "D-A46",
@@ -1796,15 +1809,19 @@
       "scenarioId": "ASS-013",
       "severity": "HIGH",
       "title": "Durable request, notification and email counts diverge",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:41:13.323Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "/dashboard and /notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A042-D-A047-request-delivery/request-delivery-dashboard.png",
+        "evidence/assessor/D-A042-D-A047-request-delivery/assessment-notification-links.png",
+        "evidence/assessor/D-A042-D-A047-request-delivery/D-A46-result.json"
+      ],
+      "notes": "The dashboard request count was still loading during the evidence capture, so no live count was claimed; Existing historical request, notification, and email totals cannot prove exactly-once delivery for a new post-fix request; No controlled mailbox plus reversible request fixture is available for a three-channel reconciliation"
     },
     {
       "id": "D-A47",
@@ -1812,15 +1829,18 @@
       "scenarioId": "ASS-013",
       "severity": "HIGH",
       "title": "Investor requester's Hires view does not reconcile its successful request",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:41:13.323Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "/dashboard",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A042-D-A047-request-delivery/request-delivery-dashboard.png",
+        "evidence/assessor/D-A042-D-A047-request-delivery/D-A47-result.json"
+      ],
+      "notes": "The finding requires the originating Investor session and its exact pitch Hires view; This run has no authenticated Investor actor or reversible isolated Investor-owned request fixture"
     },
     {
       "id": "D-A48",

@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "D-A43"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "/manage-assessments?tab=requests&requestId=694300f59164cff65765e135",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "testedAt": "2026-09-18T09:41:13.323Z",
+  "assertions": [
+    "Visible actionable notification links=6",
+    "Request-specific assessment links=2; generic assessment links=0",
+    "The first request-specific link targeted request 694300f59164cff65765e135; exact row focus=true"
+  ],
+  "screenshots": [
+    "assessment-notification-links.png",
+    "exact-request-deep-link.png"
+  ]
+}
