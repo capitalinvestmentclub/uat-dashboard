@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "D-A83"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed Manage Assessments table displayed explicit Submitted status chips for completed assessment rows",
+    "Draft rows remained explicitly labelled Draft, so terminal and non-terminal work were distinguishable",
+    "This conclusion reuses the already inspected Chrome evidence from the volunteer-draft traceability interval"
+  ],
+  "screenshots": [
+    "../D-A039-D-A041-volunteer-draft/D-A40-manage-assessments-draft.png"
+  ],
+  "testedAt": "2026-09-18T09:54:30Z"
+}
