@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T23:51:36.294Z",
+  "updatedAt": "2026-09-18T23:56:08.617Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2396,15 +2396,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "assessment",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T23:56:08.617Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=2&task=6aadb8ed6b8d9dde2f7a6fed",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A106/D-A106-rating-recorded.png",
+        "evidence/D-A106/D-A106-result.json"
+      ],
+      "notes": "The exact completed and paid Technology engagement exposes a requester-only Rate assessor action; Cancelling the dialog creates no rating, while a 4-star rating with an unsafe-looking literal comment persists safely after reload; The saved rating is scoped to the exact assessment and is explicitly final and non-editable; A concurrently opened stale tab cannot create a duplicate or replace the first rating"
     },
     {
       "id": "D-A107",

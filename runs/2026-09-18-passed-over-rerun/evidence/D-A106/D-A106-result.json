@@ -1,0 +1,33 @@
+{
+  "findingIds": [
+    "D-A106"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=2&task=6aadb8ed6b8d9dde2f7a6fed",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "pitchId": "6a9ebed3d26f574c91434a15",
+  "taskId": "6aadb8ed6b8d9dde2f7a6fed",
+  "requestId": "6aadb83c6b8d9dde2f7a6a73",
+  "observed": {
+    "rating": 4,
+    "comment": "&lt;script>alert('no')&lt;/script> Clear, actionable and well-evidenced delivery for D-A106.",
+    "assessmentId": "6aadb83c6b8d9dde2f7a6a73",
+    "createdOn": "2026-09-18T23:54:13.538Z"
+  },
+  "assertions": [
+    "The exact completed and paid Technology engagement exposes a requester-only Rate assessor action",
+    "Cancelling the dialog creates no rating, while a 4-star rating with an unsafe-looking literal comment persists safely after reload",
+    "The saved rating is scoped to the exact assessment and is explicitly final and non-editable",
+    "A concurrently opened stale tab cannot create a duplicate or replace the first rating"
+  ],
+  "screenshots": [
+    "D-A106-rating-recorded.png"
+  ],
+  "testedAt": "2026-09-18T23:56:08.617Z"
+}
