@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T20:55:14.318Z",
+  "updatedAt": "2026-09-18T20:59:22.005Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1356,15 +1356,19 @@
       "previousDisposition": "NO_ACTIONABLE_DEPLOYED_REQUEST_FIXTURE",
       "wave": 3,
       "familyId": "requests",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T20:59:22.005Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests&requestId=6aada27e6b8d9dde2f79731f",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A50/D-A50-versioned-terms.png",
+        "evidence/assessor/D-A50/D-A50-versioned-confidentiality.png",
+        "evidence/assessor/D-A50/D-A50-result.json"
+      ],
+      "notes": "Both acknowledgement rows expose stable policy IDs, version 2026.09.17, and effective date 2026-09-17 before consent; The full Terms document exposes policy ID, version, publication date, effective date, supersession rule, and a 64-character release digest; The full Confidentiality document exposes the same complete audit metadata; No acknowledgement was checked and no decision was submitted"
     },
     {
       "id": "D-A53",

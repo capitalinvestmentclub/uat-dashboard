@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "D-A50"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests&requestId=6aada27e6b8d9dde2f79731f",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aada27e6b8d9dde2f79731f",
+  "assertions": [
+    "Both acknowledgement rows expose stable policy IDs, version 2026.09.17, and effective date 2026-09-17 before consent",
+    "The full Terms document exposes policy ID, version, publication date, effective date, supersession rule, and a 64-character release digest",
+    "The full Confidentiality document exposes the same complete audit metadata",
+    "No acknowledgement was checked and no decision was submitted"
+  ],
+  "screenshots": [
+    "D-A50-versioned-terms.png",
+    "D-A50-versioned-confidentiality.png"
+  ],
+  "testedAt": "2026-09-18T20:59:22.005Z"
+}
