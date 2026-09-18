@@ -1,0 +1,27 @@
+{
+  "findingIds": [
+    "INV-F021"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/692dd85220b2c00478938390?id=692dd85220b2c00478938390&tab=9",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The shareholder view displayed the Investor's 49.91% stake",
+    "It separately displayed 50.08% for all other CIC shareholders combined",
+    "Non-CIC equity displayed 0%",
+    "Other shareholder identities and raw user IDs were not exposed"
+  ],
+  "seededData": {
+    "projectId": "692dd85220b2c00478938390",
+    "mutation": false
+  },
+  "screenshots": [
+    "INV-F021-project-equity-reconciled.png"
+  ],
+  "testedAt": "2026-09-18T16:33:00.867Z"
+}
