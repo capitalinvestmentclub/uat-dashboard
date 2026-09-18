@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T17:41:32.546Z",
+  "updatedAt": "2026-09-18T17:48:16.956Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -203,15 +203,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "messaging",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T17:48:16.956Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging/69cb516063de758f3df04ce3",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-F029/PIT-F029-realtime-direct-message.png",
+        "evidence/pitcher/PIT-F029/PIT-F029-result.json"
+      ],
+      "notes": "A controlled Admin direct conversation with the controlled Pitcher was opened in Chrome before the probe message was sent; The unique inbound message rendered without reload: true; The persisted message was available after the optional reload control (reload skipped when already live): true; Global Messaging navigation text before send: Messaging; Global Messaging navigation text after send without reload: Messaging\n3"
     },
     {
       "id": "PIT-F030",
