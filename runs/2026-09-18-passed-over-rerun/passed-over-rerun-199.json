@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T22:58:02.926Z",
+  "updatedAt": "2026-09-18T23:02:02.816Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2138,15 +2138,19 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "REPRODUCED_DEPLOYED",
+      "testedAt": "2026-09-18T23:02:02.816Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A94/D-A94-payer-wallet-unsettled-hold.png",
+        "evidence/D-A94/D-A94-payee-wallet-no-settlement.png",
+        "evidence/D-A94/D-A94-result.json"
+      ],
+      "notes": "The final Review record submitted in D-A82 is durable and non-draft, but its paid assessment request remains accepted with paymentStatus pending; The request still carries reservedAmount NGN 25,000 and the payer ledger still contains only the original pending reservation hold; No successful or settled payer/payee row exists; the Assessor still has only the pending receiver-side reservation entry; The original defect is reproduced: terminal Review work did not financially settle the paid assignment"
     },
     {
       "id": "D-A95",
