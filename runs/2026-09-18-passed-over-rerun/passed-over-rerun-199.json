@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T16:20:18.631Z",
+  "updatedAt": "2026-09-18T16:24:33.510Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3830,15 +3830,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 3,
       "familyId": "investorSocial",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T16:24:33.510Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user/63b9ae02c077c30027bd3475?id=63b9ae02c077c30027bd3475",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F018/INV-F018-follow-total-reconciled.png",
+        "evidence/investor/INV-F018/INV-F018-result.json"
+      ],
+      "notes": "Unfollow changed the visible target total from 1 to 0 immediately; The unfollowed state and decremented total persisted after a full reload; Follow changed the visible target total back to 1 immediately; The deployed API follower array agreed with every visible state transition"
     },
     {
       "id": "INV-F019",
