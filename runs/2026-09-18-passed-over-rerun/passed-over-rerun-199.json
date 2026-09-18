@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T19:50:14.121Z",
+  "updatedAt": "2026-09-18T19:51:01.284Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -855,15 +855,19 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 1,
       "familyId": "identity",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T19:51:01.284Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/login",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A8/D-A8-locked-account-message.png",
+        "evidence/assessor/D-A8/D-A8-unknown-account-message.png",
+        "evidence/assessor/D-A8/D-A8-result.json"
+      ],
+      "notes": "A deliberately locked disposable Assessor and a never-registered address both return HTTP 401.; Both paths return and render the exact same generic credential and five-attempt warning.; The locked-account response no longer enumerates account existence or lock state."
     },
     {
       "id": "D-A9",
