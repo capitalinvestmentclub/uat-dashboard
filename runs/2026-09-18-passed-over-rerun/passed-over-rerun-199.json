@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T21:18:50.032Z",
+  "updatedAt": "2026-09-18T21:24:35.640Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1471,15 +1471,18 @@
       "previousDisposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
       "wave": 3,
       "familyId": "requests",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T21:24:35.640Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A57/D-A57-wallet-ledger.png",
+        "evidence/assessor/D-A57/D-A57-result.json"
+      ],
+      "notes": "The deployed wallet ledger has exactly two requester-side rows for this rejected NGN 25,000 reservation group; The original hold remains an immutable negative NGN 25,000 transfer with reservation action reserve and cancelled resolution metadata; Exactly one separate positive NGN 25,000 refund row is linked to the same reservation group and request; The deployed Wallet UI renders the linked refund while the exact group-level API audit proves the immutable hold/refund pair"
     },
     {
       "id": "D-A58",
