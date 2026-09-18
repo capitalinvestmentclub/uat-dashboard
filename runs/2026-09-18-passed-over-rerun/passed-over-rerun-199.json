@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T23:07:22.251Z",
+  "updatedAt": "2026-09-18T23:14:25.472Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2208,15 +2208,19 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T23:14:25.472Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A97/D-A97-technology-submitted.png",
+        "evidence/D-A97/D-A97-assessor-capture-credit.png",
+        "evidence/D-A97/D-A97-result.json"
+      ],
+      "notes": "The saved Technology draft was submitted successfully through the deployed Chrome UI; The pitcher completed Pay Now through the deployed payment banner and the request became completed and paid with no reserved amount; The pitcher pending balance fell by NGN 25,000 when the hold was captured; The Assessor current and available balances each increased by exactly NGN 25,000; the capture did not debit the Assessor; The Assessor ledger contains a positive terminal NGN 25,000 entry for the same reservation group"
     },
     {
       "id": "D-A98",
