@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T17:36:00.000Z",
+  "updatedAt": "2026-09-18T17:43:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -90,15 +90,17 @@
       "previousDisposition": "EXACT_TERMINAL_RECORD_ACTORS_UNAVAILABLE",
       "wave": 6,
       "familyId": "pitcherLifecycle",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "TERMINAL_FIXTURE_SEED_ACCESS_REAUTH_REQUIRED",
+      "testedAt": "2026-09-18T17:43:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6aa39a936aaab838c8d7bad4?id=6aa39a936aaab838c8d7bad4&tab=2&reviewId=6aa3b33b57a9417382c99db1",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-F019/PIT-F019-result.json"
+      ],
+      "notes": "The historical paid Review deep link still exists, but the controlled Pitcher is not its requester and the controlled Assessor is not its assigned assessor; both actors are correctly denied editing access.; A fresh terminal assessment must be tied to the controlled Pitcher and Assessor to verify the completed-result rendering rather than relying on those negative controls.; The single bounded attempt to access the CIC development environment for safe fixture seeding was stopped because gcloud authentication requires interactive reauthentication.; No assessment record or user password was changed during this attempt."
     },
     {
       "id": "PIT-F020",
