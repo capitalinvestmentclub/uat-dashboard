@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "PIT-F041"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "FIXTURE_PRECONDITION_UNAVAILABLE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/63d993b83f6f4af93536d2ee?id=63d993b83f6f4af93536d2ee&tab=3",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1024,
+    "height": 768
+  },
+  "assertions": [
+    "The deployed 1024px project Bids view rendered 1 Accepted and 1 Expired status entries",
+    "No pending bid exposed an Accept or Reject decision action",
+    "The reported action-clipping defect cannot be proven fixed without a pending owner-decision bid; no bid state was mutated"
+  ],
+  "screenshots": [
+    "PIT-F041-1024-no-pending-bid-actions.png"
+  ],
+  "testedAt": "2026-09-18T07:57:07.266Z"
+}
