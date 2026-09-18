@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T22:22:22.697Z",
+  "updatedAt": "2026-09-18T22:24:35.823Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1861,15 +1861,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "assessment",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T22:24:35.823Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadb65d6b8d9dde2f7a3d12",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A81/D-A81-final-submission-confirmation.png",
+        "evidence/D-A81/D-A81-result.json"
+      ],
+      "notes": "A complete deployed Review did not submit immediately when the assessor clicked Submit; A confirmation dialog summarized category count, average score, recommendation, and notes; The dialog warned that the final review becomes requester-visible and cannot be edited; Submit final assessment remained disabled until the assessor acknowledged irreversibility; Cancelling returned to the still-editable draft without submission"
     },
     {
       "id": "D-A82",
