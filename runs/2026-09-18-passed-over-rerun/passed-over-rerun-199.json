@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T17:59:23.000Z",
+  "updatedAt": "2026-09-18T18:08:24.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -273,15 +273,18 @@
       "previousDisposition": "EXTERNAL_MAILBOX_AND_EVENT_FIXTURE_UNAVAILABLE",
       "wave": 4,
       "familyId": "communications",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T18:08:24.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-F036/PIT-F036-rejection-notification-context.png",
+        "evidence/pitcher/PIT-F036/PIT-F036-result.json"
+      ],
+      "notes": "A fresh public grant PIT-F036 email context 1789754608029 and two real applications were created with isolated controlled actors; application 6aad7da76b8d9dde2f7854c3 used the controlled Pitcher Gmail plus-address.; The real Grant Published email was delivered to the grant creator and greeted the account as Dear Test Pitcher, not Dear Admin; it included the unique grant title, type, funding threshold, grant ID, and a View grant details CTA.; The real Grant Application Update email was delivered to cic.test.pitcher+pitf035-1789754330@gmail.com and greeted the applicant as Dear PITF035 Fixture.; The rejection email included the exact applicant-facing reason PIT-F036 reason: documentation does not reconcile to the requested amount 1789754781, along with the unique grant title, application ID, applicant name/type, status, and View grant CTA.; The established Investor's in-app notification independently showed the same grant title and its exact applicant-facing rejection reason in deployed Chrome.; No existing user's password was changed; the one-time login code used for the isolated fixture was consumed and is not retained in evidence."
     },
     {
       "id": "PIT-F041",

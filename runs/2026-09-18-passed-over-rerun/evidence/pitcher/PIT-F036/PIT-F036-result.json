@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "PIT-F036"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "A fresh public grant PIT-F036 email context 1789754608029 and two real applications were created with isolated controlled actors; application 6aad7da76b8d9dde2f7854c3 used the controlled Pitcher Gmail plus-address.",
+    "The real Grant Published email was delivered to the grant creator and greeted the account as Dear Test Pitcher, not Dear Admin; it included the unique grant title, type, funding threshold, grant ID, and a View grant details CTA.",
+    "The real Grant Application Update email was delivered to cic.test.pitcher+pitf035-1789754330@gmail.com and greeted the applicant as Dear PITF035 Fixture.",
+    "The rejection email included the exact applicant-facing reason PIT-F036 reason: documentation does not reconcile to the requested amount 1789754781, along with the unique grant title, application ID, applicant name/type, status, and View grant CTA.",
+    "The established Investor's in-app notification independently showed the same grant title and its exact applicant-facing rejection reason in deployed Chrome.",
+    "No existing user's password was changed; the one-time login code used for the isolated fixture was consumed and is not retained in evidence."
+  ],
+  "screenshots": [
+    "PIT-F036-rejection-notification-context.png"
+  ],
+  "testedAt": "2026-09-18T18:08:24.000Z"
+}
