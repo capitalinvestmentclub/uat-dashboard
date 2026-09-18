@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T22:20:34.581Z",
+  "updatedAt": "2026-09-18T22:21:32.067Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1815,15 +1815,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "assessment",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T22:21:32.067Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadb65d6b8d9dde2f7a3d12",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A79/D-A79-assessment-recommendations.png",
+        "evidence/D-A79/D-A79-result.json"
+      ],
+      "notes": "The deployed Review recommendation menu contains five assessment-conclusion options; Options cover recommend, conditional recommendation, evidence required, do not recommend, and unable to conclude; No option instructs the assessor to bid, outbid, delay a bid, seek equity, or use bargaining tactics"
     },
     {
       "id": "D-A80",

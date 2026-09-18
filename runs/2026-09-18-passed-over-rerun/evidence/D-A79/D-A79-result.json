@@ -1,0 +1,33 @@
+{
+  "findingIds": [
+    "D-A79"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadb65d6b8d9dde2f7a3d12",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "reviewId": "6aadb65d6b8d9dde2f7a3d12",
+  "observed": {
+    "recommendationOptions": [
+      "Recommend",
+      "Recommend with conditions",
+      "More evidence required",
+      "Do not recommend",
+      "Unable to conclude"
+    ]
+  },
+  "assertions": [
+    "The deployed Review recommendation menu contains five assessment-conclusion options",
+    "Options cover recommend, conditional recommendation, evidence required, do not recommend, and unable to conclude",
+    "No option instructs the assessor to bid, outbid, delay a bid, seek equity, or use bargaining tactics"
+  ],
+  "screenshots": [
+    "D-A79-assessment-recommendations.png"
+  ],
+  "testedAt": "2026-09-18T22:21:32.067Z"
+}
