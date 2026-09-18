@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T15:08:06.003Z",
+  "updatedAt": "2026-09-18T15:12:56.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3625,15 +3625,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "PAYSTACK_PAYOUT_ACCOUNT_VERIFICATION_HTTP_500",
+      "testedAt": "2026-09-18T15:12:56.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F009/INV-F009-result.json"
+      ],
+      "notes": "The live Investor wallet loaded with available balance NGN 4,183,090.83 and current balance NGN 11,238,910.83.; All three existing linked NGN accounts were payout-pending and unavailable for withdrawal.; The bounded fixture-remediation attempt selected Guaranty Trust Bank and submitted a valid 10-digit test account to POST /api/v1/bank-accounts/paystack/verify.; The deployed API returned HTTP 500 Internal Server Error, so no payout-ready account or withdrawal was created and the failed-withdrawal reservation-release branch could not be exercised.; No wallet balance or test data changed."
     },
     {
       "id": "INV-F010",
