@@ -6,6 +6,7 @@ import {fileURLToPath} from 'node:url';
 import {JSDOM} from 'jsdom';
 import {normalizeGroup,deduplicate,matches,status,statuses,severities,severityBreakdown,executionBreakdown,defectStatusBreakdown} from '../model.js';
 const data=JSON.parse(readFileSync(new URL('../dashboard-data.json',import.meta.url)));
+const passedOverPlan=JSON.parse(readFileSync(new URL('../runs/2026-09-17-defect-batch-deployed-retest/PASSED_OVER_RETEST_PLAN.json',import.meta.url)));
 const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const script=readFileSync(new URL('../app.js',import.meta.url),'utf8').replace(/^import .*\n/,'').replace(/\bstatus\(/g,'normalizeStatus(');
 async function page(payload=data,ok=true){
@@ -70,6 +71,18 @@ test('completed 276-finding deployed retest is reconciled and visible',async()=>
   assert.match(section.textContent,/64 passed/);
   assert.equal(section.querySelectorAll('tbody tr').length,10);
   dom.window.close();
+});
+test('every passed-over finding has an executable retest plan',()=>{
+  assert.equal(passedOverPlan.scope.passedOverFindings,199);
+  assert.equal(passedOverPlan.plans.length,199);
+  assert.equal(new Set(passedOverPlan.plans.map(plan=>plan.id)).size,199);
+  assert.equal(passedOverPlan.familySummary.reduce((total,family)=>total+family.count,0),199);
+  for(const plan of passedOverPlan.plans){
+    assert(plan.family);assert(plan.actors.length);assert(plan.seedAndSetup);assert(plan.browserExecution);
+    assert(plan.originalAcceptanceEvidence.length);assert(plan.passCriteria);assert(plan.failCriteria);assert(plan.evidence.length);
+  }
+  assert.equal(passedOverPlan.plans.filter(plan=>plan.passwordRule).length,3);
+  assert.match(passedOverPlan.scope.completionRule,/PASSED_OVER is not permitted/);
 });
 test('dedup preserves memberships and distinguishes conflicts from absent retests',()=>{
   const group=(name,status,title='Title')=>({name,findings:[{id:'F',title,status}]});
