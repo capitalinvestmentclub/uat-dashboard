@@ -1,0 +1,47 @@
+{
+  "findingIds": [
+    "PUB017-COVERAGE-001"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "United States remains an allowed location and was already proven by the three fresh PUB007 role accounts.",
+    "Cuba was the final signup nationality and the API denied creation with HTTP 403 plus a clear rendered explanation.",
+    "Navigating back, replacing Cuba with United States, and resubmitting the same visible form succeeded without stale restricted state.",
+    "The direct restricted-location screen and its Request review and Contact support recovery actions render."
+  ],
+  "observations": {
+    "email": "cic.test.pitcher+pub017-restricted-1789759246296@gmail.com",
+    "restrictedNationality": "Cuba",
+    "correctedNationality": "United States",
+    "selectedResidence": "United States",
+    "signupResponses": [
+      {
+        "status": 403,
+        "body": {
+          "status": "Fail",
+          "message": "CIC is not currently available for this role based on your selected nationality. We have saved your interest and can contact you when access opens."
+        }
+      },
+      {
+        "status": 200,
+        "body": {
+          "success": true,
+          "message": "Token Sent to Email"
+        }
+      }
+    ]
+  },
+  "screenshots": [
+    "PUB017-restricted-nationality-blocked.png",
+    "PUB017-corrected-allowed-account-created.png",
+    "PUB017-direct-restricted-location-recovery.png"
+  ],
+  "testedAt": "2026-09-18T19:20:56.505Z"
+}

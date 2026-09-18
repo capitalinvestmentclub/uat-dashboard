@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T19:14:29.604Z",
+  "updatedAt": "2026-09-18T19:20:56.505Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -599,15 +599,20 @@
       "previousDisposition": "PASSED_OVER_MISSING_RUN_SCOPED_FIXTURES",
       "wave": 7,
       "familyId": "organizationPublic",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T19:20:56.505Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/guest-public/PUB017-COVERAGE-001/PUB017-restricted-nationality-blocked.png",
+        "evidence/guest-public/PUB017-COVERAGE-001/PUB017-corrected-allowed-account-created.png",
+        "evidence/guest-public/PUB017-COVERAGE-001/PUB017-direct-restricted-location-recovery.png",
+        "evidence/guest-public/PUB017-COVERAGE-001/PUB017-COVERAGE-001-result.json"
+      ],
+      "notes": "United States remains an allowed location and was already proven by the three fresh PUB007 role accounts.; Cuba was the final signup nationality and the API denied creation with HTTP 403 plus a clear rendered explanation.; Navigating back, replacing Cuba with United States, and resubmitting the same visible form succeeded without stale restricted state.; The direct restricted-location screen and its Request review and Contact support recovery actions render."
     },
     {
       "id": "KYCR-F004",
