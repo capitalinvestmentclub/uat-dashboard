@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "ADM056-HOLD-001"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "VALID_SOURCE_RECORD_FIXTURE_UNAVAILABLE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/compliance",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed Retention page now exposes an explicit Single subject record legal-hold path with category, record type, exact record ID, reason, and optional expiry",
+    "The API correctly rejected a user ID supplied as a KYC record ID with The source record was not found, and no legal hold was created",
+    "The one recovery attempt found that authenticated KYC responses do not expose the underlying KYC record ID required to complete create-and-release validation"
+  ],
+  "screenshots": [
+    "ADM056-HOLD-001-subject-hold-path.png"
+  ],
+  "testedAt": "2026-09-18T18:39:00.000Z"
+}

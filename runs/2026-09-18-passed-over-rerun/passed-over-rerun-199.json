@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T18:34:00.000Z",
+  "updatedAt": "2026-09-18T18:39:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -434,15 +434,18 @@
       "previousDisposition": "ADMIN_ACTOR_UNAVAILABLE",
       "wave": 2,
       "familyId": "operations",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "VALID_SOURCE_RECORD_FIXTURE_UNAVAILABLE",
+      "testedAt": "2026-09-18T18:39:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/compliance",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/admin/ADM056-HOLD-001/ADM056-HOLD-001-subject-hold-path.png",
+        "evidence/admin/ADM056-HOLD-001/ADM056-HOLD-001-result.json"
+      ],
+      "notes": "The deployed Retention page now exposes an explicit Single subject record legal-hold path with category, record type, exact record ID, reason, and optional expiry; The API correctly rejected a user ID supplied as a KYC record ID with The source record was not found, and no legal hold was created; The one recovery attempt found that authenticated KYC responses do not expose the underlying KYC record ID required to complete create-and-release validation"
     },
     {
       "id": "ADM056-DSAR-001",
