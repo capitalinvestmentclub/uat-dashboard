@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "KYCA-F007"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/kyc-dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The real KYC Approver account reached Corrections & appeals.",
+    "Status, Type, and Ownership filter controls expose distinct accessible names.",
+    "Review request on a terminal Rejected correction expands a visible focused detail panel with state, requested correction, and audit history.",
+    "The invoking button changes aria-expanded from false to true."
+  ],
+  "screenshots": [
+    "KYCA-F007-named-filters-terminal-review-detail.png"
+  ],
+  "testedAt": "2026-09-18T19:26:47.351Z"
+}
