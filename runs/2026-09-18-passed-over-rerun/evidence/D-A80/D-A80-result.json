@@ -1,0 +1,27 @@
+{
+  "findingIds": [
+    "D-A80"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadb65d6b8d9dde2f7a3d12",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "reviewId": "6aadb65d6b8d9dde2f7a3d12",
+  "observed": {
+    "scaleText": "Rating scale Use the same evidence standard for every category. Higher scores always indicate stronger evidence and fewer material gaps. 1 — Insufficient Evidence is absent or material concerns are unresolved. 2 — Weak Major evidence or execution gaps remain. 3 — Adequate Baseline expectations are met with manageable gaps. 4 — Strong The conclusion is well supported with only minor gaps. 5 — Exceptional Evidence is comprehensive and no material gaps remain."
+  },
+  "assertions": [
+    "The deployed Review editor presents a visible rating-scale block before the category rubric",
+    "Every value from 1 through 5 has a distinct label and behavioral evidence definition",
+    "The copy explicitly states that higher scores mean stronger evidence and fewer material gaps"
+  ],
+  "screenshots": [
+    "D-A80-rating-scale-definitions.png"
+  ],
+  "testedAt": "2026-09-18T22:22:22.697Z"
+}
