@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "D-A28"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "rejectedUrl": "javascript:alert(1)",
+    "requiredScheme": "HTTPS",
+    "originalValueRestoredWithoutSave": "https://www.youtube.com/@wealthcoachomiete"
+  },
+  "assertions": [
+    "The real profile link field rejects the formerly persisted javascript scheme",
+    "The UI requires a complete HTTPS URL and disables Save Changes for the unsafe value",
+    "The payload was never executed or saved; the original URL was restored before leaving"
+  ],
+  "screenshot": "D-A28-unsafe-profile-url-blocked-1792x976.png",
+  "testedAt": "2026-09-18T20:23:26.381Z"
+}

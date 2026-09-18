@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T20:22:55.854Z",
+  "updatedAt": "2026-09-18T20:23:26.381Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1106,15 +1106,18 @@
       "previousDisposition": "UI_COVERAGE_GAP_NO_PRODUCT_PASS",
       "wave": 2,
       "familyId": "profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T20:23:26.381Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A28/D-A28-unsafe-profile-url-blocked-1792x976.png",
+        "evidence/assessor/D-A28/D-A28-result.json"
+      ],
+      "notes": "The real profile link field rejects the formerly persisted javascript scheme; The UI requires a complete HTTPS URL and disables Save Changes for the unsafe value; The payload was never executed or saved; the original URL was restored before leaving"
     },
     {
       "id": "D-A31",
