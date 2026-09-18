@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T17:11:58.456Z",
+  "updatedAt": "2026-09-18T17:16:52Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -45,15 +45,18 @@
       "previousDisposition": "PARTIAL_BRANCH_OBSERVED_REMAINING_FIXTURES_UNAVAILABLE",
       "wave": 3,
       "familyId": "dates",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "BLOCKED_DEPLOYED_FIXTURE_CONCURRENCY",
+      "testedAt": "2026-09-18T17:16:52Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=4",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-F014/PIT-F014-repeated-concurrency-blocker.png",
+        "evidence/pitcher/PIT-F014/PIT-F014-result.json"
+      ],
+      "notes": "Chrome entered the distinctive calendar date 2026-03-30 through the deployed external-shareholder UI in America/Los_Angeles; The deployed API rejected the save before creating a holder and the UI reported Pitch changed publication state while this shareholder change was being saved; A fresh-page recovery attempt reproduced the same optimistic-concurrency rejection; No holder was created and no cleanup or password restoration was required; The date-shift assertion could not be reached after the single bounded blocker-removal attempt"
     },
     {
       "id": "PIT-F017",

@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "PIT-F014"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "BLOCKED_DEPLOYED_FIXTURE_CONCURRENCY",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=4",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "timezone": "America/Los_Angeles",
+  "assertions": [
+    "Chrome entered the distinctive calendar date 2026-03-30 through the deployed external-shareholder UI in America/Los_Angeles",
+    "The deployed API rejected the save before creating a holder and the UI reported Pitch changed publication state while this shareholder change was being saved",
+    "A fresh-page recovery attempt reproduced the same optimistic-concurrency rejection",
+    "No holder was created and no cleanup or password restoration was required",
+    "The date-shift assertion could not be reached after the single bounded blocker-removal attempt"
+  ],
+  "screenshots": [
+    "PIT-F014-repeated-concurrency-blocker.png"
+  ],
+  "testedAt": "2026-09-18T17:16:52Z"
+}
