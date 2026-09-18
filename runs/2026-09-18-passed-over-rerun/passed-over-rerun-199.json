@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T17:49:00.000Z",
+  "updatedAt": "2026-09-18T17:33:09.287Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -134,15 +134,19 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "pitcherLifecycle",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T17:33:09.287Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1024x768",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=10",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-F022/PIT-F022-agreement-1024x768.png",
+        "evidence/pitcher/PIT-F022/PIT-F022-agreement-1280x800.png",
+        "evidence/pitcher/PIT-F022/PIT-F022-result.json"
+      ],
+      "notes": "The deployed populated agreement rendered its title, party email, economics, clauses, and signatures at both required laptop sizes; The agreement preview had no internal horizontal overflow and no visible descendant escaped its container; The preview remained within the viewport and the deployed page introduced no horizontal scrollbar"
     },
     {
       "id": "PIT-F024",
