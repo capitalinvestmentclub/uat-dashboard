@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T15:17:49.360Z",
+  "updatedAt": "2026-09-18T15:25:45.866Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3670,15 +3670,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "sessions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T15:25:45.866Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1440x900",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/6a801232af5a3e4e85a9ae2f",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F011/INV-F011-result.json"
+      ],
+      "notes": "The cancelled deployed session returned HTTP 200 to its Pitcher host and invited Investor; Both roles saw SESSION UNAVAILABLE and the explicit session re-entry disabled explanation; Neither role had a Join live room control and neither browser emitted a live-room join request"
     },
     {
       "id": "INV-F012",
