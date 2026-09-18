@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "PIT-F026"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The current Pitcher grant register and API were searched across all available pages for terminated grants with applications",
+    "The only owned terminated grants were My Draft Grant and Friday demo, and both have zero applications",
+    "Terminated grants with applications exist under other owners, but their management pages are not authorized for the current Pitcher",
+    "The owned closed control UAT Guest Privacy has one Approved application, so it cannot reproduce the historical pending-on-terminated contradiction"
+  ],
+  "limitation": "No authorized real-API fixture combines an owned terminated grant with a pending application. Creating and terminating a new grant/application would require another applicant actor and materially mutate the deployed lifecycle, so the historical contradiction cannot be safely proven or cleared in this run.",
+  "screenshots": [],
+  "testedAt": "2026-09-18T09:07:28Z"
+}
