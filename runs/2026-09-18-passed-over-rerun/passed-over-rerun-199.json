@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T20:29:14.394Z",
+  "updatedAt": "2026-09-18T20:33:29Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1219,15 +1219,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 3,
       "familyId": "requests",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "PAID_REQUEST_PRECONDITION_REJECTED_AFTER_SESSION_RECOVERY",
+      "testedAt": "2026-09-18T20:33:29Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitches/6aa5b67dadbfd6eabee4488f",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A42/D-A42-result.json"
+      ],
+      "notes": "The Investor session initially returned HTTP 401 and was refreshed successfully in deployed Chrome.; The first authenticated request returned HTTP 403: Only the pitch owner, a co-owner, or an administrator can request an assessment.; The request was rejected before durable creation, so no paid request or payment hold was created by this attempt.; The duplicate/replay reconciliation boundary could not be reached with this fixture after the single allowed recovery attempt."
     },
     {
       "id": "D-A44",
