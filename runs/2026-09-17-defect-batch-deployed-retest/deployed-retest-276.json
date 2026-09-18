@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T06:20:31Z",
+  "updatedAt": "2026-09-18T06:28:37.229Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -1307,15 +1307,18 @@
       "scenarioId": "ASS-008",
       "severity": "HIGH",
       "title": "Assessment rate has no credible upper bound",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:22:42.836Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-008/D-A30-assessment-rate-ceiling-1792x976.png",
+        "evidence/assessor/ASS-008/D-A30-result.json"
+      ],
+      "notes": "The deployed paid-assessment profile shows a USD assessment rate field; A rate above 250,000 USD renders the explicit ceiling error and disables Save Changes; The original rate was restored and the page was left without saving"
     },
     {
       "id": "D-A31",
@@ -1323,15 +1326,18 @@
       "scenarioId": "ASS-008",
       "severity": "HIGH",
       "title": "Availability and capacity policy cannot be configured",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "UI_COVERAGE_GAP_NO_PRODUCT_PASS",
+      "testedAt": "2026-09-18T06:24:48Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-008/D-A31-policy-controls-label-gap-1792x976.png",
+        "evidence/assessor/ASS-008/D-A31-result.json"
+      ],
+      "notes": "The deployed Account tab visibly exposes the availability policy surface and request-status control; The Timezone control could not be resolved by its visible label after the single allowed harness correction; Capacity validation and persisted configuration were not completed; no product pass is claimed"
     },
     {
       "id": "D-A32",
@@ -1441,15 +1447,18 @@
       "scenarioId": "ASS-012",
       "severity": "MEDIUM",
       "title": "Minimum Accepted Bids accepts a negative filter value",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:25:48.492Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitches",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-012/D-A38-negative-minimum-bids-rejected-1792x976.png",
+        "evidence/assessor/ASS-012/D-A38-result.json"
+      ],
+      "notes": "The deployed Minimum accepted bids control exposes a programmatic name; Entering -1 normalizes the visible value to 0 and renders the non-negative whole-number message; No observed real pitch request sent minAcceptedBids=-1"
     },
     {
       "id": "D-A39",
@@ -3678,15 +3687,18 @@
       "scenarioId": "ASS-008",
       "severity": "MEDIUM",
       "title": "Assessment rate and currency controls lack useful accessible names",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:27:41.407Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-008/G-A13-rate-currency-names-1792x976.png",
+        "evidence/assessor/ASS-008/G-A13-result.json"
+      ],
+      "notes": "The assessment rate textbox exposes the computed accessible name Assessment Rate; The currency selector exposes the computed accessible name Assessment currency"
     },
     {
       "id": "G-A14",
@@ -3774,15 +3786,18 @@
       "scenarioId": "ASS-012",
       "severity": "MEDIUM",
       "title": "Pitch discovery controls expose missing or broken accessible names",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:26:58.449Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitches",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-012/G-A19-pitch-discovery-control-names-1792x976.png",
+        "evidence/assessor/ASS-012/G-A19-result.json"
+      ],
+      "notes": "Pitch search and rating controls expose stable programmatic names; All five advanced range sliders expose distinct names; Minimum assessor rating and minimum accepted-bid decrement/increment controls expose contextual names"
     },
     {
       "id": "G-A20",
@@ -3790,15 +3805,18 @@
       "scenarioId": "ASS-012",
       "severity": "MEDIUM",
       "title": "Advanced-filter taxonomies contain duplicate/default gaps",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:28:37.229Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitches",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-012/G-A20-filter-taxonomy-1792x976.png",
+        "evidence/assessor/ASS-012/G-A20-result.json"
+      ],
+      "notes": "Funding stage exposes one default plus the Seed Funding option; Status exposes one default and one canonical Active option with no lowercase duplicate; Equity offered includes both 41% - 50% and Above 50% terminal ranges"
     },
     {
       "id": "G-A21",

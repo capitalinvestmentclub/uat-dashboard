@@ -1,0 +1,27 @@
+{
+  "findingIds": [
+    "D-A31"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "UI_COVERAGE_GAP_NO_PRODUCT_PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "availabilityPolicyVisible": true,
+    "requestStatusControlVisible": true,
+    "timezoneControlProgrammaticallyNamed": false,
+    "persistenceExercised": false
+  },
+  "assertions": [
+    "The deployed Account tab visibly exposes the availability policy surface and request-status control",
+    "The Timezone control could not be resolved by its visible label after the single allowed harness correction",
+    "Capacity validation and persisted configuration were not completed; no product pass is claimed"
+  ],
+  "screenshot": "D-A31-policy-controls-label-gap-1792x976.png",
+  "testedAt": "2026-09-18T06:24:48Z"
+}

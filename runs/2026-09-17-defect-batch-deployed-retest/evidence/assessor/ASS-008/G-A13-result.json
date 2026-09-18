@@ -1,0 +1,19 @@
+{
+  "findingIds": [
+    "G-A13"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The assessment rate textbox exposes the computed accessible name Assessment Rate",
+    "The currency selector exposes the computed accessible name Assessment currency"
+  ],
+  "screenshot": "G-A13-rate-currency-names-1792x976.png",
+  "testedAt": "2026-09-18T06:27:41.407Z"
+}

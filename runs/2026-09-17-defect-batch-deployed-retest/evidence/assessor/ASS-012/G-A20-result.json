@@ -1,0 +1,20 @@
+{
+  "findingIds": [
+    "G-A20"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitches",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Funding stage exposes one default plus the Seed Funding option",
+    "Status exposes one default and one canonical Active option with no lowercase duplicate",
+    "Equity offered includes both 41% - 50% and Above 50% terminal ranges"
+  ],
+  "screenshot": "G-A20-filter-taxonomy-1792x976.png",
+  "testedAt": "2026-09-18T06:28:37.229Z"
+}

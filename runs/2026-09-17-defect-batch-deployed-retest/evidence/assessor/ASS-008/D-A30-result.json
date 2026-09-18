@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "D-A30"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "currency": "USD",
+    "rejectedRate": 250001,
+    "absoluteMaximum": 250000,
+    "originalValueRestoredWithoutSave": "100"
+  },
+  "assertions": [
+    "The deployed paid-assessment profile shows a USD assessment rate field",
+    "A rate above 250,000 USD renders the explicit ceiling error and disables Save Changes",
+    "The original rate was restored and the page was left without saving"
+  ],
+  "screenshot": "D-A30-assessment-rate-ceiling-1792x976.png",
+  "testedAt": "2026-09-18T06:22:42.836Z"
+}
