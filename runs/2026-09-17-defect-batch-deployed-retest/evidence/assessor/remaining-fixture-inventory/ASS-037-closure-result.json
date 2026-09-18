@@ -1,0 +1,15 @@
+{
+  "findingIds": ["D-A161", "D-A162", "D-A163", "D-A164", "D-A165"],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {"width": 1792, "height": 976},
+  "assertions": [
+    "The shared Assessor account shows a resolved closure request and remains required for the rest of this retest run",
+    "Actionable blocker feedback, post-close controls, notifications/email, closed-account password reset, and immutable admin notes require closing a disposable account plus admin and mailbox actors",
+    "No closure request, approval, account status, password reset, or audit record was changed"
+  ],
+  "screenshots": ["projects-fixture-inventory.png"],
+  "testedAt": "2026-09-18T10:02:02Z"
+}

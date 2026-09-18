@@ -1,0 +1,46 @@
+{
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observations": [
+    {
+      "surface": "projects",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-projects",
+      "textSample": "Capital Investment Club Home Pitches Grants Marketplace Dashboard Support $ USD Personal Overview Profile Manage Assessments Assigned Projects Manage Grants Organizations Wallet Messaging Notifications 99+ Feedback Assistant Add Photo Test Assessor Assessor ACCOUNT CLOSURE Request status: resolved BADGES 0 counted • 0 tracking 0 TOTAL SCORE 0 earned No badges earned yet. View progress 1 Following 1 Followers Last Login: 18 Sept 2026, 3:01 View Public Profile Change Role",
+      "linkCount": 7,
+      "buttonCount": 9
+    },
+    {
+      "surface": "sessions",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "textSample": "Capital Investment Club Home Pitches Grants Marketplace Dashboard Support $ USD Personal Manage Sessions Review upcoming and past pitch sessions, including completed or cancelled sessions, and open the session details when needed. No sessions found Sessions you are invited to will appear here. CIC will notify you when a host schedules or updates a session.",
+      "linkCount": 6,
+      "buttonCount": 6
+    },
+    {
+      "surface": "grants",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+      "textSample": "Capital Investment Club Home Pitches Grants Marketplace Dashboard Support $ USD Personal Overview Profile Manage Assessments Assigned Projects Manage Grants Organizations Wallet Messaging 4 Notifications 99+ Feedback Assistant Add Photo Test Assessor Assessor ACCOUNT CLOSURE Request status: resolved BADGES 5 counted • 12 tracking 139 TOTAL SCORE 6 earned Hover an icon to view badge details and earned date. 1 Following 1 Followers Last Login: 18 Sept 2026, 3:01 View Public Profile Change Role All Active Draft Inactive Terminated Closed Completed Sort: Default order ​ Desc Show: 30 ​ Search Filters Create Grant # Grant 1 UAT Gate Approval Trigger 1781880507079 Applied Closed USD Amount $ 3,000 Applications 1 Score 29 Type Individual Ends 19 Jul 2026 Progress 100% 2 UAT Agreement Gate 1781879931005 Applied Closed USD Amount $ 3,000 Applications 1 Score 29 Type Individual Ends 19 Jul 2026 Progress 100% 3 UAT Required Eligibility 1781879007667 Applied Closed USD Amount $ 3,000 Applications 1 Score 29 Type Individual Ends 19 Jul 2026 Progress 100% 4 UAT Reject Branch 151427 Applied Closed USD Amount $ 5,000 Applications 1 Score 29 Type Individual Ends 19 Jul 2026 Progress 100% 5 Adizatu ",
+      "linkCount": 37,
+      "buttonCount": 62
+    },
+    {
+      "surface": "messaging",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging",
+      "textSample": "Capital Investment Club Home Pitches Grants Marketplace Dashboard Support $ USD Personal Overview Profile Manage Assessments Assigned Projects Manage Grants Organizations Wallet Messaging 4 Notifications 99+ Feedback Assistant Messages FROM Personal All Private Groups Team Join Group New Chat ​ Clear filters Sort By (1) CIC Investor Investor This conversation was created for the Technology a... 14 Sept 2026 G Group chat Hola admin, how are you? 24 Jun 2026 Tolu Adepoju Pitcher This conversation was created for the Review asses... 21 Jun 2026 Test Pitcher Pitcher issue1152 notification smoke 1781860267057 19 Jun 2026 admin admin Super Admin I have a call at 2pm 18 Jun 2026 Test Pitcher Pitcher yo 12 Jun 2026 Test Pitcher Pitcher This conversation was created for the Engineering... 3 Jun 2026 Test Pitcher Pitcher This conversation was created for the Technology a... 25 May 2026 CIC Investor Investor Noted and fully understand. I look forward to the... 24 May 2026 Test Pitcher Pitcher Thank you. I'm pleased with the business plan deve... 23 May 2026 Test Pitcher Pitcher This conversation was created for the Accounting a... 21 May 2026 Test Pitcher Pitcher Thanks for accepting the offe",
+      "linkCount": 6,
+      "buttonCount": 55
+    },
+    {
+      "surface": "marketplace",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "textSample": "Capital Investment Club Home Pitches Grants Marketplace Dashboard Support $ USD Personal Overview Profile Manage Assessments Assigned Projects Manage Grants Organizations Wallet Messaging 4 Notifications 99+ Feedback Assistant MARKETPLACE Marketplace trading cockpit ​ All assets Listed for sale Pitches Projects 33 visible 0 listed 0 watched 0 owned Trade selected asset Open asset details SELECTED ASSET fake Project kkkkk CURRENT ASSET VALUE $ 57,900.33 N/A Buy now Watch asset Open details 1D 1W 1M 1Y All No chart history is available for this asset and range. The asset can still be reviewed through its detail page or existing buy and sell flows, but this route does not invent missing trading history. PITCHER VALUATION N/A ASSET TYPE Project CURRENCY USD PRICE MOVE N/A CUSTOM TRACKERS Marketplace signals Restore quick market signals without leaving the live marketplace cockpit. New pitches / projects Top Movers Top Gainers Most Valuable Penny Most Rated Watchlist assets No tracker items are available for this signal. Switch to another tracker or check back when more marketplace activity is available. EXPLORE THE MARKET Market ASSET MARKET ASSET VALUE PITCHER VALUATION CHANGE I16B Pi",
+      "linkCount": 10,
+      "buttonCount": 31
+    }
+  ],
+  "testedAt": "2026-09-18T10:02:28.822Z"
+}

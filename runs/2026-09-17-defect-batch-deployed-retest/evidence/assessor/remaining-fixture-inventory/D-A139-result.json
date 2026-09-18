@@ -1,0 +1,14 @@
+{
+  "findingIds": ["D-A139"],
+  "outcome": "DUPLICATE_COVERAGE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/grants",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {"width": 1792, "height": 976},
+  "assertions": [
+    "D-A139 is the same deployed closed-grant Apply boundary already verified by PIT-F027 in this 276-entry run",
+    "The shared Chrome evidence showed a closed grant without an Apply action, so no duplicate browser mutation was necessary"
+  ],
+  "screenshots": ["../../pitcher/PIT-035/PIT-F027-closed-grant-no-apply.png"],
+  "testedAt": "2026-09-18T10:02:02Z"
+}

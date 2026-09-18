@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T09:59:18.433Z",
+  "updatedAt": "2026-09-18T10:02:02Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -3054,15 +3054,18 @@
       "scenarioId": "ASS-030",
       "severity": "HIGH",
       "title": "Active Assessor project is absent from Assigned Projects",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-projects",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/projects-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-030-project-access-result.json"
+      ],
+      "notes": "The deployed Assigned Projects surface remained in a loading state and exposed no usable active, completed, or revocable assignment fixture within the bounded attempt; Wallet privacy, ended-access denial, organization isolation, project RFI, milestone comment, and owner revocation require exact temporary-Assessor and owner actors; No project, wallet, milestone, RFI, or access state was changed"
     },
     {
       "id": "D-A114",
@@ -3070,15 +3073,18 @@
       "scenarioId": "ASS-030",
       "severity": "CRITICAL",
       "title": "Temporary Assessor can read exact project-wallet balances",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-projects",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/projects-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-030-project-access-result.json"
+      ],
+      "notes": "The deployed Assigned Projects surface remained in a loading state and exposed no usable active, completed, or revocable assignment fixture within the bounded attempt; Wallet privacy, ended-access denial, organization isolation, project RFI, milestone comment, and owner revocation require exact temporary-Assessor and owner actors; No project, wallet, milestone, RFI, or access state was changed"
     },
     {
       "id": "D-A115",
@@ -3086,15 +3092,18 @@
       "scenarioId": "ASS-030",
       "severity": "CRITICAL",
       "title": "Completed/ended engagement retains private read/write project access",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-projects",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/projects-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-030-project-access-result.json"
+      ],
+      "notes": "The deployed Assigned Projects surface remained in a loading state and exposed no usable active, completed, or revocable assignment fixture within the bounded attempt; Wallet privacy, ended-access denial, organization isolation, project RFI, milestone comment, and owner revocation require exact temporary-Assessor and owner actors; No project, wallet, milestone, RFI, or access state was changed"
     },
     {
       "id": "D-A116",
@@ -3102,15 +3111,18 @@
       "scenarioId": "ASS-030",
       "severity": "CRITICAL",
       "title": "Organization actor inherits a personal assignment's milestone access",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-projects",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/projects-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-030-project-access-result.json"
+      ],
+      "notes": "The deployed Assigned Projects surface remained in a loading state and exposed no usable active, completed, or revocable assignment fixture within the bounded attempt; Wallet privacy, ended-access denial, organization isolation, project RFI, milestone comment, and owner revocation require exact temporary-Assessor and owner actors; No project, wallet, milestone, RFI, or access state was changed"
     },
     {
       "id": "D-A117",
@@ -3118,15 +3130,18 @@
       "scenarioId": "ASS-030",
       "severity": "HIGH",
       "title": "Project RFI has no owner response or communications lifecycle",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-projects",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/projects-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-030-project-access-result.json"
+      ],
+      "notes": "The deployed Assigned Projects surface remained in a loading state and exposed no usable active, completed, or revocable assignment fixture within the bounded attempt; Wallet privacy, ended-access denial, organization isolation, project RFI, milestone comment, and owner revocation require exact temporary-Assessor and owner actors; No project, wallet, milestone, RFI, or access state was changed"
     },
     {
       "id": "D-A118",
@@ -3134,15 +3149,18 @@
       "scenarioId": "ASS-030",
       "severity": "MEDIUM",
       "title": "Milestone comment submission silently loses valid content",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-projects",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/projects-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-030-project-access-result.json"
+      ],
+      "notes": "The deployed Assigned Projects surface remained in a loading state and exposed no usable active, completed, or revocable assignment fixture within the bounded attempt; Wallet privacy, ended-access denial, organization isolation, project RFI, milestone comment, and owner revocation require exact temporary-Assessor and owner actors; No project, wallet, milestone, RFI, or access state was changed"
     },
     {
       "id": "D-A119",
@@ -3150,15 +3168,18 @@
       "scenarioId": "ASS-030",
       "severity": "HIGH",
       "title": "Project owner cannot revoke displayed temporary access",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-projects",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/projects-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-030-project-access-result.json"
+      ],
+      "notes": "The deployed Assigned Projects surface remained in a loading state and exposed no usable active, completed, or revocable assignment fixture within the bounded attempt; Wallet privacy, ended-access denial, organization isolation, project RFI, milestone comment, and owner revocation require exact temporary-Assessor and owner actors; No project, wallet, milestone, RFI, or access state was changed"
     },
     {
       "id": "D-A120",
@@ -3166,15 +3187,18 @@
       "scenarioId": "ASS-031",
       "severity": "HIGH",
       "title": "Schedule commits while the browser reports insufficient credit",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/sessions-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-031-sessions-result.json"
+      ],
+      "notes": "Manage Sessions rendered No sessions found and confirmed that invited sessions would appear here; The scheduling, invitation, capacity, prejoin, presence, chat, completion, cancellation, and email findings require a host plus multiple invited participant actors and real mailbox delivery; No session was scheduled, joined, cancelled, or ended"
     },
     {
       "id": "D-A121",
@@ -3182,15 +3206,18 @@
       "scenarioId": "ASS-031",
       "severity": "HIGH",
       "title": "Session communications corrupt timezone and duration",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/sessions-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-031-sessions-result.json"
+      ],
+      "notes": "Manage Sessions rendered No sessions found and confirmed that invited sessions would appear here; The scheduling, invitation, capacity, prejoin, presence, chat, completion, cancellation, and email findings require a host plus multiple invited participant actors and real mailbox delivery; No session was scheduled, joined, cancelled, or ended"
     },
     {
       "id": "D-A122",
@@ -3198,15 +3225,18 @@
       "scenarioId": "ASS-031",
       "severity": "CRITICAL",
       "title": "Session invitation and membership authorization are absent",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/sessions-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-031-sessions-result.json"
+      ],
+      "notes": "Manage Sessions rendered No sessions found and confirmed that invited sessions would appear here; The scheduling, invitation, capacity, prejoin, presence, chat, completion, cancellation, and email findings require a host plus multiple invited participant actors and real mailbox delivery; No session was scheduled, joined, cancelled, or ended"
     },
     {
       "id": "D-A123",
@@ -3214,15 +3244,18 @@
       "scenarioId": "ASS-031",
       "severity": "CRITICAL",
       "title": "Cancelled session exposes an active join path and live room",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/sessions-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-031-sessions-result.json"
+      ],
+      "notes": "Manage Sessions rendered No sessions found and confirmed that invited sessions would appear here; The scheduling, invitation, capacity, prejoin, presence, chat, completion, cancellation, and email findings require a host plus multiple invited participant actors and real mailbox delivery; No session was scheduled, joined, cancelled, or ended"
     },
     {
       "id": "D-A124",
@@ -3230,15 +3263,18 @@
       "scenarioId": "ASS-031",
       "severity": "CRITICAL",
       "title": "Participant capacity and queue are not enforced",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/sessions-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-031-sessions-result.json"
+      ],
+      "notes": "Manage Sessions rendered No sessions found and confirmed that invited sessions would appear here; The scheduling, invitation, capacity, prejoin, presence, chat, completion, cancellation, and email findings require a host plus multiple invited participant actors and real mailbox delivery; No session was scheduled, joined, cancelled, or ended"
     },
     {
       "id": "D-A125",
@@ -3246,15 +3282,18 @@
       "scenarioId": "ASS-031",
       "severity": "HIGH",
       "title": "Host entry auto-starts without required prejoin and device workflow",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/sessions-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-031-sessions-result.json"
+      ],
+      "notes": "Manage Sessions rendered No sessions found and confirmed that invited sessions would appear here; The scheduling, invitation, capacity, prejoin, presence, chat, completion, cancellation, and email findings require a host plus multiple invited participant actors and real mailbox delivery; No session was scheduled, joined, cancelled, or ended"
     },
     {
       "id": "D-A126",
@@ -3262,15 +3301,18 @@
       "scenarioId": "ASS-031",
       "severity": "HIGH",
       "title": "Leave and participant presence become mutually inconsistent",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/sessions-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-031-sessions-result.json"
+      ],
+      "notes": "Manage Sessions rendered No sessions found and confirmed that invited sessions would appear here; The scheduling, invitation, capacity, prejoin, presence, chat, completion, cancellation, and email findings require a host plus multiple invited participant actors and real mailbox delivery; No session was scheduled, joined, cancelled, or ended"
     },
     {
       "id": "D-A127",
@@ -3278,15 +3320,18 @@
       "scenarioId": "ASS-031",
       "severity": "HIGH",
       "title": "Chat, reply, report and ended-state controls are unreliable",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/sessions-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-031-sessions-result.json"
+      ],
+      "notes": "Manage Sessions rendered No sessions found and confirmed that invited sessions would appear here; The scheduling, invitation, capacity, prejoin, presence, chat, completion, cancellation, and email findings require a host plus multiple invited participant actors and real mailbox delivery; No session was scheduled, joined, cancelled, or ended"
     },
     {
       "id": "D-A128",
@@ -3294,15 +3339,18 @@
       "scenarioId": "ASS-031",
       "severity": "HIGH",
       "title": "Completion summaries misstate participants and end time",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/sessions-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-031-sessions-result.json"
+      ],
+      "notes": "Manage Sessions rendered No sessions found and confirmed that invited sessions would appear here; The scheduling, invitation, capacity, prejoin, presence, chat, completion, cancellation, and email findings require a host plus multiple invited participant actors and real mailbox delivery; No session was scheduled, joined, cancelled, or ended"
     },
     {
       "id": "D-A129",
@@ -3310,15 +3358,18 @@
       "scenarioId": "ASS-031",
       "severity": "HIGH",
       "title": "Assessor lifecycle communications are incomplete",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/sessions-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-031-sessions-result.json"
+      ],
+      "notes": "Manage Sessions rendered No sessions found and confirmed that invited sessions would appear here; The scheduling, invitation, capacity, prejoin, presence, chat, completion, cancellation, and email findings require a host plus multiple invited participant actors and real mailbox delivery; No session was scheduled, joined, cancelled, or ended"
     },
     {
       "id": "D-A130",
@@ -3326,15 +3377,18 @@
       "scenarioId": "ASS-031",
       "severity": "HIGH",
       "title": "Host lifecycle communications have wrong identity/content and broken CTA",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/sessions-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-031-sessions-result.json"
+      ],
+      "notes": "Manage Sessions rendered No sessions found and confirmed that invited sessions would appear here; The scheduling, invitation, capacity, prejoin, presence, chat, completion, cancellation, and email findings require a host plus multiple invited participant actors and real mailbox delivery; No session was scheduled, joined, cancelled, or ended"
     },
     {
       "id": "D-A131",
@@ -3342,15 +3396,18 @@
       "scenarioId": "ASS-031",
       "severity": "HIGH",
       "title": "Fresh Assessor transactional email does not arrive",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/sessions-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-031-sessions-result.json"
+      ],
+      "notes": "Manage Sessions rendered No sessions found and confirmed that invited sessions would appear here; The scheduling, invitation, capacity, prejoin, presence, chat, completion, cancellation, and email findings require a host plus multiple invited participant actors and real mailbox delivery; No session was scheduled, joined, cancelled, or ended"
     },
     {
       "id": "D-A132",
@@ -3358,15 +3415,18 @@
       "scenarioId": "ASS-032",
       "severity": "HIGH",
       "title": "Eligibility filter includes a deliberately ineligible grant",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/grants-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-032-grants-result.json"
+      ],
+      "notes": "The deployed grant workspace contains historical applied/closed grants but no isolated owner, ineligible-applicant, invitation, and anonymous co-grantor fixture set; Eligibility enforcement, invalid URL feedback, decision deep links, draft invitations, funding copy, anonymity, tab counts, closed filtering, and server rejection require controlled multi-actor mutations; No grant, application, invitation, or membership was changed"
     },
     {
       "id": "D-A133",
@@ -3374,15 +3434,18 @@
       "scenarioId": "ASS-032",
       "severity": "MEDIUM",
       "title": "Invalid custom URL fails without applicant-facing feedback",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/grants-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-032-grants-result.json"
+      ],
+      "notes": "The deployed grant workspace contains historical applied/closed grants but no isolated owner, ineligible-applicant, invitation, and anonymous co-grantor fixture set; Eligibility enforcement, invalid URL feedback, decision deep links, draft invitations, funding copy, anonymity, tab counts, closed filtering, and server rejection require controlled multi-actor mutations; No grant, application, invitation, or membership was changed"
     },
     {
       "id": "D-A134",
@@ -3390,15 +3453,18 @@
       "scenarioId": "ASS-032",
       "severity": "MEDIUM",
       "title": "Application decision notification has no deep-link action",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/grants-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-032-grants-result.json"
+      ],
+      "notes": "The deployed grant workspace contains historical applied/closed grants but no isolated owner, ineligible-applicant, invitation, and anonymous co-grantor fixture set; Eligibility enforcement, invalid URL feedback, decision deep links, draft invitations, funding copy, anonymity, tab counts, closed filtering, and server rejection require controlled multi-actor mutations; No grant, application, invitation, or membership was changed"
     },
     {
       "id": "D-A135",
@@ -3406,15 +3472,18 @@
       "scenarioId": "ASS-032",
       "severity": "HIGH",
       "title": "Draft invitation exposes Join and returns a generic server error",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/grants-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-032-grants-result.json"
+      ],
+      "notes": "The deployed grant workspace contains historical applied/closed grants but no isolated owner, ineligible-applicant, invitation, and anonymous co-grantor fixture set; Eligibility enforcement, invalid URL feedback, decision deep links, draft invitations, funding copy, anonymity, tab counts, closed filtering, and server rejection require controlled multi-actor mutations; No grant, application, invitation, or membership was changed"
     },
     {
       "id": "D-A136",
@@ -3422,15 +3491,18 @@
       "scenarioId": "ASS-032",
       "severity": "HIGH",
       "title": "Fixed co-grantor invitation falsely states that funds will be deducted",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/grants-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-032-grants-result.json"
+      ],
+      "notes": "The deployed grant workspace contains historical applied/closed grants but no isolated owner, ineligible-applicant, invitation, and anonymous co-grantor fixture set; Eligibility enforcement, invalid URL feedback, decision deep links, draft invitations, funding copy, anonymity, tab counts, closed filtering, and server rejection require controlled multi-actor mutations; No grant, application, invitation, or membership was changed"
     },
     {
       "id": "D-A137",
@@ -3438,15 +3510,18 @@
       "scenarioId": "ASS-032",
       "severity": "HIGH",
       "title": "Anonymous co-grantor identity leaks across owner channels",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/grants-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-032-grants-result.json"
+      ],
+      "notes": "The deployed grant workspace contains historical applied/closed grants but no isolated owner, ineligible-applicant, invitation, and anonymous co-grantor fixture set; Eligibility enforcement, invalid URL feedback, decision deep links, draft invitations, funding copy, anonymity, tab counts, closed filtering, and server rejection require controlled multi-actor mutations; No grant, application, invitation, or membership was changed"
     },
     {
       "id": "D-A138",
@@ -3454,15 +3529,18 @@
       "scenarioId": "ASS-032",
       "severity": "MEDIUM",
       "title": "Grantors tab count is zero while two members are listed",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/grants-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-032-grants-result.json"
+      ],
+      "notes": "The deployed grant workspace contains historical applied/closed grants but no isolated owner, ineligible-applicant, invitation, and anonymous co-grantor fixture set; Eligibility enforcement, invalid URL feedback, decision deep links, draft invitations, funding copy, anonymity, tab counts, closed filtering, and server rejection require controlled multi-actor mutations; No grant, application, invitation, or membership was changed"
     },
     {
       "id": "D-A139",
@@ -3470,15 +3548,18 @@
       "scenarioId": "ASS-032",
       "severity": "HIGH",
       "title": "Closed grant keeps active Apply flow",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "DUPLICATE_COVERAGE",
+      "disposition": "DUPLICATE_COVERAGE",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-035/PIT-F027-closed-grant-no-apply.png",
+        "evidence/assessor/remaining-fixture-inventory/D-A139-result.json"
+      ],
+      "notes": "D-A139 is the same deployed closed-grant Apply boundary already verified by PIT-F027 in this 276-entry run; The shared Chrome evidence showed a closed grant without an Apply action, so no duplicate browser mutation was necessary"
     },
     {
       "id": "D-A140",
@@ -3486,15 +3567,18 @@
       "scenarioId": "ASS-032",
       "severity": "HIGH",
       "title": "Closed catalogue filter returns open grants",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/grants-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-032-grants-result.json"
+      ],
+      "notes": "The deployed grant workspace contains historical applied/closed grants but no isolated owner, ineligible-applicant, invitation, and anonymous co-grantor fixture set; Eligibility enforcement, invalid URL feedback, decision deep links, draft invitations, funding copy, anonymity, tab counts, closed filtering, and server rejection require controlled multi-actor mutations; No grant, application, invitation, or membership was changed"
     },
     {
       "id": "D-A141",
@@ -3502,15 +3586,18 @@
       "scenarioId": "ASS-032",
       "severity": "CRITICAL",
       "title": "Server accepts an application from an ineligible Assessor",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/grants-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-032-grants-result.json"
+      ],
+      "notes": "The deployed grant workspace contains historical applied/closed grants but no isolated owner, ineligible-applicant, invitation, and anonymous co-grantor fixture set; Eligibility enforcement, invalid URL feedback, decision deep links, draft invitations, funding copy, anonymity, tab counts, closed filtering, and server rejection require controlled multi-actor mutations; No grant, application, invitation, or membership was changed"
     },
     {
       "id": "D-A142",
@@ -3518,15 +3605,18 @@
       "scenarioId": "ASS-033",
       "severity": "MEDIUM",
       "title": "Literal HTML-shaped message content is silently discarded",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/messaging-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-033-messaging-result.json"
+      ],
+      "notes": "Messaging rendered four unread conversations but no isolated cancelled/completed assessment conversation mapped to the historical findings; HTML-shaped content, long responsive overflow, cancelled write denial, completed entry, system attribution, offscreen actions, and unread reconciliation require controlled sender/recipient conversations and message mutations; No message, reply, report, or read state was changed"
     },
     {
       "id": "D-A143",
@@ -3553,15 +3643,18 @@
       "scenarioId": "ASS-033",
       "severity": "MEDIUM",
       "title": "Long unbroken message overflows the conversation viewport",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/messaging-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-033-messaging-result.json"
+      ],
+      "notes": "Messaging rendered four unread conversations but no isolated cancelled/completed assessment conversation mapped to the historical findings; HTML-shaped content, long responsive overflow, cancelled write denial, completed entry, system attribution, offscreen actions, and unread reconciliation require controlled sender/recipient conversations and message mutations; No message, reply, report, or read state was changed"
     },
     {
       "id": "D-A145",
@@ -3569,15 +3662,18 @@
       "scenarioId": "ASS-033",
       "severity": "CRITICAL",
       "title": "Cancelled assessment conversation remains writable",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/messaging-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-033-messaging-result.json"
+      ],
+      "notes": "Messaging rendered four unread conversations but no isolated cancelled/completed assessment conversation mapped to the historical findings; HTML-shaped content, long responsive overflow, cancelled write denial, completed entry, system attribution, offscreen actions, and unread reconciliation require controlled sender/recipient conversations and message mutations; No message, reply, report, or read state was changed"
     },
     {
       "id": "D-A146",
@@ -3585,15 +3681,18 @@
       "scenarioId": "ASS-033",
       "severity": "HIGH",
       "title": "Completed assessment has no chat entry point",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/messaging-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-033-messaging-result.json"
+      ],
+      "notes": "Messaging rendered four unread conversations but no isolated cancelled/completed assessment conversation mapped to the historical findings; HTML-shaped content, long responsive overflow, cancelled write denial, completed entry, system attribution, offscreen actions, and unread reconciliation require controlled sender/recipient conversations and message mutations; No message, reply, report, or read state was changed"
     },
     {
       "id": "D-A147",
@@ -3601,15 +3700,18 @@
       "scenarioId": "ASS-033",
       "severity": "MEDIUM",
       "title": "System-created assessment context is labelled as the Assessor's message",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/messaging-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-033-messaging-result.json"
+      ],
+      "notes": "Messaging rendered four unread conversations but no isolated cancelled/completed assessment conversation mapped to the historical findings; HTML-shaped content, long responsive overflow, cancelled write denial, completed entry, system attribution, offscreen actions, and unread reconciliation require controlled sender/recipient conversations and message mutations; No message, reply, report, or read state was changed"
     },
     {
       "id": "D-A148",
@@ -3617,15 +3719,18 @@
       "scenarioId": "ASS-033",
       "severity": "MEDIUM",
       "title": "Assessment request chat actions begin outside the desktop viewport",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/messaging-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-033-messaging-result.json"
+      ],
+      "notes": "Messaging rendered four unread conversations but no isolated cancelled/completed assessment conversation mapped to the historical findings; HTML-shaped content, long responsive overflow, cancelled write denial, completed entry, system attribution, offscreen actions, and unread reconciliation require controlled sender/recipient conversations and message mutations; No message, reply, report, or read state was changed"
     },
     {
       "id": "D-A149",
@@ -3633,15 +3738,18 @@
       "scenarioId": "ASS-034",
       "severity": "HIGH",
       "title": "Global unread badge remains stale after page-level read state reaches zero",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/messaging-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-033-messaging-result.json"
+      ],
+      "notes": "Messaging rendered four unread conversations but no isolated cancelled/completed assessment conversation mapped to the historical findings; HTML-shaped content, long responsive overflow, cancelled write denial, completed entry, system attribution, offscreen actions, and unread reconciliation require controlled sender/recipient conversations and message mutations; No message, reply, report, or read state was changed"
     },
     {
       "id": "D-A150",
@@ -3747,15 +3855,18 @@
       "scenarioId": "ASS-036",
       "severity": "CRITICAL",
       "title": "Unrelated marketplace visitor can enumerate holder identities and exact percentages",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/marketplace-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-036-marketplace-result.json"
+      ],
+      "notes": "Marketplace rendered 33 visible assets but zero live listings, watched assets, or owned assets; Holder privacy, per-listing Buy labels, cross-surface listing currency, and bid-expiry input require an actual listed asset plus owner and unrelated visitor actors; The selected-asset Buy now control was visible, but no listing-row Buy or bid dialog existed to prove the four findings; No trade, watch, bid, or holder state was changed"
     },
     {
       "id": "D-A156",
@@ -3763,15 +3874,18 @@
       "scenarioId": "ASS-036",
       "severity": "MEDIUM",
       "title": "Desktop listing Buy action loses its visible label",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/marketplace-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-036-marketplace-result.json"
+      ],
+      "notes": "Marketplace rendered 33 visible assets but zero live listings, watched assets, or owned assets; Holder privacy, per-listing Buy labels, cross-surface listing currency, and bid-expiry input require an actual listed asset plus owner and unrelated visitor actors; The selected-asset Buy now control was visible, but no listing-row Buy or bid dialog existed to prove the four findings; No trade, watch, bid, or holder state was changed"
     },
     {
       "id": "D-A157",
@@ -3779,15 +3893,18 @@
       "scenarioId": "ASS-036",
       "severity": "CRITICAL",
       "title": "One listing has contradictory currencies and magnitudes across marketplace surfaces",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/marketplace-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-036-marketplace-result.json"
+      ],
+      "notes": "Marketplace rendered 33 visible assets but zero live listings, watched assets, or owned assets; Holder privacy, per-listing Buy labels, cross-surface listing currency, and bid-expiry input require an actual listed asset plus owner and unrelated visitor actors; The selected-asset Buy now control was visible, but no listing-row Buy or bid dialog existed to prove the four findings; No trade, watch, bid, or holder state was changed"
     },
     {
       "id": "D-A158",
@@ -3795,15 +3912,18 @@
       "scenarioId": "ASS-036",
       "severity": "MEDIUM",
       "title": "Date-picker pointer and keyboard selections do not populate the bid expiry",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/marketplace-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-036-marketplace-result.json"
+      ],
+      "notes": "Marketplace rendered 33 visible assets but zero live listings, watched assets, or owned assets; Holder privacy, per-listing Buy labels, cross-surface listing currency, and bid-expiry input require an actual listed asset plus owner and unrelated visitor actors; The selected-asset Buy now control was visible, but no listing-row Buy or bid dialog existed to prove the four findings; No trade, watch, bid, or holder state was changed"
     },
     {
       "id": "D-A159",
@@ -3849,15 +3969,18 @@
       "scenarioId": "ASS-037",
       "severity": "HIGH",
       "title": "Closure blocker feedback is not itemized or actionable",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/projects-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-037-closure-result.json"
+      ],
+      "notes": "The shared Assessor account shows a resolved closure request and remains required for the rest of this retest run; Actionable blocker feedback, post-close controls, notifications/email, closed-account password reset, and immutable admin notes require closing a disposable account plus admin and mailbox actors; No closure request, approval, account status, password reset, or audit record was changed"
     },
     {
       "id": "D-A162",
@@ -3865,15 +3988,18 @@
       "scenarioId": "ASS-037",
       "severity": "HIGH",
       "title": "Closed Assessor profile remains actionable",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/projects-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-037-closure-result.json"
+      ],
+      "notes": "The shared Assessor account shows a resolved closure request and remains required for the rest of this retest run; Actionable blocker feedback, post-close controls, notifications/email, closed-account password reset, and immutable admin notes require closing a disposable account plus admin and mailbox actors; No closure request, approval, account status, password reset, or audit record was changed"
     },
     {
       "id": "D-A163",
@@ -3881,15 +4007,18 @@
       "scenarioId": "ASS-037",
       "severity": "HIGH",
       "title": "Closure request and approval produce no in-app or email communication",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/projects-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-037-closure-result.json"
+      ],
+      "notes": "The shared Assessor account shows a resolved closure request and remains required for the rest of this retest run; Actionable blocker feedback, post-close controls, notifications/email, closed-account password reset, and immutable admin notes require closing a disposable account plus admin and mailbox actors; No closure request, approval, account status, password reset, or audit record was changed"
     },
     {
       "id": "D-A164",
@@ -3897,15 +4026,18 @@
       "scenarioId": "ASS-037",
       "severity": "HIGH",
       "title": "Password-reset email is issued to a closed account",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/projects-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-037-closure-result.json"
+      ],
+      "notes": "The shared Assessor account shows a resolved closure request and remains required for the rest of this retest run; Actionable blocker feedback, post-close controls, notifications/email, closed-account password reset, and immutable admin notes require closing a disposable account plus admin and mailbox actors; No closure request, approval, account status, password reset, or audit record was changed"
     },
     {
       "id": "D-A165",
@@ -3913,15 +4045,18 @@
       "scenarioId": "ASS-037",
       "severity": "HIGH",
       "title": "Admin closure review note is lost from immutable audit history",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:02:02Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/remaining-fixture-inventory/projects-fixture-inventory.png",
+        "evidence/assessor/remaining-fixture-inventory/ASS-037-closure-result.json"
+      ],
+      "notes": "The shared Assessor account shows a resolved closure request and remains required for the rest of this retest run; Actionable blocker feedback, post-close controls, notifications/email, closed-account password reset, and immutable admin notes require closing a disposable account plus admin and mailbox actors; No closure request, approval, account status, password reset, or audit record was changed"
     },
     {
       "id": "G-A1",

@@ -1,0 +1,15 @@
+{
+  "findingIds": ["D-A132", "D-A133", "D-A134", "D-A135", "D-A136", "D-A137", "D-A138", "D-A140", "D-A141"],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {"width": 1792, "height": 976},
+  "assertions": [
+    "The deployed grant workspace contains historical applied/closed grants but no isolated owner, ineligible-applicant, invitation, and anonymous co-grantor fixture set",
+    "Eligibility enforcement, invalid URL feedback, decision deep links, draft invitations, funding copy, anonymity, tab counts, closed filtering, and server rejection require controlled multi-actor mutations",
+    "No grant, application, invitation, or membership was changed"
+  ],
+  "screenshots": ["grants-fixture-inventory.png"],
+  "testedAt": "2026-09-18T10:02:02Z"
+}
