@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T23:21:06.608Z",
+  "updatedAt": "2026-09-18T23:22:34.929Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2257,15 +2257,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T23:22:34.929Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&task=6aadb8ed6b8d9dde2f7a6fed",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A99/D-A99-version-history-v1-v2.png",
+        "evidence/D-A99/D-A99-result.json"
+      ],
+      "notes": "The deployed terminal assessment identifies the immutable original record and current version v2; The UI and API expose separate stable IDs for the signed original and the correction; The signed original response remains unchanged while the correction carries the requested scope and revised response; Both versions expose finalization metadata and attachment lineage, including the Assessor identity on v2; The complete version audit remains visible after a full Chrome reload"
     },
     {
       "id": "D-A101",
