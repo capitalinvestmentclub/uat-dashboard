@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T21:29:00.000Z",
+  "updatedAt": "2026-09-18T21:31:51.420Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1539,15 +1539,18 @@
       "previousDisposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
       "wave": 3,
       "familyId": "requests",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T21:31:51.420Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests&requestId=6aadadb76b8d9dde2f79da8c",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A61/D-A61-negative-rate-blocked.png",
+        "evidence/assessor/D-A61/D-A61-result.json"
+      ],
+      "notes": "Chrome preserved the typed minus sign instead of silently converting -100 to +100; Inline validation explained that the rate must be greater than zero and disabled Send Proposal; A direct negative-rate API submission was rejected with HTTP 400; The durable request remained awaiting at its NGN 25,000 base rate with no positive NGN 100 proposal"
     },
     {
       "id": "D-A63",
