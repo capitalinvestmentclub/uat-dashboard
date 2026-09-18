@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T20:02:00Z",
+  "updatedAt": "2026-09-18T20:07:40.709Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -947,15 +947,19 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 1,
       "familyId": "identity",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T20:07:40.709Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/resetPassword2/d-a17-deployed-probe-token",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A17/D-A17-change-password-common-blocked.png",
+        "evidence/assessor/D-A17/D-A17-recovery-common-blocked.png",
+        "evidence/assessor/D-A17/D-A17-result.json"
+      ],
+      "notes": "The authenticated Change Password form rejects Password1! before sending an update request.; The recovery Reset password form rejects the same common password before sending a reset request.; Neither path changed any password, so no restoration was required."
     },
     {
       "id": "D-A18",
