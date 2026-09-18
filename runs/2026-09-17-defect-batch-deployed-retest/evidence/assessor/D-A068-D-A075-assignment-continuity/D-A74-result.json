@@ -1,0 +1,20 @@
+{
+  "findingIds": [
+    "D-A74"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "/manage-assessments",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "testedAt": "2026-09-18T09:47:40.862Z",
+  "assertions": [
+    "An active personal paid draft and organization context were not both available",
+    "The organization context was denied an editable personal draft=false",
+    "No organization-context outcome was rendered"
+  ],
+  "screenshots": []
+}

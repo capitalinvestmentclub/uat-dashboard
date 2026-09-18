@@ -1,0 +1,19 @@
+{
+  "findingIds": [
+    "D-A75"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "/manage-assessments",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "testedAt": "2026-09-18T09:47:40.862Z",
+  "assertions": [
+    "A full explicit logout and login would invalidate the shared short-lived Assessor session and requires credential-driven reauthentication inside the test",
+    "The active assignment route was not mutated or abandoned merely to test this continuity edge in the shared account"
+  ],
+  "screenshots": []
+}

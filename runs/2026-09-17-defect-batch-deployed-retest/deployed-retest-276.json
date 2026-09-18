@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T09:41:13.323Z",
+  "updatedAt": "2026-09-18T09:47:40.862Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -2221,15 +2221,18 @@
       "scenarioId": "ASS-018",
       "severity": "HIGH",
       "title": "Date-only assessment terms shift one day earlier in actual emails",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:47:40.862Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "/manage-assessments?tab=requests",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A068-D-A075-assignment-continuity/D-A71-due-date-negotiation-note.png",
+        "evidence/assessor/D-A068-D-A075-assignment-continuity/D-A68-result.json"
+      ],
+      "notes": "The date-only correction must be compared against a newly delivered real counter-offer/request email; No controlled Assessor/requester mailbox and reversible negotiation fixture are available in this deployed run"
     },
     {
       "id": "D-A69",
@@ -2275,15 +2278,18 @@
       "scenarioId": "ASS-019",
       "severity": "HIGH",
       "title": "Request workspace drops due-date negotiation rationale",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T09:47:40.862Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "/manage-assessments?tab=requests",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A068-D-A075-assignment-continuity/D-A71-due-date-negotiation-note.png",
+        "evidence/assessor/D-A068-D-A075-assignment-continuity/D-A71-result.json"
+      ],
+      "notes": "A durable request with a due-date negotiation reason was available; The negotiation dialog preserved the exact due-date reason under an explicit Due date change reason label=true; Rendered note dialog: Negotiation note Due date change reason Due date changed because a single combined negotiation flow is being verified. Rate change reason Rate changed separately so the requester sees the distinct commercial reason."
     },
     {
       "id": "D-A72",
@@ -2291,15 +2297,17 @@
       "scenarioId": "ASS-020",
       "severity": "HIGH",
       "title": "Assignment sub-navigation changes URL/highlight but keeps the assessment form",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:47:40.862Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A068-D-A075-assignment-continuity/D-A72-result.json"
+      ],
+      "notes": "An active paid draft assignment was not available; Overview navigation removed assignment identifiers and replaced the editable assessment body=false"
     },
     {
       "id": "D-A73",
@@ -2326,15 +2334,17 @@
       "scenarioId": "ASS-020",
       "severity": "HIGH",
       "title": "Organization context can directly load the personal actor's editable draft",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:47:40.862Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A068-D-A075-assignment-continuity/D-A74-result.json"
+      ],
+      "notes": "An active personal paid draft and organization context were not both available; The organization context was denied an editable personal draft=false; No organization-context outcome was rendered"
     },
     {
       "id": "D-A75",
@@ -2342,15 +2352,17 @@
       "scenarioId": "ASS-020",
       "severity": "MEDIUM",
       "title": "Logout discards the active assignment return route",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:47:40.862Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A068-D-A075-assignment-continuity/D-A75-result.json"
+      ],
+      "notes": "A full explicit logout and login would invalidate the shared short-lived Assessor session and requires credential-driven reauthentication inside the test; The active assignment route was not mutated or abandoned merely to test this continuity edge in the shared account"
     },
     {
       "id": "D-A76",

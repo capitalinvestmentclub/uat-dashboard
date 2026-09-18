@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "D-A71"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "/manage-assessments?tab=requests",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "testedAt": "2026-09-18T09:47:40.862Z",
+  "assertions": [
+    "A durable request with a due-date negotiation reason was available",
+    "The negotiation dialog preserved the exact due-date reason under an explicit Due date change reason label=true",
+    "Rendered note dialog: Negotiation note Due date change reason Due date changed because a single combined negotiation flow is being verified. Rate change reason Rate changed separately so the requester sees the distinct commercial reason."
+  ],
+  "screenshots": [
+    "D-A71-due-date-negotiation-note.png"
+  ]
+}
