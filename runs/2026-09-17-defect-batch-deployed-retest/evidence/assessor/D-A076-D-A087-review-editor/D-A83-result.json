@@ -13,10 +13,10 @@
   "assertions": [
     "The deployed Manage Assessments table displayed explicit Submitted status chips for completed assessment rows",
     "Draft rows remained explicitly labelled Draft, so terminal and non-terminal work were distinguishable",
-    "This conclusion reuses the already inspected Chrome evidence from the volunteer-draft traceability interval"
+    "The dedicated Chrome capture shows Submitted and Draft chips together in the live assessment table"
   ],
   "screenshots": [
-    "../D-A039-D-A041-volunteer-draft/D-A40-manage-assessments-draft.png"
+    "D-A83-submitted-status.png"
   ],
   "testedAt": "2026-09-18T09:54:30Z"
 }

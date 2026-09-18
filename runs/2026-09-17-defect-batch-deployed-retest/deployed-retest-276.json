@@ -2372,16 +2372,16 @@
       "title": "Non-Review assessment answers cannot be saved and are lost on refresh",
       "status": "PASSED_OVER",
       "disposition": "PASSED_OVER",
-      "testedAt": "2026-09-18T09:54:30Z",
+      "testedAt": "2026-09-18T09:54:16.242Z",
       "browser": "Chrome",
       "viewport": "1792x976",
-      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "targetUrl": "/manage-assessments",
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
-        "evidence/assessor/D-A039-D-A041-volunteer-draft/D-A40-manage-assessments-draft.png",
-        "evidence/assessor/D-A076-D-A087-review-editor/D-A76-D-A82-D-A84-D-A87-result.json"
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A83-submitted-status.png",
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A76-result.json"
       ],
-      "notes": "The deployed Assessor has saved draft and submitted records, but the sampled draft/detail links point to inactive or unavailable pitches and no active disposable editor fixture could be established within the bounded attempt; D-A76 and D-A77 require an active non-Review task assignment; D-A78 through D-A81 require an active disposable Review editor; D-A84 through D-A87 require safe draft mutations or concurrent tabs; D-A82 requires an active submitted pitch whose former reviewId route can be loaded directly; the bounded deployed probe could not establish one; No shared assessment answers, drafts, or terminal submissions were changed"
+      "notes": "The deployed Assessor has 5 saved draft record(s), but none points to an active, editable pitch; The check was passed over without changing or overwriting shared assessment content; No active non-Review task assignment exists to test save-and-refresh recovery"
     },
     {
       "id": "D-A77",
@@ -2391,16 +2391,16 @@
       "title": "Structured tasks collapse to untyped comments without contract context",
       "status": "PASSED_OVER",
       "disposition": "PASSED_OVER",
-      "testedAt": "2026-09-18T09:54:30Z",
+      "testedAt": "2026-09-18T09:54:16.242Z",
       "browser": "Chrome",
       "viewport": "1792x976",
-      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "targetUrl": "/manage-assessments",
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
-        "evidence/assessor/D-A039-D-A041-volunteer-draft/D-A40-manage-assessments-draft.png",
-        "evidence/assessor/D-A076-D-A087-review-editor/D-A76-D-A82-D-A84-D-A87-result.json"
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A83-submitted-status.png",
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A77-result.json"
       ],
-      "notes": "The deployed Assessor has saved draft and submitted records, but the sampled draft/detail links point to inactive or unavailable pitches and no active disposable editor fixture could be established within the bounded attempt; D-A76 and D-A77 require an active non-Review task assignment; D-A78 through D-A81 require an active disposable Review editor; D-A84 through D-A87 require safe draft mutations or concurrent tabs; D-A82 requires an active submitted pitch whose former reviewId route can be loaded directly; the bounded deployed probe could not establish one; No shared assessment answers, drafts, or terminal submissions were changed"
+      "notes": "The deployed Assessor has 5 saved draft record(s), but none points to an active, editable pitch; The check was passed over without changing or overwriting shared assessment content; No active structured-task assignment exists to inspect answer types, required state, deadlines, and contract context"
     },
     {
       "id": "D-A78",
@@ -2410,16 +2410,16 @@
       "title": "Review validation is bottom-only and does not focus invalid fields",
       "status": "PASSED_OVER",
       "disposition": "PASSED_OVER",
-      "testedAt": "2026-09-18T09:54:30Z",
+      "testedAt": "2026-09-18T09:54:16.242Z",
       "browser": "Chrome",
       "viewport": "1792x976",
-      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "targetUrl": "/manage-assessments",
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
-        "evidence/assessor/D-A039-D-A041-volunteer-draft/D-A40-manage-assessments-draft.png",
-        "evidence/assessor/D-A076-D-A087-review-editor/D-A76-D-A82-D-A84-D-A87-result.json"
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A83-submitted-status.png",
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A78-result.json"
       ],
-      "notes": "The deployed Assessor has saved draft and submitted records, but the sampled draft/detail links point to inactive or unavailable pitches and no active disposable editor fixture could be established within the bounded attempt; D-A76 and D-A77 require an active non-Review task assignment; D-A78 through D-A81 require an active disposable Review editor; D-A84 through D-A87 require safe draft mutations or concurrent tabs; D-A82 requires an active submitted pitch whose former reviewId route can be loaded directly; the bounded deployed probe could not establish one; No shared assessment answers, drafts, or terminal submissions were changed"
+      "notes": "The deployed Assessor has 5 saved draft record(s), but none points to an active, editable pitch; The check was passed over without changing or overwriting shared assessment content; Validation focus requires submitting an intentionally incomplete active review form"
     },
     {
       "id": "D-A79",
@@ -2429,16 +2429,16 @@
       "title": "Recommendation options are bidding tactics rather than assessment conclusions",
       "status": "PASSED_OVER",
       "disposition": "PASSED_OVER",
-      "testedAt": "2026-09-18T09:54:30Z",
+      "testedAt": "2026-09-18T09:54:16.242Z",
       "browser": "Chrome",
       "viewport": "1792x976",
-      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "targetUrl": "/manage-assessments",
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
-        "evidence/assessor/D-A039-D-A041-volunteer-draft/D-A40-manage-assessments-draft.png",
-        "evidence/assessor/D-A076-D-A087-review-editor/D-A76-D-A82-D-A84-D-A87-result.json"
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A83-submitted-status.png",
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A79-result.json"
       ],
-      "notes": "The deployed Assessor has saved draft and submitted records, but the sampled draft/detail links point to inactive or unavailable pitches and no active disposable editor fixture could be established within the bounded attempt; D-A76 and D-A77 require an active non-Review task assignment; D-A78 through D-A81 require an active disposable Review editor; D-A84 through D-A87 require safe draft mutations or concurrent tabs; D-A82 requires an active submitted pitch whose former reviewId route can be loaded directly; the bounded deployed probe could not establish one; No shared assessment answers, drafts, or terminal submissions were changed"
+      "notes": "The deployed Assessor has 5 saved draft record(s), but none points to an active, editable pitch; The check was passed over without changing or overwriting shared assessment content; No active review editor exists to inspect the currently deployed recommendation option set"
     },
     {
       "id": "D-A80",
@@ -2448,16 +2448,16 @@
       "title": "The 1–5 rubric has no scale definitions",
       "status": "PASSED_OVER",
       "disposition": "PASSED_OVER",
-      "testedAt": "2026-09-18T09:54:30Z",
+      "testedAt": "2026-09-18T09:54:16.242Z",
       "browser": "Chrome",
       "viewport": "1792x976",
-      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "targetUrl": "/manage-assessments",
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
-        "evidence/assessor/D-A039-D-A041-volunteer-draft/D-A40-manage-assessments-draft.png",
-        "evidence/assessor/D-A076-D-A087-review-editor/D-A76-D-A82-D-A84-D-A87-result.json"
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A83-submitted-status.png",
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A80-result.json"
       ],
-      "notes": "The deployed Assessor has saved draft and submitted records, but the sampled draft/detail links point to inactive or unavailable pitches and no active disposable editor fixture could be established within the bounded attempt; D-A76 and D-A77 require an active non-Review task assignment; D-A78 through D-A81 require an active disposable Review editor; D-A84 through D-A87 require safe draft mutations or concurrent tabs; D-A82 requires an active submitted pitch whose former reviewId route can be loaded directly; the bounded deployed probe could not establish one; No shared assessment answers, drafts, or terminal submissions were changed"
+      "notes": "The deployed Assessor has 5 saved draft record(s), but none points to an active, editable pitch; The check was passed over without changing or overwriting shared assessment content; No active review rubric exists to inspect the deployed 1-5 scale definitions"
     },
     {
       "id": "D-A81",
@@ -2467,16 +2467,16 @@
       "title": "Completed Review submits irreversibly without confirmation",
       "status": "PASSED_OVER",
       "disposition": "PASSED_OVER",
-      "testedAt": "2026-09-18T09:54:30Z",
+      "testedAt": "2026-09-18T09:54:16.242Z",
       "browser": "Chrome",
       "viewport": "1792x976",
-      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "targetUrl": "/manage-assessments",
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
-        "evidence/assessor/D-A039-D-A041-volunteer-draft/D-A40-manage-assessments-draft.png",
-        "evidence/assessor/D-A076-D-A087-review-editor/D-A76-D-A82-D-A84-D-A87-result.json"
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A83-submitted-status.png",
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A81-result.json"
       ],
-      "notes": "The deployed Assessor has saved draft and submitted records, but the sampled draft/detail links point to inactive or unavailable pitches and no active disposable editor fixture could be established within the bounded attempt; D-A76 and D-A77 require an active non-Review task assignment; D-A78 through D-A81 require an active disposable Review editor; D-A84 through D-A87 require safe draft mutations or concurrent tabs; D-A82 requires an active submitted pitch whose former reviewId route can be loaded directly; the bounded deployed probe could not establish one; No shared assessment answers, drafts, or terminal submissions were changed"
+      "notes": "The deployed Assessor has 5 saved draft record(s), but none points to an active, editable pitch; The check was passed over without changing or overwriting shared assessment content; Submission confirmation requires a fully populated disposable review and an irreversible submit mutation"
     },
     {
       "id": "D-A82",
@@ -2486,16 +2486,16 @@
       "title": "Submitted review's original draft URL still exposes Save and Submit",
       "status": "PASSED_OVER",
       "disposition": "PASSED_OVER",
-      "testedAt": "2026-09-18T09:54:30Z",
+      "testedAt": "2026-09-18T09:54:16.242Z",
       "browser": "Chrome",
       "viewport": "1792x976",
-      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "targetUrl": "/manage-assessments",
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
-        "evidence/assessor/D-A039-D-A041-volunteer-draft/D-A40-manage-assessments-draft.png",
-        "evidence/assessor/D-A076-D-A087-review-editor/D-A76-D-A82-D-A84-D-A87-result.json"
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A83-submitted-status.png",
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A82-result.json"
       ],
-      "notes": "The deployed Assessor has saved draft and submitted records, but the sampled draft/detail links point to inactive or unavailable pitches and no active disposable editor fixture could be established within the bounded attempt; D-A76 and D-A77 require an active non-Review task assignment; D-A78 through D-A81 require an active disposable Review editor; D-A84 through D-A87 require safe draft mutations or concurrent tabs; D-A82 requires an active submitted pitch whose former reviewId route can be loaded directly; the bounded deployed probe could not establish one; No shared assessment answers, drafts, or terminal submissions were changed"
+      "notes": "An active submitted assessment whose legacy reviewId URL could be exercised was not available; The legacy draft URL exposed no Save/Submit controls and rendered a terminal read-only outcome=false; No active submitted-detail outcome was available"
     },
     {
       "id": "D-A83",
@@ -2511,10 +2511,10 @@
       "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
-        "evidence/assessor/D-A039-D-A041-volunteer-draft/D-A40-manage-assessments-draft.png",
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A83-submitted-status.png",
         "evidence/assessor/D-A076-D-A087-review-editor/D-A83-result.json"
       ],
-      "notes": "The deployed Manage Assessments table displayed explicit Submitted status chips for completed assessment rows; Draft rows remained explicitly labelled Draft, so terminal and non-terminal work were distinguishable; This conclusion reuses the already inspected Chrome evidence from the volunteer-draft traceability interval"
+      "notes": "The deployed Manage Assessments table displayed explicit Submitted status chips for completed assessment rows; Draft rows remained explicitly labelled Draft, so terminal and non-terminal work were distinguishable; The dedicated Chrome capture shows Submitted and Draft chips together in the live assessment table"
     },
     {
       "id": "D-A84",
@@ -2524,16 +2524,16 @@
       "title": "Empty and unchanged draft saves have no dirty-state guard",
       "status": "PASSED_OVER",
       "disposition": "PASSED_OVER",
-      "testedAt": "2026-09-18T09:54:30Z",
+      "testedAt": "2026-09-18T09:54:16.242Z",
       "browser": "Chrome",
       "viewport": "1792x976",
-      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "targetUrl": "/manage-assessments",
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
-        "evidence/assessor/D-A039-D-A041-volunteer-draft/D-A40-manage-assessments-draft.png",
-        "evidence/assessor/D-A076-D-A087-review-editor/D-A76-D-A82-D-A84-D-A87-result.json"
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A83-submitted-status.png",
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A84-result.json"
       ],
-      "notes": "The deployed Assessor has saved draft and submitted records, but the sampled draft/detail links point to inactive or unavailable pitches and no active disposable editor fixture could be established within the bounded attempt; D-A76 and D-A77 require an active non-Review task assignment; D-A78 through D-A81 require an active disposable Review editor; D-A84 through D-A87 require safe draft mutations or concurrent tabs; D-A82 requires an active submitted pitch whose former reviewId route can be loaded directly; the bounded deployed probe could not establish one; No shared assessment answers, drafts, or terminal submissions were changed"
+      "notes": "The deployed Assessor has 5 saved draft record(s), but none points to an active, editable pitch; The check was passed over without changing or overwriting shared assessment content; Empty and unchanged save guards require an active disposable draft"
     },
     {
       "id": "D-A85",
@@ -2543,16 +2543,16 @@
       "title": "Assessments-list resume opens an incompatible form and strands rubric data",
       "status": "PASSED_OVER",
       "disposition": "PASSED_OVER",
-      "testedAt": "2026-09-18T09:54:30Z",
+      "testedAt": "2026-09-18T09:54:16.242Z",
       "browser": "Chrome",
       "viewport": "1792x976",
-      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "targetUrl": "/manage-assessments",
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
-        "evidence/assessor/D-A039-D-A041-volunteer-draft/D-A40-manage-assessments-draft.png",
-        "evidence/assessor/D-A076-D-A087-review-editor/D-A76-D-A82-D-A84-D-A87-result.json"
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A83-submitted-status.png",
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A85-result.json"
       ],
-      "notes": "The deployed Assessor has saved draft and submitted records, but the sampled draft/detail links point to inactive or unavailable pitches and no active disposable editor fixture could be established within the bounded attempt; D-A76 and D-A77 require an active non-Review task assignment; D-A78 through D-A81 require an active disposable Review editor; D-A84 through D-A87 require safe draft mutations or concurrent tabs; D-A82 requires an active submitted pitch whose former reviewId route can be loaded directly; the bounded deployed probe could not establish one; No shared assessment answers, drafts, or terminal submissions were changed"
+      "notes": "The deployed Assessor has 5 saved draft record(s), but none points to an active, editable pitch; The check was passed over without changing or overwriting shared assessment content; No active draft row can safely prove list-to-editor rubric restoration"
     },
     {
       "id": "D-A86",
@@ -2562,16 +2562,16 @@
       "title": "Stale tab silently overwrites newer draft fields",
       "status": "PASSED_OVER",
       "disposition": "PASSED_OVER",
-      "testedAt": "2026-09-18T09:54:30Z",
+      "testedAt": "2026-09-18T09:54:16.242Z",
       "browser": "Chrome",
       "viewport": "1792x976",
-      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "targetUrl": "/manage-assessments",
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
-        "evidence/assessor/D-A039-D-A041-volunteer-draft/D-A40-manage-assessments-draft.png",
-        "evidence/assessor/D-A076-D-A087-review-editor/D-A76-D-A82-D-A84-D-A87-result.json"
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A83-submitted-status.png",
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A86-result.json"
       ],
-      "notes": "The deployed Assessor has saved draft and submitted records, but the sampled draft/detail links point to inactive or unavailable pitches and no active disposable editor fixture could be established within the bounded attempt; D-A76 and D-A77 require an active non-Review task assignment; D-A78 through D-A81 require an active disposable Review editor; D-A84 through D-A87 require safe draft mutations or concurrent tabs; D-A82 requires an active submitted pitch whose former reviewId route can be loaded directly; the bounded deployed probe could not establish one; No shared assessment answers, drafts, or terminal submissions were changed"
+      "notes": "The deployed Assessor has 5 saved draft record(s), but none points to an active, editable pitch; The check was passed over without changing or overwriting shared assessment content; Concurrent stale-write protection requires two tabs mutating a disposable active draft"
     },
     {
       "id": "D-A87",
@@ -2581,16 +2581,16 @@
       "title": "Navigation discards unsaved draft edits without warning",
       "status": "PASSED_OVER",
       "disposition": "PASSED_OVER",
-      "testedAt": "2026-09-18T09:54:30Z",
+      "testedAt": "2026-09-18T09:54:16.242Z",
       "browser": "Chrome",
       "viewport": "1792x976",
-      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "targetUrl": "/manage-assessments",
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
-        "evidence/assessor/D-A039-D-A041-volunteer-draft/D-A40-manage-assessments-draft.png",
-        "evidence/assessor/D-A076-D-A087-review-editor/D-A76-D-A82-D-A84-D-A87-result.json"
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A83-submitted-status.png",
+        "evidence/assessor/D-A076-D-A087-review-editor/D-A87-result.json"
       ],
-      "notes": "The deployed Assessor has saved draft and submitted records, but the sampled draft/detail links point to inactive or unavailable pitches and no active disposable editor fixture could be established within the bounded attempt; D-A76 and D-A77 require an active non-Review task assignment; D-A78 through D-A81 require an active disposable Review editor; D-A84 through D-A87 require safe draft mutations or concurrent tabs; D-A82 requires an active submitted pitch whose former reviewId route can be loaded directly; the bounded deployed probe could not establish one; No shared assessment answers, drafts, or terminal submissions were changed"
+      "notes": "The deployed Assessor has 5 saved draft record(s), but none points to an active, editable pitch; The check was passed over without changing or overwriting shared assessment content; Unsaved-navigation protection requires editing a disposable active draft before leaving the route"
     },
     {
       "id": "D-A88",
