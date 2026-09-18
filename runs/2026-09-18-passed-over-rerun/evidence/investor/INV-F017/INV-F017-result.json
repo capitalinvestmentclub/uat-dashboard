@@ -1,0 +1,29 @@
+{
+  "findingIds": [
+    "INV-F017"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitches",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Liking the pitch persisted it only in favouritedPitches",
+    "Disliking the same pitch atomically removed it from favourites and persisted it only in dislikedPitches",
+    "The exclusive dislike state survived a full page reload",
+    "After removing the reaction, the Favourites filter excluded the exact pitch while retaining unrelated favourites"
+  ],
+  "seededData": {
+    "pitchId": "6a9ebed3d26f574c91434a15",
+    "originalFavourite": true,
+    "originalDislike": false,
+    "restoredAfterTest": true
+  },
+  "screenshots": [
+    "INV-F017-exclusive-empty-favourites.png"
+  ],
+  "testedAt": "2026-09-18T16:20:18.631Z"
+}
