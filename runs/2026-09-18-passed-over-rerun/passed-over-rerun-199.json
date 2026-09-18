@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T22:12:24.424Z",
+  "updatedAt": "2026-09-18T22:15:37.958Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1746,15 +1746,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "assessment",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T22:15:37.958Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&assessmentRequestId=6aadb7aa6b8d9dde2f7a5fae",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A76/D-A76-non-review-draft-restored.png",
+        "evidence/D-A76/D-A76-result.json"
+      ],
+      "notes": "The deployed Engineering response form accepted a structured task answer and an overall assessment response; Save Draft completed with the explicit Draft saved state; A full Chrome reload restored both exact answers; The Assessor assessments API retained a durable draft linked to the accepted request"
     },
     {
       "id": "D-A77",
