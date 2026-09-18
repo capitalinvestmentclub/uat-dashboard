@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T21:08:35.423Z",
+  "updatedAt": "2026-09-18T21:09:44Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1426,15 +1426,17 @@
       "previousDisposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
       "wave": 3,
       "familyId": "requests",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T21:09:44Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=2&id=63d8ac4006621f0027c9ef01",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A55/D-A55-result.json"
+      ],
+      "notes": "The real acceptance email for the USD 0.00 request was visually inspected in the request owner's Gmail inbox.; The email displayed Wallet reservation: None.; The email explicitly stated: This is a free assessment. No charge or wallet reservation was made.; The communication no longer claims that a zero-value fee was reserved or held."
     },
     {
       "id": "D-A56",

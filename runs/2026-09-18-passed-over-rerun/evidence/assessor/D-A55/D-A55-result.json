@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "D-A55"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=2&id=63d8ac4006621f0027c9ef01",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aada27e6b8d9dde2f79731f",
+  "testedAt": "2026-09-18T21:09:44Z",
+  "assertions": [
+    "The real acceptance email for the USD 0.00 request was visually inspected in the request owner's Gmail inbox.",
+    "The email displayed Wallet reservation: None.",
+    "The email explicitly stated: This is a free assessment. No charge or wallet reservation was made.",
+    "The communication no longer claims that a zero-value fee was reserved or held."
+  ],
+  "screenshots": []
+}
