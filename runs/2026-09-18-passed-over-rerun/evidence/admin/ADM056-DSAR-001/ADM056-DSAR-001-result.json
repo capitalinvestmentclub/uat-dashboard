@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "ADM056-DSAR-001"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/compliance",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Created a real isolated personal-data export request for the controlled test subject",
+    "Claimed and resolved the request with the fixed Subject data export completed reason and an audit note",
+    "Downloaded a JSON fulfillment whose content referenced the requested subject email; raw personal data was not retained as evidence"
+  ],
+  "observations": {
+    "downloadFilename": "subject-data-6aad84fd6b8d9dde2f788d53.json"
+  },
+  "screenshots": [
+    "ADM056-DSAR-001-fulfilled-export-ready.png"
+  ],
+  "testedAt": "2026-09-18T18:42:01.829Z"
+}
