@@ -1,0 +1,24 @@
+{
+  "findingIds": [
+    "PIT-F034"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Most Valuable values were descending on the stated USD-equivalent basis: true (10000, 1200, 1000, 400, 7.51, 7.51)",
+    "At least one non-USD row retained its native amount and displayed an approximate USD ranking value: true",
+    "Selecting a Project tracker row produced a project details route: /project/6aa55a286cdf290abe517c52",
+    "Top Movers displayed a truthful empty state instead of zero-change assets"
+  ],
+  "screenshots": [
+    "PIT-F034-most-valuable-routing.png",
+    "PIT-F034-top-movers-empty.png"
+  ],
+  "testedAt": "2026-09-18T08:25:20.771Z"
+}

@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T08:22:34.248Z",
+  "updatedAt": "2026-09-18T08:25:20.771Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -376,15 +376,19 @@
       "scenarioId": "PIT-033",
       "severity": "MEDIUM",
       "title": "Marketplace trackers misrepresent discovery data",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T08:25:20.771Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-034-marketplace-trackers/PIT-F034-most-valuable-routing.png",
+        "evidence/pitcher/PIT-034-marketplace-trackers/PIT-F034-top-movers-empty.png",
+        "evidence/pitcher/PIT-034-marketplace-trackers/PIT-F034-result.json"
+      ],
+      "notes": "Most Valuable values were descending on the stated USD-equivalent basis: true (10000, 1200, 1000, 400, 7.51, 7.51); At least one non-USD row retained its native amount and displayed an approximate USD ranking value: true; Selecting a Project tracker row produced a project details route: /project/6aa55a286cdf290abe517c52; Top Movers displayed a truthful empty state instead of zero-change assets"
     },
     {
       "id": "PIT-F035",
