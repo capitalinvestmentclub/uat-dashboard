@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T19:48:00Z",
+  "updatedAt": "2026-09-18T19:49:00Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -808,15 +808,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 1,
       "familyId": "identity",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "DEPLOYED_REGRESSION_REPRODUCED",
+      "testedAt": "2026-09-18T19:49:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://planar-truck-361704.uc.r.appspot.com/login",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A1/D-A1-fresh-assessor-signup-submitted.png",
+        "evidence/assessor/D-A6/D-A6-result.json"
+      ],
+      "notes": "A fresh Assessor registration produced and consumed a real email verification link.; The verification link activated the account and redirected directly to the ordinary Log In page.; The post-verification page exposed no success banner, confirmation message, or verified-account state, reproducing D-A6."
     },
     {
       "id": "D-A7",
