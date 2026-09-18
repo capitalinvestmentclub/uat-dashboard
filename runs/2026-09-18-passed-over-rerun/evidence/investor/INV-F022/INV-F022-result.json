@@ -1,0 +1,29 @@
+{
+  "findingIds": [
+    "INV-F022"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/692dd85220b2c00478938390?id=692dd85220b2c00478938390&tab=4",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The owner opened Add Milestone and selected September 17, 2026 from the rendered date picker",
+    "The deployed API accepted the selected date and created the completed milestone",
+    "The milestone appeared immediately and persisted after a full reload",
+    "The persisted card rendered Achieved on Sep 17, 2026"
+  ],
+  "seededData": {
+    "projectId": "692dd85220b2c00478938390",
+    "milestoneId": "6aad68366b8d9dde2f776e85",
+    "title": "INV-F022 completed milestone 1789749291493",
+    "permanent": true
+  },
+  "screenshots": [
+    "INV-F022-milestone-date-created.png"
+  ],
+  "testedAt": "2026-09-18T16:35:08.469Z"
+}

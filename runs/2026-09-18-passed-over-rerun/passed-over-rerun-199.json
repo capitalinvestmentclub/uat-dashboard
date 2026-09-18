@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T16:33:00.867Z",
+  "updatedAt": "2026-09-18T16:35:08.469Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3922,15 +3922,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "projects",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T16:35:08.469Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/692dd85220b2c00478938390?id=692dd85220b2c00478938390&tab=4",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F022/INV-F022-milestone-date-created.png",
+        "evidence/investor/INV-F022/INV-F022-result.json"
+      ],
+      "notes": "The owner opened Add Milestone and selected September 17, 2026 from the rendered date picker; The deployed API accepted the selected date and created the completed milestone; The milestone appeared immediately and persisted after a full reload; The persisted card rendered Achieved on Sep 17, 2026"
     },
     {
       "id": "INV-F023",
