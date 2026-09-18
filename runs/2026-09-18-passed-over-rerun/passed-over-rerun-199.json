@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T20:14:19Z",
+  "updatedAt": "2026-09-18T20:17:15.819Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1015,15 +1015,18 @@
       "previousDisposition": "NO_DISPOSABLE_EDITABLE_PROFILE_FIXTURE",
       "wave": 2,
       "familyId": "profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T20:17:15.819Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A24/D-A24-technology-catalogue-identity-1792x976.png",
+        "evidence/assessor/D-A24/D-A24-result.json"
+      ],
+      "notes": "The existing Technology area was removed only in the unsaved browser form to expose the exact catalogue precondition.; Selecting the visible Technology catalogue option recreated the technology-keyed card with the Technology heading.; The recreated card showed Technology software/platform metadata and did not render the formerly mismatched Tax identity.; The page was left without saving, so the deployed Assessor profile was not mutated."
     },
     {
       "id": "D-A25",

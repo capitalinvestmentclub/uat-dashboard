@@ -1,0 +1,28 @@
+{
+  "findingIds": [
+    "D-A24"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "selectedArea": "Technology",
+    "renderedAreaId": "expertise-area-card-technology",
+    "renderedHeading": "Technology",
+    "renderedDescription": "Software, platforms, data, and infrastructure.",
+    "saved": false
+  },
+  "assertions": [
+    "The existing Technology area was removed only in the unsaved browser form to expose the exact catalogue precondition.",
+    "Selecting the visible Technology catalogue option recreated the technology-keyed card with the Technology heading.",
+    "The recreated card showed Technology software/platform metadata and did not render the formerly mismatched Tax identity.",
+    "The page was left without saving, so the deployed Assessor profile was not mutated."
+  ],
+  "screenshot": "D-A24-technology-catalogue-identity-1792x976.png",
+  "testedAt": "2026-09-18T20:17:15.819Z"
+}
