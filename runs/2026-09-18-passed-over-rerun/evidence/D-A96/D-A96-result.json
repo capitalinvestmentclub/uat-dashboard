@@ -1,0 +1,30 @@
+{
+  "findingIds": [
+    "D-A96"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "duplicatePrompt": "Explain the production architecture and operating controls.",
+    "uiRequestDisabled": true,
+    "apiStatus": 400,
+    "apiMessage": "Tasks 1 and 2 are duplicates. Rewrite each task as a unique, independently verifiable obligation."
+  },
+  "assertions": [
+    "The deployed Technology request builder identifies identical Task 1 and Task 2 prompts as duplicates",
+    "The Request action remains disabled, preventing ambiguous duplicate prompts from reaching an Assessor",
+    "A direct authenticated request with the same duplicate task contract is rejected by the deployed API with HTTP 400",
+    "Because duplicate prompts cannot be created, Task 2 can no longer be corrupted by prompt-based matching to Task 1"
+  ],
+  "screenshots": [
+    "D-A96-duplicate-technology-tasks-blocked.png"
+  ],
+  "testedAt": "2026-09-18T23:07:22.251Z"
+}

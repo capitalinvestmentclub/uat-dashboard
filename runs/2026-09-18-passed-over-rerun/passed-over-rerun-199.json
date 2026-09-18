@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T23:04:08.706Z",
+  "updatedAt": "2026-09-18T23:07:22.251Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2185,15 +2185,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T23:07:22.251Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A96/D-A96-duplicate-technology-tasks-blocked.png",
+        "evidence/D-A96/D-A96-result.json"
+      ],
+      "notes": "The deployed Technology request builder identifies identical Task 1 and Task 2 prompts as duplicates; The Request action remains disabled, preventing ambiguous duplicate prompts from reaching an Assessor; A direct authenticated request with the same duplicate task contract is rejected by the deployed API with HTTP 400; Because duplicate prompts cannot be created, Task 2 can no longer be corrupted by prompt-based matching to Task 1"
     },
     {
       "id": "D-A97",
