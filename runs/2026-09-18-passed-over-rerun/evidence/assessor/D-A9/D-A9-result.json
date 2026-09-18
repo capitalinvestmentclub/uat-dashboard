@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "D-A9"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://planar-truck-361704.uc.r.appspot.com/dashboard",
+  "browserName": "chrome",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The disposable fresh Assessor was locked by the fifth failed password attempt and later unlocked only to inspect its own notification surfaces.",
+    "Gmail received Security alert: your account was locked with the actual lock timestamp.",
+    "After real email MFA sign-in, the Assessor dashboard Recent Activity displayed Your account was locked.",
+    "The deployed lockout therefore now produces both email and in-app security notification evidence."
+  ],
+  "evidence": [
+    "../D-A7/D-A7-result.json"
+  ],
+  "screenshots": [
+    "../D-A7/D-A7-fifth-attempt-lockout-message.png"
+  ],
+  "testedAt": "2026-09-18T19:56:00Z"
+}
