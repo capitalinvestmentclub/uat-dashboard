@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T19:35:42.499Z",
+  "updatedAt": "2026-09-18T19:37:10.561Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -739,15 +739,18 @@
       "previousDisposition": "INTERNAL_OPERATIONS_ACTOR_UNAVAILABLE",
       "wave": 3,
       "familyId": "dates",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T19:37:10.561Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/feedback",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/support-operations/SUP-F006/SUP-F006-phoenix-sla-calendar-date.png",
+        "evidence/support-operations/SUP-F006/SUP-F006-result.json"
+      ],
+      "notes": "A synthetic Admin feedback item accepted SLA date 2026-10-12 in the deployed environment.; The input, card metadata, and operational summary all display 12 Oct 2026 in America/Phoenix.; The saved date remains 2026-10-12 after reload and never shifts to the prior local day."
     },
     {
       "id": "SUP-F007",
