@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "PIT-F040"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/create-pitch",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Correcting the deployed title immediately removes it from the validation summary and clears its helper error",
+    "Correcting the deployed Profit Distribution frequency immediately removes the stale modal error",
+    "The flow stopped before confirmation or pitch creation; no record was submitted"
+  ],
+  "screenshots": [
+    "PIT-F040-validation-recovery.png"
+  ],
+  "testedAt": "2026-09-18T07:40:14.324Z"
+}
