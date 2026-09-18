@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "INV-F002"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user/63b9b5c2c4c53f00275907ba",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Owner score=419; public score=419",
+    "Owner badges=15; public badges=15"
+  ],
+  "screenshots": [
+    "INV-F002-owner-profile.png",
+    "INV-F002-public-profile.png"
+  ],
+  "testedAt": "2026-09-18T14:38:52.317Z"
+}
