@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T10:02:02Z",
+  "updatedAt": "2026-09-18T10:07:00Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -4064,15 +4064,18 @@
       "scenarioId": "ASS-003",
       "severity": "MEDIUM",
       "title": "Accessibility defects on the Assessor Registration form: \"+ Add another Industry\" is an <h6> heading rather than a button; both chip inputs (#quali…",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T10:06:52.859Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/G-A1-result.json"
+      ],
+      "notes": "Add another Industry, Professional Qualifications, and Awards and Certifications are exposed by semantic roles=true; Experience control ids are unique=true; ids=assessor-experience-0, assessor-experience-1; No signup request was submitted and no account was created"
     },
     {
       "id": "G-A2",
@@ -4080,15 +4083,18 @@
       "scenarioId": "ASS-001",
       "severity": "LOW",
       "title": "admin row actions are 30px icon-only buttons with aria-label only, rendered below the fold at 1440×900 (y≈1331 in a 900px viewport), so they need s…",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A3",
@@ -4096,15 +4102,18 @@
       "scenarioId": "ASS-003",
       "severity": "MEDIUM",
       "title": "date-of-birth picker exposes no maximum date — no disabled days, an active next-month arrow and no max on the year input — so future dates are free…",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T10:06:52.859Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/G-A3-result.json"
+      ],
+      "notes": "Date-of-birth picker maxDate=2008-09-18T07:00:00.000Z; The configured maximum blocks future dates=true"
     },
     {
       "id": "G-A4",
@@ -4112,15 +4121,18 @@
       "scenarioId": "ASS-004",
       "severity": "LOW",
       "title": "reason field truncates silently at 250 characters, mid-word, and has no native maxlength, so the limit is JS-only and not exposed to assistive tech",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A6",
@@ -4166,15 +4178,18 @@
       "scenarioId": "ASS-002",
       "severity": "MEDIUM",
       "title": "Blank recovery-question submission reports only question 1 and duplicates that message inline and as a toast, rather than exposing both missing fie…",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A9",
@@ -4222,15 +4237,18 @@
       "scenarioId": "ASS-007",
       "severity": "MEDIUM",
       "title": "Multiple Expertise controls lack accessible names",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A12",
@@ -4277,15 +4295,18 @@
       "scenarioId": "ASS-009",
       "severity": "MEDIUM",
       "title": "Sensitive KYC fields have empty accessible names",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A15",
@@ -4293,15 +4314,18 @@
       "scenarioId": "ASS-010",
       "severity": "MEDIUM",
       "title": "Viewer sees enabled management actions that effective authorization rejects",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A16",
@@ -4309,15 +4333,18 @@
       "scenarioId": "ASS-011",
       "severity": "HIGH",
       "title": "Non-owner can reach request builder for another user's pitch",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A17",
@@ -4402,15 +4429,18 @@
       "scenarioId": "ASS-012",
       "severity": "HIGH",
       "title": "Engagement and restricted-state variants lack isolated fixtures",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A22",
@@ -4418,15 +4448,18 @@
       "scenarioId": "ASS-013",
       "severity": "HIGH",
       "title": "Session confirmation failures make financial commit outcomes ambiguous",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A23",
@@ -4434,15 +4467,18 @@
       "scenarioId": "ASS-020",
       "severity": "MEDIUM",
       "title": "Draft edit icon has no accessible name",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A24",
@@ -4450,15 +4486,18 @@
       "scenarioId": "ASS-021",
       "severity": "MEDIUM",
       "title": "Task responses and upload surface are not programmatically labelled",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A25",
@@ -4466,15 +4505,18 @@
       "scenarioId": "ASS-022",
       "severity": "MEDIUM",
       "title": "Review rating and comment controls lack meaningful accessible names",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A26",
@@ -4482,15 +4524,18 @@
       "scenarioId": "ASS-024",
       "severity": "MEDIUM",
       "title": "Repeated RFI controls lack accessible names",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A27",
@@ -4498,15 +4543,18 @@
       "scenarioId": "ASS-024",
       "severity": "MEDIUM",
       "title": "RFI table hides essential columns at compact widths",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A28",
@@ -4514,15 +4562,18 @@
       "scenarioId": "ASS-030",
       "severity": "MEDIUM",
       "title": "Owner Hires table overlaps the right-side rail at 1440×900",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A29",
@@ -4530,15 +4581,18 @@
       "scenarioId": "ASS-032",
       "severity": "HIGH",
       "title": "Compact grant detail overflows and hides the primary action",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A30",
@@ -4660,15 +4714,18 @@
       "scenarioId": "ASS-036",
       "severity": "MEDIUM",
       "title": "Compact buy table hides essential seller/action content behind horizontal overflow",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T10:07:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/remaining-general-result.json"
+      ],
+      "notes": "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state; G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures; G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport; The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
     },
     {
       "id": "G-A37",
@@ -4676,15 +4733,18 @@
       "scenarioId": "ASS-003",
       "severity": "MEDIUM",
       "title": "Role keyboard behavior and corrected-error state are inconsistent",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T10:06:52.859Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/general/signup-accessibility/signup-accessibility-controls.png",
+        "evidence/general/signup-accessibility/G-A37-result.json"
+      ],
+      "notes": "Space selected the focused Assessor role=true; Visible stale role-validation messages after correction=0"
     },
     {
       "id": "INV-F001",

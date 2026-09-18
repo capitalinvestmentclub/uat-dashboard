@@ -1,0 +1,20 @@
+{
+  "findingIds": [
+    "G-A2", "G-A4", "G-A8", "G-A11", "G-A14", "G-A15", "G-A16",
+    "G-A21", "G-A22", "G-A23", "G-A24", "G-A25", "G-A26", "G-A27",
+    "G-A28", "G-A29", "G-A36"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {"width": 1792, "height": 976},
+  "assertions": [
+    "G-A2 requires the Admin user table; G-A4 requires a disposable role-change submission; G-A8 requires a disposable recovery-question account; G-A11 and G-A14 require editable Expertise/KYC fixtures not exposed by the current in-review Assessor state",
+    "G-A15 and G-A16 require organization Viewer and non-owner requester actors; G-A21 and G-A22 require isolated engagement and ambiguous financial-commit fixtures",
+    "G-A23 through G-A27 require active editable assessment/RFI records; G-A28 requires the owner Hires workspace; G-A29 requires a suitable compact active-grant detail; G-A36 requires a live marketplace listing at a compact viewport",
+    "The bounded deployed inventories showed no safe matching fixtures, and no role, account, assessment, grant, marketplace, or financial state was changed"
+  ],
+  "screenshots": ["signup-accessibility-controls.png"],
+  "testedAt": "2026-09-18T10:07:00Z"
+}
