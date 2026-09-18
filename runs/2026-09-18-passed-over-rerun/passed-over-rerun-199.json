@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T19:29:04.391Z",
+  "updatedAt": "2026-09-18T19:34:28.576Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -693,15 +693,18 @@
       "previousDisposition": "INTERNAL_OPERATIONS_ACTOR_UNAVAILABLE",
       "wave": 2,
       "familyId": "operations",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "DEPLOYED_REGRESSION_REPRODUCED",
+      "testedAt": "2026-09-18T19:34:28.576Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/support-operations/SUP-F004/SUP-F004-literal-entity-text-remains.png",
+        "evidence/support-operations/SUP-F004/SUP-F004-result.json"
+      ],
+      "notes": "Benign emphasis markup renders correctly in the sandboxed HTML preview.; Injected script markup is displayed as inert text and no script element is created.; The plain-text preview still includes literal encoded &LT;EM> entity text, reproducing the reported defect."
     },
     {
       "id": "SUP-F005",

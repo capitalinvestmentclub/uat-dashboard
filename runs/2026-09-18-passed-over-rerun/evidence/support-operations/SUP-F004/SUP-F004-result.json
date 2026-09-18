@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "SUP-F004"
+  ],
+  "outcome": "FAIL",
+  "disposition": "DEPLOYED_REGRESSION_REPRODUCED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/notifications",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Benign emphasis markup renders correctly in the sandboxed HTML preview.",
+    "Injected script markup is displayed as inert text and no script element is created.",
+    "The plain-text preview still includes literal encoded &LT;EM> entity text, reproducing the reported defect."
+  ],
+  "screenshots": [
+    "SUP-F004-literal-entity-text-remains.png"
+  ],
+  "testedAt": "2026-09-18T19:34:28.576Z"
+}
