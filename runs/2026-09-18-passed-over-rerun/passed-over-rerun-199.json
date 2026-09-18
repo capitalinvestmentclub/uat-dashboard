@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T19:56:00Z",
+  "updatedAt": "2026-09-18T19:59:57.245Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -902,15 +902,18 @@
       "previousDisposition": "VERIFIED_EXPORT_DID_NOT_COMPLETE",
       "wave": 2,
       "familyId": "profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "DEPLOYED_REGRESSION_REPRODUCED",
+      "testedAt": "2026-09-18T19:59:57.245Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A12/D-A12-personal-data-export-complete.png",
+        "evidence/assessor/D-A12/D-A12-result.json"
+      ],
+      "notes": "Download Data required current-password step-up before producing a file.; The deployed export POST returned HTTP 401 with You are not logged in despite the active authenticated Assessor session.; No download was produced, so none of the expected portable export domains could be verified.; Unverifiable portable export domains: schemaVersion, generatedAt, subjectUserId, account, policies, preferences, roleProfiles, identityVerification, securityActivity, financial, assessments, roleChanges, complianceRequests."
     },
     {
       "id": "D-A14",

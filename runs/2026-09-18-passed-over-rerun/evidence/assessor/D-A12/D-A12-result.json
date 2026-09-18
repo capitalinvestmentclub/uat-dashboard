@@ -1,0 +1,42 @@
+{
+  "findingIds": [
+    "D-A12"
+  ],
+  "outcome": "FAIL",
+  "disposition": "DEPLOYED_REGRESSION_REPRODUCED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Download Data required current-password step-up before producing a file.",
+    "The deployed export POST returned HTTP 401 with You are not logged in despite the active authenticated Assessor session.",
+    "No download was produced, so none of the expected portable export domains could be verified.",
+    "Unverifiable portable export domains: schemaVersion, generatedAt, subjectUserId, account, policies, preferences, roleProfiles, identityVerification, securityActivity, financial, assessments, roleChanges, complianceRequests."
+  ],
+  "exportMetadata": {
+    "presentDomains": [],
+    "missingDomains": [
+      "schemaVersion",
+      "generatedAt",
+      "subjectUserId",
+      "account",
+      "policies",
+      "preferences",
+      "roleProfiles",
+      "identityVerification",
+      "securityActivity",
+      "financial",
+      "assessments",
+      "roleChanges",
+      "complianceRequests"
+    ]
+  },
+  "screenshots": [
+    "D-A12-personal-data-export-complete.png"
+  ],
+  "testedAt": "2026-09-18T19:59:57.245Z"
+}
