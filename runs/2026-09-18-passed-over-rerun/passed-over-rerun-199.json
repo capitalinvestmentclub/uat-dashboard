@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T17:48:16.956Z",
+  "updatedAt": "2026-09-18T17:51:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -226,15 +226,18 @@
       "previousDisposition": "EXTERNAL_MAILBOX_AND_EVENT_FIXTURE_UNAVAILABLE",
       "wave": 4,
       "familyId": "communications",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T17:51:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-F030/PIT-F030-community-email-enabled.png",
+        "evidence/pitcher/PIT-F030/PIT-F030-result.json"
+      ],
+      "notes": "The Pitcher's deployed emailCommunity preference was read as enabled, explicitly persisted as enabled, and remained visibly enabled in Chrome.; A targeted community-class Admin broadcast was accepted for exactly one recipient with subject PIT-F030 community positive 1789753803616.; The controlled cic.test.pitcher@gmail.com mailbox received exactly one matching message with the unique subject and positive-control body.; The original preference value was true, so the explicit enable operation preserved rather than altered the user's prior setting.; No password was changed."
     },
     {
       "id": "PIT-F035",
