@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "ADM055-RATE-001"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/exchange-rates",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed Admin exchange-rate override form accepted a valid rate and reason but rejected Duration (hours) = 0 with the explicit 0.1-to-24-hour validation message",
+    "Observed override API requests after submission: 0",
+    "The invalid zero-duration value was not silently normalized to one hour and no exchange-rate override was persisted"
+  ],
+  "screenshots": [
+    "ADM055-RATE-001-zero-duration-rejected.png"
+  ],
+  "testedAt": "2026-09-18T18:12:34.244Z"
+}
