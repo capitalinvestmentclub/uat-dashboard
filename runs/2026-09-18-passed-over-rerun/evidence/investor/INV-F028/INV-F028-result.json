@@ -1,0 +1,34 @@
+{
+  "findingIds": [
+    "INV-F028"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/692dd85220b2c00478938390?id=692dd85220b2c00478938390&tab=13",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Whitespace-only response text stayed in the dialog and showed Response Message Cannot be empty",
+    "No deployed API mutation occurred for the whitespace-only attempt and the RFI stayed open",
+    "A padded substantive response was trimmed, persisted exactly once and changed status to responded",
+    "The substantive response, responded status and revision 3 remained visible after reload"
+  ],
+  "seededData": {
+    "projectId": "692dd85220b2c00478938390",
+    "requestId": "6aad6cfd6b8d9dde2f779292",
+    "requestTitle": "INV-F026 operating evidence 1789750516315",
+    "substantiveResponse": "Substantive variance evidence for INV-F028 1789750810349.",
+    "permanent": true
+  },
+  "apiEvidence": {
+    "requestCount": 1,
+    "status": 200
+  },
+  "screenshots": [
+    "INV-F028-substantive-rfi-response-persisted.png"
+  ],
+  "testedAt": "2026-09-18T17:00:28.594Z"
+}

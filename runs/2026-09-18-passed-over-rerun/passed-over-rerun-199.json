@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T16:58:43.289Z",
+  "updatedAt": "2026-09-18T17:00:28.594Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -4060,15 +4060,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "projects",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T17:00:28.594Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/692dd85220b2c00478938390?id=692dd85220b2c00478938390&tab=13",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F028/INV-F028-substantive-rfi-response-persisted.png",
+        "evidence/investor/INV-F028/INV-F028-result.json"
+      ],
+      "notes": "Whitespace-only response text stayed in the dialog and showed Response Message Cannot be empty; No deployed API mutation occurred for the whitespace-only attempt and the RFI stayed open; A padded substantive response was trimmed, persisted exactly once and changed status to responded; The substantive response, responded status and revision 3 remained visible after reload"
     },
     {
       "id": "INV-F029",
