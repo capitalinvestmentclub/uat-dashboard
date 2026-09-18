@@ -1,0 +1,21 @@
+{
+  "findingIds": [
+    "D-A32"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/kyc",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Opening /kyc as the approved Test Assessor redirected to /profile",
+    "The account's KYC is already submitted/in review and exposes no editable draft boundary",
+    "No approved disposable incomplete Assessor is available for a save, close, re-login, and resume cycle"
+  ],
+  "limitation": "Durable KYC draft resume requires an incomplete real KYC record before submission. Reverting or replacing the shared Assessor's submitted KYC would be destructive and would disrupt later tests, so the fix remains unproven.",
+  "screenshots": [],
+  "testedAt": "2026-09-18T09:24:30Z"
+}

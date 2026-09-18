@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T09:23:43Z",
+  "updatedAt": "2026-09-18T09:24:30Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -1542,15 +1542,17 @@
       "scenarioId": "ASS-009",
       "severity": "HIGH",
       "title": "KYC has no durable partial-save/resume path",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:24:30Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/kyc",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A032-kyc-draft-resume/D-A32-result.json"
+      ],
+      "notes": "Opening /kyc as the approved Test Assessor redirected to /profile; The account's KYC is already submitted/in review and exposes no editable draft boundary; No approved disposable incomplete Assessor is available for a save, close, re-login, and resume cycle"
     },
     {
       "id": "D-A33",
