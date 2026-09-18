@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T22:15:37.958Z",
+  "updatedAt": "2026-09-18T22:19:32.145Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1769,15 +1769,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "assessment",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T22:19:32.145Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&assessmentRequestId=6aadb83c6b8d9dde2f7a6a73",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A77/D-A77-structured-task-contract-restored.png",
+        "evidence/D-A77/D-A77-result.json"
+      ],
+      "notes": "The deployed form rendered the required choice task with its helper text and typed options; The dependent URL task remained hidden until Production was selected, then rendered with its helper text; The selected choice and URL answer survived a full Chrome reload; The durable draft retained answer types, required flags, options, dependency metadata, and answers instead of collapsing them to untyped comments"
     },
     {
       "id": "D-A78",
