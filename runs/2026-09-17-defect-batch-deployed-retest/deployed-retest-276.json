@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T07:57:07.266Z",
+  "updatedAt": "2026-09-18T08:01:32.318Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -54,15 +54,18 @@
       "scenarioId": "PIT-011",
       "severity": "MEDIUM",
       "title": "Session filters and Back state are inconsistent",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T08:01:32.318Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-pitches?sessions=0",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-011/PIT-F015-session-filter-and-back-state.png",
+        "evidence/pitcher/PIT-011/PIT-F015-result.json"
+      ],
+      "notes": "Has Sessions returns the known session-bearing pitch and excludes a known zero-session pitch; Opening the filtered pitch and returning through browser history preserves the Has Sessions selection and result; No Sessions returns the known zero-session pitch and excludes the session-bearing pitch"
     },
     {
       "id": "PIT-F016",

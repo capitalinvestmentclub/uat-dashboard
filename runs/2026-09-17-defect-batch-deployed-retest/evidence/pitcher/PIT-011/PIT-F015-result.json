@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "PIT-F015"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-pitches?sessions=0",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Has Sessions returns the known session-bearing pitch and excludes a known zero-session pitch",
+    "Opening the filtered pitch and returning through browser history preserves the Has Sessions selection and result",
+    "No Sessions returns the known zero-session pitch and excludes the session-bearing pitch"
+  ],
+  "screenshots": [
+    "PIT-F015-session-filter-and-back-state.png"
+  ],
+  "testedAt": "2026-09-18T08:01:32.318Z"
+}
