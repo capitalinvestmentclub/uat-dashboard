@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T20:23:26.381Z",
+  "updatedAt": "2026-09-18T20:24:54.341Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1129,15 +1129,18 @@
       "previousDisposition": "UI_COVERAGE_GAP_NO_PRODUCT_PASS",
       "wave": 2,
       "familyId": "profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T20:24:54.341Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A31/D-A31-availability-capacity-policy-1792x976.png",
+        "evidence/assessor/D-A31/D-A31-result.json"
+      ],
+      "notes": "The deployed Account tab exposes request status, maximum capacity, availability dates, timezone, and blackout controls; Capacity values below 1 and above 50 render the bounded validation error and disable Save Changes; The original capacity was restored and the page was left without saving"
     },
     {
       "id": "D-A32",
