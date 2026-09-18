@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T15:02:50.000Z",
+  "updatedAt": "2026-09-18T15:08:06.003Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3602,15 +3602,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 1,
       "familyId": "identity",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T15:08:06.003Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F008/INV-F008-notification-badges-reconciled.png",
+        "evidence/investor/INV-F008/INV-F008-result.json"
+      ],
+      "notes": "Before mark-read: page=3500, navigation=3500.; Marked 8 visible notifications read.; Immediately after: page=3492, navigation=3492.; After reload: page=3492, navigation=3492."
     },
     {
       "id": "INV-F009",
