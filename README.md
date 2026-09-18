@@ -1,5 +1,9 @@
 # CIC UAT dashboard
 
+## Deployed defect-delivery retest — 18 September 2026
+
+The Chrome retest ledger now has terminal dispositions for all 276 entries in the delivery batch: 64 PASS, 12 FAIL, 1 DUPLICATE_COVERAGE and 199 PASSED_OVER. The dashboard renders the reconciled ten-report breakdown from `dashboard-data.json`; the complete machine-readable evidence ledger is in `runs/2026-09-17-defect-batch-deployed-retest/deployed-retest-276.json`.
+
 One summary for twelve published E2E reports. Static HTML/CSS/JavaScript; no product API, private test data, runtime framework, or login required.
 
 ## Severity and execution analytics
