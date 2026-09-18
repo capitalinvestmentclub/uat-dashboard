@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T22:54:00.699Z",
+  "updatedAt": "2026-09-18T22:55:09.481Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2092,15 +2092,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "assessment",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T22:55:09.481Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=6",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A92/D-A92-sequential-rfis-persisted.png",
+        "evidence/D-A92/D-A92-result.json"
+      ],
+      "notes": "Two distinct valid RFIs were submitted sequentially through the deployed Chrome UI; Both submissions returned successful non-idempotent responses with different durable request IDs; The earlier and later RFI each remained visible exactly once with their descriptions and open status after reload"
     },
     {
       "id": "D-A93",
