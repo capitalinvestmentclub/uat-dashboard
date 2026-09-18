@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T17:16:52Z",
+  "updatedAt": "2026-09-18T17:36:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -68,15 +68,17 @@
       "previousDisposition": "EXTERNAL_MAILBOX_AND_EVENT_FIXTURE_UNAVAILABLE",
       "wave": 4,
       "familyId": "communications",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "RECIPIENT_MAILBOX_UNAVAILABLE",
+      "testedAt": "2026-09-18T17:36:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-pitches",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-F017/PIT-F017-result.json"
+      ],
+      "notes": "A real deployed session was created successfully with subject PIT-F017 duration and destination 1789752148378, session ID 6aad73626b8d9dde2f77d145, and duration 600 seconds (10 minutes).; The deployed notification contract sends session-scheduled email only to interested pitch followers; it does not send this message to the Pitcher host who created the session.; The controlled Pitcher Gmail account therefore was not a valid recipient and correctly contained no matching message after exact-subject and full-message searches.; No controlled mailbox for an interested Investor recipient was available in the established Chrome profiles, so the rendered duration and session CTA could not be verified without fabricating evidence.; No existing-user password was changed; the created test session remains in the mutable test environment."
     },
     {
       "id": "PIT-F019",
