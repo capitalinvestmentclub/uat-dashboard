@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T18:12:34.244Z",
+  "updatedAt": "2026-09-18T18:21:45.192Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -342,15 +342,18 @@
       "previousDisposition": "ADMIN_ACTOR_UNAVAILABLE",
       "wave": 3,
       "familyId": "dates",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T18:21:45.192Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aa79266353b35320a6f6c5e",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/admin/ADM053-DATE-001/ADM053-DATE-001-grant-deadline-stable.png",
+        "evidence/admin/ADM053-DATE-001/ADM053-DATE-001-result.json"
+      ],
+      "notes": "Grant detail overview displayed Closes on 13 Oct 2026; Grant editor retained the same deadline as 2026-10-13; No preceding-day date drift was rendered and the editor was closed without saving"
     },
     {
       "id": "ADM053-STATE-001",

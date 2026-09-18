@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "ADM053-DATE-001"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aa79266353b35320a6f6c5e",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Grant detail overview displayed Closes on 13 Oct 2026",
+    "Grant editor retained the same deadline as 2026-10-13",
+    "No preceding-day date drift was rendered and the editor was closed without saving"
+  ],
+  "screenshots": [
+    "ADM053-DATE-001-grant-deadline-stable.png"
+  ],
+  "testedAt": "2026-09-18T18:21:45.192Z"
+}
