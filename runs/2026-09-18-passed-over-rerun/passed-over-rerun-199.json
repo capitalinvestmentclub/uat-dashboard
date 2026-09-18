@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T22:19:32.145Z",
+  "updatedAt": "2026-09-18T22:20:34.581Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1792,15 +1792,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "assessment",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T22:20:34.581Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadb65d6b8d9dde2f7a3d12",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A78/D-A78-validation-focus.png",
+        "evidence/D-A78/D-A78-result.json"
+      ],
+      "notes": "Submitting an incomplete saved Review displayed a consolidated validation summary near the top of the form; The browser focus moved to the first invalid score or comment control; The focused invalid control was scrolled into the visible viewport; No submission occurred while required Review fields remained incomplete"
     },
     {
       "id": "D-A79",
