@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "ADM053-STATE-001"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "THIRD_PARTY_PENDING_APPLICATION_FIXTURE_UNAVAILABLE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/69f2daa7bc7aec04003e4886",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed grant contains a real pending application, but it belongs to the logged-in Admin account and the product correctly withholds self-decision controls",
+    "The existing approved application cannot be reused for a new decision",
+    "One attempt to recreate the unrelated-investor session failed because its temporary credential input is unavailable; a third-party pending application is required to exercise the refresh-after-decision path"
+  ],
+  "screenshots": [
+    "ADM053-STATE-001-pending-self-application.png"
+  ],
+  "testedAt": "2026-09-18T18:29:00.000Z"
+}
