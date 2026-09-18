@@ -1,0 +1,30 @@
+{
+  "findingIds": [
+    "D-A64"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=2&id=63d8ac4006621f0027c9ef01",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aadadb76b8d9dde2f79da8c",
+  "observed": {
+    "status": "rate_proposed",
+    "negotiatedRate": 26000,
+    "rateProposalAuthorRole": "assessor"
+  },
+  "assertions": [
+    "The proposal action completed only after the Assessor page reconciled the request as Rate Proposed at NGN 26,000",
+    "A full Assessor-page reload retained the same proposal state and amount",
+    "A fresh Pitcher context independently rendered the same request as rate_proposed at NGN 26,000",
+    "The durable API record matched both actor views and retained assessor authorship"
+  ],
+  "screenshots": [
+    "D-A64-durable-rate-proposal.png"
+  ],
+  "testedAt": "2026-09-18T21:41:20.975Z"
+}
