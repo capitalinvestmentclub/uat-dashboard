@@ -1,0 +1,38 @@
+{
+  "findingIds": [
+    "GRT014-STATE-001"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aad7cf16b8d9dde2f785337",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "A real third-party pending application was created on the controlled deployed grant",
+    "The Pitcher/grantor rejected it and the row changed to Rejected without a page reload",
+    "Grant, applications, disbursements, and feedback endpoints were all re-read after the decision"
+  ],
+  "observations": {
+    "performedDecision": true,
+    "readsBeforeDecision": {
+      "grant": 1,
+      "applications": 1,
+      "disbursements": 1,
+      "feedback": 1
+    },
+    "readsAfterDecision": {
+      "grant": 2,
+      "applications": 2,
+      "disbursements": 2,
+      "feedback": 2
+    },
+    "mainFrameNavigations": 0
+  },
+  "screenshots": [
+    "GRT014-STATE-001-decision-panels-refreshed.png"
+  ],
+  "testedAt": "2026-09-18T18:50:36.508Z"
+}
