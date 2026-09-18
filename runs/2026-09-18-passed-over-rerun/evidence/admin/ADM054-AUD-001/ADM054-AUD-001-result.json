@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "ADM054-AUD-001"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/profile-reports",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The real dismissal required a decision reason and admin note before submission",
+    "A real open profile report was dismissed in the deployed Admin moderation view",
+    "The completed record visibly preserved the Insufficient evidence rationale and reviewer attribution"
+  ],
+  "observations": {
+    "performedDismissal": false
+  },
+  "screenshots": [
+    "ADM054-AUD-001-dismissal-rationale-preserved.png"
+  ],
+  "testedAt": "2026-09-18T18:30:51.247Z"
+}

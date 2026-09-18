@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T18:29:00.000Z",
+  "updatedAt": "2026-09-18T18:30:51.247Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -388,15 +388,18 @@
       "previousDisposition": "ADMIN_ACTOR_UNAVAILABLE",
       "wave": 2,
       "familyId": "operations",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T18:30:51.247Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/profile-reports",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/admin/ADM054-AUD-001/ADM054-AUD-001-dismissal-rationale-preserved.png",
+        "evidence/admin/ADM054-AUD-001/ADM054-AUD-001-result.json"
+      ],
+      "notes": "The real dismissal required a decision reason and admin note before submission; A real open profile report was dismissed in the deployed Admin moderation view; The completed record visibly preserved the Insufficient evidence rationale and reviewer attribution"
     },
     {
       "id": "ADM056-STALE-001",
