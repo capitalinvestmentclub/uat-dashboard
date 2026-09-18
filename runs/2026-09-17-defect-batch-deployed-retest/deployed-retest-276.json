@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T08:45:24.349Z",
+  "updatedAt": "2026-09-18T04:54:00.000Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -169,15 +169,18 @@
       "scenarioId": "PIT-023",
       "severity": "MEDIUM",
       "title": "External-holder records cannot be reliably maintained",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "FAIL",
+      "testedAt": "2026-09-18T04:54:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=4",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-021-external-holder/PIT-F021-edit-publication-state-conflict.png",
+        "evidence/pitcher/PIT-021-external-holder/PIT-F021-result.json"
+      ],
+      "notes": "Malformed email produced Please enter a valid email address and sent no external-shareholder write; A unique valid external holder persisted with its email and appeared in the deployed equity table; Editing the newly created holder failed in the deployed UI with Pitch changed publication state while this shareholder change was being saved; The temporary holder was absent from API readback after cleanup"
     },
     {
       "id": "PIT-F022",
