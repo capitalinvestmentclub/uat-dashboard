@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T22:29:24.477Z",
+  "updatedAt": "2026-09-18T22:33:50.946Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1953,15 +1953,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "assessment",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T22:33:50.946Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadbb076b8d9dde2f7aa2e8",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A86/D-A86-stale-draft-conflict.png",
+        "evidence/D-A86/D-A86-result.json"
+      ],
+      "notes": "Two Chrome tabs loaded the same saved Review draft revision; The first tab saved a newer category comment successfully; The stale second tab received an explicit conflict with Reload latest instead of overwriting; The durable value remained the newer first-tab value and Reload latest restored it in the stale tab"
     },
     {
       "id": "D-A87",

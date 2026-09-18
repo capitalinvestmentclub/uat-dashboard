@@ -1,0 +1,31 @@
+{
+  "findingIds": [
+    "D-A86"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadbb076b8d9dde2f7aa2e8",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "reviewId": "6aadbb076b8d9dde2f7aa2e8",
+  "observed": {
+    "newerValue": "D-A86 newer tab value 1789770803583 must remain authoritative.",
+    "staleAttempt": "D-A86 stale tab overwrite attempt 1789770803583 must be rejected.",
+    "durableComment": "D-A86 newer tab value 1789770803583 must remain authoritative.",
+    "conflictMessage": "This draft changed in another tab. Reload the latest version before saving again Reload latest"
+  },
+  "assertions": [
+    "Two Chrome tabs loaded the same saved Review draft revision",
+    "The first tab saved a newer category comment successfully",
+    "The stale second tab received an explicit conflict with Reload latest instead of overwriting",
+    "The durable value remained the newer first-tab value and Reload latest restored it in the stale tab"
+  ],
+  "screenshots": [
+    "D-A86-stale-draft-conflict.png"
+  ],
+  "testedAt": "2026-09-18T22:33:50.946Z"
+}
