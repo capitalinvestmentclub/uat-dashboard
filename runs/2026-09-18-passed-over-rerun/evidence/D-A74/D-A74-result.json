@@ -1,0 +1,29 @@
+{
+  "findingIds": [
+    "D-A74"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadb65d6b8d9dde2f7a3d12",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "reviewId": "6aadb65d6b8d9dde2f7a3d12",
+  "observed": {
+    "organizationContext": "6a178202aac3f5d013b68de4",
+    "editorVisible": false,
+    "renderedOutcome": "Capital Investment Club Home Pitches Grants Marketplace Dashboard Support $ USD P @org_pwc Your privacy choices CIC uses essential storage for secure sign-in and core platform functions. With your permission, we also use privacy-limited analytics to understand visits and improve registration and product workflows. Analytics is off until you allow it. Read the Cookie Notice. Use essential only Allow analytics"
+  },
+  "assertions": [
+    "The personal Assessor context could open the real saved Review draft as editable work",
+    "After switching to the organization actor, the same direct reviewId URL did not expose Save as draft or Submit",
+    "The organization context rendered an explicit inaccessible/not-authorized outcome instead of the personal rubric"
+  ],
+  "screenshots": [
+    "D-A74-organization-draft-denied.png"
+  ],
+  "testedAt": "2026-09-18T22:10:43.861Z"
+}
