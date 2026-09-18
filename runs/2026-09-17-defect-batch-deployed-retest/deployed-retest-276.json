@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T05:07:46.114Z",
+  "updatedAt": "2026-09-18T05:44:26.553Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -614,15 +614,17 @@
       "scenarioId": "ORG-025–027",
       "severity": "MEDIUM",
       "title": "Role context works but three full organization lifecycles remain incomplete",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER_MISSING_RUN_SCOPED_FIXTURES",
+      "testedAt": "2026-09-18T05:20:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/coverage-passovers/known-fixture-gaps-result.json"
+      ],
+      "notes": "These four entries are coverage gaps rather than isolated product defects; The required disposable verified accounts, allowed/restricted identity pair, and complete organization lifecycle fixtures are not configured in the retest environment; No approved mailbox or lifecycle reset capability is exposed to this run; No product pass is claimed; each entry is terminally passed over with its prerequisite gap retained"
     },
     {
       "id": "GRT003-VALID-001",
@@ -662,15 +664,17 @@
       "scenarioId": "GRT-024",
       "severity": "MEDIUM",
       "title": "Organization and public-funding lifecycle is incomplete",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER_MISSING_RUN_SCOPED_FIXTURES",
+      "testedAt": "2026-09-18T05:20:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/coverage-passovers/known-fixture-gaps-result.json"
+      ],
+      "notes": "These four entries are coverage gaps rather than isolated product defects; The required disposable verified accounts, allowed/restricted identity pair, and complete organization lifecycle fixtures are not configured in the retest environment; No approved mailbox or lifecycle reset capability is exposed to this run; No product pass is claimed; each entry is terminally passed over with its prerequisite gap retained"
     },
     {
       "id": "PUB006-PROFILE-001",
@@ -678,15 +682,18 @@
       "scenarioId": "PUB-006",
       "severity": "MEDIUM",
       "title": "Public creator links redirect guests to Login",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "REPRODUCED_ON_DEPLOYED_CANDIDATE",
+      "testedAt": "2026-09-18T05:18:36.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://planar-truck-361704.uc.r.appspot.com/login?returnUrl=%2Fuser%2F6aa36ded5b99bdd47f874365",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/guest-public/PUB-006/PUB006-redirected-to-login-1792x976.png",
+        "evidence/guest-public/PUB-006/PUB006-result.json"
+      ],
+      "notes": "The real public catalog rendered an active published grant and creator link; Clicking the creator link opened the default app host rather than remaining on the candidate host; The signed-out destination redirected to Login with the intended public profile in returnUrl; The privacy-safe public profile was not rendered"
     },
     {
       "id": "PUB007-COVERAGE-001",
@@ -694,15 +701,17 @@
       "scenarioId": "PUB-007–014",
       "severity": "HIGH",
       "title": "Role, biodata and verification branches remain behind account creation",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER_MISSING_RUN_SCOPED_FIXTURES",
+      "testedAt": "2026-09-18T05:20:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/coverage-passovers/known-fixture-gaps-result.json"
+      ],
+      "notes": "These four entries are coverage gaps rather than isolated product defects; The required disposable verified accounts, allowed/restricted identity pair, and complete organization lifecycle fixtures are not configured in the retest environment; No approved mailbox or lifecycle reset capability is exposed to this run; No product pass is claimed; each entry is terminally passed over with its prerequisite gap retained"
     },
     {
       "id": "PUB013-DRAFT-001",
@@ -710,15 +719,18 @@
       "scenarioId": "PUB-013",
       "severity": "MEDIUM",
       "title": "Auto-restored signup drafts have no Resume or Discard controls",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:16:08.792Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/shared/signup-draft/signup-draft-explicit-decision-1792x976.png",
+        "evidence/shared/signup-draft/signup-draft-result.json"
+      ],
+      "notes": "Real deployed draft API persists non-secret signup data; Reload hides PII until Resume signup is selected; Resume and Discard draft controls are visible and functional; A separate Chrome context cannot see the draft or its PII; Discard removes restored values and the recovery controls; No observed request returned 5xx"
     },
     {
       "id": "PUB017-COVERAGE-001",
@@ -726,15 +738,17 @@
       "scenarioId": "PUB-017",
       "severity": "MEDIUM",
       "title": "Allowed/restricted account pair was not available",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER_MISSING_RUN_SCOPED_FIXTURES",
+      "testedAt": "2026-09-18T05:20:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/coverage-passovers/known-fixture-gaps-result.json"
+      ],
+      "notes": "These four entries are coverage gaps rather than isolated product defects; The required disposable verified accounts, allowed/restricted identity pair, and complete organization lifecycle fixtures are not configured in the retest environment; No approved mailbox or lifecycle reset capability is exposed to this run; No product pass is claimed; each entry is terminally passed over with its prerequisite gap retained"
     },
     {
       "id": "KYCR-F004",
@@ -1062,15 +1076,18 @@
       "scenarioId": "ASS-036",
       "severity": "HIGH",
       "title": "same owned project's displayed current price changed from $57,900.33 to $0 after refresh and remained $0 after ten seconds, while ownership and por…",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:33:23.409Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-036/D-A16-holding-price-stable-after-refresh-1792x976.png",
+        "evidence/assessor/ASS-036/D-A16-result.json"
+      ],
+      "notes": "The deployed Assessor fixture has a real owned marketplace holding; Its displayed current price is non-zero before refresh; The exact displayed current price remains unchanged after refresh; No observed request returned 5xx"
     },
     {
       "id": "D-A17",
@@ -1254,15 +1271,19 @@
       "scenarioId": "ASS-006",
       "severity": "MEDIUM",
       "title": "Alias is ignored on the public profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:27:38.358Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user/63b9b30ec4c53f00275907af",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-006/G-A10-profile-controls-named-1792x976.png",
+        "evidence/assessor/ASS-006/D-A29-public-profile-saved-alias-1792x976.png",
+        "evidence/assessor/ASS-006/ASS-006-profile-identity-result.json"
+      ],
+      "notes": "First Name, Last Name, City, Alias, primary email, and primary phone expose programmatic names; The authenticated canonical public profile renders the saved Assessor alias; The distinct first-name plus last-name identity is not rendered in place of the alias; No observed request returned 5xx"
     },
     {
       "id": "D-A30",
@@ -1334,15 +1355,18 @@
       "scenarioId": "ASS-010",
       "severity": "HIGH",
       "title": "Fresh signup resumes a previous tester's identity draft",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:16:08.792Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/shared/signup-draft/signup-draft-explicit-decision-1792x976.png",
+        "evidence/shared/signup-draft/signup-draft-result.json"
+      ],
+      "notes": "Real deployed draft API persists non-secret signup data; Reload hides PII until Resume signup is selected; Resume and Discard draft controls are visible and functional; A separate Chrome context cannot see the draft or its PII; Discard removes restored values and the recovery controls; No observed request returned 5xx"
     },
     {
       "id": "D-A35",
@@ -3158,15 +3182,20 @@
       "scenarioId": "ASS-035",
       "severity": "HIGH",
       "title": "Enabled feedback launcher is absent, blocking every feedback submission branch",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:34:42.830Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallet",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-035/D-A150-feedback-launcher-dashboard-1792x976.png",
+        "evidence/assessor/ASS-035/D-A150-feedback-launcher-manage-assessments-1792x976.png",
+        "evidence/assessor/ASS-035/D-A150-feedback-launcher-wallet-1792x976.png",
+        "evidence/assessor/ASS-035/D-A150-result.json"
+      ],
+      "notes": "The enabled global feedback launcher is visible on Dashboard; The enabled global feedback launcher is visible on Manage Assessments; The enabled global feedback launcher is visible on Wallet; Each launcher exposes an Open feedback form control"
     },
     {
       "id": "D-A151",
@@ -3174,15 +3203,18 @@
       "scenarioId": "ASS-035",
       "severity": "HIGH",
       "title": "Assistant reports irrelevant answers as 95% high-confidence grounded help",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "REPRODUCED_ON_DEPLOYED_CANDIDATE",
+      "testedAt": "2026-09-18T05:40:50.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/assistant?from=/dashboard",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-035/D-A151-incomplete-high-confidence-answer-1792x976.png",
+        "evidence/assessor/ASS-035/D-A151-result.json"
+      ],
+      "notes": "The answer was topically related and cited the Assessments and assessors knowledge source; The answer did not explain how to return to the dashboard or how to open assigned assessments; The incomplete non-actionable answer was still labelled High confidence at 75 percent"
     },
     {
       "id": "D-A152",
@@ -3190,15 +3222,18 @@
       "scenarioId": "ASS-035",
       "severity": "HIGH",
       "title": "Assistant support handoff reports success without creating an actionable handoff",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:44:26.553Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/support?requestId=6aaccfb46b8d9dde2f728db2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-035/D-A152-traceable-support-handoff-1792x976.png",
+        "evidence/assessor/ASS-035/D-A152-result.json"
+      ],
+      "notes": "Contact support returned a concrete support-request identifier; Open support request navigated to the exact request detail; The persisted request is titled CIC Assistant handoff and opens an actionable Support Session; The test-created request was cancelled through the visible UI after verification"
     },
     {
       "id": "D-A153",
@@ -3206,15 +3241,19 @@
       "scenarioId": "ASS-035",
       "severity": "HIGH",
       "title": "Assistant omits privacy refusal and irreversible-action safeguards",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:38:53.495Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/assistant?from=/dashboard",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-035/D-A153-private-records-refused-1792x976.png",
+        "evidence/assessor/ASS-035/D-A153-irreversible-action-refused-1792x976.png",
+        "evidence/assessor/ASS-035/D-A153-result.json"
+      ],
+      "notes": "The Assistant refuses disclosure of another member private assessments, contacts, and files; The privacy refusal explains the authorization boundary and reports low confidence; The Assistant refuses account closure and fund withdrawal without confirmation; The irreversible-action refusal requires explicit review and confirmation and marks the action unsupported"
     },
     {
       "id": "D-A154",
@@ -3222,15 +3261,18 @@
       "scenarioId": "ASS-035",
       "severity": "MEDIUM",
       "title": "Assistant silently truncates long prompts before persistence",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:37:44.982Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/assistant?from=/dashboard",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-035/D-A154-long-prompt-end-marker-after-refresh-1792x976.png",
+        "evidence/assessor/ASS-035/D-A154-result.json"
+      ],
+      "notes": "The input retained all characters through the explicit end marker before submission; A visible character counter reported the exact prompt length against the 2000-character limit; The persisted audit still contained the end marker after full refresh"
     },
     {
       "id": "D-A155",
@@ -3494,15 +3536,18 @@
       "scenarioId": "ASS-001",
       "severity": "MEDIUM",
       "title": "Login relies on placeholders as the only visible labels and the source of the computed accessible names",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:13:59.622Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/login",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-001/G-A7-login-visible-labels-1792x976.png",
+        "evidence/assessor/ASS-001/G-A7-result.json"
+      ],
+      "notes": "Visible labels remain after entry, both fields retain programmatic label associations, and the submit control remains visibly named."
     },
     {
       "id": "G-A8",
@@ -3526,15 +3571,19 @@
       "scenarioId": "ASS-005",
       "severity": "MEDIUM",
       "title": "Mobile account tab strip does not horizontally scroll",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:30:19.292Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "390x844",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-005/G-A9-account-tabs-360x800.png",
+        "evidence/assessor/ASS-005/G-A9-account-tabs-390x844.png",
+        "evidence/assessor/ASS-005/G-A9-result.json"
+      ],
+      "notes": "At 360x800 and 390x844 the account-tab strip exposes an explicit right-scroll control; After scrolling, the left-scroll control and final Assistant tab are reachable; The navigation region stays within the viewport at both affected widths"
     },
     {
       "id": "G-A10",
@@ -3542,15 +3591,19 @@
       "scenarioId": "ASS-006",
       "severity": "MEDIUM",
       "title": "Profile text inputs lack programmatic labels",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:27:38.358Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user/63b9b30ec4c53f00275907af",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-006/G-A10-profile-controls-named-1792x976.png",
+        "evidence/assessor/ASS-006/D-A29-public-profile-saved-alias-1792x976.png",
+        "evidence/assessor/ASS-006/ASS-006-profile-identity-result.json"
+      ],
+      "notes": "First Name, Last Name, City, Alias, primary email, and primary phone expose programmatic names; The authenticated canonical public profile renders the saved Assessor alias; The distinct first-name plus last-name identity is not rendered in place of the alias; No observed request returned 5xx"
     },
     {
       "id": "G-A11",
@@ -3574,15 +3627,19 @@
       "scenarioId": "ASS-006",
       "severity": "MEDIUM",
       "title": "Public-profile responsive regressions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:29:02.825Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1024x768",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user/63b9b30ec4c53f00275907af",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-006/G-A12-public-profile-768x1024.png",
+        "evidence/assessor/ASS-006/G-A12-public-profile-1024x768.png",
+        "evidence/assessor/ASS-006/G-A12-result.json"
+      ],
+      "notes": "At 768x1024 all three assessment-expertise metric tiles are visible and in bounds; At 1024x768 the Assessment lens occupies a usable majority-width column instead of a narrow word stack; Both affected layouts keep the metrics and lens inside the viewport; No observed request returned 5xx"
     },
     {
       "id": "G-A13",
@@ -3894,15 +3951,18 @@
       "scenarioId": "ASS-034",
       "severity": "MEDIUM",
       "title": "Notification preference switches have empty accessible names",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:23:26.230Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-034/G-A32-named-preference-switches-1792x976.png",
+        "evidence/assessor/ASS-034/G-A32-result.json"
+      ],
+      "notes": "All four optional preference switches expose their visible names programmatically; Marketing email preference persisted after refresh; The original preference value was restored; No observed request returned 5xx"
     },
     {
       "id": "G-A33",
@@ -3910,15 +3970,18 @@
       "scenarioId": "ASS-035",
       "severity": "MEDIUM",
       "title": "Assistant prompt textarea has no accessible name",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:24:06.930Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/assistant",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-035/G-A33-named-assistant-prompt-1792x976.png",
+        "evidence/assessor/ASS-035/G-A33-result.json"
+      ],
+      "notes": "Assistant textarea exposes the accessible name Question for CIC Assistant; The prompt is visible, focusable, and accepts keyboard input; No query was submitted and no server-side record was created; No observed request returned 5xx"
     },
     {
       "id": "G-A34",
@@ -3926,15 +3989,18 @@
       "scenarioId": "ASS-035",
       "severity": "MEDIUM",
       "title": "Secure callback form controls have no accessible names",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:25:36.948Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/support",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-035/G-A34-named-secure-callback-controls-1792x976.png",
+        "evidence/assessor/ASS-035/G-A34-result.json"
+      ],
+      "notes": "Topic, phone, summary, and privacy-consent controls expose their visible purpose programmatically; The privacy-consent checkbox is keyboard-operable and reflects checked state; The callback form was not submitted and no support request was created; No observed request returned 5xx"
     },
     {
       "id": "G-A35",
@@ -3942,15 +4008,18 @@
       "scenarioId": "ASS-036",
       "severity": "MEDIUM",
       "title": "Marketplace search input has no accessible name",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:31:16.558Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-036/G-A35-named-marketplace-search-1792x976.png",
+        "evidence/assessor/ASS-036/G-A35-result.json"
+      ],
+      "notes": "Marketplace search exposes the accessible name Search marketplace titles and aliases; The field accepts a Unicode no-match query and can be cleared; No observed request returned 5xx"
     },
     {
       "id": "G-A36",
@@ -3990,15 +4059,18 @@
       "scenarioId": "INV-003",
       "severity": "HIGH",
       "title": "Cancelled signup draft persists",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:16:08.792Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/shared/signup-draft/signup-draft-explicit-decision-1792x976.png",
+        "evidence/shared/signup-draft/signup-draft-result.json"
+      ],
+      "notes": "Real deployed draft API persists non-secret signup data; Reload hides PII until Resume signup is selected; Resume and Discard draft controls are visible and functional; A separate Chrome context cannot see the draft or its PII; Discard removes restored values and the recovery controls; No observed request returned 5xx"
     },
     {
       "id": "INV-F002",

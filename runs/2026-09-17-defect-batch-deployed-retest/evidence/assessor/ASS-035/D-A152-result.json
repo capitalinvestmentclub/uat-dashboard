@@ -1,0 +1,24 @@
+{
+  "findingIds": [
+    "D-A152"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/support?requestId=6aaccfb46b8d9dde2f728db2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "requestId": "6aaccfb46b8d9dde2f728db2"
+  },
+  "assertions": [
+    "Contact support returned a concrete support-request identifier",
+    "Open support request navigated to the exact request detail",
+    "The persisted request is titled CIC Assistant handoff and opens an actionable Support Session",
+    "The test-created request was cancelled through the visible UI after verification"
+  ],
+  "screenshot": "D-A152-traceable-support-handoff-1792x976.png",
+  "testedAt": "2026-09-18T05:44:26.553Z"
+}

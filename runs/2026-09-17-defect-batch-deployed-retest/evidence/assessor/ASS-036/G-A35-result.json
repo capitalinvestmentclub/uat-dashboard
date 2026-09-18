@@ -1,0 +1,20 @@
+{
+  "findingIds": [
+    "G-A35"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Marketplace search exposes the accessible name Search marketplace titles and aliases",
+    "The field accepts a Unicode no-match query and can be cleared",
+    "No observed request returned 5xx"
+  ],
+  "screenshot": "G-A35-named-marketplace-search-1792x976.png",
+  "testedAt": "2026-09-18T05:31:16.558Z"
+}

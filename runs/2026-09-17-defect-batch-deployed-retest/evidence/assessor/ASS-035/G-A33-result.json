@@ -1,0 +1,21 @@
+{
+  "findingIds": [
+    "G-A33"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/assistant",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Assistant textarea exposes the accessible name Question for CIC Assistant",
+    "The prompt is visible, focusable, and accepts keyboard input",
+    "No query was submitted and no server-side record was created",
+    "No observed request returned 5xx"
+  ],
+  "screenshot": "G-A33-named-assistant-prompt-1792x976.png",
+  "testedAt": "2026-09-18T05:24:06.930Z"
+}

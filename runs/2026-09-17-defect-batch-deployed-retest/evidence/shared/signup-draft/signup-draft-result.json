@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "PUB013-DRAFT-001",
+    "D-A34",
+    "INV-F001"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Real deployed draft API persists non-secret signup data",
+    "Reload hides PII until Resume signup is selected",
+    "Resume and Discard draft controls are visible and functional",
+    "A separate Chrome context cannot see the draft or its PII",
+    "Discard removes restored values and the recovery controls",
+    "No observed request returned 5xx"
+  ],
+  "screenshot": "signup-draft-explicit-decision-1792x976.png",
+  "testedAt": "2026-09-18T05:16:08.792Z"
+}

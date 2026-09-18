@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "D-A154"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/assistant?from=/dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "promptLength": 1562
+  },
+  "assertions": [
+    "The input retained all characters through the explicit end marker before submission",
+    "A visible character counter reported the exact prompt length against the 2000-character limit",
+    "The persisted audit still contained the end marker after full refresh"
+  ],
+  "screenshot": "D-A154-long-prompt-end-marker-after-refresh-1792x976.png",
+  "testedAt": "2026-09-18T05:37:44.982Z"
+}

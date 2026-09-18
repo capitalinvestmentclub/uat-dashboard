@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "D-A150"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallet",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The enabled global feedback launcher is visible on Dashboard",
+    "The enabled global feedback launcher is visible on Manage Assessments",
+    "The enabled global feedback launcher is visible on Wallet",
+    "Each launcher exposes an Open feedback form control"
+  ],
+  "screenshots": [
+    "D-A150-feedback-launcher-dashboard-1792x976.png",
+    "D-A150-feedback-launcher-manage-assessments-1792x976.png",
+    "D-A150-feedback-launcher-wallet-1792x976.png"
+  ],
+  "testedAt": "2026-09-18T05:34:42.830Z"
+}

@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "G-A10",
+    "D-A29"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user/63b9b30ec4c53f00275907af",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "First Name, Last Name, City, Alias, primary email, and primary phone expose programmatic names",
+    "The authenticated canonical public profile renders the saved Assessor alias",
+    "The distinct first-name plus last-name identity is not rendered in place of the alias",
+    "No observed request returned 5xx"
+  ],
+  "screenshots": [
+    "G-A10-profile-controls-named-1792x976.png",
+    "D-A29-public-profile-saved-alias-1792x976.png"
+  ],
+  "testedAt": "2026-09-18T05:27:38.358Z"
+}
