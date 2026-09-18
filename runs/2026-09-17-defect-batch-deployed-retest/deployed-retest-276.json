@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T09:15:00Z",
+  "updatedAt": "2026-09-18T09:22:49Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -1238,15 +1238,18 @@
       "scenarioId": "ASS-036",
       "severity": "HIGH",
       "title": "Sell action is inert for valid partial and full listings",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "FAIL",
+      "testedAt": "2026-09-18T09:22:49Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A015-marketplace-sell/D-A15-valid-partial-sell-error.png",
+        "evidence/assessor/D-A015-marketplace-sell/D-A15-result.json"
+      ],
+      "notes": "The Assessor had one clean synthetic project holding with 0.01% available and zero active listings; The deployed sell modal accepted a valid partial 0.001% and USD 5 price with its default 12-hour expiry; The sell request reached the deployed API but returned a non-success response; The UI displayed only Something went wrong please try again and retained zero listed assets"
     },
     {
       "id": "D-A16",
@@ -3649,15 +3652,18 @@
       "scenarioId": "ASS-036",
       "severity": "HIGH",
       "title": "Active listing does not reserve displayed equity and a second over-available listing hangs",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:22:49Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A015-marketplace-sell/D-A15-valid-partial-sell-error.png",
+        "evidence/assessor/D-A015-marketplace-sell/D-A159-D-A160-result.json"
+      ],
+      "notes": "The clean holding and zero-listing baseline were confirmed before the sell attempt; The valid listing prerequisite failed at the deployed sell API and no listing was created; No reservation, over-available second listing, or cancellation state existed to exercise"
     },
     {
       "id": "D-A160",
@@ -3665,15 +3671,18 @@
       "scenarioId": "ASS-036",
       "severity": "HIGH",
       "title": "Seller cannot cancel or revoke an active listing",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "PASSED_OVER",
+      "testedAt": "2026-09-18T09:22:49Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A015-marketplace-sell/D-A15-valid-partial-sell-error.png",
+        "evidence/assessor/D-A015-marketplace-sell/D-A159-D-A160-result.json"
+      ],
+      "notes": "The clean holding and zero-listing baseline were confirmed before the sell attempt; The valid listing prerequisite failed at the deployed sell API and no listing was created; No reservation, over-available second listing, or cancellation state existed to exercise"
     },
     {
       "id": "D-A161",
@@ -3825,15 +3834,18 @@
       "scenarioId": "ASS-036",
       "severity": "MEDIUM",
       "title": "sell modal gives all three inputs id=outlined-adornment-weight; project has no accessible name and percentage/price are both exposed as weight",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "FAIL",
+      "testedAt": "2026-09-18T09:22:49Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A015-marketplace-sell/D-A15-valid-partial-sell-error.png",
+        "evidence/assessor/D-A015-marketplace-sell/G-A6-result.json"
+      ],
+      "notes": "The asset, percentage, and price inputs still share the duplicated id outlined-adornment-weight; The percentage and price inputs still expose the generic accessible name weight rather than their visible labels"
     },
     {
       "id": "G-A7",

@@ -1,0 +1,24 @@
+{
+  "findingIds": [
+    "D-A15"
+  ],
+  "outcome": "FAIL",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The Assessor had one clean synthetic project holding with 0.01% available and zero active listings",
+    "The deployed sell modal accepted a valid partial 0.001% and USD 5 price with its default 12-hour expiry",
+    "The sell request reached the deployed API but returned a non-success response",
+    "The UI displayed only Something went wrong please try again and retained zero listed assets"
+  ],
+  "failure": "A valid partial listing still cannot be created, so the core sell action remains broken despite now surfacing a generic error.",
+  "screenshots": [
+    "D-A15-valid-partial-sell-error.png"
+  ],
+  "testedAt": "2026-09-18T09:22:49Z"
+}
