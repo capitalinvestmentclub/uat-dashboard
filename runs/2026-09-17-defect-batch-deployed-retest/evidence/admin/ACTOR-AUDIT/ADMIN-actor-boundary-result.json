@@ -1,0 +1,50 @@
+{
+  "findingIds": [
+    "ADM055-RATE-001",
+    "ADM053-DATE-001",
+    "ADM053-STATE-001",
+    "ADM054-AUD-001",
+    "ADM056-STALE-001",
+    "ADM056-HOLD-001",
+    "ADM056-DSAR-001",
+    "ADM055-BACKFILL-001"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "ADMIN_ACTOR_UNAVAILABLE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/profile-reports",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": [
+    {
+      "route": "/admin/compliance",
+      "finalPath": "/admin/compliance",
+      "denied": true
+    },
+    {
+      "route": "/admin/ledger",
+      "finalPath": "/admin/ledger",
+      "denied": true
+    },
+    {
+      "route": "/user-management",
+      "finalPath": "/user-management",
+      "denied": true
+    },
+    {
+      "route": "/admin/profile-reports",
+      "finalPath": "/admin/profile-reports",
+      "denied": true
+    }
+  ],
+  "assertions": [
+    "The authenticated Test Assessor is denied access to Compliance Operations, Admin Ledger, User Management, and Profile Reports",
+    "The eight Admin findings require an authorized Admin or Super Admin plus disposable subject/grant fixtures",
+    "No administrative mutation was attempted through the unauthorized account"
+  ],
+  "screenshot": "ADMIN-actor-boundary-1792x976.png",
+  "testedAt": "2026-09-18T07:24:11.466Z"
+}

@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T07:21:59Z",
+  "updatedAt": "2026-09-18T07:33:25.344Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -454,15 +454,18 @@
       "scenarioId": "ADM-055",
       "severity": "MEDIUM",
       "title": "Zero-duration window silently changes to one hour",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "ADMIN_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:24:11.466Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/profile-reports",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-1792x976.png",
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Test Assessor is denied access to Compliance Operations, Admin Ledger, User Management, and Profile Reports; The eight Admin findings require an authorized Admin or Super Admin plus disposable subject/grant fixtures; No administrative mutation was attempted through the unauthorized account"
     },
     {
       "id": "ADM053-DATE-001",
@@ -470,15 +473,18 @@
       "scenarioId": "ADM-053",
       "severity": "MEDIUM",
       "title": "Grant dates drift between views",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "ADMIN_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:24:11.466Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/profile-reports",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-1792x976.png",
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Test Assessor is denied access to Compliance Operations, Admin Ledger, User Management, and Profile Reports; The eight Admin findings require an authorized Admin or Super Admin plus disposable subject/grant fixtures; No administrative mutation was attempted through the unauthorized account"
     },
     {
       "id": "ADM053-STATE-001",
@@ -486,15 +492,18 @@
       "scenarioId": "ADM-053",
       "severity": "MEDIUM",
       "title": "Grant panels remain stale after decisions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "ADMIN_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:24:11.466Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/profile-reports",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-1792x976.png",
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Test Assessor is denied access to Compliance Operations, Admin Ledger, User Management, and Profile Reports; The eight Admin findings require an authorized Admin or Super Admin plus disposable subject/grant fixtures; No administrative mutation was attempted through the unauthorized account"
     },
     {
       "id": "ADM054-AUD-001",
@@ -502,15 +511,18 @@
       "scenarioId": "ADM-054",
       "severity": "MEDIUM",
       "title": "Direct moderation actions lack visible rationale capture",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "ADMIN_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:24:11.466Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/profile-reports",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-1792x976.png",
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Test Assessor is denied access to Compliance Operations, Admin Ledger, User Management, and Profile Reports; The eight Admin findings require an authorized Admin or Super Admin plus disposable subject/grant fixtures; No administrative mutation was attempted through the unauthorized account"
     },
     {
       "id": "ADM056-STALE-001",
@@ -518,15 +530,18 @@
       "scenarioId": "ADM-056",
       "severity": "MEDIUM",
       "title": "Lock and unlock leave stale row state",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "ADMIN_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:24:11.466Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/profile-reports",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-1792x976.png",
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Test Assessor is denied access to Compliance Operations, Admin Ledger, User Management, and Profile Reports; The eight Admin findings require an authorized Admin or Super Admin plus disposable subject/grant fixtures; No administrative mutation was attempted through the unauthorized account"
     },
     {
       "id": "ADM056-HOLD-001",
@@ -534,15 +549,18 @@
       "scenarioId": "ADM-056",
       "severity": "MEDIUM",
       "title": "No isolated subject-level legal hold path",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "ADMIN_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:24:11.466Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/profile-reports",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-1792x976.png",
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Test Assessor is denied access to Compliance Operations, Admin Ledger, User Management, and Profile Reports; The eight Admin findings require an authorized Admin or Super Admin plus disposable subject/grant fixtures; No administrative mutation was attempted through the unauthorized account"
     },
     {
       "id": "ADM056-DSAR-001",
@@ -550,15 +568,18 @@
       "scenarioId": "ADM-056",
       "severity": "MEDIUM",
       "title": "No isolated export fulfillment path was available",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "ADMIN_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:24:11.466Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/profile-reports",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-1792x976.png",
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Test Assessor is denied access to Compliance Operations, Admin Ledger, User Management, and Profile Reports; The eight Admin findings require an authorized Admin or Super Admin plus disposable subject/grant fixtures; No administrative mutation was attempted through the unauthorized account"
     },
     {
       "id": "ADM055-BACKFILL-001",
@@ -566,15 +587,18 @@
       "scenarioId": "ADM-055",
       "severity": "MEDIUM",
       "title": "Broad Backfill action is exposed beside filters",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "ADMIN_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:24:11.466Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/profile-reports",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-1792x976.png",
+        "evidence/admin/ACTOR-AUDIT/ADMIN-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Test Assessor is denied access to Compliance Operations, Admin Ledger, User Management, and Profile Reports; The eight Admin findings require an authorized Admin or Super Admin plus disposable subject/grant fixtures; No administrative mutation was attempted through the unauthorized account"
     },
     {
       "id": "ORG019-HIST-001",
@@ -582,15 +606,18 @@
       "scenarioId": "ORG-019",
       "severity": "MEDIUM",
       "title": "Announcement history truncates and activity duplicates",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T07:30:55.985Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/organizations",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/organization/ORG-019/ORG019-complete-deduplicated-history-1792x976.png",
+        "evidence/organization/ORG-019/ORG019-HIST-001-result.json"
+      ],
+      "notes": "The real selected organization exposes its Activity timeline; The complete current timeline fits within the recent-history window; No duplicate direct activity row text appears in the rendered timeline"
     },
     {
       "id": "ORG024-STALE-001",
@@ -598,15 +625,18 @@
       "scenarioId": "ORG-024",
       "severity": "MEDIUM",
       "title": "Stale profile writes silently overwrite newer values",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T07:32:06.611Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/organizations",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/organization/ORG-024/ORG024-stale-save-conflict-1792x976.png",
+        "evidence/organization/ORG-024/ORG024-STALE-001-result.json"
+      ],
+      "notes": "A first tab persisted a uniquely marked profile tagline; A stale second tab was rejected instead of overwriting the newer value; The stale tab reloaded the winning value after the conflict; The original tagline was restored and verified after reload"
     },
     {
       "id": "ORG025-COVERAGE-001",
@@ -632,15 +662,18 @@
       "scenarioId": "GRT-003",
       "severity": "HIGH",
       "title": "Blank grant step advances to publication controls",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T07:27:37.938Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/grantor/GRT-003/GRT003-blank-grant-blocked-1792x976.png",
+        "evidence/grantor/GRT-003/GRT003-VALID-001-result.json"
+      ],
+      "notes": "Clicking Next on a blank Create Grant step shows the missing-required-details alert; Grant title receives explicit required-field feedback; Publication and draft controls remain unavailable because the form did not advance; No grant was created or saved"
     },
     {
       "id": "GRT014-STATE-001",
@@ -648,15 +681,18 @@
       "scenarioId": "GRT-014, GRT-017",
       "severity": "MEDIUM",
       "title": "Grant panels remain stale after decisions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "NO_ISOLATED_GRANTOR_DECISION_FIXTURE",
+      "testedAt": "2026-09-18T07:33:25.344Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/grantor/GRT-014/GRT014-assessor-owned-grant-inventory-1792x976.png",
+        "evidence/grantor/GRT-014/GRT014-STATE-001-result.json"
+      ],
+      "notes": "Manage Grants contains real terminal and legacy grant records; The authenticated actor is Test Assessor, not the required synthetic Grantor; No isolated approval/disbursement/chat/feedback decision fixture was identified; No existing grant or application was mutated"
     },
     {
       "id": "GRT024-COVERAGE-001",
@@ -756,15 +792,19 @@
       "scenarioId": "KYCR-003",
       "severity": "MEDIUM",
       "title": "Time-range change gives Request Distribution the wrong accessible name",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "INTERNAL_OPERATIONS_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:25:36.296Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/internal-operations/ACTOR-AUDIT/KYC-internal-actor-unavailable-1792x976.png",
+        "evidence/internal-operations/ACTOR-AUDIT/SUPPORT-internal-actor-unavailable-1792x976.png",
+        "evidence/internal-operations/ACTOR-AUDIT/KYC-SUPPORT-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Assessor exposes neither Reviewer nor Approver controls on the KYC dashboard; Notification Operations, Feedback Operations, and Admin command center reject the account role; The seven findings require internal KYC or Admin/Support actors and seeded operational records"
     },
     {
       "id": "KYCA-F007",
@@ -772,15 +812,19 @@
       "scenarioId": "KYCA-014 / KYCA-028",
       "severity": "MEDIUM",
       "title": "Correction filters are unnamed and terminal Review request is inert",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "INTERNAL_OPERATIONS_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:25:36.296Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/internal-operations/ACTOR-AUDIT/KYC-internal-actor-unavailable-1792x976.png",
+        "evidence/internal-operations/ACTOR-AUDIT/SUPPORT-internal-actor-unavailable-1792x976.png",
+        "evidence/internal-operations/ACTOR-AUDIT/KYC-SUPPORT-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Assessor exposes neither Reviewer nor Approver controls on the KYC dashboard; Notification Operations, Feedback Operations, and Admin command center reject the account role; The seven findings require internal KYC or Admin/Support actors and seeded operational records"
     },
     {
       "id": "SUP-F003",
@@ -788,15 +832,19 @@
       "scenarioId": "SUP-002",
       "severity": "MEDIUM",
       "title": "Malformed template sample JSON silently previews default data",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "INTERNAL_OPERATIONS_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:25:36.296Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/internal-operations/ACTOR-AUDIT/KYC-internal-actor-unavailable-1792x976.png",
+        "evidence/internal-operations/ACTOR-AUDIT/SUPPORT-internal-actor-unavailable-1792x976.png",
+        "evidence/internal-operations/ACTOR-AUDIT/KYC-SUPPORT-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Assessor exposes neither Reviewer nor Approver controls on the KYC dashboard; Notification Operations, Feedback Operations, and Admin command center reject the account role; The seven findings require internal KYC or Admin/Support actors and seeded operational records"
     },
     {
       "id": "SUP-F004",
@@ -804,15 +852,19 @@
       "scenarioId": "SUP-002",
       "severity": "MEDIUM",
       "title": "Benign markup displays literal entity text in preview",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "INTERNAL_OPERATIONS_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:25:36.296Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/internal-operations/ACTOR-AUDIT/KYC-internal-actor-unavailable-1792x976.png",
+        "evidence/internal-operations/ACTOR-AUDIT/SUPPORT-internal-actor-unavailable-1792x976.png",
+        "evidence/internal-operations/ACTOR-AUDIT/KYC-SUPPORT-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Assessor exposes neither Reviewer nor Approver controls on the KYC dashboard; Notification Operations, Feedback Operations, and Admin command center reject the account role; The seven findings require internal KYC or Admin/Support actors and seeded operational records"
     },
     {
       "id": "SUP-F005",
@@ -820,15 +872,19 @@
       "scenarioId": "SUP-003",
       "severity": "MEDIUM",
       "title": "Feedback launcher is absent on Admin portal pages despite enabled visibility",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "INTERNAL_OPERATIONS_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:25:36.296Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/internal-operations/ACTOR-AUDIT/KYC-internal-actor-unavailable-1792x976.png",
+        "evidence/internal-operations/ACTOR-AUDIT/SUPPORT-internal-actor-unavailable-1792x976.png",
+        "evidence/internal-operations/ACTOR-AUDIT/KYC-SUPPORT-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Assessor exposes neither Reviewer nor Approver controls on the KYC dashboard; Notification Operations, Feedback Operations, and Admin command center reject the account role; The seven findings require internal KYC or Admin/Support actors and seeded operational records"
     },
     {
       "id": "SUP-F006",
@@ -836,15 +892,19 @@
       "scenarioId": "SUP-003",
       "severity": "MEDIUM",
       "title": "Feedback SLA date shifts to the prior local day",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "INTERNAL_OPERATIONS_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:25:36.296Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/internal-operations/ACTOR-AUDIT/KYC-internal-actor-unavailable-1792x976.png",
+        "evidence/internal-operations/ACTOR-AUDIT/SUPPORT-internal-actor-unavailable-1792x976.png",
+        "evidence/internal-operations/ACTOR-AUDIT/KYC-SUPPORT-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Assessor exposes neither Reviewer nor Approver controls on the KYC dashboard; Notification Operations, Feedback Operations, and Admin command center reject the account role; The seven findings require internal KYC or Admin/Support actors and seeded operational records"
     },
     {
       "id": "SUP-F007",
@@ -852,15 +912,19 @@
       "scenarioId": "SUP-004",
       "severity": "MEDIUM",
       "title": "Support actionable count includes terminal records",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "INTERNAL_OPERATIONS_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T07:25:36.296Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/internal-operations/ACTOR-AUDIT/KYC-internal-actor-unavailable-1792x976.png",
+        "evidence/internal-operations/ACTOR-AUDIT/SUPPORT-internal-actor-unavailable-1792x976.png",
+        "evidence/internal-operations/ACTOR-AUDIT/KYC-SUPPORT-actor-boundary-result.json"
+      ],
+      "notes": "The authenticated Assessor exposes neither Reviewer nor Approver controls on the KYC dashboard; Notification Operations, Feedback Operations, and Admin command center reject the account role; The seven findings require internal KYC or Admin/Support actors and seeded operational records"
     },
     {
       "id": "D-A1",

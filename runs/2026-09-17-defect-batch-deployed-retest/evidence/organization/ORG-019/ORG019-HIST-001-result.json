@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "ORG019-HIST-001"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/organizations",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "recentRowCount": 1,
+    "expandedRowCount": 1,
+    "olderAvailable": false,
+    "duplicateRowCount": 0
+  },
+  "assertions": [
+    "The real selected organization exposes its Activity timeline",
+    "The complete current timeline fits within the recent-history window",
+    "No duplicate direct activity row text appears in the rendered timeline"
+  ],
+  "screenshot": "ORG019-complete-deduplicated-history-1792x976.png",
+  "testedAt": "2026-09-18T07:30:55.985Z"
+}

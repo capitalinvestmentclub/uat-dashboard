@@ -1,0 +1,27 @@
+{
+  "findingIds": [
+    "GRT014-STATE-001"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "NO_ISOLATED_GRANTOR_DECISION_FIXTURE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "authenticatedRole": "Assessor",
+    "visibleGrantLinks": 30,
+    "isolatedGRT014FixtureIdentified": false
+  },
+  "assertions": [
+    "Manage Grants contains real terminal and legacy grant records",
+    "The authenticated actor is Test Assessor, not the required synthetic Grantor",
+    "No isolated approval/disbursement/chat/feedback decision fixture was identified",
+    "No existing grant or application was mutated"
+  ],
+  "screenshot": "GRT014-assessor-owned-grant-inventory-1792x976.png",
+  "testedAt": "2026-09-18T07:33:25.344Z"
+}
