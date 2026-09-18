@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T08:34:27Z",
+  "updatedAt": "2026-09-18T08:38:00Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -132,15 +132,17 @@
       "scenarioId": "PIT-020",
       "severity": "MEDIUM",
       "title": "Completed assessment link opens an editable blank form",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "EXACT_TERMINAL_RECORD_ACTORS_UNAVAILABLE",
+      "testedAt": "2026-09-18T08:38:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6aa39a936aaab838c8d7bad4?id=6aa39a936aaab838c8d7bad4&tab=2&reviewId=6aa3b33b57a9417382c99db1",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-019-completed-assessment/PIT-F019-result.json"
+      ],
+      "notes": "The exact historical paid Review record and deep link remain present; The available Assessor actor received You are not authorized to edit this assessment draft and no editable terminal form was exposed; The available Pitcher actor received You don't have permission to access this route because it is not the historical request owner; These negative controls do not prove the required immutable completed-result experience for the owning historical actors, whose authenticated sessions are unavailable"
     },
     {
       "id": "PIT-F020",

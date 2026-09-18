@@ -1,0 +1,17 @@
+{
+  "findingIds": ["PIT-F019"],
+  "outcome": "PASSED_OVER",
+  "disposition": "EXACT_TERMINAL_RECORD_ACTORS_UNAVAILABLE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6aa39a936aaab838c8d7bad4?id=6aa39a936aaab838c8d7bad4&tab=2&reviewId=6aa3b33b57a9417382c99db1",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {"width": 1792, "height": 976},
+  "assertions": [
+    "The exact historical paid Review record and deep link remain present",
+    "The available Assessor actor received You are not authorized to edit this assessment draft and no editable terminal form was exposed",
+    "The available Pitcher actor received You don't have permission to access this route because it is not the historical request owner",
+    "These negative controls do not prove the required immutable completed-result experience for the owning historical actors, whose authenticated sessions are unavailable"
+  ],
+  "screenshots": [],
+  "testedAt": "2026-09-18T08:38:00Z"
+}
