@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T21:04:23.060Z",
+  "updatedAt": "2026-09-18T21:08:35.423Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1403,15 +1403,18 @@
       "previousDisposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
       "wave": 3,
       "familyId": "requests",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T21:08:35.423Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=2&id=63d8ac4006621f0027c9ef01&requestId=6aada27e6b8d9dde2f79731f",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A54/D-A54-requester-access-denied.png",
+        "evidence/assessor/D-A54/D-A54-result.json"
+      ],
+      "notes": "The authenticated request owner opened the exact accepted-request response URL in deployed Chrome; The draft endpoint denied access with HTTP 403: You don't have permission to access this route; Neither Submit nor Save as draft was rendered to the requester; No response content was entered or submitted"
     },
     {
       "id": "D-A55",
