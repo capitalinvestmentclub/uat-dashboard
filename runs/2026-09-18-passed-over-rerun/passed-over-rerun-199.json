@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T22:33:50.946Z",
+  "updatedAt": "2026-09-18T22:36:49.399Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1976,15 +1976,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "assessment",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T22:36:49.399Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadbb076b8d9dde2f7aa2e8",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A87/D-A87-navigation-cancel-preserves-editor.png",
+        "evidence/D-A87/D-A87-result.json"
+      ],
+      "notes": "Editing a saved Review displayed the explicit Unsaved changes state; Selecting Overview opened a browser confirmation explaining that unsaved assessment changes would be lost; Dismissing the prompt kept the same reviewId route and preserved the in-memory edit; Accepting the prompt navigated away, and reopening the draft restored the saved value rather than the discarded edit"
     },
     {
       "id": "D-A88",
