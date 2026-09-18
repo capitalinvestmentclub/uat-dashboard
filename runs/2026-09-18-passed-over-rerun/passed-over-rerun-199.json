@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T20:39:46Z",
+  "updatedAt": "2026-09-18T20:44:30Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1241,17 +1241,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "communications",
-      "status": "BLOCKED",
-      "disposition": "REAL_EMAIL_FIXTURE_AT_MAXIMUM_ASSESSMENT_CAPACITY",
-      "testedAt": "2026-09-18T20:39:46Z",
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T20:44:30Z",
       "browser": "Chrome",
       "viewport": "1792x976",
       "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=1",
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
+        "evidence/assessor/D-A45/D-A45-free-request-requester-ui.png",
         "evidence/assessor/D-A44/D-A44-result.json"
       ],
-      "notes": "A real Pitcher-owned pitch submitted a new Review request to the mailbox-controlled Assessor through deployed Chrome.; The API rejected the request with HTTP 409: This assessor is currently at assessment capacity.; The Assessor capacity was raised from 5 to the allowed maximum 50 for one bounded recovery attempt, but the request remained rejected, proving at least 50 active assessments already occupy the fixture.; No request or email was created, so the corrected real-email calendar date could not be compared.; The Assessor capacity was restored to its original value of 5 after the attempt."
+      "notes": "After clearing stale test requests and temporarily raising the mailbox-controlled Assessor capacity to 50, deployed Chrome created real request 6aada27e6b8d9dde2f79731f.; The API persisted the response deadline as 2026-10-24.; The newly delivered Gmail message rendered Response due by October 24, 2026, exactly matching the requested date with no one-day shift.; The email was visually inspected in the real cic.test.assessor@gmail.com inbox immediately after delivery."
     },
     {
       "id": "D-A45",
@@ -1263,15 +1264,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "communications",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T20:44:30Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=2&id=63d8ac4006621f0027c9ef01",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A45/D-A45-free-request-requester-ui.png",
+        "evidence/assessor/D-A45/D-A45-result.json"
+      ],
+      "notes": "Deployed Chrome created a real free Review request with proposed fee USD 0.00 and delivered it to the mailbox-controlled Assessor.; The newly delivered Gmail message explicitly stated: You have a new free assessment request.; The subject and body used neutral assessment-request wording and did not describe the free request as paid.; The same email displayed the correct October 24, 2026 response deadline."
     },
     {
       "id": "D-A46",

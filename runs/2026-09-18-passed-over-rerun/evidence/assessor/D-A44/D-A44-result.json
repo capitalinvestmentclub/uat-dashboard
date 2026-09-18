@@ -2,8 +2,8 @@
   "findingIds": [
     "D-A44"
   ],
-  "outcome": "BLOCKED",
-  "disposition": "REAL_EMAIL_FIXTURE_AT_MAXIMUM_ASSESSMENT_CAPACITY",
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
   "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=1",
   "browserName": "chromium",
   "browserVersion": "153.0.8010.52",
@@ -12,13 +12,14 @@
     "height": 976
   },
   "pitchId": "63d8ac4006621f0027c9ef01",
-  "testedAt": "2026-09-18T20:39:46Z",
+  "testedAt": "2026-09-18T20:44:30Z",
   "assertions": [
-    "A real Pitcher-owned pitch submitted a new Review request to the mailbox-controlled Assessor through deployed Chrome.",
-    "The API rejected the request with HTTP 409: This assessor is currently at assessment capacity.",
-    "The Assessor capacity was raised from 5 to the allowed maximum 50 for one bounded recovery attempt, but the request remained rejected, proving at least 50 active assessments already occupy the fixture.",
-    "No request or email was created, so the corrected real-email calendar date could not be compared.",
-    "The Assessor capacity was restored to its original value of 5 after the attempt."
+    "After clearing stale test requests and temporarily raising the mailbox-controlled Assessor capacity to 50, deployed Chrome created real request 6aada27e6b8d9dde2f79731f.",
+    "The API persisted the response deadline as 2026-10-24.",
+    "The newly delivered Gmail message rendered Response due by October 24, 2026, exactly matching the requested date with no one-day shift.",
+    "The email was visually inspected in the real cic.test.assessor@gmail.com inbox immediately after delivery."
   ],
-  "screenshots": []
+  "screenshots": [
+    "../D-A45/D-A45-free-request-requester-ui.png"
+  ]
 }

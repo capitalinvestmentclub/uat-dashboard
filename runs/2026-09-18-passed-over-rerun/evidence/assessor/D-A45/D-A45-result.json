@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "D-A45"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=2&id=63d8ac4006621f0027c9ef01",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aada27e6b8d9dde2f79731f",
+  "pitchId": "63d8ac4006621f0027c9ef01",
+  "testedAt": "2026-09-18T20:44:30Z",
+  "assertions": [
+    "Deployed Chrome created a real free Review request with proposed fee USD 0.00 and delivered it to the mailbox-controlled Assessor.",
+    "The newly delivered Gmail message explicitly stated: You have a new free assessment request.",
+    "The subject and body used neutral assessment-request wording and did not describe the free request as paid.",
+    "The same email displayed the correct October 24, 2026 response deadline."
+  ],
+  "screenshots": [
+    "D-A45-free-request-requester-ui.png"
+  ]
+}
