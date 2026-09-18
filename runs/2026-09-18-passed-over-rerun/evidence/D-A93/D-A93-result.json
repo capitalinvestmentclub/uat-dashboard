@@ -1,0 +1,32 @@
+{
+  "findingIds": [
+    "D-A93"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadbb076b8d9dde2f7aa2e8",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "reviewId": "6aadbb076b8d9dde2f7aa2e8",
+  "observed": {
+    "categoryCount": 16,
+    "populatedCommentCount": 1,
+    "blankCommentCount": 15,
+    "focusedId": "review-comment-1",
+    "submissionApiRequestCount": 0,
+    "validationSummary": "Complete the following before submitting: Written justification for Expected Payback Period, Written justification for Tangible asset backing with salvage value, Written justification for Profitability (Worst, base & best cases), Written justification for Pitcher’s Story, Written justification for Pitchers time commitment to Idea, Written justification for Investor's time / expertise / involvement req'd, Written justification for Existing competition, Written justification for Available market share, Written justification for Scalability, Written justification for Strength of market research, Written justification for Replicability of idea, Written justification for Originality, Written justification for Regulatory constraints, Written justification for Current business structure, Written justification for Potential for dilution, Business structure, Business phase, Recommendation, Intellectual property status, Notes."
+  },
+  "assertions": [
+    "Every review category had a rating while only the first category had written justification",
+    "Submit displayed category-comment validation errors and focused the first blank category comment",
+    "The irreversible confirmation dialog did not open and no final-review API request was sent"
+  ],
+  "screenshots": [
+    "D-A93-final-review-comments-required.png"
+  ],
+  "testedAt": "2026-09-18T22:58:02.926Z"
+}

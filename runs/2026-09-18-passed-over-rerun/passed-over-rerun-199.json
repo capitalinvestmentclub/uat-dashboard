@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T22:55:09.481Z",
+  "updatedAt": "2026-09-18T22:58:02.926Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2115,15 +2115,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T22:58:02.926Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadbb076b8d9dde2f7aa2e8",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A93/D-A93-final-review-comments-required.png",
+        "evidence/D-A93/D-A93-result.json"
+      ],
+      "notes": "Every review category had a rating while only the first category had written justification; Submit displayed category-comment validation errors and focused the first blank category comment; The irreversible confirmation dialog did not open and no final-review API request was sent"
     },
     {
       "id": "D-A94",
