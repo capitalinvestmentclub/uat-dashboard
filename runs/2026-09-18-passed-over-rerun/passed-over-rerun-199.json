@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T23:22:34.929Z",
+  "updatedAt": "2026-09-18T23:25:28.147Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2280,15 +2280,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "REPRODUCED_DEPLOYED",
+      "testedAt": "2026-09-18T23:25:28.147Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A101/D-A101-pending-holds-in-current-balance.png",
+        "evidence/D-A101/D-A101-result.json"
+      ],
+      "notes": "The Assessor has positive pending receiver-side assessment reservations that have not been captured; The API correctly keeps current wallet balance equal to available balance while exposing pending funds separately; The deployed Wallet UI renders Available Balance from availableBalance but calculates Current Balance as availableBalance plus pendingBalance; The displayed Current Balance therefore includes uncaptured requester holds and materially overstates spendable/earned Assessor funds"
     },
     {
       "id": "D-A102",
