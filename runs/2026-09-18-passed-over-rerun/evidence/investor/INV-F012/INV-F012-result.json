@@ -1,0 +1,27 @@
+{
+  "findingIds": [
+    "INV-F012"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/6aad5c516b8d9dde2f76f7e5",
+  "browserName": "chromium",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "assertions": [
+    "A deployed session was created with a stored duration of 1,800 seconds and successfully rescheduled",
+    "The actual transactional email arrived in the existing public Yopmail-backed test inbox",
+    "Chrome rendered the email duration as 30 minutes",
+    "The delivered email did not contain the incorrect phrase 1800 minutes"
+  ],
+  "seededData": {
+    "recipient": "cic.assessor.invitee.260911@yopmail.com",
+    "sessionId": "6aad5c516b8d9dde2f76f7e5",
+    "permanent": true
+  },
+  "screenshots": [
+    "INV-F012-reschedule-email-30-minutes.png"
+  ],
+  "testedAt": "2026-09-18T15:44:39.352Z"
+}

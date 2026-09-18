@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T15:25:45.866Z",
+  "updatedAt": "2026-09-18T15:44:39.352Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3692,15 +3692,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "sessions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T15:44:39.352Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1440x900",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/6aad5c516b8d9dde2f76f7e5",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F012/INV-F012-reschedule-email-30-minutes.png",
+        "evidence/investor/INV-F012/INV-F012-result.json"
+      ],
+      "notes": "A deployed session was created with a stored duration of 1,800 seconds and successfully rescheduled; The actual transactional email arrived in the existing public Yopmail-backed test inbox; Chrome rendered the email duration as 30 minutes; The delivered email did not contain the incorrect phrase 1800 minutes"
     },
     {
       "id": "INV-F013",
