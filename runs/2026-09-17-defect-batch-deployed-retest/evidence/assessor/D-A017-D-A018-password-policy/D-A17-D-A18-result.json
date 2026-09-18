@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "D-A17",
+    "D-A18"
+  ],
+  "outcome": "PASSED_OVER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/forgot-password",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "D-A17 and D-A18 share the same forgot-password token and password-change policy workflow",
+    "The approved Test Assessor is a shared active fixture whose password must remain stable for the remaining run",
+    "No approved disposable Assessor mailbox and reset-link fixture is available",
+    "Client-only validation cannot prove server rejection of a common password or existing-password reuse"
+  ],
+  "limitation": "A disposable real Assessor with controlled mailbox, current password, reset link, and verified rollback is required. Changing the shared account credential without that isolation would jeopardize the remaining run, so both server-policy findings remain unproven.",
+  "screenshots": [],
+  "testedAt": "2026-09-18T09:23:43Z"
+}
