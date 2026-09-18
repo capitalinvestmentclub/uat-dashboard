@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T15:12:56.000Z",
+  "updatedAt": "2026-09-18T15:17:49.360Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3647,15 +3647,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T15:17:49.360Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F010/INV-F010-withdrawal-quote-reconciled.png",
+        "evidence/investor/INV-F010/INV-F010-result.json"
+      ],
+      "notes": "Withdrawal amount: NGN 10000.00.; Displayed wallet withdrawal fee: NGN 53.24.; Displayed total reserved: NGN 10053.24.; The displayed total equals withdrawal amount plus the displayed fee."
     },
     {
       "id": "INV-F011",
