@@ -1,0 +1,56 @@
+{
+  "findingIds": [
+    "INV-F014"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "A real dividend motion crossed the 51% threshold and executed against the deployed USD project",
+    "The Investor ledger shows the incoming USD 24.95 dividend from project kkkkk",
+    "The dividend receipt identifies kkkkk / Project wallet as sender and CIC Investor / Personal wallet as recipient",
+    "The existing grant disbursement receipt identifies the grant wallet as sender and CIC Investor personal wallet as recipient"
+  ],
+  "receiptSummary": {
+    "dividend": {
+      "transactionId": "cZnC1scdcl",
+      "sender": {
+        "name": "kkkkk",
+        "walletContext": "Project wallet"
+      },
+      "recipient": {
+        "name": "CIC Investor",
+        "walletContext": "Personal wallet"
+      },
+      "amount": 24.95,
+      "currency": "USD"
+    },
+    "grant": {
+      "transactionId": "NyhELSkRaV",
+      "sender": {
+        "name": "UAT Guest Privacy 202608190454 Grant",
+        "walletContext": "Grant wallet"
+      },
+      "recipient": {
+        "name": "CIC Investor",
+        "walletContext": "Personal wallet"
+      },
+      "amount": 100,
+      "currency": "USD"
+    }
+  },
+  "seededData": {
+    "motionId": "6aad5e4b6b8d9dde2f771e7c",
+    "projectId": "692dd85220b2c00478938390",
+    "permanent": true
+  },
+  "screenshots": [
+    "INV-F014-incoming-dividend-ledger-row.png"
+  ],
+  "testedAt": "2026-09-18T15:55:57.230Z"
+}
