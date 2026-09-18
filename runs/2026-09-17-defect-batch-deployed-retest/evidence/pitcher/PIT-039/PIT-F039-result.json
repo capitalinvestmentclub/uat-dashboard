@@ -11,12 +11,12 @@
     "height": 976
   },
   "assertions": [
-    "A deployed public-pitch search reduced the directory to the expected named result",
-    "Opening the result and returning through browser history preserved the exact search query",
-    "The expected pitch remained visible after return"
+    "The exact deployed pitch title reduced the public directory to the expected result",
+    "Pressing Return preserved the exact query in the search control",
+    "The expected single filtered pitch remained visible after Return"
   ],
   "screenshots": [
-    "PIT-F039-search-return-pass.png"
+    "PIT-F039-return-search-pass.png"
   ],
-  "testedAt": "2026-09-18T07:53:25.644Z"
+  "testedAt": "2026-09-18T08:10:44.977Z"
 }
