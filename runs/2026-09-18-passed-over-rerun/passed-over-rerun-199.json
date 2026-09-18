@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T20:12:22Z",
+  "updatedAt": "2026-09-18T20:14:19Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -993,15 +993,17 @@
       "previousDisposition": "NO_INCOMPLETE_ROLE_PROFILE_FIXTURE",
       "wave": 1,
       "familyId": "identity",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "DEPLOYED_VALIDATION_PREVENTS_INCOMPLETE_ASSESSOR_FIXTURE",
+      "testedAt": "2026-09-18T20:14:19Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A19/D-A19-result.json"
+      ],
+      "notes": "The deployed Assessor role profile was read successfully and had a populated required professionalQualification entry before the test mutation.; A bounded fixture-seeding attempt sent professionalQualification as an empty array through the deployed updateUserRoleData API.; The deployed API rejected the mutation with Validation failed: professionalQualification: Professional Qualification cannot be empty.; No incomplete Assessor fixture was created and the original profile remained unchanged, so the dashboard, assessment, pitch-view and mutation-gating paths remain unverified."
     },
     {
       "id": "D-A24",
