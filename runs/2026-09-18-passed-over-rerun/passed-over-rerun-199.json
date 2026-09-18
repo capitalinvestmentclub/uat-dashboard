@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T17:33:09.287Z",
+  "updatedAt": "2026-09-18T18:05:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -158,15 +158,17 @@
       "previousDisposition": "EXTERNAL_MAILBOX_AND_EVENT_FIXTURE_UNAVAILABLE",
       "wave": 4,
       "familyId": "communications",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "CURRENT_AGREEMENT_COUNTERPARTY_ACTOR_UNAVAILABLE",
+      "testedAt": "2026-09-18T18:05:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=10",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-F024/PIT-F024-result.json"
+      ],
+      "notes": "The controlled Pitcher Gmail contains historical shareholder-agreement notifications, proving mailbox readback is now available, but those messages predate the current deployed fix and cannot validate it.; The controlled Pitcher opened the current agreement but signing was correctly rejected because its template had not been initiated.; After one Investor-session refresh, the controlled Investor opened the same pitch successfully but was not the accepted-bid investor and therefore had no agreement to initiate or sign.; The exact current agreement counterparty actor is unavailable, so no new deployed notification could be generated and its CTA could not be verified without claiming stale historical email as current evidence.; No agreement transition or user password change occurred."
     },
     {
       "id": "PIT-F026",
