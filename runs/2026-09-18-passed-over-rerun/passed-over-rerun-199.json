@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T20:47:50.318Z",
+  "updatedAt": "2026-09-18T20:50:26.789Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1310,15 +1310,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 3,
       "familyId": "requests",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T20:50:26.789Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=2&id=63d8ac4006621f0027c9ef01",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A47/D-A47-requester-hires-reconciled.png",
+        "evidence/assessor/D-A47/D-A47-result.json"
+      ],
+      "notes": "The originating Pitcher opened the real pitch Assessment > Hires view in deployed Chrome; Exactly one rendered Hires row reconciled committed request 6aada27e6b8d9dde2f79731f; The row identifies Test Assessor and exposes its current awaiting/pending state; The requester view remained reconciled after a fresh page load following creation"
     },
     {
       "id": "D-A48",
