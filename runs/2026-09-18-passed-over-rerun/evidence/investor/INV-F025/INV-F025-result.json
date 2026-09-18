@@ -1,0 +1,39 @@
+{
+  "findingIds": [
+    "INV-F025"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/692dd85220b2c00478938390?id=692dd85220b2c00478938390&tab=4",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The Pitcher created a planned milestone with a due date and moved it to active",
+    "The Pitcher submitted revision 1 with durable delivery evidence and an audit note",
+    "The shareholder Investor saw the submitted state and evidence and accepted delivery with a decision note",
+    "Accepted status, 100% progress, revision 1, evidence and decision history all persisted after reload",
+    "Exactly three deployed lifecycle mutations completed successfully: start, submit and accept"
+  ],
+  "seededData": {
+    "projectId": "692dd85220b2c00478938390",
+    "milestoneId": "6aad6c2a6b8d9dde2f7783af",
+    "title": "INV-F025 delivery lifecycle 1789750304192",
+    "evidenceUrl": "https://example.com/cic-uat/inv-f025-1789750304192",
+    "permanent": true
+  },
+  "apiEvidence": {
+    "lifecycleRequestCount": 3,
+    "statuses": [
+      200,
+      200,
+      200
+    ]
+  },
+  "screenshots": [
+    "INV-F025-accepted-lifecycle-persisted.png"
+  ],
+  "testedAt": "2026-09-18T16:52:13.089Z"
+}
