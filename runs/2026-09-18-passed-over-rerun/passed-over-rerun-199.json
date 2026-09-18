@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T21:24:35.640Z",
+  "updatedAt": "2026-09-18T21:28:49.775Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1494,15 +1494,18 @@
       "previousDisposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
       "wave": 3,
       "familyId": "requests",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T21:28:49.775Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=2&id=63d8ac4006621f0027c9ef01",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A58/D-A58-cancelled-request-retained.png",
+        "evidence/assessor/D-A58/D-A58-result.json"
+      ],
+      "notes": "The real paid request carried an active NGN 25,000 reservation before cancellation; Requester cancellation completed through the deployed Chrome UI and retained the row as Cancelled; The durable request remains queryable with status cancelled, the supplied cancellation reason, and reservedAmount zero; Cancellation reduced pending balance by exactly NGN 25,000 and the ledger contains one preserved hold plus one linked refund"
     },
     {
       "id": "D-A60",
