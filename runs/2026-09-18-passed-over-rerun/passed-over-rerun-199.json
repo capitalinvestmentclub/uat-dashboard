@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T14:38:52.317Z",
+  "updatedAt": "2026-09-18T14:46:25.177Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3489,15 +3489,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 1,
       "familyId": "identity",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T14:46:25.177Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/63d993b83f6f4af93536d2ee?tab=14",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F003/INV-F003-investor-signature-controls.png",
+        "evidence/investor/INV-F003/INV-F003-result.json"
+      ],
+      "notes": "Investor signature control is visible.; Pitcher signature control is absent for the Investor role."
     },
     {
       "id": "INV-F004",
