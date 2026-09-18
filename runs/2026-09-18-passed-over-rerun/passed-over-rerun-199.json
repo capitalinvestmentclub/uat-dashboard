@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T20:07:40.709Z",
+  "updatedAt": "2026-09-18T20:12:22Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -971,15 +971,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 1,
       "familyId": "identity",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "DEPLOYED_RECAPTCHA_INVALID_DOMAIN_BLOCKS_PASSWORD_RESET",
+      "testedAt": "2026-09-18T20:12:22Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://planar-truck-361704.uc.r.appspot.com/resetPassword1/[redacted]",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A18/D-A18-result.json"
+      ],
+      "notes": "A fresh forgot-password request for the disposable Assessor account returned the generic Check your email success screen and delivered a new recovery email.; The new recovery link was opened in a separate signed-out Chrome profile and displayed the Recover Account confirmation page.; Submitting the confirmation could not reach the new-password form because the deployed invisible reCAPTCHA rendered ERROR for site owner: Invalid domain for site key.; The existing-password reuse behavior therefore remains unverified; no password change was submitted and the account password remains unchanged."
     },
     {
       "id": "D-A19",
