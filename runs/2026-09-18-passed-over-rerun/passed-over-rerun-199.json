@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T16:55:32.290Z",
+  "updatedAt": "2026-09-18T16:58:43.289Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -4037,15 +4037,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "projects",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T16:58:43.289Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/692dd85220b2c00478938390?id=692dd85220b2c00478938390&tab=13",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F027/INV-F027-project-rfi-thread-reopened.png",
+        "evidence/investor/INV-F027/INV-F027-result.json"
+      ],
+      "notes": "The owner responded twice to the same RFI, with revision advancing from 1 to 2; The requesting Investor sent a follow-up that reopened the workflow for another owner response; The requesting Investor acknowledged response v2, explicitly closed the request and reopened it; Category, status, revision, ordered private thread entries and audit timestamps remained visible after reload; All six deployed response/lifecycle mutations returned HTTP 200"
     },
     {
       "id": "INV-F028",
