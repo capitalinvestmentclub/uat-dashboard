@@ -1,0 +1,28 @@
+{
+  "findingIds": [
+    "D-A32"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/kyc",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "accountType": "fresh disposable Assessor",
+    "savedStreet": "D-A32 Draft Street",
+    "savedPostcode": "85032",
+    "saveConfirmation": "Draft saved",
+    "reloadConfirmation": "Draft restored"
+  },
+  "assertions": [
+    "The fresh Assessor opened the KYC Biodata step on the revision-specific deployed Chrome target.",
+    "The page exposed an explicit Save draft control and explained that progress can resume on any signed-in device.",
+    "Saving a partial street and postcode produced a visible Draft saved confirmation.",
+    "After a full reload, the page showed Draft restored and both partial values remained populated, proving durable server-backed resume behavior."
+  ],
+  "screenshots": [],
+  "testedAt": "2026-09-18T20:26:44Z"
+}
