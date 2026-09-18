@@ -1,0 +1,24 @@
+{
+  "findingIds": [
+    "D-A44"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "REAL_EMAIL_FIXTURE_AT_MAXIMUM_ASSESSMENT_CAPACITY",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=1",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "pitchId": "63d8ac4006621f0027c9ef01",
+  "testedAt": "2026-09-18T20:39:46Z",
+  "assertions": [
+    "A real Pitcher-owned pitch submitted a new Review request to the mailbox-controlled Assessor through deployed Chrome.",
+    "The API rejected the request with HTTP 409: This assessor is currently at assessment capacity.",
+    "The Assessor capacity was raised from 5 to the allowed maximum 50 for one bounded recovery attempt, but the request remained rejected, proving at least 50 active assessments already occupy the fixture.",
+    "No request or email was created, so the corrected real-email calendar date could not be compared.",
+    "The Assessor capacity was restored to its original value of 5 after the attempt."
+  ],
+  "screenshots": []
+}

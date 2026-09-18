@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T20:33:29Z",
+  "updatedAt": "2026-09-18T20:39:46Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1241,15 +1241,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "communications",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "REAL_EMAIL_FIXTURE_AT_MAXIMUM_ASSESSMENT_CAPACITY",
+      "testedAt": "2026-09-18T20:39:46Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=1",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A44/D-A44-result.json"
+      ],
+      "notes": "A real Pitcher-owned pitch submitted a new Review request to the mailbox-controlled Assessor through deployed Chrome.; The API rejected the request with HTTP 409: This assessor is currently at assessment capacity.; The Assessor capacity was raised from 5 to the allowed maximum 50 for one bounded recovery attempt, but the request remained rejected, proving at least 50 active assessments already occupy the fixture.; No request or email was created, so the corrected real-email calendar date could not be compared.; The Assessor capacity was restored to its original value of 5 after the attempt."
     },
     {
       "id": "D-A45",
