@@ -1,0 +1,27 @@
+{
+  "findingIds": [
+    "D-A12"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "VERIFIED_EXPORT_DID_NOT_COMPLETE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "stepUpDialogVisible": true,
+    "validSessionRefreshedImmediatelyBeforeRetry": true,
+    "downloadCompletedWithin60Seconds": false,
+    "downloadedPersonalDataPersisted": false
+  },
+  "assertions": [
+    "The personal-data export could not be inspected because no download or terminal error followed password verification",
+    "One fresh-session retry reproduced the non-completion",
+    "No sensitive export file was persisted in report evidence"
+  ],
+  "screenshot": "D-A12-export-did-not-complete-1792x976.png",
+  "testedAt": "2026-09-18T07:17:26Z"
+}
