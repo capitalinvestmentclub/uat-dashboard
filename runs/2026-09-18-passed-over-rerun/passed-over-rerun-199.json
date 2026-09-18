@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T15:44:39.352Z",
+  "updatedAt": "2026-09-18T15:49:38.839Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3715,15 +3715,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T15:49:38.839Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/692dd85220b2c00478938390?tab=7",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F013/INV-F013-dividend-usd-profit.png",
+        "evidence/investor/INV-F013/INV-F013-result.json"
+      ],
+      "notes": "The deployed project API exposes 100 of verified distributable profit in USD; The Investor dividend form renders Available funds = USD 100; The form does not substitute the Investor viewer currency (NGN or ₦) for the project-wallet currency"
     },
     {
       "id": "INV-F014",
