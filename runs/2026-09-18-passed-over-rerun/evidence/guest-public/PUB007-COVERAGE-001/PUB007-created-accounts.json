@@ -1,0 +1,49 @@
+{
+  "findingIds": ["PUB007-COVERAGE-001"],
+  "phase": "ACCOUNT_CREATION_COMPLETE_EMAIL_VERIFICATION_COMPLETE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+  "browserName": "chromium",
+  "browserVersion": "153.0.7956.0",
+  "viewport": { "width": 1792, "height": 976 },
+  "accounts": [
+    {
+      "id": "6aad8c2f6b8d9dde2f78c102",
+      "role": "Pitcher",
+      "email": "cic.test.pitcher+pub007-pitcher-1789758505159@gmail.com",
+      "signupStatus": 200,
+      "emailVerified": true,
+      "active": true,
+      "screenshot": "PUB007-pitcher-account-created.png"
+    },
+    {
+      "id": "6aad8c3c6b8d9dde2f78c127",
+      "role": "Investor",
+      "email": "cic.test.pitcher+pub007-investor-1789758505159@gmail.com",
+      "signupStatus": 200,
+      "emailVerified": true,
+      "active": true,
+      "screenshot": "PUB007-investor-account-created.png"
+    },
+    {
+      "id": "6aad8c456b8d9dde2f78c145",
+      "role": "Assessor",
+      "email": "cic.test.pitcher+pub007-assessor-1789758505159@gmail.com",
+      "signupStatus": 200,
+      "emailVerified": true,
+      "active": true,
+      "firstLoginMfaCompleted": true,
+      "firstLoginDestination": "/dashboard",
+      "screenshot": "PUB007-assessor-account-created.png"
+    }
+  ],
+  "validations": [
+    "Account policy acceptance is required before biodata.",
+    "DOB, nationality, and tax residency are independently required.",
+    "Role selection is required before role-specific registration.",
+    "All three mailbox verification links were delivered and consumed.",
+    "Admin API verification confirmed all three records active with emailVerified true.",
+    "The Assessor completed first-login email MFA and reached the Assessor dashboard."
+  ],
+  "sensitiveDataPolicy": "Verification tokens and one-time login codes were not retained.",
+  "testedAt": "2026-09-18T19:12:55.000Z"
+}
