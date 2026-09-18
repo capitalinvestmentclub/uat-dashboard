@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "GRT024-COVERAGE-001"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "MISSING_ORGANIZATION_PUBLIC_FUNDING_LIFECYCLE_FIXTURE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aad7cf16b8d9dde2f785337",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed grant inventory contains public-funding grants but the first 100 records exposed no organization-owned grant",
+    "The controlled public-funding grant is visibly operated in Personal context and has belongsToEntity=false",
+    "No run-scoped organization owner, authorized and unauthorized member pair, guest sandbox donor, or funded checkout baseline exists for the required full lifecycle"
+  ],
+  "screenshots": [
+    "GRT024-COVERAGE-001-personal-grant-inventory.png"
+  ],
+  "testedAt": "2026-09-18T18:53:00.000Z"
+}
