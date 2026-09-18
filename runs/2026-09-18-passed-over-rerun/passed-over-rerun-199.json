@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T23:34:11.347Z",
+  "updatedAt": "2026-09-18T23:42:41.536Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2349,15 +2349,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T23:42:41.536Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A104/D-A104-result.json"
+      ],
+      "notes": "A deployed termination event generated durable in-app notifications for both the requester and assessor with exact request deep links and released-escrow amounts; A deployed response-deadline expiry generated durable in-app notifications for both actors with exact request deep links and role-appropriate instructions; Real Chrome Gmail inboxes contain the matching termination emails for both actors and multiple deadline-expiry emails, including the same IOW event; The in-app notification records advertise both email and webapp delivery protocols"
     },
     {
       "id": "D-A105",
