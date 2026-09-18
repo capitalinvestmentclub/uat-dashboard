@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T22:10:43.861Z",
+  "updatedAt": "2026-09-18T22:12:24.424Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1723,15 +1723,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 3,
       "familyId": "requests",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T22:12:24.424Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadb65d6b8d9dde2f7a3d12",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A75/D-A75-login-restores-assignment.png",
+        "evidence/D-A75/D-A75-result.json"
+      ],
+      "notes": "Explicit logout from the saved assessment draft redirected to login with the complete internal draft route in returnUrl; Credential login returned directly to the same pitch, tab, and reviewId rather than the dashboard; The restored page rendered the editable draft and its previously saved comment; The refreshed authenticated Assessor session was persisted for subsequent UAT tests"
     },
     {
       "id": "D-A76",
