@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "D-A35"
+  ],
+  "outcome": "PASSED_OVER",
+  "disposition": "FIXTURE_GAP_NO_PRODUCT_PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "authenticatedRole": "Assessor",
+    "requiredRole": "Pitcher or pitch owner",
+    "requiredSurface": "Hire Assessor directory"
+  },
+  "assertions": [
+    "The deployed authenticated actor is Test Assessor with role Assessor",
+    "D-A35 requires a Pitcher-owned pitch and the Hire Assessor directory",
+    "No authenticated Pitcher/owner state is available locally; no product pass is claimed"
+  ],
+  "screenshot": "D-A35-assessor-only-actor-1792x976.png",
+  "testedAt": "2026-09-18T06:11:34Z"
+}

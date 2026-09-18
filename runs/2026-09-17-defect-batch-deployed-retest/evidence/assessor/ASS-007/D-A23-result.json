@@ -1,0 +1,29 @@
+{
+  "findingIds": [
+    "D-A23"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "rejectedValues": [
+      -1,
+      999
+    ],
+    "acceptedRange": "0 to 80 years",
+    "originalValueRestoredWithoutSave": "13"
+  },
+  "assertions": [
+    "Existing specialization years reject both the formerly persisted -1 and 999 values",
+    "The profile renders the explicit 0 to 80 years validation message",
+    "Save Changes remains disabled while either invalid value is present",
+    "The original field value was restored and the page was left without saving"
+  ],
+  "screenshot": "D-A23-invalid-experience-blocked-1792x976.png",
+  "testedAt": "2026-09-18T06:14:56.827Z"
+}

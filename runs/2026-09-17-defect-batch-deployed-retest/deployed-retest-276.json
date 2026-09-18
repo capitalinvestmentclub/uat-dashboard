@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T05:44:26.553Z",
+  "updatedAt": "2026-09-18T06:20:31Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -1143,15 +1143,19 @@
       "scenarioId": "ASS-005",
       "severity": "HIGH",
       "title": "Draft assessment is counted as completed",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:08:41Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-020/D-A20-hydrated-dashboard-counts-1792x976.png",
+        "evidence/assessor/ASS-020/D-A20-list-has-draft-dashboard-zero-1792x976.png",
+        "evidence/assessor/ASS-020/D-A20-result.json"
+      ],
+      "notes": "After asynchronous hydration, the deployed dashboard reports 6 active and 49 completed assessments; The same actor's assessment list reports 54 assessments: 5 Draft and 49 Submitted; Completed equals the submitted-row count and excludes every draft row; Active includes all five drafts plus one accepted request"
     },
     {
       "id": "D-A21",
@@ -1159,15 +1163,18 @@
       "scenarioId": "ASS-005",
       "severity": "MEDIUM",
       "title": "Dashboard amount visibility does not survive navigation",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "REPRODUCED_ON_DEPLOYED_CANDIDATE",
+      "testedAt": "2026-09-18T06:08:41Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-006/D-A21-show-amounts-remains-masked-1792x976.png",
+        "evidence/assessor/ASS-006/D-A21-result.json"
+      ],
+      "notes": "The named Show dashboard financial amounts control was visible and clicked; The control did not transition to Hide dashboard financial amounts; The wallet balance remained masked, so navigation and refresh persistence could not be reached"
     },
     {
       "id": "D-A23",
@@ -1175,15 +1182,18 @@
       "scenarioId": "ASS-007",
       "severity": "HIGH",
       "title": "Invalid experience years persist server-side",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T06:14:56.827Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-007/D-A23-invalid-experience-blocked-1792x976.png",
+        "evidence/assessor/ASS-007/D-A23-result.json"
+      ],
+      "notes": "Existing specialization years reject both the formerly persisted -1 and 999 values; The profile renders the explicit 0 to 80 years validation message; Save Changes remains disabled while either invalid value is present; The original field value was restored and the page was left without saving"
     },
     {
       "id": "D-A24",
@@ -1223,15 +1233,18 @@
       "scenarioId": "ASS-007",
       "severity": "HIGH",
       "title": "Impossible accomplishment year persists",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "UI_COVERAGE_GAP_NO_PRODUCT_PASS",
+      "testedAt": "2026-09-18T06:17:09Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-007/D-A26-award-editor-collapsed-1792x976.png",
+        "evidence/assessor/ASS-007/D-A26-result.json"
+      ],
+      "notes": "The deployed Awards section was opened for the real Assessor profile; The existing accomplishment year input remained hidden inside a collapsed editor; The single allowed harness correction was exhausted resolving the Awards control ambiguity; persistence was not exercised and no product pass is claimed"
     },
     {
       "id": "D-A27",
@@ -1255,15 +1268,18 @@
       "scenarioId": "ASS-007",
       "severity": "HIGH",
       "title": "Unsafe javascript: public URL saves and survives refresh",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "UI_COVERAGE_GAP_NO_PRODUCT_PASS",
+      "testedAt": "2026-09-18T06:20:31Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-007/D-A28-profile-link-editor-collapsed-1792x976.png",
+        "evidence/assessor/ASS-007/D-A28-result.json"
+      ],
+      "notes": "The deployed real profile contains a saved HTTPS public link; The Profile links editor repeatedly collapsed during the controlled invalid-entry attempt; The single allowed correction was exhausted; unsafe persistence was not exercised and no product pass is claimed"
     },
     {
       "id": "D-A29",
@@ -1374,15 +1390,18 @@
       "scenarioId": "ASS-011",
       "severity": "HIGH",
       "title": "Keyboard expertise selection displays the filter without applying it",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASSED_OVER",
+      "disposition": "FIXTURE_GAP_NO_PRODUCT_PASS",
+      "testedAt": "2026-09-18T06:11:34Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-011/D-A35-assessor-only-actor-1792x976.png",
+        "evidence/assessor/ASS-011/D-A35-result.json"
+      ],
+      "notes": "The deployed authenticated actor is Test Assessor with role Assessor; D-A35 requires a Pitcher-owned pitch and the Hire Assessor directory; No authenticated Pitcher/owner state is available locally; no product pass is claimed"
     },
     {
       "id": "D-A36",
@@ -1902,15 +1921,18 @@
       "scenarioId": "ASS-019",
       "severity": "HIGH",
       "title": "Request search omits visible Unicode, rate and assessment-type data",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "REPRODUCED_ON_DEPLOYED_CANDIDATE",
+      "testedAt": "2026-09-18T06:02:33Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-019/D-A69-rate-search-still-empty-1792x976.png",
+        "evidence/assessor/ASS-019/D-A69-result.json"
+      ],
+      "notes": "Searching a Unicode value visible in a real request title returned a matching row; Searching the visible rate 150.26 issued a successful real API request but rendered No requests match this search"
     },
     {
       "id": "D-A70",
@@ -1918,15 +1940,18 @@
       "scenarioId": "ASS-019",
       "severity": "MEDIUM",
       "title": "Search is neither debounced nor programmatically named",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:58:57.054Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-019/D-A70-request-search-named-debounced-1792x976.png",
+        "evidence/assessor/ASS-019/D-A70-result.json"
+      ],
+      "notes": "The deployed request search exposes the programmatic name Search requests; Typing without Enter triggers the real filtered API request after a debounce; The live status announces the terminal result count"
     },
     {
       "id": "D-A71",
@@ -1966,15 +1991,18 @@
       "scenarioId": "ASS-020",
       "severity": "MEDIUM",
       "title": "Assessment search is case- and whitespace-sensitive",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "REPRODUCED_ON_DEPLOYED_CANDIDATE",
+      "testedAt": "2026-09-18T06:02:33Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-019/D-A73-lowercase-search-still-empty-1792x976.png",
+        "evidence/assessor/ASS-019/D-A73-result.json"
+      ],
+      "notes": "The exact-case real pitch title query returned request rows; The lowercase form of the same visible title issued a successful real API request but rendered No requests match this search"
     },
     {
       "id": "D-A74",
@@ -3070,15 +3098,18 @@
       "scenarioId": "ASS-033",
       "severity": "HIGH",
       "title": "Unsent chat draft is lost on refresh",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:55:55Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-033/D-A143-unsent-draft-restored-1792x976.png",
+        "evidence/assessor/ASS-033/G-A30-D-A143-result.json"
+      ],
+      "notes": "Conversation search, message composer, formatting toolbar, and conversation row actions expose contextual accessible names; The first two conversation row action controls expose distinct names tied to their conversations; A Unicode unsent draft survived refresh and reopening of the exact conversation; The test draft was cleared without sending it"
     },
     {
       "id": "D-A144",
@@ -3919,15 +3950,18 @@
       "scenarioId": "ASS-033",
       "severity": "HIGH",
       "title": "Messaging controls lack contextual accessible names",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:55:55Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-033/D-A143-unsent-draft-restored-1792x976.png",
+        "evidence/assessor/ASS-033/G-A30-D-A143-result.json"
+      ],
+      "notes": "Conversation search, message composer, formatting toolbar, and conversation row actions expose contextual accessible names; The first two conversation row action controls expose distinct names tied to their conversations; A Unicode unsent draft survived refresh and reopening of the exact conversation; The test draft was cleared without sending it"
     },
     {
       "id": "G-A31",
@@ -3935,15 +3969,18 @@
       "scenarioId": "ASS-033",
       "severity": "HIGH",
       "title": "360-pixel conversation layout clips identity and context",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T05:57:09.602Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "360x800",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging/6aa8a42219099af7ec070234",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/ASS-033/G-A31-messaging-context-360x800.png",
+        "evidence/assessor/ASS-033/G-A31-result.json"
+      ],
+      "notes": "The participant name and role remain visible and in bounds at 360x800; The assessment thread context remains visible, in bounds, and untruncated at 360x800"
     },
     {
       "id": "G-A32",

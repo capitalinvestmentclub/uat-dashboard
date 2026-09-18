@@ -1,0 +1,24 @@
+{
+  "findingIds": [
+    "D-A70"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "debounceElapsedMs": 1882,
+    "responseStatus": 200
+  },
+  "assertions": [
+    "The deployed request search exposes the programmatic name Search requests",
+    "Typing without Enter triggers the real filtered API request after a debounce",
+    "The live status announces the terminal result count"
+  ],
+  "screenshot": "D-A70-request-search-named-debounced-1792x976.png",
+  "testedAt": "2026-09-18T05:58:57.054Z"
+}
