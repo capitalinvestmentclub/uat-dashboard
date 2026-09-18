@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T23:02:02.816Z",
+  "updatedAt": "2026-09-18T23:04:08.706Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2162,15 +2162,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "REPRODUCED_DEPLOYED",
+      "testedAt": "2026-09-18T23:04:08.706Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A95/D-A95-no-review-completion-notification.png",
+        "evidence/D-A95/D-A95-result.json"
+      ],
+      "notes": "All 868 pitcher notifications were audited after the exact D-A82 Review submission timestamp; No Review assessment ready notification references the submitted request or review ID; The only assessment-ready event after that timestamp is the separate Engineering completion from D-A76; The pitcher Gmail exact-subject search returned No matches for the Review completion email; The original missing final-Review completion delivery defect is reproduced in both channels"
     },
     {
       "id": "D-A96",

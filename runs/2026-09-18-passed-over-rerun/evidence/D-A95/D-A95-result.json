@@ -1,0 +1,49 @@
+{
+  "findingIds": [
+    "D-A95"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aadb4f86b8d9dde2f7a3084",
+  "reviewId": "6aadb65d6b8d9dde2f7a3d12",
+  "submittedAt": "2026-09-18T22:26:01.532Z",
+  "observed": {
+    "notificationCountAudited": 868,
+    "exactObjectMatches": [
+      {
+        "subject": "",
+        "body": "",
+        "url": "/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=2&assessmentRequestId=6aadb4f86b8d9dde2f7a3084",
+        "createdOn": "2026-09-18T22:05:01.940Z"
+      }
+    ],
+    "reviewCompletionNotificationsAfterSubmit": 0,
+    "unrelatedCompletionNotificationAfterSubmit": {
+      "subject": "Engineering assessment ready for UAT Solar Microgrid 20260907",
+      "body": "Test Assessor submitted the final deliverable. Open it to review the complete assessment.",
+      "url": "/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=2&task=6aadb8046b8d9dde2f7a654c",
+      "createdOn": "2026-09-18T22:27:56.648Z"
+    },
+    "mailboxQuery": "newer_than:1d \"Review assessment ready for UAT Solar Microgrid 20260907\"",
+    "mailboxResult": "No matches",
+    "mailboxVerifiedAt": "2026-09-18T23:04:08.706Z"
+  },
+  "assertions": [
+    "All 868 pitcher notifications were audited after the exact D-A82 Review submission timestamp",
+    "No Review assessment ready notification references the submitted request or review ID",
+    "The only assessment-ready event after that timestamp is the separate Engineering completion from D-A76",
+    "The pitcher Gmail exact-subject search returned No matches for the Review completion email",
+    "The original missing final-Review completion delivery defect is reproduced in both channels"
+  ],
+  "screenshots": [
+    "D-A95-no-review-completion-notification.png"
+  ],
+  "testedAt": "2026-09-18T23:04:08.706Z"
+}
