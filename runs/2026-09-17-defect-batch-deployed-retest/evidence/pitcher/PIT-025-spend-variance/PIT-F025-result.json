@@ -1,0 +1,24 @@
+{
+  "findingIds": [
+    "PIT-F025"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/63d993b83f6f4af93536d2ee?id=63d993b83f6f4af93536d2ee&tab=10",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "trendCount": 24,
+  "assertions": [
+    "Monthly Spend Variance explicitly defines the chart as actual spend minus planned spend",
+    "The percentage control says % variance and selects variancePct",
+    "The dollar control says $ variance and selects varianceAmount rather than Actual Spend",
+    "The deployed API supplied populated trend data for the rendered chart"
+  ],
+  "screenshots": [
+    "PIT-F025-dollar-variance-view.png"
+  ],
+  "testedAt": "2026-09-18T09:03:37.486Z"
+}

@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T05:03:00.000Z",
+  "updatedAt": "2026-09-18T09:03:37.486Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -244,15 +244,18 @@
       "scenarioId": "PIT-029",
       "severity": "MEDIUM",
       "title": "Trend dollar toggle is not clearly a variance view",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T09:03:37.486Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/63d993b83f6f4af93536d2ee?id=63d993b83f6f4af93536d2ee&tab=10",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-025-spend-variance/PIT-F025-dollar-variance-view.png",
+        "evidence/pitcher/PIT-025-spend-variance/PIT-F025-result.json"
+      ],
+      "notes": "Monthly Spend Variance explicitly defines the chart as actual spend minus planned spend; The percentage control says % variance and selects variancePct; The dollar control says $ variance and selects varianceAmount rather than Actual Spend; The deployed API supplied populated trend data for the rendered chart"
     },
     {
       "id": "PIT-F026",
