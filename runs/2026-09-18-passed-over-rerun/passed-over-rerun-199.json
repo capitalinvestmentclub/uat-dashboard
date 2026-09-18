@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T21:31:51.420Z",
+  "updatedAt": "2026-09-18T21:35:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1562,15 +1562,18 @@
       "previousDisposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
       "wave": 3,
       "familyId": "requests",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "REPRODUCED_AS_DATA_LOSS",
+      "testedAt": "2026-09-18T21:35:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=2&id=63d8ac4006621f0027c9ef01",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A63/D-A63-negotiation-note-data-loss.png",
+        "evidence/assessor/D-A63/D-A63-result.json"
+      ],
+      "notes": "The real NGN 26,000 proposal persisted, so this was not a submission or fixture failure; The submitted comparison text and script-like literal were corrupted from the full note to Scope alert(1); The same truncated value appeared in the Pitcher Hires dialog and the actual Pitcher Gmail message; The prior literal &lt; symptom changed, but the user-authored note is still not preserved and the defect remains unresolved"
     },
     {
       "id": "D-A64",

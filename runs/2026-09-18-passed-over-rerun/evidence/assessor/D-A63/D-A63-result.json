@@ -1,0 +1,33 @@
+{
+  "findingIds": [
+    "D-A63"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_AS_DATA_LOSS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=2&id=63d8ac4006621f0027c9ef01",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aadadb76b8d9dde2f79da8c",
+  "observed": {
+    "submittedNote": "Scope < the original estimate <script>alert(1)</script>",
+    "durableNote": "Scope alert(1)",
+    "pitcherVisibleNote": "Scope alert(1)",
+    "emailVisibleNote": "Scope alert(1)",
+    "durableStatus": "rate_proposed",
+    "durableNegotiatedRate": 26000
+  },
+  "assertions": [
+    "The real NGN 26,000 proposal persisted, so this was not a submission or fixture failure",
+    "The submitted comparison text and script-like literal were corrupted from the full note to Scope alert(1)",
+    "The same truncated value appeared in the Pitcher Hires dialog and the actual Pitcher Gmail message",
+    "The prior literal &lt; symptom changed, but the user-authored note is still not preserved and the defect remains unresolved"
+  ],
+  "screenshots": [
+    "D-A63-negotiation-note-data-loss.png"
+  ],
+  "testedAt": "2026-09-18T21:35:00.000Z"
+}
