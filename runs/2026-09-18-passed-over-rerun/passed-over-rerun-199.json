@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T15:55:57.230Z",
+  "updatedAt": "2026-09-18T16:07:52.353Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3761,15 +3761,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T16:07:52.353Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=3",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F015/INV-F015-investor-counter-response.png",
+        "evidence/investor/INV-F015/INV-F015-result.json"
+      ],
+      "notes": "The Investor saw the Pitcher's revised USD 1113 / 0.09% terms in deployed Chrome; The dialog exposed Accept, Reject, and Counter responses; Submitting unchanged terms produced the required inline validation error; Changing the amount to USD 1063 submitted a new Investor-authored counteroffer"
     },
     {
       "id": "INV-F016",
