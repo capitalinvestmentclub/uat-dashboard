@@ -1,0 +1,24 @@
+{
+  "findingIds": [
+    "D-A11"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed profile accepted an Assessor-to-Pitcher role-change request and displayed Request Pending Review",
+    "The requester immediately received an in-app Account notification titled Role change request received",
+    "The notification states the requested Pitcher role, 24-48 hour review expectation, and future decision notification",
+    "The pending request was cancelled and a reload confirmed that no pending request remained"
+  ],
+  "notificationText": "Account Role change request received We received your request to change to Pitcher. Reviews usually complete within 24-48 hours. We will notify you when a decision is made. Today, 02:15",
+  "screenshots": [
+    "D-A11-notification-readback.png"
+  ],
+  "testedAt": "2026-09-18T09:15:00Z"
+}
