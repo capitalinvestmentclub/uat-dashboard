@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T22:26:01.532Z",
+  "updatedAt": "2026-09-18T22:28:28.547Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1907,15 +1907,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "assessment",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T22:28:28.547Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&requestId=6aadbafa6b8d9dde2f7a9e7d",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A84/D-A84-unchanged-draft-disabled.png",
+        "evidence/D-A84/D-A84-result.json"
+      ],
+      "notes": "A completely empty new Review displayed No changes to save and disabled Save as draft; Changing one rating displayed an Unsaved changes indicator and enabled the save action; After saving, the UI displayed Draft saved and disabled the unchanged save action; Attempting the disabled action did not update the durable draft timestamp or create a redundant write"
     },
     {
       "id": "D-A85",

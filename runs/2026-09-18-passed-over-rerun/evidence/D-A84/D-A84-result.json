@@ -1,0 +1,30 @@
+{
+  "findingIds": [
+    "D-A84"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&requestId=6aadbafa6b8d9dde2f7a9e7d",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aadbafa6b8d9dde2f7a9e7d",
+  "observed": {
+    "draftId": "6aadbb076b8d9dde2f7aa2e8",
+    "savedUpdatedOn": "2026-09-18T03:28:52.712Z",
+    "unchangedUpdatedOn": "2026-09-18T03:28:52.712Z"
+  },
+  "assertions": [
+    "A completely empty new Review displayed No changes to save and disabled Save as draft",
+    "Changing one rating displayed an Unsaved changes indicator and enabled the save action",
+    "After saving, the UI displayed Draft saved and disabled the unchanged save action",
+    "Attempting the disabled action did not update the durable draft timestamp or create a redundant write"
+  ],
+  "screenshots": [
+    "D-A84-unchanged-draft-disabled.png"
+  ],
+  "testedAt": "2026-09-18T22:28:28.547Z"
+}
