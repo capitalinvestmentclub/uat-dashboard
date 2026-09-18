@@ -4,7 +4,7 @@
   "state": "IN_PROGRESS",
   "executionMode": "cloud",
   "startedAt": "2026-09-18T05:07:46.110Z",
-  "updatedAt": "2026-09-18T08:01:32.318Z",
+  "updatedAt": "2026-09-18T08:08:28.932Z",
   "scope": {
     "sourceFindingCount": 276,
     "sourceRegisterSha256": "ab4d22a0e2082c3fd3c8ccca8533ff5e0e8b63a8c1b6e9c7d23ff2606eda03ee",
@@ -73,15 +73,18 @@
       "scenarioId": "PIT-016",
       "severity": "MEDIUM",
       "title": "Completed session recording is not playable",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T08:08:28.932Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/69bbf6e2c800e2d0a401bb6a",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/pitcher/PIT-016/PIT-F016-completed-recording-playable.png",
+        "evidence/pitcher/PIT-016/PIT-F016-result.json"
+      ],
+      "notes": "The deployed ended session exposes a processed cloud recording and visible video player; The signed recording endpoint returned HTTP 206 with binary/octet-stream content that Chrome decoded; Chrome loaded finite playable metadata with duration 497.55 seconds; The signed media URL was intentionally excluded from committed evidence"
     },
     {
       "id": "PIT-F017",
