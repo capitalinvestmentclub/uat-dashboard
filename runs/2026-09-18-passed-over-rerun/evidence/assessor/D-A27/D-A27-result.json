@@ -1,0 +1,27 @@
+{
+  "findingIds": [
+    "D-A27"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "startMonth": "2024-01",
+    "endMonth": "2025-12",
+    "responseStatus": 200,
+    "persistedIndex": 2
+  },
+  "assertions": [
+    "A new employment entry was created through the deployed Chrome profile editor with January 2024 and December 2025 selected.",
+    "Both native month controls displayed the intended values before save and the real profile save returned HTTP 200.",
+    "After a full reload, the same employment entry displayed 2024-01 and 2025-12 exactly; the year did not shift to 2026.",
+    "The persistent UAT employment entry is permitted test-environment data and provides durable regression evidence."
+  ],
+  "screenshot": "D-A27-employment-dates-persist-1792x976.png",
+  "testedAt": "2026-09-18T20:22:55.854Z"
+}
