@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T19:38:06.682Z",
+  "updatedAt": "2026-09-18T19:48:00Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -785,15 +785,18 @@
       "previousDisposition": "NO_FRESH_REGISTRATION_PROVENANCE",
       "wave": 1,
       "familyId": "identity",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "FRESH_ACCOUNT_MFA_CODE_NOT_AVAILABLE_AFTER_ONE_RETRY",
+      "testedAt": "2026-09-18T19:48:00Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A1/D-A1-fresh-assessor-signup-submitted.png",
+        "evidence/assessor/D-A1/D-A1-result.json"
+      ],
+      "notes": "A fresh Assessor was created through deployed Chrome with Technology, 5 years of experience, and D-A1 Fresh Qualification.; The real verification email arrived and its confirmation link successfully activated the account.; The first login reached the email MFA challenge, but the only visible code was invalidated by the retry and no replacement code became available within the one-recovery-attempt limit.; The authenticated Profile to Expertise readiness surface therefore remains unverified for this fresh account."
     },
     {
       "id": "D-A6",

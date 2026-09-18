@@ -1,0 +1,27 @@
+{
+  "findingIds": [
+    "D-A1"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "FRESH_ACCOUNT_MFA_CODE_NOT_AVAILABLE_AFTER_ONE_RETRY",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "A fresh Assessor was created through deployed Chrome with Technology, 5 years of experience, and D-A1 Fresh Qualification.",
+    "The real verification email arrived and its confirmation link successfully activated the account.",
+    "The first login reached the email MFA challenge, but the only visible code was invalidated by the retry and no replacement code became available within the one-recovery-attempt limit.",
+    "The authenticated Profile to Expertise readiness surface therefore remains unverified for this fresh account."
+  ],
+  "evidence": [
+    "D-A1-setup.json"
+  ],
+  "screenshots": [
+    "D-A1-fresh-assessor-signup-submitted.png"
+  ],
+  "testedAt": "2026-09-18T19:48:00Z"
+}
