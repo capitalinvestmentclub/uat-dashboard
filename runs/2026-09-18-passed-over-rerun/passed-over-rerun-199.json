@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T16:52:13.089Z",
+  "updatedAt": "2026-09-18T16:55:32.290Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -4014,15 +4014,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "projects",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T16:55:32.290Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/692dd85220b2c00478938390?id=692dd85220b2c00478938390&tab=13",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/investor/INV-F026/INV-F026-project-rfi-persisted.png",
+        "evidence/investor/INV-F026/INV-F026-result.json"
+      ],
+      "notes": "The shareholder submitted a unique operational RFI containing CJK text, an accented character and emoji; The deployed API returned HTTP 200 with the exact title, Unicode description and category; The UI displayed an explicit Information request submitted acknowledgement and the new row; The RFI title, category and Unicode description remained visible after a full reload"
     },
     {
       "id": "INV-F027",
