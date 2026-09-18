@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T21:28:49.775Z",
+  "updatedAt": "2026-09-18T21:29:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -1517,15 +1517,17 @@
       "previousDisposition": "NO_MATCHING_ACTIONABLE_CROSS_ACTOR_FIXTURE",
       "wave": 4,
       "familyId": "communications",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-18T21:29:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://mail.google.com/mail/u/0/#search/newer_than%3A1h+(assessment+OR+request)",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A60/D-A60-result.json"
+      ],
+      "notes": "The real paid request created for D-A58 generated a message in the Assessor's actual Gmail inbox; The email explicitly identifies a new paid assessment request from Test Pitcher for Testing Small Pitch; The delivered email shows the correct NGN 25,000.00 proposed fee and October 26, 2026 response deadline; The mailbox was refreshed and the new message was visually inspected in Chrome two minutes after delivery"
     },
     {
       "id": "D-A61",
