@@ -1,0 +1,37 @@
+{
+  "findingIds": [
+    "G-A29"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aa4006298a889dfcabb5d93",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 360,
+    "height": 800
+  },
+  "observed": {
+    "actionBox": {
+      "x": 51,
+      "y": 1051.5625,
+      "width": 191.09375,
+      "height": 46
+    },
+    "scroll": {
+      "client": 360,
+      "scroll": 360
+    },
+    "reachable": true,
+    "eligible": false,
+    "actionSubmitted": false
+  },
+  "assertions": [
+    "The active grant primary Apply action lies within the 360px horizontal viewport",
+    "This Assessor is ineligible; no application was submitted and eligibility behavior is tracked separately"
+  ],
+  "screenshots": [
+    "G-A29-grant-action-360x800.png"
+  ],
+  "testedAt": "2026-09-19T03:35:04.192Z"
+}

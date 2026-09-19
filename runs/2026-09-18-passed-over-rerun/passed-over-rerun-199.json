@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T03:33:44.731Z",
+  "updatedAt": "2026-09-19T03:35:04.192Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3921,15 +3921,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "grants",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T03:35:04.192Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "360x800",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aa4006298a889dfcabb5d93",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/G-A29/G-A29-grant-action-360x800.png",
+        "evidence/assessor/G-A29/G-A29-result.json"
+      ],
+      "notes": "The active grant primary Apply action lies within the 360px horizontal viewport; This Assessor is ineligible; no application was submitted and eligibility behavior is tracked separately"
     },
     {
       "id": "G-A36",
