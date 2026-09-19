@@ -1,0 +1,32 @@
+{
+  "findingIds": [
+    "D-A128"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/68ffb06e4b713db60fdc3b6c?recording=1",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "sessionId": "68ffb06e4b713db60fdc3b6c",
+  "observed": {
+    "storedStatus": "ended",
+    "storedAttendees": 4,
+    "storedScheduledAt": "2025-10-27T17:49:00.000Z",
+    "storedActualEndAt": "2025-10-27T17:53:11.901Z",
+    "renderedAttendees": 4,
+    "renderedActualEndDate": "27 Oct 2025, 10:53"
+  },
+  "assertions": [
+    "The deployed ended session stores four unique attendees and a distinct actual end timestamp",
+    "Chrome renders the Attendees count as four instead of zero",
+    "Chrome renders the actual end date from the persisted actualEndAt rather than substituting the scheduled date"
+  ],
+  "screenshots": [
+    "D-A128-attendees-and-actual-end.png"
+  ],
+  "testedAt": "2026-09-19T01:45:12.632Z"
+}
