@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T03:25:00.677Z",
+  "updatedAt": "2026-09-19T03:27:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3742,15 +3742,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 2,
       "familyId": "profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_ISOLATED_PITCH_VARIANTS",
+      "testedAt": "2026-09-19T03:27:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1440x900",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9e8292d26f574c9142e626?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/G-A21/G-A21-result.json"
+      ],
+      "notes": "The current Pitcher could view the existing Solar Microgrid 73110 pitch in Chrome during G-A16, but that single public record cannot cover the required private, inactive, deleted, unsupported-country, promoted, related-party and known-prior-review variants. The prior bounded deployed inventory did not find an isolated seeded matrix. Mutating the shared pitch's engagement counts would not verify these missing authorization states. No engagement action was submitted; this is not a pass."
     },
     {
       "id": "G-A22",
