@@ -1,4 +1,4 @@
-export const statuses = ['PASS','FAIL','PARTIAL','BLOCKED','NOT RUN','NOT REPORTED'];
+export const statuses = ['PASS','FAIL','PARTIAL','BLOCKED','DUPLICATE_COVERAGE','NOT RUN','NOT REPORTED'];
 export function status(value) {
   const text = String(value ?? '').toUpperCase().trim();
   if (text.startsWith('IN PROGRESS')) return 'PARTIAL';
@@ -45,11 +45,44 @@ export function deduplicate(groups) {
   }
   return [...unique.values()];
 }
+export function reconcileDeployedFindings(findings, ledger, ledgerUrl) {
+  if (ledger?.state !== 'COMPLETE' || !Array.isArray(ledger.findings)) throw new Error('Deployed retest ledger is not complete');
+  const byId = new Map(findings.map(finding => [finding.id, finding]));
+  if (byId.size !== findings.length) throw new Error('Dashboard finding IDs are not unique');
+  const seen = new Set();
+  const terminal = new Set(['PASS','FAIL','BLOCKED','DUPLICATE_COVERAGE']);
+  const updated = new Map();
+  for (const result of ledger.findings) {
+    if (seen.has(result.id)) throw new Error(`Duplicate deployed retest ID: ${result.id}`);
+    seen.add(result.id);
+    const finding = byId.get(result.id);
+    if (!finding || finding.title !== result.title || !finding.groups.includes(result.group)) throw new Error(`Unmatched deployed retest finding: ${result.id}`);
+    if (!terminal.has(result.status)) throw new Error(`Nonterminal deployed retest status: ${result.id}`);
+    updated.set(result.id, {
+      ...finding,
+      status: result.status,
+      previousRetest: {status:finding.status,summary:finding.retestSummary,evidence:finding.evidence,responsive:finding.responsive,limitations:finding.limitations},
+      retestSummary: `Deployed Chrome ${result.status} (${result.testedAt}): ${result.notes || result.disposition}`,
+      responsive: [],
+      limitations: [],
+      evidence: [{label:'Reconciled 276-entry ledger',url:ledgerUrl},...(result.evidence || []).map(path => ({label:path.split('/').at(-1),url:new URL(path,ledgerUrl).href}))],
+      deployedRetest: {
+        status: result.status,
+        disposition: result.disposition,
+        testedAt: result.testedAt,
+        notes: result.notes,
+        ledgerUrl,
+        evidence: (result.evidence || []).map(path => ({label:path.split('/').at(-1),url:new URL(path,ledgerUrl).href})),
+      },
+    });
+  }
+  return findings.map(finding => updated.get(finding.id) || finding);
+}
 export function matches(row,query,group,outcome) {
   return (!group || row.group===group || row.groups?.includes(group)) && (!outcome || row.status===outcome) && `${row.id} ${row.title} ${row.summary || ''} ${row.observation || ''}`.toLowerCase().includes(query.trim().toLowerCase());
 }
 export const severities=['critical','high','medium','low','not reported'];
-export const defectStatuses=[['PASS','Fixed · retest passed'],['FAIL','Still failing'],['PARTIAL','Partially verified'],['BLOCKED','Verification blocked'],['NOT RUN','Retest not run'],['NOT REPORTED','Awaiting verification'],['CONFLICT','Conflicting evidence']];
+export const defectStatuses=[['PASS','Fixed · retest passed'],['FAIL','Still failing'],['PARTIAL','Partially verified'],['BLOCKED','Verification blocked'],['DUPLICATE_COVERAGE','Duplicate coverage'],['NOT RUN','Retest not run'],['NOT REPORTED','Awaiting verification'],['CONFLICT','Conflicting evidence']];
 export function defectStatusBreakdown(findings) {
   const defects=findings.filter(f=>f.type==='Defect');
   return defectStatuses.map(([status,label])=>({status,label,count:defects.filter(f=>f.status===status).length,
