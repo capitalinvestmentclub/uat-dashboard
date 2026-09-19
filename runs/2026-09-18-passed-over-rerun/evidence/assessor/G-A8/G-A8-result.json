@@ -1,0 +1,12 @@
+{
+  "findingIds": ["G-A8"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_VALID_RESET_TOKEN",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/resetPassword1",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1440, "height": 900 },
+  "notes": "The recovery-question form requires a valid emailed reset token. The previously attempted reset request for the controlled A3 mailbox returned 200 but no fresh message appeared in five mailbox refreshes; the only reset message was historical. No valid token was available for the Chrome blank-submit and preselection checks. No password was changed. Source inspection is not deployed verification.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T03:18:00.000Z"
+}
