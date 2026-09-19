@@ -1,7 +1,7 @@
 import { execFileSync } from 'node:child_process';
 import { readFile, writeFile } from 'node:fs/promises';
 import vm from 'node:vm';
-import { normalizeGroup, deduplicate } from '../model.js';
+import { normalizeGroup, deduplicate, reconcileDeployedFindings } from '../model.js';
 
 const names = ['Pitcher','Admin','Organization','Grantor','Guest / Public','KYC Reviewer','KYC Approval','Super Admin','Support Operations','Cross-role Platform Journeys'];
 const repos = ['pitcher','admin','organization','grantor','guest-public','kyc-reviewer','kyc-approval','super-admin','support-operations','cross-role-platform-journeys'];
@@ -69,5 +69,9 @@ const deployedRetest = {
   ledger: reconciledSource ? 'runs/2026-09-18-passed-over-rerun/reconciled-276.json' : 'runs/2026-09-17-defect-batch-deployed-retest/deployed-retest-276.json',
   ...(reconciledSource ? { priorLedger: ledger.sourceRuns[0], rerunLedger: ledger.sourceRuns[1] } : {}),
 };
-const data = {generatedAt:new Date().toISOString(),sizes:['360×800','390×844','768×1024','1024×768','1280×800','1440×900'],groups,uniqueFindings:deduplicate(groups),deployedRetest};
+if (ledger.findings.length !== 276) throw new Error('Expected all 276 delivery-batch retest entries');
+const uniqueFindings = reconciledSource
+  ? reconcileDeployedFindings(deduplicate(groups),ledger,new URL(deployedRetest.ledger,'https://capitalinvestmentclub.github.io/uat-dashboard/').href)
+  : deduplicate(groups);
+const data = {generatedAt:new Date().toISOString(),sizes:['360×800','390×844','768×1024','1024×768','1280×800','1440×900'],groups,uniqueFindings,deployedRetest};
 await writeFile(new URL('../dashboard-data.json',import.meta.url), JSON.stringify(data,null,2)+'\n');

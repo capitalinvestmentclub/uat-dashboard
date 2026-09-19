@@ -4,7 +4,7 @@ import {existsSync,readFileSync} from 'node:fs';
 import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
 import {JSDOM} from 'jsdom';
-import {normalizeGroup,deduplicate,matches,status,statuses,severities,severityBreakdown,executionBreakdown,defectStatusBreakdown} from '../model.js';
+import {normalizeGroup,deduplicate,reconcileDeployedFindings,matches,status,statuses,severities,severityBreakdown,executionBreakdown,defectStatusBreakdown} from '../model.js';
 const data=JSON.parse(readFileSync(new URL('../dashboard-data.json',import.meta.url)));
 const passedOverPlan=JSON.parse(readFileSync(new URL('../runs/2026-09-17-defect-batch-deployed-retest/PASSED_OVER_RETEST_PLAN.json',import.meta.url)));
 const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
@@ -75,6 +75,42 @@ test('completed 276-finding deployed retest is reconciled and visible',async()=>
   assert.match(section.textContent,/199-entry rerun/);
   assert.equal(section.querySelectorAll('tbody tr').length,10);
   dom.window.close();
+});
+test('reconciled ledger updates the finding chart, drilldowns, and evidence without changing the 259-defect denominator',async()=>{
+  const ledgerUrl=new URL(`../${data.deployedRetest.ledger}`,import.meta.url);
+  const ledger=JSON.parse(readFileSync(ledgerUrl));
+  const raw=deduplicate(data.groups);
+  assert.equal(defectStatusBreakdown(raw).find(row=>row.status==='NOT REPORTED').count,194);
+  assert.equal(data.uniqueFindings.length,raw.length);
+  const byId=new Map(data.uniqueFindings.map(finding=>[finding.id,finding]));
+  for(const result of ledger.findings){
+    const finding=byId.get(result.id);
+    assert(finding,`${result.id} missing from dashboard`);
+    assert.equal(finding.status,result.status);
+    assert.equal(finding.deployedRetest.status,result.status);
+    assert.match(finding.retestSummary,/Deployed Chrome/);
+    assert(finding.evidence.some(evidence=>evidence.url.endsWith('reconciled-276.json')));
+  }
+  const counts=Object.fromEntries(defectStatusBreakdown(data.uniqueFindings).map(row=>[row.status,row.count]));
+  assert.deepEqual(counts,{PASS:172,FAIL:27,PARTIAL:12,BLOCKED:44,DUPLICATE_COVERAGE:1,'NOT RUN':0,'NOT REPORTED':3,CONFLICT:0});
+  assert.equal(byId.get('GRT003-VALID-001').previousRetest.status,'FAIL');
+  assert.equal(byId.get('GRT003-VALID-001').status,'PASS');
+  const dom=await page();const document=dom.window.document;
+  assert.match(document.querySelector('.donut').getAttribute('aria-label'),/Awaiting verification: 3, 1\.2%/);
+  document.querySelector('[data-outcome="NOT REPORTED"]').click();
+  assert.equal(document.querySelectorAll('#results details').length,3);
+  dom.window.close();
+});
+test('ledger reconciliation fails closed on nonterminal or unmatched evidence',()=>{
+  const findings=[{id:'F1',title:'Example',groups:['Group'],status:'NOT REPORTED',evidence:[],responsive:[],limitations:[]}];
+  const result={id:'F1',title:'Example',group:'Group',status:'PASS',testedAt:'2026-09-18T00:00:00Z',evidence:[]};
+  const ledger={state:'COMPLETE',findings:[result]};
+  const url='https://example.com/reconciled.json';
+  assert.equal(reconcileDeployedFindings(findings,ledger,url)[0].status,'PASS');
+  assert.throws(()=>reconcileDeployedFindings(findings,{...ledger,state:'IN_PROGRESS'},url),/not complete/);
+  assert.throws(()=>reconcileDeployedFindings(findings,{...ledger,findings:[{...result,title:'Wrong'}]},url),/Unmatched/);
+  assert.throws(()=>reconcileDeployedFindings(findings,{...ledger,findings:[{...result,status:'PASSED_OVER'}]},url),/Nonterminal/);
+  assert.throws(()=>reconcileDeployedFindings(findings,{...ledger,findings:[result,result]},url),/Duplicate/);
 });
 test('published ledger links retain their evidence files',()=>{
   const ledgerUrl=new URL(`../${data.deployedRetest.ledger}`,import.meta.url);
