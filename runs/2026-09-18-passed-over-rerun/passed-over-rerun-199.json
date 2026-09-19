@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:47:41.654Z",
+  "updatedAt": "2026-09-19T02:49:22.563Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3294,15 +3294,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "messaging",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T02:49:22.563Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1440x900",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests&requestId=6aadd9f0ed8aad2701ed25cd",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A148/D-A148-request-chat-initial-1440.png",
+        "evidence/assessor/D-A148/D-A148-result.json"
+      ],
+      "notes": "Chat action is initially inside the 1440px desktop viewport without horizontal scrolling"
     },
     {
       "id": "D-A149",
