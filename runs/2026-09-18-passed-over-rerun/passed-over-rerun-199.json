@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T01:42:00.000Z",
+  "updatedAt": "2026-09-19T01:50:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2859,15 +2859,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "sessions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "BLOCKED_POPULATED_CHAT_AND_PAGE_LOAD",
+      "testedAt": "2026-09-19T01:50:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/6a7c3a2d99e71d8c8f3360c3",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A127/D-A127-result.json"
+      ],
+      "notes": "The selected deployed session is ended and its chat API is accessible, but it contains no messages; The live chat, reply, report, reaction ordering, and populated ended-state controls cannot be inferred from an empty transcript; The focused Chrome terminal-state preflight stalled during page loading and produced no reliable rendered chat evidence; D-A127 remains unverified rather than being passed from mocked regression coverage"
     },
     {
       "id": "D-A128",
