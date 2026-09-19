@@ -3499,7 +3499,7 @@
       "testedAt": "2026-09-19T03:03:06.000Z",
       "browser": "Chrome",
       "viewport": "1792x976",
-      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user/<closed-disposable-id>",
+      "targetUrl": null,
       "apiUrl": "https://cicdevapi.uc.r.appspot.com",
       "evidence": [
         "evidence/assessor/D-A162/D-A162-result.json"
