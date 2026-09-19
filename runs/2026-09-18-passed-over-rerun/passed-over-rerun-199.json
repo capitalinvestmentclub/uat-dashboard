@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:49:22.563Z",
+  "updatedAt": "2026-09-19T02:51:27.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3317,15 +3317,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "messaging",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_ZERO_UNREAD_FIXTURE",
+      "testedAt": "2026-09-19T02:51:27.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A149/D-A149-result.json"
+      ],
+      "notes": "The exact regression requires page unread to reach zero and the global badge to converge after reload. The available Assessor has 458 unread events, and the alternate authenticated account's notification endpoint timed out on the single focused attempt. A small isolated account or functional bulk-read fixture is needed; a mere decrement from 458 would not prove the zero-state behavior."
     },
     {
       "id": "D-A155",
