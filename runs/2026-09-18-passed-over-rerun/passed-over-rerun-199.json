@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T03:04:11.000Z",
+  "updatedAt": "2026-09-19T03:08:58.754Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3538,15 +3538,19 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 7,
       "familyId": "closure",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T03:08:58.754Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/forgetPassword",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A164/D-A164-closed-reset-request.png",
+        "evidence/assessor/D-A164/D-A164-mailbox-after-bounded-refresh.png",
+        "evidence/assessor/D-A164/D-A164-result.json"
+      ],
+      "notes": "Closed disposable mailbox stayed at four historical messages with one old reset mail throughout the bounded window"
     },
     {
       "id": "D-A165",

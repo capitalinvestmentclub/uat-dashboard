@@ -1,0 +1,63 @@
+{
+  "findingIds": [
+    "D-A164"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/forgetPassword",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "closedAccountEmail": "cic.assessor.closure.260911.3702902@yopmail.com",
+    "deployedResetResponse": {
+      "status": 200,
+      "message": "If an account exists, a reset link has been sent."
+    },
+    "observations": [
+      {
+        "at": "2026-09-19T03:07:53.812Z",
+        "countLabel": "4 mails",
+        "resetSubjects": 1,
+        "inboxExcerpt": "Friday\n9:43\nCapital Investment Club\nYour Password Reset Token\n9:33\nCapital Investment Club\nLogin Verification code\n9:30\nCapital Investment Club\nWelcome to Capital Investment Club\n9:26\nCapital Investment Club\nEmail Confir"
+      },
+      {
+        "at": "2026-09-19T03:08:09.667Z",
+        "countLabel": "4 mails",
+        "resetSubjects": 1,
+        "inboxExcerpt": "Friday\n9:43\nCapital Investment Club\nYour Password Reset Token\n9:33\nCapital Investment Club\nLogin Verification code\n9:30\nCapital Investment Club\nWelcome to Capital Investment Club\n9:26\nCapital Investment Club\nEmail Confir"
+      },
+      {
+        "at": "2026-09-19T03:08:26.047Z",
+        "countLabel": "4 mails",
+        "resetSubjects": 1,
+        "inboxExcerpt": "Friday\n9:43\nCapital Investment Club\nYour Password Reset Token\n9:33\nCapital Investment Club\nLogin Verification code\n9:30\nCapital Investment Club\nWelcome to Capital Investment Club\n9:26\nCapital Investment Club\nEmail Confir"
+      },
+      {
+        "at": "2026-09-19T03:08:41.778Z",
+        "countLabel": "4 mails",
+        "resetSubjects": 1,
+        "inboxExcerpt": "Friday\n9:43\nCapital Investment Club\nYour Password Reset Token\n9:33\nCapital Investment Club\nLogin Verification code\n9:30\nCapital Investment Club\nWelcome to Capital Investment Club\n9:26\nCapital Investment Club\nEmail Confir"
+      },
+      {
+        "at": "2026-09-19T03:08:58.636Z",
+        "countLabel": "4 mails",
+        "resetSubjects": 1,
+        "inboxExcerpt": "Friday\n9:43\nCapital Investment Club\nYour Password Reset Token\n9:33\nCapital Investment Club\nLogin Verification code\n9:30\nCapital Investment Club\nWelcome to Capital Investment Club\n9:26\nCapital Investment Club\nEmail Confir"
+      }
+    ],
+    "passwordChanged": false,
+    "resetLinkOpened": false
+  },
+  "assertions": [
+    "Closed disposable mailbox stayed at four historical messages with one old reset mail throughout the bounded window"
+  ],
+  "screenshots": [
+    "D-A164-closed-reset-request.png",
+    "D-A164-mailbox-after-bounded-refresh.png"
+  ],
+  "testedAt": "2026-09-19T03:08:58.754Z"
+}
