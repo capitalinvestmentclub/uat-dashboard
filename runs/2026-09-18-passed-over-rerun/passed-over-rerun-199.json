@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T03:03:06.000Z",
+  "updatedAt": "2026-09-19T03:04:11.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3516,15 +3516,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 7,
       "familyId": "closure",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_CLOSURE_DELIVERY_PRECONDITION",
+      "testedAt": "2026-09-19T03:04:11.000Z",
       "browser": "Chrome",
-      "viewport": null,
+      "viewport": "1792x976",
       "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A163/D-A163-result.json"
+      ],
+      "notes": "The request/approval communication regression requires a fresh disposable Assessor and its controlled inbox plus a live Admin approval. The old closed account's 2026-09-11 absence of mail is not current delivery proof. No shared test identity was closed or password changed."
     },
     {
       "id": "D-A164",
