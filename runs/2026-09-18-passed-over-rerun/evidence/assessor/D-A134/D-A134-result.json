@@ -1,0 +1,29 @@
+{
+  "findingIds": [
+    "D-A134"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aad7cf16b8d9dde2f785337",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "notificationId": "6aad87f72e438e3576078616",
+    "grantId": "6aad7cf16b8d9dde2f785337",
+    "actionHref": "/manage-grants/6aad7cf16b8d9dde2f785337",
+    "title": "PIT-F036 email context 1789754608029"
+  },
+  "assertions": [
+    "A real rejected-application notification exposes Open notification in the deployed Assessor UI",
+    "The action navigates to the correct grant, whose title is rendered"
+  ],
+  "screenshots": [
+    "D-A134-rejected-notification-action.png",
+    "D-A134-grant-deep-link-target.png"
+  ],
+  "testedAt": "2026-09-19T02:15:46.894Z"
+}
