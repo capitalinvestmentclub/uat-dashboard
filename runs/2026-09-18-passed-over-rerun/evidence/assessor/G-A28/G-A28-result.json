@@ -1,0 +1,42 @@
+{
+  "findingIds": [
+    "G-A28"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "observed": {
+    "rowCountIncludingHeader": 39,
+    "firstActionCell": {
+      "x": 1206.484375,
+      "y": 786.375,
+      "width": 123.515625,
+      "height": 112.296875
+    },
+    "table": {
+      "x": 390.453125,
+      "y": 704.875,
+      "width": 939.546875,
+      "height": 4349.28125
+    },
+    "scroll": {
+      "client": 1440,
+      "scroll": 1440
+    },
+    "noOverlap": true
+  },
+  "assertions": [
+    "The populated owner Hires table keeps the first row final action cell within its table and 1440px viewport",
+    "No owner Hires data was changed"
+  ],
+  "screenshots": [
+    "G-A28-owner-hires-1440x900.png"
+  ],
+  "testedAt": "2026-09-19T03:33:44.731Z"
+}
