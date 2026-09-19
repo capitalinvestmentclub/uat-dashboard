@@ -1,0 +1,36 @@
+{
+  "findingIds": [
+    "D-A122"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/6aade31ced8aad2701eda86c",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "sessionId": "6aade31ced8aad2701eda86c",
+  "observations": {
+    "hostRosterVisible": true,
+    "hostInviteControlVisible": true,
+    "assessor": {
+      "status": 403,
+      "message": "You are not invited to this pitch session",
+      "rosterCount": 0,
+      "joinCount": 0
+    }
+  },
+  "assertions": [
+    "The session owner sees an explicit participant roster plus Invite participant control and membership-boundary guidance",
+    "An unrelated signed-in Assessor receives HTTP 403 and cannot see the roster or live-room join control",
+    "The separate Investor fixture was excluded from the Chrome assertion because its authentication session had expired and redirected to login",
+    "Direct possession of the deployed session URL is therefore insufficient to open session details or join the room"
+  ],
+  "screenshots": [
+    "D-A122-host-roster-and-invite-control.png",
+    "D-A122-assessor-membership-denied.png"
+  ],
+  "testedAt": "2026-09-19T01:25:40.101Z"
+}

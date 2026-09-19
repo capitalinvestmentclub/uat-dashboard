@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T01:20:00.000Z",
+  "updatedAt": "2026-09-19T01:25:40.101Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2745,15 +2745,19 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "sessions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T01:25:40.101Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/6aade31ced8aad2701eda86c",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A122/D-A122-host-roster-and-invite-control.png",
+        "evidence/assessor/D-A122/D-A122-assessor-membership-denied.png",
+        "evidence/assessor/D-A122/D-A122-result.json"
+      ],
+      "notes": "The session owner sees an explicit participant roster plus Invite participant control and membership-boundary guidance; An unrelated signed-in Assessor receives HTTP 403 and cannot see the roster or live-room join control; The separate Investor fixture was excluded from the Chrome assertion because its authentication session had expired and redirected to login; Direct possession of the deployed session URL is therefore insufficient to open session details or join the room"
     },
     {
       "id": "D-A123",
