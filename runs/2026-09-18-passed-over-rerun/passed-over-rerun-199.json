@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:41:54.000Z",
+  "updatedAt": "2026-09-19T02:46:07.209Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3248,15 +3248,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "messaging",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "REPRODUCED_DEPLOYED",
+      "testedAt": "2026-09-19T02:46:07.209Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A146/D-A146-completed-assessment-row-chat-entry.png",
+        "evidence/assessor/D-A146/D-A146-result.json"
+      ],
+      "notes": "Completed assessment row has no chat or message action despite linked conversation"
     },
     {
       "id": "D-A147",

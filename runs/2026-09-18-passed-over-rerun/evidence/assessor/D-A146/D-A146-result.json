@@ -1,0 +1,28 @@
+{
+  "findingIds": [
+    "D-A146"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "assessmentId": "6aadb83c6b8d9dde2f7a6a73",
+    "authoritativeStatus": "completed",
+    "pitch": "UAT Solar Microgrid 20260907",
+    "chatActionCount": 0,
+    "rowText": "USG92:UAT Solar Microgrid 20260907\t\n\nTest Pitcher\n\n\t\n\nUnrated\n\n\t\n\n17/09/26\n\n\t\n\n$ 18.80\n\n\t\nSubmitted"
+  },
+  "assertions": [
+    "Completed assessment row has no chat or message action despite linked conversation"
+  ],
+  "screenshots": [
+    "D-A146-completed-assessment-row-chat-entry.png"
+  ],
+  "testedAt": "2026-09-19T02:46:07.209Z"
+}
