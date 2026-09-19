@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T00:26:47Z",
+  "updatedAt": "2026-09-19T00:30:59Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2516,15 +2516,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "BLOCKED_KYC_AND_PROVIDER_PRECONDITIONS",
+      "testedAt": "2026-09-19T00:30:59Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A111/D-A111-inprogress-kyc-ngn-setup.png",
+        "evidence/D-A111/D-A111-result.json"
+      ],
+      "notes": "The deployed Assessor KYC API currently reports InProgress, not Approved; The NGN withdrawal dialog exposes the real bank-verification form and accurately blocks withdrawal while KYC is pending review; No linked payout account is selectable, and the single permitted permanent seed attempt returned HTTP 500 from deployed Paystack verification; The approved-KYC valid withdrawal, confirmation, submission, and terminal settlement branches cannot be tested until both the intended KYC precondition and provider verification are available"
     },
     {
       "id": "D-A113",
