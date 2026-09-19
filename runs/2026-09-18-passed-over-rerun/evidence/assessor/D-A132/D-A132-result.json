@@ -1,0 +1,60 @@
+{
+  "findingIds": [
+    "D-A132"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/grants",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "ineligibleId": "6aa4006298a889dfcabb5d93",
+  "observed": {
+    "requests": [
+      {
+        "status": 200,
+        "eligibleForUser": null,
+        "grantIds": [
+          "6aa4006298a889dfcabb5d91",
+          "6aa4006298a889dfcabb5d92",
+          "6aa4006298a889dfcabb5d93"
+        ]
+      },
+      {
+        "status": 200,
+        "eligibleForUser": null,
+        "grantIds": []
+      },
+      {
+        "status": 200,
+        "eligibleForUser": null,
+        "grantIds": []
+      },
+      {
+        "status": 200,
+        "eligibleForUser": "true",
+        "grantIds": [
+          "6aa4006298a889dfcabb5d91",
+          "6aa4006298a889dfcabb5d92"
+        ]
+      }
+    ],
+    "beforeVisible": true,
+    "afterVisible": false,
+    "eligibleControlVisible": true
+  },
+  "assertions": [
+    "The exact Male/Aerospace Manufacturing/Canada-Ontario grant was visible in the unfiltered deployed catalogue",
+    "The Assessor selected Eligible for you in Chrome, causing an authenticated eligibleForUser=true request",
+    "The server excluded the exact ineligible grant while retaining an eligible ASS-032 grant",
+    "The rendered ineligible grant disappeared from the filtered catalogue"
+  ],
+  "screenshots": [
+    "D-A132-ineligible-visible-before-filter.png",
+    "D-A132-ineligible-excluded-after-filter.png"
+  ],
+  "testedAt": "2026-09-19T02:03:15.950Z"
+}
