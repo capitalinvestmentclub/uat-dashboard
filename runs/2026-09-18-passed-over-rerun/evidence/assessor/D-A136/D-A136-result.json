@@ -1,0 +1,18 @@
+{
+  "findingIds": ["D-A136"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_FIXTURE_PRECONDITION",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/69f2daa7bc7aec04003e4886",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1792, "height": 976 },
+  "observed": {
+    "fixtureGrantId": "69f2daa7bc7aec04003e4886",
+    "fixtureType": "active fixed, expectedAmount 0, fully funded",
+    "seedAttempt": "Owner PUT /grants/69f2daa7bc7aec04003e4886/invite-grantors for Assessor returned HTTP 400: Cannot invite grantors to a fully funded grant.",
+    "mutation": "No invitation was created; no grant join or contribution occurred"
+  },
+  "notes": "The original accepted invitation is no longer pending. A single safe replacement-fixture attempt was rejected before the Assessor could inspect the deployed join modal. Requires an active, not-fully-funded fixed grant with zero join contribution and a pending Assessor invitation. Source-code consent copy alone is not deployed proof.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T02:21:41.000Z"
+}
