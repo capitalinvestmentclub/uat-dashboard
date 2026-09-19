@@ -1,0 +1,41 @@
+{
+  "findingIds": [
+    "G-A27"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=6",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "observed": {
+    "actionBox": {
+      "x": 25,
+      "y": 1871.296875,
+      "width": 340,
+      "height": 44
+    },
+    "rowBox": {
+      "x": 10,
+      "y": 1679.828125,
+      "width": 370,
+      "height": 250.46875
+    },
+    "bodyScroll": {
+      "client": 390,
+      "scroll": 390
+    },
+    "actionInitiallyWithinViewport": true
+  },
+  "assertions": [
+    "The RFI action lies within the initial 390px horizontal viewport after vertical scrolling",
+    "No page-level horizontal overflow"
+  ],
+  "screenshots": [
+    "G-A27-rfi-390x844.png"
+  ],
+  "testedAt": "2026-09-19T03:31:24.773Z"
+}
