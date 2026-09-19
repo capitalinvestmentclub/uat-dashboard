@@ -1,0 +1,40 @@
+{
+  "findingIds": [
+    "D-A119"
+  ],
+  "outcome": "FAIL",
+  "disposition": "UNRESOLVED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/63d993b83f6f4af93536d2ee?id=63d993b83f6f4af93536d2ee&tab=2&pitchId=63d9914591224ee3b3de073d",
+  "apiUrl": "https://cicdevapi.uc.r.appspot.com/api/v1/assessment/getHiresAssessments/63d9914591224ee3b3de073d",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "projectId": "63d993b83f6f4af93536d2ee",
+  "pitchId": "63d9914591224ee3b3de073d",
+  "requestId": "6aadd9f0ed8aad2701ed25cd",
+  "observed": {
+    "assessorProjectApiStatus": 200,
+    "temporaryAccessActive": true,
+    "temporaryAccessRequestIds": [
+      "6aadd9f0ed8aad2701ed25cd"
+    ],
+    "ownerAssessmentApiStatus": 200,
+    "ownerApiRequestStatus": "accepted",
+    "ownerUiRequestRowCount": 0,
+    "ownerUiTerminateButtonCount": 0,
+    "ownerUiAssessmentCount": "0 of 5"
+  },
+  "assertions": [
+    "The Assessor project API confirms active temporary access linked to the exact accepted request",
+    "The project-owner assessment API returns that exact accepted request",
+    "The owner project Assessment tab nevertheless renders zero hires and omits the exact request row",
+    "No Terminate or equivalent revoke action is available in the owner project workspace"
+  ],
+  "screenshots": [
+    "D-A119-owner-revoke-control-still-missing.png"
+  ],
+  "testedAt": "2026-09-19T01:10:00.511Z"
+}
