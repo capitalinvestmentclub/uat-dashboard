@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T01:51:51.374Z",
+  "updatedAt": "2026-09-19T02:01:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2950,15 +2950,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "sessions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "BLOCKED_SIGNUP_PAGE_LOADING",
+      "testedAt": "2026-09-19T02:01:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A131/D-A131-result.json"
+      ],
+      "notes": "The one bounded deployed Chrome attempt opened the signup route but it never progressed beyond its loading spinner; No fresh Assessor account or verification email was created, so the email-delivery defect cannot be evaluated from this attempt; The result is blocked on deployed signup page availability rather than failed on unsupported mailbox inference"
     },
     {
       "id": "D-A132",
