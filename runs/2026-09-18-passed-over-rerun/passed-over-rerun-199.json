@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:29:34.443Z",
+  "updatedAt": "2026-09-19T02:33:22.476Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3180,15 +3180,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "messaging",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T02:33:22.476Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging/69d21f08d24c0e52ce0564e2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A142/D-A142-literal-html-rendered-inert.png",
+        "evidence/assessor/D-A142/D-A142-result.json"
+      ],
+      "notes": "Composer accepted literal HTML-shaped test content; Sent message renders both literal tags and enclosed text as inert content; The same literal message persists after reload"
     },
     {
       "id": "D-A144",

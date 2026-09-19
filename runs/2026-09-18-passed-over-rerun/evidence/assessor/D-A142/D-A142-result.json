@@ -1,0 +1,28 @@
+{
+  "findingIds": [
+    "D-A142"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging/69d21f08d24c0e52ce0564e2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "conversationId": "69d21f08d24c0e52ce0564e2",
+    "literal": "<script>D-A142 inert literal 20260918</script>",
+    "scriptElementsContainingLiteral": 0
+  },
+  "assertions": [
+    "Composer accepted literal HTML-shaped test content",
+    "Sent message renders both literal tags and enclosed text as inert content",
+    "The same literal message persists after reload"
+  ],
+  "screenshots": [
+    "D-A142-literal-html-rendered-inert.png"
+  ],
+  "testedAt": "2026-09-19T02:33:22.476Z"
+}
