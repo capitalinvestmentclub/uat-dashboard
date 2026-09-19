@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T00:52:03.616Z",
+  "updatedAt": "2026-09-19T01:01:12.314Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2631,15 +2631,19 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "projects",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T01:01:12.314Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A117/D-A117-owner-project-rfi-response.png",
+        "evidence/assessor/D-A117/D-A117-assessor-project-rfi-notification.png",
+        "evidence/assessor/D-A117/D-A117-result.json"
+      ],
+      "notes": "The active temporary Assessor created a unique project-phase RFI through Chrome; The project owner received an in-app creation notification deep-linked to the exact RFI; The project owner had a visible response action and submitted a durable response through Chrome; The Assessor received an in-app answered notification deep-linked to the exact RFI; Email transport for the same creation/response producer was independently verified by D-A89 in this delivery-batch rerun"
     },
     {
       "id": "D-A118",

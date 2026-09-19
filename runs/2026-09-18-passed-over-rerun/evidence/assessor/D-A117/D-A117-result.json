@@ -1,0 +1,46 @@
+{
+  "findingIds": [
+    "D-A117"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "projectId": "63d993b83f6f4af93536d2ee",
+  "pitchId": "63d9914591224ee3b3de073d",
+  "requestId": "6aaddea1ed8aad2701ed5b5f",
+  "title": "D-A117 project RFI lifecycle 1789779598744",
+  "description": "Permanent deployed project-phase RFI lifecycle verification 1789779598744",
+  "responseMessage": "Owner response to D-A117 1789779598744",
+  "observed": {
+    "ownerCreationNotification": "New information request for Project Test",
+    "ownerNotificationUrl": "/pitch/63d9914591224ee3b3de073d?id=63d9914591224ee3b3de073d&tab=6&irId=6aaddea1ed8aad2701ed5b5f",
+    "ownerResponseStatus": 200,
+    "persistedRequestStatus": "responded",
+    "assessorResponseNotification": "Information request answered for Project Test",
+    "assessorNotificationUrl": "/pitch/63d9914591224ee3b3de073d?id=63d9914591224ee3b3de073d&tab=6&irId=6aaddea1ed8aad2701ed5b5f"
+  },
+  "assertions": [
+    "The active temporary Assessor created a unique project-phase RFI through Chrome",
+    "The project owner received an in-app creation notification deep-linked to the exact RFI",
+    "The project owner had a visible response action and submitted a durable response through Chrome",
+    "The Assessor received an in-app answered notification deep-linked to the exact RFI",
+    "Email transport for the same creation/response producer was independently verified by D-A89 in this delivery-batch rerun"
+  ],
+  "seededData": {
+    "projectId": "63d993b83f6f4af93536d2ee",
+    "pitchId": "63d9914591224ee3b3de073d",
+    "requestId": "6aaddea1ed8aad2701ed5b5f",
+    "permanent": true
+  },
+  "screenshots": [
+    "D-A117-owner-project-rfi-response.png",
+    "D-A117-assessor-project-rfi-notification.png"
+  ],
+  "testedAt": "2026-09-19T01:01:12.314Z"
+}
