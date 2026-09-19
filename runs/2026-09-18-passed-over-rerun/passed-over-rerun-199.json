@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T03:30:00.000Z",
+  "updatedAt": "2026-09-19T03:31:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3808,15 +3808,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 2,
       "familyId": "profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_ACTIVE_TASK_RESPONSE",
+      "testedAt": "2026-09-19T03:31:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1440x900",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/G-A24/G-A24-result.json"
+      ],
+      "notes": "The original task response textareas and evidence drop zone belong to an active assigned assessment. The current Test Assessor's known Solar Microgrid 20260907 assessment is completed; earlier deployed inventory found no editable assigned task fixture. The historical Adebayo draft/assignment is not owned by this session. Completed-view controls or source labels cannot prove the active response form; no upload or response was made."
     },
     {
       "id": "G-A25",
