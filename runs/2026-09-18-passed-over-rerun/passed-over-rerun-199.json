@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:15:46.894Z",
+  "updatedAt": "2026-09-19T02:19:30.774Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3043,15 +3043,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "grants",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T02:19:30.774Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aa79bdc353b35320a700859",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A135/D-A135-draft-invite-publication-guidance.png",
+        "evidence/assessor/D-A135/D-A135-result.json"
+      ],
+      "notes": "Newly invited Assessor can inspect an actual draft grant; UI explains publication prerequisite and disables the action rather than offering Join; No grant join request was sent; Ancillary copy caveat: the disabled action says Grant Closed although the grant is a draft"
     },
     {
       "id": "D-A136",

@@ -1,0 +1,32 @@
+{
+  "findingIds": [
+    "D-A135"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aa79bdc353b35320a700859",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "grantId": "6aa79bdc353b35320a700859",
+    "title": "Retest45 pitch rules 20260914",
+    "invitationSeed": "Owner PUT invite-grantors 200; new invitation to cic.test.assessor@gmail.com",
+    "responses": [],
+    "buttonDisabled": true,
+    "ancillaryCopy": "The disabled action says Grant Closed despite draft status; publication guidance itself is accurate"
+  },
+  "assertions": [
+    "Newly invited Assessor can inspect an actual draft grant",
+    "UI explains publication prerequisite and disables the action rather than offering Join",
+    "No grant join request was sent",
+    "Ancillary copy caveat: the disabled action says Grant Closed although the grant is a draft"
+  ],
+  "screenshots": [
+    "D-A135-draft-invite-publication-guidance.png"
+  ],
+  "testedAt": "2026-09-19T02:19:30.774Z"
+}
