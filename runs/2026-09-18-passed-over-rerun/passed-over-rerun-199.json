@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T00:30:59Z",
+  "updatedAt": "2026-09-19T00:37:43.291Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2539,15 +2539,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "projects",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T00:37:43.291Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-projects",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A113/D-A113-active-assignment-discoverable.png",
+        "evidence/D-A113/D-A113-result.json"
+      ],
+      "notes": "A real future-dated Review assignment was created by the project owner and accepted by the Assessor; The Assessor project API returned the exact project when searched by its title; Assigned Projects rendered one exact-title project link instead of the prior empty/no-match state; The discoverable assignment and project link persisted after full reload"
     },
     {
       "id": "D-A114",
