@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T01:10:00.511Z",
+  "updatedAt": "2026-09-19T01:14:32.300Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2701,15 +2701,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "sessions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "BLOCKED_PRECONDITION_NO_ZERO_CREDIT_PITCH_OWNER",
+      "testedAt": "2026-09-19T01:14:32.300Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session-credits",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A120/D-A120-result.json"
+      ],
+      "notes": "The shared Pitcher account has 55 units (1,650 minutes), so it cannot reproduce the insufficient-credit schedule path; The first six isolated organization contexts returned zero session credits but no owned pitches, leaving no schedulable pitch for the exact regression; A single targeted parallel inventory attempt across all Pitcher organizations timed out without producing an additional usable fixture; The shared account credits were not depleted or refunded merely to manufacture the precondition; D-A120 remains unverified in deployed Chrome until a zero-credit Pitcher context owns a published schedulable pitch"
     },
     {
       "id": "D-A121",
