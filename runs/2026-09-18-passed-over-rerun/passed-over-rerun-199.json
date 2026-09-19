@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T00:42:29.071Z",
+  "updatedAt": "2026-09-19T00:46:08.923Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2585,15 +2585,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "projects",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T00:46:08.923Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/63d9bb909bfa0a60876fdd98?id=63d9bb909bfa0a60876fdd98&tab=4&pitchId=63d9b7749bfa0a60876fdd87",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A115/D-A115-ended-engagement-project-denied.png",
+        "evidence/assessor/D-A115/D-A115-result.json"
+      ],
+      "notes": "A project tied to terminated Assessor engagements returns HTTP 403 to the ended Assessor; Chrome renders a stable Unable to load project boundary with the explicit ended-access message; The private milestone and its Support and Push back mutation controls are absent; The denial persists after full reload and no project mutation request is issued"
     },
     {
       "id": "D-A116",
