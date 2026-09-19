@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-18T23:56:08.617Z",
+  "updatedAt": "2026-09-19T00:04:33.735Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2419,15 +2419,20 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "assessment",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T00:04:33.735Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user/63b9b30ec4c53f00275907af",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A107/D-A107-directory-unrated-semantics.png",
+        "evidence/D-A107/D-A107-work-list-rating.png",
+        "evidence/D-A107/D-A107-public-rating-history.png",
+        "evidence/D-A107/D-A107-result.json"
+      ],
+      "notes": "The Assessor work list renders the exact D-A106 engagement as 4 Stars instead of a blank My Rating cell; The public profile renders a 3.67 of 5 aggregate from three ratings and the arithmetic reconciles exactly to its visible history; The D-A106 score, comment, assessment type, date, and exact engagement link are auditable in profile history; Badge score is explicitly separate from assessment ratings, while currently unrated directory Assessors are labelled Unrated (0) instead of an ambiguous numeric zero"
     },
     {
       "id": "D-A108",

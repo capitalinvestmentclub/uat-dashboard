@@ -1,0 +1,42 @@
+{
+  "findingIds": [
+    "D-A107"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user/63b9b30ec4c53f00275907af",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assessorUserId": "63b9b30ec4c53f00275907af",
+  "ratedTaskId": "6aadb8ed6b8d9dde2f7a6fed",
+  "ratedRequestId": "6aadb83c6b8d9dde2f7a6a73",
+  "observed": {
+    "aggregate": 3.67,
+    "count": 3,
+    "ratingScale": 5,
+    "calculatedAverage": 3.67,
+    "exactEngagementRating": 4,
+    "exactEngagementComment": "&lt;script>alert('no')&lt;/script> Clear, actionable and well-evidenced delivery for D-A106.",
+    "exactEngagementUrl": "/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=2&assessmentRequestId=6aadb83c6b8d9dde2f7a6a73",
+    "workListRating": 4,
+    "badgeScoreTotal": 169,
+    "displayedBadgeScore": "0\nTOTAL SCORE",
+    "discoverableDirectoryRows": 3
+  },
+  "assertions": [
+    "The Assessor work list renders the exact D-A106 engagement as 4 Stars instead of a blank My Rating cell",
+    "The public profile renders a 3.67 of 5 aggregate from three ratings and the arithmetic reconciles exactly to its visible history",
+    "The D-A106 score, comment, assessment type, date, and exact engagement link are auditable in profile history",
+    "Badge score is explicitly separate from assessment ratings, while currently unrated directory Assessors are labelled Unrated (0) instead of an ambiguous numeric zero"
+  ],
+  "screenshots": [
+    "D-A107-directory-unrated-semantics.png",
+    "D-A107-work-list-rating.png",
+    "D-A107-public-rating-history.png"
+  ],
+  "testedAt": "2026-09-19T00:04:33.735Z"
+}
