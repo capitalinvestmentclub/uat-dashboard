@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T03:09:54.000Z",
+  "updatedAt": "2026-09-19T03:10:59.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3584,15 +3584,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 2,
       "familyId": "profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_ADMIN_SESSION",
+      "testedAt": "2026-09-19T03:10:59.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1440x900",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user-management",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/G-A2/G-A2-result.json"
+      ],
+      "notes": "The 1440x900 admin user-row action geometry and accessible naming require a live Admin session. The saved Admin session is expired/revoked; no current Assessor or Pitcher may access User Management. No row action was inferred from source alone."
     },
     {
       "id": "G-A4",

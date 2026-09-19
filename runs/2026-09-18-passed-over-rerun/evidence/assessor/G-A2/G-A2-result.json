@@ -1,0 +1,12 @@
+{
+  "findingIds": ["G-A2"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_ADMIN_SESSION",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user-management",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1440, "height": 900 },
+  "notes": "The 1440x900 admin user-row action geometry and accessible naming require a live Admin session. The saved Admin session is expired/revoked; no current Assessor or Pitcher may access User Management. No row action was inferred from source alone.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T03:10:59.000Z"
+}
