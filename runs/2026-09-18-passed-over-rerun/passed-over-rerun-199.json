@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T03:08:58.754Z",
+  "updatedAt": "2026-09-19T03:09:54.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3562,15 +3562,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 7,
       "familyId": "closure",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_ADMIN_CLOSURE_AUDIT",
+      "testedAt": "2026-09-19T03:09:54.000Z",
       "browser": "Chrome",
-      "viewport": null,
+      "viewport": "1792x976",
       "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A165/D-A165-result.json"
+      ],
+      "notes": "The review-note preservation path requires a fresh Admin approval of a disposable account followed by immutable audit readback. Neither a live Admin actor nor a new disposable pending request is available; the old audit omission is historical evidence only. No shared account was closed."
     },
     {
       "id": "G-A2",

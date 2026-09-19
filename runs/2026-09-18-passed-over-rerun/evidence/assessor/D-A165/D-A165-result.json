@@ -1,0 +1,18 @@
+{
+  "findingIds": ["D-A165"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_ADMIN_CLOSURE_AUDIT",
+  "targetUrl": null,
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1792, "height": 976 },
+  "observed": {
+    "historicalClosure": "A3 approved on 2026-09-11 with a review note omitted from audit history",
+    "currentAdminSession": "expired/revoked",
+    "freshDisposableClosure": "not created",
+    "auditMutation": "none"
+  },
+  "notes": "The review-note preservation path requires a fresh Admin approval of a disposable account followed by immutable audit readback. Neither a live Admin actor nor a new disposable pending request is available; the old audit omission is historical evidence only. No shared account was closed.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T03:09:54.000Z"
+}
