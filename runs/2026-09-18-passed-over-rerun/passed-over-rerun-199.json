@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:26:12.255Z",
+  "updatedAt": "2026-09-19T02:29:34.443Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3156,15 +3156,19 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "grants",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T02:29:34.443Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aa4006298a889dfcabb5d93?apply=1",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A141/D-A141-ineligible-grant-precondition.png",
+        "evidence/assessor/D-A141/D-A141-ineligible-submit-outcome.png",
+        "evidence/assessor/D-A141/D-A141-result.json"
+      ],
+      "notes": "The ineligible Assessor was excluded from eligibility-filtered discovery; Submitting the completed application returned an explicit eligibility rejection; Reload still shows no application; Apply remains enabled until final submit"
     },
     {
       "id": "D-A142",
