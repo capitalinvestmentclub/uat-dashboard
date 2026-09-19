@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T03:28:00.000Z",
+  "updatedAt": "2026-09-19T03:30:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3786,15 +3786,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 2,
       "familyId": "profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_DRAFT_OWNER_ACTOR",
+      "testedAt": "2026-09-19T03:30:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1440x900",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9e8292d26f574c9142e626?tab=2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/G-A23/G-A23-result.json"
+      ],
+      "notes": "The original edit-icon finding was on review 6aa35a995b99bdd47f86c0ca, an Adebayo Guerrilla-UAT draft on Solar Microgrid 73110. The current Assessor is Test Assessor, not the draft owner; the current Pitcher Hires view of that pitch has no draft edit action. The prior deployed inventory had no same-owner active draft. An unrelated or completed assessment row is not equivalent. No edit action was classified as fixed."
     },
     {
       "id": "G-A24",
