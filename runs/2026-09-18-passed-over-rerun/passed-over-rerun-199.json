@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T03:01:55.000Z",
+  "updatedAt": "2026-09-19T03:03:06.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3494,15 +3494,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 7,
       "familyId": "closure",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_CLOSED_PROFILE_TARGET",
+      "testedAt": "2026-09-19T03:03:06.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user/<closed-disposable-id>",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A162/D-A162-result.json"
+      ],
+      "notes": "The original closed account's profile ID was not retained; its name is absent from the current Assessor directory, which is encouraging but does not prove direct-route denial or prevent Follow. A focused directory lookup could not recover the exact closed ID, and Admin user lookup is unavailable. Requires the original ID or a new disposable closed account and live Admin actor."
     },
     {
       "id": "D-A163",
