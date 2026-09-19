@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:22:34.000Z",
+  "updatedAt": "2026-09-19T02:24:21.341Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3110,15 +3110,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "grants",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T02:24:21.341Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6a28b07e181c902692117d75",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A138/D-A138-two-grantors-count-and-rows.png",
+        "evidence/assessor/D-A138/D-A138-result.json"
+      ],
+      "notes": "Owner-visible grantors tab displays count 2 for the two persisted members; The rendered table contains one header and two member rows"
     },
     {
       "id": "D-A140",

@@ -1,0 +1,29 @@
+{
+  "findingIds": [
+    "D-A138"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6a28b07e181c902692117d75",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "grantId": "6a28b07e181c902692117d75",
+    "title": "Public Grantee",
+    "authoritativeMembers": 2,
+    "displayedCount": 2,
+    "renderedRowsIncludingHeader": 3
+  },
+  "assertions": [
+    "Owner-visible grantors tab displays count 2 for the two persisted members",
+    "The rendered table contains one header and two member rows"
+  ],
+  "screenshots": [
+    "D-A138-two-grantors-count-and-rows.png"
+  ],
+  "testedAt": "2026-09-19T02:24:21.341Z"
+}
