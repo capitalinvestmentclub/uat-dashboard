@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T03:21:11.005Z",
+  "updatedAt": "2026-09-19T03:23:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3697,15 +3697,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 2,
       "familyId": "profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_ORGANIZATION_VIEWER_ACTOR",
+      "testedAt": "2026-09-19T03:23:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1440x900",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/G-A15/G-A15-result.json"
+      ],
+      "notes": "The current working Chrome identities are a personal Assessor and a Pitcher, not a Viewer member in an organization. The earlier deployed actor inventory found no Viewer organization context. Their management-control state cannot establish the Viewer permission boundary; no organization permissions were inferred from source or another role."
     },
     {
       "id": "G-A16",
