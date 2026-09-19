@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:56:48.000Z",
+  "updatedAt": "2026-09-19T02:57:37.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3384,15 +3384,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "marketplace",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_SAME_LISTING_PRECONDITION",
+      "testedAt": "2026-09-19T02:57:37.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/buy/pitch/6aa3b0220000000000000001",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A157/D-A157-result.json"
+      ],
+      "notes": "The historical listing that showed contradictory catalogue/detail/modal prices no longer exists. Same-listing currency and magnitude comparison cannot be made in deployed Chrome without an active sale; the single controlled replacement-fixture attempt failed server-side. No pricing consistency claim is made from the asset's standalone valuation."
     },
     {
       "id": "D-A158",
