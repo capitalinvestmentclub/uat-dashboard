@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T01:14:32.300Z",
+  "updatedAt": "2026-09-19T01:20:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2723,15 +2723,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "sessions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "BLOCKED_TRANSACTIONAL_EMAIL_NOT_OBSERVED",
+      "testedAt": "2026-09-19T01:20:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A121/D-A121-result.json"
+      ],
+      "notes": "The first deployed Chrome run successfully created and rescheduled a real 1,800-second session; No matching reschedule email arrived in the controlled inbox within 120 seconds, so current timezone and duration rendering could not be re-proven for D-A121; The single focused recovery corrected the masked Yopmail selector, after which a transient API fetch failure prevented a replacement fixture; D-A121 is blocked rather than passed because the current run lacks its own delivered communication evidence"
     },
     {
       "id": "D-A122",
