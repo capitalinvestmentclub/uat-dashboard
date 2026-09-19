@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "2026-09-18-passed-over-rerun",
-  "state": "IN_PROGRESS",
+  "state": "COMPLETE",
   "startedAt": "2026-09-18T14:33:26.764Z",
   "updatedAt": "2026-09-19T03:37:00.000Z",
   "scope": {
@@ -4597,5 +4597,6 @@
       ],
       "notes": "The Pitcher created, saved and submitted a real governance report with a due obligation through the deployed UI; The shareholder Investor acknowledged, accepted, reopened and requested correction with an audit note; The Pitcher created a correction revision, changed its health summary and submitted the revised report; The Investor saw immutable revision comparison, changed-section and audit-history evidence, then accepted and reopened the revision; The reopened revision and full review state persisted after a real page reload, and export remained available"
     }
-  ]
+  ],
+  "completedAt": "2026-09-19T03:37:00.000Z"
 }

@@ -63,12 +63,16 @@ test('current delivery ledger is visible, escaped, and does not change UAT outco
 test('completed 276-finding deployed retest is reconciled and visible',async()=>{
   assert.equal(data.deployedRetest.state,'COMPLETE');
   assert.equal(data.deployedRetest.total,276);
-  assert.deepEqual(data.deployedRetest.outcomes,{DUPLICATE_COVERAGE:1,FAIL:12,PASS:64,PASSED_OVER:199});
+  assert.deepEqual(data.deployedRetest.outcomes,{BLOCKED:55,DUPLICATE_COVERAGE:1,FAIL:30,PASS:190});
+  assert.match(data.deployedRetest.ledger,/reconciled-276\.json$/);
+  assert.match(data.deployedRetest.rerunLedger,/passed-over-rerun-199\.json$/);
   assert.equal(data.deployedRetest.groups.length,10);
   assert.equal(data.deployedRetest.groups.reduce((total,group)=>total+group.total,0),276);
   const dom=await page();const section=dom.window.document.querySelector('#deployed-retest');
   assert.match(section.textContent,/276 of 276 entries/);
-  assert.match(section.textContent,/64 passed/);
+  assert.match(section.textContent,/190 passed/);
+  assert.match(section.textContent,/55 blocked/);
+  assert.match(section.textContent,/199-entry rerun/);
   assert.equal(section.querySelectorAll('tbody tr').length,10);
   dom.window.close();
 });
