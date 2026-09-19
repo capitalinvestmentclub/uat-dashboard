@@ -1,0 +1,18 @@
+{
+  "findingIds": ["D-A159"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_ACTIVE_LISTING_PRECONDITION",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1792, "height": 976 },
+  "observed": {
+    "sellerAssetId": "6516ccab0d9e99256c0b6580",
+    "sellerAvailableEquityBefore": "approximately 50.031091% in portfolio, subject to reservation validation",
+    "controlledPartialSale": "POST /marketplace/sell 0.001% at USD 5 returned HTTP 500 with no sale ID",
+    "liveSalesInCatalogue": 0
+  },
+  "notes": "A partial active listing must persist before comparing available equity and attempting an over-available second listing. The single controlled seed failed at first sale, so neither reservation readback nor second-submit feedback was exercised in deployed Chrome. An older local harness is not evidence for this run.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T02:59:19.000Z"
+}
