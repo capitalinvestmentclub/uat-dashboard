@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T01:25:40.101Z",
+  "updatedAt": "2026-09-19T01:27:19.169Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2769,15 +2769,19 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "sessions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T01:27:19.169Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/6a801232af5a3e4e85a9ae2f",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A123/D-A123-cancelled-host-inert.png",
+        "evidence/assessor/D-A123/D-A123-cancelled-uninvited-assessor-denied.png",
+        "evidence/assessor/D-A123/D-A123-result.json"
+      ],
+      "notes": "The exact persisted session is cancelled and remains readable to its host as a terminal record; The host sees Session Unavailable and session re-entry disabled, with no live-room join control or join request; An unrelated authenticated Assessor receives HTTP 403 from the same direct URL; The unrelated Assessor sees no live-room join control and emits no Agora room-join request"
     },
     {
       "id": "D-A124",
