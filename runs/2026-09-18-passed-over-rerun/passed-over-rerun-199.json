@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T01:01:12.314Z",
+  "updatedAt": "2026-09-19T01:04:22.720Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2655,15 +2655,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "projects",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T01:04:22.720Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/63d993b83f6f4af93536d2ee?id=63d993b83f6f4af93536d2ee&tab=4&pitchId=63d9914591224ee3b3de073d",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A118/D-A118-milestone-comment-persists.png",
+        "evidence/assessor/D-A118/D-A118-result.json"
+      ],
+      "notes": "The temporary Assessor submitted a nonblank Unicode and harmless HTML-like milestone comment through Chrome; The API trimmed surrounding whitespace, retained Unicode, safely encoded the HTML-like fragment, and returned a durable identifier; The exact comment rendered immediately in the milestone discussion; The exact comment remained visible after a full page reload"
     },
     {
       "id": "D-A119",
