@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:51:27.000Z",
+  "updatedAt": "2026-09-19T02:54:30.043Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3339,15 +3339,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "marketplace",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T02:54:30.043Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/buy/pitch/6aa3b0220000000000000001",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A155/D-A155-unrelated-holder-privacy.png",
+        "evidence/assessor/D-A155/D-A155-result.json"
+      ],
+      "notes": "Holder endpoint denies unrelated Assessor and Chrome withholds known identities and stakes"
     },
     {
       "id": "D-A156",
