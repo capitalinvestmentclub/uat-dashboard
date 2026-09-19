@@ -1,0 +1,30 @@
+{
+  "findingIds": [
+    "G-A16"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9e8292d26f574c9142e626?tab=2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "observed": {
+    "pitchId": "6a9e8292d26f574c9142e626",
+    "pitchTitle": "UAT Solar Microgrid 73110",
+    "actor": "Pitcher",
+    "hireCount": 0,
+    "requestCount": 0,
+    "submitted": false
+  },
+  "assertions": [
+    "The settled Hires view on the historical non-owner pitch has neither Hire Assessor nor Request action",
+    "No assessment request was submitted; backend authorization was not exercised"
+  ],
+  "screenshots": [
+    "G-A16-non-owner-assessment-controls.png"
+  ],
+  "testedAt": "2026-09-19T03:25:00.677Z"
+}
