@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:33:22.476Z",
+  "updatedAt": "2026-09-19T02:34:59.431Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3203,15 +3203,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "messaging",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T02:34:59.431Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1440x900",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging/69d21f08d24c0e52ce0564e2",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A144/D-A144-long-token-wrap-1440.png",
+        "evidence/assessor/D-A144/D-A144-result.json"
+      ],
+      "notes": "A 1536-character unbroken token was sent and persisted after reload; Bubble and rendered content remain within their available widths"
     },
     {
       "id": "D-A145",
