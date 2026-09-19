@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T01:47:35.998Z",
+  "updatedAt": "2026-09-19T01:51:51.374Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2927,15 +2927,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "sessions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "BLOCKED_HOST_EMAIL_CTA_UNVERIFIED",
+      "testedAt": "2026-09-19T01:51:51.374Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A130/D-A130-fresh-host-cancellation-notification.png",
+        "evidence/assessor/D-A130/D-A130-result.json"
+      ],
+      "notes": "The host cancelled the exact scheduled test session in deployed Chrome and the persisted status became cancelled; The freshly generated host cancellation notification was inspected for host-specific language and an exact session deep link; The in-app host notification rendered the correct identity and exact session deep link; The original defect also included the delivered cancellation email CTA and reschedule email content; this run did not access the host mailbox or follow that email CTA, so the full finding remains unverified"
     },
     {
       "id": "D-A131",
