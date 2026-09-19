@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T03:27:00.000Z",
+  "updatedAt": "2026-09-19T03:28:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3764,15 +3764,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 2,
       "familyId": "profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_FINANCIAL_SESSION_FAULT_FIXTURE",
+      "testedAt": "2026-09-19T03:28:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1440x900",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/G-A22/G-A22-result.json"
+      ],
+      "notes": "The original finding concerns a committed financial request during a server-session confirmation failure, followed by ambiguous retry and later readback. The current live Pitcher session and shared pitch do not supply a controlled session-fault injector plus isolated financial request fixture. A normal submission cannot prove the failure/retry branch; no financial request was submitted or classified as fixed from source-only reasoning."
     },
     {
       "id": "G-A23",

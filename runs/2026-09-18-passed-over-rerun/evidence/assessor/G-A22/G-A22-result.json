@@ -1,0 +1,12 @@
+{
+  "findingIds": ["G-A22"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_FINANCIAL_SESSION_FAULT_FIXTURE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1440, "height": 900 },
+  "notes": "The original finding concerns a committed financial request during a server-session confirmation failure, followed by ambiguous retry and later readback. The current live Pitcher session and shared pitch do not supply a controlled session-fault injector plus isolated financial request fixture. A normal submission cannot prove the failure/retry branch; no financial request was submitted or classified as fixed from source-only reasoning.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T03:28:00.000Z"
+}
