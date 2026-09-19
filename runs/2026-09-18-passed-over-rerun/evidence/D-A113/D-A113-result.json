@@ -1,0 +1,41 @@
+{
+  "findingIds": [
+    "D-A113"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-projects",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "pitchId": "63d9914591224ee3b3de073d",
+  "projectId": "63d993b83f6f4af93536d2ee",
+  "requestId": "6aadd9f0ed8aad2701ed25cd",
+  "observed": {
+    "requestStatus": "accepted",
+    "dueDate": "2026-10-30",
+    "baselineApiMatchCount": 0,
+    "apiMatchCount": 1,
+    "visibleProjectTitle": "PT:Project Test",
+    "projectHref": "/project/63d993b83f6f4af93536d2ee",
+    "persistedAfterReload": true
+  },
+  "assertions": [
+    "The selected project was absent from the Assessor project API before the isolated temporary assignment",
+    "A real future-dated Review assignment was created by the project owner and accepted by the Assessor",
+    "The Assessor project API returned the exact project when searched by its title",
+    "Assigned Projects rendered one exact-title project link instead of the prior empty/no-match state",
+    "The discoverable assignment and project link persisted after full reload"
+  ],
+  "seededData": {
+    "requestId": "6aadd9f0ed8aad2701ed25cd",
+    "permanent": true
+  },
+  "screenshots": [
+    "D-A113-active-assignment-discoverable.png"
+  ],
+  "testedAt": "2026-09-19T00:40:46.686Z"
+}

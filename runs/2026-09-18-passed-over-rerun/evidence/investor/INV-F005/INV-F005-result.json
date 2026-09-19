@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "INV-F005"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/grants",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Empty required grant details remain on Step 1 of 2.",
+    "The form identifies missing title, positive amount, and purpose in a summary and inline errors.",
+    "Grant Setup is not rendered after the invalid Next action."
+  ],
+  "screenshots": [
+    "INV-F005-required-grant-details-blocked.png"
+  ],
+  "testedAt": "2026-09-18T14:55:21.153Z"
+}

@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "PIT-F024"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "CURRENT_AGREEMENT_COUNTERPARTY_ACTOR_UNAVAILABLE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=10",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The controlled Pitcher Gmail contains historical shareholder-agreement notifications, proving mailbox readback is now available, but those messages predate the current deployed fix and cannot validate it.",
+    "The controlled Pitcher opened the current agreement but signing was correctly rejected because its template had not been initiated.",
+    "After one Investor-session refresh, the controlled Investor opened the same pitch successfully but was not the accepted-bid investor and therefore had no agreement to initiate or sign.",
+    "The exact current agreement counterparty actor is unavailable, so no new deployed notification could be generated and its CTA could not be verified without claiming stale historical email as current evidence.",
+    "No agreement transition or user password change occurred."
+  ],
+  "screenshots": [],
+  "testedAt": "2026-09-18T18:05:00.000Z"
+}

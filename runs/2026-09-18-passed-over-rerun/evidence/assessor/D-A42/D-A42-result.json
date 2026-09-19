@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "D-A42"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "PAID_REQUEST_PRECONDITION_REJECTED_AFTER_SESSION_RECOVERY",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitches/6aa5b67dadbfd6eabee4488f",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "pitchId": "6aa5b67dadbfd6eabee4488f",
+  "testedAt": "2026-09-18T20:33:29Z",
+  "assertions": [
+    "The Investor session initially returned HTTP 401 and was refreshed successfully in deployed Chrome.",
+    "The first authenticated request returned HTTP 403: Only the pitch owner, a co-owner, or an administrator can request an assessment.",
+    "The request was rejected before durable creation, so no paid request or payment hold was created by this attempt.",
+    "The duplicate/replay reconciliation boundary could not be reached with this fixture after the single allowed recovery attempt."
+  ],
+  "screenshots": []
+}

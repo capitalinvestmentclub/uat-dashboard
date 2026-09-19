@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "ADM055-BACKFILL-001"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/ledger",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Backfill remained disabled until one exact user was selected",
+    "The confirmation dialog explicitly limited scope to the selected user and required a separate checkbox acknowledgement",
+    "The deployed request body contained only the selected subject email (cic.test.pitcher+pitf035-1789754330@gmail.com) and completed successfully"
+  ],
+  "screenshots": [
+    "ADM055-BACKFILL-001-selected-user-confirmation.png",
+    "ADM055-BACKFILL-001-scoped-result.png"
+  ],
+  "testedAt": "2026-09-18T18:43:42.914Z"
+}

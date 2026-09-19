@@ -1,0 +1,24 @@
+{
+  "findingIds": [
+    "INV-F010"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Withdrawal amount: NGN 10000.00.",
+    "Displayed wallet withdrawal fee: NGN 53.24.",
+    "Displayed total reserved: NGN 10053.24.",
+    "The displayed total equals withdrawal amount plus the displayed fee."
+  ],
+  "screenshots": [
+    "INV-F010-withdrawal-quote-reconciled.png"
+  ],
+  "testedAt": "2026-09-18T15:17:49.360Z"
+}

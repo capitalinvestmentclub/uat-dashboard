@@ -1,0 +1,32 @@
+{
+  "findingIds": [
+    "D-A65"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests&requestId=6aadadb76b8d9dde2f79da8c",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aadadb76b8d9dde2f79da8c",
+  "observed": {
+    "status": "rate_proposed",
+    "rateProposalAuthorRole": "assessor",
+    "assessorVisibleLabel": "Assessor proposed rate",
+    "negotiatedRate": 26000,
+    "currency": "NGN"
+  },
+  "assertions": [
+    "The real proposal was authored by Test Assessor and the durable record retained rateProposalAuthorRole assessor",
+    "The Assessor Requests row displayed Assessor proposed rate rather than Client proposed rate",
+    "The corrected authorship label remained after a full page reload",
+    "The label reconciled with the durable NGN 26,000 proposal record"
+  ],
+  "screenshots": [
+    "D-A65-assessor-authorship-label.png"
+  ],
+  "testedAt": "2026-09-18T21:39:00.000Z"
+}

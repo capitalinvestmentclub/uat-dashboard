@@ -1,11 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+import {existsSync,readFileSync} from 'node:fs';
 import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
 import {JSDOM} from 'jsdom';
 import {normalizeGroup,deduplicate,matches,status,statuses,severities,severityBreakdown,executionBreakdown,defectStatusBreakdown} from '../model.js';
 const data=JSON.parse(readFileSync(new URL('../dashboard-data.json',import.meta.url)));
+const passedOverPlan=JSON.parse(readFileSync(new URL('../runs/2026-09-17-defect-batch-deployed-retest/PASSED_OVER_RETEST_PLAN.json',import.meta.url)));
 const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const script=readFileSync(new URL('../app.js',import.meta.url),'utf8').replace(/^import .*\n/,'').replace(/\bstatus\(/g,'normalizeStatus(');
 async function page(payload=data,ok=true){
@@ -62,14 +63,43 @@ test('current delivery ledger is visible, escaped, and does not change UAT outco
 test('completed 276-finding deployed retest is reconciled and visible',async()=>{
   assert.equal(data.deployedRetest.state,'COMPLETE');
   assert.equal(data.deployedRetest.total,276);
-  assert.deepEqual(data.deployedRetest.outcomes,{DUPLICATE_COVERAGE:1,FAIL:12,PASS:64,PASSED_OVER:199});
+  assert.deepEqual(data.deployedRetest.outcomes,{BLOCKED:55,DUPLICATE_COVERAGE:1,FAIL:30,PASS:190});
+  assert.match(data.deployedRetest.ledger,/reconciled-276\.json$/);
+  assert.match(data.deployedRetest.rerunLedger,/passed-over-rerun-199\.json$/);
   assert.equal(data.deployedRetest.groups.length,10);
   assert.equal(data.deployedRetest.groups.reduce((total,group)=>total+group.total,0),276);
   const dom=await page();const section=dom.window.document.querySelector('#deployed-retest');
   assert.match(section.textContent,/276 of 276 entries/);
-  assert.match(section.textContent,/64 passed/);
+  assert.match(section.textContent,/190 passed/);
+  assert.match(section.textContent,/55 blocked/);
+  assert.match(section.textContent,/199-entry rerun/);
   assert.equal(section.querySelectorAll('tbody tr').length,10);
   dom.window.close();
+});
+test('published ledger links retain their evidence files',()=>{
+  const ledgerUrl=new URL(`../${data.deployedRetest.ledger}`,import.meta.url);
+  const ledger=JSON.parse(readFileSync(ledgerUrl));
+  assert.equal(ledger.findings.length,276);
+  assert.equal(ledger.findings.filter(finding=>finding.rerunId).length,199);
+  for(const finding of ledger.findings){
+    for(const evidence of finding.evidence||[]){
+      assert(existsSync(new URL(evidence,ledgerUrl)),`${finding.id} missing ${evidence}`);
+    }
+  }
+  const workflow=readFileSync(new URL('../.github/workflows/publish.yml',import.meta.url),'utf8');
+  assert.match(workflow,/cp -R runs public\//);
+});
+test('every passed-over finding has an executable retest plan',()=>{
+  assert.equal(passedOverPlan.scope.passedOverFindings,199);
+  assert.equal(passedOverPlan.plans.length,199);
+  assert.equal(new Set(passedOverPlan.plans.map(plan=>plan.id)).size,199);
+  assert.equal(passedOverPlan.familySummary.reduce((total,family)=>total+family.count,0),199);
+  for(const plan of passedOverPlan.plans){
+    assert(plan.family);assert(plan.actors.length);assert(plan.seedAndSetup);assert(plan.browserExecution);
+    assert(plan.originalAcceptanceEvidence.length);assert(plan.passCriteria);assert(plan.failCriteria);assert(plan.evidence.length);
+  }
+  assert.equal(passedOverPlan.plans.filter(plan=>plan.passwordRule).length,3);
+  assert.match(passedOverPlan.scope.completionRule,/PASSED_OVER is not permitted/);
 });
 test('dedup preserves memberships and distinguishes conflicts from absent retests',()=>{
   const group=(name,status,title='Title')=>({name,findings:[{id:'F',title,status}]});

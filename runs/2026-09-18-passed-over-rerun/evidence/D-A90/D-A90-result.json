@@ -1,0 +1,38 @@
+{
+  "findingIds": [
+    "D-A90"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=6",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "pitchId": "6a9ebed3d26f574c91434a15",
+    "requestId": "6aadc037dbb181b1eae99bf0",
+    "title": "D-A90 whitespace guard 1789771819582",
+    "submittedValue": "whitespace only",
+    "responseApiRequestCount": 0,
+    "statusAfterReload": "open"
+  },
+  "assertions": [
+    "The pitcher entered a whitespace-only response through the deployed RFI dialog",
+    "The UI displayed Response Message Cannot be empty and sent no response API request",
+    "After reload the RFI remained open and the Respond action remained available"
+  ],
+  "seededData": {
+    "pitchId": "6a9ebed3d26f574c91434a15",
+    "requestId": "6aadc037dbb181b1eae99bf0",
+    "title": "D-A90 whitespace guard 1789771819582",
+    "description": "Reject whitespace-only RFI response 1789771819582",
+    "permanent": true
+  },
+  "screenshots": [
+    "D-A90-whitespace-response-rejected.png"
+  ],
+  "testedAt": "2026-09-18T22:50:44.321Z"
+}

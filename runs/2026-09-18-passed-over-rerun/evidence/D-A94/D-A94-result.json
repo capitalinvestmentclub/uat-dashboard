@@ -1,0 +1,51 @@
+{
+  "findingIds": [
+    "D-A94"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aadb4f86b8d9dde2f7a3084",
+  "reviewId": "6aadb65d6b8d9dde2f7a3d12",
+  "reservationGroupId": "a76d7bb5-239a-4a56-a345-ecd1f26ff770",
+  "observed": {
+    "submittedReviewDraft": false,
+    "request": {
+      "status": "accepted",
+      "paymentStatus": "pending",
+      "reservedAmount": 25000,
+      "currency": "NGN"
+    },
+    "payerHold": {
+      "id": "6aadb4f86b8d9dde2f7a30ce",
+      "reference": "CIC-TXN-20260918-C7HNK2TW4P5T",
+      "amount": -25000,
+      "status": "pending",
+      "action": "reserve"
+    },
+    "payerWallet": {
+      "balance": 2247069.8329999996,
+      "pendingBalance": 206777,
+      "availableBalance": 2040292.8329999996
+    },
+    "payeePendingReservationRows": 1,
+    "payeeMatchingSettlementRows": 0
+  },
+  "assertions": [
+    "The final Review record submitted in D-A82 is durable and non-draft, but its paid assessment request remains accepted with paymentStatus pending",
+    "The request still carries reservedAmount NGN 25,000 and the payer ledger still contains only the original pending reservation hold",
+    "No successful or settled payer/payee row exists; the Assessor still has only the pending receiver-side reservation entry",
+    "The original defect is reproduced: terminal Review work did not financially settle the paid assignment"
+  ],
+  "screenshots": [
+    "D-A94-payer-wallet-unsettled-hold.png",
+    "D-A94-payee-wallet-no-settlement.png"
+  ],
+  "testedAt": "2026-09-18T23:02:02.816Z"
+}

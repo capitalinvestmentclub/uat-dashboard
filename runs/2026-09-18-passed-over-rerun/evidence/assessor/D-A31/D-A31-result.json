@@ -1,0 +1,28 @@
+{
+  "findingIds": [
+    "D-A31"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "capacityRange": "1 to 50",
+    "rejectedValues": [
+      0,
+      51
+    ],
+    "originalValueRestoredWithoutSave": "5"
+  },
+  "assertions": [
+    "The deployed Account tab exposes request status, maximum capacity, availability dates, timezone, and blackout controls",
+    "Capacity values below 1 and above 50 render the bounded validation error and disable Save Changes",
+    "The original capacity was restored and the page was left without saving"
+  ],
+  "screenshot": "D-A31-availability-capacity-policy-1792x976.png",
+  "testedAt": "2026-09-18T20:24:54.341Z"
+}

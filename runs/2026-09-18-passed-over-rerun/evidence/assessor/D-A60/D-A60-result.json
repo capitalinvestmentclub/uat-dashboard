@@ -1,0 +1,31 @@
+{
+  "findingIds": [
+    "D-A60"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://mail.google.com/mail/u/0/#search/newer_than%3A1h+(assessment+OR+request)",
+  "browserName": "chrome",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aadac9f6b8d9dde2f79d286",
+  "observed": {
+    "recipientMailbox": "cic.test.assessor@gmail.com",
+    "subject": "New assessment request from Test Pitcher",
+    "receivedTime": "2026-09-18 14:26 America/Phoenix",
+    "requestType": "paid",
+    "proposedFee": "NGN 25,000.00",
+    "responseDeadline": "October 26, 2026"
+  },
+  "assertions": [
+    "The real paid request created for D-A58 generated a message in the Assessor's actual Gmail inbox",
+    "The email explicitly identifies a new paid assessment request from Test Pitcher for Testing Small Pitch",
+    "The delivered email shows the correct NGN 25,000.00 proposed fee and October 26, 2026 response deadline",
+    "The mailbox was refreshed and the new message was visually inspected in Chrome two minutes after delivery"
+  ],
+  "screenshots": [],
+  "testedAt": "2026-09-18T21:29:00.000Z"
+}

@@ -1,0 +1,27 @@
+{
+  "findingIds": [
+    "G-A14"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_EDITABLE_KYC",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "observed": {
+    "redirectAfterHydration": true,
+    "editableKycFieldsReached": false,
+    "saved": false
+  },
+  "assertions": [
+    "The Assessor briefly rendered a prehydration KYC form, then redirected to /profile because the KYC is already InProgress",
+    "No stable editable KYC fixture was available to inspect all originally reported fields; no KYC data was changed"
+  ],
+  "screenshots": [
+    "G-A14-kyc-redirect.png"
+  ],
+  "testedAt": "2026-09-19T03:21:11.005Z"
+}

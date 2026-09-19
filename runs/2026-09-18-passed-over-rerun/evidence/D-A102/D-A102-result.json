@@ -1,0 +1,116 @@
+{
+  "findingIds": [
+    "D-A102"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "apiUrl": "https://cicdevapi.uc.r.appspot.com/api/v1/wallet/transactions/6aada21d6b8d9dde2f7966eb/receipt",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aa8d7f7dcdee9f4b553db47",
+  "reservationGroupId": "9a9459fc-ec46-4eb2-8481-d14fdca270b1",
+  "observed": {
+    "entryCount": 2,
+    "immutableHold": {
+      "id": "6aa8d7fddcdee9f4b553db52",
+      "reference": "CIC-TXN-20260915-QDMAVG3AGZ6C",
+      "amount": -25000,
+      "status": "cancelled",
+      "action": "reserve",
+      "resolution": {
+        "action": "release",
+        "reason": "declined",
+        "relatedId": "6aa8d7f7dcdee9f4b553db47",
+        "relatedKind": "assessment_request",
+        "resolvedAt": 1789764125514,
+        "status": "cancelled"
+      }
+    },
+    "refund": {
+      "id": "6aada21d6b8d9dde2f7966eb",
+      "reference": "CIC-TXN-20260918-KN9195DBMDG7",
+      "amount": 25000,
+      "status": "success",
+      "action": "release_refund"
+    },
+    "receipt": {
+      "schemaVersion": "2026-06",
+      "receiptNumber": "CIC-KN9195DBMDG7",
+      "transactionId": "6aada21d6b8d9dde2f7966eb",
+      "transactionRef": "CIC-TXN-20260918-KN9195DBMDG7",
+      "transactionReference": "CIC-TXN-20260918-KN9195DBMDG7",
+      "providerReference": null,
+      "dateTime": "2026-09-18T20:42:05.802Z",
+      "timezone": "UTC",
+      "updatedAt": "2026-09-18T20:42:05.802Z",
+      "status": "settled",
+      "type": "refund",
+      "category": "refund",
+      "description": "Assessment for \"UAT Solar Microgrid 20260907\" declined",
+      "sender": {
+        "name": "CIC assessment escrow",
+        "walletContext": "Escrow wallet"
+      },
+      "recipient": {
+        "name": "Test Pitcher",
+        "walletContext": "Personal wallet"
+      },
+      "currency": "NGN",
+      "amounts": {
+        "grossAmount": 25000,
+        "providerFee": 0,
+        "platformFee": 0,
+        "platformFeeDetails": {
+          "amount": 0,
+          "feeScheduleKey": null,
+          "feeScheduleVersion": null,
+          "displayName": "Platform fee",
+          "calculationMethod": null,
+          "chargeBasis": null,
+          "refundBehavior": null,
+          "totalDebit": 0,
+          "netAmount": 0
+        },
+        "totalFees": 0,
+        "taxes": 0,
+        "totalAmount": 25000,
+        "netRecipientAmount": 25000
+      },
+      "exchange": {
+        "sourceCurrency": null,
+        "destinationCurrency": "NGN",
+        "rate": null,
+        "convertedAmount": null,
+        "provider": null
+      },
+      "provider": {
+        "name": "Assessor",
+        "channel": "Provider processed"
+      },
+      "notes": [
+        "Provider details are summarized without exposing sensitive card or bank information.",
+        "For questions about this receipt, contact CIC support with the receipt number."
+      ]
+    },
+    "receiptUi": {
+      "available": false,
+      "renderedCell": "—"
+    }
+  },
+  "assertions": [
+    "The release is represented by exactly two economically distinct rows: the immutable negative hold and one positive refund",
+    "The original hold remains negative and carries cancelled release-resolution metadata instead of mutating into a second credit",
+    "The receipt API now identifies CIC assessment escrow as sender and the requester wallet owner as recipient",
+    "The deployed wallet row still renders an em dash instead of a Receipt action, so the corrected receipt is inaccessible to the requester",
+    "D-A102 remains unresolved at the user-facing boundary even though its duplicate-row and API party-direction sub-defects are corrected"
+  ],
+  "screenshots": [
+    "D-A102-release-receipt-inaccessible.png"
+  ],
+  "testedAt": "2026-09-18T23:30:26.571Z"
+}

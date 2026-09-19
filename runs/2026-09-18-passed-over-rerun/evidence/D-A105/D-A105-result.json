@@ -1,0 +1,63 @@
+{
+  "findingIds": [
+    "D-A105"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a056d88ba2af459fbda5f9c?id=6a056d88ba2af459fbda5f9c&tab=2&task=6a143af7e33eabf6cff6df4d",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "pitchId": "6a056d88ba2af459fbda5f9c",
+  "taskId": "6a143af7e33eabf6cff6df4d",
+  "requestId": "6a143a78e33eabf6cff6dd3d",
+  "notificationDeepLink": "/pitch/6a056d88ba2af459fbda5f9c?id=6a056d88ba2af459fbda5f9c&tab=2&task=6a143af7e33eabf6cff6df4d",
+  "observed": {
+    "disputeStatus": "upheld",
+    "disputeType": "criteria_not_met",
+    "disputeReason": "D-A105 deployed UAT: delivered analysis omitted the requested control evidence (1789775201056).",
+    "disputeResponse": "The requested control evidence is documented in the delivered analysis and the linked supporting record.",
+    "disputeDecisionReason": "Deployed UAT confirms the dispute record, role workflow, and immutable audit history operate end to end.",
+    "history": [
+      {
+        "action": "filed",
+        "actorRole": "Pitcher",
+        "note": "D-A105 deployed UAT: delivered analysis omitted the requested control evidence (1789775201056).",
+        "createdAt": "2026-09-18T23:46:42.426Z"
+      },
+      {
+        "action": "assessor_responded",
+        "actorRole": "Assessor",
+        "note": "The requested control evidence is documented in the delivered analysis and the linked supporting record.",
+        "createdAt": "2026-09-18T23:47:39.561Z"
+      },
+      {
+        "action": "requester_acknowledged",
+        "actorRole": "Pitcher",
+        "note": "Response acknowledged",
+        "createdAt": "2026-09-18T23:49:22.008Z"
+      },
+      {
+        "action": "upheld",
+        "actorRole": "Super Admin",
+        "note": "Deployed UAT confirms the dispute record, role workflow, and immutable audit history operate end to end.",
+        "createdAt": "2026-09-18T23:51:31.825Z"
+      }
+    ]
+  },
+  "assertions": [
+    "The Assessor dispute notification deep-links to the exact delivered assessment record instead of a generic list",
+    "The exact record displays the filed type, reason, timestamp, evidence, and an Assessor response action",
+    "The Assessor response appears in the requester view, the requester can acknowledge it, and administration can decide it",
+    "The final upheld record persists after cross-role reload with a four-event actor-attributed audit history"
+  ],
+  "screenshots": [
+    "D-A105-assessor-response.png",
+    "D-A105-requester-acknowledged.png",
+    "D-A105-administration-decision.png"
+  ],
+  "testedAt": "2026-09-18T23:51:36.294Z"
+}

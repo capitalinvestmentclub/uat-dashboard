@@ -1,0 +1,36 @@
+{
+  "findingIds": [
+    "D-A148"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests&requestId=6aadd9f0ed8aad2701ed25cd",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "observed": {
+    "requestId": "6aadd9f0ed8aad2701ed25cd",
+    "authoritativeStatus": "accepted",
+    "metrics": {
+      "left": 1371.6875,
+      "right": 1403.6875,
+      "top": 433.75,
+      "bottom": 465.75,
+      "viewportWidth": 1440,
+      "viewportHeight": 900,
+      "documentScrollWidth": 1440,
+      "containerScrollLeft": 0,
+      "containerScrollWidth": 1440
+    }
+  },
+  "assertions": [
+    "Chat action is initially inside the 1440px desktop viewport without horizontal scrolling"
+  ],
+  "screenshots": [
+    "D-A148-request-chat-initial-1440.png"
+  ],
+  "testedAt": "2026-09-19T02:49:22.563Z"
+}

@@ -1,0 +1,27 @@
+{
+  "findingIds": [
+    "INV-F020"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/692dd85220b2c00478938390?id=692dd85220b2c00478938390&tab=11",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The shareholder-authorized deployed API returned the funded USD project wallet",
+    "The UI displayed USD 999.99 available/current balance rather than zero",
+    "The project funding, verified profit, and dividend debit all rendered in the ledger",
+    "The visible ledger amounts agreed with the deployed transaction payload"
+  ],
+  "seededData": {
+    "projectId": "692dd85220b2c00478938390",
+    "mutation": false
+  },
+  "screenshots": [
+    "INV-F020-shareholder-project-wallet.png"
+  ],
+  "testedAt": "2026-09-18T16:30:03.997Z"
+}

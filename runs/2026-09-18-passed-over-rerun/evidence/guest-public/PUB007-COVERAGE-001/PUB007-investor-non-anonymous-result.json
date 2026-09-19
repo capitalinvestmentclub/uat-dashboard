@@ -1,0 +1,43 @@
+{
+  "findingIds": [
+    "PUB007-COVERAGE-001"
+  ],
+  "outcome": "FAIL",
+  "disposition": "DEPLOYED_REGRESSION_REPRODUCED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Fresh Pitcher, Investor, and Assessor accounts were created through the deployed Chrome UI, all three verification emails were delivered and consumed, and Admin API state confirmed emailVerified true.",
+    "The fresh Assessor completed first-login email MFA and reached the Assessor dashboard.",
+    "The non-anonymous Investor branch was selected in the deployed UI.",
+    "The hidden alias was not user-editable after anonymous bidding was disabled.",
+    "Account creation returned HTTP 422 with Alias already exists, so the complete Investor journey is not fixed."
+  ],
+  "observation": {
+    "role": "Investor",
+    "email": "cic.test.pitcher+pub007-investor-1789758862493@gmail.com",
+    "validations": [],
+    "signupResponse": {
+      "status": 422,
+      "url": "https://cicdevapi.uc.r.appspot.com/api/v1/users/signup",
+      "body": {
+        "status": "Fail",
+        "message": "Alias already exists"
+      }
+    },
+    "landingUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+    "screenshot": "PUB007-investor-non-anonymous-hidden-alias-failure.png"
+  },
+  "screenshots": [
+    "PUB007-pitcher-account-created.png",
+    "PUB007-investor-account-created.png",
+    "PUB007-assessor-account-created.png",
+    "PUB007-investor-non-anonymous-hidden-alias-failure.png"
+  ],
+  "testedAt": "2026-09-18T19:14:29.604Z"
+}

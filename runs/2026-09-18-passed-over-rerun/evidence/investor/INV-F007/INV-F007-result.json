@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "INV-F007"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_DEPLOYED_NULL_ALIAS_COLLISION",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+  "browserName": "chromium",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The non-anonymous Investor path exposed no Alias input.",
+    "The single submitted Investor payload contained bidAnonymously=false and omitted the alias property.",
+    "The deployed signup API returned HTTP 422 with message 'Alias already exists'.",
+    "The UI remained on Investor Registration and displayed 'Alias already exists', reproducing the original null-alias collision.",
+    "No account was created; confirmation-email side effects were not assessed because the primary blocking failure reproduced."
+  ],
+  "screenshots": [],
+  "testedAt": "2026-09-18T15:02:50.000Z"
+}

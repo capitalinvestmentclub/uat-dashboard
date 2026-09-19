@@ -1,0 +1,35 @@
+{
+  "findingIds": [
+    "D-A58"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=2&id=63d8ac4006621f0027c9ef01",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aadac9f6b8d9dde2f79d286",
+  "reservationGroupId": "22d57a10-4d1d-4db8-8a98-be090b415b4d",
+  "observed": {
+    "beforePendingBalance": 156777,
+    "afterCreatePendingBalance": 156777,
+    "afterCancellationPendingBalance": 131777,
+    "idempotentReplay": true,
+    "retainedRequestStatus": "cancelled",
+    "retainedReservedAmount": 0,
+    "reservationRows": 2
+  },
+  "assertions": [
+    "The real paid request carried an active NGN 25,000 reservation before cancellation",
+    "Requester cancellation completed through the deployed Chrome UI and retained the row as Cancelled",
+    "The durable request remains queryable with status cancelled, the supplied cancellation reason, and reservedAmount zero",
+    "Cancellation reduced pending balance by exactly NGN 25,000 and the ledger contains one preserved hold plus one linked refund"
+  ],
+  "screenshots": [
+    "D-A58-cancelled-request-retained.png"
+  ],
+  "testedAt": "2026-09-18T21:28:49.775Z"
+}

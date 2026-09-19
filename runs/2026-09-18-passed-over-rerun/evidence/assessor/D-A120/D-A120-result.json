@@ -1,0 +1,34 @@
+{
+  "findingIds": [
+    "D-A120"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "BLOCKED_PRECONDITION_NO_ZERO_CREDIT_PITCH_OWNER",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session-credits",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "personalPitcherCredits": {
+      "unitsRemaining": 55,
+      "minutesRemaining": 1650
+    },
+    "organizationContextsInspected": 6,
+    "zeroCreditOrganizationContexts": 6,
+    "schedulableOwnedPitchesInThoseContexts": 0,
+    "organizationInventoryCount": 28,
+    "pitcherOrganizationInventoryCount": 14,
+    "secondInventoryAttempt": "Timed out without a response after 30 seconds"
+  },
+  "assertions": [
+    "The shared Pitcher account has 55 units (1,650 minutes), so it cannot reproduce the insufficient-credit schedule path",
+    "The first six isolated organization contexts returned zero session credits but no owned pitches, leaving no schedulable pitch for the exact regression",
+    "A single targeted parallel inventory attempt across all Pitcher organizations timed out without producing an additional usable fixture",
+    "The shared account credits were not depleted or refunded merely to manufacture the precondition",
+    "D-A120 remains unverified in deployed Chrome until a zero-credit Pitcher context owns a published schedulable pitch"
+  ],
+  "testedAt": "2026-09-19T01:14:32.300Z"
+}

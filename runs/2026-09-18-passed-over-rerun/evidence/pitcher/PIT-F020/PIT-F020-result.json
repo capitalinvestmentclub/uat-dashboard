@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "PIT-F020"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "HOLD_RELEASE_FIXTURE_SEED_ACCESS_REAUTH_REQUIRED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed wallet stability control passed: the historical marketplace debit retained identical amount, running balance, counterparty, and type across a full Chrome reload.",
+    "The consolidated defect specifically requires a new hold followed by release and a comparison proving the earlier ledger presentation remains unchanged after the later entry.",
+    "Creating that exact run-scoped state needs either a fully eligible two-actor transaction chain or direct development fixture seeding; the bounded environment-access attempt is blocked by interactive gcloud reauthentication.",
+    "No wallet record or user password was changed during this classification."
+  ],
+  "screenshots": [],
+  "testedAt": "2026-09-18T17:49:00.000Z"
+}

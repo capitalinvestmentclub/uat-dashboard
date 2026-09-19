@@ -1,0 +1,73 @@
+{
+  "findingIds": [
+    "D-A99"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&task=6aadb8ed6b8d9dde2f7a6fed",
+  "apiUrl": "https://cicdevapi.uc.r.appspot.com/api/v1/assessment/getAssessmentTask/6aadb8ed6b8d9dde2f7a6fed",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "pitchId": "6a9ebed3d26f574c91434a15",
+  "requestId": "6aadb83c6b8d9dde2f7a6a73",
+  "taskId": "6aadb8ed6b8d9dde2f7a6fed",
+  "observed": {
+    "originalResponse": "The structured deployment evidence supports a production readiness conclusion pending final review.",
+    "originalId": "6aadb8ed6b8d9dde2f7a6fed",
+    "currentVersion": 2,
+    "currentVersionId": "6aadb8ed6b8d9dde2f7a6fed:v2",
+    "versions": [
+      {
+        "version": 1,
+        "versionId": "6aadb8ed6b8d9dde2f7a6fed:v1",
+        "kind": "signed_original",
+        "finalizedAt": "2026-09-18T03:28:52.720Z",
+        "finalizedBy": {
+          "_id": "63b9b30ec4c53f00275907af",
+          "profile": "1694213678288-download.jfif",
+          "firstName": "Test",
+          "lastName": "Assessor",
+          "middleName": null,
+          "userName": null,
+          "level": "Platform Veteran",
+          "id": "63b9b30ec4c53f00275907af"
+        },
+        "requestedChangeScope": "",
+        "correctionResponse": "",
+        "attachmentLineage": []
+      },
+      {
+        "version": 2,
+        "versionId": "6aadb8ed6b8d9dde2f7a6fed:v2",
+        "kind": "correction",
+        "finalizedAt": "2026-09-18T23:19:32.290Z",
+        "finalizedBy": {
+          "_id": "63b9b30ec4c53f00275907af",
+          "firstName": "Test",
+          "lastName": "Assessor",
+          "middleName": null,
+          "userName": null,
+          "id": "63b9b30ec4c53f00275907af"
+        },
+        "requestedChangeScope": "Clarify the production key-rotation evidence and explicitly state the verified control.",
+        "correctionResponse": "The production deployment uses verified key rotation and the public evidence URL remains valid. The corrected conclusion confirms the control is operating as designed.",
+        "attachmentLineage": []
+      }
+    ]
+  },
+  "assertions": [
+    "The deployed terminal assessment identifies the immutable original record and current version v2",
+    "The UI and API expose separate stable IDs for the signed original and the correction",
+    "The signed original response remains unchanged while the correction carries the requested scope and revised response",
+    "Both versions expose finalization metadata and attachment lineage, including the Assessor identity on v2",
+    "The complete version audit remains visible after a full Chrome reload"
+  ],
+  "screenshots": [
+    "D-A99-version-history-v1-v2.png"
+  ],
+  "testedAt": "2026-09-18T23:22:34.929Z"
+}

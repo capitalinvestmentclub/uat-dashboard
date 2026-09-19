@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "D-A76"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&assessmentRequestId=6aadb7aa6b8d9dde2f7a5fae",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aadb7aa6b8d9dde2f7a5fae",
+  "durableId": "6aadb8046b8d9dde2f7a654c",
+  "assertions": [
+    "The deployed Engineering response form accepted a structured task answer and an overall assessment response",
+    "Save Draft completed with the explicit Draft saved state",
+    "A full Chrome reload restored both exact answers",
+    "The Assessor assessments API retained a durable draft linked to the accepted request"
+  ],
+  "screenshots": [
+    "D-A76-non-review-draft-restored.png"
+  ],
+  "testedAt": "2026-09-18T22:15:37.958Z"
+}

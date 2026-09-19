@@ -1,0 +1,12 @@
+{
+  "findingIds": ["G-A15"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_ORGANIZATION_VIEWER_ACTOR",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1440, "height": 900 },
+  "notes": "The current working Chrome identities are a personal Assessor and a Pitcher, not a Viewer member in an organization. The earlier deployed actor inventory found no Viewer organization context. Their management-control state cannot establish the Viewer permission boundary; no organization permissions were inferred from source or another role.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T03:23:00.000Z"
+}

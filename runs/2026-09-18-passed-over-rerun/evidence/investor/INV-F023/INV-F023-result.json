@@ -1,0 +1,33 @@
+{
+  "findingIds": [
+    "INV-F023"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/692dd85220b2c00478938390?id=692dd85220b2c00478938390&tab=4",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Whitespace-only text stayed in the dialog and showed Comment text is required without an API request",
+    "A unique internationalised comment containing CJK text, an accented character and emoji received one successful API response",
+    "The API returned exactly one persisted comment with the Unicode text unchanged",
+    "The Unicode comment rendered in the discussion and remained after a full reload"
+  ],
+  "seededData": {
+    "projectId": "692dd85220b2c00478938390",
+    "milestoneId": "6aad68366b8d9dde2f776e85",
+    "commentText": "進捗確認 — café 🚀 — INV-F023 1789749590959",
+    "permanent": true
+  },
+  "apiEvidence": {
+    "requestCount": 1,
+    "status": 200
+  },
+  "screenshots": [
+    "INV-F023-unicode-comment-persisted.png"
+  ],
+  "testedAt": "2026-09-18T16:40:07.823Z"
+}

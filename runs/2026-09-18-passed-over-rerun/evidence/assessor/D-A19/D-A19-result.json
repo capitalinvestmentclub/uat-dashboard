@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "D-A19"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "DEPLOYED_VALIDATION_PREVENTS_INCOMPLETE_ASSESSOR_FIXTURE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed Assessor role profile was read successfully and had a populated required professionalQualification entry before the test mutation.",
+    "A bounded fixture-seeding attempt sent professionalQualification as an empty array through the deployed updateUserRoleData API.",
+    "The deployed API rejected the mutation with Validation failed: professionalQualification: Professional Qualification cannot be empty.",
+    "No incomplete Assessor fixture was created and the original profile remained unchanged, so the dashboard, assessment, pitch-view and mutation-gating paths remain unverified."
+  ],
+  "screenshots": [],
+  "testedAt": "2026-09-18T20:14:19Z"
+}

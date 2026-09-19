@@ -1,0 +1,32 @@
+{
+  "findingIds": [
+    "D-A87"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadbb076b8d9dde2f7aa2e8",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "reviewId": "6aadbb076b8d9dde2f7aa2e8",
+  "observed": {
+    "prompt": "You have unsaved assessment changes. Leave without saving them?",
+    "savedValue": "D-A86 newer tab value 1789770803583 must remain authoritative.",
+    "unsavedValue": "D-A87 unsaved navigation value 1789771003875.",
+    "cancelStayedOnDraft": true,
+    "confirmNavigated": true
+  },
+  "assertions": [
+    "Editing a saved Review displayed the explicit Unsaved changes state",
+    "Selecting Overview opened a browser confirmation explaining that unsaved assessment changes would be lost",
+    "Dismissing the prompt kept the same reviewId route and preserved the in-memory edit",
+    "Accepting the prompt navigated away, and reopening the draft restored the saved value rather than the discarded edit"
+  ],
+  "screenshots": [
+    "D-A87-navigation-cancel-preserves-editor.png"
+  ],
+  "testedAt": "2026-09-18T22:36:49.399Z"
+}

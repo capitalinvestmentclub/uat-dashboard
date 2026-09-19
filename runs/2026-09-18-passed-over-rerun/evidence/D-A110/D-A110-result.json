@@ -1,0 +1,41 @@
+{
+  "findingIds": [
+    "D-A110"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "BLOCKED_PROVIDER_ACCOUNT_VERIFICATION",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "accountCounts": {
+      "pitcher": 0,
+      "assessor": 0
+    },
+    "fixtureDataRemoved": true,
+    "ngnProvider": "Paystack transfers",
+    "ngnProviderEnabled": true,
+    "seedAttempt": {
+      "endpoint": "https://cicdevapi.uc.r.appspot.com/api/v1/bank-accounts/paystack/verify",
+      "bankCode": "058",
+      "maskedAccountNumber": "•••• 0000",
+      "status": 500,
+      "message": "Internal Server Error"
+    }
+  },
+  "assertions": [
+    "Pitcher and Assessor bank-account APIs independently return empty user-scoped collections",
+    "The deployed Account panel renders an honest personal-profile empty state and no longer exposes the shared Wells Fargo, Stanbic IBTC, HSBC, or expired Spending Card fixtures",
+    "The deployed withdrawal-provider API reports Paystack transfers enabled for NGN",
+    "The single permitted permanent seed attempt reached the deployed Paystack account-verification endpoint but returned HTTP 500, so a payout-ready account cannot be created to prove Account-to-Withdraw usability",
+    "D-A110 is partially corrected but remains blocked from a definitive PASS until provider verification can create a selectable user-scoped payout account"
+  ],
+  "screenshots": [
+    "D-A110-pitcher-scoped-empty-accounts.png"
+  ],
+  "testedAt": "2026-09-19T00:26:47Z"
+}

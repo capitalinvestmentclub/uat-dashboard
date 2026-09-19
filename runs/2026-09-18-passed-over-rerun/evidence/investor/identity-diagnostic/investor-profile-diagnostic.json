@@ -1,0 +1,133 @@
+{
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "bodyLength": 1878,
+  "bodyPreview": "Capital Investment Club Home Pitches Grants Marketplace Dashboard Support $ USD Personal Overview Profile Pitch Interests Project Holdings Manage Grants Organizations Wallet Messaging 12 Notifications Feedback Assistant Profile Manage your account details, public profile information, and role-specific settings from one place. KYC UPDATE REQUIRED Complete updated verification requirements Your KYC needs an update because CIC has introduced updated verification requirements. National Identification Number (NIN) - NG Bank Verification Number (BVN) - NG Tax residency Update KYC Request correction or appeal Add Photo CIC Investor Investor PROFILE SUMMARY I am the kind of investor you want to see in this forum ACCOUNT CLOSURE Request status: resolved BADGES 15 counted • 12 tracking 419 TOTAL SCORE 15 earned +7 Hover an icon to view badge details and earned date. 3 Following 2 Followers Last Login: 18 Sept 2026, 7:34 View Public Profile Change Role KYC Update Required Verify your KYC email address Your KYC cannot be approved until you confirm tunda@oludotun.com. Open the verification link we emailed you, or send a new one. Resend verification email Bio data Identity, contact details, and personal profile Bio data Executive Profile Security & Policies Download Data Save Changes Personal details Core identity fields shown on your account and public profile. First Name ​ Last Name ​ Date of birth ​ Nationality Nigeria Country of citizenship or nationality. You can select up to 3. Tax residency Tax residency Countries where you are treated as a tax resident. You can select up to 5. Gender Female ​ Marital Status Married ​ Interests ​ Location and contact Keep your primary address, email, phone, and public-facing contact settings current. Country Nigeria State Lagos City ​ Email Address ​ + Add another email Phone Number +234 ​ Preferred + Add another number",
+  "links": [
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "Pitches",
+      "href": "/pitches"
+    },
+    {
+      "text": "Grants",
+      "href": "/grants"
+    },
+    {
+      "text": "Marketplace",
+      "href": "/marketplace"
+    },
+    {
+      "text": "Dashboard",
+      "href": "/dashboard"
+    },
+    {
+      "text": "Support",
+      "href": "/support"
+    },
+    {
+      "text": "View Public Profile",
+      "href": "/user/63b9b5c2c4c53f00275907ba"
+    },
+    {
+      "text": "Admin Center",
+      "href": "/admin"
+    },
+    {
+      "text": "User Management",
+      "href": "/user-management"
+    },
+    {
+      "text": "Moderation Queue",
+      "href": "/admin/moderation"
+    },
+    {
+      "text": "Badge Management",
+      "href": "/admin/badges"
+    },
+    {
+      "text": "Takeover Bids",
+      "href": "/admin/takeover-bids"
+    },
+    {
+      "text": "Platform Fee",
+      "href": "/admin/platform-fee"
+    },
+    {
+      "text": "Admin Ledger",
+      "href": "/admin/ledger"
+    },
+    {
+      "text": "Session Credits",
+      "href": "/admin/session-credits"
+    },
+    {
+      "text": "PFS Portal",
+      "href": "/pfs"
+    },
+    {
+      "text": "Project Withdrawals",
+      "href": "/admin/project-withdrawals"
+    },
+    {
+      "text": "Pitch Country Support",
+      "href": "/admin/pitch-country-support"
+    },
+    {
+      "text": "KYC Requirements",
+      "href": "/admin/kyc-requirements"
+    },
+    {
+      "text": "Compliance Operations",
+      "href": "/admin/compliance"
+    },
+    {
+      "text": "Exchange Rates",
+      "href": "/admin/exchange-rates"
+    },
+    {
+      "text": "Comment Management",
+      "href": "/comment-management"
+    },
+    {
+      "text": "Feedback",
+      "href": "/admin/feedback"
+    },
+    {
+      "text": "Profile Reports",
+      "href": "/admin/profile-reports"
+    },
+    {
+      "text": "Notification Operations",
+      "href": "/admin/notifications"
+    },
+    {
+      "text": "Public Contribution Operations",
+      "href": "/admin/public-contributions"
+    },
+    {
+      "text": "Messaging12",
+      "href": "/messaging"
+    },
+    {
+      "text": "Support Queue",
+      "href": "/admin/support-queue"
+    }
+  ],
+  "failedResponses": [
+    {
+      "status": 403,
+      "url": "https://cicdevapi.uc.r.appspot.com/api/v1/users/activity"
+    }
+  ],
+  "pageErrors": [],
+  "testedAt": "2026-09-18T14:36:07.858Z"
+}

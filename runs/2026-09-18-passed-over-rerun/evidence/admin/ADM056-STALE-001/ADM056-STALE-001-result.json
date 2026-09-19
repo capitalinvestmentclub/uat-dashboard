@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "ADM056-STALE-001"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/user-management",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed lock mutation returned User account locked successfully for the controlled test user",
+    "Instead of immediately showing the same row as Locked with an Unlock action, the filtered result changed to No users found",
+    "The test account was immediately restored through the authenticated Admin API and verified active with zero failed login attempts"
+  ],
+  "screenshots": [
+    "ADM056-STALE-001-row-disappeared-after-lock.png"
+  ],
+  "testedAt": "2026-09-18T18:34:00.000Z"
+}

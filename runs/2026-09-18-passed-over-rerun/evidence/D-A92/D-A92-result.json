@@ -1,0 +1,56 @@
+{
+  "findingIds": [
+    "D-A92"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=6",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "pitchId": "6a9ebed3d26f574c91434a15",
+    "requests": [
+      {
+        "title": "D-A92 sequential RFI A 1789772090321",
+        "description": "First sequential RFI 1789772090321",
+        "requestId": "6aadc142dbb181b1eae9a7bf",
+        "status": "open"
+      },
+      {
+        "title": "D-A92 sequential RFI B 1789772090321",
+        "description": "Later sequential RFI 1789772090321",
+        "requestId": "6aadc146dbb181b1eae9a88e",
+        "status": "open"
+      }
+    ]
+  },
+  "assertions": [
+    "Two distinct valid RFIs were submitted sequentially through the deployed Chrome UI",
+    "Both submissions returned successful non-idempotent responses with different durable request IDs",
+    "The earlier and later RFI each remained visible exactly once with their descriptions and open status after reload"
+  ],
+  "seededData": {
+    "pitchId": "6a9ebed3d26f574c91434a15",
+    "requests": [
+      {
+        "title": "D-A92 sequential RFI A 1789772090321",
+        "description": "First sequential RFI 1789772090321",
+        "requestId": "6aadc142dbb181b1eae9a7bf"
+      },
+      {
+        "title": "D-A92 sequential RFI B 1789772090321",
+        "description": "Later sequential RFI 1789772090321",
+        "requestId": "6aadc146dbb181b1eae9a88e"
+      }
+    ],
+    "permanent": true
+  },
+  "screenshots": [
+    "D-A92-sequential-rfis-persisted.png"
+  ],
+  "testedAt": "2026-09-18T22:55:09.481Z"
+}

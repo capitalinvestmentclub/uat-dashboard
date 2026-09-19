@@ -1,0 +1,323 @@
+{
+  "findingIds": [
+    "D-A101"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "wallet": {
+      "balance": 156466.66999999998,
+      "availableBalance": 156466.66999999998,
+      "pendingBalance": 6771682
+    },
+    "renderedAvailableBalance": "NGN 156,466.67",
+    "renderedCurrentBalance": "NGN 6,928,148.67",
+    "pendingAssessmentReceiverReservationCount": 41,
+    "pendingAssessmentReceiverReservations": [
+      {
+        "id": "6aadbafb6b8d9dde2f7a9eb4",
+        "reference": "CIC-TXN-20260918-TTPH2571TKYR",
+        "amount": 25000,
+        "status": "pending",
+        "relatedId": "6aadbafa6b8d9dde2f7a9e7d"
+      },
+      {
+        "id": "6aadb7ab6b8d9dde2f7a6032",
+        "reference": "CIC-TXN-20260918-MD86YPMXABRE",
+        "amount": 25000,
+        "status": "pending",
+        "relatedId": "6aadb7aa6b8d9dde2f7a5fae"
+      },
+      {
+        "id": "6aadb4f86b8d9dde2f7a30d1",
+        "reference": "CIC-TXN-20260918-P4S63ZHT3FYC",
+        "amount": 25000,
+        "status": "pending",
+        "relatedId": "6aadb4f86b8d9dde2f7a3084"
+      },
+      {
+        "id": "6aadb17f6b8d9dde2f7a0b87",
+        "reference": "CIC-TXN-20260918-96GJMFG04M53",
+        "amount": 25000,
+        "status": "pending",
+        "relatedId": "6aadb17f6b8d9dde2f7a0b24"
+      },
+      {
+        "id": "6a2e50097740e768941a2d0f",
+        "reference": "CIC-TXN-20260614-KMRXJC6DFBHF",
+        "amount": 150,
+        "status": "pending",
+        "relatedId": "6a2e50097740e768941a2d07"
+      },
+      {
+        "id": "6a2d007c45f2d1b0e43ca1d3",
+        "reference": "CIC-TXN-20260613-EA8SWN0KVZHR",
+        "amount": 150,
+        "status": "pending",
+        "relatedId": "6a2d007c45f2d1b0e43ca1cb"
+      },
+      {
+        "id": "6a289dd6f92132ece1b38a55",
+        "reference": "CIC-TXN-20260609-EYRRKF8ED6KE",
+        "amount": 80,
+        "status": "pending",
+        "relatedId": "6a289dd6f92132ece1b38a4d"
+      },
+      {
+        "id": "6a21f7253ebf08460bb82c60",
+        "reference": "CIC-TXN-20260604-T7CRG562QZJY",
+        "amount": 80,
+        "status": "pending",
+        "relatedId": "6a21f7243ebf08460bb82c58"
+      },
+      {
+        "id": "6a211b86783d5c1a1a20bd23",
+        "reference": "CIC-TXN-20260604-WB5MSDNGDA68",
+        "amount": 80,
+        "status": "pending",
+        "relatedId": "6a211b86783d5c1a1a20bd1b"
+      },
+      {
+        "id": "6a1783fbaac3f5d013b69a42",
+        "reference": "CIC-TXN-20260527-P9Y86YCQV7T6",
+        "amount": 80,
+        "status": "pending",
+        "relatedId": "6a1783fbaac3f5d013b69a3a"
+      },
+      {
+        "id": "6a17826caac3f5d013b69470",
+        "reference": "CIC-TXN-20260527-WG7SX41XYG68",
+        "amount": 200,
+        "status": "pending",
+        "relatedId": "6a17826baac3f5d013b69468"
+      },
+      {
+        "id": "6a143a78e33eabf6cff6dd45",
+        "reference": "CIC-TXN-20260525-9PSRC5EY86WJ",
+        "amount": 80,
+        "status": "pending",
+        "relatedId": "6a143a78e33eabf6cff6dd3d"
+      },
+      {
+        "id": "6a13dbdad4ae2eb7890a4189",
+        "reference": "CIC-TXN-20260525-ATD5N3YFQCXT",
+        "amount": 80,
+        "status": "pending",
+        "relatedId": "6a13dbd9d4ae2eb7890a4181"
+      },
+      {
+        "id": "6a137bb7685b209d427a1bd1",
+        "reference": "CIC-TXN-20260524-N2C7V0W2ABQ5",
+        "amount": 80,
+        "status": "pending",
+        "relatedId": "6a137bb7685b209d427a1bc9"
+      },
+      {
+        "id": "6a12a772685b209d4279c9cb",
+        "reference": "CIC-TXN-20260524-HMAH09DF1YHF",
+        "amount": 80,
+        "status": "pending",
+        "relatedId": "6a12a771685b209d4279c9c3"
+      },
+      {
+        "id": "69ffadb3f84a16411a8010ad",
+        "reference": "CIC-TXN-20260509-DNSSYX6ZAHQ9",
+        "amount": 80,
+        "status": "pending",
+        "relatedId": "69ffadb3f84a16411a8010a5"
+      },
+      {
+        "id": "69f25149f64fd792b2930711",
+        "reference": "CIC-TXN-20260429-H55BXJ9JD3DY",
+        "amount": 200000,
+        "status": "pending",
+        "relatedId": "69f25149f64fd792b2930709"
+      },
+      {
+        "id": "69e3a5cc7cc8b6ee38539989",
+        "reference": "CIC-TXN-20260418-GXEYFWTJT9TP",
+        "amount": 1550,
+        "status": "pending",
+        "relatedId": "69e3a5cc7cc8b6ee38539981"
+      },
+      {
+        "id": "69dc66cd65305f2124b32d67",
+        "reference": "CIC-TXN-20260413-GJJHZREBNG1Y",
+        "amount": 100,
+        "status": "pending",
+        "relatedId": "69dc664c65305f2124b3244e"
+      },
+      {
+        "id": "69dc664c65305f2124b32456",
+        "reference": "CIC-TXN-20260413-C5B6GTP86W0R",
+        "amount": 1850,
+        "status": "pending",
+        "relatedId": "69dc664c65305f2124b3244e"
+      },
+      {
+        "id": "69d0cbcfeeace1c6b850f8a6",
+        "reference": "CIC-TXN-20260404-MTPVE3C9N2A6",
+        "amount": 100,
+        "status": "pending",
+        "relatedId": "69d0cbcfeeace1c6b850f89e"
+      },
+      {
+        "id": "69d0502eea3bad31c6e97389",
+        "reference": "CIC-TXN-20260403-ZMV1JWXC9E9X",
+        "amount": 1500,
+        "status": "pending",
+        "relatedId": "69d0502dea3bad31c6e97360"
+      },
+      {
+        "id": "69cfcf6f49f7590745f06ed6",
+        "reference": "CIC-TXN-20260403-D5W8RB11P2D3",
+        "amount": 200,
+        "status": "pending",
+        "relatedId": "69cfcf6949f7590745f06ead"
+      },
+      {
+        "id": "69c4c39679ec6ddc21605fd9",
+        "reference": "CIC-TXN-20260326-6W54AX405AMB",
+        "amount": 5,
+        "status": "pending",
+        "relatedId": "69c4c39679ec6ddc21605fd1"
+      },
+      {
+        "id": "69c410eb2c666b213db5be67",
+        "reference": "CIC-TXN-20260325-FDNC7J81RMCJ",
+        "amount": 400000,
+        "status": "pending",
+        "relatedId": "69c410e82c666b213db5be3e"
+      },
+      {
+        "id": "69c3f3a75cc7a3d4390f955a",
+        "reference": "CIC-TXN-20260325-WRMF3G4BDGW2",
+        "amount": 40000,
+        "status": "pending",
+        "relatedId": "69c3f3a75cc7a3d4390f9552"
+      },
+      {
+        "id": "69c3f3855cc7a3d4390f952a",
+        "reference": "CIC-TXN-20260325-7P6BADKRHV2G",
+        "amount": 40000,
+        "status": "pending",
+        "relatedId": "69c3f3855cc7a3d4390f9522"
+      },
+      {
+        "id": "69c3f18f5cc7a3d4390f8568",
+        "reference": "CIC-TXN-20260325-5BZSXR4PCXHB",
+        "amount": 34,
+        "status": "pending",
+        "relatedId": "69c3f18d5cc7a3d4390f854e"
+      },
+      {
+        "id": "69c3ebafc7a8c08603a19714",
+        "reference": "CIC-TXN-20260325-3ZYK12H3DPAN",
+        "amount": 200,
+        "status": "pending",
+        "relatedId": "69c3ebaec7a8c08603a1970c"
+      },
+      {
+        "id": "69c2d4273a20fd9cd4c8d47a",
+        "reference": "CIC-TXN-20260324-8GH7YRAKAXF1",
+        "amount": 252,
+        "status": "pending",
+        "relatedId": "69c2d4263a20fd9cd4c8d451"
+      },
+      {
+        "id": "698b0e2d7d893586b1f747ba",
+        "reference": "CIC-TXN-20260210-J0G5QYVHFZEJ",
+        "amount": 2000,
+        "status": "pending",
+        "relatedId": "698b0e2d7d893586b1f747b2"
+      },
+      {
+        "id": "698a20ca191e75cec90571b1",
+        "reference": "CIC-TXN-20260209-2DXB1RMFN3GK",
+        "amount": 200000,
+        "status": "pending",
+        "relatedId": "698a20c5191e75cec9057188"
+      },
+      {
+        "id": "698a2093191e75cec90570f1",
+        "reference": "CIC-TXN-20260209-A1SJ4BTCC7NM",
+        "amount": 4600000,
+        "status": "pending",
+        "relatedId": "698a2092191e75cec90570e8"
+      },
+      {
+        "id": "6984b313b4190b3de440028f",
+        "reference": "CIC-TXN-20260205-5XKE2ET0Z3AK",
+        "amount": 110,
+        "status": "pending",
+        "relatedId": "6984b312b4190b3de4400287"
+      },
+      {
+        "id": "6984b171b4190b3de4400200",
+        "reference": "CIC-TXN-20260205-GKS52P3R7ZWR",
+        "amount": 100,
+        "status": "pending",
+        "relatedId": "6984b170b4190b3de44001f8"
+      },
+      {
+        "id": "6984a830642fc65249503959",
+        "reference": "CIC-TXN-20260205-BXDK29A0Q8EX",
+        "amount": 582000,
+        "status": "pending",
+        "relatedId": "6984a82f642fc65249503951"
+      },
+      {
+        "id": "698357017b8c1938bb820d80",
+        "reference": "CIC-TXN-20260204-XFMBTVQ3Z0Z0",
+        "amount": 600000,
+        "status": "pending",
+        "relatedId": "698357017b8c1938bb820d6c"
+      },
+      {
+        "id": "69833faf80c176bc450d5370",
+        "reference": "CIC-TXN-20260204-3061EFMJ493S",
+        "amount": 101,
+        "status": "pending",
+        "relatedId": "69833fae80c176bc450d5368"
+      },
+      {
+        "id": "69833ef77b8c1938bb820b09",
+        "reference": "CIC-TXN-20260204-R3EG3PFCPX0G",
+        "amount": 110,
+        "status": "pending",
+        "relatedId": "69833ef67b8c1938bb820b01"
+      },
+      {
+        "id": "6981d8057b8c1938bb81ec45",
+        "reference": "CIC-TXN-20260203-D8FWK1KCYJ48",
+        "amount": 100,
+        "status": "pending",
+        "relatedId": "6981d8057b8c1938bb81ec3d"
+      },
+      {
+        "id": "6977a920865a31d1e80309b2",
+        "reference": "CIC-TXN-20260126-K6HEM913GFAP",
+        "amount": 150,
+        "status": "pending",
+        "relatedId": "6977a91f865a31d1e803099e"
+      }
+    ]
+  },
+  "assertions": [
+    "The Assessor has positive pending receiver-side assessment reservations that have not been captured",
+    "The API correctly keeps current wallet balance equal to available balance while exposing pending funds separately",
+    "The deployed Wallet UI renders Available Balance from availableBalance but calculates Current Balance as availableBalance plus pendingBalance",
+    "The displayed Current Balance therefore includes uncaptured requester holds and materially overstates spendable/earned Assessor funds"
+  ],
+  "screenshots": [
+    "D-A101-pending-holds-in-current-balance.png"
+  ],
+  "testedAt": "2026-09-18T23:25:28.147Z"
+}

@@ -1,0 +1,47 @@
+{
+  "findingIds": [
+    "D-A88"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=6",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "title": "D-A88 duplicate guard 1789771264642",
+    "firstRequest": {
+      "title": "D-A88 duplicate guard 1789771264642",
+      "description": "Exact duplicate RFI verification 1789771264642",
+      "dueDate": "2026-09-30T22:41:00.000Z"
+    },
+    "secondRequest": {
+      "title": "D-A88 duplicate guard 1789771264642",
+      "description": "Exact duplicate RFI verification 1789771264642",
+      "dueDate": "2026-09-30T22:41:00.000Z"
+    },
+    "firstRequestId": "6aadbe07dbb181b1eae9844d",
+    "replayRequestId": "6aadbe07dbb181b1eae9844d",
+    "idempotentReplay": true,
+    "durableMatchingRequestCount": 1
+  },
+  "assertions": [
+    "The first RFI submission created one durable request and displayed an explicit success acknowledgement",
+    "Submitting the same title, description and due date returned an idempotent replay response referencing the original request ID",
+    "The duplicate submission reused the original request and exactly one matching RFI remained after reload and API verification"
+  ],
+  "seededData": {
+    "pitchId": "6a9ebed3d26f574c91434a15",
+    "requestId": "6aadbe07dbb181b1eae9844d",
+    "title": "D-A88 duplicate guard 1789771264642",
+    "description": "Exact duplicate RFI verification 1789771264642",
+    "permanent": true
+  },
+  "screenshots": [
+    "D-A88-duplicate-rfi-idempotent.png"
+  ],
+  "testedAt": "2026-09-18T22:41:21.215Z"
+}

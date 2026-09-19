@@ -1,0 +1,29 @@
+{
+  "findingIds": [
+    "D-A131"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "BLOCKED_SIGNUP_PAGE_LOADING",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "freshAssessorSignupPage": "Loading spinner only",
+    "boundedRunSeconds": 240,
+    "firstNameFieldRendered": false,
+    "signupRequestMade": false,
+    "newAccountCreated": false,
+    "verificationEmailTriggered": false,
+    "existingUserPasswordChanged": false
+  },
+  "assertions": [
+    "The one bounded deployed Chrome attempt opened the signup route but it never progressed beyond its loading spinner",
+    "No fresh Assessor account or verification email was created, so the email-delivery defect cannot be evaluated from this attempt",
+    "The result is blocked on deployed signup page availability rather than failed on unsupported mailbox inference"
+  ],
+  "testedAt": "2026-09-19T02:01:00.000Z"
+}

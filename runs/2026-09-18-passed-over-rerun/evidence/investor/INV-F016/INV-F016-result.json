@@ -1,0 +1,31 @@
+{
+  "findingIds": [
+    "INV-F016"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=3",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The live pending bid reserved USD 1000 without reducing current balance",
+    "After its real expiry and a deployed page reload, the bid moved to history with Expired status",
+    "The persisted bid status is expired, expiredOn is set, and reservedAmount is zero",
+    "The Investor pending and available wallet balances returned exactly to their pre-bid values"
+  ],
+  "seededData": {
+    "pitchId": "6a9ebed3d26f574c91434a15",
+    "documentId": "6a9ed615e7e96ce5aa57c07a",
+    "bidId": "6aad63166b8d9dde2f774cbf",
+    "reservationGroupId": "663bfa98-9fb9-4d15-a049-99637d46d758",
+    "expiry": "2026-09-18T16:14:09.045Z",
+    "permanent": true
+  },
+  "screenshots": [
+    "INV-F016-expired-bid-history.png"
+  ],
+  "testedAt": "2026-09-18T16:14:17.722Z"
+}

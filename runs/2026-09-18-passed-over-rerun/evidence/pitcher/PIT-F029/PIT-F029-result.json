@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "PIT-F029"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging/69cb516063de758f3df04ce3",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "conversationId": "69cb516063de758f3df04ce3",
+  "message": "PIT-F029 realtime probe 1789753694435",
+  "assertions": [
+    "A controlled Admin direct conversation with the controlled Pitcher was opened in Chrome before the probe message was sent",
+    "The unique inbound message rendered without reload: true",
+    "The persisted message was available after the optional reload control (reload skipped when already live): true",
+    "Global Messaging navigation text before send: Messaging",
+    "Global Messaging navigation text after send without reload: Messaging\n3"
+  ],
+  "screenshot": "PIT-F029-realtime-direct-message.png",
+  "testedAt": "2026-09-18T17:48:16.956Z",
+  "permanentFixture": true
+}

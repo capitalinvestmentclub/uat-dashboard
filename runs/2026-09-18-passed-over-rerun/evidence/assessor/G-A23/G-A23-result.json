@@ -1,0 +1,12 @@
+{
+  "findingIds": ["G-A23"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_DRAFT_OWNER_ACTOR",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9e8292d26f574c9142e626?tab=2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1440, "height": 900 },
+  "notes": "The original edit-icon finding was on review 6aa35a995b99bdd47f86c0ca, an Adebayo Guerrilla-UAT draft on Solar Microgrid 73110. The current Assessor is Test Assessor, not the draft owner; the current Pitcher Hires view of that pitch has no draft edit action. The prior deployed inventory had no same-owner active draft. An unrelated or completed assessment row is not equivalent. No edit action was classified as fixed.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T03:30:00.000Z"
+}

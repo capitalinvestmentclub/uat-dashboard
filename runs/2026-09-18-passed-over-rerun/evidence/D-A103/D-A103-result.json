@@ -1,0 +1,63 @@
+{
+  "findingIds": [
+    "D-A103"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&task=6aadb8046b8d9dde2f7a654c",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "pitchId": "6a9ebed3d26f574c91434a15",
+  "requestId": "6aadb7aa6b8d9dde2f7a5fae",
+  "taskId": "6aadb8046b8d9dde2f7a654c",
+  "reservationGroupId": "7c74e2b7-3bb7-4a37-a3a4-3d961872b39a",
+  "observed": {
+    "beforeRequest": {
+      "status": "completed",
+      "paymentStatus": "pending",
+      "reservedAmount": 25000
+    },
+    "afterRequest": {
+      "status": "terminated",
+      "paymentStatus": "pending",
+      "reservedAmount": 0,
+      "terminationReason": "Requester ended the submitted Engineering assessment before payment for D-A103 deployed UAT."
+    },
+    "walletBefore": {
+      "balance": 2222069.8329999996,
+      "pendingBalance": 181777,
+      "availableBalance": 2040292.8329999996
+    },
+    "walletAfter": {
+      "balance": 2222069.8329999996,
+      "pendingBalance": 156777,
+      "availableBalance": 2065292.8329999996
+    },
+    "hold": {
+      "id": "6aadb7ab6b8d9dde2f7a602b",
+      "amount": -25000,
+      "status": "cancelled",
+      "action": "reserve"
+    },
+    "refund": {
+      "id": "6aadca6ddbb181b1eaea08a5",
+      "amount": 25000,
+      "status": "success",
+      "action": "release_refund"
+    }
+  },
+  "assertions": [
+    "A requester can terminate a completed but unpaid submitted assessment without waiting for the late window",
+    "The UI rejects an empty reason, then persists the supplied termination reason and terminal audit state across reload",
+    "Termination removes Pay Now, clears the NGN 25,000 reservation, and restores the requester available balance exactly once",
+    "The ledger retains one immutable cancelled hold and one linked successful refund without changing total wallet balance"
+  ],
+  "screenshots": [
+    "D-A103-submitted-assessment-terminated.png"
+  ],
+  "testedAt": "2026-09-18T23:34:11.347Z"
+}

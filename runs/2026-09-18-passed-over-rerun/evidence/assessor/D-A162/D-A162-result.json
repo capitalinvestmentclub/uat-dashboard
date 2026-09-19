@@ -1,0 +1,19 @@
+{
+  "findingIds": ["D-A162"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_CLOSED_PROFILE_TARGET",
+  "targetUrl": null,
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1792, "height": 976 },
+  "observed": {
+    "historicalClosedFixture": "Tola Closure UAT (A3), closed in ASS-037",
+    "originalUserId": "not retained in historical report",
+    "assessorDirectorySearch": "GET getAssessors?search=Tola Closure UAT returned 200 with zero rows",
+    "adminSession": "expired/revoked",
+    "profileMutation": "none"
+  },
+  "notes": "The original closed account's profile ID was not retained; its name is absent from the current Assessor directory, which is encouraging but does not prove direct-route denial or prevent Follow. A focused directory lookup could not recover the exact closed ID, and Admin user lookup is unavailable. Requires the original ID or a new disposable closed account and live Admin actor.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T03:03:06.000Z"
+}

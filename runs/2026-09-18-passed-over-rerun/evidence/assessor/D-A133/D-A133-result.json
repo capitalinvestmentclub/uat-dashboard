@@ -1,0 +1,28 @@
+{
+  "findingIds": [
+    "D-A133"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aa4006298a889dfcabb5d91?apply=1",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "feedback": "valid URL",
+    "posts": [],
+    "inputValidity": false,
+    "dialogText": "Apply for Grant\n\nPlease complete the required field(s)\n\nASS-032 Eligible public grant Ω café 漢字 1407\n\nindividual\n\n$ 75.19 / $ 75.19\n\nProject Overview *\n​\n55/250 characters\nAmount Requested (NGN) *\n\nMaximum amount per applicant: NGN 30,000\n\n​\nJustification *\n​\n62/250 characters\nDetailed Proposal (optional)\n​\n0/250 characters\nBudget Breakdown (optional)\n​\n0/250 characters\nEligibility Criteria (optional)\n\nCheck the criteria that apply to you:\n\nAge Range\n\n18 - 70 years\n\nEligibility Criteria (optional)\n\nNon profit only: No\n\nAdditional Eligibility Questions\n\nComplete the grant creator's custom eligibility questions.\n\nCommunity impact plan Ω *\n\nEnter at least ten characters.\n\nI confirm this test application is accurate *\nYes\n\nRequired confirmation.\n\nPublic evidence URL (optional)\n\nPublic evidence URL (optional) must be a valid URL beginning with http:// or https://.\n\nSupporting PDF (optional)\n\nOptional file branch.\n\nUpload PDF evidence\n\nPDF only. Use a clear, final document.\n\nChoose file\nSupporting Documents (optional)\n\nUpload Documents (PDF, DOC, XLS, PPT, etc.)\n\nMaximum total size: 10MB, Maximum number of files: 3\n​\nCancel\nSave Draft\nSubmit\nPublic evidence URL (optional) must be a valid URL beginning with http:// or https://."
+  },
+  "assertions": [
+    "Invalid notaurl produces visible applicant-facing URL guidance after submission",
+    "The invalid application was not submitted"
+  ],
+  "screenshots": [
+    "D-A133-invalid-url-feedback.png"
+  ],
+  "testedAt": "2026-09-19T02:10:48.066Z"
+}

@@ -1,0 +1,32 @@
+{
+  "findingIds": [
+    "G-A4"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "details": {
+      "valueLength": 250,
+      "maxLength": 250,
+      "describedBy": "role-change-reason-help"
+    },
+    "helper": "Maximum 250 characters reached.",
+    "roleChangeSubmitted": false
+  },
+  "assertions": [
+    "Pasting over 250 characters is constrained by native maxlength=250",
+    "The limit is explicitly announced in visible helper text associated to the field",
+    "No role change was submitted"
+  ],
+  "screenshots": [
+    "G-A4-role-reason-native-limit.png"
+  ],
+  "testedAt": "2026-09-19T03:14:19.105Z"
+}

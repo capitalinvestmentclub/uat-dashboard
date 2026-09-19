@@ -1,0 +1,35 @@
+{
+  "findingIds": [
+    "D-A61"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments?tab=requests&requestId=6aadadb76b8d9dde2f79da8c",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aadadb76b8d9dde2f79da8c",
+  "observed": {
+    "inputValue": "-100",
+    "inlineError": "Enter a rate greater than zero",
+    "sendProposalDisabled": true,
+    "backendStatus": 400,
+    "backendMessage": "Negotiated rate is required",
+    "durableStatus": "awaiting",
+    "durableAssessorRate": 25000,
+    "durableNegotiatedRate": null
+  },
+  "assertions": [
+    "Chrome preserved the typed minus sign instead of silently converting -100 to +100",
+    "Inline validation explained that the rate must be greater than zero and disabled Send Proposal",
+    "A direct negative-rate API submission was rejected with HTTP 400",
+    "The durable request remained awaiting at its NGN 25,000 base rate with no positive NGN 100 proposal"
+  ],
+  "screenshots": [
+    "D-A61-negative-rate-blocked.png"
+  ],
+  "testedAt": "2026-09-18T21:31:51.420Z"
+}

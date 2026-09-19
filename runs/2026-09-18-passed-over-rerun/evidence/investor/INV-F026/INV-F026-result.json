@@ -1,0 +1,35 @@
+{
+  "findingIds": [
+    "INV-F026"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/692dd85220b2c00478938390?id=692dd85220b2c00478938390&tab=13",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The shareholder submitted a unique operational RFI containing CJK text, an accented character and emoji",
+    "The deployed API returned HTTP 200 with the exact title, Unicode description and category",
+    "The UI displayed an explicit Information request submitted acknowledgement and the new row",
+    "The RFI title, category and Unicode description remained visible after a full reload"
+  ],
+  "seededData": {
+    "projectId": "692dd85220b2c00478938390",
+    "pitchId": "6516ccab0d9e99256c0b6580",
+    "requestId": "6aad6cfd6b8d9dde2f779292",
+    "title": "INV-F026 operating evidence 1789750516315",
+    "description": "進捗確認 — café expansion evidence 🚀 — 1789750516315",
+    "dueDate": "2026-09-18T07:00:00.000Z",
+    "permanent": true
+  },
+  "apiEvidence": {
+    "status": 200
+  },
+  "screenshots": [
+    "INV-F026-project-rfi-persisted.png"
+  ],
+  "testedAt": "2026-09-18T16:55:32.290Z"
+}

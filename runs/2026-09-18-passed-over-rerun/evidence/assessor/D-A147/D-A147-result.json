@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "D-A147"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging/6aadc526dbb181b1eae9d2ee",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "conversationId": "6aadc526dbb181b1eae9d2ee",
+    "provenance": "assessment-context",
+    "surroundingText": "This conversation was created for the Technology assessment on \"UAT Solar Microgrid 20260907\". Use this thread to coordinate scope, clarifications, and delivery updates between the client and assessor.\nAssessment context"
+  },
+  "assertions": [
+    "System-created context is labelled Assessment context, not Your message"
+  ],
+  "screenshots": [
+    "D-A147-system-context-attribution.png"
+  ],
+  "testedAt": "2026-09-19T02:47:41.654Z"
+}

@@ -1,0 +1,35 @@
+{
+  "findingIds": [
+    "D-A8"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/login",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "A deliberately locked disposable Assessor and a never-registered address both return HTTP 401.",
+    "Both paths return and render the exact same generic credential and five-attempt warning.",
+    "The locked-account response no longer enumerates account existence or lock state."
+  ],
+  "observations": [
+    {
+      "kind": "locked",
+      "status": 401,
+      "message": "Incorrect Email or password. Five unsuccessful attempts lock sign-in; reset your password before retrying if you are unsure."
+    },
+    {
+      "kind": "unknown",
+      "status": 401,
+      "message": "Incorrect Email or password. Five unsuccessful attempts lock sign-in; reset your password before retrying if you are unsure."
+    }
+  ],
+  "screenshots": [
+    "D-A8-locked-account-message.png",
+    "D-A8-unknown-account-message.png"
+  ],
+  "testedAt": "2026-09-18T19:51:01.284Z"
+}

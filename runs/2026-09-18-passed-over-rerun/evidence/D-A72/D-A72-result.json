@@ -1,0 +1,42 @@
+{
+  "findingIds": [
+    "D-A72"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadb65d6b8d9dde2f7a3d12",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aadb4f86b8d9dde2f7a3084",
+  "observed": [
+    {
+      "destination": "Overview",
+      "url": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=1&id=6a9ebed3d26f574c91434a15",
+      "editorVisible": false
+    },
+    {
+      "destination": "Pitch Deck",
+      "url": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=5&id=6a9ebed3d26f574c91434a15",
+      "editorVisible": false
+    },
+    {
+      "destination": "Information Request",
+      "url": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=6&id=6a9ebed3d26f574c91434a15",
+      "editorVisible": false
+    }
+  ],
+  "assertions": [
+    "A real accepted paid request on an active pitch was saved as a durable Review draft",
+    "Overview changed the route to tab 1, removed assignment identifiers, and replaced the editable assessment body",
+    "Pitch Deck changed the route to tab 5, removed assignment identifiers, and replaced the editable assessment body",
+    "Information Request changed the route to tab 6, removed assignment identifiers, and replaced the editable assessment body"
+  ],
+  "screenshots": [
+    "D-A72-information-request-exits-editor.png"
+  ],
+  "testedAt": "2026-09-18T22:09:32.718Z"
+}

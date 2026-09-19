@@ -1,0 +1,41 @@
+{
+  "findingIds": [
+    "D-A89"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "requestId": "6aadbe07dbb181b1eae9844d",
+    "requestTitle": "D-A88 duplicate guard 1789771264642",
+    "responseMessage": "Response persisted by the immediately preceding D-A89 verification attempt",
+    "pitcherNotificationSubject": "New information request for UAT Solar Microgrid 20260907",
+    "pitcherNotificationUrl": "/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=6&irId=6aadbe07dbb181b1eae9844d",
+    "assessorNotificationSubject": "Information request answered for UAT Solar Microgrid 20260907",
+    "assessorNotificationUrl": "/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=6&irId=6aadbe07dbb181b1eae9844d",
+    "pitcherMailboxSubject": "New information request for UAT Solar Microgrid 20260907",
+    "pitcherMailboxBody": "A new information request, “D-A88 duplicate guard 1789771264642”, needs your response. Open it to review the due date and reply.",
+    "pitcherMailboxVerifiedAt": "2026-09-18T22:49:18.555Z",
+    "assessorMailboxSubject": "Information request answered for UAT Solar Microgrid 20260907",
+    "assessorMailboxBody": "“D-A88 duplicate guard 1789771264642” has a new response. Open the request to review it and acknowledge it or ask a follow-up question.",
+    "assessorMailboxVerifiedAt": "2026-09-18T22:49:18.555Z"
+  },
+  "assertions": [
+    "The pitcher received an in-app creation notification with a deep link to the exact RFI",
+    "The pitcher Gmail mailbox received the matching New information request email for the exact title",
+    "The pitcher submitted a durable nonblank response through the deployed RFI UI",
+    "The assessor received an in-app answered notification with a deep link to the exact RFI",
+    "The assessor Gmail mailbox received the matching Information request answered email for the exact title"
+  ],
+  "screenshots": [
+    "D-A89-pitcher-rfi-response.png",
+    "D-A89-assessor-response-notification.png"
+  ],
+  "testedAt": "2026-09-18T22:49:18.555Z"
+}

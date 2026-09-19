@@ -1,0 +1,29 @@
+{
+  "findingIds": [
+    "D-A25"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "existingQualification": "MBA",
+    "submittedDuplicate": "  mba  ",
+    "persistedQualifications": [
+      "MBA"
+    ],
+    "responseStatus": 200
+  },
+  "assertions": [
+    "The deployed profile accepted an exact normalization challenge by adding a whitespace- and case-variant of the existing MBA qualification.",
+    "The real profile save completed with HTTP 200.",
+    "After a full reload, the qualification list contained one canonical MBA entry and no normalized duplicate.",
+    "The duplicate submission caused no lasting profile-data change beyond retaining the canonical qualification."
+  ],
+  "screenshot": "D-A25-normalized-qualification-reload-1792x976.png",
+  "testedAt": "2026-09-18T20:18:25.231Z"
+}

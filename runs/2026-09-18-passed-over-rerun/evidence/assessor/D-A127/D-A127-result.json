@@ -1,0 +1,30 @@
+{
+  "findingIds": [
+    "D-A127"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "BLOCKED_POPULATED_CHAT_AND_PAGE_LOAD",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/6a7c3a2d99e71d8c8f3360c3",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "endedSessionApiStatus": 200,
+    "endedSessionStoredStatus": "ended",
+    "endedSessionChatApiStatus": 200,
+    "endedSessionCommentCount": 0,
+    "secondEndedSessionCommentCount": 0,
+    "boundedPopulatedChatInventory": "Timed out after 10 seconds per request",
+    "chromePreflight": "Session page remained on its loading spinner without receiving the session request before the 90-second test timeout"
+  },
+  "assertions": [
+    "The selected deployed session is ended and its chat API is accessible, but it contains no messages",
+    "The live chat, reply, report, reaction ordering, and populated ended-state controls cannot be inferred from an empty transcript",
+    "The focused Chrome terminal-state preflight stalled during page loading and produced no reliable rendered chat evidence",
+    "D-A127 remains unverified rather than being passed from mocked regression coverage"
+  ],
+  "testedAt": "2026-09-19T01:50:00.000Z"
+}

@@ -1,0 +1,21 @@
+{
+  "findingIds": [
+    "INV-F004"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "DEPLOYED_PROJECT_API_STALLED_AFTER_SESSION_REFRESH",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/63d9bb909bfa0a60876fdd98?tab=13",
+  "browserName": "chromium",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The first Chrome attempt reached the login screen because the established Investor session had expired; no RFI was created.",
+    "The Investor session was refreshed successfully as the single bounded remediation attempt.",
+    "The rerun then remained on the application loading screen for 120 seconds and never received the project API response, so the count-to-row mutation could not be completed reliably.",
+    "No test data was changed during either attempt."
+  ],
+  "screenshots": [],
+  "testedAt": "2026-09-18T14:54:25.000Z"
+}

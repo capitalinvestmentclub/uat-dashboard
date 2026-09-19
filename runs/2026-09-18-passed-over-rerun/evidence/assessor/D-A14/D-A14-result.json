@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "D-A14"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "DEPLOYED_DESKTOP_ENTRY_NOT_REACHED_AFTER_ONE_RECOVERY_ATTEMPT",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The authenticated Assessor profile loaded successfully at the standard desktop viewport.",
+    "The attempted account-menu path did not expose an actionable Deactivate Profile entry to the browser test.",
+    "One locator recovery attempt also failed, so the password-step-up dialog was not reached and no account-closure request was sent.",
+    "D-A14 remains unverified rather than being inferred from source or mocked coverage."
+  ],
+  "screenshots": [],
+  "testedAt": "2026-09-18T20:02:00Z"
+}

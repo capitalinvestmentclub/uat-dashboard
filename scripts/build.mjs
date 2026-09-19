@@ -47,7 +47,12 @@ const hostedGroups = await Promise.all(hosted.map(async (entry) => {
   return group;
 }));
 groups.push(...hostedGroups);
-const ledger = JSON.parse(await readFile(new URL('../runs/2026-09-17-defect-batch-deployed-retest/deployed-retest-276.json',import.meta.url),'utf8'));
+const reconciledPath = new URL('../runs/2026-09-18-passed-over-rerun/reconciled-276.json', import.meta.url);
+const reconciledSource = await readFile(reconciledPath, 'utf8').catch(error => {
+  if (error.code === 'ENOENT') return null;
+  throw error;
+});
+const ledger = JSON.parse(reconciledSource || await readFile(new URL('../runs/2026-09-17-defect-batch-deployed-retest/deployed-retest-276.json', import.meta.url), 'utf8'));
 const outcomeCounts = rows => Object.fromEntries([...new Set(rows.map(row=>row.status))].sort().map(status=>[status,rows.filter(row=>row.status===status).length]));
 const deployedRetest = {
   runId: ledger.runId,
@@ -61,7 +66,8 @@ const deployedRetest = {
     const findings=ledger.findings.filter(finding=>finding.group===group);
     return {group,total:findings.length,...outcomeCounts(findings)};
   }),
-  ledger: 'runs/2026-09-17-defect-batch-deployed-retest/deployed-retest-276.json',
+  ledger: reconciledSource ? 'runs/2026-09-18-passed-over-rerun/reconciled-276.json' : 'runs/2026-09-17-defect-batch-deployed-retest/deployed-retest-276.json',
+  ...(reconciledSource ? { priorLedger: ledger.sourceRuns[0], rerunLedger: ledger.sourceRuns[1] } : {}),
 };
 const data = {generatedAt:new Date().toISOString(),sizes:['360×800','390×844','768×1024','1024×768','1280×800','1440×900'],groups,uniqueFindings:deduplicate(groups),deployedRetest};
 await writeFile(new URL('../dashboard-data.json',import.meta.url), JSON.stringify(data,null,2)+'\n');

@@ -1,0 +1,36 @@
+{
+  "findingIds": [
+    "D-A116"
+  ],
+  "outcome": "FAIL",
+  "disposition": "UNRESOLVED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/63d993b83f6f4af93536d2ee?id=63d993b83f6f4af93536d2ee&tab=4&pitchId=63d9914591224ee3b3de073d",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "organizationId": "6a178202aac3f5d013b68de4",
+  "organizationName": "PWC",
+  "projectId": "63d993b83f6f4af93536d2ee",
+  "pitchId": "63d9914591224ee3b3de073d",
+  "observed": {
+    "activeOrganizationContext": "PWC",
+    "projectRequestCarriedOrganizationHeader": true,
+    "personalAssignmentProjectVisible": true,
+    "milestoneVisible": true,
+    "supportControlVisible": false,
+    "pushBackControlVisible": false
+  },
+  "assertions": [
+    "The browser was switched from the Assessor personal profile into the unrelated PWC organization context",
+    "The project request carried the exact active organization context header",
+    "The personal-assignment project and milestone still rendered in the unrelated organization context",
+    "Milestone write controls are now hidden, but the private project and milestone read boundary remains unresolved"
+  ],
+  "screenshots": [
+    "D-A116-organization-context-personal-project-exposed.png"
+  ],
+  "testedAt": "2026-09-19T00:52:03.616Z"
+}

@@ -1,0 +1,25 @@
+{
+  "findingIds": [
+    "D-A44"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=1",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "pitchId": "63d8ac4006621f0027c9ef01",
+  "testedAt": "2026-09-18T20:44:30Z",
+  "assertions": [
+    "After clearing stale test requests and temporarily raising the mailbox-controlled Assessor capacity to 50, deployed Chrome created real request 6aada27e6b8d9dde2f79731f.",
+    "The API persisted the response deadline as 2026-10-24.",
+    "The newly delivered Gmail message rendered Response due by October 24, 2026, exactly matching the requested date with no one-day shift.",
+    "The email was visually inspected in the real cic.test.assessor@gmail.com inbox immediately after delivery."
+  ],
+  "screenshots": [
+    "../D-A45/D-A45-free-request-requester-ui.png"
+  ]
+}

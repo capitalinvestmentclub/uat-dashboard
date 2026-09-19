@@ -1,0 +1,12 @@
+{
+  "findingIds": ["G-A25"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_EDITABLE_REVIEW_RUBRIC",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1440, "height": 900 },
+  "notes": "The accessible-name regression concerns the repeated rating groups and 16 adjacent comment fields in an editable review rubric. The current Assessor's known Solar Microgrid 20260907 review is completed and the historical Adebayo draft belongs to another identity. Prior deployed inventory did not find an active editable rubric for this session. Read-only ratings cannot establish form-control names; no rubric was submitted.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T03:32:00.000Z"
+}

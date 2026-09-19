@@ -1,0 +1,39 @@
+{
+  "findingIds": [
+    "D-A111"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "BLOCKED_KYC_AND_PROVIDER_PRECONDITIONS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "kycState": "InProgress",
+    "currency": "NGN",
+    "providerState": "NGN bank payouts available",
+    "payoutAccountState": "No linked payout account selected",
+    "payoutLinkingFormAvailable": true,
+    "withdrawalUiBlock": "Your KYC is pending review. You will be able to withdraw once it is approved.",
+    "seedAttempt": {
+      "endpoint": "https://cicdevapi.uc.r.appspot.com/api/v1/bank-accounts/paystack/verify",
+      "bankCode": "058",
+      "maskedAccountNumber": "•••• 0000",
+      "status": 500,
+      "message": "Internal Server Error"
+    }
+  },
+  "assertions": [
+    "The deployed Assessor KYC API currently reports InProgress, not Approved",
+    "The NGN withdrawal dialog exposes the real bank-verification form and accurately blocks withdrawal while KYC is pending review",
+    "No linked payout account is selectable, and the single permitted permanent seed attempt returned HTTP 500 from deployed Paystack verification",
+    "The approved-KYC valid withdrawal, confirmation, submission, and terminal settlement branches cannot be tested until both the intended KYC precondition and provider verification are available"
+  ],
+  "screenshots": [
+    "D-A111-inprogress-kyc-ngn-setup.png"
+  ],
+  "testedAt": "2026-09-19T00:30:59Z"
+}

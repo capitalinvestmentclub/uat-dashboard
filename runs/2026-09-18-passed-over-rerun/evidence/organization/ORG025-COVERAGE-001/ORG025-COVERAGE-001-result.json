@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "ORG025-COVERAGE-001"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "MISSING_RUN_SCOPED_ROLE_LIFECYCLE_FIXTURES",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/organizations",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Authenticated API audit found 28 Pitcher-account organizations and 17 Investor-account organizations",
+    "The Assessor account has three organizations, but their memberships are only Pitcher or Investor; no Assessor organization context is available",
+    "No isolated new organization, invitation/KYB, counterpart, transaction, settlement, notification, and recovery fixtures exist for all three required full lifecycles"
+  ],
+  "screenshots": [
+    "ORG025-COVERAGE-001-assessor-organization-contexts.png"
+  ],
+  "testedAt": "2026-09-18T18:46:40.291Z"
+}

@@ -1,0 +1,27 @@
+{
+  "findingIds": [
+    "PIT-F026"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aad77546b8d9dde2f77fc24",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "grantId": "6aad77546b8d9dde2f77fc24",
+  "applicationId": "6aad77606b8d9dde2f7804c7",
+  "assertions": [
+    "A fresh public grant and a real application were created, then the grant was terminated through the deployed API using controlled Pitcher and Investor actors",
+    "The grant page visibly reports Grant Terminated: true",
+    "The application table visibly reports Pending: true",
+    "The application row also visibly reports Terminated: true",
+    "Approval controls remaining: 0; rejection controls remaining: 0",
+    "The same terminal application is simultaneously presented as Pending and Terminated, reproducing the lifecycle contradiction"
+  ],
+  "screenshot": "PIT-F026-terminated-grant-pending-application.png",
+  "testedAt": "2026-09-18T17:41:32.546Z",
+  "permanentFixture": true
+}

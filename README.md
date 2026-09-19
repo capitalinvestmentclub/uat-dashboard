@@ -2,7 +2,7 @@
 
 ## Deployed defect-delivery retest — 18 September 2026
 
-The Chrome retest ledger now has terminal dispositions for all 276 entries in the delivery batch: 64 PASS, 12 FAIL, 1 DUPLICATE_COVERAGE and 199 PASSED_OVER. The dashboard renders the reconciled ten-report breakdown from `dashboard-data.json`; the complete machine-readable evidence ledger is in `runs/2026-09-17-defect-batch-deployed-retest/deployed-retest-276.json`.
+The Chrome retest now has terminal dispositions for all 276 entries: 190 PASS, 30 FAIL, 55 BLOCKED, and 1 DUPLICATE_COVERAGE. The [reconciled evidence ledger](runs/2026-09-18-passed-over-rerun/reconciled-276.json) overlays the [199-entry rerun](runs/2026-09-18-passed-over-rerun/passed-over-rerun-199.json) on the immutable [original run](runs/2026-09-17-defect-batch-deployed-retest/deployed-retest-276.json). BLOCKED is not a verified fix; exact actor, record, or environment prerequisites are stated per entry. The dashboard renders the updated per-report breakdown from `dashboard-data.json`.
 
 One summary for twelve published E2E reports. Static HTML/CSS/JavaScript; no product API, private test data, runtime framework, or login required.
 

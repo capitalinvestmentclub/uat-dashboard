@@ -1,0 +1,24 @@
+{
+  "findingIds": [
+    "INV-F008"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Before mark-read: page=3500, navigation=3500.",
+    "Marked 8 visible notifications read.",
+    "Immediately after: page=3492, navigation=3492.",
+    "After reload: page=3492, navigation=3492."
+  ],
+  "screenshots": [
+    "INV-F008-notification-badges-reconciled.png"
+  ],
+  "testedAt": "2026-09-18T15:08:06.003Z"
+}

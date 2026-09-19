@@ -1,0 +1,12 @@
+{
+  "findingIds": ["G-A21"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_ISOLATED_PITCH_VARIANTS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9e8292d26f574c9142e626?tab=2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1440, "height": 900 },
+  "notes": "The current Pitcher could view the existing Solar Microgrid 73110 pitch in Chrome during G-A16, but that single public record cannot cover the required private, inactive, deleted, unsupported-country, promoted, related-party and known-prior-review variants. The prior bounded deployed inventory did not find an isolated seeded matrix. Mutating the shared pitch's engagement counts would not verify these missing authorization states. No engagement action was submitted; this is not a pass.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T03:27:00.000Z"
+}

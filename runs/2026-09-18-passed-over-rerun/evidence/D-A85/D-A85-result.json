@@ -1,0 +1,31 @@
+{
+  "findingIds": [
+    "D-A85"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?assessmentRequestId=6aadbafa6b8d9dde2f7a9e7d&reviewId=6aadbb076b8d9dde2f7aa2e8&id=6a9ebed3d26f574c91434a15&tab=2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "reviewId": "6aadbb076b8d9dde2f7aa2e8",
+  "observed": {
+    "listHref": "/pitch/6a9ebed3d26f574c91434a15?assessmentRequestId=6aadbafa6b8d9dde2f7a9e7d&reviewId=6aadbb076b8d9dde2f7aa2e8&id=6a9ebed3d26f574c91434a15&tab=2",
+    "restoredFirstRating": 3,
+    "reviewRubricVisible": true,
+    "genericResponseFormVisible": false
+  },
+  "assertions": [
+    "The authoritative Draft row in Manage Assessments linked directly to the saved reviewId",
+    "Activating the list resume link opened the full Review rubric, not the generic non-Review response form",
+    "The previously saved first-category rating of 3 was restored",
+    "Save as draft remained available for the compatible Review editor"
+  ],
+  "screenshots": [
+    "D-A85-list-resumes-review-rubric.png"
+  ],
+  "testedAt": "2026-09-18T22:29:24.477Z"
+}

@@ -1,0 +1,43 @@
+{
+  "findingIds": [
+    "D-A91"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=6&irId=6aadbe07dbb181b1eae9844d",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "pitchId": "6a9ebed3d26f574c91434a15",
+    "requestId": "6aadbe07dbb181b1eae9844d",
+    "requestTitle": "D-A88 duplicate guard 1789771264642",
+    "followUp": "D-A91 follow-up evidence 1789772029239",
+    "transitions": [
+      {
+        "action": "follow_up",
+        "status": "open",
+        "revision": 1
+      }
+    ],
+    "persistedThreadKinds": [
+      "request",
+      "response",
+      "acknowledgment",
+      "follow_up"
+    ]
+  },
+  "assertions": [
+    "The RFI detail displayed a private audit history containing the original request and pitcher response",
+    "The requestor could acknowledge the response and the acknowledgment was appended to history",
+    "The requestor sent a follow-up note, which reopened the RFI instead of terminally closing it",
+    "After a full reload the open status and all four history events remained visible"
+  ],
+  "screenshots": [
+    "D-A91-auditable-rfi-thread.png"
+  ],
+  "testedAt": "2026-09-18T22:54:00.699Z"
+}

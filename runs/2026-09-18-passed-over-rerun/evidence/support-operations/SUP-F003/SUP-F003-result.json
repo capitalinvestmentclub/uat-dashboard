@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "SUP-F003"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/notifications",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The deployed Admin Notification Operations page exposes Template management.",
+    "Malformed sample JSON produces a clear validation error.",
+    "No production preview success state appears.",
+    "No template preview API request is sent for malformed JSON."
+  ],
+  "screenshots": [
+    "SUP-F003-malformed-sample-json-blocked.png"
+  ],
+  "testedAt": "2026-09-18T19:29:04.391Z"
+}

@@ -1,0 +1,41 @@
+{
+  "findingIds": [
+    "D-A118"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/63d993b83f6f4af93536d2ee?id=63d993b83f6f4af93536d2ee&tab=4&pitchId=63d9914591224ee3b3de073d",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "projectId": "63d993b83f6f4af93536d2ee",
+  "pitchId": "63d9914591224ee3b3de073d",
+  "milestoneId": "69c8b61de071d85963a8fba5",
+  "commentId": "6aaddf8ced8aad2701ed6784",
+  "observed": {
+    "enteredComment": "  D-A118 durable comment Ω 1789779835763 <safe-context>  ",
+    "persistedComment": "D-A118 durable comment Ω 1789779835763 &lt;safe-context>",
+    "apiStatus": 200,
+    "visibleImmediately": true,
+    "visibleAfterReload": true
+  },
+  "assertions": [
+    "The temporary Assessor submitted a nonblank Unicode and harmless HTML-like milestone comment through Chrome",
+    "The API trimmed surrounding whitespace, retained Unicode, safely encoded the HTML-like fragment, and returned a durable identifier",
+    "The exact comment rendered immediately in the milestone discussion",
+    "The exact comment remained visible after a full page reload"
+  ],
+  "seededData": {
+    "projectId": "63d993b83f6f4af93536d2ee",
+    "milestoneId": "69c8b61de071d85963a8fba5",
+    "commentId": "6aaddf8ced8aad2701ed6784",
+    "permanent": true
+  },
+  "screenshots": [
+    "D-A118-milestone-comment-persists.png"
+  ],
+  "testedAt": "2026-09-19T01:04:22.720Z"
+}

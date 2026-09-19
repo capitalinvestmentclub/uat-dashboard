@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "INV-F006"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "assertions": [
+    "The 390x844 account drawer is independently scrollable.",
+    "Deactivate Profile becomes visible without moving the underlying page.",
+    "Selecting Deactivate Profile opens the account-closure dialog."
+  ],
+  "screenshots": [
+    "INV-F006-mobile-drawer-deactivate-reachable.png"
+  ],
+  "testedAt": "2026-09-18T14:56:24.166Z"
+}

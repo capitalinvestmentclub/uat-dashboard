@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "D-A46"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aada27e6b8d9dde2f79731f",
+  "testedAt": "2026-09-18T20:47:50.318Z",
+  "assertions": [
+    "The Assessor API returned exactly one durable request row for request 6aada27e6b8d9dde2f79731f.",
+    "The notification API returned exactly one notification linked to that request.",
+    "The rendered Notifications page exposed exactly one visible request-specific action for that request.",
+    "The real Assessor Gmail search returned exactly one newly delivered email for the same request and pitch.",
+    "The request, in-app notification, and email channels therefore reconcile 1:1:1."
+  ],
+  "screenshots": [
+    "D-A46-one-request-one-notification.png"
+  ]
+}

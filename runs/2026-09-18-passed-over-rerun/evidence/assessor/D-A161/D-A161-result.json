@@ -1,0 +1,18 @@
+{
+  "findingIds": ["D-A161"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_CLOSURE_ADMIN_FIXTURE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-assessments",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1792, "height": 976 },
+  "observed": {
+    "originalBlockedAssessor": "Restored after rejection in original ASS-037 run",
+    "availableAdminSession": "expired/revoked",
+    "availableAssessor": "shared test identity, not disposable",
+    "closureMutation": "none"
+  },
+  "notes": "Itemized blocker feedback is exercised at Admin approval of a pending closure with an actual balance/blocking record. No authorized disposable pending request and live Admin session are available. The planned runbook says never close a shared test identity, so no new closure was submitted. Requires disposable Assessor, controlled blocker and refreshed Admin actor.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T03:01:55.000Z"
+}

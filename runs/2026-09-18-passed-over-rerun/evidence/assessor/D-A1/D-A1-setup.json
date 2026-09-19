@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "D-A1"
+  ],
+  "phase": "FRESH_SIGNUP_COMPLETE_VERIFICATION_PENDING",
+  "email": "cic.test.pitcher+da1-1789760633200@gmail.com",
+  "signupExpertise": {
+    "industry": "Technology",
+    "years": 5,
+    "qualification": "D-A1 Fresh Qualification"
+  },
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/signup",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "screenshots": [
+    "D-A1-fresh-assessor-signup-submitted.png"
+  ],
+  "testedAt": "2026-09-18T19:44:03.303Z"
+}

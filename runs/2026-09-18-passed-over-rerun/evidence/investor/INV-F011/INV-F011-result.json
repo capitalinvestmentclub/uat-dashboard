@@ -1,0 +1,34 @@
+{
+  "findingIds": [
+    "INV-F011"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/6a801232af5a3e4e85a9ae2f",
+  "browserName": "chromium",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "assertions": [
+    "The cancelled deployed session returned HTTP 200 to its Pitcher host and invited Investor",
+    "Both roles saw SESSION UNAVAILABLE and the explicit session re-entry disabled explanation",
+    "Neither role had a Join live room control and neither browser emitted a live-room join request"
+  ],
+  "results": [
+    {
+      "role": "Pitcher host",
+      "finalUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/6a801232af5a3e4e85a9ae2f",
+      "sessionStatus": 200,
+      "liveRoomJoinRequests": 0,
+      "screenshot": "INV-F011-cancelled-host-inert.png"
+    },
+    {
+      "role": "invited Investor",
+      "finalUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/6a801232af5a3e4e85a9ae2f",
+      "sessionStatus": 200,
+      "liveRoomJoinRequests": 0,
+      "screenshot": "INV-F011-cancelled-investor-inert.png"
+    }
+  ],
+  "testedAt": "2026-09-18T15:25:45.866Z"
+}

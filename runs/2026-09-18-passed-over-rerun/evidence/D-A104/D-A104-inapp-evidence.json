@@ -1,0 +1,58 @@
+{
+  "findingIds": [
+    "D-A104"
+  ],
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "terminationRequestId": "6aadb7aa6b8d9dde2f7a5fae",
+  "deadlineRequestId": "6952598c7b6606c6effedf2c",
+  "pitcherTermination": {
+    "id": "6aadca6fde5561ec38e6320c",
+    "subject": "Assessment terminated for UAT Solar Microgrid 20260907",
+    "body": "Your assessment termination is recorded and NGN 25,000.00 was released from escrow.",
+    "url": "/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=2&assessmentRequestId=6aadb7aa6b8d9dde2f7a5fae",
+    "createdOn": "2026-09-18T23:34:07.129Z",
+    "protocols": [
+      "email",
+      "webapp"
+    ]
+  },
+  "assessorTermination": {
+    "id": "6aadca72de5561ec38e635dd",
+    "subject": "Assessment terminated for UAT Solar Microgrid 20260907",
+    "body": "The requester terminated this assessment and NGN 25,000.00 was released from escrow.",
+    "url": "/manage-assessments?tab=requests&requestId=6aadb7aa6b8d9dde2f7a5fae",
+    "createdOn": "2026-09-18T23:34:10.175Z",
+    "protocols": [
+      "email",
+      "webapp"
+    ]
+  },
+  "pitcherDeadline": {
+    "id": "6aac6b054ed907d52cdf799d",
+    "subject": "Assessment response deadline expired for IOW",
+    "body": "The assessor did not respond before the deadline. NGN 13,100.00 has been released.",
+    "url": "/pitch/63cb3b8b4904e4f4e2bf236a?id=63cb3b8b4904e4f4e2bf236a&tab=2&assessmentRequestId=6952598c7b6606c6effedf2c",
+    "createdOn": "2026-09-17T22:34:45.832Z",
+    "protocols": [
+      "email",
+      "webapp"
+    ]
+  },
+  "assessorDeadline": {
+    "id": "6aac6b094ed907d52cdf7d25",
+    "subject": "Assessment response deadline expired for IOW",
+    "body": "The response deadline passed before you accepted or declined this request.",
+    "url": "/manage-assessments?tab=requests&requestId=6952598c7b6606c6effedf2c",
+    "createdOn": "2026-09-17T22:34:49.559Z",
+    "protocols": [
+      "email",
+      "webapp"
+    ]
+  },
+  "probedAt": "2026-09-18T23:42:41.536Z"
+}

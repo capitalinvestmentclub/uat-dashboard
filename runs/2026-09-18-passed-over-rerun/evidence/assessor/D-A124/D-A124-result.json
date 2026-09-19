@@ -1,0 +1,41 @@
+{
+  "findingIds": [
+    "D-A124"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "BLOCKED_INSUFFICIENT_AUTHENTICATED_PARTICIPANT_FIXTURES",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "requiredDistinctActors": [
+      "host",
+      "admitted participant",
+      "overflow participant"
+    ],
+    "usableActors": [
+      "Pitcher host",
+      "Assessor participant"
+    ],
+    "expiredOrRevokedActors": [
+      "Investor",
+      "Admin",
+      "KYC Reviewer",
+      "KYC Approver"
+    ],
+    "hostSessionApiStatus": 200,
+    "investorSessionApiStatus": 401,
+    "assessorSessionApiStatusBeforeInvitation": 403
+  },
+  "assertions": [
+    "A real one-seat capacity test requires the host plus two distinct authenticated invited participants",
+    "Only the host and one non-host Assessor currently have valid sessions; the other independent actor fixtures are expired or revoked",
+    "The exact overflow participant, queue or rejection path therefore cannot be reached in deployed Chrome with the current actor inventory",
+    "D-A124 remains blocked until one additional authenticated test participant is provisioned or refreshed"
+  ],
+  "testedAt": "2026-09-19T01:29:00.000Z"
+}

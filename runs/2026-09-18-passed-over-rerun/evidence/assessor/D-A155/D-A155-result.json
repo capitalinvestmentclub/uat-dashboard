@@ -1,0 +1,32 @@
+{
+  "findingIds": [
+    "D-A155"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/buy/pitch/6aa3b0220000000000000001",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "pitchId": "6aa3b0220000000000000001",
+    "actor": "unrelated Assessor",
+    "responses": [
+      {
+        "status": 403,
+        "pathname": "/api/v1/marketplace/getEquityOwners"
+      }
+    ],
+    "leakedKnownHolders": false
+  },
+  "assertions": [
+    "Holder endpoint denies unrelated Assessor and Chrome withholds known identities and stakes"
+  ],
+  "screenshots": [
+    "D-A155-unrelated-holder-privacy.png"
+  ],
+  "testedAt": "2026-09-19T02:54:30.043Z"
+}

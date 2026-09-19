@@ -1,0 +1,18 @@
+{
+  "findingIds": ["D-A158"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_BID_DIALOG_PRECONDITION",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1792, "height": 976 },
+  "observed": {
+    "catalogueAssetsInspected": 32,
+    "liveSalesFound": 0,
+    "originalU4T22SaleCount": 0,
+    "replacementListingAttempt": "Owner POST /marketplace/sell returned HTTP 500 with no sale ID"
+  },
+  "notes": "The bid-expiry date picker belongs to a live-sale bid dialog, which is unavailable with zero sales. The one controlled listing-seed attempt failed. Pointer and keyboard date selection were not exercised; a current active sale with a buyer account is needed.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T02:58:20.000Z"
+}

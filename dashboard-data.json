@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T04:51:01.628Z",
+  "generatedAt": "2026-09-19T03:40:28.726Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -12,7 +12,7 @@
     {
       "name": "Pitcher",
       "repo": "pitcher-uat-report",
-      "commit": "df518eeec50078148e5fe5612d0a1e42d40e3e20",
+      "commit": "e6f85a14d6a64a66637d004e5afcfeb1f947dee9",
       "url": "https://capitalinvestmentclub.github.io/pitcher-uat-report/",
       "checkpoint": "2026-09-12 deployed retest",
       "scenarios": [
@@ -2679,7 +2679,7 @@
     {
       "name": "Admin",
       "repo": "admin-uat-report",
-      "commit": "2ada125b0477c00f0ecfb7985ad9900bbe846b6a",
+      "commit": "6ed7feb806a079771328fa8c0b1c388b235d8851",
       "url": "https://capitalinvestmentclub.github.io/admin-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -4698,7 +4698,7 @@
     {
       "name": "Organization",
       "repo": "organization-uat-report",
-      "commit": "ddfb62fae3786d112bd7e6997420c1777ef65f48",
+      "commit": "98f9e0312fef7911a8ca430a7b683ae18a29dd1f",
       "url": "https://capitalinvestmentclub.github.io/organization-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -5804,7 +5804,7 @@
     {
       "name": "Grantor",
       "repo": "grantor-uat-report",
-      "commit": "f626f7408e6791b0ae85755ebf798501894d8809",
+      "commit": "d69f56766722d2611ed9fd28e634185fc141bf19",
       "url": "https://capitalinvestmentclub.github.io/grantor-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -7310,7 +7310,7 @@
     {
       "name": "Guest / Public",
       "repo": "guest-public-uat-report",
-      "commit": "8ed0a33977a2d74a962c1f51a02660c0b8a2c715",
+      "commit": "e8393549709eda6f7745da54ce8e890e6a132cae",
       "url": "https://capitalinvestmentclub.github.io/guest-public-uat-report/",
       "checkpoint": "See source report",
       "scenarios": [
@@ -8587,7 +8587,7 @@
     {
       "name": "KYC Reviewer",
       "repo": "kyc-reviewer-uat-report",
-      "commit": "8b40a5cac6ecc82868cb404c12d14b443c4b2aca",
+      "commit": "c5d0c404443a3404a54800e24f1248dc5d6080ab",
       "url": "https://capitalinvestmentclub.github.io/kyc-reviewer-uat-report/",
       "checkpoint": "2026-09-12 interim checkpoint",
       "scenarios": [
@@ -10202,7 +10202,7 @@
     {
       "name": "KYC Approval",
       "repo": "kyc-approval-uat-report",
-      "commit": "11000aa09bfa453c81026feab5ce0189f3c36172",
+      "commit": "656e97c1118f43d47e15e5f09a9843956d1254ac",
       "url": "https://capitalinvestmentclub.github.io/kyc-approval-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome campaign",
       "scenarios": [
@@ -14063,7 +14063,7 @@
     {
       "name": "Support Operations",
       "repo": "support-operations-uat-report",
-      "commit": "e12c58d5a8bed7da3a632eafba6dd6a8827d0d8a",
+      "commit": "d520f9c41108f5cec4554b496b854fa1089e6cda",
       "url": "https://capitalinvestmentclub.github.io/support-operations-uat-report/",
       "checkpoint": "2026-09-12 deployed Chrome Support Operations campaign",
       "scenarios": [
@@ -32756,80 +32756,85 @@
     }
   ],
   "deployedRetest": {
-    "runId": "2026-09-17-defect-batch-deployed-retest",
+    "runId": "2026-09-18-reconciled-defect-batch",
     "state": "COMPLETE",
-    "completedAt": "2026-09-18T10:10:00Z",
+    "completedAt": "2026-09-19T03:37:00.000Z",
     "browser": "Chrome",
     "defaultViewport": "1792x976",
     "total": 276,
     "outcomes": {
+      "BLOCKED": 55,
       "DUPLICATE_COVERAGE": 1,
-      "FAIL": 12,
-      "PASS": 64,
-      "PASSED_OVER": 199
+      "FAIL": 30,
+      "PASS": 190
     },
     "groups": [
       {
         "group": "Pitcher",
         "total": 26,
-        "FAIL": 3,
-        "PASS": 11,
-        "PASSED_OVER": 12
+        "BLOCKED": 6,
+        "FAIL": 4,
+        "PASS": 16
       },
       {
         "group": "Admin",
         "total": 8,
-        "PASSED_OVER": 8
+        "BLOCKED": 2,
+        "FAIL": 1,
+        "PASS": 5
       },
       {
         "group": "Organization",
         "total": 3,
-        "PASS": 2,
-        "PASSED_OVER": 1
+        "BLOCKED": 1,
+        "PASS": 2
       },
       {
         "group": "Grantor",
         "total": 3,
-        "PASS": 1,
-        "PASSED_OVER": 2
+        "BLOCKED": 1,
+        "PASS": 2
       },
       {
         "group": "Guest / Public",
         "total": 4,
-        "FAIL": 1,
-        "PASS": 1,
-        "PASSED_OVER": 2
+        "FAIL": 2,
+        "PASS": 2
       },
       {
         "group": "KYC Reviewer",
         "total": 1,
-        "PASSED_OVER": 1
+        "PASS": 1
       },
       {
         "group": "KYC Approval",
         "total": 1,
-        "PASSED_OVER": 1
+        "PASS": 1
       },
       {
         "group": "Support Operations",
         "total": 5,
-        "PASSED_OVER": 5
+        "FAIL": 1,
+        "PASS": 4
       },
       {
         "group": "Assessor",
         "total": 196,
+        "BLOCKED": 42,
         "DUPLICATE_COVERAGE": 1,
-        "FAIL": 8,
-        "PASS": 48,
-        "PASSED_OVER": 139
+        "FAIL": 21,
+        "PASS": 132
       },
       {
         "group": "Investor",
         "total": 29,
-        "PASS": 1,
-        "PASSED_OVER": 28
+        "BLOCKED": 3,
+        "FAIL": 1,
+        "PASS": 25
       }
     ],
-    "ledger": "runs/2026-09-17-defect-batch-deployed-retest/deployed-retest-276.json"
+    "ledger": "runs/2026-09-18-passed-over-rerun/reconciled-276.json",
+    "priorLedger": "runs/2026-09-17-defect-batch-deployed-retest/deployed-retest-276.json",
+    "rerunLedger": "runs/2026-09-18-passed-over-rerun/passed-over-rerun-199.json"
   }
 }

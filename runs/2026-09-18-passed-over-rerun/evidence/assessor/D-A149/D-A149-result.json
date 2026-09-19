@@ -1,0 +1,18 @@
+{
+  "findingIds": ["D-A149"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_ZERO_UNREAD_FIXTURE",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/notifications",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1792, "height": 976 },
+  "observed": {
+    "assessorUnreadBefore": 458,
+    "assessorTotalNotifications": 461,
+    "alternatePitcherRead": "GET notifications aborted after 8 seconds",
+    "mutations": "No notifications were bulk-marked read"
+  },
+  "notes": "The exact regression requires page unread to reach zero and the global badge to converge after reload. The available Assessor has 458 unread events, and the alternate authenticated account's notification endpoint timed out on the single focused attempt. A small isolated account or functional bulk-read fixture is needed; a mere decrement from 458 would not prove the zero-state behavior.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T02:51:27.000Z"
+}

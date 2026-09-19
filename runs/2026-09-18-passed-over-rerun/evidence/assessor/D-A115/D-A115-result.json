@@ -1,0 +1,39 @@
+{
+  "findingIds": [
+    "D-A115"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/project/63d9bb909bfa0a60876fdd98?id=63d9bb909bfa0a60876fdd98&tab=4&pitchId=63d9b7749bfa0a60876fdd87",
+  "apiUrl": "https://cicdevapi.uc.r.appspot.com/api/v1/project/63d9bb909bfa0a60876fdd98",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "projectId": "63d9bb909bfa0a60876fdd98",
+  "pitchId": "63d9b7749bfa0a60876fdd87",
+  "terminalRequestIds": [
+    "691e30c6cd57653f99a1a9a8",
+    "659845ae199ea8002757865a"
+  ],
+  "observed": {
+    "apiStatus": 403,
+    "apiMessage": "Your temporary assessor access to this project has ended",
+    "privateMilestoneVisible": false,
+    "milestoneWriteControlsVisible": false,
+    "mutatingRequestCount": 0,
+    "denialPersistedAfterReload": true
+  },
+  "assertions": [
+    "A project tied to terminated Assessor engagements returns HTTP 403 to the ended Assessor",
+    "Chrome renders a stable Unable to load project boundary with the explicit ended-access message",
+    "The private milestone and its Support and Push back mutation controls are absent",
+    "The denial persists after full reload and no project mutation request is issued"
+  ],
+  "screenshots": [
+    "D-A115-ended-engagement-project-denied.png"
+  ],
+  "testedAt": "2026-09-19T00:46:08.923Z"
+}

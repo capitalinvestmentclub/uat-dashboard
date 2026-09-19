@@ -1,0 +1,70 @@
+{
+  "findingIds": [
+    "D-A97"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "pitchId": "6a9ebed3d26f574c91434a15",
+  "requestId": "6aadb83c6b8d9dde2f7a6a73",
+  "taskId": "6aadb8ed6b8d9dde2f7a6fed",
+  "reservationGroupId": "5a45c8e3-c6ea-4d40-bd7b-d74f71dafdaf",
+  "observed": {
+    "request": {
+      "status": "completed",
+      "paymentStatus": "paid",
+      "reservedAmount": 0
+    },
+    "assessorWalletBefore": {
+      "balance": 131466.66999999998,
+      "pendingBalance": 6796682,
+      "availableBalance": 131466.66999999998
+    },
+    "assessorWalletAfter": {
+      "balance": 156466.66999999998,
+      "pendingBalance": 6771682,
+      "availableBalance": 156466.66999999998
+    },
+    "pitcherWalletBefore": {
+      "balance": 2247069.8329999996,
+      "pendingBalance": 206777,
+      "availableBalance": 2040292.8329999996
+    },
+    "pitcherWalletAfter": {
+      "balance": 2222069.8329999996,
+      "pendingBalance": 181777,
+      "availableBalance": 2040292.8329999996
+    },
+    "payerCapture": {
+      "id": "6aadb83c6b8d9dde2f7a6ab0",
+      "amount": -25000,
+      "status": "success",
+      "action": "capture"
+    },
+    "payeeCapture": {
+      "id": "6aadb83c6b8d9dde2f7a6ab8",
+      "reference": "CIC-TXN-20260918-2AQ5DG79AMPX",
+      "amount": 25000,
+      "status": "success",
+      "action": "capture"
+    }
+  },
+  "assertions": [
+    "The saved Technology draft was submitted successfully through the deployed Chrome UI",
+    "The pitcher completed Pay Now through the deployed payment banner and the request became completed and paid with no reserved amount",
+    "The pitcher pending balance fell by NGN 25,000 when the hold was captured",
+    "The Assessor current and available balances each increased by exactly NGN 25,000; the capture did not debit the Assessor",
+    "The Assessor ledger contains a positive terminal NGN 25,000 entry for the same reservation group"
+  ],
+  "screenshots": [
+    "D-A97-technology-submitted.png",
+    "D-A97-assessor-capture-credit.png"
+  ],
+  "testedAt": "2026-09-18T23:14:25.472Z"
+}

@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "D-A81"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?tab=2&id=6a9ebed3d26f574c91434a15&reviewId=6aadb65d6b8d9dde2f7a3d12",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "reviewId": "6aadb65d6b8d9dde2f7a3d12",
+  "assertions": [
+    "A complete deployed Review did not submit immediately when the assessor clicked Submit",
+    "A confirmation dialog summarized category count, average score, recommendation, and notes",
+    "The dialog warned that the final review becomes requester-visible and cannot be edited",
+    "Submit final assessment remained disabled until the assessor acknowledged irreversibility",
+    "Cancelling returned to the still-editable draft without submission"
+  ],
+  "screenshots": [
+    "D-A81-final-submission-confirmation.png"
+  ],
+  "testedAt": "2026-09-18T22:24:35.823Z"
+}

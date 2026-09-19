@@ -1,0 +1,20 @@
+{
+  "requestId": "6aada27e6b8d9dde2f79731f",
+  "pitchId": "63d8ac4006621f0027c9ef01",
+  "assessorId": "63b9b312c4c53f00275907b5",
+  "responseDeadline": "2026-10-24",
+  "dueDate": "2026-10-29",
+  "rate": 0,
+  "status": "awaiting",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/63d8ac4006621f0027c9ef01?tab=2&id=63d8ac4006621f0027c9ef01",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "screenshots": [
+    "D-A45-free-request-requester-ui.png"
+  ],
+  "testedAt": "2026-09-18T20:43:48.942Z"
+}

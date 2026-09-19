@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "SUP-F006"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/admin/feedback",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "A synthetic Admin feedback item accepted SLA date 2026-10-12 in the deployed environment.",
+    "The input, card metadata, and operational summary all display 12 Oct 2026 in America/Phoenix.",
+    "The saved date remains 2026-10-12 after reload and never shifts to the prior local day."
+  ],
+  "screenshots": [
+    "SUP-F006-phoenix-sla-calendar-date.png"
+  ],
+  "testedAt": "2026-09-18T19:37:10.561Z"
+}

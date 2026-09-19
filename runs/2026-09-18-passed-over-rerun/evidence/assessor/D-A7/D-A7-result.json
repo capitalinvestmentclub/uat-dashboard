@@ -1,0 +1,23 @@
+{
+  "findingIds": [
+    "D-A7"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/login",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "Attempts one through four each warn that five unsuccessful attempts lock sign-in.",
+    "The warning recommends password reset before the threshold is reached.",
+    "The fifth failed attempt retains the same non-enumerating guidance."
+  ],
+  "screenshots": [
+    "D-A7-warning-visible-before-lockout.png",
+    "D-A7-fifth-attempt-lockout-message.png"
+  ],
+  "testedAt": "2026-09-18T19:50:14.121Z"
+}

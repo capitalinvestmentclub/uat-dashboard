@@ -1,0 +1,39 @@
+{
+  "findingIds": [
+    "D-A144"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging/69d21f08d24c0e52ce0564e2",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "observed": {
+    "conversationId": "69d21f08d24c0e52ce0564e2",
+    "length": 1559,
+    "unbrokenLength": 1536,
+    "metrics": {
+      "bubbleWidth": 783,
+      "bubbleScrollWidth": 783,
+      "textWidth": 755,
+      "textScrollWidth": 755,
+      "bubbleRight": 1336,
+      "textRight": 1322,
+      "viewportWidth": 1440,
+      "documentScrollWidth": 1440,
+      "wordBreak": "break-word",
+      "overflowWrap": "anywhere"
+    }
+  },
+  "assertions": [
+    "A 1536-character unbroken token was sent and persisted after reload",
+    "Bubble and rendered content remain within their available widths"
+  ],
+  "screenshots": [
+    "D-A144-long-token-wrap-1440.png"
+  ],
+  "testedAt": "2026-09-19T02:34:59.431Z"
+}

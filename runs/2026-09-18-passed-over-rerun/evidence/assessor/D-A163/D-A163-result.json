@@ -1,0 +1,19 @@
+{
+  "findingIds": ["D-A163"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_CLOSURE_DELIVERY_PRECONDITION",
+  "targetUrl": null,
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1792, "height": 976 },
+  "observed": {
+    "historicalDisposableAssessor": "Tola Closure UAT already closed",
+    "freshClosureRequest": "not created",
+    "adminApproval": "not attempted; Admin session expired/revoked",
+    "controlledMailbox": "no current authenticated inbox for a fresh disposable Assessor",
+    "sharedIdentityClosed": false
+  },
+  "notes": "The request/approval communication regression requires a fresh disposable Assessor and its controlled inbox plus a live Admin approval. The old closed account's 2026-09-11 absence of mail is not current delivery proof. No shared test identity was closed or password changed.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T03:04:11.000Z"
+}

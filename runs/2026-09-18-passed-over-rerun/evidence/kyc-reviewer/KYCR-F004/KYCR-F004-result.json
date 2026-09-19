@@ -1,0 +1,22 @@
+{
+  "findingIds": [
+    "KYCR-F004"
+  ],
+  "outcome": "PASS",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/kyc-dashboard",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "The real KYC Reviewer account reached the deployed KYC dashboard.",
+    "Request Distribution changed from Last 7 days to Last 30 days through the rendered control.",
+    "The control accessible name remained exactly Request distribution time range after change and reload."
+  ],
+  "screenshots": [
+    "KYCR-F004-request-distribution-accessible-name.png"
+  ],
+  "testedAt": "2026-09-18T19:23:58.775Z"
+}

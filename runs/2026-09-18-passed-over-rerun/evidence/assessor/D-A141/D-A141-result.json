@@ -1,0 +1,42 @@
+{
+  "findingIds": [
+    "D-A141"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "grantId": "6aa4006298a889dfcabb5d93",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aa4006298a889dfcabb5d93?apply=1",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "before": {
+      "applyCount": 1,
+      "applyDisabled": false,
+      "alreadyApplied": false
+    },
+    "responses": [
+      {
+        "status": 422,
+        "success": false,
+        "message": "Applicant does not meet the eligibility criteria for this grant."
+      }
+    ],
+    "userExcludedByEligibleForUserFilter": true,
+    "stillNotApplied": true,
+    "ancillaryUiCaveat": "Apply remains enabled until final submit despite known ineligibility"
+  },
+  "assertions": [
+    "The ineligible Assessor was excluded from eligibility-filtered discovery",
+    "Submitting the completed application returned an explicit eligibility rejection",
+    "Reload still shows no application; Apply remains enabled until final submit"
+  ],
+  "screenshots": [
+    "D-A141-ineligible-grant-precondition.png",
+    "D-A141-ineligible-submit-outcome.png"
+  ],
+  "testedAt": "2026-09-19T02:29:34.443Z"
+}

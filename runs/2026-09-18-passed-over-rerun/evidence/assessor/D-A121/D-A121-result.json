@@ -1,0 +1,30 @@
+{
+  "findingIds": [
+    "D-A121"
+  ],
+  "outcome": "BLOCKED",
+  "disposition": "BLOCKED_TRANSACTIONAL_EMAIL_NOT_OBSERVED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "observed": {
+    "createSession": "HTTP 200 on the first run",
+    "rescheduleSession": "HTTP 200 on the first run",
+    "durationSeconds": 1800,
+    "mailboxWaitSeconds": 120,
+    "matchingTransactionalEmailCount": 0,
+    "focusedRecovery": "Corrected Yopmail's masked inbox-subject selector; the rerun then hit a transient Failed to fetch before creating the replacement fixture",
+    "relatedSameReleaseControl": "INV-F012 previously delivered a reschedule email showing exact previous/new UTC times and 30 minutes"
+  },
+  "assertions": [
+    "The first deployed Chrome run successfully created and rescheduled a real 1,800-second session",
+    "No matching reschedule email arrived in the controlled inbox within 120 seconds, so current timezone and duration rendering could not be re-proven for D-A121",
+    "The single focused recovery corrected the masked Yopmail selector, after which a transient API fetch failure prevented a replacement fixture",
+    "D-A121 is blocked rather than passed because the current run lacks its own delivered communication evidence"
+  ],
+  "testedAt": "2026-09-19T01:20:00.000Z"
+}

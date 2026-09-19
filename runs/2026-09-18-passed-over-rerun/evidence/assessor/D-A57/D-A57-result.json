@@ -1,0 +1,48 @@
+{
+  "findingIds": [
+    "D-A57"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "requestId": "6aa8d7f7dcdee9f4b553db47",
+  "reservationGroupId": "9a9459fc-ec46-4eb2-8481-d14fdca270b1",
+  "observed": {
+    "entryCount": 2,
+    "originalHold": {
+      "id": "6aa8d7fddcdee9f4b553db52",
+      "reference": "CIC-TXN-20260915-QDMAVG3AGZ6C",
+      "amount": -25000,
+      "status": "cancelled",
+      "action": "reserve"
+    },
+    "refund": {
+      "id": "6aada21d6b8d9dde2f7966eb",
+      "reference": "CIC-TXN-20260918-KN9195DBMDG7",
+      "amount": 25000,
+      "status": "success",
+      "action": "release_refund"
+    },
+    "wallet": {
+      "balance": 2247069.8329999996,
+      "pendingBalance": 131777,
+      "availableBalance": 2115292.8329999996
+    }
+  },
+  "assertions": [
+    "The deployed wallet ledger has exactly two requester-side rows for this rejected NGN 25,000 reservation group",
+    "The original hold remains an immutable negative NGN 25,000 transfer with reservation action reserve and cancelled resolution metadata",
+    "Exactly one separate positive NGN 25,000 refund row is linked to the same reservation group and request",
+    "The deployed Wallet UI renders the linked refund while the exact group-level API audit proves the immutable hold/refund pair"
+  ],
+  "screenshots": [
+    "D-A57-wallet-ledger.png"
+  ],
+  "testedAt": "2026-09-18T21:24:35.640Z"
+}

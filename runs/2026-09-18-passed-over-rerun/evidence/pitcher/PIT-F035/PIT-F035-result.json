@@ -1,0 +1,26 @@
+{
+  "findingIds": [
+    "PIT-F035"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/verifyUser/REDACTED",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "assertions": [
+    "A fresh isolated Pitcher account was seeded with current policy acceptance and a unique Gmail plus-address; the deployed API created one unverified account and sent a real activation email.",
+    "The controlled Pitcher Gmail inbox received the activation message addressed to the unique fixture alias; the activation token is intentionally redacted from retained evidence.",
+    "Opening the real one-time activation URL in an already authenticated Pitcher Chrome session displayed the successful verification state and a Go to dashboard CTA whose href was /dashboard.",
+    "Clicking Go to dashboard navigated to /dashboard and rendered the Pitcher Dashboard, rather than falling through to the root route.",
+    "The activation link was consumed exactly once and no existing user's password was changed."
+  ],
+  "screenshots": [
+    "PIT-F035-activation-dashboard-cta.png",
+    "PIT-F035-dashboard-destination.png"
+  ],
+  "testedAt": "2026-09-18T17:59:23.000Z"
+}
