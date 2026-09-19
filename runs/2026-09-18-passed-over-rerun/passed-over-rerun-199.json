@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:24:21.341Z",
+  "updatedAt": "2026-09-19T02:26:12.255Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3133,15 +3133,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "grants",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T02:26:12.255Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/grants",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A140/D-A140-closed-filter-only-closed-fixture.png",
+        "evidence/assessor/D-A140/D-A140-result.json"
+      ],
+      "notes": "Closed status selection excludes the known open ASS-032 grant from Chrome catalogue; The known closed fixture remains visible; The deployed request explicitly uses status=closed and returns only closed grants"
     },
     {
       "id": "D-A141",
