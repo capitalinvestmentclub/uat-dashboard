@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:34:59.431Z",
+  "updatedAt": "2026-09-19T02:41:54.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3226,15 +3226,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "messaging",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_SEND_DUE_TO_CHROME_INTERACTION_TIMEOUT",
+      "testedAt": "2026-09-19T02:41:54.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/messaging/6aadc9ffdbb181b1eaea0516",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A145/D-A145-result.json"
+      ],
+      "notes": "A real terminated assessment and linked Chrome chat were located. The attempted send never reached the server because the composer interaction timed out even after clearing the late privacy dialog. This cannot be PASS or FAIL without a successful POST/readback. Requires a fresh browser interaction path or server-level controlled send; no post-termination message was created by this attempt."
     },
     {
       "id": "D-A146",
