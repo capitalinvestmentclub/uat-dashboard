@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T01:29:00.000Z",
+  "updatedAt": "2026-09-19T01:34:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2815,15 +2815,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "sessions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "BLOCKED_SESSION_START_TIME_WINDOW",
+      "testedAt": "2026-09-19T01:34:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/session/6aade31ced8aad2701eda86c",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A125/D-A125-result.json"
+      ],
+      "notes": "Opening the future scheduled session did not auto-start it and emitted no Agora room-join request; The deployed page kept entry disabled until the five-minute backstage window; The server refused both an invalid near-term reschedule and an early explicit start, preserving the scheduling boundary; The exact prejoin device workflow cannot be reached until a session enters its real start window; D-A125 therefore remains blocked rather than passed"
     },
     {
       "id": "D-A126",
