@@ -1,0 +1,20 @@
+{
+  "findingIds": ["D-A137"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_ACTOR_SESSION",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aa4006298a889dfcabb5d94",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1792, "height": 976 },
+  "observed": {
+    "originalGrantId": "6aa4006298a889dfcabb5d94",
+    "originalOwner": "Ngozi Invitee-UAT",
+    "originalCoGrantor": "Adebayo Guerrilla-UAT",
+    "originalInvitationStatus": "accepted",
+    "availableSession": "Current generic Assessor and Pitcher; neither is the original owner or co-grantor",
+    "replacementFixture": "No active, not-fully-funded fixed grant owned by current Pitcher found in four catalogue pages"
+  },
+  "notes": "Historical anonymous membership persists, but neither authenticated owner nor original invitee session is available to verify grantor table and owner notification/email in deployed Chrome. A single fixture search found no suitable current-owner active fixed grant to invite and join. Requires actor access or a controlled joinable private fixture; public API names do not prove owner-visible privacy.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T02:22:34.000Z"
+}

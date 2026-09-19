@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:21:41.000Z",
+  "updatedAt": "2026-09-19T02:22:34.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3088,15 +3088,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "grants",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_ACTOR_SESSION",
+      "testedAt": "2026-09-19T02:22:34.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-grants/6aa4006298a889dfcabb5d94",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A137/D-A137-result.json"
+      ],
+      "notes": "Historical anonymous membership persists, but neither authenticated owner nor original invitee session is available to verify grantor table and owner notification/email in deployed Chrome. A single fixture search found no suitable current-owner active fixed grant to invite and join. Requires actor access or a controlled joinable private fixture; public API names do not prove owner-visible privacy."
     },
     {
       "id": "D-A138",
