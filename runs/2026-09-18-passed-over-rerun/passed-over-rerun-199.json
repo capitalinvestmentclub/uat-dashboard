@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T01:34:00.000Z",
+  "updatedAt": "2026-09-19T01:42:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2837,15 +2837,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "sessions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "BLOCKED_TWO_CONTEXT_CHROME_COMPLETION",
+      "testedAt": "2026-09-19T01:42:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/agora-standalone",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A126/D-A126-result.json"
+      ],
+      "notes": "The first deployed Chrome run connected the host and participant and displayed correct participant-specific Leave copy; A later readback found only the host in the room, but it did not complete the exact post-Leave presence assertion in the same run; The single focused recovery stalled at the second context before the participant could rejoin; The result remains blocked rather than passed because a complete reliable same-run host/participant presence lifecycle is still missing"
     },
     {
       "id": "D-A127",
