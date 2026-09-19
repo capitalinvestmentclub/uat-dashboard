@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:59:19.000Z",
+  "updatedAt": "2026-09-19T03:00:07.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3450,15 +3450,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "marketplace",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_SELLER_ACTIVE_LISTING_PRECONDITION",
+      "testedAt": "2026-09-19T03:00:07.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A160/D-A160-result.json"
+      ],
+      "notes": "The seller cancellation/revoke control and reservation release require an owned active listing. The original live sale is gone and the single controlled replacement sale failed before persistence. No cancellation or rollback claim can be made from a button in source or an older harness."
     },
     {
       "id": "D-A161",

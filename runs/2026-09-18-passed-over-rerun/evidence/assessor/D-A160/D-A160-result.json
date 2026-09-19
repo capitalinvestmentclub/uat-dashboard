@@ -1,0 +1,18 @@
+{
+  "findingIds": ["D-A160"],
+  "outcome": "BLOCKED",
+  "disposition": "UNVERIFIED_SELLER_ACTIVE_LISTING_PRECONDITION",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": { "width": 1792, "height": 976 },
+  "observed": {
+    "sellerAssetId": "6516ccab0d9e99256c0b6580",
+    "liveSaleCount": 0,
+    "controlledSaleAttempt": "Owner POST /marketplace/sell returned HTTP 500 without a sale ID",
+    "cancellationAttempt": "not attempted; there was no owned live sale to cancel"
+  },
+  "notes": "The seller cancellation/revoke control and reservation release require an owned active listing. The original live sale is gone and the single controlled replacement sale failed before persistence. No cancellation or rollback claim can be made from a button in source or an older harness.",
+  "screenshots": [],
+  "testedAt": "2026-09-19T03:00:07.000Z"
+}
