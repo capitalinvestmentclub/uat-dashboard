@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T03:35:04.192Z",
+  "updatedAt": "2026-09-19T03:37:00.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3944,15 +3944,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "marketplace",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_LIVE_BUY_LISTING",
+      "testedAt": "2026-09-19T03:37:00.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "390x844",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/G-A36/G-A36-result.json"
+      ],
+      "notes": "The same deployed marketplace precondition investigated for D-A156–D-A160 remains unavailable: the bounded catalogue inventory found zero live sales among 32 assets, and a controlled owner sale of 0.001% for USD 5 returned HTTP 500 without creating a listing. G-A36 requires a live buy row to inspect seller and action visibility at compact width. An empty table cannot prove the regression fixed or reproducing; no second seeding attempt was made under the one-attempt blocker rule."
     },
     {
       "id": "INV-F002",
