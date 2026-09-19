@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T00:19:10Z",
+  "updatedAt": "2026-09-19T00:26:47Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2493,15 +2493,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "BLOCKED_PROVIDER_ACCOUNT_VERIFICATION",
+      "testedAt": "2026-09-19T00:26:47Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A110/D-A110-pitcher-scoped-empty-accounts.png",
+        "evidence/D-A110/D-A110-result.json"
+      ],
+      "notes": "Pitcher and Assessor bank-account APIs independently return empty user-scoped collections; The deployed Account panel renders an honest personal-profile empty state and no longer exposes the shared Wells Fargo, Stanbic IBTC, HSBC, or expired Spending Card fixtures; The deployed withdrawal-provider API reports Paystack transfers enabled for NGN; The single permitted permanent seed attempt reached the deployed Paystack account-verification endpoint but returned HTTP 500, so a payout-ready account cannot be created to prove Account-to-Withdraw usability; D-A110 is partially corrected but remains blocked from a definitive PASS until provider verification can create a selectable user-scoped payout account"
     },
     {
       "id": "D-A111",
