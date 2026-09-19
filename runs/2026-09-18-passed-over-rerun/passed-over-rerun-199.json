@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T00:04:33.735Z",
+  "updatedAt": "2026-09-19T00:13:38.964Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2444,15 +2444,21 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 4,
       "familyId": "assessment",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T00:13:38.964Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/feedback",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A108/D-A108-profile-report-receipt.png",
+        "evidence/D-A108/D-A108-profile-feedback-record.png",
+        "evidence/D-A108/D-A108-message-report-receipt.png",
+        "evidence/D-A108/D-A108-message-feedback-record.png",
+        "evidence/D-A108/D-A108-result.json"
+      ],
+      "notes": "Profile and assessment-message reports both provide reason/details dialogs with a harmless Cancel path before submission; Each committed report returns a confidential FB reference, current status, and direct Track in Feedback link; Both references persist in the correct reporter Feedback center and API readback after navigation; Reporter notifications contain their own receipt references, while the reported message sender receives no message-report reference"
     },
     {
       "id": "D-A109",

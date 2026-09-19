@@ -1,0 +1,36 @@
+{
+  "findingIds": [
+    "D-A108"
+  ],
+  "outcome": "PASS",
+  "disposition": "VERIFIED_FIXED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/feedback",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "profileTargetUserId": "6aa3a20e01475402e044ad4a",
+  "messageId": "6aadd234ed8aad2701ecf97c",
+  "profileReference": "FB-20260919-TU07JN",
+  "messageReference": "FB-20260919-0IB5C2",
+  "assertions": [
+    "Profile and assessment-message reports both provide reason/details dialogs with a harmless Cancel path before submission",
+    "Each committed report returns a confidential FB reference, current status, and direct Track in Feedback link",
+    "Both references persist in the correct reporter Feedback center and API readback after navigation",
+    "Reporter notifications contain their own receipt references, while the reported message sender receives no message-report reference"
+  ],
+  "seededData": {
+    "messageId": "6aadd234ed8aad2701ecf97c",
+    "messageText": "D-A108 deployed UAT reportable assessment message 2026-09-18.",
+    "permanent": true
+  },
+  "screenshots": [
+    "D-A108-profile-report-receipt.png",
+    "D-A108-profile-feedback-record.png",
+    "D-A108-message-report-receipt.png",
+    "D-A108-message-feedback-record.png"
+  ],
+  "testedAt": "2026-09-19T00:13:38.964Z"
+}
