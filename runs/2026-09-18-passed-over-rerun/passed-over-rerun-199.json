@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T03:18:00.000Z",
+  "updatedAt": "2026-09-19T03:18:11.178Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3651,15 +3651,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 2,
       "familyId": "profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T03:18:11.178Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/profile",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/G-A11/G-A11-expertise-accessible-controls.png",
+        "evidence/assessor/G-A11/G-A11-result.json"
+      ],
+      "notes": "Existing Expertise summary, employment, accomplishment, public-link, external-link and area-removal controls expose their intended computed names in Chrome; Employment month controls are native month inputs, replacing the mismatched custom calendar header; No profile data was changed or saved"
     },
     {
       "id": "G-A14",
