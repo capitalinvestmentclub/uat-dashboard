@@ -1,0 +1,61 @@
+{
+  "findingIds": [
+    "D-A109"
+  ],
+  "outcome": "FAIL",
+  "disposition": "REPRODUCED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "reservationGroupId": "5a45c8e3-c6ea-4d40-bd7b-d74f71dafdaf",
+  "observed": {
+    "pitcher": {
+      "transactionId": "6aadb83c6b8d9dde2f7a6ab0",
+      "transactionRef": "CIC-TXN-20260918-S475MXZ28PCK",
+      "amount": -25000,
+      "status": "settled",
+      "sender": {
+        "name": "Test Pitcher",
+        "walletContext": "Personal wallet"
+      },
+      "recipient": {
+        "name": "Test Assessor",
+        "walletContext": "Personal wallet"
+      },
+      "netRecipientAmount": 25000,
+      "receiptUi": {
+        "available": false,
+        "renderedCell": "—"
+      }
+    },
+    "assessor": {
+      "transactionId": "6aadb83c6b8d9dde2f7a6ab8",
+      "transactionRef": "CIC-TXN-20260918-2AQ5DG79AMPX",
+      "amount": 25000,
+      "status": "settled",
+      "sender": {
+        "name": "Test Pitcher",
+        "walletContext": "Personal wallet"
+      },
+      "recipient": {
+        "name": "Test Assessor",
+        "walletContext": "Personal wallet"
+      },
+      "netRecipientAmount": 25000
+    }
+  },
+  "assertions": [
+    "The deployed payer and payee receipt APIs now agree on Test Pitcher as sender, Test Assessor as recipient, and NGN 25,000 net recipient amount",
+    "The exact settled payer ledger row is visible in Chrome with the correct negative NGN 25,000 direction and shared assessment reservation",
+    "The payer row renders an em dash instead of a Receipt action even though its authorized receipt endpoint returns 200",
+    "D-A109 remains unresolved at the user-facing boundary because one side of the reciprocal settlement cannot open its receipt from the wallet UI"
+  ],
+  "screenshots": [
+    "D-A109-payer-receipt-inaccessible.png"
+  ],
+  "testedAt": "2026-09-19T00:19:10Z"
+}

@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T00:13:38.964Z",
+  "updatedAt": "2026-09-19T00:19:10Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2470,15 +2470,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "finance",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "REPRODUCED_DEPLOYED",
+      "testedAt": "2026-09-19T00:19:10Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/wallets",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/D-A109/D-A109-payer-receipt-inaccessible.png",
+        "evidence/D-A109/D-A109-result.json"
+      ],
+      "notes": "The deployed payer and payee receipt APIs now agree on Test Pitcher as sender, Test Assessor as recipient, and NGN 25,000 net recipient amount; The exact settled payer ledger row is visible in Chrome with the correct negative NGN 25,000 direction and shared assessment reservation; The payer row renders an em dash instead of a Receipt action even though its authorized receipt endpoint returns 200; D-A109 remains unresolved at the user-facing boundary because one side of the reciprocal settlement cannot open its receipt from the wallet UI"
     },
     {
       "id": "D-A110",
