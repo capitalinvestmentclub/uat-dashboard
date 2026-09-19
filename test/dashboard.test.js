@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+import {existsSync,readFileSync} from 'node:fs';
 import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
 import {JSDOM} from 'jsdom';
@@ -75,6 +75,19 @@ test('completed 276-finding deployed retest is reconciled and visible',async()=>
   assert.match(section.textContent,/199-entry rerun/);
   assert.equal(section.querySelectorAll('tbody tr').length,10);
   dom.window.close();
+});
+test('published ledger links retain their evidence files',()=>{
+  const ledgerUrl=new URL(`../${data.deployedRetest.ledger}`,import.meta.url);
+  const ledger=JSON.parse(readFileSync(ledgerUrl));
+  assert.equal(ledger.findings.length,276);
+  assert.equal(ledger.findings.filter(finding=>finding.rerunId).length,199);
+  for(const finding of ledger.findings){
+    for(const evidence of finding.evidence||[]){
+      assert(existsSync(new URL(evidence,ledgerUrl)),`${finding.id} missing ${evidence}`);
+    }
+  }
+  const workflow=readFileSync(new URL('../.github/workflows/publish.yml',import.meta.url),'utf8');
+  assert.match(workflow,/cp -R runs public\//);
 });
 test('every passed-over finding has an executable retest plan',()=>{
   assert.equal(passedOverPlan.scope.passedOverFindings,199);
