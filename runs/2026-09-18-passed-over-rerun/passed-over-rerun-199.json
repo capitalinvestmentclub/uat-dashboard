@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T02:57:37.000Z",
+  "updatedAt": "2026-09-19T02:58:20.000Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3406,15 +3406,17 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 6,
       "familyId": "marketplace",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "BLOCKED",
+      "disposition": "UNVERIFIED_BID_DIALOG_PRECONDITION",
+      "testedAt": "2026-09-19T02:58:20.000Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/marketplace",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A158/D-A158-result.json"
+      ],
+      "notes": "The bid-expiry date picker belongs to a live-sale bid dialog, which is unavailable with zero sales. The one controlled listing-seed attempt failed. Pointer and keyboard date selection were not exercised; a current active sale with a buyer account is needed."
     },
     {
       "id": "D-A159",
