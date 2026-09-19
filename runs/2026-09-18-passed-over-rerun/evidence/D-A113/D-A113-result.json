@@ -11,29 +11,31 @@
     "width": 1792,
     "height": 976
   },
-  "pitchId": "6516ccab0d9e99256c0b6580",
-  "projectId": "692dd85220b2c00478938390",
-  "requestId": "6aadd8d0ed8aad2701ed187e",
+  "pitchId": "63d9914591224ee3b3de073d",
+  "projectId": "63d993b83f6f4af93536d2ee",
+  "requestId": "6aadd9f0ed8aad2701ed25cd",
   "observed": {
     "requestStatus": "accepted",
     "dueDate": "2026-10-30",
+    "baselineApiMatchCount": 0,
     "apiMatchCount": 1,
-    "visibleProjectTitle": "fake:kkkkk",
-    "projectHref": "/project/692dd85220b2c00478938390",
+    "visibleProjectTitle": "PT:Project Test",
+    "projectHref": "/project/63d993b83f6f4af93536d2ee",
     "persistedAfterReload": true
   },
   "assertions": [
+    "The selected project was absent from the Assessor project API before the isolated temporary assignment",
     "A real future-dated Review assignment was created by the project owner and accepted by the Assessor",
     "The Assessor project API returned the exact project when searched by its title",
     "Assigned Projects rendered one exact-title project link instead of the prior empty/no-match state",
     "The discoverable assignment and project link persisted after full reload"
   ],
   "seededData": {
-    "requestId": "6aadd8d0ed8aad2701ed187e",
+    "requestId": "6aadd9f0ed8aad2701ed25cd",
     "permanent": true
   },
   "screenshots": [
     "D-A113-active-assignment-discoverable.png"
   ],
-  "testedAt": "2026-09-19T00:37:43.291Z"
+  "testedAt": "2026-09-19T00:40:46.686Z"
 }
