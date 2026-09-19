@@ -2881,8 +2881,8 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "sessions",
-      "status": "PASS",
-      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "status": "BLOCKED",
+      "disposition": "BLOCKED_DOWNSTREAM_COMPLETION_SURFACES_NOT_VERIFIED",
       "testedAt": "2026-09-19T01:45:12.632Z",
       "browser": "Chrome",
       "viewport": "1792x976",
@@ -2892,7 +2892,7 @@
         "evidence/assessor/D-A128/D-A128-attendees-and-actual-end.png",
         "evidence/assessor/D-A128/D-A128-result.json"
       ],
-      "notes": "The deployed ended session stores four unique attendees and a distinct actual end timestamp; Chrome renders the Attendees count as four instead of zero; Chrome renders the actual end date from the persisted actualEndAt rather than substituting the scheduled date"
+      "notes": "The deployed ended session stores four unique attendees and a distinct actual end timestamp; Chrome renders the Attendees count as four instead of zero; Chrome renders the actual end date from the persisted actualEndAt rather than substituting the scheduled date; The originating defect also involved the pitch card and host completion communication; neither downstream surface was proven against this exact session, so the full finding remains unverified"
     },
     {
       "id": "D-A129",
