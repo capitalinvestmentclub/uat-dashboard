@@ -1,0 +1,38 @@
+{
+  "findingIds": [
+    "D-A129"
+  ],
+  "outcome": "FAIL",
+  "disposition": "UNRESOLVED_DEPLOYED",
+  "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+  "browserName": "chromium",
+  "browserVersion": "153.0.8010.52",
+  "viewport": {
+    "width": 1792,
+    "height": 976
+  },
+  "sessionId": "68aecb54f225e7f4a658c61e",
+  "pitchId": "63a66a814e32a254204776eb",
+  "observed": {
+    "authorizedDirectSessionStatus": 200,
+    "sessionStatus": "started",
+    "cohostUserIds": [
+      "63b9b30ec4c53f00275907af",
+      "63b9ae02c077c30027bd3475"
+    ],
+    "pitchListStatus": 200,
+    "matchingPitchInList": false,
+    "matchingSessionCardCount": 0,
+    "renderedEmptyState": "No sessions found"
+  },
+  "assertions": [
+    "The exact Assessor has authorized co-host access to a real started session through the direct API",
+    "The same Assessor pitch-list API omits the parent pitch entirely",
+    "Chrome Manage Sessions renders No sessions found and no card for the exact authorized session",
+    "The lifecycle session directory remains incomplete; email channels were not needed to prove this visible failure"
+  ],
+  "screenshots": [
+    "D-A129-authorized-cohost-session-missing.png"
+  ],
+  "testedAt": "2026-09-19T01:47:35.998Z"
+}

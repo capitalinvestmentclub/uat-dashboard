@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T01:45:12.632Z",
+  "updatedAt": "2026-09-19T01:47:35.998Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -2904,15 +2904,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 5,
       "familyId": "sessions",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "FAIL",
+      "disposition": "UNRESOLVED_DEPLOYED",
+      "testedAt": "2026-09-19T01:47:35.998Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1792x976",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/manage-sessions",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/D-A129/D-A129-authorized-cohost-session-missing.png",
+        "evidence/assessor/D-A129/D-A129-result.json"
+      ],
+      "notes": "The exact Assessor has authorized co-host access to a real started session through the direct API; The same Assessor pitch-list API omits the parent pitch entirely; Chrome Manage Sessions renders No sessions found and no card for the exact authorized session; The lifecycle session directory remains incomplete; email channels were not needed to prove this visible failure"
     },
     {
       "id": "D-A130",
