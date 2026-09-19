@@ -3,7 +3,7 @@
   "runId": "2026-09-18-passed-over-rerun",
   "state": "IN_PROGRESS",
   "startedAt": "2026-09-18T14:33:26.764Z",
-  "updatedAt": "2026-09-19T03:32:00.000Z",
+  "updatedAt": "2026-09-19T03:28:37.558Z",
   "scope": {
     "findingCount": 199,
     "browser": "Chrome",
@@ -3852,15 +3852,18 @@
       "previousDisposition": "PASSED_OVER",
       "wave": 2,
       "familyId": "profile",
-      "status": "NOT_RUN",
-      "disposition": null,
-      "testedAt": null,
+      "status": "PASS",
+      "disposition": "VERIFIED_FIXED_DEPLOYED",
+      "testedAt": "2026-09-19T03:28:37.558Z",
       "browser": "Chrome",
-      "viewport": null,
-      "targetUrl": null,
-      "apiUrl": null,
-      "evidence": [],
-      "notes": null
+      "viewport": "1440x900",
+      "targetUrl": "https://auth-35306705473-1-dot-planar-truck-361704.uc.r.appspot.com/pitch/6a9ebed3d26f574c91434a15?id=6a9ebed3d26f574c91434a15&tab=6",
+      "apiUrl": "https://cicdevapi.uc.r.appspot.com",
+      "evidence": [
+        "evidence/assessor/G-A26/G-A26-rfi-named-controls.png",
+        "evidence/assessor/G-A26/G-A26-result.json"
+      ],
+      "notes": "The deployed request fields and repeated row action are named; The owner response composer has a request-specific accessible name; no response was submitted"
     },
     {
       "id": "G-A27",
