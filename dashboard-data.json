@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T04:58:52.978Z",
+  "generatedAt": "2026-10-15T00:41:41.190Z",
   "sizes": [
     "360×800",
     "390×844",
@@ -21733,6 +21733,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/pitcher/PIT-F014/PIT-F014-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "PIT-F014",
+        "title": "Calendar dates shift by one day",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_KYC_AND_EXTERNAL_DATE_FIX_BROWSER_VERIFIED_OTHER_BRANCHES_PENDING",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:06:15.388239+00:00",
+        "latestObservation": "Synthetic holder March30 displayed March29 in Phoenix after real save. External acquisition date now formatted as calendar date; actual browser shows March30 and edit retains2026-03-30. KYC branch already verified; agreement/milestone/report/grant branches still pending.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -21893,6 +21910,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/pitcher/PIT-F017/PIT-F017-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "PIT-F017",
+        "title": "Session emails contain wrong duration and destination",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_BROWSER_AND_REAL_EMAIL_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:20:36.587615+00:00",
+        "latestObservation": "Fresh UI-created 600-second session scheduled Oct14 10Phoenix/17UTC. Co-host owned mailbox received host-specific cancellation message6acb002537bab99c853bbe7c with direct session6acafeb3f7fa665306cdfbb7 CTA. Clicked actual email CTA; exact cancelled session displays Unavailable/no Join. Earlier scheduled receipt separately proves10min/timezone. Existing tracking SSL still external issue; new session template delivery bypasses click tracking.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -21997,6 +22031,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/pitcher/PIT-F019/PIT-F019-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "PIT-F019",
+        "title": "Completed assessment link opens an editable blank form",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T02:14:53.261411+00:00",
+        "latestObservation": "Actual controlled requester login now resolves original request URL to exact saved task and read-only response/three task answers. Moved authenticated participant lookup ahead of Assessor-only authoring route boundary. Route authorization 2 tests pass; authoring remains restricted.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -22045,6 +22096,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/pitcher/PIT-F020/PIT-F020-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "PIT-F020",
+        "title": "Historical wallet presentation changes or misstates entries",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NEW_HOLD_RELEASE_HISTORICAL_ROW_STABILITY_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T08:42:40.176569+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -22101,6 +22169,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-17-defect-batch-deployed-retest/evidence/pitcher/PIT-021-external-holder/PIT-F021-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "PIT-F021",
+        "title": "External-holder records cannot be reliably maintained",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:19:09.454282+00:00",
+        "latestObservation": "Actual synthetic draft external holder created, edited name/contact/notes, and soft-removed through normal UI. Reloaded equity table has no external rows. Calendar March30 displays March30 after fix; email hydrated from authorized raw record; removal accepts projected id.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -22221,6 +22306,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-17-defect-batch-deployed-retest/evidence/pitcher/PIT-wallet-ledger-receipts/PIT-F023-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "PIT-F023",
+        "title": "Receipts misstate amounts, direction or transaction type",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_GRANT_REFUND_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T07:56:05.219971+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -22269,6 +22371,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/pitcher/PIT-F024/PIT-F024-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "PIT-F024",
+        "title": "Agreement email link becomes empty after promotion",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "NOT_RUN",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -22381,6 +22500,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/pitcher/PIT-F026/PIT-F026-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "PIT-F026",
+        "title": "Grant status and approval prompts contradict lifecycle",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_TERMINAL_APPLICATION_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T04:07:11.706839+00:00",
+        "latestObservation": "Actual Chrome terminated the owned zero-fund grant. Applications show Closed — Grant Terminated; voting closed and Approve/Reject disabled. No award, contribution, or refund occurred.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -22733,6 +22869,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-17-defect-batch-deployed-retest/evidence/pitcher/PIT-032-assistant/PIT-F032-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "PIT-F032",
+        "title": "Assistant gives irrelevant high-confidence answers",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T02:33:28.312439+00:00",
+        "latestObservation": "Selected project and grant live questions clearly acknowledge unavailable records, 0% confidence/contact support/no unsupported citations. Positive milestone documentation question retains 95% grounded answer and relevant approved citation. 13 policy tests and 8 focused Mongo-backed service tests pass. API commit61bb4f18; deployed fix pending.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -23269,6 +23422,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/pitcher/PIT-F041/PIT-F041-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "PIT-F041",
+        "title": "Project bid table clips decision actions at 1024",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_1024_ACTION_VISIBILITY_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -23385,7 +23555,26 @@
         "Admin",
         "Super Admin",
         "Cross-role Platform Journeys"
-      ]
+      ],
+      "localRevalidation": {
+        "id": "ADM052-FIN-001",
+        "title": "Assessor is not credited after successful capture",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Admin",
+          "Super Admin",
+          "Cross-role Platform Journeys"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "PAID_REVIEW_CAPTURE_WALLETS_REAL_RECEIPTS_AND_ADMIN_LEDGER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T23:19:46.148804+00:00",
+        "latestObservation": "Fresh Admin login and actual ledger scoped by the owned pitch description show finalized payer and assessor settlement/capture rows, each Valid. Completed NGN100 Review reconciles with the previously reloaded wallets (payer9900, assessor200), holds0before nextdistinctrequest, immutablecapturetransactionrefs and actualpayer/assessoremailreceipts. Originalmissingrecipientcredit doesnotreproduce. A distinctpendingTechnologyNGN100holdremains explicitly separate.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
+      }
     },
     {
       "id": "ADM052-CAN-001",
@@ -23443,7 +23632,26 @@
         "Admin",
         "Super Admin",
         "Cross-role Platform Journeys"
-      ]
+      ],
+      "localRevalidation": {
+        "id": "ADM052-CAN-001",
+        "title": "Cancelled assessment keeps reserved funds",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Admin",
+          "Super Admin",
+          "Cross-role Platform Journeys"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_FRESH_BROWSER_AND_PERSISTED_LEDGER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-13T01:51:45.384933+00:00",
+        "latestObservation": "Fresh actual UI-created Technology request6acd8d541dba861e09408344 reserves NGN100 on both roles. Actual cancellation retains Assessor identity immediately; request becomes cancelled/reserved0, wallet pending100->0 with balances9900/200 unchanged. Producer creates exactly1 posted7d reversal (-100 Pitcher/+100 Clearing), refCIC-TXN-20261013-2VV49K3HDK93. Ref and balanced row verified in actual Admin UI after reload. Prior two synthetic bookkeeping repairs remain distinct. Full-page browser screenshot repeats tiles; use first panel content plus scoped row text and payer screenshot, not as layout evidence. Fresh receipt/Assessor history follow-up pending, prior fresh delivery/history already verified.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
+      }
     },
     {
       "id": "ADM055-LEDGER-001",
@@ -23559,7 +23767,26 @@
         "Admin",
         "Super Admin",
         "Cross-role Platform Journeys"
-      ]
+      ],
+      "localRevalidation": {
+        "id": "ADM050-EVIDENCE-001",
+        "title": "Required no-TIN evidence can be omitted",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Admin",
+          "Super Admin",
+          "Cross-role Platform Journeys"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "REQUIRED_NO_TIN_EVIDENCE_NEGATIVE_POSITIVE_AND_REVIEWER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T21:25:01.271326+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
+      }
     },
     {
       "id": "ADM050-REVIEW-001",
@@ -24620,7 +24847,26 @@
         "Admin",
         "Super Admin",
         "Cross-role Platform Journeys"
-      ]
+      ],
+      "localRevalidation": {
+        "id": "ADM056-UNBLOCK-001",
+        "title": "Request unblock immediately unblocks the device",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Admin",
+          "Super Admin",
+          "Cross-role Platform Journeys"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:56:14.395585+00:00",
+        "latestObservation": "Created isolated synthetic blocked device and ended session on owned Mail.tm Assessor. Security UI shows one blocked device. Button is labelled Unblock device and opens explicit immediate-privileged-action confirmation; count remains one. Blank and five-character reasons leave final Unblock disabled. Cancel preserves Device blocked. No unblock submitted; the original immediate-unblock-on-opening failure does not reproduce.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
+      }
     },
     {
       "id": "ADM056-INCIDENT-001",
@@ -25150,6 +25396,25 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/admin/ADM053-STATE-001/ADM053-STATE-001-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "ADM053-STATE-001",
+        "title": "Grant panels remain stale after decisions",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Admin",
+          "Super Admin",
+          "Cross-role Platform Journeys"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "APPROVAL_FEEDBACK_SUMMARY_AND_TWO_ROLE_CHAT_WITHOUT_RELOAD_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T18:08:20.831976+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -25266,6 +25531,25 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/admin/ADM056-STALE-001/ADM056-STALE-001-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "ADM056-STALE-001",
+        "title": "Lock and unlock leave stale row state",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Admin",
+          "Super Admin",
+          "Cross-role Platform Journeys"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NOT_NEEDED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T02:10:29.503287+00:00",
+        "latestObservation": "Owned disposable user locked and unlocked through Admin browser with audit reasons. Filtered row changes to Locked/Unlock and then Active/Lock without reload; failed-attempt count restored to 0. Session revoked by lock as expected.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -25324,6 +25608,25 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/admin/ADM056-HOLD-001/ADM056-HOLD-001-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "ADM056-HOLD-001",
+        "title": "No isolated subject-level legal hold path",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Admin",
+          "Super Admin",
+          "Cross-role Platform Journeys"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T02:07:53.183456+00:00",
+        "latestObservation": "Following browser release with audit reason, reload Compliance Overview reports Active retention controls 0; previously 1 after creation and reload. SingleSubjectRecord hold creation and release both persisted.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -25718,7 +26021,24 @@
       "group": "Organization",
       "groups": [
         "Organization"
-      ]
+      ],
+      "localRevalidation": {
+        "id": "ORG008-MEMBER-001",
+        "title": "Removed members cannot be re-invited through the normal form",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Organization"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:19:09.454282+00:00",
+        "latestObservation": "Actual Owner Members removed disposable Viewer; invitee reload showed no organization. Normal invite form created pending re-invitation, invitee accepted, Owner Members shows Viewer active with one re-invite. Initial permission restored.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
+      }
     },
     {
       "id": "ORG018-GOV-001",
@@ -26200,7 +26520,24 @@
       "group": "Organization",
       "groups": [
         "Organization"
-      ]
+      ],
+      "localRevalidation": {
+        "id": "ORG023-CLOSE-001",
+        "title": "Closure succeeds with pending governed actions",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Organization"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:19:09.454282+00:00",
+        "latestObservation": "Actual Owner UI created pending payout_account.change approval request containing no financial account data; UI closure submitted twice and each returned HTTP409 in slot22 API log. Organization remained active with two members and pending governed action. Approval request cancelled through UI; Governance now cancelled and no actions awaiting approval.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
+      }
     },
     {
       "id": "ORG024-STALE-001",
@@ -26312,6 +26649,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/organization/ORG025-COVERAGE-001/ORG025-COVERAGE-001-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "ORG025-COVERAGE-001",
+        "title": "Role context works but three full organization lifecycles remain incomplete",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Organization"
+        ],
+        "currentValidity": "NOT_RUN",
+        "implementationStatus": "THREE_ROLE_KYB_REVIEW_APPROVAL_AND_DOCUMENT_FIX_VERIFIED_FULL_LIFECYCLES_PENDING",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-13T07:52:49.940817+00:00",
+        "latestObservation": "All three UI-created owned organizations now have persisted verified/approved KYB. Distinct Employee Reviewer and Approver IDs recorded. Actual uploaded fictitious PDFs opened and visually inspected by both staff roles. Reproduced403 for organization documents fixed with exact submitted/attached path authorization and audit;19 regression tests pass. False popup warning removed while preserving noopener/noreferrer; actual new PDF tab works. Earlier member-realm Reviewer issue resolved through proper Employee login on clean origin. Invitations, counterpart transactions, settlement and complete role journeys remain pending; this is not full ORG025 coverage.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -27592,6 +27946,25 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/grantor/GRT024-COVERAGE-001/GRT024-COVERAGE-001-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "GRT024-COVERAGE-001",
+        "title": "Organization and public-funding lifecycle is incomplete",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Grantor"
+        ],
+        "currentValidity": "NOT_RUN",
+        "implementationStatus": "PUBLIC_GRANT_PUBLISHED_REPORT_FIELDS_FIXED_SMS_AND_FULL_LIFECYCLE_PENDING",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-13T07:52:49.940817+00:00",
+        "latestObservation": "Actual organization public grant6acdb14045a4038553b5047f published with targetNGN100 and real internal creator contributionNGN1, using explicitly synthetic starting wallet credit. Creator wallet99/grant wallet1 persisted; this is not provider funding. Corrected misleading100%-funded publication notice; actual guest page shows1%. Reproduced pasted reporting-field loss fixed;57 tests and actual blur/edit/save prove progress,challenges,nextSteps persisted. GuestNGN99 contribution staged with owned email and blank phone. Required real SMS phone unavailable, no SMS or payment started. Applicant approval, acknowledgment, payout, reporting and closeout remain incomplete.",
+        "limitations": [
+          "Approved phone capable of receiving the real ownership SMS needed before guest contribution can proceed."
+        ],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -28373,6 +28746,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-17-defect-batch-deployed-retest/evidence/guest-public/PUB-006/PUB006-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "PUB006-PROFILE-001",
+        "title": "Public creator links redirect guests to Login",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Guest / Public"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -28453,6 +28843,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/guest-public/PUB007-COVERAGE-001/PUB007-investor-non-anonymous-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "PUB007-COVERAGE-001",
+        "title": "Role, biodata and verification branches remain behind account creation",
+        "type": "Gap",
+        "severity": "high",
+        "groups": [
+          "Guest / Public"
+        ],
+        "currentValidity": "NOT_RUN",
+        "implementationStatus": "THREE_FRESH_ROLE_SIGNUPS_AND_REAL_EMAIL_MFA_VERIFIED_BOUNDARIES_TOKEN_GATES_PENDING",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T22:08:27.336001+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -28805,7 +29212,26 @@
       "group": "KYC Reviewer",
       "groups": [
         "KYC Reviewer"
-      ]
+      ],
+      "localRevalidation": {
+        "id": "KYCR-F005",
+        "title": "Required applicant documents remain unreadable",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "KYC Reviewer"
+        ],
+        "currentValidity": "BLOCKED_FIXTURE",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "{'reason': 'Available controlled KYC application has PNG; historical black-preview defect requires the original or equivalent controlled passport PDF. Asked user for application identifier.'}"
+        ],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
+      }
     },
     {
       "id": "KYCR-F003",
@@ -29118,7 +29544,26 @@
       "group": "KYC Approval",
       "groups": [
         "KYC Approval"
-      ]
+      ],
+      "localRevalidation": {
+        "id": "KYCA-F001",
+        "title": "Required passport PDF is black and unreadable at all six Chrome sizes",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "KYC Approval"
+        ],
+        "currentValidity": "BLOCKED_FIXTURE",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "{'reason': 'Available controlled KYC application has PNG; historical black-preview defect requires the original or equivalent controlled passport PDF. Asked user for application identifier.'}"
+        ],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
+      }
     },
     {
       "id": "KYCA-F002",
@@ -29857,6 +30302,25 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/support-operations/SUP-F004/SUP-F004-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "SUP-F004",
+        "title": "Benign markup displays literal entity text in preview",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Support Operations"
+        ],
+        "currentValidity": "BLOCKED_UI",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "Local admin Template management remains on Operations after pointer click and one keyboard recovery. User asked to open the template view manually. Original entity rendering behavior not yet reached."
+        ],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -30264,6 +30728,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A1/D-A1-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A1",
+        "title": "Registration data does not reach the assessor readiness surface",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:38:01.349364+00:00",
+        "latestObservation": "Fresh Mail.tm Assessor registered Technology, five years, D-A1 October UAT Qualification. Delivered email activation and MFA completed. Profile Expertise shows 1 area, 1 specialization, 1 credential and 5 years; no missing expertise prompt.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -30448,6 +30929,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A6/D-A6-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A6",
+        "title": "Email verification gives no success confirmation — reproduced here on an Assessor identity (third occurrence overall)",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:36:42.716544+00:00",
+        "latestObservation": "New Mail.tm Assessor signup generated delivered confirmation link. Consuming link shows explicit successful verification alert and Continue to login link.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -30800,6 +31298,25 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A12/D-A12-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A12",
+        "title": "Download Data produces a profile snapshot, not a complete portable personal-data export",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED_ARTIFACT_PENDING",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "User confirmation of downloaded my-personal-data.json artifact pending; API response verified."
+        ],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -30904,6 +31421,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A14/D-A14-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A14",
+        "title": "Account deactivation Submit becomes enabled with only a reason and static phrase",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -30960,6 +31494,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-17-defect-batch-deployed-retest/evidence/assessor/D-A015-marketplace-sell/D-A15-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A15",
+        "title": "Sell action is inert for valid partial and full listings",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "PARTIAL_AND_FULL_SYNTHETIC_LISTINGS_BROWSER_AND_PERSISTENCE_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T18:08:20.831976+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -31128,6 +31679,25 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A18/D-A18-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A18",
+        "title": "Forgot-password recovery accepts the account's existing password and reports a successful change, while logged-in Change Password rejects reuse",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NOT_RUN",
+        "implementationStatus": "FRESH_TWO_PHASE_RECOVERY_READY_HUMAN_PASSWORD_SUBMISSION_REQUIRED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-13T07:52:49.940817+00:00",
+        "latestObservation": "New actual recovery email6acde22e240e3bd5fa611d2b and second email6acde28d5b605813d244c2d3 received after accepted existing challenge answers. Fresh resetPassword2 form opened on isolated local alias. Password fields left blank; existing owned password on clipboard. User requested agent entry, but browser credential handoff policy prevents entry/submission by agent. Source same-password422 guard is not a browser verdict. No credential changed.",
+        "limitations": [
+          "Human must enter/confirm/submit existing password in staged password-change form; link TTL one hour."
+        ],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -31176,6 +31746,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A19/D-A19-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A19",
+        "title": "An explicitly incomplete Assessor can bypass mandatory profile readiness through Dashboard, Manage Assessments and Browse Pitches, open the live as…",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:56:14.395585+00:00",
+        "latestObservation": "Restored disposable profile qualification from guarded precondition backup. Fresh direct assignment load stays on Other Assessment Response, with Draft not saved yet and normal controls, verifying complete-actor access and no persisted blank draft.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -31296,6 +31883,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-17-defect-batch-deployed-retest/evidence/assessor/ASS-006/D-A21-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A21",
+        "title": "Dashboard amount visibility does not survive navigation",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -31531,6 +32135,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A26/D-A26-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A26",
+        "title": "Impossible accomplishment year persists",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -32091,6 +32712,25 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-17-defect-batch-deployed-retest/evidence/assessor/ASS-011/D-A36-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A36",
+        "title": "Directory omits required readiness, capacity and profile evidence",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED_CONTEXT_PENDING",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "Original pitch-specific directory verification requires an active accessible pitch."
+        ],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -32251,6 +32891,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A39/D-A39-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A39",
+        "title": "Unverified/KYC-incomplete Assessor is offered volunteer review despite an existing pitch relationship",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:44:04.645426+00:00",
+        "latestObservation": "Fresh KYC-incomplete Assessor has existing accepted Other assignment on UAT Solar Microgrid. The General assessment view states Volunteer review unavailable with KYC approval requirement, and exposes neither Write Free Review nor Resume Volunteer Draft. No volunteer draft created.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -32307,6 +32964,25 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A40/D-A40-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A40",
+        "title": "Existing volunteer draft is hidden until Write Free Review is clicked",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "BLOCKED_FIXTURE",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "Active accessible pitch with an existing volunteer draft required."
+        ],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -32419,6 +33095,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A42/D-A42-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A42",
+        "title": "Ambiguous retry creates a duplicate paid request instead of reconciling one intent",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "IDENTICAL_RETRY_AND_LOST_RESPONSE_RECONCILIATION_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T22:22:33.117003+00:00",
+        "latestObservation": "Reopened the identical paid Review with the same dates, rate and note. The UI returned original reference 6acd55278bc0827075572cec. A distinct Technology request 6acd5c818bc0827075575ca9 then committed before its actual HTTP 200 response was dropped through isolated local XHR interception. The UI described the uncertain outcome and safe retry. Retrying returned the same Technology reference. Scoped records before and after retry confirm one request and one hold per intent, two distinct requests in total, stable balances of NGN9,900 and NGN200, and pending NGN100 in each wallet. Normal interception was restored; no authentication state or headers were read.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -32939,6 +33632,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-17-defect-batch-deployed-retest/evidence/assessor/ASS-014/D-A51-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A51",
+        "title": "Duplicate tasks are accepted without detection or clarification",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_DEPLOYED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:34:33.423197+00:00",
+        "latestObservation": "Engineering request draft, Test Assessor on UAT Solar Microgrid. Tasks Verify boundary conditions and whitespace/case variant produced explicit duplicate warning and disabled Request. Cancelled without submission or reservation.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -33051,6 +33761,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A53/D-A53-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A53",
+        "title": "Accepted requests are stranded outside the Assessor workspaces",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -33558,6 +34285,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A63/D-A63-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A63",
+        "title": "Negotiation notes are double-escaped across application and email",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BOTH_ROLES_MOBILE_AND_REAL_EMAIL_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T04:56:43.391518+00:00",
+        "latestObservation": "Approved same-account zero-fee Oct20 proposal retried after repair. Full authored literal tags, ampersand and quotes preserved in Assessor and Pitcher note dialogs, Assessor390px mobile modal, and actual corrected Pitcher email at21:47 Phoenix; recipient verified. Prior failure remains recorded. 112 focused tests pass (32 API,61 notification,19 webapp); output escaping and unrelated-field sanitization covered. No cloud deployment or Pages publication.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -33894,6 +34638,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-17-defect-batch-deployed-retest/evidence/assessor/ASS-019/D-A69-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A69",
+        "title": "Request search omits visible Unicode, rate and assessment-type data",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -34118,6 +34879,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-17-defect-batch-deployed-retest/evidence/assessor/ASS-019/D-A73-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A73",
+        "title": "Assessment search is case- and whitespace-sensitive",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -35310,6 +36088,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/D-A94/D-A94-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A94",
+        "title": "Completed paid Review remains reserved with no observed settlement path",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "PAID_REVIEW_COMPLETION_AUTO_SETTLEMENT_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T22:08:27.336001+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -35366,6 +36161,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/D-A95/D-A95-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A95",
+        "title": "Final assessment completion is not delivered in app or by email",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "REVIEW_OTHER_BOTH_ROLES_INAPP_REAL_EMAIL_AND_FINAL_DESTINATION_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T04:58:37.158604+00:00",
+        "latestObservation": "Actual Review and Other completion emails received in controlled Pitcher inbox; exact recipient checked. Both actual email CTAs opened final immutable IDs6acb125fc18ba91be309b867 and6acaeda2e0e969f702a34de2 with submitted ratings/tasks/conclusions visible. Earlier Assessor receipts and both in-app feeds retained. Free assessments only; financial settlement not covered by this delivery case. Existing zero-fee Other payment-pending label recorded separately for later lifecycle scope.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -35689,6 +36501,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/D-A101/D-A101-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A101",
+        "title": "Pending requester holds contaminate the Assessor current balance",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-10T14:59:01.392169+00:00",
+        "latestObservation": "Normal UI wallet view plus HTTP 200 getUserWallets. Positive pendingBalance exists in NGN and USD, but currentBalance equals availableBalance. Reload preserved underlying values.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -35745,6 +36574,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/D-A102/D-A102-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A102",
+        "title": "One termination release is represented twice and its receipt reverses the money direction",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "IMMUTABLE_HOLD_SINGLE_REFUND_AND_ACCESSIBLE_ESCROW_TO_PAYER_RECEIPT_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T07:45:53.373862+00:00",
+        "latestObservation": "Actual positive NGN25000 termination release now has a Receipt action and opens in Chrome with CIC assessment escrow sender/Test Pitcher recipient, gross/net25000 and fees0. Current persisted scoped reservation has exactly immutable negative25000 cancelled hold and one positive25000 success refund. No new termination or wallet mutation performed; existing release evidence rechecked.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -36185,6 +37031,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/D-A109/D-A109-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A109",
+        "title": "Reciprocal settled receipts disagree on payer/payee direction",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "PAYER_RECEIPT_BROWSER_AND_ACTUAL_RECIPROCAL_LEDGER_SERVICE_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T06:15:07.888875+00:00",
+        "latestObservation": "Previously missing payer Receipt action now exists on the exact settled NGN25000 assessment capture and opens correctly in Chrome. Current actual persisted payer and payee receipt service outputs both identify Test Pitcher sender/Test Assessor recipient, gross25000/net25000/fees0. Read-only; no ledger changes. Payee browser login and PDF export were not claimed.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -36241,6 +37104,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/D-A110/D-A110-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A110",
+        "title": "Linked financial-account UI is not credibly user-scoped or usable for payout",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "THREE_ACTOR_ACCOUNT_ISOLATION_REAL_SANDBOX_VERIFICATION_PERSISTENCE_AND_WITHDRAW_SELECTION_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T06:15:07.888875+00:00",
+        "latestObservation": "Pitcher and fresh Assessor each show honest personal empty account/card states. Investor shows own distinct pending accounts; official Paystack sandbox Zenith0000000000 verification/link succeeded using confirmed test-mode canonical key. After full reload the new named account is Ready and automatically selectable on reopened NGN Withdraw. User authorized this exact linking action. No withdrawal submitted. This verifies NGN sandbox setup/selection, not live payout settlement or USD readiness. Mobile CDP sizing was blocked after one retry by paused document response; no mobile PASS claimed.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -36297,6 +37177,25 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/D-A111/D-A111-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A111",
+        "title": "Approved-KYC Assessor cannot configure or complete any withdrawal",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_LINK_PENDING_FEED_AND_ABANDONED_RELEASE_FIXES_VERIFIED_SUCCESSFUL_PAYOUT_PENDING",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-13T07:52:49.940817+00:00",
+        "latestObservation": "Narrow v2 bank ownership/currency indexes applied with zero bank/wallet/transaction document writes,45 tests plus6 real Mongo scope probes. Actual owned sandbox account linked. Reproduced pending withdrawal missing from wallet feed fixed and actual row visible. Actual provider transfer becameabandoned; normalizer fixed forabandoned/blocked/rejected.18 focused tests pass. Authenticated exact provider verification passed to canonical state-transition engine; request/transactionfailed, balance200/pending0. Replay idempotent, no payout/debit. One guarded failure-notification replay reached actual owned mailbox; View wallet HTTP tracking link reachedlocalhost login. This does not prove HTTPS tracking SSL or successful payout. Fresh merchant approval readiness needed before one new test withdrawal.",
+        "limitations": [
+          "Successful payout needs fresh Paystack merchant approval/OTP readiness; old transfer is conclusively abandoned and released."
+        ],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -36577,6 +37476,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A116/D-A116-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A116",
+        "title": "Organization actor inherits a personal assignment's milestone access",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -36753,6 +37669,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A119/D-A119-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A119",
+        "title": "Project owner cannot revoke displayed temporary access",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_DESKTOP_ACTUAL_MOBILE_REVOKE_AND_FUTURE_ENGAGEMENT_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -36801,6 +37734,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A120/D-A120-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A120",
+        "title": "Schedule commits while the browser reports insufficient credit",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ZERO_CREDIT_BROWSER_DENIAL_RETRY_AND_NO_GHOST_SESSION_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T13:43:51.705303+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -36849,6 +37799,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A121/D-A121-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A121",
+        "title": "Session communications corrupt timezone and duration",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_REAL_EMAIL_TIMEZONE_AND_DURATION_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T02:54:31.068571+00:00",
+        "latestObservation": "Actual owned Mail.tm received original Oct12 17:00 UTC 10min and reschedule Nov12 18:00 UTC 30min. Browser host persists Nov12 11:00 America/Phoenix 30min. Tracking destination tracked separately in PIT-F017.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -37025,6 +37992,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A124/D-A124-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A124",
+        "title": "Participant capacity and queue are not enforced",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:47:09.622214+00:00",
+        "latestObservation": "Full room with one regular participant rejected second controlled participant with capacity error. After Investor Leave, host roster fell from 3 to 2 and the second participant entered the released seat; no reload required.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -37073,6 +38057,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A125/D-A125-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A125",
+        "title": "Host entry auto-starts without required prejoin and device workflow",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_RTC_JOIN_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:47:09.622214+00:00",
+        "latestObservation": "Authenticated Agora console active project recovered using existing project ID/certificate in canonical configuration. Host/cohost/Investor all joined actual RTC. Explicit start and no-device prejoin verified. Camera/device-preview branch remains pending.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -37121,6 +38122,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A126/D-A126-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A126",
+        "title": "Leave and participant presence become mutually inconsistent",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "EXPLICIT_LEAVE_REJOIN_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:47:09.622214+00:00",
+        "latestObservation": "Investor Leave shows intentional-left message; host roster immediately changes 3 to 2. Same-room Investor rejoin restores roster to 3, then another Leave releases seat. Navigation-away branch remains pending.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -37169,6 +38187,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A127/D-A127-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A127",
+        "title": "Chat, reply, report and ended-state controls are unreliable",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:57:19.018191+00:00",
+        "latestObservation": "Fresh real RTC session preserved literal <literal>, ampersand and Unicode in host message and cohost reply, delivered live without reload. Ended session disables send, reply, reaction and report controls. Scoped text regressions 8 passed, terminal API checks 6 passed. Prior actual report persisted as Already reported.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -37225,6 +38260,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A128/D-A128-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A128",
+        "title": "Completion summaries misstate participants and end time",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FINAL_SUMMARY_SOCKET_AND_PITCH_CARD_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T04:27:15.338919+00:00",
+        "latestObservation": "Actual ended session detail shows2attendees and20:51end; parent pitch All Sessions card agrees2/20:51. Earlier room agrees4/20:43. Both match real completion receipts and persisted finalized usage, and original no-reload socket update proof retained. Replays/media branch remains separate from summary assertions.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -37281,6 +38333,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A129/D-A129-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A129",
+        "title": "Assessor lifecycle communications are incomplete",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_REMINDER_EMAIL_INAPP_LINK_AND_ASSESSOR_DIRECTORY_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T04:25:09.480091+00:00",
+        "latestObservation": "Fresh controlled Assessor reminder received in actual Mail.tm UI with exact2026-10-11,04:32UTC,10minutes. In-app copy agrees, one email for the new fixture. Email CTA and actual Assessor in-app CTA open exact scheduled session. Assessor Manage Sessions includes both ended co-host rooms, invited upcoming rooms and cancelled history. Completion/reschedule/cancellation delivered-mail proofs retained from prior executions. No deployed closure.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -37337,6 +38406,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A130/D-A130-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A130",
+        "title": "Host lifecycle communications have wrong identity/content and broken CTA",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_HOST_CANCELLATION_RESCHEDULE_EMAIL_INAPP_AND_LINK_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T04:36:26.543714+00:00",
+        "latestObservation": "Actual host expanded reschedule notification shows old Oct12 17UTC and new Nov12 18UTC, duration30min and exact session link. Existing real cancellation and reschedule email proofs retained.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -37385,6 +38471,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A131/D-A131-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A131",
+        "title": "Fresh Assessor transactional email does not arrive",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NOT_NEEDED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T02:07:53.183456+00:00",
+        "latestObservation": "Fresh user-approved Assessor signup, email verification and MFA login completed using owned Mail.tm mailbox. Confirmation, welcome and login verification emails actually received. Approved Mail.tm/local delivery proof; historical YOPmail and deployed-provider path not separately repeated.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -37673,6 +38776,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A136/D-A136-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A136",
+        "title": "Fixed co-grantor invitation falsely states that funds will be deducted",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CONTRIBUTION_INVITATION_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:57:19.018191+00:00",
+        "latestObservation": "Fixed invitation states Fixed (no contribution required), Not required and No wallet deduction. Fresh Assessor zero NGN balance can accept membership; UI Joined Grant and grantors2/3; zero contribution preserved. Published/unfunded synthetic baseline is not publication/funding evidence.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -37721,6 +38841,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A137/D-A137-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A137",
+        "title": "Anonymous co-grantor identity leaks across owner channels",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "OWNER_ROSTER_INAPP_AND_REAL_EMAIL_PRIVACY_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:59:38.121814+00:00",
+        "latestObservation": "All three owner channels use alias FrescoP; roster has no profile link, in-app notice names alias only, real email hides email. No identity leak reproduced. Zero contribution/no wallet deduction membership fixture only.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -38169,6 +39306,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A145/D-A145-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A145",
+        "title": "Cancelled assessment conversation remains writable",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -38225,6 +39379,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A146/D-A146-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A146",
+        "title": "Completed assessment has no chat entry point",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -38385,6 +39556,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A149/D-A149-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A149",
+        "title": "Global unread badge remains stale after page-level read state reaches zero",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:40:03.485477+00:00",
+        "latestObservation": "Fresh disposable Assessor started with three unread notifications. Mark page as read cleared page count, global bell and account tab. Reload preserved page count zero and no unread badges.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -38513,6 +39701,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-17-defect-batch-deployed-retest/evidence/assessor/ASS-035/D-A151-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A151",
+        "title": "Assistant reports irrelevant answers as 95% high-confidence grounded help",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -38793,6 +39998,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A156/D-A156-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A156",
+        "title": "Desktop listing Buy action loses its visible label",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -38841,6 +40063,25 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A157/D-A157-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A157",
+        "title": "One listing has contradictory currencies and magnitudes across marketplace surfaces",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "BLOCKED_FIXTURE",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "Original U4T22 listing absent; both current live offers are USD-native Lumina offers. An active NGN-native sale is needed for original cross-currency assertion. User asked for listing title/link."
+        ],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -38889,6 +40130,25 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A158/D-A158-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A158",
+        "title": "Date-picker pointer and keyboard selections do not populate the bid expiry",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "BLOCKED_BROWSER_CONTROL",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "Keyboard selection already populated2027-01-01 with native validity=true. Calendar icon pointer click and one accessible activation leave the native popup outside observed browser state. User asked to select future day without submitting bid."
+        ],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -38937,6 +40197,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A159/D-A159-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A159",
+        "title": "Active listing does not reserve displayed equity and a second over-available listing hangs",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_MARKETPLACE_AVAILABILITY_AND_REFRESH_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T18:08:20.831976+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -38985,6 +40262,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A160/D-A160-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A160",
+        "title": "Seller cannot cancel or revoke an active listing",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_CANCELLED_EQUITY_RELEASE_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T18:08:20.831976+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -39033,6 +40327,25 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A161/D-A161-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A161",
+        "title": "Closure blocker feedback is not itemized or actionable",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "BLOCKED_FIXTURE",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "Approved disposable Assessor with pending closure request required."
+        ],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -39081,6 +40394,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A162/D-A162-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A162",
+        "title": "Closed Assessor profile remains actionable",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "CLOSED_PROFILE_UNAVAILABLE_NO_FOLLOW_AND_NO_DURABLE_RELATIONSHIP_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T23:33:40.777490+00:00",
+        "latestObservation": "Actual Admin approved closure for owned zero-balance UAT Closure Assessor. Admin snapshot and readback show closed/inactive and approved. Same public profile that previously displayed Follow now says no longer available and has zero Follow buttons. Scoped follower readback confirms no relationship was created.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -39129,6 +40459,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A163/D-A163-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A163",
+        "title": "Closure request and approval produce no in-app or email communication",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "CLOSURE_REQUEST_AND_APPROVAL_IN_APP_PERSISTENCE_AND_REAL_EMAIL_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T23:33:40.777490+00:00",
+        "latestObservation": "Actual browser closure request and Admin approval produced distinct persisted account.closure_requested and account.closure_approved webapp rows for the owned account. Real owned Mail.tm request and approval emails were opened with matching recipient. Closed status is verified independently; closed-user sign-in was not bypassed to view notifications.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -39241,6 +40588,25 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/D-A165/D-A165-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "D-A165",
+        "title": "Admin closure review note is lost from immutable audit history",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "BLOCKED_FIXTURE",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "Approved disposable Assessor with pending closure request required."
+        ],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -39364,6 +40730,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/G-A2/G-A2-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "G-A2",
+        "title": "admin row actions are 30px icon-only buttons with aria-label only, rendered below the fold at 1440×900 (y≈1331 in a 900px viewport), so they need s…",
+        "type": "Gap",
+        "severity": "low",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -39551,6 +40934,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-17-defect-batch-deployed-retest/evidence/assessor/D-A015-marketplace-sell/G-A6-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "G-A6",
+        "title": "sell modal gives all three inputs id=outlined-adornment-weight; project has no accessible name and percentage/price are both exposed as weight",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -39655,6 +41055,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/G-A8/G-A8-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "G-A8",
+        "title": "Blank recovery-question submission reports only question 1 and duplicates that message inline and as a toast, rather than exposing both missing fie…",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_BOTH_EMPTY_ANSWERS_ACTUAL_MOBILE_VALIDATION_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -40015,6 +41432,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/G-A14/G-A14-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "G-A14",
+        "title": "Sensitive KYC fields have empty accessible names",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:40:59.585290+00:00",
+        "latestObservation": "Editable fresh KYC Biodata form: all original name, DOB, contact, address and nationality/tax-residency controls now have explicit names. Government ID selector is named Government Issued ID type. Selecting Has criminal convictions exposed named narrative, country and sentence choices. All reachable textboxes have labels; hidden select backing inputs excluded. Reverted unsaved selection and cancelled; no KYC submitted.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -40063,6 +41497,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/G-A15/G-A15-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "G-A15",
+        "title": "Viewer sees enabled management actions that effective authorization rejects",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_VIEWER_CONTROLS_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:06:15.388239+00:00",
+        "latestObservation": "Actual seeded Viewer profile save and KYB submission disabled with permission copy. Custom country/entity/shareholder type menus remained enabled in disabled fieldset, reproduced by opening country list. Explicit disabled props now verified in Chrome, 3 component tests pass.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -40399,6 +41850,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/G-A21/G-A21-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "G-A21",
+        "title": "Engagement and restricted-state variants lack isolated fixtures",
+        "type": "Gap",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "RELATED_PARTY_FIX_AND_ISOLATED_RESTRICTED_MATRIX_BROWSER_VERIFIED_FULL_SCENARIO_RESPONSIVE_CELLS_PENDING",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T06:06:58.377123+00:00",
+        "latestObservation": "Eligible unrelated review saves synthetic notes, appears as Free Draft in Manage Assessments, and resumes unchanged. Prior submitted own review hides duplicate entry. Unsupported-country public pitch renders stable read-only overview; promoted pitch redirects to exact project and denies unassigned Assessor access. Public interest heart persists red then second click removes it; like/dislike mutually exclusive and undone. No exposed follow/comments/report controls in tested views. Both exact disposable drafts removed; temporary synthetic KYC eligibility precondition restored (removed), no real KYC approval claimed. Full18browser/viewport scenario remains pending.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -40447,6 +41915,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/G-A22/G-A22-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "G-A22",
+        "title": "Session confirmation failures make financial commit outcomes ambiguous",
+        "type": "Gap",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "COMBINED_LOST_COMMIT_RESPONSE_AND_SESSION_RECOVERY_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-13T04:00:02.586585+00:00",
+        "latestObservation": "Dropped one committed HTTP200 request response and three initial GET session responses. Session modal appeared with enabled Retry; automatic polling recovered after interception cleared. Identical UI retry returned existing request6acda1201dba861e0940b94a with no duplicate or charge. Wallets unchanged across retry; actual UI cancellation released only synthetic assessment hold, preserving independent pending withdrawal100. Interception cleared in finally.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -40495,6 +41980,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/G-A23/G-A23-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "G-A23",
+        "title": "Draft edit icon has no accessible name",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -40543,6 +42045,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/G-A24/G-A24-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "G-A24",
+        "title": "Task responses and upload surface are not programmatically labelled",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:44:04.645426+00:00",
+        "latestObservation": "Fresh owned accepted free Other assignment with three text tasks. Each response exposes its task-specific accessible name; Overall assessment response is labelled. Choose assessment evidence files button successfully emitted filechooser event. No file selected, response saved or assessment submitted.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -40591,6 +42110,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/G-A25/G-A25-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "G-A25",
+        "title": "Review rating and comment controls lack meaningful accessible names",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -41199,6 +42735,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/assessor/G-A36/G-A36-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "G-A36",
+        "title": "Compact buy table hides essential seller/action content behind horizontal overflow",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -41612,6 +43165,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/investor/INV-F004/INV-F004-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "INV-F004",
+        "title": "Summary counts disagree with empty history lists",
+        "type": "Finding",
+        "severity": "medium",
+        "groups": [
+          "Investor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_ZERO_POSITIVE_ACTOR_FILTERED_RFI_AND_BID_COUNTS_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -41772,6 +43342,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/investor/INV-F007/INV-F007-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "INV-F007",
+        "title": "Non-anonymous signup fails on null alias and emits duplicate confirmation mail",
+        "type": "Finding",
+        "severity": "high",
+        "groups": [
+          "Investor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_INDEX_FIX_SIGNUP_REAL_EMAIL_AND_VERIFICATION_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T17:16:43.244553+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -41876,6 +43463,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/investor/INV-F009/INV-F009-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "INV-F009",
+        "title": "Failed withdrawal does not release its reservation",
+        "type": "Finding",
+        "severity": "high",
+        "groups": [
+          "Investor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "SIGNED_LOCAL_FAILURE_AND_DUPLICATE_RELEASE_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T08:39:45.281007+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -42708,6 +44312,23 @@
             "url": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-09-18-passed-over-rerun/evidence/investor/INV-F024/INV-F024-owner-partial-result.json"
           }
         ]
+      },
+      "localRevalidation": {
+        "id": "INV-F024",
+        "title": "Owner and unrelated Investor can mutate milestone review state",
+        "type": "Finding",
+        "severity": "high",
+        "groups": [
+          "Investor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_OWNER_NO_VOTES_UNRELATED_NO_MUTATIONS_AND_ACTUAL_MOBILE_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [],
+        "ledgerUrl": "https://capitalinvestmentclub.github.io/uat-dashboard/runs/2026-10-14-local-revalidation/local-revalidation.json"
       }
     },
     {
@@ -43072,5 +44693,1612 @@
     "ledger": "runs/2026-09-18-passed-over-rerun/reconciled-276.json",
     "priorLedger": "runs/2026-09-17-defect-batch-deployed-retest/deployed-retest-276.json",
     "rerunLedger": "runs/2026-09-18-passed-over-rerun/passed-over-rerun-199.json"
+  },
+  "localRevalidation": {
+    "runId": "2026-10-14-local-revalidation",
+    "state": "IN_PROGRESS",
+    "publishedAt": "2026-10-14",
+    "dataCutoff": "2026-10-13T07:52:49.940817+00:00",
+    "environment": "Local Chrome with real API, slot22; disposable owned synthetic fixtures",
+    "acceptanceBoundary": "Interim local readiness evidence. Not deployed validation, full scenario closure, or a release approval. REPRODUCED preserves the observation before a fix; implementation status records later local repair. Earlier checks retain their original tested revisions.",
+    "candidateHeads": {
+      "webapp": "45347e4dcb7b332a208e6380f0ac4d393f6f831b",
+      "webapi": "5ad5b30fd7d88c7f760613142b2956f34a5589f4",
+      "notificationservice": "c806dc114ed8c57ad51e277e51bbcd41eb8e26ff"
+    },
+    "freshnessLimitation": "Latest preflight detected seven newer webapp default-branch commits; results do not establish equivalence to the latest default or deployed app.",
+    "frozenBatch": {
+      "total": 65,
+      "reviewed": 60,
+      "outcomes": {
+        "REPRODUCED": 21,
+        "NO_LONGER_REPRODUCES": 39,
+        "NOT_RUN": 5
+      }
+    },
+    "pendingInputs": [
+      "Human password-form entry/submission for reuse test",
+      "Action-time signup Terms/Privacy confirmation",
+      "Approved real SMS test phone",
+      "Fresh Paystack merchant approval readiness"
+    ],
+    "findings": [
+      {
+        "id": "PIT-F014",
+        "title": "Calendar dates shift by one day",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_KYC_AND_EXTERNAL_DATE_FIX_BROWSER_VERIFIED_OTHER_BRANCHES_PENDING",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:06:15.388239+00:00",
+        "latestObservation": "Synthetic holder March30 displayed March29 in Phoenix after real save. External acquisition date now formatted as calendar date; actual browser shows March30 and edit retains2026-03-30. KYC branch already verified; agreement/milestone/report/grant branches still pending.",
+        "limitations": []
+      },
+      {
+        "id": "PIT-F017",
+        "title": "Session emails contain wrong duration and destination",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_BROWSER_AND_REAL_EMAIL_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:20:36.587615+00:00",
+        "latestObservation": "Fresh UI-created 600-second session scheduled Oct14 10Phoenix/17UTC. Co-host owned mailbox received host-specific cancellation message6acb002537bab99c853bbe7c with direct session6acafeb3f7fa665306cdfbb7 CTA. Clicked actual email CTA; exact cancelled session displays Unavailable/no Join. Earlier scheduled receipt separately proves10min/timezone. Existing tracking SSL still external issue; new session template delivery bypasses click tracking.",
+        "limitations": []
+      },
+      {
+        "id": "PIT-F019",
+        "title": "Completed assessment link opens an editable blank form",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T02:14:53.261411+00:00",
+        "latestObservation": "Actual controlled requester login now resolves original request URL to exact saved task and read-only response/three task answers. Moved authenticated participant lookup ahead of Assessor-only authoring route boundary. Route authorization 2 tests pass; authoring remains restricted.",
+        "limitations": []
+      },
+      {
+        "id": "PIT-F020",
+        "title": "Historical wallet presentation changes or misstates entries",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NEW_HOLD_RELEASE_HISTORICAL_ROW_STABILITY_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T08:42:40.176569+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "PIT-F021",
+        "title": "External-holder records cannot be reliably maintained",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:19:09.454282+00:00",
+        "latestObservation": "Actual synthetic draft external holder created, edited name/contact/notes, and soft-removed through normal UI. Reloaded equity table has no external rows. Calendar March30 displays March30 after fix; email hydrated from authorized raw record; removal accepts projected id.",
+        "limitations": []
+      },
+      {
+        "id": "PIT-F023",
+        "title": "Receipts misstate amounts, direction or transaction type",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_GRANT_REFUND_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T07:56:05.219971+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "PIT-F024",
+        "title": "Agreement email link becomes empty after promotion",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "NOT_RUN",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "PIT-F026",
+        "title": "Grant status and approval prompts contradict lifecycle",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_TERMINAL_APPLICATION_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T04:07:11.706839+00:00",
+        "latestObservation": "Actual Chrome terminated the owned zero-fund grant. Applications show Closed — Grant Terminated; voting closed and Approve/Reject disabled. No award, contribution, or refund occurred.",
+        "limitations": []
+      },
+      {
+        "id": "PIT-F032",
+        "title": "Assistant gives irrelevant high-confidence answers",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T02:33:28.312439+00:00",
+        "latestObservation": "Selected project and grant live questions clearly acknowledge unavailable records, 0% confidence/contact support/no unsupported citations. Positive milestone documentation question retains 95% grounded answer and relevant approved citation. 13 policy tests and 8 focused Mongo-backed service tests pass. API commit61bb4f18; deployed fix pending.",
+        "limitations": []
+      },
+      {
+        "id": "PIT-F041",
+        "title": "Project bid table clips decision actions at 1024",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Pitcher"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_1024_ACTION_VISIBILITY_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "ADM052-FIN-001",
+        "title": "Assessor is not credited after successful capture",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Admin",
+          "Super Admin",
+          "Cross-role Platform Journeys"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "PAID_REVIEW_CAPTURE_WALLETS_REAL_RECEIPTS_AND_ADMIN_LEDGER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T23:19:46.148804+00:00",
+        "latestObservation": "Fresh Admin login and actual ledger scoped by the owned pitch description show finalized payer and assessor settlement/capture rows, each Valid. Completed NGN100 Review reconciles with the previously reloaded wallets (payer9900, assessor200), holds0before nextdistinctrequest, immutablecapturetransactionrefs and actualpayer/assessoremailreceipts. Originalmissingrecipientcredit doesnotreproduce. A distinctpendingTechnologyNGN100holdremains explicitly separate.",
+        "limitations": []
+      },
+      {
+        "id": "ADM052-CAN-001",
+        "title": "Cancelled assessment keeps reserved funds",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Admin",
+          "Super Admin",
+          "Cross-role Platform Journeys"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_FRESH_BROWSER_AND_PERSISTED_LEDGER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-13T01:51:45.384933+00:00",
+        "latestObservation": "Fresh actual UI-created Technology request6acd8d541dba861e09408344 reserves NGN100 on both roles. Actual cancellation retains Assessor identity immediately; request becomes cancelled/reserved0, wallet pending100->0 with balances9900/200 unchanged. Producer creates exactly1 posted7d reversal (-100 Pitcher/+100 Clearing), refCIC-TXN-20261013-2VV49K3HDK93. Ref and balanced row verified in actual Admin UI after reload. Prior two synthetic bookkeeping repairs remain distinct. Full-page browser screenshot repeats tiles; use first panel content plus scoped row text and payer screenshot, not as layout evidence. Fresh receipt/Assessor history follow-up pending, prior fresh delivery/history already verified.",
+        "limitations": []
+      },
+      {
+        "id": "ADM050-EVIDENCE-001",
+        "title": "Required no-TIN evidence can be omitted",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Admin",
+          "Super Admin",
+          "Cross-role Platform Journeys"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "REQUIRED_NO_TIN_EVIDENCE_NEGATIVE_POSITIVE_AND_REVIEWER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T21:25:01.271326+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "ADM056-UNBLOCK-001",
+        "title": "Request unblock immediately unblocks the device",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Admin",
+          "Super Admin",
+          "Cross-role Platform Journeys"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:56:14.395585+00:00",
+        "latestObservation": "Created isolated synthetic blocked device and ended session on owned Mail.tm Assessor. Security UI shows one blocked device. Button is labelled Unblock device and opens explicit immediate-privileged-action confirmation; count remains one. Blank and five-character reasons leave final Unblock disabled. Cancel preserves Device blocked. No unblock submitted; the original immediate-unblock-on-opening failure does not reproduce.",
+        "limitations": []
+      },
+      {
+        "id": "ADM053-STATE-001",
+        "title": "Grant panels remain stale after decisions",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Admin",
+          "Super Admin",
+          "Cross-role Platform Journeys"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "APPROVAL_FEEDBACK_SUMMARY_AND_TWO_ROLE_CHAT_WITHOUT_RELOAD_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T18:08:20.831976+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "ADM056-STALE-001",
+        "title": "Lock and unlock leave stale row state",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Admin",
+          "Super Admin",
+          "Cross-role Platform Journeys"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NOT_NEEDED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T02:10:29.503287+00:00",
+        "latestObservation": "Owned disposable user locked and unlocked through Admin browser with audit reasons. Filtered row changes to Locked/Unlock and then Active/Lock without reload; failed-attempt count restored to 0. Session revoked by lock as expected.",
+        "limitations": []
+      },
+      {
+        "id": "ADM056-HOLD-001",
+        "title": "No isolated subject-level legal hold path",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Admin",
+          "Super Admin",
+          "Cross-role Platform Journeys"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T02:07:53.183456+00:00",
+        "latestObservation": "Following browser release with audit reason, reload Compliance Overview reports Active retention controls 0; previously 1 after creation and reload. SingleSubjectRecord hold creation and release both persisted.",
+        "limitations": []
+      },
+      {
+        "id": "ORG008-MEMBER-001",
+        "title": "Removed members cannot be re-invited through the normal form",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Organization"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:19:09.454282+00:00",
+        "latestObservation": "Actual Owner Members removed disposable Viewer; invitee reload showed no organization. Normal invite form created pending re-invitation, invitee accepted, Owner Members shows Viewer active with one re-invite. Initial permission restored.",
+        "limitations": []
+      },
+      {
+        "id": "ORG023-CLOSE-001",
+        "title": "Closure succeeds with pending governed actions",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Organization"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:19:09.454282+00:00",
+        "latestObservation": "Actual Owner UI created pending payout_account.change approval request containing no financial account data; UI closure submitted twice and each returned HTTP409 in slot22 API log. Organization remained active with two members and pending governed action. Approval request cancelled through UI; Governance now cancelled and no actions awaiting approval.",
+        "limitations": []
+      },
+      {
+        "id": "ORG025-COVERAGE-001",
+        "title": "Role context works but three full organization lifecycles remain incomplete",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Organization"
+        ],
+        "currentValidity": "NOT_RUN",
+        "implementationStatus": "THREE_ROLE_KYB_REVIEW_APPROVAL_AND_DOCUMENT_FIX_VERIFIED_FULL_LIFECYCLES_PENDING",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-13T07:52:49.940817+00:00",
+        "latestObservation": "All three UI-created owned organizations now have persisted verified/approved KYB. Distinct Employee Reviewer and Approver IDs recorded. Actual uploaded fictitious PDFs opened and visually inspected by both staff roles. Reproduced403 for organization documents fixed with exact submitted/attached path authorization and audit;19 regression tests pass. False popup warning removed while preserving noopener/noreferrer; actual new PDF tab works. Earlier member-realm Reviewer issue resolved through proper Employee login on clean origin. Invitations, counterpart transactions, settlement and complete role journeys remain pending; this is not full ORG025 coverage.",
+        "limitations": []
+      },
+      {
+        "id": "GRT024-COVERAGE-001",
+        "title": "Organization and public-funding lifecycle is incomplete",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Grantor"
+        ],
+        "currentValidity": "NOT_RUN",
+        "implementationStatus": "PUBLIC_GRANT_PUBLISHED_REPORT_FIELDS_FIXED_SMS_AND_FULL_LIFECYCLE_PENDING",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-13T07:52:49.940817+00:00",
+        "latestObservation": "Actual organization public grant6acdb14045a4038553b5047f published with targetNGN100 and real internal creator contributionNGN1, using explicitly synthetic starting wallet credit. Creator wallet99/grant wallet1 persisted; this is not provider funding. Corrected misleading100%-funded publication notice; actual guest page shows1%. Reproduced pasted reporting-field loss fixed;57 tests and actual blur/edit/save prove progress,challenges,nextSteps persisted. GuestNGN99 contribution staged with owned email and blank phone. Required real SMS phone unavailable, no SMS or payment started. Applicant approval, acknowledgment, payout, reporting and closeout remain incomplete.",
+        "limitations": [
+          "Approved phone capable of receiving the real ownership SMS needed before guest contribution can proceed."
+        ]
+      },
+      {
+        "id": "PUB006-PROFILE-001",
+        "title": "Public creator links redirect guests to Login",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Guest / Public"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "PUB007-COVERAGE-001",
+        "title": "Role, biodata and verification branches remain behind account creation",
+        "type": "Gap",
+        "severity": "high",
+        "groups": [
+          "Guest / Public"
+        ],
+        "currentValidity": "NOT_RUN",
+        "implementationStatus": "THREE_FRESH_ROLE_SIGNUPS_AND_REAL_EMAIL_MFA_VERIFIED_BOUNDARIES_TOKEN_GATES_PENDING",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T22:08:27.336001+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "KYCR-F005",
+        "title": "Required applicant documents remain unreadable",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "KYC Reviewer"
+        ],
+        "currentValidity": "BLOCKED_FIXTURE",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "{'reason': 'Available controlled KYC application has PNG; historical black-preview defect requires the original or equivalent controlled passport PDF. Asked user for application identifier.'}"
+        ]
+      },
+      {
+        "id": "KYCA-F001",
+        "title": "Required passport PDF is black and unreadable at all six Chrome sizes",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "KYC Approval"
+        ],
+        "currentValidity": "BLOCKED_FIXTURE",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "{'reason': 'Available controlled KYC application has PNG; historical black-preview defect requires the original or equivalent controlled passport PDF. Asked user for application identifier.'}"
+        ]
+      },
+      {
+        "id": "SUP-F004",
+        "title": "Benign markup displays literal entity text in preview",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Support Operations"
+        ],
+        "currentValidity": "BLOCKED_UI",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "Local admin Template management remains on Operations after pointer click and one keyboard recovery. User asked to open the template view manually. Original entity rendering behavior not yet reached."
+        ]
+      },
+      {
+        "id": "D-A1",
+        "title": "Registration data does not reach the assessor readiness surface",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:38:01.349364+00:00",
+        "latestObservation": "Fresh Mail.tm Assessor registered Technology, five years, D-A1 October UAT Qualification. Delivered email activation and MFA completed. Profile Expertise shows 1 area, 1 specialization, 1 credential and 5 years; no missing expertise prompt.",
+        "limitations": []
+      },
+      {
+        "id": "D-A6",
+        "title": "Email verification gives no success confirmation — reproduced here on an Assessor identity (third occurrence overall)",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:36:42.716544+00:00",
+        "latestObservation": "New Mail.tm Assessor signup generated delivered confirmation link. Consuming link shows explicit successful verification alert and Continue to login link.",
+        "limitations": []
+      },
+      {
+        "id": "D-A12",
+        "title": "Download Data produces a profile snapshot, not a complete portable personal-data export",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED_ARTIFACT_PENDING",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "User confirmation of downloaded my-personal-data.json artifact pending; API response verified."
+        ]
+      },
+      {
+        "id": "D-A14",
+        "title": "Account deactivation Submit becomes enabled with only a reason and static phrase",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A15",
+        "title": "Sell action is inert for valid partial and full listings",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "PARTIAL_AND_FULL_SYNTHETIC_LISTINGS_BROWSER_AND_PERSISTENCE_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T18:08:20.831976+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A18",
+        "title": "Forgot-password recovery accepts the account's existing password and reports a successful change, while logged-in Change Password rejects reuse",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NOT_RUN",
+        "implementationStatus": "FRESH_TWO_PHASE_RECOVERY_READY_HUMAN_PASSWORD_SUBMISSION_REQUIRED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-13T07:52:49.940817+00:00",
+        "latestObservation": "New actual recovery email6acde22e240e3bd5fa611d2b and second email6acde28d5b605813d244c2d3 received after accepted existing challenge answers. Fresh resetPassword2 form opened on isolated local alias. Password fields left blank; existing owned password on clipboard. User requested agent entry, but browser credential handoff policy prevents entry/submission by agent. Source same-password422 guard is not a browser verdict. No credential changed.",
+        "limitations": [
+          "Human must enter/confirm/submit existing password in staged password-change form; link TTL one hour."
+        ]
+      },
+      {
+        "id": "D-A19",
+        "title": "An explicitly incomplete Assessor can bypass mandatory profile readiness through Dashboard, Manage Assessments and Browse Pitches, open the live as…",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:56:14.395585+00:00",
+        "latestObservation": "Restored disposable profile qualification from guarded precondition backup. Fresh direct assignment load stays on Other Assessment Response, with Draft not saved yet and normal controls, verifying complete-actor access and no persisted blank draft.",
+        "limitations": []
+      },
+      {
+        "id": "D-A21",
+        "title": "Dashboard amount visibility does not survive navigation",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A26",
+        "title": "Impossible accomplishment year persists",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A36",
+        "title": "Directory omits required readiness, capacity and profile evidence",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED_CONTEXT_PENDING",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "Original pitch-specific directory verification requires an active accessible pitch."
+        ]
+      },
+      {
+        "id": "D-A39",
+        "title": "Unverified/KYC-incomplete Assessor is offered volunteer review despite an existing pitch relationship",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:44:04.645426+00:00",
+        "latestObservation": "Fresh KYC-incomplete Assessor has existing accepted Other assignment on UAT Solar Microgrid. The General assessment view states Volunteer review unavailable with KYC approval requirement, and exposes neither Write Free Review nor Resume Volunteer Draft. No volunteer draft created.",
+        "limitations": []
+      },
+      {
+        "id": "D-A40",
+        "title": "Existing volunteer draft is hidden until Write Free Review is clicked",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "BLOCKED_FIXTURE",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "Active accessible pitch with an existing volunteer draft required."
+        ]
+      },
+      {
+        "id": "D-A42",
+        "title": "Ambiguous retry creates a duplicate paid request instead of reconciling one intent",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "IDENTICAL_RETRY_AND_LOST_RESPONSE_RECONCILIATION_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T22:22:33.117003+00:00",
+        "latestObservation": "Reopened the identical paid Review with the same dates, rate and note. The UI returned original reference 6acd55278bc0827075572cec. A distinct Technology request 6acd5c818bc0827075575ca9 then committed before its actual HTTP 200 response was dropped through isolated local XHR interception. The UI described the uncertain outcome and safe retry. Retrying returned the same Technology reference. Scoped records before and after retry confirm one request and one hold per intent, two distinct requests in total, stable balances of NGN9,900 and NGN200, and pending NGN100 in each wallet. Normal interception was restored; no authentication state or headers were read.",
+        "limitations": []
+      },
+      {
+        "id": "D-A51",
+        "title": "Duplicate tasks are accepted without detection or clarification",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_DEPLOYED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:34:33.423197+00:00",
+        "latestObservation": "Engineering request draft, Test Assessor on UAT Solar Microgrid. Tasks Verify boundary conditions and whitespace/case variant produced explicit duplicate warning and disabled Request. Cancelled without submission or reservation.",
+        "limitations": []
+      },
+      {
+        "id": "D-A53",
+        "title": "Accepted requests are stranded outside the Assessor workspaces",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A63",
+        "title": "Negotiation notes are double-escaped across application and email",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BOTH_ROLES_MOBILE_AND_REAL_EMAIL_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T04:56:43.391518+00:00",
+        "latestObservation": "Approved same-account zero-fee Oct20 proposal retried after repair. Full authored literal tags, ampersand and quotes preserved in Assessor and Pitcher note dialogs, Assessor390px mobile modal, and actual corrected Pitcher email at21:47 Phoenix; recipient verified. Prior failure remains recorded. 112 focused tests pass (32 API,61 notification,19 webapp); output escaping and unrelated-field sanitization covered. No cloud deployment or Pages publication.",
+        "limitations": []
+      },
+      {
+        "id": "D-A69",
+        "title": "Request search omits visible Unicode, rate and assessment-type data",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A73",
+        "title": "Assessment search is case- and whitespace-sensitive",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A94",
+        "title": "Completed paid Review remains reserved with no observed settlement path",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "PAID_REVIEW_COMPLETION_AUTO_SETTLEMENT_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T22:08:27.336001+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A95",
+        "title": "Final assessment completion is not delivered in app or by email",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "REVIEW_OTHER_BOTH_ROLES_INAPP_REAL_EMAIL_AND_FINAL_DESTINATION_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T04:58:37.158604+00:00",
+        "latestObservation": "Actual Review and Other completion emails received in controlled Pitcher inbox; exact recipient checked. Both actual email CTAs opened final immutable IDs6acb125fc18ba91be309b867 and6acaeda2e0e969f702a34de2 with submitted ratings/tasks/conclusions visible. Earlier Assessor receipts and both in-app feeds retained. Free assessments only; financial settlement not covered by this delivery case. Existing zero-fee Other payment-pending label recorded separately for later lifecycle scope.",
+        "limitations": []
+      },
+      {
+        "id": "D-A101",
+        "title": "Pending requester holds contaminate the Assessor current balance",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-10T14:59:01.392169+00:00",
+        "latestObservation": "Normal UI wallet view plus HTTP 200 getUserWallets. Positive pendingBalance exists in NGN and USD, but currentBalance equals availableBalance. Reload preserved underlying values.",
+        "limitations": []
+      },
+      {
+        "id": "D-A102",
+        "title": "One termination release is represented twice and its receipt reverses the money direction",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "IMMUTABLE_HOLD_SINGLE_REFUND_AND_ACCESSIBLE_ESCROW_TO_PAYER_RECEIPT_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T07:45:53.373862+00:00",
+        "latestObservation": "Actual positive NGN25000 termination release now has a Receipt action and opens in Chrome with CIC assessment escrow sender/Test Pitcher recipient, gross/net25000 and fees0. Current persisted scoped reservation has exactly immutable negative25000 cancelled hold and one positive25000 success refund. No new termination or wallet mutation performed; existing release evidence rechecked.",
+        "limitations": []
+      },
+      {
+        "id": "D-A109",
+        "title": "Reciprocal settled receipts disagree on payer/payee direction",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "PAYER_RECEIPT_BROWSER_AND_ACTUAL_RECIPROCAL_LEDGER_SERVICE_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T06:15:07.888875+00:00",
+        "latestObservation": "Previously missing payer Receipt action now exists on the exact settled NGN25000 assessment capture and opens correctly in Chrome. Current actual persisted payer and payee receipt service outputs both identify Test Pitcher sender/Test Assessor recipient, gross25000/net25000/fees0. Read-only; no ledger changes. Payee browser login and PDF export were not claimed.",
+        "limitations": []
+      },
+      {
+        "id": "D-A110",
+        "title": "Linked financial-account UI is not credibly user-scoped or usable for payout",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "THREE_ACTOR_ACCOUNT_ISOLATION_REAL_SANDBOX_VERIFICATION_PERSISTENCE_AND_WITHDRAW_SELECTION_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T06:15:07.888875+00:00",
+        "latestObservation": "Pitcher and fresh Assessor each show honest personal empty account/card states. Investor shows own distinct pending accounts; official Paystack sandbox Zenith0000000000 verification/link succeeded using confirmed test-mode canonical key. After full reload the new named account is Ready and automatically selectable on reopened NGN Withdraw. User authorized this exact linking action. No withdrawal submitted. This verifies NGN sandbox setup/selection, not live payout settlement or USD readiness. Mobile CDP sizing was blocked after one retry by paused document response; no mobile PASS claimed.",
+        "limitations": []
+      },
+      {
+        "id": "D-A111",
+        "title": "Approved-KYC Assessor cannot configure or complete any withdrawal",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_LINK_PENDING_FEED_AND_ABANDONED_RELEASE_FIXES_VERIFIED_SUCCESSFUL_PAYOUT_PENDING",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-13T07:52:49.940817+00:00",
+        "latestObservation": "Narrow v2 bank ownership/currency indexes applied with zero bank/wallet/transaction document writes,45 tests plus6 real Mongo scope probes. Actual owned sandbox account linked. Reproduced pending withdrawal missing from wallet feed fixed and actual row visible. Actual provider transfer becameabandoned; normalizer fixed forabandoned/blocked/rejected.18 focused tests pass. Authenticated exact provider verification passed to canonical state-transition engine; request/transactionfailed, balance200/pending0. Replay idempotent, no payout/debit. One guarded failure-notification replay reached actual owned mailbox; View wallet HTTP tracking link reachedlocalhost login. This does not prove HTTPS tracking SSL or successful payout. Fresh merchant approval readiness needed before one new test withdrawal.",
+        "limitations": [
+          "Successful payout needs fresh Paystack merchant approval/OTP readiness; old transfer is conclusively abandoned and released."
+        ]
+      },
+      {
+        "id": "D-A116",
+        "title": "Organization actor inherits a personal assignment's milestone access",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A119",
+        "title": "Project owner cannot revoke displayed temporary access",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_DESKTOP_ACTUAL_MOBILE_REVOKE_AND_FUTURE_ENGAGEMENT_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A120",
+        "title": "Schedule commits while the browser reports insufficient credit",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ZERO_CREDIT_BROWSER_DENIAL_RETRY_AND_NO_GHOST_SESSION_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T13:43:51.705303+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A121",
+        "title": "Session communications corrupt timezone and duration",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_REAL_EMAIL_TIMEZONE_AND_DURATION_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T02:54:31.068571+00:00",
+        "latestObservation": "Actual owned Mail.tm received original Oct12 17:00 UTC 10min and reschedule Nov12 18:00 UTC 30min. Browser host persists Nov12 11:00 America/Phoenix 30min. Tracking destination tracked separately in PIT-F017.",
+        "limitations": []
+      },
+      {
+        "id": "D-A124",
+        "title": "Participant capacity and queue are not enforced",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:47:09.622214+00:00",
+        "latestObservation": "Full room with one regular participant rejected second controlled participant with capacity error. After Investor Leave, host roster fell from 3 to 2 and the second participant entered the released seat; no reload required.",
+        "limitations": []
+      },
+      {
+        "id": "D-A125",
+        "title": "Host entry auto-starts without required prejoin and device workflow",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_RTC_JOIN_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:47:09.622214+00:00",
+        "latestObservation": "Authenticated Agora console active project recovered using existing project ID/certificate in canonical configuration. Host/cohost/Investor all joined actual RTC. Explicit start and no-device prejoin verified. Camera/device-preview branch remains pending.",
+        "limitations": []
+      },
+      {
+        "id": "D-A126",
+        "title": "Leave and participant presence become mutually inconsistent",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "EXPLICIT_LEAVE_REJOIN_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:47:09.622214+00:00",
+        "latestObservation": "Investor Leave shows intentional-left message; host roster immediately changes 3 to 2. Same-room Investor rejoin restores roster to 3, then another Leave releases seat. Navigation-away branch remains pending.",
+        "limitations": []
+      },
+      {
+        "id": "D-A127",
+        "title": "Chat, reply, report and ended-state controls are unreliable",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:57:19.018191+00:00",
+        "latestObservation": "Fresh real RTC session preserved literal <literal>, ampersand and Unicode in host message and cohost reply, delivered live without reload. Ended session disables send, reply, reaction and report controls. Scoped text regressions 8 passed, terminal API checks 6 passed. Prior actual report persisted as Already reported.",
+        "limitations": []
+      },
+      {
+        "id": "D-A128",
+        "title": "Completion summaries misstate participants and end time",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FINAL_SUMMARY_SOCKET_AND_PITCH_CARD_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T04:27:15.338919+00:00",
+        "latestObservation": "Actual ended session detail shows2attendees and20:51end; parent pitch All Sessions card agrees2/20:51. Earlier room agrees4/20:43. Both match real completion receipts and persisted finalized usage, and original no-reload socket update proof retained. Replays/media branch remains separate from summary assertions.",
+        "limitations": []
+      },
+      {
+        "id": "D-A129",
+        "title": "Assessor lifecycle communications are incomplete",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_REMINDER_EMAIL_INAPP_LINK_AND_ASSESSOR_DIRECTORY_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T04:25:09.480091+00:00",
+        "latestObservation": "Fresh controlled Assessor reminder received in actual Mail.tm UI with exact2026-10-11,04:32UTC,10minutes. In-app copy agrees, one email for the new fixture. Email CTA and actual Assessor in-app CTA open exact scheduled session. Assessor Manage Sessions includes both ended co-host rooms, invited upcoming rooms and cancelled history. Completion/reschedule/cancellation delivered-mail proofs retained from prior executions. No deployed closure.",
+        "limitations": []
+      },
+      {
+        "id": "D-A130",
+        "title": "Host lifecycle communications have wrong identity/content and broken CTA",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_HOST_CANCELLATION_RESCHEDULE_EMAIL_INAPP_AND_LINK_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T04:36:26.543714+00:00",
+        "latestObservation": "Actual host expanded reschedule notification shows old Oct12 17UTC and new Nov12 18UTC, duration30min and exact session link. Existing real cancellation and reschedule email proofs retained.",
+        "limitations": []
+      },
+      {
+        "id": "D-A131",
+        "title": "Fresh Assessor transactional email does not arrive",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NOT_NEEDED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T02:07:53.183456+00:00",
+        "latestObservation": "Fresh user-approved Assessor signup, email verification and MFA login completed using owned Mail.tm mailbox. Confirmation, welcome and login verification emails actually received. Approved Mail.tm/local delivery proof; historical YOPmail and deployed-provider path not separately repeated.",
+        "limitations": []
+      },
+      {
+        "id": "D-A136",
+        "title": "Fixed co-grantor invitation falsely states that funds will be deducted",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CONTRIBUTION_INVITATION_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:57:19.018191+00:00",
+        "latestObservation": "Fixed invitation states Fixed (no contribution required), Not required and No wallet deduction. Fresh Assessor zero NGN balance can accept membership; UI Joined Grant and grantors2/3; zero contribution preserved. Published/unfunded synthetic baseline is not publication/funding evidence.",
+        "limitations": []
+      },
+      {
+        "id": "D-A137",
+        "title": "Anonymous co-grantor identity leaks across owner channels",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "OWNER_ROSTER_INAPP_AND_REAL_EMAIL_PRIVACY_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:59:38.121814+00:00",
+        "latestObservation": "All three owner channels use alias FrescoP; roster has no profile link, in-app notice names alias only, real email hides email. No identity leak reproduced. Zero contribution/no wallet deduction membership fixture only.",
+        "limitations": []
+      },
+      {
+        "id": "D-A145",
+        "title": "Cancelled assessment conversation remains writable",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A146",
+        "title": "Completed assessment has no chat entry point",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A149",
+        "title": "Global unread badge remains stale after page-level read state reaches zero",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:40:03.485477+00:00",
+        "latestObservation": "Fresh disposable Assessor started with three unread notifications. Mark page as read cleared page count, global bell and account tab. Reload preserved page count zero and no unread badges.",
+        "limitations": []
+      },
+      {
+        "id": "D-A151",
+        "title": "Assistant reports irrelevant answers as 95% high-confidence grounded help",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A156",
+        "title": "Desktop listing Buy action loses its visible label",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A157",
+        "title": "One listing has contradictory currencies and magnitudes across marketplace surfaces",
+        "type": "Defect",
+        "severity": "critical",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "BLOCKED_FIXTURE",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "Original U4T22 listing absent; both current live offers are USD-native Lumina offers. An active NGN-native sale is needed for original cross-currency assertion. User asked for listing title/link."
+        ]
+      },
+      {
+        "id": "D-A158",
+        "title": "Date-picker pointer and keyboard selections do not populate the bid expiry",
+        "type": "Defect",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "BLOCKED_BROWSER_CONTROL",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "Keyboard selection already populated2027-01-01 with native validity=true. Calendar icon pointer click and one accessible activation leave the native popup outside observed browser state. User asked to select future day without submitting bid."
+        ]
+      },
+      {
+        "id": "D-A159",
+        "title": "Active listing does not reserve displayed equity and a second over-available listing hangs",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_MARKETPLACE_AVAILABILITY_AND_REFRESH_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T18:08:20.831976+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A160",
+        "title": "Seller cannot cancel or revoke an active listing",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_CANCELLED_EQUITY_RELEASE_FIX_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T18:08:20.831976+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "D-A161",
+        "title": "Closure blocker feedback is not itemized or actionable",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "BLOCKED_FIXTURE",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "Approved disposable Assessor with pending closure request required."
+        ]
+      },
+      {
+        "id": "D-A162",
+        "title": "Closed Assessor profile remains actionable",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "CLOSED_PROFILE_UNAVAILABLE_NO_FOLLOW_AND_NO_DURABLE_RELATIONSHIP_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T23:33:40.777490+00:00",
+        "latestObservation": "Actual Admin approved closure for owned zero-balance UAT Closure Assessor. Admin snapshot and readback show closed/inactive and approved. Same public profile that previously displayed Follow now says no longer available and has zero Follow buttons. Scoped follower readback confirms no relationship was created.",
+        "limitations": []
+      },
+      {
+        "id": "D-A163",
+        "title": "Closure request and approval produce no in-app or email communication",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "CLOSURE_REQUEST_AND_APPROVAL_IN_APP_PERSISTENCE_AND_REAL_EMAIL_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T23:33:40.777490+00:00",
+        "latestObservation": "Actual browser closure request and Admin approval produced distinct persisted account.closure_requested and account.closure_approved webapp rows for the owned account. Real owned Mail.tm request and approval emails were opened with matching recipient. Closed status is verified independently; closed-user sign-in was not bypassed to view notifications.",
+        "limitations": []
+      },
+      {
+        "id": "D-A165",
+        "title": "Admin closure review note is lost from immutable audit history",
+        "type": "Defect",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "BLOCKED_FIXTURE",
+        "implementationStatus": "NOT_STARTED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": [
+          "Approved disposable Assessor with pending closure request required."
+        ]
+      },
+      {
+        "id": "G-A2",
+        "title": "admin row actions are 30px icon-only buttons with aria-label only, rendered below the fold at 1440×900 (y≈1331 in a 900px viewport), so they need s…",
+        "type": "Gap",
+        "severity": "low",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "G-A6",
+        "title": "sell modal gives all three inputs id=outlined-adornment-weight; project has no accessible name and percentage/price are both exposed as weight",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_BROWSER_VALIDATED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "G-A8",
+        "title": "Blank recovery-question submission reports only question 1 and duplicates that message inline and as a toast, rather than exposing both missing fie…",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_BOTH_EMPTY_ANSWERS_ACTUAL_MOBILE_VALIDATION_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "G-A14",
+        "title": "Sensitive KYC fields have empty accessible names",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:40:59.585290+00:00",
+        "latestObservation": "Editable fresh KYC Biodata form: all original name, DOB, contact, address and nationality/tax-residency controls now have explicit names. Government ID selector is named Government Issued ID type. Selecting Has criminal convictions exposed named narrative, country and sentence choices. All reachable textboxes have labels; hidden select backing inputs excluded. Reverted unsaved selection and cancelled; no KYC submitted.",
+        "limitations": []
+      },
+      {
+        "id": "G-A15",
+        "title": "Viewer sees enabled management actions that effective authorization rejects",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_VIEWER_CONTROLS_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T03:06:15.388239+00:00",
+        "latestObservation": "Actual seeded Viewer profile save and KYB submission disabled with permission copy. Custom country/entity/shareholder type menus remained enabled in disabled fieldset, reproduced by opening country list. Explicit disabled props now verified in Chrome, 3 component tests pass.",
+        "limitations": []
+      },
+      {
+        "id": "G-A21",
+        "title": "Engagement and restricted-state variants lack isolated fixtures",
+        "type": "Gap",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "RELATED_PARTY_FIX_AND_ISOLATED_RESTRICTED_MATRIX_BROWSER_VERIFIED_FULL_SCENARIO_RESPONSIVE_CELLS_PENDING",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T06:06:58.377123+00:00",
+        "latestObservation": "Eligible unrelated review saves synthetic notes, appears as Free Draft in Manage Assessments, and resumes unchanged. Prior submitted own review hides duplicate entry. Unsupported-country public pitch renders stable read-only overview; promoted pitch redirects to exact project and denies unassigned Assessor access. Public interest heart persists red then second click removes it; like/dislike mutually exclusive and undone. No exposed follow/comments/report controls in tested views. Both exact disposable drafts removed; temporary synthetic KYC eligibility precondition restored (removed), no real KYC approval claimed. Full18browser/viewport scenario remains pending.",
+        "limitations": []
+      },
+      {
+        "id": "G-A22",
+        "title": "Session confirmation failures make financial commit outcomes ambiguous",
+        "type": "Gap",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "COMBINED_LOST_COMMIT_RESPONSE_AND_SESSION_RECOVERY_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-13T04:00:02.586585+00:00",
+        "latestObservation": "Dropped one committed HTTP200 request response and three initial GET session responses. Session modal appeared with enabled Retry; automatic polling recovered after interception cleared. Identical UI retry returned existing request6acda1201dba861e0940b94a with no duplicate or charge. Wallets unchanged across retry; actual UI cancellation released only synthetic assessment hold, preserving independent pending withdrawal100. Interception cleared in finally.",
+        "limitations": []
+      },
+      {
+        "id": "G-A23",
+        "title": "Draft edit icon has no accessible name",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "G-A24",
+        "title": "Task responses and upload surface are not programmatically labelled",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "ALREADY_FIXED_LOCAL",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T01:44:04.645426+00:00",
+        "latestObservation": "Fresh owned accepted free Other assignment with three text tasks. Each response exposes its task-specific accessible name; Overall assessment response is labelled. Choose assessment evidence files button successfully emitted filechooser event. No file selected, response saved or assessment submitted.",
+        "limitations": []
+      },
+      {
+        "id": "G-A25",
+        "title": "Review rating and comment controls lack meaningful accessible names",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "G-A36",
+        "title": "Compact buy table hides essential seller/action content behind horizontal overflow",
+        "type": "Gap",
+        "severity": "medium",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "NO_CHANGE_NEEDED",
+        "frozenBatch": false,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "INV-F004",
+        "title": "Summary counts disagree with empty history lists",
+        "type": "Finding",
+        "severity": "medium",
+        "groups": [
+          "Investor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_ZERO_POSITIVE_ACTOR_FILTERED_RFI_AND_BID_COUNTS_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "INV-F007",
+        "title": "Non-anonymous signup fails on null alias and emits duplicate confirmation mail",
+        "type": "Finding",
+        "severity": "high",
+        "groups": [
+          "Investor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_INDEX_FIX_SIGNUP_REAL_EMAIL_AND_VERIFICATION_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-12T17:16:43.244553+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "INV-F009",
+        "title": "Failed withdrawal does not release its reservation",
+        "type": "Finding",
+        "severity": "high",
+        "groups": [
+          "Investor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "SIGNED_LOCAL_FAILURE_AND_DUPLICATE_RELEASE_BROWSER_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": "2026-10-11T08:39:45.281007+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "INV-F024",
+        "title": "Owner and unrelated Investor can mutate milestone review state",
+        "type": "Finding",
+        "severity": "high",
+        "groups": [
+          "Investor"
+        ],
+        "currentValidity": "NO_LONGER_REPRODUCES",
+        "implementationStatus": "BROWSER_OWNER_NO_VOTES_UNRELATED_NO_MUTATIONS_AND_ACTUAL_MOBILE_VERIFIED",
+        "frozenBatch": true,
+        "dashboardFinding": true,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "LOCAL-RESET-DELIVERY-001",
+        "title": "Delivered reset email invalidated after notification transport timeout",
+        "type": "Defect",
+        "severity": "high",
+        "groups": null,
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_TESTS_AND_REAL_EMAIL_DESTINATION_BROWSER_VERIFIED",
+        "frozenBatch": false,
+        "dashboardFinding": false,
+        "lastRecordedAt": null,
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "ANCILLARY-ASS-ALIAS-001",
+        "title": "Assessor profile creation collides on a null alias and exposes raw Mongo details",
+        "type": "Finding",
+        "severity": "high",
+        "groups": [
+          "Assessor"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_PROFILE_SAVE_BROWSER_AND_PERSISTENCE_VERIFIED",
+        "frozenBatch": false,
+        "dashboardFinding": false,
+        "lastRecordedAt": "2026-10-12T17:31:01.236932+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      },
+      {
+        "id": "ANCILLARY-KYC-LEGACY-001",
+        "title": "Modern NIN and no-TIN submission wrongly requires empty legacy financial fields",
+        "type": "Finding",
+        "severity": "high",
+        "groups": [
+          "Assessor",
+          "KYC"
+        ],
+        "currentValidity": "REPRODUCED",
+        "implementationStatus": "LOCAL_FIX_VERIFIED",
+        "frozenBatch": false,
+        "dashboardFinding": false,
+        "lastRecordedAt": "2026-10-12T20:06:34.346067+00:00",
+        "latestObservation": "No additional execution details recorded.",
+        "limitations": []
+      }
+    ],
+    "ledger": "runs/2026-10-14-local-revalidation/local-revalidation.json"
   }
 }

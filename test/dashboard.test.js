@@ -238,3 +238,41 @@ test('each status pie drilldown matches defects-only list and preserves group sc
   }
   d.getElementById('filters').reset();assert.equal(d.getElementById('view').value,'scenarios');dom.window.close();
 });
+
+test('local register attaches exact identities without converting local fixes to deployed passes', async()=>{
+  const {attachLocalRevalidation}=await import('../model.js');
+  const ledger=data.localRevalidation;
+  assert.equal(ledger.findings.filter(f=>f.frozenBatch).length,65);
+  assert.equal(ledger.frozenBatch.reviewed,60);
+  assert.deepEqual(ledger.frozenBatch.outcomes,{REPRODUCED:21,NO_LONGER_REPRODUCES:39,NOT_RUN:5});
+  assert.equal(data.uniqueFindings.filter(f=>f.localRevalidation).length,93);
+  const before=data.uniqueFindings.map(({localRevalidation,...f})=>f);
+  const after=attachLocalRevalidation(before,ledger,'https://example.com/local.json');
+  assert.deepEqual(after.map(f=>f.status),before.map(f=>f.status));
+  const corrupted=structuredClone(ledger);corrupted.findings[0].title='Wrong identity';
+  assert.throws(()=>attachLocalRevalidation(before,corrupted,'https://example.com/local.json'),/Unmatched/);
+  const duplicate=structuredClone(ledger);duplicate.findings.push(duplicate.findings[0]);
+  assert.throws(()=>attachLocalRevalidation(before,duplicate,'https://example.com/local.json'),/Duplicate/);
+  const badCount=structuredClone(ledger);badCount.frozenBatch.reviewed=65;
+  assert.throws(()=>attachLocalRevalidation(before,badCount,'https://example.com/local.json'),/counts/);
+});
+
+test('latest local progress, incomplete coverage and per-finding repairs render separately',async()=>{
+  const dom=await page();const doc=dom.window.document;
+  const section=doc.querySelector('#local-revalidation');
+  assert.match(section.textContent,/60 of 65 findings reviewed/);
+  assert.match(section.textContent,/Local fixes are not deployed passes/);
+  assert.match(section.textContent,/seven newer webapp/);
+  for(const id of ['PIT-F024','ORG025-COVERAGE-001','GRT024-COVERAGE-001','PUB007-COVERAGE-001','D-A18'])assert(section.textContent.includes(id));
+  doc.querySelector('#view').value='findings';doc.querySelector('#search').value='D-A111';
+  doc.querySelector('#search').dispatchEvent(new dom.window.Event('input',{bubbles:true}));
+  assert.match(doc.querySelector('#results').textContent,/abandoned/);
+  assert.match(doc.querySelector('#results').textContent,/Successful payout needs fresh Paystack/);
+  dom.window.close();
+});
+
+test('local observation text is escaped before rendering',async()=>{
+  const payload=structuredClone(data);payload.localRevalidation.findings.find(f=>f.frozenBatch).latestObservation='<img src=x onerror="alert(1)">';
+  const dom=await page(payload);const section=dom.window.document.querySelector('#local-revalidation');
+  assert.equal(section.querySelector('img'),null);assert.match(section.textContent,/<img src=x/);dom.window.close();
+});

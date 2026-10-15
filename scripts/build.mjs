@@ -1,7 +1,7 @@
 import { execFileSync } from 'node:child_process';
 import { readFile, writeFile } from 'node:fs/promises';
 import vm from 'node:vm';
-import { normalizeGroup, deduplicate, reconcileDeployedFindings } from '../model.js';
+import { normalizeGroup, deduplicate, reconcileDeployedFindings, attachLocalRevalidation } from '../model.js';
 
 const names = ['Pitcher','Admin','Organization','Grantor','Guest / Public','KYC Reviewer','KYC Approval','Super Admin','Support Operations','Cross-role Platform Journeys'];
 const repos = ['pitcher','admin','organization','grantor','guest-public','kyc-reviewer','kyc-approval','super-admin','support-operations','cross-role-platform-journeys'];
@@ -70,8 +70,12 @@ const deployedRetest = {
   ...(reconciledSource ? { priorLedger: ledger.sourceRuns[0], rerunLedger: ledger.sourceRuns[1] } : {}),
 };
 if (ledger.findings.length !== 276) throw new Error('Expected all 276 delivery-batch retest entries');
-const uniqueFindings = reconciledSource
+const deployedFindings = reconciledSource
   ? reconcileDeployedFindings(deduplicate(groups),ledger,new URL(deployedRetest.ledger,'https://capitalinvestmentclub.github.io/uat-dashboard/').href)
   : deduplicate(groups);
-const data = {generatedAt:new Date().toISOString(),sizes:['360×800','390×844','768×1024','1024×768','1280×800','1440×900'],groups,uniqueFindings,deployedRetest};
+const localLedger = 'runs/2026-10-14-local-revalidation/local-revalidation.json';
+const localRevalidation = JSON.parse(await readFile(new URL('../'+localLedger,import.meta.url),'utf8'));
+localRevalidation.ledger = localLedger;
+const uniqueFindings = attachLocalRevalidation(deployedFindings,localRevalidation,new URL(localLedger,'https://capitalinvestmentclub.github.io/uat-dashboard/').href);
+const data = {generatedAt:new Date().toISOString(),sizes:['360×800','390×844','768×1024','1024×768','1280×800','1440×900'],groups,uniqueFindings,deployedRetest,localRevalidation};
 await writeFile(new URL('../dashboard-data.json',import.meta.url), JSON.stringify(data,null,2)+'\n');

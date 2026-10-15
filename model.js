@@ -81,6 +81,23 @@ export function reconcileDeployedFindings(findings, ledger, ledgerUrl) {
 export function matches(row,query,group,outcome) {
   return (!group || row.group===group || row.groups?.includes(group)) && (!outcome || row.status===outcome) && `${row.id} ${row.title} ${row.summary || ''} ${row.observation || ''}`.toLowerCase().includes(query.trim().toLowerCase());
 }
+export function attachLocalRevalidation(findings, ledger, ledgerUrl) {
+  if (ledger?.state !== 'IN_PROGRESS' || !Array.isArray(ledger.findings)) throw new Error('Invalid local revalidation ledger');
+  const byId = new Map(findings.map(f => [f.id, f]));
+  const seen = new Set();
+  for (const result of ledger.findings) {
+    if (seen.has(result.id)) throw new Error(`Duplicate local finding: ${result.id}`);
+    seen.add(result.id);
+    if (!result.dashboardFinding) continue;
+    const finding = byId.get(result.id);
+    if (!finding || finding.title !== result.title || !result.groups.some(group => finding.groups.includes(group))) throw new Error(`Unmatched local finding: ${result.id}`);
+    byId.set(result.id, {...finding, localRevalidation: {...result, ledgerUrl}});
+  }
+  const frozen = ledger.findings.filter(f => f.frozenBatch);
+  const outcomes = Object.fromEntries(['REPRODUCED','NO_LONGER_REPRODUCES','NOT_RUN'].map(s => [s, frozen.filter(f => f.currentValidity === s).length]));
+  if (frozen.length !== ledger.frozenBatch.total || Object.entries(outcomes).some(([s,n]) => ledger.frozenBatch.outcomes[s] !== n) || outcomes.REPRODUCED + outcomes.NO_LONGER_REPRODUCES !== ledger.frozenBatch.reviewed) throw new Error('Local batch counts do not reconcile');
+  return findings.map(f => byId.get(f.id));
+}
 export const severities=['critical','high','medium','low','not reported'];
 export const defectStatuses=[['PASS','Fixed · retest passed'],['FAIL','Still failing'],['PARTIAL','Partially verified'],['BLOCKED','Verification blocked'],['DUPLICATE_COVERAGE','Duplicate coverage'],['NOT RUN','Retest not run'],['NOT REPORTED','Awaiting verification'],['CONFLICT','Conflicting evidence']];
 export function defectStatusBreakdown(findings) {
