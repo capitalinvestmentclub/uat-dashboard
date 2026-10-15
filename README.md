@@ -1,5 +1,10 @@
 # CIC UAT dashboard
 
+## Local revalidation update - 14 October 2026
+
+The latest local register is published in `runs/2026-10-14-local-revalidation/local-revalidation.json`: 60/65 frozen findings reviewed, 21 reproduced before fixes, 39 no longer reproduce, five full verdicts pending. Repair status is separate from pre-fix validity. All 93 mapped register findings attach to exact finding identities; three ancillary records remain in the download. The dashboard surfaces the local update and per-finding details without rewriting historical deployed outcomes or scenario coverage. No product release is implied. Candidate revision/freshness limits are explicit.
+
+
 ## Deployed defect-delivery retest — 18 September 2026
 
 The Chrome retest now has terminal dispositions for all 276 entries: 190 PASS, 30 FAIL, 55 BLOCKED, and 1 DUPLICATE_COVERAGE. The [reconciled evidence ledger](runs/2026-09-18-passed-over-rerun/reconciled-276.json) overlays the [199-entry rerun](runs/2026-09-18-passed-over-rerun/passed-over-rerun-199.json) on the immutable [original run](runs/2026-09-17-defect-batch-deployed-retest/deployed-retest-276.json). BLOCKED is not a verified fix; exact actor, record, or environment prerequisites are stated per entry. The dashboard applies the 276 reconciled results to their exact matching finding IDs, titles, and report groups before rendering the 259-unique-defect chart and findings drilldowns. The 276-entry retest totals remain separate because they also contain gaps, questions, and other non-defects.
