@@ -8,7 +8,7 @@ const localLabel = value => ({REPRODUCED:'Reproduced before fix',NO_LONGER_REPRO
 function localDetail(result){return `<p><strong>Local retest:</strong> ${escape(localLabel(result.currentValidity))} · ${escape(result.lastRecordedAt || 'Earlier checkpoint')}</p><p><strong>Repair / coverage:</strong> ${escape(result.implementationStatus.replaceAll('_',' ').toLowerCase())}</p><p>${escape(result.latestObservation)}</p>${result.limitations?.length?`<p><strong>Remaining limits:</strong> ${escape(result.limitations.join(' '))}</p>`:''}<p>Local evidence only; this does not change the historical deployed verdict.</p>`;}
 async function init(){
   try{
-    const response=await fetch('dashboard-data.json',{cache:'no-cache'});
+    const response=await fetch('dashboard-data.json?v=20261014',{cache:'no-cache'});
     if(!response.ok)throw new Error('Source snapshot is unavailable.');
     const data=await response.json();
     if(!Array.isArray(data.groups)||!data.groups.length)throw new Error('Source snapshot is incomplete.');
